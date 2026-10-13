@@ -1,7 +1,7 @@
 # learning-source-structure
 
 Code, results and figure scripts for the paper *Learning Source Structure: Bayesian
-Prediction with Transformers* by Meir Feder, Yaniv Fogel and Ruediger Urbanke.
+Prediction with Transformers* by Meir Feder and Ruediger Urbanke.
 
 Transformers are trained on sequences whose source parameters are drawn afresh for every
 sequence. Their predictions are compared, in bits, with the informed Bayesian predictor
