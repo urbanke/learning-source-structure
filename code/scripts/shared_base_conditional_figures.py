@@ -114,8 +114,8 @@ def validated_time64(path,tf):
     """Bind each declared complete time64 cohort to its independent raw audit."""
     summary=json.loads(Path(path).read_text())
     if summary.get('schema')=='shared-base-corrected-time64-summary-v1':
-        from export_shared_base_time64 import validate_export
-        return validate_export(path,tf)
+        import export_shared_base_time64 as time64
+        return _validate_export_relocated(time64, path, tf)
     depths=[c['depth'] for c in summary['cohorts']]
     require(1<=len(depths)<=len(DEPTHS) and len(set(depths))==len(depths)
         and set(depths)<=set(DEPTHS),'time64 requires unique declared source depths')
@@ -333,3 +333,27 @@ def main():
 
 
 if __name__=='__main__':main()
+
+
+def _validate_export_relocated(time64, path, tf):
+    """Run the exporter's validation with recorded absolute paths resolved inside this checkout.
+
+    Exports made on the research Mac recorded the absolute path of their validation receipt.
+    The exporter file itself stays unchanged, because its hash is part of that receipt."""
+    from pathlib import Path
+    original = time64.read
+
+    def read(p):
+        d = original(p)
+        vr = d.get('validation_receipt') if isinstance(d, dict) else None
+        if vr and Path(vr['path']).is_absolute() and not Path(vr['path']).exists():
+            parts = Path(vr['path']).parts
+            if 'results' in parts:
+                vr['path'] = str(Path(*parts[parts.index('results'):]))
+        return d
+
+    time64.read = read
+    try:
+        return time64.validate_export(path, tf)
+    finally:
+        time64.read = original
