@@ -129,9 +129,15 @@ LSA_BUILD_EXACT=1 python3 ../lsa/scripts/build_anchor_store.py --out ../lsa_stor
     --jobs 8 --go
 ```
 
-The store is 2.6 GB, deterministic, and costs about four core-hours (the exact builder;
-the dry run without `--go` prints the plan). It is the store the paper's references were
-computed with. Then, for every reference command:
+The store is 2.6 GB and costs about four core-hours (the exact builder; the dry run
+without `--go` prints the plan). It is the store the paper's references were computed
+with. We rebuilt levels 2 to 41 of it with this command on an x86-64 Linux machine and
+compared them with the sealed store used for the paper, column by column: every column
+has the same length, and the values agree to within 1e-15 of the column's scale. The
+files are not byte-identical, because the sealed store was built on Apple Silicon and
+the last bit of `exp` and `log` differs between platforms.
+`code/scripts/compare_store.py` runs this comparison between two stores. Then, for
+every reference command:
 
 ```sh
 export LSA_STORE=$PWD/../lsa_store
