@@ -1,0 +1,2393 @@
+{
+  "schema": "pooled-predictive-population-plan-v1",
+  "experiment": "Fixed 192-history pooled comparison, all six plotted contexts",
+  "seed": 2026091907,
+  "family_order": [
+    "product",
+    "shared_base",
+    "uniform_base"
+  ],
+  "family_prior": [
+    0.3333333333333333,
+    0.3333333333333333,
+    0.3333333333333333
+  ],
+  "indices": [
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    21,
+    22,
+    23,
+    24,
+    25,
+    26,
+    27,
+    28,
+    29,
+    30,
+    31,
+    32,
+    33,
+    34,
+    35,
+    36,
+    37,
+    38,
+    39,
+    40,
+    41,
+    42,
+    43,
+    44,
+    45,
+    46,
+    47,
+    48,
+    49,
+    50,
+    51,
+    52,
+    53,
+    54,
+    55,
+    56,
+    57,
+    58,
+    59,
+    60,
+    61,
+    62,
+    63,
+    64,
+    65,
+    66,
+    67,
+    68
+  ],
+  "n_per_family": 64,
+  "development_indices": [
+    1,
+    2,
+    3,
+    4
+  ],
+  "times": [
+    16,
+    64,
+    256,
+    1024
+  ],
+  "existing_exact_times": [
+    1,
+    4
+  ],
+  "selection": {
+    "schema": "pooled-predictive-balanced-selection-v1",
+    "source_plan_id": "64a6796ebe5598ac29cedf214e5259649d97e49a06fe36c3f1d0cea28f9eff51",
+    "cases": [
+      {
+        "family": "product",
+        "index": 5,
+        "sequence_seed": [
+          2519686369,
+          3479322218,
+          3001093464,
+          1813766711
+        ]
+      },
+      {
+        "family": "product",
+        "index": 6,
+        "sequence_seed": [
+          1493095071,
+          2188387123,
+          2869008893,
+          1818683430
+        ]
+      },
+      {
+        "family": "product",
+        "index": 7,
+        "sequence_seed": [
+          1349705000,
+          2433769611,
+          1227398657,
+          1469690059
+        ]
+      },
+      {
+        "family": "product",
+        "index": 8,
+        "sequence_seed": [
+          3987706559,
+          1239320879,
+          3388962592,
+          929328605
+        ]
+      },
+      {
+        "family": "product",
+        "index": 9,
+        "sequence_seed": [
+          1414202883,
+          3916996874,
+          2489325498,
+          3880316778
+        ]
+      },
+      {
+        "family": "product",
+        "index": 10,
+        "sequence_seed": [
+          1017158382,
+          2125148932,
+          2987087506,
+          3129017716
+        ]
+      },
+      {
+        "family": "product",
+        "index": 11,
+        "sequence_seed": [
+          3059805336,
+          896213052,
+          652717782,
+          1326205678
+        ]
+      },
+      {
+        "family": "product",
+        "index": 12,
+        "sequence_seed": [
+          1050772001,
+          937744716,
+          488592396,
+          2989632766
+        ]
+      },
+      {
+        "family": "product",
+        "index": 13,
+        "sequence_seed": [
+          3385383468,
+          320286833,
+          3821715340,
+          3720293859
+        ]
+      },
+      {
+        "family": "product",
+        "index": 14,
+        "sequence_seed": [
+          959734294,
+          3130232066,
+          1199366444,
+          3283609611
+        ]
+      },
+      {
+        "family": "product",
+        "index": 15,
+        "sequence_seed": [
+          198216881,
+          1771343494,
+          3696840185,
+          1265083023
+        ]
+      },
+      {
+        "family": "product",
+        "index": 16,
+        "sequence_seed": [
+          21311783,
+          2987804062,
+          62639480,
+          2101354865
+        ]
+      },
+      {
+        "family": "product",
+        "index": 17,
+        "sequence_seed": [
+          3319334760,
+          3320774918,
+          1760263666,
+          1292547180
+        ]
+      },
+      {
+        "family": "product",
+        "index": 18,
+        "sequence_seed": [
+          2308743596,
+          1894889398,
+          1842672637,
+          2623733886
+        ]
+      },
+      {
+        "family": "product",
+        "index": 19,
+        "sequence_seed": [
+          3223053551,
+          3632018953,
+          1630065769,
+          1043789986
+        ]
+      },
+      {
+        "family": "product",
+        "index": 20,
+        "sequence_seed": [
+          3611110570,
+          3568091677,
+          2660788982,
+          4200582043
+        ]
+      },
+      {
+        "family": "product",
+        "index": 21,
+        "sequence_seed": [
+          4038237566,
+          885628496,
+          2346200865,
+          3572702621
+        ]
+      },
+      {
+        "family": "product",
+        "index": 22,
+        "sequence_seed": [
+          1956444490,
+          2734027520,
+          1151037354,
+          2776009418
+        ]
+      },
+      {
+        "family": "product",
+        "index": 23,
+        "sequence_seed": [
+          1267635107,
+          2204975646,
+          3452041355,
+          2902420248
+        ]
+      },
+      {
+        "family": "product",
+        "index": 24,
+        "sequence_seed": [
+          3963866196,
+          3353035102,
+          1219902883,
+          2134213563
+        ]
+      },
+      {
+        "family": "product",
+        "index": 25,
+        "sequence_seed": [
+          4011171612,
+          3020225228,
+          3970534008,
+          2869767202
+        ]
+      },
+      {
+        "family": "product",
+        "index": 26,
+        "sequence_seed": [
+          14436648,
+          2541983283,
+          174251352,
+          2240140457
+        ]
+      },
+      {
+        "family": "product",
+        "index": 27,
+        "sequence_seed": [
+          2575388910,
+          3879305740,
+          2466886379,
+          2963654484
+        ]
+      },
+      {
+        "family": "product",
+        "index": 28,
+        "sequence_seed": [
+          2263214798,
+          3418232272,
+          3246629941,
+          1558628469
+        ]
+      },
+      {
+        "family": "product",
+        "index": 29,
+        "sequence_seed": [
+          2897745306,
+          153073560,
+          3162063822,
+          3687828518
+        ]
+      },
+      {
+        "family": "product",
+        "index": 30,
+        "sequence_seed": [
+          3386933515,
+          3402318574,
+          1098098617,
+          3616285416
+        ]
+      },
+      {
+        "family": "product",
+        "index": 31,
+        "sequence_seed": [
+          1729792398,
+          2873969539,
+          967389950,
+          4267046899
+        ]
+      },
+      {
+        "family": "product",
+        "index": 32,
+        "sequence_seed": [
+          3242127823,
+          1156097231,
+          1074477287,
+          4154642091
+        ]
+      },
+      {
+        "family": "product",
+        "index": 33,
+        "sequence_seed": [
+          355090679,
+          1250558241,
+          609914476,
+          1759108449
+        ]
+      },
+      {
+        "family": "product",
+        "index": 34,
+        "sequence_seed": [
+          3171370309,
+          2809199027,
+          1748958444,
+          3145045368
+        ]
+      },
+      {
+        "family": "product",
+        "index": 35,
+        "sequence_seed": [
+          2978595068,
+          1229242328,
+          3394042198,
+          102299391
+        ]
+      },
+      {
+        "family": "product",
+        "index": 36,
+        "sequence_seed": [
+          3098112220,
+          2105618331,
+          1567663938,
+          3962218211
+        ]
+      },
+      {
+        "family": "product",
+        "index": 37,
+        "sequence_seed": [
+          570462207,
+          1786138566,
+          226822507,
+          3897034975
+        ]
+      },
+      {
+        "family": "product",
+        "index": 38,
+        "sequence_seed": [
+          4290715759,
+          1525997214,
+          2977557345,
+          2602144214
+        ]
+      },
+      {
+        "family": "product",
+        "index": 39,
+        "sequence_seed": [
+          1124811596,
+          1566308102,
+          1633983081,
+          4105341355
+        ]
+      },
+      {
+        "family": "product",
+        "index": 40,
+        "sequence_seed": [
+          3924322135,
+          3097699668,
+          1604220947,
+          329270504
+        ]
+      },
+      {
+        "family": "product",
+        "index": 41,
+        "sequence_seed": [
+          4106360492,
+          648785201,
+          1727352395,
+          2865857205
+        ]
+      },
+      {
+        "family": "product",
+        "index": 42,
+        "sequence_seed": [
+          1095622135,
+          2178921467,
+          2261725604,
+          290784642
+        ]
+      },
+      {
+        "family": "product",
+        "index": 43,
+        "sequence_seed": [
+          3493700903,
+          1808823758,
+          4057872511,
+          503577325
+        ]
+      },
+      {
+        "family": "product",
+        "index": 44,
+        "sequence_seed": [
+          1172437948,
+          190676998,
+          2848959305,
+          1401333092
+        ]
+      },
+      {
+        "family": "product",
+        "index": 45,
+        "sequence_seed": [
+          3546030502,
+          3965354561,
+          1925924773,
+          787944315
+        ]
+      },
+      {
+        "family": "product",
+        "index": 46,
+        "sequence_seed": [
+          152739694,
+          1658953824,
+          2214933218,
+          3278111257
+        ]
+      },
+      {
+        "family": "product",
+        "index": 47,
+        "sequence_seed": [
+          687941646,
+          2534126848,
+          890420049,
+          1688061313
+        ]
+      },
+      {
+        "family": "product",
+        "index": 48,
+        "sequence_seed": [
+          2674857333,
+          4094623781,
+          3830860422,
+          2798372186
+        ]
+      },
+      {
+        "family": "product",
+        "index": 49,
+        "sequence_seed": [
+          356304765,
+          2851026927,
+          763858930,
+          525371568
+        ]
+      },
+      {
+        "family": "product",
+        "index": 50,
+        "sequence_seed": [
+          3159694785,
+          3259611236,
+          441290493,
+          846760930
+        ]
+      },
+      {
+        "family": "product",
+        "index": 51,
+        "sequence_seed": [
+          103353150,
+          2519118419,
+          1010886036,
+          1378320717
+        ]
+      },
+      {
+        "family": "product",
+        "index": 52,
+        "sequence_seed": [
+          850335857,
+          2902087103,
+          3470956024,
+          638038731
+        ]
+      },
+      {
+        "family": "product",
+        "index": 53,
+        "sequence_seed": [
+          341447363,
+          2648650486,
+          445669919,
+          2269350261
+        ]
+      },
+      {
+        "family": "product",
+        "index": 54,
+        "sequence_seed": [
+          3136294499,
+          394471987,
+          897378626,
+          1176204185
+        ]
+      },
+      {
+        "family": "product",
+        "index": 55,
+        "sequence_seed": [
+          2034640721,
+          4139573469,
+          366958149,
+          2814758690
+        ]
+      },
+      {
+        "family": "product",
+        "index": 56,
+        "sequence_seed": [
+          1863981259,
+          3591323502,
+          982115484,
+          2268243977
+        ]
+      },
+      {
+        "family": "product",
+        "index": 57,
+        "sequence_seed": [
+          1087364396,
+          1795150617,
+          1663038762,
+          3487944005
+        ]
+      },
+      {
+        "family": "product",
+        "index": 58,
+        "sequence_seed": [
+          2676097886,
+          3057079620,
+          3999925291,
+          1294596203
+        ]
+      },
+      {
+        "family": "product",
+        "index": 59,
+        "sequence_seed": [
+          1052841531,
+          3357986470,
+          634713755,
+          2495356785
+        ]
+      },
+      {
+        "family": "product",
+        "index": 60,
+        "sequence_seed": [
+          3197874102,
+          645617812,
+          1971791733,
+          589940756
+        ]
+      },
+      {
+        "family": "product",
+        "index": 61,
+        "sequence_seed": [
+          1636693762,
+          859104078,
+          1248836161,
+          3912370849
+        ]
+      },
+      {
+        "family": "product",
+        "index": 62,
+        "sequence_seed": [
+          1307274944,
+          178027086,
+          183992969,
+          2971538864
+        ]
+      },
+      {
+        "family": "product",
+        "index": 63,
+        "sequence_seed": [
+          2431427907,
+          1865538574,
+          2337269810,
+          3512434183
+        ]
+      },
+      {
+        "family": "product",
+        "index": 64,
+        "sequence_seed": [
+          3927253652,
+          3573680979,
+          2529546526,
+          808738210
+        ]
+      },
+      {
+        "family": "product",
+        "index": 65,
+        "sequence_seed": [
+          1596683477,
+          2488019404,
+          2931264942,
+          200703607
+        ]
+      },
+      {
+        "family": "product",
+        "index": 66,
+        "sequence_seed": [
+          2693647963,
+          1799433998,
+          2597956757,
+          466990597
+        ]
+      },
+      {
+        "family": "product",
+        "index": 67,
+        "sequence_seed": [
+          2061874802,
+          2692682231,
+          1124539688,
+          3358837641
+        ]
+      },
+      {
+        "family": "product",
+        "index": 68,
+        "sequence_seed": [
+          2237875365,
+          3777922332,
+          2093567929,
+          3290835385
+        ]
+      },
+      {
+        "family": "shared_base",
+        "index": 5,
+        "sequence_seed": [
+          536397968,
+          3881491582,
+          544278035,
+          2033959832
+        ]
+      },
+      {
+        "family": "shared_base",
+        "index": 6,
+        "sequence_seed": [
+          2682651172,
+          1761249651,
+          2848427250,
+          3686400735
+        ]
+      },
+      {
+        "family": "shared_base",
+        "index": 7,
+        "sequence_seed": [
+          2427073074,
+          34317124,
+          836517405,
+          2778314493
+        ]
+      },
+      {
+        "family": "shared_base",
+        "index": 8,
+        "sequence_seed": [
+          288889512,
+          2172914835,
+          3154092337,
+          3196421736
+        ]
+      },
+      {
+        "family": "shared_base",
+        "index": 9,
+        "sequence_seed": [
+          3513074650,
+          1233269896,
+          2579476418,
+          2423558013
+        ]
+      },
+      {
+        "family": "shared_base",
+        "index": 10,
+        "sequence_seed": [
+          1387320608,
+          2218814024,
+          1964126145,
+          207994692
+        ]
+      },
+      {
+        "family": "shared_base",
+        "index": 11,
+        "sequence_seed": [
+          273612832,
+          2180671994,
+          3197321931,
+          94022328
+        ]
+      },
+      {
+        "family": "shared_base",
+        "index": 12,
+        "sequence_seed": [
+          243242641,
+          1028831937,
+          3788467078,
+          2528512808
+        ]
+      },
+      {
+        "family": "shared_base",
+        "index": 13,
+        "sequence_seed": [
+          192239847,
+          3548049231,
+          2715587804,
+          1842859823
+        ]
+      },
+      {
+        "family": "shared_base",
+        "index": 14,
+        "sequence_seed": [
+          3082887922,
+          4151478194,
+          4153832159,
+          2212102803
+        ]
+      },
+      {
+        "family": "shared_base",
+        "index": 15,
+        "sequence_seed": [
+          3146991790,
+          2322083253,
+          1300668124,
+          1125609388
+        ]
+      },
+      {
+        "family": "shared_base",
+        "index": 16,
+        "sequence_seed": [
+          1271856960,
+          1406489587,
+          3937057630,
+          1781936136
+        ]
+      },
+      {
+        "family": "shared_base",
+        "index": 17,
+        "sequence_seed": [
+          4214542157,
+          3310156560,
+          3548407952,
+          3356460597
+        ]
+      },
+      {
+        "family": "shared_base",
+        "index": 18,
+        "sequence_seed": [
+          1897346454,
+          2558913779,
+          1021466636,
+          2677844492
+        ]
+      },
+      {
+        "family": "shared_base",
+        "index": 19,
+        "sequence_seed": [
+          1708725100,
+          1076616916,
+          3991214385,
+          1271886556
+        ]
+      },
+      {
+        "family": "shared_base",
+        "index": 20,
+        "sequence_seed": [
+          1823389572,
+          1392352581,
+          1637146670,
+          1875921630
+        ]
+      },
+      {
+        "family": "shared_base",
+        "index": 21,
+        "sequence_seed": [
+          809786225,
+          3533326309,
+          2762515868,
+          1452218204
+        ]
+      },
+      {
+        "family": "shared_base",
+        "index": 22,
+        "sequence_seed": [
+          2463633075,
+          1950585208,
+          2268479918,
+          1314047860
+        ]
+      },
+      {
+        "family": "shared_base",
+        "index": 23,
+        "sequence_seed": [
+          368569759,
+          1675584509,
+          3274662474,
+          2526511800
+        ]
+      },
+      {
+        "family": "shared_base",
+        "index": 24,
+        "sequence_seed": [
+          4205798308,
+          2424105910,
+          4275393888,
+          632982542
+        ]
+      },
+      {
+        "family": "shared_base",
+        "index": 25,
+        "sequence_seed": [
+          3503549814,
+          2406320173,
+          3083979128,
+          2941154991
+        ]
+      },
+      {
+        "family": "shared_base",
+        "index": 26,
+        "sequence_seed": [
+          203303248,
+          1387630917,
+          188855458,
+          1661036196
+        ]
+      },
+      {
+        "family": "shared_base",
+        "index": 27,
+        "sequence_seed": [
+          3845439870,
+          1456395855,
+          687344758,
+          1652183194
+        ]
+      },
+      {
+        "family": "shared_base",
+        "index": 28,
+        "sequence_seed": [
+          714760089,
+          2098024883,
+          1448623904,
+          378435769
+        ]
+      },
+      {
+        "family": "shared_base",
+        "index": 29,
+        "sequence_seed": [
+          876540654,
+          2190544659,
+          2546076810,
+          2919347249
+        ]
+      },
+      {
+        "family": "shared_base",
+        "index": 30,
+        "sequence_seed": [
+          3706378239,
+          3286953356,
+          3104152956,
+          1196732970
+        ]
+      },
+      {
+        "family": "shared_base",
+        "index": 31,
+        "sequence_seed": [
+          3217517943,
+          638771287,
+          4285865475,
+          1951497326
+        ]
+      },
+      {
+        "family": "shared_base",
+        "index": 32,
+        "sequence_seed": [
+          437793234,
+          344731527,
+          2029875306,
+          885174434
+        ]
+      },
+      {
+        "family": "shared_base",
+        "index": 33,
+        "sequence_seed": [
+          1840894677,
+          2323992115,
+          738608012,
+          4091427666
+        ]
+      },
+      {
+        "family": "shared_base",
+        "index": 34,
+        "sequence_seed": [
+          1057892464,
+          414825322,
+          1259187611,
+          2291571623
+        ]
+      },
+      {
+        "family": "shared_base",
+        "index": 35,
+        "sequence_seed": [
+          548387311,
+          2148162132,
+          3343774264,
+          749160293
+        ]
+      },
+      {
+        "family": "shared_base",
+        "index": 36,
+        "sequence_seed": [
+          1312418571,
+          1922866015,
+          3442368582,
+          848048157
+        ]
+      },
+      {
+        "family": "shared_base",
+        "index": 37,
+        "sequence_seed": [
+          739784056,
+          4198480246,
+          625345624,
+          3255342179
+        ]
+      },
+      {
+        "family": "shared_base",
+        "index": 38,
+        "sequence_seed": [
+          2152858474,
+          1556796742,
+          934119641,
+          2471710197
+        ]
+      },
+      {
+        "family": "shared_base",
+        "index": 39,
+        "sequence_seed": [
+          2731589239,
+          2414973655,
+          2830552797,
+          3133895149
+        ]
+      },
+      {
+        "family": "shared_base",
+        "index": 40,
+        "sequence_seed": [
+          1756371114,
+          2306915651,
+          3301009605,
+          3188487760
+        ]
+      },
+      {
+        "family": "shared_base",
+        "index": 41,
+        "sequence_seed": [
+          1102697701,
+          1610391672,
+          4063848572,
+          746641941
+        ]
+      },
+      {
+        "family": "shared_base",
+        "index": 42,
+        "sequence_seed": [
+          945130286,
+          3950348400,
+          1737666578,
+          335578432
+        ]
+      },
+      {
+        "family": "shared_base",
+        "index": 43,
+        "sequence_seed": [
+          248664750,
+          782836815,
+          3282290623,
+          4140887324
+        ]
+      },
+      {
+        "family": "shared_base",
+        "index": 44,
+        "sequence_seed": [
+          4274095438,
+          1706961881,
+          3512065227,
+          3084740916
+        ]
+      },
+      {
+        "family": "shared_base",
+        "index": 45,
+        "sequence_seed": [
+          2601464656,
+          1690301927,
+          216423218,
+          2538243776
+        ]
+      },
+      {
+        "family": "shared_base",
+        "index": 46,
+        "sequence_seed": [
+          1349130603,
+          2143005278,
+          4030352416,
+          1327703204
+        ]
+      },
+      {
+        "family": "shared_base",
+        "index": 47,
+        "sequence_seed": [
+          1624433992,
+          263778057,
+          3109118244,
+          3234235479
+        ]
+      },
+      {
+        "family": "shared_base",
+        "index": 48,
+        "sequence_seed": [
+          2636648502,
+          987150401,
+          3962345347,
+          1678806223
+        ]
+      },
+      {
+        "family": "shared_base",
+        "index": 49,
+        "sequence_seed": [
+          4029611845,
+          3314722069,
+          1607515269,
+          2342430981
+        ]
+      },
+      {
+        "family": "shared_base",
+        "index": 50,
+        "sequence_seed": [
+          1398941237,
+          2512920802,
+          1927245102,
+          3437273963
+        ]
+      },
+      {
+        "family": "shared_base",
+        "index": 51,
+        "sequence_seed": [
+          4218734025,
+          2257464236,
+          660581015,
+          2151322482
+        ]
+      },
+      {
+        "family": "shared_base",
+        "index": 52,
+        "sequence_seed": [
+          3541681054,
+          1911495057,
+          3807177995,
+          314870121
+        ]
+      },
+      {
+        "family": "shared_base",
+        "index": 53,
+        "sequence_seed": [
+          4002233315,
+          1951404527,
+          2241644282,
+          2591926115
+        ]
+      },
+      {
+        "family": "shared_base",
+        "index": 54,
+        "sequence_seed": [
+          2200224599,
+          1890844068,
+          2558360280,
+          193870542
+        ]
+      },
+      {
+        "family": "shared_base",
+        "index": 55,
+        "sequence_seed": [
+          3990865100,
+          754494589,
+          704673911,
+          1310889527
+        ]
+      },
+      {
+        "family": "shared_base",
+        "index": 56,
+        "sequence_seed": [
+          3491428889,
+          224054742,
+          3369584172,
+          2134149814
+        ]
+      },
+      {
+        "family": "shared_base",
+        "index": 57,
+        "sequence_seed": [
+          2829555125,
+          1997118344,
+          3381196721,
+          1434031139
+        ]
+      },
+      {
+        "family": "shared_base",
+        "index": 58,
+        "sequence_seed": [
+          1897011917,
+          302543507,
+          4137881476,
+          536155931
+        ]
+      },
+      {
+        "family": "shared_base",
+        "index": 59,
+        "sequence_seed": [
+          1007930847,
+          100092512,
+          4176571410,
+          2157547134
+        ]
+      },
+      {
+        "family": "shared_base",
+        "index": 60,
+        "sequence_seed": [
+          855265528,
+          38876808,
+          1683774115,
+          2225772667
+        ]
+      },
+      {
+        "family": "shared_base",
+        "index": 61,
+        "sequence_seed": [
+          2714606012,
+          3394370631,
+          819419079,
+          1842339442
+        ]
+      },
+      {
+        "family": "shared_base",
+        "index": 62,
+        "sequence_seed": [
+          3235070015,
+          4186345955,
+          2754192976,
+          1664930794
+        ]
+      },
+      {
+        "family": "shared_base",
+        "index": 63,
+        "sequence_seed": [
+          3139614607,
+          941107328,
+          337736809,
+          2874204782
+        ]
+      },
+      {
+        "family": "shared_base",
+        "index": 64,
+        "sequence_seed": [
+          670204603,
+          2971668037,
+          3990295592,
+          2281859727
+        ]
+      },
+      {
+        "family": "shared_base",
+        "index": 65,
+        "sequence_seed": [
+          621650485,
+          1661558576,
+          15404772,
+          3556600916
+        ]
+      },
+      {
+        "family": "shared_base",
+        "index": 66,
+        "sequence_seed": [
+          3216928079,
+          3439375649,
+          3044425467,
+          2371987302
+        ]
+      },
+      {
+        "family": "shared_base",
+        "index": 67,
+        "sequence_seed": [
+          3403286912,
+          3943994425,
+          4150614660,
+          842712559
+        ]
+      },
+      {
+        "family": "shared_base",
+        "index": 68,
+        "sequence_seed": [
+          1116352193,
+          1793407156,
+          2514474823,
+          4210483112
+        ]
+      },
+      {
+        "family": "uniform_base",
+        "index": 5,
+        "sequence_seed": [
+          1487410634,
+          2399748744,
+          2771360583,
+          621497809
+        ]
+      },
+      {
+        "family": "uniform_base",
+        "index": 6,
+        "sequence_seed": [
+          410991958,
+          1302279359,
+          3240911467,
+          21397580
+        ]
+      },
+      {
+        "family": "uniform_base",
+        "index": 7,
+        "sequence_seed": [
+          1722324623,
+          243934512,
+          3198206592,
+          1399450930
+        ]
+      },
+      {
+        "family": "uniform_base",
+        "index": 8,
+        "sequence_seed": [
+          3633584476,
+          1045872974,
+          900713238,
+          1816005397
+        ]
+      },
+      {
+        "family": "uniform_base",
+        "index": 9,
+        "sequence_seed": [
+          59787114,
+          3923690529,
+          1427524776,
+          1887192220
+        ]
+      },
+      {
+        "family": "uniform_base",
+        "index": 10,
+        "sequence_seed": [
+          2691558341,
+          2847553662,
+          1488966143,
+          308381521
+        ]
+      },
+      {
+        "family": "uniform_base",
+        "index": 11,
+        "sequence_seed": [
+          1182380411,
+          625495096,
+          2051593485,
+          2498660913
+        ]
+      },
+      {
+        "family": "uniform_base",
+        "index": 12,
+        "sequence_seed": [
+          3702150189,
+          356690671,
+          4040147238,
+          1712810659
+        ]
+      },
+      {
+        "family": "uniform_base",
+        "index": 13,
+        "sequence_seed": [
+          3962919198,
+          3242820254,
+          2430956718,
+          1680714440
+        ]
+      },
+      {
+        "family": "uniform_base",
+        "index": 14,
+        "sequence_seed": [
+          95736134,
+          586141235,
+          605351374,
+          2404357941
+        ]
+      },
+      {
+        "family": "uniform_base",
+        "index": 15,
+        "sequence_seed": [
+          2472183525,
+          1795658347,
+          3214840270,
+          3482187379
+        ]
+      },
+      {
+        "family": "uniform_base",
+        "index": 16,
+        "sequence_seed": [
+          3991484888,
+          1153724482,
+          760832243,
+          310024253
+        ]
+      },
+      {
+        "family": "uniform_base",
+        "index": 17,
+        "sequence_seed": [
+          1637634384,
+          1712041821,
+          1261064842,
+          23691801
+        ]
+      },
+      {
+        "family": "uniform_base",
+        "index": 18,
+        "sequence_seed": [
+          1595657209,
+          1012116235,
+          1214391857,
+          1837711446
+        ]
+      },
+      {
+        "family": "uniform_base",
+        "index": 19,
+        "sequence_seed": [
+          849735864,
+          338875764,
+          333308543,
+          3461410406
+        ]
+      },
+      {
+        "family": "uniform_base",
+        "index": 20,
+        "sequence_seed": [
+          3452287297,
+          1376365812,
+          2289000331,
+          2610957884
+        ]
+      },
+      {
+        "family": "uniform_base",
+        "index": 21,
+        "sequence_seed": [
+          1019387920,
+          4159108180,
+          3996119141,
+          3979570085
+        ]
+      },
+      {
+        "family": "uniform_base",
+        "index": 22,
+        "sequence_seed": [
+          913772799,
+          2377209480,
+          2458365853,
+          3502041170
+        ]
+      },
+      {
+        "family": "uniform_base",
+        "index": 23,
+        "sequence_seed": [
+          3050327624,
+          1026875273,
+          799138122,
+          544013715
+        ]
+      },
+      {
+        "family": "uniform_base",
+        "index": 24,
+        "sequence_seed": [
+          1300427333,
+          4261957317,
+          906747997,
+          1846592158
+        ]
+      },
+      {
+        "family": "uniform_base",
+        "index": 25,
+        "sequence_seed": [
+          1581823135,
+          659432261,
+          3774451312,
+          851476859
+        ]
+      },
+      {
+        "family": "uniform_base",
+        "index": 26,
+        "sequence_seed": [
+          1345259888,
+          4039742739,
+          372925533,
+          831788706
+        ]
+      },
+      {
+        "family": "uniform_base",
+        "index": 27,
+        "sequence_seed": [
+          128962394,
+          889646582,
+          1551525693,
+          723306882
+        ]
+      },
+      {
+        "family": "uniform_base",
+        "index": 28,
+        "sequence_seed": [
+          887625794,
+          2910174321,
+          1477934097,
+          1621659268
+        ]
+      },
+      {
+        "family": "uniform_base",
+        "index": 29,
+        "sequence_seed": [
+          3748996090,
+          3309318007,
+          2224594078,
+          787281874
+        ]
+      },
+      {
+        "family": "uniform_base",
+        "index": 30,
+        "sequence_seed": [
+          4251099184,
+          3589721438,
+          1085602162,
+          373049207
+        ]
+      },
+      {
+        "family": "uniform_base",
+        "index": 31,
+        "sequence_seed": [
+          3242063898,
+          2357633853,
+          282913477,
+          184181070
+        ]
+      },
+      {
+        "family": "uniform_base",
+        "index": 32,
+        "sequence_seed": [
+          108169189,
+          4005864926,
+          2731292582,
+          2766054572
+        ]
+      },
+      {
+        "family": "uniform_base",
+        "index": 33,
+        "sequence_seed": [
+          2948182045,
+          1058876736,
+          287219369,
+          1672556720
+        ]
+      },
+      {
+        "family": "uniform_base",
+        "index": 34,
+        "sequence_seed": [
+          2506870725,
+          1873974334,
+          2719224901,
+          59581415
+        ]
+      },
+      {
+        "family": "uniform_base",
+        "index": 35,
+        "sequence_seed": [
+          2062319680,
+          3552373195,
+          1996720000,
+          1416996239
+        ]
+      },
+      {
+        "family": "uniform_base",
+        "index": 36,
+        "sequence_seed": [
+          2676419429,
+          3313338873,
+          3480759070,
+          3758832439
+        ]
+      },
+      {
+        "family": "uniform_base",
+        "index": 37,
+        "sequence_seed": [
+          2602094233,
+          873554534,
+          154609870,
+          4177362309
+        ]
+      },
+      {
+        "family": "uniform_base",
+        "index": 38,
+        "sequence_seed": [
+          3369687733,
+          1457269587,
+          3507056869,
+          2442568775
+        ]
+      },
+      {
+        "family": "uniform_base",
+        "index": 39,
+        "sequence_seed": [
+          1712794274,
+          1184023446,
+          3380840477,
+          4093965490
+        ]
+      },
+      {
+        "family": "uniform_base",
+        "index": 40,
+        "sequence_seed": [
+          2843805842,
+          4044421368,
+          1469374275,
+          4279827727
+        ]
+      },
+      {
+        "family": "uniform_base",
+        "index": 41,
+        "sequence_seed": [
+          2284591413,
+          3363164442,
+          831890205,
+          489573085
+        ]
+      },
+      {
+        "family": "uniform_base",
+        "index": 42,
+        "sequence_seed": [
+          3669029917,
+          4274612436,
+          936084495,
+          599992472
+        ]
+      },
+      {
+        "family": "uniform_base",
+        "index": 43,
+        "sequence_seed": [
+          542008632,
+          1585062211,
+          3547479117,
+          95311426
+        ]
+      },
+      {
+        "family": "uniform_base",
+        "index": 44,
+        "sequence_seed": [
+          1208990215,
+          2433166476,
+          2207831604,
+          661403873
+        ]
+      },
+      {
+        "family": "uniform_base",
+        "index": 45,
+        "sequence_seed": [
+          2822478385,
+          834645260,
+          3652125546,
+          1760896540
+        ]
+      },
+      {
+        "family": "uniform_base",
+        "index": 46,
+        "sequence_seed": [
+          2531434450,
+          116976358,
+          3912424426,
+          275353332
+        ]
+      },
+      {
+        "family": "uniform_base",
+        "index": 47,
+        "sequence_seed": [
+          983603931,
+          3903221278,
+          4117914763,
+          728865508
+        ]
+      },
+      {
+        "family": "uniform_base",
+        "index": 48,
+        "sequence_seed": [
+          1865928008,
+          1932931220,
+          1369575576,
+          1361289745
+        ]
+      },
+      {
+        "family": "uniform_base",
+        "index": 49,
+        "sequence_seed": [
+          423943765,
+          3343299372,
+          729848009,
+          2965404338
+        ]
+      },
+      {
+        "family": "uniform_base",
+        "index": 50,
+        "sequence_seed": [
+          2996805513,
+          1283196778,
+          909757121,
+          1879733070
+        ]
+      },
+      {
+        "family": "uniform_base",
+        "index": 51,
+        "sequence_seed": [
+          1768982697,
+          1091561094,
+          628449859,
+          2336347906
+        ]
+      },
+      {
+        "family": "uniform_base",
+        "index": 52,
+        "sequence_seed": [
+          154673329,
+          2178706984,
+          3564491717,
+          4015334045
+        ]
+      },
+      {
+        "family": "uniform_base",
+        "index": 53,
+        "sequence_seed": [
+          1885805161,
+          3803472692,
+          803211388,
+          2737108803
+        ]
+      },
+      {
+        "family": "uniform_base",
+        "index": 54,
+        "sequence_seed": [
+          83067054,
+          2648253052,
+          2574633782,
+          173211321
+        ]
+      },
+      {
+        "family": "uniform_base",
+        "index": 55,
+        "sequence_seed": [
+          3914013632,
+          496324513,
+          3258710825,
+          1517509898
+        ]
+      },
+      {
+        "family": "uniform_base",
+        "index": 56,
+        "sequence_seed": [
+          3518188587,
+          1737464268,
+          2882985607,
+          1409807243
+        ]
+      },
+      {
+        "family": "uniform_base",
+        "index": 57,
+        "sequence_seed": [
+          1118933531,
+          1381584650,
+          170840816,
+          763578109
+        ]
+      },
+      {
+        "family": "uniform_base",
+        "index": 58,
+        "sequence_seed": [
+          2662487628,
+          970330908,
+          935911004,
+          1398697531
+        ]
+      },
+      {
+        "family": "uniform_base",
+        "index": 59,
+        "sequence_seed": [
+          3884797010,
+          513515705,
+          3050900315,
+          468131174
+        ]
+      },
+      {
+        "family": "uniform_base",
+        "index": 60,
+        "sequence_seed": [
+          2826725435,
+          1958026668,
+          4042360041,
+          1018260692
+        ]
+      },
+      {
+        "family": "uniform_base",
+        "index": 61,
+        "sequence_seed": [
+          1101220741,
+          782258671,
+          2938628559,
+          3853715750
+        ]
+      },
+      {
+        "family": "uniform_base",
+        "index": 62,
+        "sequence_seed": [
+          2189431397,
+          92985949,
+          3410448976,
+          126348321
+        ]
+      },
+      {
+        "family": "uniform_base",
+        "index": 63,
+        "sequence_seed": [
+          1678895226,
+          2909957928,
+          1331012439,
+          2700535568
+        ]
+      },
+      {
+        "family": "uniform_base",
+        "index": 64,
+        "sequence_seed": [
+          3040795720,
+          641873775,
+          1195587969,
+          1190524062
+        ]
+      },
+      {
+        "family": "uniform_base",
+        "index": 65,
+        "sequence_seed": [
+          178604538,
+          2384511746,
+          1134767126,
+          2415978470
+        ]
+      },
+      {
+        "family": "uniform_base",
+        "index": 66,
+        "sequence_seed": [
+          3496716645,
+          2325024717,
+          3330445774,
+          1455385304
+        ]
+      },
+      {
+        "family": "uniform_base",
+        "index": 67,
+        "sequence_seed": [
+          3260009979,
+          3953219676,
+          1864977594,
+          882032650
+        ]
+      },
+      {
+        "family": "uniform_base",
+        "index": 68,
+        "sequence_seed": [
+          2118718426,
+          2126588623,
+          3287411332,
+          166131608
+        ]
+      }
+    ],
+    "n_per_family": 64,
+    "n_total": 192,
+    "indices": [
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      21,
+      22,
+      23,
+      24,
+      25,
+      26,
+      27,
+      28,
+      29,
+      30,
+      31,
+      32,
+      33,
+      34,
+      35,
+      36,
+      37,
+      38,
+      39,
+      40,
+      41,
+      42,
+      43,
+      44,
+      45,
+      46,
+      47,
+      48,
+      49,
+      50,
+      51,
+      52,
+      53,
+      54,
+      55,
+      56,
+      57,
+      58,
+      59,
+      60,
+      61,
+      62,
+      63,
+      64,
+      65,
+      66,
+      67,
+      68
+    ],
+    "observation_times": [
+      16,
+      64
+    ],
+    "family_order": [
+      "product",
+      "shared_base",
+      "uniform_base"
+    ],
+    "family_prior": [
+      0.3333333333333333,
+      0.3333333333333333,
+      0.3333333333333333
+    ],
+    "input_sha256": {
+      "heldout/product_prior.json": "b7eaa029d56c2087847a9359a078ab49ed378099b3538b43caa17c5bfc26710c",
+      "heldout/product_prior.npz": "6a66459c00f6b3850e3f8bad4002869c41e0d83c1494cd8f51ac2241dd017f96",
+      "eval/pooled_seed0/product_prior.npz": "e471d1e93896caf109c000a7255d7efdac63da0b33c309f62eea4301d1641aa5",
+      "eval/pooled_seed0/product_prior.json": "1626d1e480c4e2badcc5068726fe7ac774e8d10c091d4eeaa5d7bac88130ab00",
+      "eval/pooled_seed1/product_prior.npz": "094bd25c7b08b9783ff223239dcdea4684f841c95b8b7cca1cf8c34271c7d31a",
+      "eval/pooled_seed1/product_prior.json": "97708ea4f287bd3608272224dc4c429f541d7b2cfc58225b711edecb4e48e230",
+      "heldout/shared_base_prior.json": "412981a812c2b31736449d4eef1bee89ae88baeac819f492045de8981441971d",
+      "heldout/shared_base_prior.npz": "68a12be7e92bbd4f7130265c9cb953108edbb21cc13adc16d24a14a91e7f03fa",
+      "eval/pooled_seed0/shared_base_prior.npz": "320a332a430b29483e365f1ee17bcc7d88e5ad879171d555c7a7a0dd12d704db",
+      "eval/pooled_seed0/shared_base_prior.json": "f64f3b0473353e08f96c5c7ac86ab1b59ff12ab63093529d9b908333e11990a8",
+      "eval/pooled_seed1/shared_base_prior.npz": "d23851517930587b4f5113b7e19e90abed924b1875de04902bd15d3cc763008e",
+      "eval/pooled_seed1/shared_base_prior.json": "c684ae17cb5444dfc7b803e581a35e20338eb97e4bbfefaf73a3bc614d720541",
+      "heldout/uniform_base_prior.json": "32b753cd26e124678cf85c2e4e6c3c9b985d7e1fde4769b80431918e2d4c7a95",
+      "heldout/uniform_base_prior.npz": "57a5261e6cbca7283247d9a491b82689be0ac10042152851ac6e7a7bff2a5ded",
+      "eval/pooled_seed0/uniform_base_prior.npz": "5f1b89e02c813048c67bd6f8140f59ea37b924d14fe06fcba5fc94e3fbb5c441",
+      "eval/pooled_seed0/uniform_base_prior.json": "d2788e172914890d5c7e02b16a99a1db356c0724537373225d40de276731dc5b",
+      "eval/pooled_seed1/uniform_base_prior.npz": "8b4eaa84482ca088865c633c31a3c215ccb52c8a8c92aaa9cf87becf531e0f05",
+      "eval/pooled_seed1/uniform_base_prior.json": "baf65065d5c6a4525423e240daf264e8f96ce4ff26892f9314a2d39e1c94035a",
+      "heldout/manifest.json": "4069cfc5ae0be1d7851eb73b4b912eedf280ecc069c59635f9bf7b84da975dc0"
+    },
+    "selection": "Existing independent full-prior draws, fixed indices5..68 in every family. No outcome-dependent selection.",
+    "development_indices": [
+      1,
+      2,
+      3,
+      4
+    ],
+    "development_cases": [
+      {
+        "family": "product",
+        "index": 1,
+        "sequence_seed": [
+          4036832030,
+          4073145762,
+          84041734,
+          2441559143
+        ]
+      },
+      {
+        "family": "product",
+        "index": 2,
+        "sequence_seed": [
+          4068510520,
+          1321766787,
+          1103532627,
+          1528945469
+        ]
+      },
+      {
+        "family": "product",
+        "index": 3,
+        "sequence_seed": [
+          2374070558,
+          3008591723,
+          2809331882,
+          1183121724
+        ]
+      },
+      {
+        "family": "product",
+        "index": 4,
+        "sequence_seed": [
+          3517297780,
+          724196935,
+          625790893,
+          3605810391
+        ]
+      },
+      {
+        "family": "shared_base",
+        "index": 1,
+        "sequence_seed": [
+          782876972,
+          2191032426,
+          299002066,
+          4019863027
+        ]
+      },
+      {
+        "family": "shared_base",
+        "index": 2,
+        "sequence_seed": [
+          1293717716,
+          4075620644,
+          1588411383,
+          2512006741
+        ]
+      },
+      {
+        "family": "shared_base",
+        "index": 3,
+        "sequence_seed": [
+          3520924254,
+          148261915,
+          1587291089,
+          3716605142
+        ]
+      },
+      {
+        "family": "shared_base",
+        "index": 4,
+        "sequence_seed": [
+          2268814500,
+          2603737374,
+          3927032914,
+          2456228670
+        ]
+      },
+      {
+        "family": "uniform_base",
+        "index": 1,
+        "sequence_seed": [
+          3770142688,
+          3085784646,
+          1684705065,
+          1807409893
+        ]
+      },
+      {
+        "family": "uniform_base",
+        "index": 2,
+        "sequence_seed": [
+          2949968398,
+          1516156352,
+          3559166991,
+          4076987125
+        ]
+      },
+      {
+        "family": "uniform_base",
+        "index": 3,
+        "sequence_seed": [
+          2531732905,
+          4217721652,
+          1814868959,
+          2647041709
+        ]
+      },
+      {
+        "family": "uniform_base",
+        "index": 4,
+        "sequence_seed": [
+          4210507146,
+          860244883,
+          2962787477,
+          1753553183
+        ]
+      }
+    ],
+    "scope": "Selection only. No production sampler effort or scientific acceptance certified. First benchmark16, then64. No automatic population launch.",
+    "source_generation": false,
+    "transformer_inference": false
+  },
+  "selection_digest": "86b429da9f506508c21451da0b018454408f917ee7c086d18a7c63b923a9d141",
+  "variants": {
+    "A": {
+      "particles": 8192,
+      "temperatures": 64,
+      "moves": 4,
+      "alpha_order": 16,
+      "row_bounds": [
+        -32.0,
+        32.0
+      ],
+      "row_step": 0.03125
+    },
+    "B": {
+      "particles": 16384,
+      "temperatures": 128,
+      "moves": 4,
+      "alpha_order": 16,
+      "row_bounds": [
+        -32.0,
+        32.0
+      ],
+      "row_step": 0.03125
+    },
+    "C": {
+      "particles": 16384,
+      "temperatures": 128,
+      "moves": 4,
+      "alpha_order": 32,
+      "row_bounds": [
+        -32.0,
+        32.0
+      ],
+      "row_step": 0.03125
+    },
+    "D": {
+      "particles": 16384,
+      "temperatures": 128,
+      "moves": 4,
+      "alpha_order": 16,
+      "row_bounds": [
+        -40.0,
+        40.0
+      ],
+      "row_step": 0.015625
+    }
+  },
+  "publication_arm": "B",
+  "stages": {
+    "timing": {
+      "repetitions": 1,
+      "seconds_per_replica": 1200,
+      "allocation_minutes": 30,
+      "concurrency": 12
+    },
+    "refinement_timing": {
+      "repetitions": 1,
+      "seconds_per_replica": 2400,
+      "allocation_minutes": 45,
+      "concurrency": 12
+    },
+    "refine": {
+      "repetitions": {
+        "A": 64,
+        "B": 32,
+        "C": 32,
+        "D": 32
+      },
+      "seconds_per_replica": 1800,
+      "allocation_minutes": 60,
+      "concurrency": 64
+    },
+    "population": {
+      "repetitions": 64,
+      "seconds_per_replica": 1800,
+      "allocation_minutes": 45,
+      "concurrency": 64
+    }
+  },
+  "resource_limits": {
+    "maximum_total_projected_cpu_hours": 4096,
+    "maximum_attempts_per_task": 2,
+    "timing_safety_factor": 2.0,
+    "maximum_array_size": 768
+  },
+  "criteria": {
+    "tolerance_bits": 0.01,
+    "mcse_multiplier": 3.0,
+    "minimum_replicates": 32,
+    "minimum_effective_replica_count": 8.0,
+    "maximum_likelihood_share": 0.2,
+    "normalization_tolerance": 1e-07,
+    "maximum_relative_mcse": 0.1,
+    "cohort_mcse_multiplier": 2.0,
+    "cohort_bias_multiplier": 2.0,
+    "cohort_absolute_budget_bits": 0.0033333333333333335,
+    "cohort_se_fraction": 0.25
+  },
+  "code_sha256": {
+    "code/scripts/calibrate_shared_base_evidence.py": "686eae195eb15ef261f630656dc4709bfdbdffdd4d4abbc370635e1fbfed8e9a",
+    "code/scripts/conditional_shared_base_first_step.py": "8abba4e59ddbbe6ac4484d029f88d4244db50237d5726eabadd0f6325209f5cd",
+    "code/scripts/pooled_predictive_calibration.py": "2578c54a57f12abcd96f63e58bcaffbaa343e8bd8669dac40d5192d04670c359",
+    "code/scripts/pooled_predictive_pilot.py": "18febb5d18f62297a3635df7123a50d67d6f03fda6dfd69c8600a84c598d24b7",
+    "code/scripts/shortprefix_shared_base_exact.py": "b6e229cb48f9b1a58e570521df9eb92ebec65da6b0db8386c3a23a71183791a6",
+    "code/scripts/shortprefix_shared_base_summary.py": "71bb461091932c015b3e816ec68f6320f0ccb8eae75795e31c57b5e840afadfc",
+    "code/transformer/lsa_seq.py": "7e39960e91f3bb27eea82e201afd8a86ce717ea50a304daa86534b4fdbadfc51",
+    "code/transformer/mixture_family_evidence.py": "86e79efcc8b98aa5a66aa3dd1548ddf88f53c39dd5ab3ec972160358775caf57",
+    "code/transformer/phi_source.py": "456eb407fd7f280786a441681a704a6fff172af9fc9aea3c6f9456fb55174831",
+    "code/transformer/ranked_lsa.py": "3fa7952048ab3f25d508dda8c2a7c232064aa5db56008de8b4ed9623709aac8d",
+    "code/transformer/shared_base_evidence_smc.py": "f3f7fe00cd9c05cae6cfe23310416cb50e9566cdea319113412f9efabb2f4709",
+    "code/transformer/shared_base_mcmc.py": "26469e21c04fc2fe91a40bcb418aff3ae866fe707b2ee198d644091580b1f7a8",
+    "code/transformer/shared_base_predictive_smc.py": "21cb91566185fff2bb26eaffef1d767cec080c1f8aa1eae3e26029c33a541787",
+    "code/transformer/shared_base_short_evidence.py": "085d517efe914902390e1499d67fa27423d430fc7e1b742b82c98ebc971f4171",
+    "code/transformer/shared_depth.py": "616f536153458499078d17d7939e6a800c7b52e3eb4f1dd6503db95030d7a395",
+    "code/transformer/source.py": "d1bb83004e3654cb3f84f6083437cae2b6d71fa19a33b06d26d2455ac440dab4",
+    "code/transformer/validate_shared_depth.py": "0e1901d4d09ffa768c59c034eb3a7474418e3e656817d3b0f6cd64197517ec7f",
+    "code/transformer/weighted_lsa.py": "847f0ffaa622d86e88633447327dce8e7f518e4c86c1e44e76a794e470d2dec9"
+  },
+  "calibration_plan_sha256": "4d8be69946dece7e739a86d08992946988f66c47dcc0978616c54030cb2e03bf",
+  "cheap_numerics": {
+    "default_bounds": [
+      -30.0,
+      30.0
+    ],
+    "default_step": 0.015625,
+    "refined_bounds": [
+      -40.0,
+      40.0
+    ],
+    "refined_step": 0.0078125
+  },
+  "automatic_population_submission": false,
+  "scientific_reference_validated": false,
+  "scope": "Timing is allowed before the exact-short decision and is never an accuracy result. Scientific stages require unchanged successful exact-short calibration, complete long-context refinements, and bounded projected total cost. All failed histories remain in coverage. Same 192 transformer and Bayesian histories; source and numerical uncertainty separate."
+}

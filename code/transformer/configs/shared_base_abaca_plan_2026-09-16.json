@@ -1,0 +1,99 @@
+{
+  "schema": "shared-base-cluster-plan-v1",
+  "date": "2026-09-16",
+  "purpose": "Independent fixed-budget ABACA check after the six-control CPU calibration narrowly missed its declared accuracy criterion on this case.",
+  "production_reference_approved": false,
+  "prior": {
+    "alphabet": 64,
+    "alpha_uniform": [
+      0.5,
+      1.5
+    ],
+    "depth_uniform": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8
+    ],
+    "permutation": "uniform"
+  },
+  "cases": [
+    {
+      "id": "cal_abaca",
+      "name": "abaca",
+      "kind": "exact_stress_control",
+      "tokens": [
+        0,
+        1,
+        0,
+        2,
+        0
+      ],
+      "known_log_evidence": -17.70436765400922
+    }
+  ],
+  "stages": {
+    "abaca_check": {
+      "purpose": "confirmation",
+      "requires": [],
+      "case_ids": [
+        "cal_abaca"
+      ],
+      "n_tokens": 5,
+      "particles": 16384,
+      "temperatures": 64,
+      "moves": 4,
+      "replicates": 128,
+      "alpha_order": 16,
+      "seed": 2026091650,
+      "grid_bounds": [
+        -32.0,
+        32.0
+      ],
+      "grid_step": 0.03125,
+      "sampler": "original"
+    }
+  },
+  "dependency_manifest": "code/transformer/configs/shared_base_dependency_manifest_2026-09-16.json",
+  "dependency_manifest_sha256": "c1a2d96e3c6ce081ee58de77c7e25b578de5af1cc08665504022d1745c53166d",
+  "acceptance": {
+    "exact_short": {
+      "tolerance_bits": 0.01,
+      "minimum_completed_replicates": 16,
+      "minimum_effective_replica_count": 8,
+      "maximum_single_replica_likelihood_share": 0.2
+    },
+    "long_precision_bits": 0.01,
+    "production_reference_approved": false
+  },
+  "followup_of": {
+    "original_plan": "code/transformer/configs/shared_base_cluster_plan_2026-09-16.json",
+    "original_plan_sha256": "4cb87e20efb79acc22df99c88631fbab39e089cc82e19591bef647730baf8331",
+    "original_stage": "calibrate"
+  },
+  "selection": {
+    "case": "cal_abaca",
+    "reason": "Original 64-repetition CPU result: estimated loss error 0.005314211380881062 bits; absolute error plus 95% interval halfwidth 0.010028366546684708 bits against the unchanged 0.01-bit threshold.",
+    "fixed_budget": "128 fresh repetitions at 16384 particles; complete the whole batch and assess once. Preserve all results regardless of outcome.",
+    "independence": "Master seed 2026091650 differs from all original CPU stages and the GPU benchmark. Each global repetition index 0..127 receives a distinct derived seed.",
+    "old_records": "Original six-case calibration, including failed ABACA, stays unchanged. The other five controls are reused in the comparison. Do not pool estimates across the two particle counts."
+  },
+  "comparison": {
+    "original_receipt": "output/scitas_shared_base_2026-09-16/merged/calibrate.json",
+    "followup_receipt": "output/scitas_shared_base_abaca_2026-09-16/merged/abaca_check.json",
+    "out": "output/scitas_shared_base_abaca_2026-09-16/comparison.json",
+    "method": "Independently validate both complete receipts and recompute their statistics from raw repetitions. Keep original and new ABACA estimates separate; list which receipt supports each of the six controls.",
+    "scope": "A short-control diagnostic. It does not modify or automatically satisfy original-stage prerequisites, authorize production references, or validate long sequences."
+  },
+  "limitations": [
+    "The case and follow-up effort were chosen after observing the original failure; this is disclosed numerical calibration, not untouched confirmation of the source-learning claim.",
+    "The approximate 95% Monte Carlo interval does not bound discretization bias or missed modes.",
+    "Quadrature refinement and broader confirmation remain separate future checks.",
+    "Standalone requires=[] makes this independently executable; it does not change any gate in the original plan."
+  ]
+}

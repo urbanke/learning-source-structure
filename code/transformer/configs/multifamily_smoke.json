@@ -1,0 +1,26 @@
+{
+  "schema": "mixture-training-v1",
+  "experiment": "multifamily-cpu-smoke-only",
+  "seed": 0,
+  "d": 64,
+  "n_ctx": 16,
+  "batch": 6,
+  "steps": 6,
+  "warmup": 1,
+  "lr": 0.0003,
+  "wd": 0.1,
+  "clip": 1.0,
+  "n_layer": 1,
+  "n_head": 2,
+  "d_model": 16,
+  "val_n": 2,
+  "log_every": 1,
+  "val_every": 3,
+  "ckpt_every": 3,
+  "weight_steps": [
+    3,
+    6
+  ],
+  "validation_seed": 20260916,
+  "val_chunk": 2
+}

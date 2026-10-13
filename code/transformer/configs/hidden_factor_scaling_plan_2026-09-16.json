@@ -1,0 +1,191 @@
+{
+  "schema": "hidden-factor-scaling-plan-v1",
+  "experiment": "hidden-factor-scaling-2026-09-16",
+  "source_dimensions": [
+    2,
+    8
+  ],
+  "seeds": [
+    0,
+    1
+  ],
+  "implementation_sha256": {
+    "hidden_factor.py": "f35bd787af99d19d2bcf4c2a69f9a7e85a089e7ad7676031c07de400544bef65",
+    "model.py": "742fe0e5c8ffaecee8072a3b270b23beaa2e0bd2a94d1a27a9af67c31eff9c28",
+    "train_hidden_factor.py": "55f067abb92bc8859b5945bc987fcdce501bdd17437664f3ec06b2f5d7438f07",
+    "train_mixture.py": "c364416f472813bd2e5bbfe988af710a278cbac1e73ff14b58611916fe123d2d"
+  },
+  "baseline": {
+    "config": {
+      "schema": "hidden-factor-training-v1",
+      "experiment": "hidden-factor-dirichlet1-v1",
+      "n_ctx": 1024,
+      "batch": 64,
+      "steps": 100000,
+      "warmup": 1000,
+      "lr": 0.0003,
+      "wd": 0.1,
+      "clip": 1.0,
+      "n_layer": 2,
+      "n_head": 4,
+      "d_model": 128,
+      "val_n": 256,
+      "log_every": 100,
+      "val_every": 5000,
+      "ckpt_every": 10000,
+      "weight_steps": [
+        100000
+      ],
+      "validation_seed": 20260917,
+      "val_chunk": 32
+    },
+    "final_step": 100000,
+    "completed_sequences": 6400000,
+    "n_params": 531968,
+    "checkpoint_sha256": {
+      "0": "7b9f3788ed32101961df0fd85ba7e4584c654337ecc78eb1096fe19790331022",
+      "1": "c2209b6d3f93f82db64ed7b2bc055b4f0bc55d799c1d88c34dbc51333042f17f"
+    },
+    "model_records_sha256": {
+      "seed0": "dfe1b0a6212971233f7b0782a032d5044d2e1a70bf80a6dfa8f69db64c88d847",
+      "seed1": "c24f3d6a769cb5906af1f6b428847763662ae383a1b3b67a301759b25a80dca9"
+    },
+    "reference_records_sha256": "f622dafbcdb6464965e5b617657c8f0bd426551a32c85c9f820c64199ffc88d0",
+    "summary_sha256": "11eeaee756eb3c090942102d9eede15df930a14aebdfb4ecc836af2873fb51b3"
+  },
+  "arms": {
+    "longsmall": {
+      "mode": "continuation",
+      "config": {
+        "schema": "hidden-factor-training-v1",
+        "experiment": "hidden-factor-dirichlet1-v1",
+        "n_ctx": 1024,
+        "batch": 64,
+        "steps": 400000,
+        "warmup": 1000,
+        "lr": 0.0003,
+        "wd": 0.1,
+        "clip": 1.0,
+        "n_layer": 2,
+        "n_head": 4,
+        "d_model": 128,
+        "val_n": 256,
+        "log_every": 100,
+        "val_every": 5000,
+        "ckpt_every": 10000,
+        "weight_steps": [
+          200000,
+          400000
+        ],
+        "validation_seed": 20260917,
+        "val_chunk": 32
+      },
+      "parent_config": {
+        "schema": "hidden-factor-training-v1",
+        "experiment": "hidden-factor-dirichlet1-v1",
+        "n_ctx": 1024,
+        "batch": 64,
+        "steps": 100000,
+        "warmup": 1000,
+        "lr": 0.0003,
+        "wd": 0.1,
+        "clip": 1.0,
+        "n_layer": 2,
+        "n_head": 4,
+        "d_model": 128,
+        "val_n": 256,
+        "log_every": 100,
+        "val_every": 5000,
+        "ckpt_every": 10000,
+        "weight_steps": [
+          100000
+        ],
+        "validation_seed": 20260917,
+        "val_chunk": 32
+      },
+      "parent_step": 100000,
+      "parent_completed_sequences": 6400000,
+      "continuation_lr": 3e-05,
+      "n_params": 531968,
+      "additional_sequences": 19200000,
+      "interpretation": "Additional low-rate optimization on fresh sequences, with the original optimizer and RNG state retained; failure does not rule out another learning-rate schedule."
+    },
+    "large": {
+      "mode": "fresh",
+      "config": {
+        "schema": "hidden-factor-training-v1",
+        "experiment": "hidden-factor-dirichlet1-v1",
+        "n_ctx": 1024,
+        "batch": 64,
+        "steps": 100000,
+        "warmup": 1000,
+        "lr": 0.0003,
+        "wd": 0.1,
+        "clip": 1.0,
+        "n_layer": 4,
+        "n_head": 8,
+        "d_model": 256,
+        "val_n": 256,
+        "log_every": 100,
+        "val_every": 5000,
+        "ckpt_every": 10000,
+        "weight_steps": [
+          50000,
+          100000
+        ],
+        "validation_seed": 20260917,
+        "val_chunk": 32
+      },
+      "n_params": 3429888,
+      "interpretation": "Changes depth,width and head count together; same training sequence count and original schedule. Does not isolate which architecture change helps."
+    }
+  },
+  "test": {
+    "cohort_id": "47b562f94e235d3eb63b8da89a9cc7f60d14c175af85c9db0cdcc3cf0edd0be1",
+    "data_sha256": "3702b05ec9eef063ba30c4f85ee7cbf6919072da19748bb3a7e7e5b5b3348353",
+    "n_evaluate": 256,
+    "n_planned": 4096,
+    "length": 1025,
+    "times": [
+      1,
+      4,
+      16,
+      64,
+      256,
+      1024
+    ],
+    "role": "development",
+    "interpretation": "Existing pilot motivated the follow-up; it is reused for paired diagnosis, not called untouched confirmation."
+  },
+  "primary": {
+    "quantity": "Expected next-token regret difference from informed Bayes",
+    "time": 1024,
+    "seeds": "Report separately; do not pick the better seed.",
+    "steps": {
+      "longsmall": 400000,
+      "large": 100000
+    },
+    "uncertainty": "One paired standard error across independent sequences; also retain paired improvements over the same-seed baseline."
+  },
+  "secondary": [
+    "All six-time next-token regret curves",
+    "Realized cumulative loss differences from Bayes",
+    "All four frozen source-only entropy groups"
+  ],
+  "benchmark": {
+    "arm": "large",
+    "seed": 0,
+    "steps": 1000,
+    "separate_output": true,
+    "purpose": "Measure GPU memory and throughput before production; do not select an architecture using test performance."
+  },
+  "intermediate_checkpoints": {
+    "longsmall": [
+      200000
+    ],
+    "large": [
+      50000
+    ],
+    "rule": "Preserved for diagnosis; final planned checkpoints are the primary comparison. No selection using pilot scores."
+  }
+}

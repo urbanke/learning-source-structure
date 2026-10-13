@@ -1,0 +1,173 @@
+{
+  "schema": "pooled-mean-population-plan-v1",
+  "observed": 16,
+  "arms": {
+    "A": {
+      "particles": 256,
+      "temperatures": 64,
+      "moves": 4,
+      "alpha_order": 16,
+      "row_bounds": [
+        -32.0,
+        32.0
+      ],
+      "row_step": 0.03125
+    },
+    "B": {
+      "particles": 1024,
+      "temperatures": 64,
+      "moves": 4,
+      "alpha_order": 16,
+      "row_bounds": [
+        -32.0,
+        32.0
+      ],
+      "row_step": 0.03125
+    },
+    "C": {
+      "particles": 1024,
+      "temperatures": 64,
+      "moves": 4,
+      "alpha_order": 32,
+      "row_bounds": [
+        -32.0,
+        32.0
+      ],
+      "row_step": 0.03125
+    },
+    "D": {
+      "particles": 1024,
+      "temperatures": 64,
+      "moves": 4,
+      "alpha_order": 32,
+      "row_bounds": [
+        -40.0,
+        40.0
+      ],
+      "row_step": 0.015625
+    }
+  },
+  "repetitions": 32,
+  "term_cache_size": 4096,
+  "publication_arm": "D",
+  "indices": [
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    21,
+    22,
+    23,
+    24,
+    25,
+    26,
+    27,
+    28,
+    29,
+    30,
+    31,
+    32,
+    33,
+    34,
+    35,
+    36,
+    37,
+    38,
+    39,
+    40,
+    41,
+    42,
+    43,
+    44,
+    45,
+    46,
+    47,
+    48,
+    49,
+    50,
+    51,
+    52,
+    53,
+    54,
+    55,
+    56,
+    57,
+    58,
+    59,
+    60,
+    61,
+    62,
+    63,
+    64,
+    65,
+    66,
+    67,
+    68
+  ],
+  "families": [
+    "product",
+    "shared_base",
+    "uniform_base"
+  ],
+  "family_prior": [
+    0.3333333333333333,
+    0.3333333333333333,
+    0.3333333333333333
+  ],
+  "maximum_attempts_per_task": 1,
+  "automatic_retries": false,
+  "parent_plan": {
+    "path": "code/transformer/configs/pooled_predictive_population_plan_2026-09-19.json",
+    "sha256": "2f4ec286a3acd1a5519a75c021b08379d3c2eb7a9cad22a927ee50d84a44ac71"
+  },
+  "selection_digest": "86b429da9f506508c21451da0b018454408f917ee7c086d18a7c63b923a9d141",
+  "criteria": {
+    "minimum_replicates": 32,
+    "minimum_effective_replica_count": 8.0,
+    "maximum_likelihood_share": 0.2,
+    "normalization_tolerance": 1e-07,
+    "maximum_relative_mcse": 0.1,
+    "cohort_mcse_multiplier": 2.0,
+    "cohort_bias_multiplier": 2.0,
+    "refinement_mcse_multiplier": 3.0,
+    "cohort_absolute_budget_bits": 0.0033333333333333335,
+    "cohort_se_fraction": 0.25
+  },
+  "worker_margin_seconds": 300,
+  "seconds_per_repetition": 7200,
+  "scheduler": {
+    "calibration": {
+      "tasks": 52,
+      "allocation_minutes": 30
+    },
+    "population": {
+      "tasks": 768,
+      "allocation_minutes": 240
+    },
+    "prepare_minutes": 60,
+    "merge_minutes": 60,
+    "concurrency": 64,
+    "maximum_array_size": 768,
+    "cpu_hour_rate_chf": 0.0055
+  },
+  "scope": "Separate approved mean-targeted protocol. Original componentwise calibration failures remain unchanged. Full192historycontext16only; exactshort gate before sampling; every history and all32independentrepetitions required. Cache4096 has seeded parity only on one developmentt256case. No automatic retries or later contexts. Budget rates are an assumption; allocation bounds are hard.",
+  "code_sha256": {
+    "code/scripts/pooled_mean_population.py": "d8561e2465722e318d0cd6d42c251dbc31fe606182909bef7654f025db3ae1e3",
+    "code/scripts/pooled_mean_validation.py": "2374cc18fba5eb8e3a1ce5f8ecca2cef6efce7995687abb8dff52b6c59b28847",
+    "code/scripts/pooled_predictive_population.py": "5e5a1d9d0c0c9f83596f788ec6468c861dd0e2c63494690ea451c29eb982bfed",
+    "code/transformer/scitas/pooled_mean_population.sbatch": "ae4eeb8e85130d9fcc590100886354603b8f23bbe02c4e41f64a3c9ec6abe386",
+    "code/transformer/scitas/submit_pooled_mean_population.sh": "33a5db3f82c3b3153d96436b907e95cc66411095d7951d34f6e00e0c13286a33"
+  }
+}

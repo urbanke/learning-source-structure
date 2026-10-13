@@ -1,0 +1,142 @@
+{
+  "schema": "appendix-figure-style-release-v1",
+  "figures": [
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12
+  ],
+  "source_bundle": "notes/archives/appendix_figure_style_2026-09-24.tar.gz",
+  "source_bundle_sha256": "ba33a2e7e0e0dbb6f3a42d5fd44e4b3c684513f2e7c4cd4a8926c4ac47ed261a",
+  "reproduction": "Extract the source bundle at repository root. Run the four plotting commands in results_manifest.json using the recorded existing inputs. The pure-Python smoke command checks saved release hashes without source/model inference.",
+  "style": {
+    "width_inches": 5.5,
+    "font_points": 8,
+    "line_points": 1.15,
+    "colors": {
+      "blue": "#2468A0",
+      "orange": "#BF611C",
+      "green": "#288167",
+      "purple": "#8A4E98"
+    },
+    "two_layer": "solid",
+    "larger_model": "dashed",
+    "bayes": "unconnected open markers",
+    "smoothing": false
+  },
+  "outputs": {
+    "results/transformer/appendix_style_2026-09-24/applications_receipt.json": "c245f87f5f7f51e55ad9c8f8870c9b3be4b4f1aab04c401873a7bb37d33e3ddc",
+    "results/transformer/appendix_style_2026-09-24/copying_receipt.json": "7aecc4f433aa563dda8bf3f86320cb4a7fefdb4e7ce7cc51c27b2c3e4bb8e9a3",
+    "results/transformer/appendix_style_2026-09-24/copying_run2_early16/curves.npz": "023a13d976ff0cbc7042c0dd62efdd77ea36aec42c06db75b629f86293b98f28",
+    "results/transformer/appendix_style_2026-09-24/copying_run2_early16/provenance.json.gz": "c17268978b173ad681e1de3f72bc94b54ab329e0ecf37539fb40bb87faff9677",
+    "results/transformer/appendix_style_2026-09-24/figure10.pdf": "03e961d8271cd3602641ab484a9a5e310b5fbe9ac71e91020b881917c7d1c371",
+    "results/transformer/appendix_style_2026-09-24/figure10.png": "17038a1e5e204db5b60567ac42d9dad75dc95516cfba20e0b7f62c08c32b67ac",
+    "results/transformer/appendix_style_2026-09-24/figure11.pdf": "074cae443c83e0d500eb59aed6e1d649a11da5f55e80c5b0221e6c5d24676c93",
+    "results/transformer/appendix_style_2026-09-24/figure11.png": "93ffa6fff4f79343a909145ba04a7993e61a4b157f8fffc9ff32ba747d1d97e3",
+    "results/transformer/appendix_style_2026-09-24/figure12.pdf": "191cdf502442bd8aead21c2c5ee065eb251f9957ddb6197a77dbe0ad348df1de",
+    "results/transformer/appendix_style_2026-09-24/figure12.png": "a7880bec95baf3359e8e552436d8676cb737ea410f1731b73494f9bbfdc7cf7f",
+    "results/transformer/appendix_style_2026-09-24/figure3.pdf": "fa55128b7510ca56cc49293a4422570bb51c8c8c87a09ba7c2095e4609b180e1",
+    "results/transformer/appendix_style_2026-09-24/figure3.png": "a01d416ea588c8d60cc2765fa00d4bd5725fe28ba64f11eebbc01f46695f7ac8",
+    "results/transformer/appendix_style_2026-09-24/figure4.pdf": "b28ef3df1c58c3d2331066d2aaf5bcf8dd1d83786ed47115f3367ab0eff0d309",
+    "results/transformer/appendix_style_2026-09-24/figure4.png": "9051c23f09913fa65128bcdd54fa650d88e2533bbe8124ce6a0742de6fe383c5",
+    "results/transformer/appendix_style_2026-09-24/figure5.pdf": "df60a7cefd5c5b908bcdb03896850ed0bf89545caf5f9c06832768a021af2dfd",
+    "results/transformer/appendix_style_2026-09-24/figure5.png": "01906fc30926b5194247797124fa8b461b27b571b286e12318bc08e747f1cdd6",
+    "results/transformer/appendix_style_2026-09-24/figure6.pdf": "8ab709c7df8adbbffa3b76984348b2074e79a2c1a14866ec40ab2952b272ccbd",
+    "results/transformer/appendix_style_2026-09-24/figure6.png": "8a4586ae65ae1305ca2d89850da0d67f6e866663a959a9fb84f667065385aad3",
+    "results/transformer/appendix_style_2026-09-24/figure7.pdf": "91383dd68817fd603f6ca713c256eb08203ac8fb0ada7fc5ff1c32f7e5260375",
+    "results/transformer/appendix_style_2026-09-24/figure7.png": "5f54d9c00f79db6006cc8ed6118da21f299f8ef9850129a9e39969eaf6e29768",
+    "results/transformer/appendix_style_2026-09-24/figure8.pdf": "1b8a5e67598d1cd002053cf6081359ce0af0a0ba3e5bafaab0f1d809d737d28f",
+    "results/transformer/appendix_style_2026-09-24/figure8.png": "5d58ed6dad20db8392397f11890e8e1731377a1901f79f748205b9b3c00cbcc7",
+    "results/transformer/appendix_style_2026-09-24/figure9.pdf": "5b794bce421be0ac8fa3d8fa2bc7550cace443d7caddedd226c96c0f6f4a7e9b",
+    "results/transformer/appendix_style_2026-09-24/figure9.png": "a60ff8921847b1d504eeba9a4e851709b6ab6b385210dfcec7f7844d420a57f4",
+    "results/transformer/appendix_style_2026-09-24/source_receipt.json": "e9e2e2532f128d115dfaa123f92b16262a7ca648c79123a40dcc0e33dda4c54d",
+    "results/transformer/appendix_style_2026-09-24/specialist_pooled_receipt.json": "ccf74195ae5515c8b23562e248e962afcc660fc5e80ab03d6756a71a694da1b5"
+  },
+  "builders": {
+    "code/scripts/appendix_figure_style.py": "d4c5b9f05330a9779c7b828b9f98b0605e66f8d387f7131202f8810d669bfcd2",
+    "code/scripts/appendix_source_figures.py": "970abbbbee83701931c021d75ea1282a62256f8b375403017fc587a474d2ef8c",
+    "code/scripts/appendix_specialist_pooled_figures.py": "a33c843a02133f3be486dbbc99a79b8e0c183b1b989aa98e61ac474d3834c5bf",
+    "code/scripts/appendix_application_figures.py": "3446d1628075896cf3e6086f0b91dbf7f56ca5898111e30d6a8b7a36e35f7d62",
+    "code/scripts/appendix_copying_figure.py": "7cfcd19e59c5a2043a70bcc0e00a230da623f89378d5eddeb2c52b5eb72f2adf",
+    "code/scripts/appendix_figure_verify.py": "eddee8af25ca84e8a126f1803de7a9c2a5f0ed2364c6b398fcc6e16531f1329a"
+  },
+  "checks": {
+    "compiled": true,
+    "main_text_pages": 9,
+    "total_pages": 48,
+    "all_ten_figures_visually_checked": true,
+    "figure7_complete_validated_long_contexts_added": [
+      256,
+      1024
+    ],
+    "figure12_source_counts": {
+      "transformer_per_depth_per_run": 16384,
+      "bayes_per_depth": 256
+    },
+    "figure12_new_run2_job": "4418958",
+    "figure12_six_focused_checks_passed": true,
+    "figure12_retained1024_scores_bitwise_identical": true,
+    "all_pooled_bayes_points_numerically_validated": false,
+    "values_and_uncertainty_of_each_selected_source_release_preserved": true,
+    "figure12_small_transformer_cohort_replaced_by_complete_16384_cohorts": true
+  },
+  "notes": "Pooled16 accepted; complete-cohort64/256/1024 displayed with incomplete numerical validation recorded separately. Context1024 uses first20 original repetitions per history. Other appendix numerical coverage and styles unchanged.",
+  "preserved_at_initial_style_release": {
+    "mechanisms.tex": "f6b8d02175c6f8b962eac3527e137b6f1e83cabf6f3ef3e1f750a16d9523de07",
+    "section4_protocols.tex": "97a5eee39eea00f2b1402e83d156d587365c2318445baad420041e4314e7a6a3",
+    "results/transformer/section3_compact/overview.pdf": "98d55f472c5de9dc99a2b1ed375369f00ad8d1157e7460f07e4ca54d43905fb7",
+    "results/transformer/section4_compact/overview.pdf": "69998265ff63d1c59f3901e81d601d1b154326d9d58d15d24025d8e6bd04e18b"
+  },
+  "updates": [
+    {
+      "date": "2026-09-24",
+      "figure": 8,
+      "context": 16,
+      "scientific_reference_validated": true,
+      "validation": "results/transformer/pooled_estimates_2026-09-24/context16_validation.json.gz",
+      "validation_sha256": "0f03fb2dadc067db6f43387dfa5673741a177c7b4a9ea87f3cb4b16828657cc3"
+    },
+    {
+      "date": "2026-09-25",
+      "scope": "Figure8 pooled1024 now uses fixed first12 original repetitions for every one of192 histories; all other estimates unchanged. Numerical acceptance remains pending.",
+      "source": "results/transformer/pooled_estimates_2026-09-24/context1024_snapshot.json.gz"
+    },
+    {
+      "date": "2026-09-25",
+      "figure": 8,
+      "context": 1024,
+      "repetitions_per_history": 20,
+      "histories": 192,
+      "mean_bits": 0.3753520808632474,
+      "source_se_bits": 0.02134759554066537,
+      "scientific_reference_validated": false,
+      "release_sha256": "2703c22d1433e37ccfd3a9c38c7706ca21636083b3651a295211ba3f5ea4a29e",
+      "first16_preserved": true,
+      "styles_unchanged": true
+    },
+    {
+      "date": "2026-09-25",
+      "figure": 8,
+      "context": 64,
+      "histories": 192,
+      "total_production_repetitions": 48768,
+      "total_D_repetitions": 9664,
+      "D_repetition_range": [
+        32,
+        608
+      ],
+      "mean_bits": 1.224266797791772,
+      "source_se_bits": 0.06477853625272176,
+      "scientific_reference_validated": false,
+      "provisional": true,
+      "release_sha256": "e2251abc0264352e798d49c19f3677bcc3b70bfe95fde20d38932089dd706d15",
+      "styles_unchanged": true
+    }
+  ]
+}

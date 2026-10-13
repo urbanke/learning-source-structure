@@ -1,0 +1,289 @@
+{
+  "schema": "shared-base-morning-audit-summary-v1",
+  "created_utc": "2026-09-17T06:24:15.185228+00:00",
+  "scope": "Independent audits of complete fixed-alpha1 L0/L1 cohorts at time64; no sampling, training, or manuscript publication.",
+  "all_requested_cohorts_passed": true,
+  "total_distinct_source_sequences": 512,
+  "total_audited_references": 1024,
+  "environment": {
+    "OPENBLAS_NUM_THREADS": "1",
+    "OMP_NUM_THREADS": "1",
+    "MKL_NUM_THREADS": "1",
+    "NUMEXPR_NUM_THREADS": "1",
+    "VECLIB_MAXIMUM_THREADS": "1",
+    "LSA_STORE": "/Users/ruediger/Projects/product_model_with_memory/tables/anchors_prod",
+    "PMM_SRC": "/Users/ruediger/Projects/product_model_with_memory/src"
+  },
+  "working_directory": "/Users/ruediger/Projects/layered_architectures",
+  "audit_script_sha256": "ebee340a2852d8b9bf2e05c8822a781f98172bdd4429e89423761e272d7301cf",
+  "uncertainty": "Reported SE over independent source-matrix/sequence draws; transformer-minus-Bayes differences paired per sequence. Numerical uncertainty is checked separately under the unchanged cohort protocol.",
+  "limitation": "Precision/mixing diagnostics do not prove global posterior convergence. No incomplete L4/L8 cohort means are included.",
+  "cohorts": [
+    {
+      "depth": 0,
+      "alpha": 1.0,
+      "time": 64,
+      "n_sequences": 256,
+      "orders": [
+        16,
+        32
+      ],
+      "report": "output/shared_base_morning_audit_2026-09-17/L0_t64.json",
+      "report_sha256": "9915edbc00d900f70929c3b99d976d319e078c770d0130ddcfe6eedac0e2f5ae",
+      "log": "output/shared_base_morning_audit_2026-09-17/L0_t64.log",
+      "log_sha256": "2c814271c5b90d5608845daaeff52219379f54b81264a6f1dcecdc55fe92f5e3",
+      "full_cohort_passed": true,
+      "checks": [
+        {
+          "name": "coarse:all_basic_checks",
+          "passed": true
+        },
+        {
+          "name": "coarse:all_scalar_mixing",
+          "passed": true
+        },
+        {
+          "name": "coarse:all_jensen_local_checks",
+          "passed": true
+        },
+        {
+          "name": "coarse:cohort_numerical_budget",
+          "passed": true
+        },
+        {
+          "name": "refined:all_basic_checks",
+          "passed": true
+        },
+        {
+          "name": "refined:all_scalar_mixing",
+          "passed": true
+        },
+        {
+          "name": "refined:all_jensen_local_checks",
+          "passed": true
+        },
+        {
+          "name": "refined:cohort_numerical_budget",
+          "passed": true
+        },
+        {
+          "name": "all_case_refinement_checks",
+          "passed": true
+        },
+        {
+          "name": "aggregate_refinement_resolution",
+          "passed": true
+        },
+        {
+          "name": "aggregate_refinement_stochastic_agreement",
+          "passed": true
+        }
+      ],
+      "numerical_rules": [
+        {
+          "rule": "coarse",
+          "numerical_mcse_bits": 0.0001350622837577117,
+          "numerical_error_allowance_bits": 0.00047188900814652,
+          "numerical_budget_bits": 0.001095315035432672
+        },
+        {
+          "rule": "refined",
+          "numerical_mcse_bits": 0.00014107856907800726,
+          "numerical_error_allowance_bits": 0.0004955979383225318,
+          "numerical_budget_bits": 0.001092136431207241
+        }
+      ],
+      "exponent_refinement_mean_difference_bits": 4.632851178348191e-05,
+      "matched_comparisons": {
+        "d64": {
+          "transformer_regret": {
+            "n": 256,
+            "mean": 0.4636479157899859,
+            "standard_error": 0.010352456441752993
+          },
+          "bayes_regret": {
+            "n": 256,
+            "mean": 0.24692748573929013,
+            "standard_error": 0.004370823139017926
+          },
+          "transformer_minus_bayes": {
+            "n": 256,
+            "mean": 0.21672043005069572,
+            "standard_error": 0.008823640890889379
+          }
+        },
+        "d64_seed1": {
+          "transformer_regret": {
+            "n": 256,
+            "mean": 0.4668190566507593,
+            "standard_error": 0.010487228426254377
+          },
+          "bayes_regret": {
+            "n": 256,
+            "mean": 0.24692748573929013,
+            "standard_error": 0.004370823139017926
+          },
+          "transformer_minus_bayes": {
+            "n": 256,
+            "mean": 0.21989157091146916,
+            "standard_error": 0.009033184779128508
+          }
+        }
+      },
+      "provenance": {
+        "cohort_file": "/Users/ruediger/Projects/layered_architectures/output/shared_base_conditional_curves_2026-09-15/a1_L0/cohort.json",
+        "cohort_sha256": "4c56f3ec0b382b14f74d8ce62c31fcb8766ffbb4b299ddc89e13c704a36108a7",
+        "protocol_sha256": "4375f7e708d8e04c9660b2289109ecea5197f05a6d0931740e42fe02852cd63a",
+        "audit_sha256": "ebee340a2852d8b9bf2e05c8822a781f98172bdd4429e89423761e272d7301cf"
+      },
+      "reproduction_argv": [
+        "/private/tmp/layered-shared-depth-env/bin/python",
+        "code/scripts/shared_base_curve_audit.py",
+        "--input",
+        "output/shared_base_conditional_curves_2026-09-15/a1_L0",
+        "--references",
+        "output/shared_base_curve_references_2026-09-15",
+        "--times",
+        "64",
+        "--orders",
+        "16",
+        "32",
+        "--out",
+        "output/shared_base_morning_audit_2026-09-17/L0_t64.json"
+      ]
+    },
+    {
+      "depth": 1,
+      "alpha": 1.0,
+      "time": 64,
+      "n_sequences": 256,
+      "orders": [
+        16,
+        32
+      ],
+      "report": "output/shared_base_morning_audit_2026-09-17/L1_t64.json",
+      "report_sha256": "368f2dc2b80feb05f79d75db285bbbfc01457bb770c668fe329d4c1bf516cd5b",
+      "log": "output/shared_base_morning_audit_2026-09-17/L1_t64.log",
+      "log_sha256": "bb0e42c19e078fb64fe7a7f88086c2ffbfb234a46be1f9accfc0f43fc346cf7a",
+      "full_cohort_passed": true,
+      "checks": [
+        {
+          "name": "coarse:all_basic_checks",
+          "passed": true
+        },
+        {
+          "name": "coarse:all_scalar_mixing",
+          "passed": true
+        },
+        {
+          "name": "coarse:all_jensen_local_checks",
+          "passed": true
+        },
+        {
+          "name": "coarse:cohort_numerical_budget",
+          "passed": true
+        },
+        {
+          "name": "refined:all_basic_checks",
+          "passed": true
+        },
+        {
+          "name": "refined:all_scalar_mixing",
+          "passed": true
+        },
+        {
+          "name": "refined:all_jensen_local_checks",
+          "passed": true
+        },
+        {
+          "name": "refined:cohort_numerical_budget",
+          "passed": true
+        },
+        {
+          "name": "all_case_refinement_checks",
+          "passed": true
+        },
+        {
+          "name": "aggregate_refinement_resolution",
+          "passed": true
+        },
+        {
+          "name": "aggregate_refinement_stochastic_agreement",
+          "passed": true
+        }
+      ],
+      "numerical_rules": [
+        {
+          "rule": "coarse",
+          "numerical_mcse_bits": 0.0003083151891839001,
+          "numerical_error_allowance_bits": 0.0009552533930099392,
+          "numerical_budget_bits": 0.003333333333333333
+        },
+        {
+          "rule": "refined",
+          "numerical_mcse_bits": 0.00031109031149848307,
+          "numerical_error_allowance_bits": 0.000977207028235351,
+          "numerical_budget_bits": 0.003333333333333333
+        }
+      ],
+      "exponent_refinement_mean_difference_bits": 0.0004371963566215456,
+      "matched_comparisons": {
+        "d64": {
+          "transformer_regret": {
+            "n": 256,
+            "mean": 0.8586152093904962,
+            "standard_error": 0.01980830104172311
+          },
+          "bayes_regret": {
+            "n": 256,
+            "mean": 0.7437069849248976,
+            "standard_error": 0.015853819563431286
+          },
+          "transformer_minus_bayes": {
+            "n": 256,
+            "mean": 0.11490822446559862,
+            "standard_error": 0.009879474457890239
+          }
+        },
+        "d64_seed1": {
+          "transformer_regret": {
+            "n": 256,
+            "mean": 0.8650014534450912,
+            "standard_error": 0.0189446514402074
+          },
+          "bayes_regret": {
+            "n": 256,
+            "mean": 0.7437069849248976,
+            "standard_error": 0.015853819563431286
+          },
+          "transformer_minus_bayes": {
+            "n": 256,
+            "mean": 0.12129446852019359,
+            "standard_error": 0.009322755312937771
+          }
+        }
+      },
+      "provenance": {
+        "cohort_file": "/Users/ruediger/Projects/layered_architectures/output/shared_base_conditional_curves_2026-09-15/a1_L1/cohort.json",
+        "cohort_sha256": "eec1bcea52c953eaca1b904af0c09f9d61c864069c1cae1bb931f08628bd83a9",
+        "protocol_sha256": "55f1c12d5ac6792b6f29fa68b69bac16766d0e88ece53b953186429db3e788a6",
+        "audit_sha256": "ebee340a2852d8b9bf2e05c8822a781f98172bdd4429e89423761e272d7301cf"
+      },
+      "reproduction_argv": [
+        "/private/tmp/layered-shared-depth-env/bin/python",
+        "code/scripts/shared_base_curve_audit.py",
+        "--input",
+        "output/shared_base_conditional_curves_2026-09-15/a1_L1",
+        "--references",
+        "output/shared_base_curve_references_2026-09-15",
+        "--times",
+        "64",
+        "--orders",
+        "16",
+        "32",
+        "--out",
+        "output/shared_base_morning_audit_2026-09-17/L1_t64.json"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,67 @@
+{
+  "schema": "shared-base-overnight-protocol-v1",
+  "original_plan": "code/transformer/configs/shared_base_cluster_plan_2026-09-16.json",
+  "original_plan_sha256": "4cb87e20efb79acc22df99c88631fbab39e089cc82e19591bef647730baf8331",
+  "followup_plan": "code/transformer/configs/shared_base_abaca_plan_2026-09-16.json",
+  "followup_plan_sha256": "7fafdd18c41b4b61c2c4044b59debb2a8631dbee872f9ba34e94f60bfd85f8a6",
+  "followup_stage": "abaca_check",
+  "followup_tasks": 32,
+  "stage_groups": [
+    [
+      "confirm"
+    ],
+    [
+      "alpha_refine",
+      "row_refine"
+    ],
+    [
+      "pilot16"
+    ]
+  ],
+  "future_not_queued": [
+    "pilot64",
+    "pilot256",
+    "pilot1024"
+  ],
+  "stage_overrides": {
+    "confirm": {
+      "requires": []
+    },
+    "pilot16": {
+      "requires": [
+        "confirm",
+        "alpha_refine",
+        "row_refine"
+      ],
+      "particles": 16384,
+      "replicates": 32
+    }
+  },
+  "resources": {
+    "confirm": {
+      "replicas_per_shard": 4,
+      "wall_minutes": 120,
+      "concurrency": 64
+    },
+    "alpha_refine": {
+      "replicas_per_shard": 4,
+      "wall_minutes": 120,
+      "concurrency": 32
+    },
+    "row_refine": {
+      "replicas_per_shard": 4,
+      "wall_minutes": 120,
+      "concurrency": 32
+    },
+    "pilot16": {
+      "replicas_per_shard": 2,
+      "wall_minutes": 240,
+      "concurrency": 64
+    }
+  },
+  "coordinator_wall_minutes": 1440,
+  "scope": "Confirm all six controls using fresh seeds, assess two quadrature refinements, and run a balanced 12-sequence pilot at 16 observed tokens. Stop for cost and precision review before longer prefixes. No full-cohort production.",
+  "bridge": "The original calibration remains failed. A separate strict review retains its five passing controls and the independent fixed-budget ABACA follow-up; the new successor plan binds this review and both complete raw receipts.",
+  "pilot_effort_rationale": "Replace the old exploratory N256/R16 pilot placeholder with N16384/R32. This keeps the larger calibrated particle population and 32 independent repetitions; it is not an accuracy guarantee. All source conditions, sequences, seeds and acceptance criteria are unchanged.",
+  "production_reference_approved": false
+}

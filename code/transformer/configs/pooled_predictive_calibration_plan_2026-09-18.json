@@ -1,0 +1,233 @@
+{
+  "schema": "pooled-predictive-exact-short-plan-v1",
+  "experiment": "pooled-predictive-exact-short-2026-09-18",
+  "seed": 2026091811,
+  "cases": [
+    {
+      "id": "n1_0",
+      "tokens": [
+        0
+      ]
+    },
+    {
+      "id": "n4_0000",
+      "tokens": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": "n4_0001",
+      "tokens": [
+        0,
+        0,
+        0,
+        1
+      ]
+    },
+    {
+      "id": "n4_0010",
+      "tokens": [
+        0,
+        0,
+        1,
+        0
+      ]
+    },
+    {
+      "id": "n4_0011",
+      "tokens": [
+        0,
+        0,
+        1,
+        1
+      ]
+    },
+    {
+      "id": "n4_0012",
+      "tokens": [
+        0,
+        0,
+        1,
+        2
+      ]
+    },
+    {
+      "id": "n4_0100",
+      "tokens": [
+        0,
+        1,
+        0,
+        0
+      ]
+    },
+    {
+      "id": "n4_0101",
+      "tokens": [
+        0,
+        1,
+        0,
+        1
+      ]
+    },
+    {
+      "id": "n4_0102",
+      "tokens": [
+        0,
+        1,
+        0,
+        2
+      ]
+    },
+    {
+      "id": "n4_0110",
+      "tokens": [
+        0,
+        1,
+        1,
+        0
+      ]
+    },
+    {
+      "id": "n4_0111",
+      "tokens": [
+        0,
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "id": "n4_0112",
+      "tokens": [
+        0,
+        1,
+        1,
+        2
+      ]
+    },
+    {
+      "id": "n4_0120",
+      "tokens": [
+        0,
+        1,
+        2,
+        0
+      ]
+    },
+    {
+      "id": "n4_0121",
+      "tokens": [
+        0,
+        1,
+        2,
+        1
+      ]
+    },
+    {
+      "id": "n4_0122",
+      "tokens": [
+        0,
+        1,
+        2,
+        2
+      ]
+    },
+    {
+      "id": "n4_0123",
+      "tokens": [
+        0,
+        1,
+        2,
+        3
+      ]
+    }
+  ],
+  "attempts": {
+    "initial": {
+      "particles": 2048,
+      "temperatures": 32,
+      "moves": 2,
+      "replicates": 32
+    },
+    "stronger": {
+      "particles": 8192,
+      "temperatures": 64,
+      "moves": 4,
+      "replicates": 64
+    }
+  },
+  "criteria": {
+    "tolerance_bits": 0.01,
+    "mcse_multiplier": 3.0,
+    "minimum_replicates": 32,
+    "minimum_effective_replica_count": 8.0,
+    "maximum_likelihood_share": 0.2,
+    "normalization_tolerance": 1e-07
+  },
+  "numerics": {
+    "d": 64,
+    "alpha_bounds": [
+      0.5,
+      1.5
+    ],
+    "alpha_order": 16,
+    "depths": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8
+    ],
+    "depth_prior": "uniform",
+    "ranks": "uniform permutation",
+    "row_bounds": [
+      -32.0,
+      32.0
+    ],
+    "row_step": 0.03125,
+    "resample_fraction": 0.75
+  },
+  "replicas_per_task": 4,
+  "seconds_per_replica": 1800,
+  "concurrency": 64,
+  "allocation_minutes": 120,
+  "code_sha256": {
+    "code/scripts/pooled_predictive_calibration.py": "2578c54a57f12abcd96f63e58bcaffbaa343e8bd8669dac40d5192d04670c359",
+    "code/transformer/shared_base_predictive_smc.py": "21cb91566185fff2bb26eaffef1d767cec080c1f8aa1eae3e26029c33a541787",
+    "code/transformer/shared_base_evidence_smc.py": "f3f7fe00cd9c05cae6cfe23310416cb50e9566cdea319113412f9efabb2f4709",
+    "code/transformer/shared_base_mcmc.py": "26469e21c04fc2fe91a40bcb418aff3ae866fe707b2ee198d644091580b1f7a8",
+    "code/transformer/ranked_lsa.py": "3fa7952048ab3f25d508dda8c2a7c232064aa5db56008de8b4ed9623709aac8d",
+    "code/transformer/weighted_lsa.py": "847f0ffaa622d86e88633447327dce8e7f518e4c86c1e44e76a794e470d2dec9",
+    "code/transformer/shared_depth.py": "616f536153458499078d17d7939e6a800c7b52e3eb4f1dd6503db95030d7a395",
+    "code/transformer/lsa_seq.py": "7e39960e91f3bb27eea82e201afd8a86ce717ea50a304daa86534b4fdbadfc51",
+    "code/transformer/phi_source.py": "456eb407fd7f280786a441681a704a6fff172af9fc9aea3c6f9456fb55174831",
+    "code/transformer/shared_base_short_evidence.py": "085d517efe914902390e1499d67fa27423d430fc7e1b742b82c98ebc971f4171",
+    "code/scripts/shortprefix_shared_base_exact.py": "b6e229cb48f9b1a58e570521df9eb92ebec65da6b0db8386c3a23a71183791a6",
+    "code/scripts/shortprefix_shared_base_summary.py": "71bb461091932c015b3e816ec68f6320f0ccb8eae75795e31c57b5e840afadfc",
+    "code/scripts/conditional_shared_base_first_step.py": "8abba4e59ddbbe6ac4484d029f88d4244db50237d5726eabadd0f6325209f5cd"
+  },
+  "reference_sha256": {
+    "results/transformer/shared_base_conditional_curves/shortprefix_reference.json": "a1659aa766a6c15ffb849d71f67352f88fe385658297a920c2baf376dbbb0c1c",
+    "results/transformer/shared_base_conditional_curves/time4_summary.json": "e4997691be5bf98016e9e3b67f03e37f08556068b4777af229a2a6f164259482",
+    "results/transformer/conditional_shared_base/first_step.json": "b856ef15840ba31c8c42a1a50a3fa933372c15d61ca1be45fef1bcf9c375ced4"
+  },
+  "dependencies": {
+    "manifest": "code/transformer/configs/shared_base_dependency_manifest_2026-09-16.json",
+    "sha256": "c1a2d96e3c6ce081ee58de77c7e25b578de5af1cc08665504022d1745c53166d"
+  },
+  "scientific_reference_validated": false,
+  "population_reference_validated": false,
+  "scope": "Only live full-prior shared-base evidence and all 64 predictive probabilities against the existing exact short-prefix catalog. All 16 histories are required. The stronger attempt requires explicit submission. No new integral catalog or pooled population approval.",
+  "missing_after_short_pass": [
+    "mixture reconstruction on actual pooled histories",
+    "numerical and quadrature refinement at 16 and 64 observations",
+    "complete population coverage and numerical uncertainty"
+  ]
+}

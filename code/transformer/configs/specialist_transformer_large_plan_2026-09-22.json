@@ -1,0 +1,33 @@
+{
+  "schema": "specialist-transformer-large-plan-v1",
+  "architecture": {
+    "n_layer": 4,
+    "n_head": 8,
+    "d_model": 256
+  },
+  "seeds": [
+    0,
+    1
+  ],
+  "steps": 100000,
+  "batch": 64,
+  "benchmark_steps": 1000,
+  "source_relationship": "Fresh runs on the same priors and6.4M-sequence budget; original six-worker Stream generator, same optimizer/schedule/monitoring settings. Exact historical training-batch identity is not asserted.",
+  "families": {
+    "product": {
+      "baseline_config": "results/transformer/runs/prod_8x8/config.json",
+      "baseline_config_sha256": "7369b744e526a007d45e8b3e9e5333a1021ca9f7582da971dd4bb6430a3f2a06"
+    },
+    "uniform_base": {
+      "baseline_config": "results/transformer/runs/lsa_a0_d64/config.json",
+      "baseline_config_sha256": "d39ad1d48077a593fbd2e125ed460fa026267dd2a400b6774888406b90640b05"
+    }
+  },
+  "implementation_sha256": {
+    "code/transformer/train.py": "94780465143e3157f5e2b3758c6983411b9bb8b61648c938eac0645e297c393b",
+    "code/transformer/source.py": "d1bb83004e3654cb3f84f6083437cae2b6d71fa19a33b06d26d2455ac440dab4",
+    "code/transformer/families.py": "24d7ab304d9de7133e38ec8ffe2422d2de38b9e3374670117807eab61d606e00",
+    "code/transformer/model.py": "742fe0e5c8ffaecee8072a3b270b23beaa2e0bd2a94d1a27a9af67c31eff9c28",
+    "code/transformer/eval_mixture.py": "a93d308a8af6fe0528ed619ef89f130419efe02c7f11061b2e8356bd32c5e3d9"
+  }
+}

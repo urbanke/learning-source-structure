@@ -1,0 +1,53 @@
+{
+  "code_sha256": {
+    "code/scripts/calibrate_shared_base_evidence.py": "686eae195eb15ef261f630656dc4709bfdbdffdd4d4abbc370635e1fbfed8e9a",
+    "code/scripts/conditional_shared_base_first_step.py": "8abba4e59ddbbe6ac4484d029f88d4244db50237d5726eabadd0f6325209f5cd",
+    "code/scripts/pooled_predictive_calibration.py": "2578c54a57f12abcd96f63e58bcaffbaa343e8bd8669dac40d5192d04670c359",
+    "code/scripts/pooled_predictive_pilot.py": "18febb5d18f62297a3635df7123a50d67d6f03fda6dfd69c8600a84c598d24b7",
+    "code/scripts/pooled_predictive_population.py": "5e5a1d9d0c0c9f83596f788ec6468c861dd0e2c63494690ea451c29eb982bfed",
+    "code/scripts/pooled_predictive_timing_extension.py": "c5b98be3d938e3b57ad865ae43f313a9c2b6b797708e68c90234c224f18c77ca",
+    "code/scripts/shortprefix_shared_base_exact.py": "b6e229cb48f9b1a58e570521df9eb92ebec65da6b0db8386c3a23a71183791a6",
+    "code/scripts/shortprefix_shared_base_summary.py": "71bb461091932c015b3e816ec68f6320f0ccb8eae75795e31c57b5e840afadfc",
+    "code/transformer/lsa_seq.py": "7e39960e91f3bb27eea82e201afd8a86ce717ea50a304daa86534b4fdbadfc51",
+    "code/transformer/mixture_family_evidence.py": "86e79efcc8b98aa5a66aa3dd1548ddf88f53c39dd5ab3ec972160358775caf57",
+    "code/transformer/phi_source.py": "456eb407fd7f280786a441681a704a6fff172af9fc9aea3c6f9456fb55174831",
+    "code/transformer/ranked_lsa.py": "3fa7952048ab3f25d508dda8c2a7c232064aa5db56008de8b4ed9623709aac8d",
+    "code/transformer/scitas/environment.sh": "f1eaf558ca08bf98ef76990653d867554184cd7d4b3ad2db8bf3d7fe053b10c7",
+    "code/transformer/scitas/pooled_predictive_timing_extension.sbatch": "e62d2c8a08ac80218d8c2337e602f2b19c157656187ed03f9e1f66a2dc560db3",
+    "code/transformer/scitas/submit_pooled_predictive_timing_extension.sh": "180a7664882e6f3ad877166ed21b4e6bbf4b133a31a728ad6148363064649f25",
+    "code/transformer/shared_base_evidence_smc.py": "f3f7fe00cd9c05cae6cfe23310416cb50e9566cdea319113412f9efabb2f4709",
+    "code/transformer/shared_base_mcmc.py": "26469e21c04fc2fe91a40bcb418aff3ae866fe707b2ee198d644091580b1f7a8",
+    "code/transformer/shared_base_predictive_smc.py": "21cb91566185fff2bb26eaffef1d767cec080c1f8aa1eae3e26029c33a541787",
+    "code/transformer/shared_base_short_evidence.py": "085d517efe914902390e1499d67fa27423d430fc7e1b742b82c98ebc971f4171",
+    "code/transformer/shared_depth.py": "616f536153458499078d17d7939e6a800c7b52e3eb4f1dd6503db95030d7a395",
+    "code/transformer/source.py": "d1bb83004e3654cb3f84f6083437cae2b6d71fa19a33b06d26d2455ac440dab4",
+    "code/transformer/validate_shared_depth.py": "0e1901d4d09ffa768c59c034eb3a7474418e3e656817d3b0f6cd64197517ec7f",
+    "code/transformer/weighted_lsa.py": "847f0ffaa622d86e88633447327dce8e7f518e4c86c1e44e76a794e470d2dec9"
+  },
+  "description": "Isolated cost measurements on nine original development cases; all numerical settings, histories and random seeds unchanged. No accuracy approval or production launch.",
+  "original_array_job": "66595885",
+  "parent_plan": {
+    "path": "code/transformer/configs/pooled_predictive_population_plan_2026-09-19.json",
+    "sha256": "2f4ec286a3acd1a5519a75c021b08379d3c2eb7a9cad22a927ee50d84a44ac71"
+  },
+  "schema": "pooled-predictive-timing-extension-plan-v1",
+  "task_ids": [
+    2,
+    10,
+    13,
+    18,
+    21,
+    24,
+    27,
+    30,
+    33
+  ],
+  "timing": {
+    "allocation_minutes": 150,
+    "concurrency": 3,
+    "maximum_attempts_per_task": 1,
+    "seconds_per_replica": 7200,
+    "setup_and_merge_cpu_hour_cap": 1.0,
+    "worker_cpu_hour_cap": 22.5
+  }
+}

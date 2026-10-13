@@ -1,0 +1,231 @@
+{
+  "comment": "Discovery grid v2 for the takeover-time scaling (mechanisms.tex 2.4), at serious scale. Slices through the center point (d=4096, alpha=1, L=3) plus a d-sweep to 100K and interaction probes at d=16384. n_cap per task follows the observed n* ~ d^1.9 trend (crossings 135 / 514 / 1789 at d=64/128/256) with 6-10x headroom; tasks without n_cap use the default 32*d. Tasks 0-20 (d <= 32768) run on the Mac, tasks 21-24 on SCITAS. Tasks 25-28 (2026-08-27): alpha-sweep completion so the d-exponent can be fit per alpha (0.75 and 1.25 at d=1024 and 32768). Tasks 29-30: extreme-alpha tests of exponent(alpha)=1/2+1/alpha (predictions: crossing ~11100 at alpha=0.5, ~5000 at alpha=1.5, both at d=1024). Task 31: saturation test (d=16384 alpha=0.5; ~4-5M if exponent saturates near 1+kappa, ~11M if 1/2+1/alpha held).",
+  "defaults": {
+    "seeds": "0-15",
+    "jobs": 16
+  },
+  "tasks": [
+    {
+      "task": 0,
+      "d": 64,
+      "alpha": 1.0,
+      "L": 3
+    },
+    {
+      "task": 1,
+      "d": 256,
+      "alpha": 1.0,
+      "L": 3
+    },
+    {
+      "task": 2,
+      "d": 1024,
+      "alpha": 1.0,
+      "L": 3,
+      "n_cap": 131072
+    },
+    {
+      "task": 3,
+      "d": 4096,
+      "alpha": 1.0,
+      "L": 3,
+      "n_cap": 2097152
+    },
+    {
+      "task": 4,
+      "d": 16384,
+      "alpha": 1.0,
+      "L": 3,
+      "n_cap": 33554432
+    },
+    {
+      "task": 5,
+      "d": 32768,
+      "alpha": 1.0,
+      "L": 3,
+      "n_cap": 134217728
+    },
+    {
+      "task": 6,
+      "d": 4096,
+      "alpha": 1.0,
+      "L": 1,
+      "n_cap": 2097152
+    },
+    {
+      "task": 7,
+      "d": 4096,
+      "alpha": 1.0,
+      "L": 2,
+      "n_cap": 2097152
+    },
+    {
+      "task": 8,
+      "d": 4096,
+      "alpha": 1.0,
+      "L": 6,
+      "n_cap": 2097152
+    },
+    {
+      "task": 9,
+      "d": 4096,
+      "alpha": 1.0,
+      "L": 12,
+      "n_cap": 2097152
+    },
+    {
+      "task": 10,
+      "d": 4096,
+      "alpha": 1.0,
+      "L": 24,
+      "n_cap": 2097152
+    },
+    {
+      "task": 11,
+      "d": 4096,
+      "alpha": 1.0,
+      "L": 48,
+      "n_cap": 2097152
+    },
+    {
+      "task": 12,
+      "d": 4096,
+      "alpha": 1.0,
+      "L": 96,
+      "n_cap": 2097152
+    },
+    {
+      "task": 13,
+      "d": 4096,
+      "alpha": 0.5,
+      "L": 3,
+      "n_cap": 2097152
+    },
+    {
+      "task": 14,
+      "d": 4096,
+      "alpha": 0.75,
+      "L": 3,
+      "n_cap": 2097152
+    },
+    {
+      "task": 15,
+      "d": 4096,
+      "alpha": 1.25,
+      "L": 3,
+      "n_cap": 4194304
+    },
+    {
+      "task": 16,
+      "d": 4096,
+      "alpha": 1.5,
+      "L": 3,
+      "n_cap": 4194304
+    },
+    {
+      "task": 17,
+      "d": 16384,
+      "alpha": 1.0,
+      "L": 12,
+      "n_cap": 33554432
+    },
+    {
+      "task": 18,
+      "d": 16384,
+      "alpha": 1.0,
+      "L": 48,
+      "n_cap": 33554432
+    },
+    {
+      "task": 19,
+      "d": 16384,
+      "alpha": 0.75,
+      "L": 3,
+      "n_cap": 33554432
+    },
+    {
+      "task": 20,
+      "d": 16384,
+      "alpha": 1.25,
+      "L": 3,
+      "n_cap": 67108864
+    },
+    {
+      "task": 21,
+      "d": 65536,
+      "alpha": 1.0,
+      "L": 3,
+      "n_cap": 536870912
+    },
+    {
+      "task": 22,
+      "d": 100000,
+      "alpha": 1.0,
+      "L": 3,
+      "n_cap": 1073741824
+    },
+    {
+      "task": 23,
+      "d": 65536,
+      "alpha": 1.0,
+      "L": 24,
+      "n_cap": 536870912
+    },
+    {
+      "task": 24,
+      "d": 100000,
+      "alpha": 0.75,
+      "L": 3,
+      "n_cap": 1073741824
+    },
+    {
+      "task": 25,
+      "d": 1024,
+      "alpha": 0.75,
+      "L": 3,
+      "n_cap": 1048576
+    },
+    {
+      "task": 26,
+      "d": 32768,
+      "alpha": 0.75,
+      "L": 3,
+      "n_cap": 268435456
+    },
+    {
+      "task": 27,
+      "d": 1024,
+      "alpha": 1.25,
+      "L": 3,
+      "n_cap": 262144
+    },
+    {
+      "task": 28,
+      "d": 32768,
+      "alpha": 1.25,
+      "L": 3,
+      "n_cap": 33554432
+    },
+    {
+      "task": 29,
+      "d": 1024,
+      "alpha": 0.5,
+      "L": 3,
+      "n_cap": 262144
+    },
+    {
+      "task": 30,
+      "d": 1024,
+      "alpha": 1.5,
+      "L": 3,
+      "n_cap": 131072
+    },
+    {
+      "task": 31,
+      "d": 16384,
+      "alpha": 0.5,
+      "L": 3,
+      "n_cap": 67108864
+    }
+  ]
+}

@@ -1,0 +1,46 @@
+{
+  "schema": "shared-base-shuffle-extension-plan-v1",
+  "experiment": "shared-base-shuffle-extension-2026-09-22",
+  "n_sequences": 1024,
+  "retained_sequences": 256,
+  "depths": [
+    0,
+    2,
+    3
+  ],
+  "seeds": [
+    0,
+    1
+  ],
+  "d": 64,
+  "n_tokens": 1025,
+  "master_seed": 20260930,
+  "dtype": "float64",
+  "batch": 4,
+  "threads": 4,
+  "source_workers": 6,
+  "bootstrap": 1000,
+  "old_score_absolute_tolerance": 5e-10,
+  "checkpoint_sha256": {
+    "ordered_seed0": "9a1954947e4a650c4811122a7752d6c808f7920bbebce5442f52e832210b196e",
+    "ordered_seed1": "0a1c467844b5e06583a966b81565c12cddb84638cc67a6b07e64030a94077040",
+    "shuffled_seed0": "38515a9da6d873ef1bf42a277f3dbc97a0ea6f85a16f5c23e05dbd0c654f4733",
+    "shuffled_seed1": "dcc7c6d6e1497d7fb19c5f74f3245cbe3bf35fe90a3e0920fd5fe1fddf7ea0a6"
+  },
+  "dependencies_sha256": {
+    "code/transformer/shared_base_shuffle_eval.py": "f85d106aaad6977cd0f3d3fbe527158c349593ec66dcff00e2eb32b0ab37ab9e",
+    "code/transformer/source.py": "d1bb83004e3654cb3f84f6083437cae2b6d71fa19a33b06d26d2455ac440dab4",
+    "code/transformer/model.py": "742fe0e5c8ffaecee8072a3b270b23beaa2e0bd2a94d1a27a9af67c31eff9c28",
+    "code/transformer/configs/shared_base_shuffle_plan_2026-09-17.json": "f8be35e3f574864ba40aff52c4d11cdd2fda2df16bb425c6f707f6f3724ccec4",
+    "code/transformer/configs/shared_base_shuffle_evaluation_cohort_2026-09-17.json": "552083ec6eb9b2e5d0403d418c2d1fb5be6e2db43f1cea6b6e5557568b44110e"
+  },
+  "scheduler": {
+    "gpus": 1,
+    "cpus": 8,
+    "memory_gib": 32,
+    "wall_minutes": 120,
+    "automatic_retries": false
+  },
+  "scope": "Paired transformer evaluation only. Indices0:256 retain the existing cohort; indices256:1024 are a predeclared extension. No retraining, Bayesian extension, figure replacement, smoothing, or selection by result. Preserve the original256-history Bayesian comparison; report new-only and all1024 summaries separately.",
+  "retained_source_policy": "Load original256 frozen arrays byte-for-byte and verify all three array hashes; generate only indices256:1024 with the frozen Source code and master seed."
+}

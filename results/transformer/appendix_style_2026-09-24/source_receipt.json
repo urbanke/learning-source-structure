@@ -1,0 +1,73 @@
+{
+  "schema": "appendix-source-figure-presentation-v1",
+  "passed": true,
+  "script_sha256": "970abbbbee83701931c021d75ea1282a62256f8b375403017fc587a474d2ef8c",
+  "inputs": {
+    "code/scripts/appendix_source_figures.py": "970abbbbee83701931c021d75ea1282a62256f8b375403017fc587a474d2ef8c",
+    "code/scripts/appendix_figure_style.py": "d4c5b9f05330a9779c7b828b9f98b0605e66f8d387f7131202f8810d669bfcd2",
+    "code/scripts/hidden_factor_campaign_results.py": "b824abe3f7471e95b380512d75ed2cc80a214e2faaaaf9f3f42892fc28aa1b47",
+    "code/scripts/shared_base_campaign_results.py": "09e4d71a4c3c650750b0ab65c280b281e601480c467d775f809ece704c4a3474",
+    "code/scripts/bayes_evidence_figure.py": "934b7bf2076fe6bf385ff84d5213abf85cfcbf83ba9f7f33bf9001fa70af68d2",
+    "results/transformer/conditional_accuracy/product/summary.json": "bdf147619cbb70e390e46f6547e34661fc324326094863ee8140fbffdeae5c03",
+    "results/transformer/conditional_accuracy/product/validation.json": "0b370e58613076a6204c0ea967bded295b339613baf00b302c13c7884430143b",
+    "results/transformer/conditional_accuracy/product/receipt.json": "3c8cead3382c589a2cff6bd2907410a5f0c6dfc5f5a4aadcda8d3c14b19e844a",
+    "results/transformer/hidden_factor_campaign_2026-09-19/comparison.json": "282c47d1ef17212936d39e7884588c840524446e20b8a9c7a51a91f3b9f8f20c",
+    "results/transformer/hidden_factor_campaign_2026-09-19/validation.json": "be3806a23bf5bf22db3919e8ea769a5c904c6e5561488f02fb434ac0965c6715",
+    "code/transformer/configs/hidden_factor_campaign_plan_2026-09-18.json": "d40caa852163942650366d699705127e96827bee6c3c54d0a3c197d4abe1f77b",
+    "code/transformer/configs/hidden_factor_scaling_plan_2026-09-16.json": "0d63d4554dc62c9d96b0ee5ce8febf548ddc3d6713a52e96f04775d545dae91f",
+    "results/transformer/shared_depth/summary.json": "ac9ecad3eaa1ca92e0b8eb588a283f54e1a6782e061136f39008e4de4fedfbcd",
+    "results/transformer/shared_base_campaign_2026-09-19/comparison.json": "f62a56467fc62717289594c29041de4cb0b32996f51cfc80c62ec291f0a72efc",
+    "results/transformer/shared_base_campaign_2026-09-19/validation.json": "2e3488fdeb07c788551b966bc5683590fd476f7ef4b30a5a7836e10d2ea07f46",
+    "code/transformer/configs/shared_base_campaign_plan_2026-09-18.json": "12388c9f10ccfe9f93885c4613784f26f773ffa8db529eefb1381de3689e4328",
+    "results/transformer/shared_base_full_cohort_2026-09-23/summary.json": "80fcb74b57e442e9bef3761b53c89dedcc4ed2059bb1ff28d10252f555a3cf7f",
+    "results/transformer/shared_base_full_cohort_2026-09-23/validation.json": "090105e58f5ccff6af1dc87f07830d8a710c595e8c36845dddfc4703570b6178",
+    "code/transformer/configs/shared_base_posterior_full_plan_2026-09-17.json": "da2d156e5df8999d0a64c3e610393808e4f8da52ed13895529a53888fc2aff7e",
+    "results/transformer/shared_base_full_cohort_2026-09-23/paired_scores.npz": "e7a4bf81322839c589fd3cbe81f6aa2adb74e5cea7f1106fb6b00826f1215221"
+  },
+  "outputs": {
+    "results/transformer/appendix_style_2026-09-24/figure3.pdf": "fa55128b7510ca56cc49293a4422570bb51c8c8c87a09ba7c2095e4609b180e1",
+    "results/transformer/appendix_style_2026-09-24/figure3.png": "a01d416ea588c8d60cc2765fa00d4bd5725fe28ba64f11eebbc01f46695f7ac8",
+    "results/transformer/appendix_style_2026-09-24/figure4.pdf": "b28ef3df1c58c3d2331066d2aaf5bcf8dd1d83786ed47115f3367ab0eff0d309",
+    "results/transformer/appendix_style_2026-09-24/figure4.png": "9051c23f09913fa65128bcdd54fa650d88e2533bbe8124ce6a0742de6fe383c5",
+    "results/transformer/appendix_style_2026-09-24/figure6.pdf": "8ab709c7df8adbbffa3b76984348b2074e79a2c1a14866ec40ab2952b272ccbd",
+    "results/transformer/appendix_style_2026-09-24/figure6.png": "8a4586ae65ae1305ca2d89850da0d67f6e866663a959a9fb84f667065385aad3",
+    "results/transformer/appendix_style_2026-09-24/figure7.pdf": "91383dd68817fd603f6ca713c256eb08203ac8fb0ada7fc5ff1c32f7e5260375",
+    "results/transformer/appendix_style_2026-09-24/figure7.png": "5f54d9c00f79db6006cc8ed6118da21f299f8ef9850129a9e39969eaf6e29768"
+  },
+  "panels": {
+    "figure3": {
+      "sequences_per_setting": 256,
+      "uncertainty": "One paired sequence standard error",
+      "metric": "transformer_minus_bayes"
+    },
+    "figure4": {
+      "sequences_per_run": 3840,
+      "uncertainty": "One sequence standard error",
+      "training_runs_separate": true
+    },
+    "figure6": {
+      "metric": "kl_bayes_to_transformer",
+      "sequences_per_family": 128,
+      "uncertainty": "One sequence standard error",
+      "full_distribution_kl_preserved": true
+    },
+    "figure7": {
+      "complete_long_context_groups": 8,
+      "source_ids_checked": 2048,
+      "matching_model_moments": 112,
+      "long_contexts": [
+        256,
+        1024
+      ],
+      "all_numerical_checks_passed": true,
+      "new_computation": false,
+      "sequences_per_depth": 256,
+      "uncertainty": "One sequence standard error; numerical allowance separately in table"
+    }
+  },
+  "scope": "Presentation-only in separate output paths; original numerical releases, figures and audits unchanged.",
+  "sampling_performed": false,
+  "inference_performed": false,
+  "smoothing_performed": false,
+  "command": "python code/scripts/appendix_source_figures.py"
+}

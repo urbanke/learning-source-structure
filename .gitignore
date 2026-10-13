@@ -1,0 +1,51 @@
+# Python
+__pycache__/
+.mplconfig/
+*.pyc
+.venv/
+*.egg-info/
+
+# Experiment outputs and caches (commit only curated results/)
+output/
+tables/
+data/
+!data/.gitkeep
+
+# OS noise
+.DS_Store
+
+# transformer experiments: full checkpoints, evaluation outputs and mechanism references stay out of git;
+# a run's config.json, log.jsonl and weights-only model_<step>.pt (about 2 MB each) are committed
+results/transformer/runs/*/ckpt_*.pt
+results/transformer/runs/*/latest.pt
+results/transformer/eval/
+results/transformer/refs/
+
+# reference-predictor outputs of the family experiments (hundreds of MB; on the Mac and in the cloud)
+results/transformer/refs_fam/
+results/transformer/refs2048/
+results/transformer/refs2/
+results/transformer/refs_famprior/
+
+# Generated numerical reports stay on the research machines, not in Overleaf.
+# Existing copies are deliberately retained locally when removed from tracking.
+# Final figures, TeX tables, source code and frozen plans remain versioned.
+/results/**/*.json
+/results/**/*.jsonl
+/results/**/*.csv
+/results/**/*.tsv
+
+# The complete-cohort paired score array is retained locally with its audit reports.
+/results/transformer/shared_base_full_cohort_2026-09-19/paired_scores.npz
+
+# Preserve small immutable inputs used by cluster jobs and their continuations.
+!/results/transformer/runs/**/config.json
+!/results/transformer/runs/**/log.jsonl
+!/results/transformer/runs/**/status.json
+!/results/transformer/conditional_shared_base/first_step.json
+!/results/transformer/shared_base_conditional_curves/shortprefix_reference.json
+!/results/transformer/shared_base_conditional_curves/summary.json
+!/results/transformer/shared_base_conditional_curves/time4_summary.json
+!/results/transformer/shared_base_conditional_curves/time16_summary.json
+!/results/transformer/shared_base_long_context_2026-09-17/summary.json
+!/results/transformer/shared_base_morning_audit_2026-09-17/summary.json

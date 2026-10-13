@@ -1,0 +1,158 @@
+{
+  "schema": "section4-compact-figure-v10",
+  "no_new_experiments": true,
+  "script_sha256": "dfbc4e32e207d2fdc107b0a6da4f2799890e844095a8445827e225a8beb62730",
+  "inputs": {
+    "output/product_shift_2026-09-18/summary.json": "06137d560f092e8b7bfa8604a795111128240f73e5893e805788c699a3627821",
+    "output/product_shift_2026-09-18/per_sequence_risks.npz": "8c4e8bf99bed483582d82db9c440eb5f083075b66a98b9cdcbfc5d59622a52d1",
+    "results/transformer/product_mismatch_larger_2026-09-23/curves.npz": "38708e058703a25d9b7646680e5b176ddc8172b8e9c6a69ac6f42cebbcdd9702",
+    "results/transformer/product_mismatch_larger_2026-09-23/provenance.json.gz": "b1de438ee39a21452afa4eca3d86736a11929bfc23d611e4e5e2afbfd8c7c06c",
+    "output/product_shift_2026-09-18/mismatch_limit/projection_summary.json": "61277a1eb84ec21ae0fcbacf271a42c1e2837ba734b8d61aa20ade1d40ff45d0",
+    "output/product_shift_2026-09-18/additivity/summary.json": "c8124a4c888c1ca24b34514e61f4a3a24aae2f3e24fcbf43c4f444633c5e6266",
+    "results/transformer/section4_unseen_context_refined_2026-09-20/summary.json": "e289b295ad61012641289ca42a5a32b423a5271184119ae2c0296f754fc5eeab",
+    "results/transformer/section4_unseen_context_refined_2026-09-20/records.csv": "483bfa1f48881f70a9a938515b94c51db3a7d36a049303f192aa4f7a756b00f5",
+    "results/transformer/section4_unseen_context_refined_2026-09-20/validation.json": "04b74e26abae81818ecc8469daf0f6436635c5dc9098181271f034be3b0f29cf",
+    "results/transformer/section4_unseen_uniform_control_2026-09-17/summary.json": "e6b5b601358ce379f3d9e36809afbfe4346cad44dd8764779a7b263344e01828",
+    "results/transformer/section4_unseen_uniform_control_2026-09-17/records.csv": "23e4047abcf6183e7a4305034f17874bf5c5d33c204ebd7ff9ffcbb38f98d539",
+    "results/transformer/section4_unseen_uniform_control_2026-09-17/validation.json": "98e2d5536095f855519f86d89dc1b7a93005d778518426200b2b0cf693256992",
+    "results/transformer/shared_base_shuffle_2026-09-18/summary.json": "2f64c7af4f32c2418fd93d6c2cbcffb42da35b67736d4c195dc4a7ad8320d030",
+    "results/transformer/shared_base_shuffle_2026-09-18/validation.json": "d5cf790f02c8211888882a8375eb045a95b4ee8a153509f149312daacdf7b5bf",
+    "output/shared_base_shuffle_download_2026-09-18/eval/ordered_seed0/a1_L2.npz": "af019904403d792dd9f8e734605644e51d886694bde81bd219412a4ede4bb407",
+    "output/shared_base_shuffle_download_2026-09-18/eval/shuffled_seed0/a1_L2.npz": "e6441d442e90064fbb3daa3318d623dd7151c5653e1fc060485a24c012c48e19",
+    "output/shared_base_shuffle_download_2026-09-18/eval/ordered_seed0/a1_L3.npz": "00f8765c4580c8b1842517312771c4adb4828083607b23c819b1849c7a2adc9d",
+    "output/shared_base_shuffle_download_2026-09-18/eval/shuffled_seed0/a1_L3.npz": "ff340efcd7e5341340ae1f68469bd4394cff114d42884b3178922dbd7034669f",
+    "results/transformer/section4_compact/full_copying_curves.npz": "6af67d0f385309a114f8abf0e68353e92317242192d9e774ac97d464f08f3b11",
+    "results/transformer/section4_compact/full_copying_provenance.json": "6f3bffb2f61486b7d5db6ca3b61a26a193fc559a2bcf7be8bffc11b17cc99dd8",
+    "results/transformer/section4_compact/independent_validation.json": "80d5b56ad94d47c7f6e9cc7d34c0ab1046a7bfac11be16404b869da84a331383",
+    "results/transformer/copying_bayes_precision_2026-09-24/paired_scores.npz": "792796076e5ac13be0ede14aaad9c6eaa5ca9c122eaf0264bbf4458f66489bc4",
+    "results/transformer/copying_bayes_precision_2026-09-24/provenance.json.gz": "5d3cd67944f80a37cf76cbb13e24f4612553d6a8661b066e15e9f4ccdf0c457c",
+    "results/transformer/copying_bayes_endpoint32_2026-09-24/paired_scores.npz": "98f0c2e90673b34c671bb5e81875074d7a3bebbed091db94e310ff222f85485d",
+    "results/transformer/copying_bayes_endpoint32_2026-09-24/provenance.json.gz": "b3ee6d7e8fcba05eecc2d5cf19399818c1338a7781ae8d55b279e688ee9f0921",
+    "results/transformer/copying_bayes_endpoint64_2026-09-24/paired_scores.npz": "a54c0039d5a1aa7501446a8371e20f0d0d2ef1f29596ffdc9365257c292359a7",
+    "results/transformer/copying_bayes_endpoint64_2026-09-24/provenance.json.gz": "b7937638fc6fe9e19ef70355ac12b15279be1a2f6118707a35c3ada5b32a4e64",
+    "results/transformer/copying_bayes_endpoint128_provisional_2026-09-25/paired_scores.npz": "0b98f12d3756e23b96b37443eb72fcc3a9955ddeb9085890140ef4ec15370453",
+    "results/transformer/copying_bayes_endpoint128_provisional_2026-09-25/provenance.json.gz": "5c87c28963e5a2474470f6d8dc933cd86a03888d2bd14c5051a267c6d6589c03",
+    "results/transformer/copying_bayes_endpoint128_provisional_2026-09-25/original_paired_scores.npz": "69a36f3b0525078d83d2fc396d2311f9ca68f288f17d94c2bea92a59e4b82711"
+  },
+  "checks": {
+    "independent_raw_risk_max_error": 0.0,
+    "summary_mean_max_error": 0.0,
+    "prechange_contrasts_exactly_zero": true,
+    "additivity_stat_max_error": 0.0,
+    "unseen_csv_stat_max_error": 3.3306690738754696e-16,
+    "copying_stat_max_error": 0.0,
+    "L0_paired_entropy_error": 0.0,
+    "L0_all16384_instantaneous_max_error": 0.0,
+    "L0_all16384_cumulative_max_error": 0.0,
+    "L0_retained1024_instantaneous_max_error": 0.0,
+    "L0_retained1024_cumulative_max_error": 0.0,
+    "L0_new15360_instantaneous_max_error": 0.0,
+    "L0_new15360_cumulative_max_error": 0.0,
+    "L2_paired_entropy_error": 8.881784197001252e-16,
+    "L2_all16384_instantaneous_max_error": 0.0,
+    "L2_all16384_cumulative_max_error": 0.0,
+    "L2_retained1024_instantaneous_max_error": 0.0,
+    "L2_retained1024_cumulative_max_error": 0.0,
+    "L2_new15360_instantaneous_max_error": 0.0,
+    "L2_new15360_cumulative_max_error": 0.0,
+    "L3_paired_entropy_error": 8.881784197001252e-16,
+    "L3_all16384_instantaneous_max_error": 0.0,
+    "L3_all16384_cumulative_max_error": 0.0,
+    "L3_retained1024_instantaneous_max_error": 0.0,
+    "L3_retained1024_cumulative_max_error": 0.0,
+    "L3_new15360_instantaneous_max_error": 0.0,
+    "L3_new15360_cumulative_max_error": 0.0,
+    "precision_copying_0_instantaneous_max_error": 0.0,
+    "precision_copying_0_cumulative_max_error": 8.881784197001252e-16,
+    "precision_copying_2_instantaneous_max_error": 0.0,
+    "precision_copying_2_cumulative_max_error": 1.4432899320127035e-15,
+    "precision_copying_3_instantaneous_max_error": 0.0,
+    "precision_copying_3_cumulative_max_error": 7.771561172376096e-16,
+    "copying_endpoint32_L0_max_error": 0.0,
+    "copying_endpoint32_L2_max_error": 0.0,
+    "copying_endpoint32_L3_max_error": 0.0,
+    "copying_endpoint64_L0_max_error": 0.0,
+    "copying_endpoint64_L2_max_error": 0.0,
+    "copying_endpoint64_L3_max_error": 0.0,
+    "copying_endpoint128_expanded_complete_cohorts": true
+  },
+  "size_inches": [
+    5.5,
+    6.75
+  ],
+  "minimum_font_points": 7.0,
+  "display": {
+    "x_axis": "Every panel uses a base-2 logarithmic axis of absolute observed tokens t.",
+    "predictor_styles": "Two-layer transformers are solid; larger transformers are dashed (panel a run 2 dotted). Open markers show informed Bayes; gray dotted triangles show token counts. Copying depths share dashed four-layer curves, with circles for L=2 and squares for L=3.",
+    "condition_colors": "Matched predictors share colors: blue is primary; panel (c) uses blue for measurement and orange for prediction; copying uses blue for L=2 and orange for L=3.",
+    "uncertainty": "Copying transformer curves retain saved 95% paired bootstrap intervals; displayed Bayesian points show one sequence SE.",
+    "copying_bayes_display_times": [
+      1,
+      2,
+      4,
+      8,
+      16
+    ],
+    "copying_bayes_endpoint_times": {
+      "instantaneous": [
+        32,
+        64,
+        128
+      ],
+      "cumulative": []
+    },
+    "copying_histories": {
+      "full_transformer_curves": 16384,
+      "bayesian_points_through64": 256,
+      "bayesian_points_at128": {
+        "0": 32,
+        "2": 256,
+        "3": 256
+      }
+    },
+    "copying128": {
+      "provisional": true,
+      "scientific_reference_validated": false,
+      "frequency_bank": 0,
+      "latent_rows": 288,
+      "numerical_uncertainty_certified": false
+    },
+    "selected_histories_at_t_4_16_64": {
+      "1": [
+        214,
+        136,
+        59
+      ],
+      "8": [
+        228,
+        161,
+        57
+      ],
+      "uniform_1": [
+        98,
+        80,
+        40
+      ]
+    }
+  },
+  "panels": {
+    "a": "Mismatch at product depth (4,4): two-layer transformer, both four-layer runs, informed Bayes and predicted stationary projection limit",
+    "b": "Time-varying product source at depth (4,4): two new matrices after observed t=256",
+    "c": "Time-varying source additivity: measured two-new-matrix excess and predicted twice-one-new-matrix excess",
+    "d": "Unseen context, shared base L=1: larger transformer run 1, informed Bayes and token counts",
+    "e": "Unseen context, shared base L=8: larger transformer run 1, informed Bayes and token counts; Bayes t64 released",
+    "f": "Unseen context, uniform base L=1: two-layer transformer, exact informed Bayes and token counts",
+    "g": "Gain from token order per token at L=2,3; accepted Bayes through64 and explicitly provisional fixed-cohort Bayes at128",
+    "h": "Summed gain from token order at L=2,3; full transformer cohort and informed-Bayes t=1..16 cohort"
+  },
+  "uncertainty": {
+    "a,b,c": "Saved pointwise mean +/- 1.96 sequence SE",
+    "d,e,f": "Saved one sequence SE; selected counts differ by time",
+    "g,h": "Transformer curves: saved pointwise 95% paired whole-sequence bootstrap intervals. Informed Bayes points: one paired source-sequence SE."
+  },
+  "scope": "One frozen training run per displayed model; intervals do not measure training-seed uncertainty or simultaneous coverage.",
+  "outputs": {
+    "overview.pdf": "5af95a882ebcfce730ab4eb1937a5d330abc83d9669634726393e26016411e15",
+    "overview.png": "56419be1eca7631d2c5285e9ad1626e26a364641c16b0674fd366baf4ba17657"
+  }
+}

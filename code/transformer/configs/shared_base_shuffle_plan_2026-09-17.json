@@ -1,0 +1,266 @@
+{
+  "schema": "shared-base-shuffle-plan-v1",
+  "experiment": "shared-base-shuffle-2026-09-17",
+  "seeds": [
+    0,
+    1
+  ],
+  "source": {
+    "d": 64,
+    "n_ctx": 1024,
+    "alpha": [
+      0.5,
+      1.5
+    ],
+    "ls": [
+      0,
+      8
+    ],
+    "permute": true
+  },
+  "config": {
+    "batch": 64,
+    "steps": 100000,
+    "warmup": 1000,
+    "lr": 0.0003,
+    "wd": 0.1,
+    "clip": 1.0,
+    "n_layer": 4,
+    "n_head": 8,
+    "d_model": 256,
+    "val_n": 64,
+    "val_settings": [
+      [
+        1,
+        2
+      ],
+      [
+        1,
+        4
+      ],
+      [
+        0.75,
+        2
+      ],
+      [
+        1.25,
+        3
+      ]
+    ],
+    "val_chunk": 32,
+    "log_every": 100,
+    "val_every": 1000,
+    "ckpt_every": 5000,
+    "weight_steps": [
+      50000,
+      100000
+    ]
+  },
+  "n_params": 3454464,
+  "completed_sequences_per_seed": 6400000,
+  "implementation_sha256": {
+    "source.py": "d1bb83004e3654cb3f84f6083437cae2b6d71fa19a33b06d26d2455ac440dab4",
+    "families.py": "24d7ab304d9de7133e38ec8ffe2422d2de38b9e3374670117807eab61d606e00",
+    "model.py": "742fe0e5c8ffaecee8072a3b270b23beaa2e0bd2a94d1a27a9af67c31eff9c28",
+    "mixture_source.py": "7fdfaa367429ebb43b1f1cfae3fa094dd378350f7f1ef1942f03639648aebc5e",
+    "train_mixture.py": "c364416f472813bd2e5bbfe988af710a278cbac1e73ff14b58611916fe123d2d",
+    "train_shared_base_scaling.py": "ffc6f6fe70811d4d6ef7b71d5140fc6b98e2b248dde8eefeb66e1713c469b602",
+    "shared_base_shuffle_source.py": "564cbe4767cb60d3ad22ea738bc6b3d22bdc91383b5707feac34914d69a31c0f",
+    "train_shared_base_shuffle.py": "87c3e4fd6e8f2c8cc1a3c18227855c4160667c545f38cece65cde21d37fae4c4"
+  },
+  "ordered_plan": {
+    "file": "shared_base_scaling_plan_2026-09-17.json",
+    "sha256": "28d3af403a7972ed30877ce2afb2201509c052cac4202c0b4485dea677d37202"
+  },
+  "ordered_runs": {
+    "0": {
+      "files_sha256": {
+        "config.json": "47584db02896871f731f99a9a93b4ba7041ba97f4cb942d8b385056af6cbe572",
+        "status.json": "3e15184f12bc1477f7d9b86cd546529d6823c45c5c8c5cff8923605d47ae2d93",
+        "scaling_runtime.json": "4d5e4e91a408a2f076a9d49d6500d59fd8ab21ce8b69e38405c400c8b6a06aba",
+        "model_100000.pt": "9a1954947e4a650c4811122a7752d6c808f7920bbebce5442f52e832210b196e"
+      },
+      "source_runtime": {
+        "torch_version": "2.14.0+cu126",
+        "numpy_version": "2.4.6",
+        "device": "cuda",
+        "cuda_version": "12.6",
+        "float32_matmul_precision": "highest",
+        "cuda_matmul_allow_tf32": false,
+        "cudnn_allow_tf32": false,
+        "num_threads": 1
+      }
+    },
+    "1": {
+      "files_sha256": {
+        "config.json": "c447d0485412d797f3660f2bb9e55e623d8d18a14229fcfa209e8e7ef1489305",
+        "status.json": "63802b6f41d227f19700e316de71bc8df21e2f9fa0fd625f19489d29ceb2a130",
+        "scaling_runtime.json": "efd4bb8e2158abf2611b7c1333268de84497942742c71bd9e9edc3b46d16102b",
+        "model_100000.pt": "0a1c467844b5e06583a966b81565c12cddb84638cc67a6b07e64030a94077040"
+      },
+      "source_runtime": {
+        "torch_version": "2.14.0+cu126",
+        "numpy_version": "2.4.6",
+        "device": "cuda",
+        "cuda_version": "12.6",
+        "float32_matmul_precision": "highest",
+        "cuda_matmul_allow_tf32": false,
+        "cudnn_allow_tf32": false,
+        "num_threads": 1
+      }
+    }
+  },
+  "shuffle_contract": {
+    "version": "shared-base-tail-shuffle-v1",
+    "control": "independent-tail-position-shuffle",
+    "source": {
+      "version": "shared-base-scaling-source-v1",
+      "alphabet": 64,
+      "alpha_uniform": [
+        0.5,
+        1.5
+      ],
+      "depth_uniform_inclusive": [
+        0,
+        8
+      ],
+      "alphabet_permutation": true,
+      "parameters": "Fresh exponent, common depth, rank permutation and transition matrix per sequence.",
+      "initial_token": "Drawn from the same base law q.",
+      "model_input": "Tokens only.",
+      "sampling": "indexed-batch-seedsequence-v1"
+    },
+    "original_batch": "train_shared_base_scaling.draw_batch(seed, zero_based_update, batch, n_ctx)",
+    "shuffle_rng": "numpy-PCG64-SeedSequence[0x53485346, stream, seed_lo, seed_hi, update_lo, update_hi, row]",
+    "train_stream": 0,
+    "validation_stream": 1,
+    "first_token": "Retained unchanged.",
+    "positions": "Independent uniform permutation of positions 2 through n_ctx+1 for each sequence.",
+    "targets": "The shuffled sequence shifted by one token; no original-order target is retained.",
+    "preserves": "Exact token counts of each original finite training sequence.",
+    "interpretation": "Finite-length exchangeable tail; not independent draws from the stationary law."
+  },
+  "pairing_probe_updates": [
+    0,
+    1,
+    1000,
+    49999,
+    99999
+  ],
+  "pairing_probes": {
+    "0": [
+      {
+        "seed": 0,
+        "update_index": 0,
+        "batch": 64,
+        "n_ctx": 1024,
+        "original_tokens_sha256": "2c1945a7f91db89b04145603cb4f0ce51f42111b3da5e366d8129a50633ecd4f",
+        "shuffled_tokens_sha256": "d2b6feef29e735046901a72f459d3b3529be93351d84aaf492d32a8d1ccf103b",
+        "position_permutations_sha256": "3cc56e9e4495c93d92bbd0887c5f240a2f74eb21b94ed60d0622d8721c2c43b2",
+        "distinct_tail_permutations": 64
+      },
+      {
+        "seed": 0,
+        "update_index": 1,
+        "batch": 64,
+        "n_ctx": 1024,
+        "original_tokens_sha256": "d87b075c5b84a135d0315833ff4cfc7523c2f842f7409061480dd13168d1a1dd",
+        "shuffled_tokens_sha256": "5580368b2781820013a818b1e7680cade34bd45f50f23574400f3963c19912d4",
+        "position_permutations_sha256": "750a1f39d79b20e80eb6507b95aeefebc09935b34f480166a3098385dba21632",
+        "distinct_tail_permutations": 64
+      },
+      {
+        "seed": 0,
+        "update_index": 1000,
+        "batch": 64,
+        "n_ctx": 1024,
+        "original_tokens_sha256": "1c12ecb19edc4a5479ccc222fab5a85971a9d4f388c15b69a517ba08784b37f3",
+        "shuffled_tokens_sha256": "87f639b9e368fcd8d2a022d663011a25bfd61a983653369bb83bd58708fcf8c7",
+        "position_permutations_sha256": "9f2a922dccd62c0d7bf10c3e725e990d8b3735d13bf3c5c493dbceb070c2fe6c",
+        "distinct_tail_permutations": 64
+      },
+      {
+        "seed": 0,
+        "update_index": 49999,
+        "batch": 64,
+        "n_ctx": 1024,
+        "original_tokens_sha256": "54669c2309c55d37c598a3cef2d3f4a9832cb2639b88f140ee3208fd87eab83c",
+        "shuffled_tokens_sha256": "ca9b1781ab786c7e1ea683a5e9a71096d996b256b886952e66a6e3753d32ae61",
+        "position_permutations_sha256": "22713132cf2a107b286029ca2cc357699f0d62e758a56f354f90f90b5001c0e0",
+        "distinct_tail_permutations": 64
+      },
+      {
+        "seed": 0,
+        "update_index": 99999,
+        "batch": 64,
+        "n_ctx": 1024,
+        "original_tokens_sha256": "e451aa9d144b02e3945f4be58ea7f731ebc64999bc7f58c076dfd3f8500dcacb",
+        "shuffled_tokens_sha256": "3b86ad2f4d69c1ada916f29982d46fcde08efff1ccf2699f6adde41b57174ca4",
+        "position_permutations_sha256": "382c4446c685a0ea5f215ea48f6c022da386a7e916786b43638287bf9cb6026f",
+        "distinct_tail_permutations": 64
+      }
+    ],
+    "1": [
+      {
+        "seed": 1,
+        "update_index": 0,
+        "batch": 64,
+        "n_ctx": 1024,
+        "original_tokens_sha256": "8264d236a857483d4528d92c6447c17e64c2c36a87bbfdcf96cb06bd60859c98",
+        "shuffled_tokens_sha256": "aa7aaf26c4f2e877280b20d2487049ab1d7850e6a530a5752dd4620c1dc1a8ef",
+        "position_permutations_sha256": "191ffc18dd0569a9885c7fcb30d2259b41c757cd1b38d198781a557afba4fab2",
+        "distinct_tail_permutations": 64
+      },
+      {
+        "seed": 1,
+        "update_index": 1,
+        "batch": 64,
+        "n_ctx": 1024,
+        "original_tokens_sha256": "17097e080b47a6f914b7261deac40455fb8fa60030ac3812f48d8fbe07d1847e",
+        "shuffled_tokens_sha256": "a010c77a80e221d36f2f86f8acfb03c91e5527fe815519b21301e3411c972769",
+        "position_permutations_sha256": "f8508261d6d8d6f49a454882139628095f8678efdfb2b697dfb6bbb84029df88",
+        "distinct_tail_permutations": 64
+      },
+      {
+        "seed": 1,
+        "update_index": 1000,
+        "batch": 64,
+        "n_ctx": 1024,
+        "original_tokens_sha256": "20b32be324970363b80313d06f81561cc03c56f2b1f0c46005c7585ab95b6f17",
+        "shuffled_tokens_sha256": "ecfe79485572fca6944559e143c0afc21166933b8b8ac16bdd09f022a48b8584",
+        "position_permutations_sha256": "57a5b4b4ee7ee67ecde57c14ade2d24360a1c45613dc108300f263927bc9021b",
+        "distinct_tail_permutations": 64
+      },
+      {
+        "seed": 1,
+        "update_index": 49999,
+        "batch": 64,
+        "n_ctx": 1024,
+        "original_tokens_sha256": "f757f0523de3a708c9c06e437279d531b300ee5ca63180cd44946b780fffe2bf",
+        "shuffled_tokens_sha256": "8c8e13e1958765ab577b6b2625accfd7ab9fd818ca5b249708ad427fdf04537b",
+        "position_permutations_sha256": "49ef85683352cd7c937d7a5f1a15b8c5236a9a816c1e4f4c1aeee5323ea9c006",
+        "distinct_tail_permutations": 64
+      },
+      {
+        "seed": 1,
+        "update_index": 99999,
+        "batch": 64,
+        "n_ctx": 1024,
+        "original_tokens_sha256": "33cfeaafcda441dc24ad2843189e6777373a23701502e2a791812c800536c9cf",
+        "shuffled_tokens_sha256": "8567a82a76c8d687ff8116df9328a178d18fe3ac953c507b2337a4ea1092efd0",
+        "position_permutations_sha256": "cec94836279d590607d4abaeb0e9f00500767a4007353781f236dde6172e26e8",
+        "distinct_tail_permutations": 64
+      }
+    ]
+  },
+  "benchmark": {
+    "steps": 1000,
+    "seed": 0,
+    "separate_output": true,
+    "purpose": "Measure exact-source replay, independent tail shuffle, training throughput and GPU memory before production. Benchmark is not a production initialization."
+  },
+  "interpretation": "Train only shuffled controls; compare with existing larger ordered models. Preserves exact finite-sequence counts and first token. This is not a direct iid stationary source, a circuit ablation, or a Bayesian mixture-weight estimate.",
+  "primary_checkpoint_step": 100000,
+  "training_repeats": "Both predetermined seeds 0 and 1; never select by final test performance.",
+  "matching_scope": "Exact indexed source replay of the larger ordered models, not historical small-model batches. The source batch size 64 and indexed update seed are part of the data identity."
+}

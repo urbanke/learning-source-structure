@@ -1,0 +1,44 @@
+{
+ "d": 2,
+ "n_ctx": 256,
+ "alpha": [
+  0.5,
+  1.5
+ ],
+ "ls": [
+  0,
+  8
+ ],
+ "no_permute": false,
+ "family": "binary:twopoint",
+ "n_layer": 2,
+ "n_head": 4,
+ "d_model": 64,
+ "no_mlp": false,
+ "batch": 64,
+ "steps": 20000,
+ "lr": 0.0003,
+ "warmup": 500,
+ "wd": 0.1,
+ "clip": 1.0,
+ "seed": 0,
+ "workers": 6,
+ "device": "cuda",
+ "log_every": 50,
+ "val_every": 500,
+ "ckpt_every": 2500,
+ "val_settings": "1,2;1,4;0.75,2;1.25,3",
+ "val_n": 64,
+ "out": "results/transformer/runs/bin_twopoint",
+ "resume": true,
+ "n_params": 116736,
+ "model": {
+  "vocab": 2,
+  "n_ctx": 256,
+  "n_layer": 2,
+  "n_head": 4,
+  "d_model": 64,
+  "mlp": true,
+  "dropout": 0.0
+ }
+}

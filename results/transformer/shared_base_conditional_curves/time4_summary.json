@@ -1,0 +1,287 @@
+{
+  "schema": "shared-base-shortprefix-paired-summary-v1",
+  "time": 4,
+  "rows": [
+    {
+      "alpha": 1.0,
+      "depth": 0,
+      "time": 4,
+      "model": "d64",
+      "n_sequences": 256,
+      "bayes_regret": {
+        "n": 256,
+        "mean": 0.9189075516420181,
+        "standard_error": 0.014456726182966766
+      },
+      "transformer_regret": {
+        "n": 256,
+        "mean": 0.944770581266624,
+        "standard_error": 0.013651604331410841
+      },
+      "transformer_minus_bayes": {
+        "n": 256,
+        "mean": 0.025863029624605984,
+        "standard_error": 0.004638655361785566
+      },
+      "maximum_refinement_change_in_individual_regret": 1.5765166949677223e-14
+    },
+    {
+      "alpha": 1.0,
+      "depth": 0,
+      "time": 4,
+      "model": "d64_seed1",
+      "n_sequences": 256,
+      "bayes_regret": {
+        "n": 256,
+        "mean": 0.9189075516420181,
+        "standard_error": 0.014456726182966766
+      },
+      "transformer_regret": {
+        "n": 256,
+        "mean": 0.9311425172271841,
+        "standard_error": 0.014111937974544781
+      },
+      "transformer_minus_bayes": {
+        "n": 256,
+        "mean": 0.012234965585166072,
+        "standard_error": 0.004193849831537111
+      },
+      "maximum_refinement_change_in_individual_regret": 1.5765166949677223e-14
+    },
+    {
+      "alpha": 1.0,
+      "depth": 1,
+      "time": 4,
+      "model": "d64",
+      "n_sequences": 256,
+      "bayes_regret": {
+        "n": 256,
+        "mean": 1.4002580988210318,
+        "standard_error": 0.027521558119902007
+      },
+      "transformer_regret": {
+        "n": 256,
+        "mean": 1.4204932468909783,
+        "standard_error": 0.027851406828146123
+      },
+      "transformer_minus_bayes": {
+        "n": 256,
+        "mean": 0.020235148069946432,
+        "standard_error": 0.005463448668413716
+      },
+      "maximum_refinement_change_in_individual_regret": 1.4432899320127035e-14
+    },
+    {
+      "alpha": 1.0,
+      "depth": 1,
+      "time": 4,
+      "model": "d64_seed1",
+      "n_sequences": 256,
+      "bayes_regret": {
+        "n": 256,
+        "mean": 1.4002580988210318,
+        "standard_error": 0.027521558119902007
+      },
+      "transformer_regret": {
+        "n": 256,
+        "mean": 1.4202996257714358,
+        "standard_error": 0.02783791963823434
+      },
+      "transformer_minus_bayes": {
+        "n": 256,
+        "mean": 0.02004152695040385,
+        "standard_error": 0.005899523281896534
+      },
+      "maximum_refinement_change_in_individual_regret": 1.4432899320127035e-14
+    },
+    {
+      "alpha": 1.0,
+      "depth": 4,
+      "time": 4,
+      "model": "d64",
+      "n_sequences": 256,
+      "bayes_regret": {
+        "n": 256,
+        "mean": 2.3920515936864692,
+        "standard_error": 0.04537436397105466
+      },
+      "transformer_regret": {
+        "n": 256,
+        "mean": 2.406673434440136,
+        "standard_error": 0.04518952397282848
+      },
+      "transformer_minus_bayes": {
+        "n": 256,
+        "mean": 0.014621840753666435,
+        "standard_error": 0.005995351987593076
+      },
+      "maximum_refinement_change_in_individual_regret": 1.5987211554602254e-14
+    },
+    {
+      "alpha": 1.0,
+      "depth": 4,
+      "time": 4,
+      "model": "d64_seed1",
+      "n_sequences": 256,
+      "bayes_regret": {
+        "n": 256,
+        "mean": 2.3920515936864692,
+        "standard_error": 0.04537436397105466
+      },
+      "transformer_regret": {
+        "n": 256,
+        "mean": 2.39582473402521,
+        "standard_error": 0.04572814101305149
+      },
+      "transformer_minus_bayes": {
+        "n": 256,
+        "mean": 0.003773140338740847,
+        "standard_error": 0.007180623309877153
+      },
+      "maximum_refinement_change_in_individual_regret": 1.5987211554602254e-14
+    },
+    {
+      "alpha": 1.0,
+      "depth": 8,
+      "time": 4,
+      "model": "d64",
+      "n_sequences": 256,
+      "bayes_regret": {
+        "n": 256,
+        "mean": 3.347158372677979,
+        "standard_error": 0.06086941436202632
+      },
+      "transformer_regret": {
+        "n": 256,
+        "mean": 3.3814458167040975,
+        "standard_error": 0.06169462776792384
+      },
+      "transformer_minus_bayes": {
+        "n": 256,
+        "mean": 0.03428744402611805,
+        "standard_error": 0.008287509804439552
+      },
+      "maximum_refinement_change_in_individual_regret": 1.9095836023552692e-14
+    },
+    {
+      "alpha": 1.0,
+      "depth": 8,
+      "time": 4,
+      "model": "d64_seed1",
+      "n_sequences": 256,
+      "bayes_regret": {
+        "n": 256,
+        "mean": 3.347158372677979,
+        "standard_error": 0.06086941436202632
+      },
+      "transformer_regret": {
+        "n": 256,
+        "mean": 3.370432476575223,
+        "standard_error": 0.06082370311355546
+      },
+      "transformer_minus_bayes": {
+        "n": 256,
+        "mean": 0.023274103897243697,
+        "standard_error": 0.008590120477872089
+      },
+      "maximum_refinement_change_in_individual_regret": 1.9095836023552692e-14
+    }
+  ],
+  "reference": "Full original training prior, deterministic rank marginalization; selected alpha/depth are hidden.",
+  "statistic": "Mean KL(true next-token transition row || predictor), in bits; standard errors over independent whole sequences.",
+  "every_declared_sequence_retained": true,
+  "reference_validation_passed": true,
+  "provenance": {
+    "reference_catalog_sha256": "a1659aa766a6c15ffb849d71f67352f88fe385658297a920c2baf376dbbb0c1c",
+    "summary_script_sha256": "71bb461091932c015b3e816ec68f6320f0ccb8eae75795e31c57b5e840afadfc",
+    "cohorts": [
+      {
+        "alpha": 1.0,
+        "depth": 0,
+        "n_sequences": 256,
+        "pattern_counts": {
+          "0122": 14,
+          "0001": 4,
+          "0123": 168,
+          "0120": 13,
+          "0121": 13,
+          "0012": 13,
+          "0102": 9,
+          "0112": 16,
+          "0111": 2,
+          "0010": 2,
+          "0110": 1,
+          "0101": 1
+        },
+        "cohort_sha256": "4c56f3ec0b382b14f74d8ce62c31fcb8766ffbb4b299ddc89e13c704a36108a7",
+        "array_path": "/Users/ruediger/Projects/layered_architectures/output/shared_base_conditional_curves_2026-09-15/a1_L0/shortprefix_t4_predictions.npz",
+        "array_sha256": "a2e8c3a9bdeada7380ff85f7b7c2e6b7e1f77b5391e86683142dd9ac8c8d0e06"
+      },
+      {
+        "alpha": 1.0,
+        "depth": 1,
+        "n_sequences": 256,
+        "pattern_counts": {
+          "0012": 6,
+          "0122": 13,
+          "0121": 10,
+          "0123": 186,
+          "0112": 7,
+          "0102": 15,
+          "0100": 6,
+          "0120": 7,
+          "0010": 1,
+          "0000": 4,
+          "0101": 1
+        },
+        "cohort_sha256": "eec1bcea52c953eaca1b904af0c09f9d61c864069c1cae1bb931f08628bd83a9",
+        "array_path": "/Users/ruediger/Projects/layered_architectures/output/shared_base_conditional_curves_2026-09-15/a1_L1/shortprefix_t4_predictions.npz",
+        "array_sha256": "8a3798c06e631c0f2b93f5f60704d5ac8221064e4e4363872b16c7f849c9f4f4"
+      },
+      {
+        "alpha": 1.0,
+        "depth": 4,
+        "n_sequences": 256,
+        "pattern_counts": {
+          "0123": 194,
+          "0102": 11,
+          "0001": 4,
+          "0000": 2,
+          "0122": 5,
+          "0120": 10,
+          "0121": 8,
+          "0111": 5,
+          "0112": 7,
+          "0012": 7,
+          "0010": 1,
+          "0101": 1,
+          "0100": 1
+        },
+        "cohort_sha256": "d365a6a1974f73030eb033960fe0b59d33277528ed35d02b629648cc3ed0773c",
+        "array_path": "/Users/ruediger/Projects/layered_architectures/output/shared_base_conditional_curves_2026-09-15/a1_L4/shortprefix_t4_predictions.npz",
+        "array_sha256": "3aa54fb96c8fc46fe533a0a03987831a2d61067988da82782b4841baf6387cc9"
+      },
+      {
+        "alpha": 1.0,
+        "depth": 8,
+        "n_sequences": 256,
+        "pattern_counts": {
+          "0123": 212,
+          "0122": 6,
+          "0101": 2,
+          "0120": 8,
+          "0102": 7,
+          "0000": 3,
+          "0121": 6,
+          "0012": 7,
+          "0112": 2,
+          "0111": 2,
+          "0110": 1
+        },
+        "cohort_sha256": "fa9d29b90cae302c3c263d74305e4b79b737cb8cd3e053edcb5cb3bd161e71f4",
+        "array_path": "/Users/ruediger/Projects/layered_architectures/output/shared_base_conditional_curves_2026-09-15/a1_L8/shortprefix_t4_predictions.npz",
+        "array_sha256": "8147e97b114392746edbb8209d9facc96b53450423073868f6975a1327516f48"
+      }
+    ]
+  }
+}

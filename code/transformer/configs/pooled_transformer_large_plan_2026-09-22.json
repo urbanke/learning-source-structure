@@ -1,0 +1,28 @@
+{
+  "schema": "pooled-transformer-large-plan-v1",
+  "experiment": "pooled-transformer-large-2026-09-22",
+  "seeds": [
+    0,
+    1
+  ],
+  "architecture": {
+    "n_layer": 4,
+    "n_head": 8,
+    "d_model": 256
+  },
+  "n_params": 3454464,
+  "benchmark_steps": 1000,
+  "baseline_config_sha256": {
+    "0": "9c4caef4929ab382dd2a53b0c66dc898dbbec52efc930c081652009bb394a5f8",
+    "1": "a27cfa99274655ec64e8a6e18d1ff866cbb9e93164e35ddf99c4c1e68c04ebb5"
+  },
+  "implementation_sha256": {
+    "source.py": "d1bb83004e3654cb3f84f6083437cae2b6d71fa19a33b06d26d2455ac440dab4",
+    "families.py": "24d7ab304d9de7133e38ec8ffe2422d2de38b9e3374670117807eab61d606e00",
+    "model.py": "742fe0e5c8ffaecee8072a3b270b23beaa2e0bd2a94d1a27a9af67c31eff9c28",
+    "mixture_source.py": "7fdfaa367429ebb43b1f1cfae3fa094dd378350f7f1ef1942f03639648aebc5e",
+    "train_mixture.py": "c364416f472813bd2e5bbfe988af710a278cbac1e73ff14b58611916fe123d2d",
+    "eval_mixture.py": "a93d308a8af6fe0528ed619ef89f130419efe02c7f11061b2e8356bd32c5e3d9"
+  },
+  "scope": "Two fresh larger models; preserve the original indexed training streams,300000 updates,3000-step warmup,monitoring,and final checkpoint. No benchmark initialization. Existing frozen held-out sources reused after completion."
+}

@@ -1,0 +1,140 @@
+{
+  "schema": "shared-base-gpu-cases-v1",
+  "cases": [
+    {
+      "id": "cal_product_0",
+      "name": "product_prior_0",
+      "kind": "frozen_heldout_prefix",
+      "family": "product",
+      "tokens": [
+        24,
+        22,
+        19,
+        17,
+        24
+      ],
+      "source_identity": {
+        "source_plan_id": "64a6796ebe5598ac29cedf214e5259649d97e49a06fe36c3f1d0cea28f9eff51",
+        "cohort": "product_prior",
+        "cohort_sha256": "6a66459c00f6b3850e3f8bad4002869c41e0d83c1494cd8f51ac2241dd017f96",
+        "sequence_index": 0,
+        "sequence_seed": [
+          2279030993,
+          2737539860,
+          3820444799,
+          592574977
+        ]
+      },
+      "known_log_evidence": -19.88371021168689
+    },
+    {
+      "id": "cal_shared_base_0",
+      "name": "shared_base_prior_0",
+      "kind": "frozen_heldout_prefix",
+      "family": "shared_base",
+      "tokens": [
+        31,
+        23,
+        29,
+        17,
+        27
+      ],
+      "source_identity": {
+        "source_plan_id": "64a6796ebe5598ac29cedf214e5259649d97e49a06fe36c3f1d0cea28f9eff51",
+        "cohort": "shared_base_prior",
+        "cohort_sha256": "68a12be7e92bbd4f7130265c9cb953108edbb21cc13adc16d24a14a91e7f03fa",
+        "sequence_index": 0,
+        "sequence_seed": [
+          3848314424,
+          1324096754,
+          2692026331,
+          2607568781
+        ]
+      },
+      "known_log_evidence": -21.134199657294836
+    },
+    {
+      "id": "cal_uniform_base_0",
+      "name": "uniform_base_prior_0",
+      "kind": "frozen_heldout_prefix",
+      "family": "uniform_base",
+      "tokens": [
+        50,
+        62,
+        41,
+        40,
+        61
+      ],
+      "source_identity": {
+        "source_plan_id": "64a6796ebe5598ac29cedf214e5259649d97e49a06fe36c3f1d0cea28f9eff51",
+        "cohort": "uniform_base_prior",
+        "cohort_sha256": "57a5261e6cbca7283247d9a491b82689be0ac10042152851ac6e7a7bff2a5ded",
+        "sequence_index": 0,
+        "sequence_seed": [
+          2162595798,
+          1947434719,
+          804931112,
+          1266923148
+        ]
+      },
+      "known_log_evidence": -21.134199657294836
+    },
+    {
+      "id": "cal_aaaaa",
+      "name": "aaaaa",
+      "kind": "exact_stress_control",
+      "tokens": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "known_log_evidence": -8.862243617031337
+    },
+    {
+      "id": "cal_ababa",
+      "name": "ababa",
+      "kind": "exact_stress_control",
+      "tokens": [
+        0,
+        1,
+        0,
+        1,
+        0
+      ],
+      "known_log_evidence": -13.741526078758973
+    },
+    {
+      "id": "cal_abaca",
+      "name": "abaca",
+      "kind": "exact_stress_control",
+      "tokens": [
+        0,
+        1,
+        0,
+        2,
+        0
+      ],
+      "known_log_evidence": -17.70436765400922
+    }
+  ],
+  "prior": {
+    "alphabet": 64,
+    "alpha_uniform": [
+      0.5,
+      1.5
+    ],
+    "depth_uniform": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8
+    ]
+  }
+}

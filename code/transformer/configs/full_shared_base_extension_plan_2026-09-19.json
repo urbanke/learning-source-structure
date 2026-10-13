@@ -1,0 +1,67 @@
+{
+  "schema": "full-shared-base-extension-plan-v1",
+  "scope": "Three terminal probability-ESS failures only; same chains, doubled fixed draw cap, independent output and audits.",
+  "parent_plan_sha256": "da2d156e5df8999d0a64c3e610393808e4f8da52ed13895529a53888fc2aff7e",
+  "parent_launch_id": "dfc0a20712755bed14da9e81e2f761e8e57ddf8d11e639e8c0cb0fb064d35e8c",
+  "selection_snapshot_sha256": "15c27f7805e86784ca2f00ce8450ecfe8a4b939ca779129b5923e06475d31be5",
+  "parent_draws": 524288,
+  "target_draws": 1048576,
+  "tolerances_changed": false,
+  "resources": {
+    "cpus": 8,
+    "memory_gib": 48,
+    "wall_seconds": 28800,
+    "worker_seconds": 23400,
+    "audit_seconds": 3600,
+    "concurrency": 3
+  },
+  "tasks": [
+    {
+      "task": {
+        "id": "L1_i195_t1024_a32",
+        "depth": 1,
+        "index": 195,
+        "time": 1024,
+        "order": 32,
+        "setting": "a1_L1"
+      },
+      "parent_task_index": 1791,
+      "parent_audit_fingerprint": "672ba133cc22b9084914a3866782f5587b5ffdba2efea133ef4b6de051057b86",
+      "parent_report_sha256": "4bd2ea3509a875539135a6c92a06ce33f5182537ec9b8e9fa5c91b2fb6663486",
+      "parent_reference_id": "d5ae32e66e7d6147d3830b939172cf4a3078c84691d6e257035db2de9b114ee0"
+    },
+    {
+      "task": {
+        "id": "L1_i207_t1024_a16",
+        "depth": 1,
+        "index": 207,
+        "time": 1024,
+        "order": 16,
+        "setting": "a1_L1"
+      },
+      "parent_task_index": 1838,
+      "parent_audit_fingerprint": "68af73e6346ee4375f3cdf629e9cc5b677e05fce3644d4b7b3d2afcb572011a7",
+      "parent_report_sha256": "5abf477edd9b2208413a5a07c00497bb857e38c0a8fc1bd17b46a458f91b424d",
+      "parent_reference_id": "0c936c89b8244de4bda9d899cbb180919365ee99982f8ee12476042848950325"
+    },
+    {
+      "task": {
+        "id": "L1_i232_t1024_a16",
+        "depth": 1,
+        "index": 232,
+        "time": 1024,
+        "order": 16,
+        "setting": "a1_L1"
+      },
+      "parent_task_index": 1938,
+      "parent_audit_fingerprint": "ce84b2d081654833b6f309a81784e53c1276ae5733826070c657917fed6112b7",
+      "parent_report_sha256": "620e31395e6b3eff5dae3c17f7e7c3c94e4046c0c56ed592cf89c0171526a33d",
+      "parent_reference_id": "62d8b9ad066a8cfccceb01b0cc8caee566904301481a48395e9797a9c8ef5a06"
+    }
+  ],
+  "code_sha256": {
+    "code/scripts/full_shared_base_extension.py": "27d7f68c58375d751f313179963d74a6bc2dc6796bb07688ba48aac93dde6eee",
+    "code/transformer/scitas/submit_full_shared_base_extension.sh": "ad06eedbf413ce9bdb579c63f1158b1a39779784890fa439e7f4891d64f3a48b",
+    "code/transformer/scitas/full_shared_base_extension.sbatch": "c7f4cc622eabb7ab5f485ecd71575d812346c4657f925eccadd654a77f861ce6"
+  }
+}

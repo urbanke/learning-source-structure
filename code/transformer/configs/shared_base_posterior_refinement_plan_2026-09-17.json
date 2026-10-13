@@ -1,0 +1,215 @@
+{
+  "schema": "shared-base-posterior-refinement-plan-v1",
+  "base": {
+    "revalidation_output": "output/shared_base_depth_revalidation_2026-09-17"
+  },
+  "tasks": [
+    {
+      "id": "L4_i1_t256_a16_extend",
+      "kind": "continuation",
+      "base_task_index": 20,
+      "setting": "a1_L4",
+      "index": 1,
+      "time": 256,
+      "order": 16,
+      "previous_draws": 131072,
+      "initial_draws": 524288,
+      "max_draws": 524288,
+      "master_seed": 2026091670
+    },
+    {
+      "id": "L4_i1_t256_a32_extend",
+      "kind": "continuation",
+      "base_task_index": 21,
+      "setting": "a1_L4",
+      "index": 1,
+      "time": 256,
+      "order": 32,
+      "previous_draws": 131072,
+      "initial_draws": 524288,
+      "max_draws": 524288,
+      "master_seed": 2026091670
+    },
+    {
+      "id": "L8_i0_t256_a32_extend",
+      "kind": "continuation",
+      "base_task_index": 25,
+      "setting": "a1_L8",
+      "index": 0,
+      "time": 256,
+      "order": 32,
+      "previous_draws": 131072,
+      "initial_draws": 262144,
+      "max_draws": 262144,
+      "master_seed": 2026091670
+    },
+    {
+      "id": "L8_i1_t256_a16_extend",
+      "kind": "continuation",
+      "base_task_index": 28,
+      "setting": "a1_L8",
+      "index": 1,
+      "time": 256,
+      "order": 16,
+      "previous_draws": 65536,
+      "initial_draws": 262144,
+      "max_draws": 262144,
+      "master_seed": 2026091670
+    },
+    {
+      "id": "L8_i1_t256_a32_extend",
+      "kind": "continuation",
+      "base_task_index": 29,
+      "setting": "a1_L8",
+      "index": 1,
+      "time": 256,
+      "order": 32,
+      "previous_draws": 65536,
+      "initial_draws": 262144,
+      "max_draws": 262144,
+      "master_seed": 2026091670
+    },
+    {
+      "id": "L4_i0_t1024_a32_extend",
+      "kind": "continuation",
+      "base_task_index": 19,
+      "setting": "a1_L4",
+      "index": 0,
+      "time": 1024,
+      "order": 32,
+      "previous_draws": 262144,
+      "initial_draws": 524288,
+      "max_draws": 524288,
+      "master_seed": 2026091670
+    },
+    {
+      "id": "L0_i0_t1024_a64",
+      "kind": "quadrature",
+      "base_task_index": 3,
+      "setting": "a1_L0",
+      "index": 0,
+      "time": 1024,
+      "order": 64,
+      "initial_draws": 16384,
+      "max_draws": 65536,
+      "master_seed": 2026091670
+    },
+    {
+      "id": "L0_i1_t1024_a64",
+      "kind": "quadrature",
+      "base_task_index": 7,
+      "setting": "a1_L0",
+      "index": 1,
+      "time": 1024,
+      "order": 64,
+      "initial_draws": 16384,
+      "max_draws": 65536,
+      "master_seed": 2026091670
+    },
+    {
+      "id": "L0_i1_t1024_a32_repeat",
+      "kind": "repeat",
+      "base_task_index": 7,
+      "setting": "a1_L0",
+      "index": 1,
+      "time": 1024,
+      "order": 32,
+      "initial_draws": 16384,
+      "max_draws": 65536,
+      "master_seed": 2026091771
+    }
+  ],
+  "worker": {
+    "proposal": "iid",
+    "steps": 64,
+    "burn": 16384,
+    "chains": 4,
+    "thin": 1
+  },
+  "resources": {
+    "cpus": 4,
+    "memory_gib": 24,
+    "wall_seconds": 28800,
+    "worker_seconds": 26400,
+    "audit_seconds": 1800,
+    "concurrency": 9
+  },
+  "repeat_gate": {
+    "agreement_mc_multiplier": 5.0,
+    "bias_multiplier": 2.0,
+    "agreement_floor_bits": 0.0002,
+    "precision_mc_multiplier": 2.0,
+    "precision_budget_bits": 0.003333333333333333
+  },
+  "comparisons": {
+    "retained_source_indices": [
+      0,
+      1
+    ],
+    "unchanged_depth_time_groups": [
+      [
+        0,
+        256
+      ],
+      [
+        1,
+        256
+      ],
+      [
+        1,
+        1024
+      ],
+      [
+        8,
+        1024
+      ]
+    ],
+    "continuation_groups": [
+      [
+        4,
+        256
+      ],
+      [
+        4,
+        1024
+      ],
+      [
+        8,
+        256
+      ]
+    ],
+    "l0_time1024_primary_orders": [
+      32,
+      64
+    ],
+    "l0_time1024_historical_orders": [
+      16,
+      32
+    ],
+    "repeat_role": "Independent same-order consistency check using the existing per-case stochastic-agreement allowance. Never substitute the repeat for the original order-32 estimate. Require both this check and the complete order-32/64 comparison before reporting L0,time1024 as passed.",
+    "incomplete_results": "Do not fall back to an earlier estimate for a declared but missing continuation. No selected passing-case mean."
+  },
+  "rationale": {
+    "source": "User-reported complete summary of Jed revalidation job 66550732, 17 September 2026. Bind the actual launch, summary and raw records at submission and execution.",
+    "l4_time256": "Sequence 1 dominates the numerical variance; quadruple its saved draws at both integration orders and retain sequence 0 unchanged.",
+    "l8_time256": "Bring the three shorter calculations to 262144 draws per chain; the existing order-16 sequence-0 calculation already has that count.",
+    "l4_time1024": "Double only sequence 0, order 32, whose minimum probability ESS is 159.68 below the unchanged threshold 200.",
+    "l0_time1024": "Add a 64-node integration rule for both sequences and an independent order-32 repeat for the discrepant sequence. Retain the failed original 16/32 result.",
+    "limits": "Projected variance reductions are planning estimates only. Recompute all existing numerical checks. This two-sequence-per-depth pilot is not a population result."
+  },
+  "no_auto_retry": true,
+  "production_approved": false,
+  "code_files": [
+    "code/scripts/depth_rhat_statistics.py",
+    "code/scripts/inspect_shared_base_depth_diagnostics.py",
+    "code/scripts/recover_shared_base_posterior_audit.py",
+    "code/scripts/refine_shared_base_posterior.py",
+    "code/scripts/revalidate_shared_base_depth.py",
+    "code/transformer/scitas/shared_base_depth_revalidation.sbatch",
+    "code/transformer/scitas/shared_base_posterior_recovery.sbatch",
+    "code/transformer/scitas/shared_base_posterior_refinement.sbatch",
+    "code/transformer/scitas/submit_shared_base_depth_revalidation.sh",
+    "code/transformer/scitas/submit_shared_base_posterior_recovery.sh",
+    "code/transformer/scitas/submit_shared_base_posterior_refinement.sh"
+  ]
+}

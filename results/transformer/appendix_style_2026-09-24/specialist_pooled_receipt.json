@@ -1,0 +1,21 @@
+{
+  "schema": "appendix-figure-presentation-v1",
+  "figures": [
+    5,
+    8
+  ],
+  "data_recomputed": false,
+  "estimates_and_uncertainties_unchanged": true,
+  "all_pooled_bayes_points_numerically_validated": false,
+  "sources": {
+    "code/scripts/appendix_specialist_pooled_figures.py": "a33c843a02133f3be486dbbc99a79b8e0c183b1b989aa98e61ac474d3834c5bf",
+    "code/scripts/appendix_figure_style.py": "d4c5b9f05330a9779c7b828b9f98b0605e66f8d387f7131202f8810d669bfcd2",
+    "results/transformer/section3_compact/receipt.json": "aa3c5130781f7dd4aaf3e7a3d828d9e01e106f3de04d23d3d4e2ecd054ff00fd"
+  },
+  "outputs": {
+    "figure5.pdf": "df60a7cefd5c5b908bcdb03896850ed0bf89545caf5f9c06832768a021af2dfd",
+    "figure5.png": "01906fc30926b5194247797124fa8b461b27b571b286e12318bc08e747f1cdd6",
+    "figure8.pdf": "1b8a5e67598d1cd002053cf6081359ce0af0a0ba3e5bafaab0f1d809d737d28f",
+    "figure8.png": "5d58ed6dad20db8392397f11890e8e1731377a1901f79f748205b9b3c00cbcc7"
+  }
+}

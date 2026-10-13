@@ -1,0 +1,168 @@
+{
+  "schema": "shared-base-scaling-plan-v1",
+  "experiment": "shared-base-scaling-2026-09-17",
+  "seeds": [
+    0,
+    1
+  ],
+  "source": {
+    "d": 64,
+    "n_ctx": 1024,
+    "alpha": [
+      0.5,
+      1.5
+    ],
+    "ls": [
+      0,
+      8
+    ],
+    "permute": true
+  },
+  "config": {
+    "batch": 64,
+    "steps": 100000,
+    "warmup": 1000,
+    "lr": 0.0003,
+    "wd": 0.1,
+    "clip": 1.0,
+    "n_layer": 4,
+    "n_head": 8,
+    "d_model": 256,
+    "val_n": 64,
+    "val_settings": [
+      [
+        1,
+        2
+      ],
+      [
+        1,
+        4
+      ],
+      [
+        0.75,
+        2
+      ],
+      [
+        1.25,
+        3
+      ]
+    ],
+    "val_chunk": 32,
+    "log_every": 100,
+    "val_every": 1000,
+    "ckpt_every": 5000,
+    "weight_steps": [
+      50000,
+      100000
+    ]
+  },
+  "n_params": 3454464,
+  "completed_sequences_per_seed": 6400000,
+  "implementation_sha256": {
+    "source.py": "d1bb83004e3654cb3f84f6083437cae2b6d71fa19a33b06d26d2455ac440dab4",
+    "families.py": "24d7ab304d9de7133e38ec8ffe2422d2de38b9e3374670117807eab61d606e00",
+    "model.py": "742fe0e5c8ffaecee8072a3b270b23beaa2e0bd2a94d1a27a9af67c31eff9c28",
+    "mixture_source.py": "7fdfaa367429ebb43b1f1cfae3fa094dd378350f7f1ef1942f03639648aebc5e",
+    "train_mixture.py": "c364416f472813bd2e5bbfe988af710a278cbac1e73ff14b58611916fe123d2d",
+    "train_shared_base_scaling.py": "ffc6f6fe70811d4d6ef7b71d5140fc6b98e2b248dde8eefeb66e1713c469b602"
+  },
+  "baseline": {
+    "architecture": {
+      "n_layer": 2,
+      "n_head": 4,
+      "d_model": 128
+    },
+    "n_params": 544256,
+    "completed_sequences_per_seed": 6400000,
+    "checkpoints": {
+      "0": {
+        "path": "results/transformer/runs/d64/model_100000.pt",
+        "sha256": "2f7d5d39ffcd02dd200d4e535835b32a58e6b14f3e19598b696fd0045e76dd27"
+      },
+      "1": {
+        "path": "results/transformer/runs/d64_seed1/model_100000.pt",
+        "sha256": "cfdafbfbb231f40af8dea67dc3c629ee105fa332d19b45c2dee2c6d498ed8253"
+      }
+    },
+    "sampling_comparison": "Same source prior and sequence count; fresh training sequences. Historical training batches depended on worker count and are not reproduced token for token."
+  },
+  "evaluation_files_sha256": {
+    "results/transformer/shared_base_conditional_curves/summary.json": "0d920d9a58eff888ff99a39136cb4ac22171fc71b1a6a04acb736ea920246e0d",
+    "results/transformer/shared_base_conditional_curves/time4_summary.json": "e4997691be5bf98016e9e3b67f03e37f08556068b4777af229a2a6f164259482",
+    "results/transformer/shared_base_conditional_curves/time16_summary.json": "d0341e04ec2d2daf7075d63c5e8ba4e78e70b62cbba55e9855debc18ae8fb88f",
+    "results/transformer/shared_base_morning_audit_2026-09-17/summary.json": "8c40801e7fc8d2cfb6dbeb25ceeb12c1b070aed26761e4992ee7346127d57d96",
+    "output/shared_base_conditional_curves_2026-09-15/a1_L0/cohort.json": "4c56f3ec0b382b14f74d8ce62c31fcb8766ffbb4b299ddc89e13c704a36108a7",
+    "output/shared_base_conditional_curves_2026-09-15/a1_L0/protocol.json": "4375f7e708d8e04c9660b2289109ecea5197f05a6d0931740e42fe02852cd63a",
+    "output/shared_base_conditional_curves_2026-09-15/a1_L1/cohort.json": "eec1bcea52c953eaca1b904af0c09f9d61c864069c1cae1bb931f08628bd83a9",
+    "output/shared_base_conditional_curves_2026-09-15/a1_L1/protocol.json": "55f1c12d5ac6792b6f29fa68b69bac16766d0e88ece53b953186429db3e788a6",
+    "output/shared_base_conditional_curves_2026-09-15/a1_L4/cohort.json": "d365a6a1974f73030eb033960fe0b59d33277528ed35d02b629648cc3ed0773c",
+    "output/shared_base_conditional_curves_2026-09-15/a1_L4/protocol.json": "aca6385afcc3db5e4d9f5019236ef2af77db032066c62063d50a0bb6b164a612",
+    "output/shared_base_conditional_curves_2026-09-15/a1_L8/cohort.json": "fa9d29b90cae302c3c263d74305e4b79b737cb8cd3e053edcb5cb3bd161e71f4",
+    "output/shared_base_conditional_curves_2026-09-15/a1_L8/protocol.json": "0dd0c1e92cf4f2de6f890bced3706b75d7126e946173af0e8001c27e78604622"
+  },
+  "test": {
+    "alpha": 1,
+    "depths": [
+      0,
+      1,
+      4,
+      8
+    ],
+    "sequences_per_depth": 256,
+    "sequence_length": 1025,
+    "transformer_times": [
+      1,
+      4,
+      16,
+      64,
+      256,
+      1024
+    ],
+    "released_bayes_times_by_depth": {
+      "0": [
+        1,
+        4,
+        16,
+        64
+      ],
+      "1": [
+        1,
+        4,
+        16,
+        64
+      ],
+      "4": [
+        1,
+        4,
+        16
+      ],
+      "8": [
+        1,
+        4,
+        16
+      ]
+    },
+    "source_conditions_hidden": true,
+    "bayes_prior": "Original full training prior, not conditioned on the fixed test alpha or depth.",
+    "role": "Existing test cohorts motivated this comparison; reuse for paired diagnosis, not independent confirmation."
+  },
+  "primary": {
+    "checkpoint_step": 100000,
+    "quantity": "Expected next-token regret and its paired difference from the original transformer and informed Bayes, at every released source/time condition.",
+    "training_repeats": "Report both seeds separately. No selection by test scores.",
+    "uncertainty": "One paired standard error across independent test sequences."
+  },
+  "benchmark": {
+    "steps": 1000,
+    "seed": 0,
+    "separate_output": true,
+    "purpose": "Measure H100 training throughput and memory, using the production schedule; benchmark weights do not initialize production."
+  },
+  "interpretation": "A joint change of depth, width and head count at fixed training exposure. It does not isolate depth, establish convergence to Bayes, or test longer training.",
+  "intermediate_checkpoints": {
+    "steps": [
+      50000
+    ],
+    "purpose": "Diagnostic only; the final planned checkpoint is the primary comparison."
+  }
+}

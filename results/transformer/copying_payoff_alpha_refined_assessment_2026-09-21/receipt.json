@@ -1,0 +1,51 @@
+{
+  "schema": "copying-payoff-publication-readback-v1",
+  "passed": true,
+  "source": "output/copying_payoff_alpha_refined_assessment_2026-09-21",
+  "source_validation_sha256": "de991a4044e40a721429c24bc7bf3af0597c57a3d41311a3593e6047ee95a265",
+  "source_artifact_sha256": {
+    "arrays.npz": "74985e362477514863e2ff7d9dfa62ead2eab3abbb0e0ae51dd1ae6804b68da6",
+    "curves.npz": "121fa4f59c5e3eedfc8208c41bbd5c0e62bca4a3bcf87c0829b59666bd38662d",
+    "bootstrap_draws.npz": "4e997335f3dea8d03c322bfd1d4f6033f83e110acd4d55022f2fb47eef65777d",
+    "summary.json": "98d92225d114882f40bb211b363fdc389c70e115b2904b336e1f011e9bbd813f"
+  },
+  "source_assessor_sha256": "cb57059de6b4ef4785e821305464f045d550a0a756eec37df4753315eac37f88",
+  "source_transitive_claim_count": 5406,
+  "source_transitive_claims_sha256": "56cc5ff25485fc87c8bc31de2b60d62810c30857fdb00e1edb311306a6c6fb6b",
+  "source_validation_status": {
+    "integrity_passed": true,
+    "passed": true,
+    "input_validation_passed": true,
+    "scientific_precision_passed": true,
+    "payoff_forecast_approved": true,
+    "publication_status": "approved"
+  },
+  "assessment_scope": {
+    "times": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8
+    ],
+    "horizon": 8,
+    "n_sequences": 768,
+    "n_per_condition": 256,
+    "conditions": [
+      "a1_L0",
+      "a1_L2",
+      "a1_L3"
+    ],
+    "precision_coordinates_passed": 48,
+    "finite_shuffle_exact": false,
+    "independent_confirmation": false
+  },
+  "publication_file_sha256": {
+    "README.md": "24726edd7b8bb9722719c2a9e279275fdb18d8ee31f69d34a3d52723a7528ec4",
+    "payoff_times.tsv": "79936bcdfc90b81898a98cca0fa24ffcaa880712f91e09cb135f0cb3059ab60a",
+    "payoff_times.tex": "75f4dd9b7b1febf4c77ec53539d97a2a8b276f246ce8703b546ef3ed5287681a"
+  }
+}

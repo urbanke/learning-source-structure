@@ -1,0 +1,56 @@
+{
+  "schema": "full-shared-base-continuation-plan-v1",
+  "scope": "Only the remaining terminal probability-ESS failure; reuse both ready September 19 extensions without resampling.",
+  "task": {
+    "id": "L1_i207_t1024_a16",
+    "depth": 1,
+    "index": 207,
+    "time": 1024,
+    "order": 16,
+    "setting": "a1_L1"
+  },
+  "parent_draws": 1048576,
+  "target_draws": 1572864,
+  "tolerances_changed": false,
+  "resources": {
+    "cpus": 12,
+    "memory_gib": 72,
+    "wall_seconds": 28800,
+    "worker_seconds": 23400,
+    "audit_seconds": 3600,
+    "concurrency": 1,
+    "maximum_attempts": 1
+  },
+  "previous_plan_sha256": "40aea9fea5fdf1037e77bfc379a689ca73bea13dc78ff5408acfc7d6a43df8e4",
+  "previous_context_sha256": "a231e7c95fc6a16e993af643a295e202b129d4a2a82860b3ba72853a5a9986c0",
+  "previous_task_index": 1,
+  "previous_files": {
+    "context.json": "059cdaf1c272fa06fdf7f98444c4caa01faaaaacaa67ac06465840987e8eff9f",
+    "tasks/L1_i195_t1024_a32.json": "899a19be5782c19def1a46299f98f0a563e116747ff1382cb5a1c5d6659bb253",
+    "audits/L1_i195_t1024_a32.json": "e42eaf0eeb9afcf107b7dafcc69d3c736cfa2829fc804b001043109f22328504",
+    "references/a1_L1/alpha32/seq_000195_t1024.json": "90df37d54acb7b5dee751fb8befec534262ab1db537612e0178610ce961d7be6",
+    "prepared/L1_i195_t1024_a32.json": "8800617b6f5cbbbce3084e89b983b288e6f5b02289c5dfa7c5648069bf123bdd",
+    "tasks/L1_i207_t1024_a16.json": "e0909da64ee7cb81bd1774aaf5a4eeb30000fcd9d20077b34dca0b6d0f4e1c78",
+    "audits/L1_i207_t1024_a16.json": "cac8c3cc8402a792786ad201a4c6a32420d52f864206f258917a2e608f4d7914",
+    "references/a1_L1/alpha16/seq_000207_t1024.json": "75720fc7252f7f21385ef5c74aa41412c17efcb9f1d8a08c58c303984192cbee",
+    "prepared/L1_i207_t1024_a16.json": "e1123c5f20aa2ae660d61561f8e0d1a766f8c09434729d3be19643ed288796fb",
+    "tasks/L1_i232_t1024_a16.json": "3ded6b73a327dda2b0015a245756b40f488ea71915b94b0847a78ee3e051aa0d",
+    "audits/L1_i232_t1024_a16.json": "063a60ecacd3f117b6273ef16989ab39f84add85e8994a637ce216fc7c903d81",
+    "references/a1_L1/alpha16/seq_000232_t1024.json": "12bf7cfde69f9cda5450297edcd14c0c0bad89ce31e42f341988de1f4db1524f",
+    "prepared/L1_i232_t1024_a16.json": "8704cd59280b20d74a0e4f7362e0f6613024838954592b42144273225fcb0cb2"
+  },
+  "parent_audit_fingerprint": "7c5a6d56e25d999f32909c2d2f704d332d79eae495a303c1adcf003c1d569d1b",
+  "parent_reference_id": "0c936c89b8244de4bda9d899cbb180919365ee99982f8ee12476042848950325",
+  "code_sha256": {
+    "code/scripts/full_shared_base_continuation.py": "9b7cf1e4e0ec58841864a32959d6c52ead2cce285320e532c879cb7f68b1ac07",
+    "code/transformer/scitas/submit_full_shared_base_continuation.sh": "67f587e2400a2240beec942b7682251083a6fb7e236993277bffd757753484f7",
+    "code/transformer/scitas/full_shared_base_continuation.sbatch": "28dde85413512b2323305583f5da73bc46bf76aca6d455f4b42524175219484d",
+    "code/scripts/unseen_context_refinement.py": "eb0fd47c1afa29c2f8a4d5e1ea023821409acfe8e1dcb8fe818ef5d3dd292351"
+  },
+  "cost": {
+    "previous_increment_draws_per_chain": 524288,
+    "previous_elapsed_seconds": 17232.151570103597,
+    "expected_increment_seconds": 17232.151570103597,
+    "interpretation": "Measured prior increment, not a runtime or acceptance guarantee; reserve 8 hours and 72 GiB. No threshold changes or automatic increases."
+  }
+}

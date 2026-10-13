@@ -1,0 +1,99 @@
+# Validated complete-cohort long-context Bayesian points
+
+This release publishes three completed conditions from the running shared-base
+Bayesian calculation. Each point contains **all 256 predeclared sequences**:
+the 254 new references and the two untouched, separately validated pilot
+references. The independent repeat used to diagnose the pilot is not substituted
+for its original predictor.
+
+| Source depth | Observed tokens | Bayes regret (bits, mean ± SE) | Numerical allowance (bits) |
+| --- | --- | --- | --- |
+| 0 | 256 | 0.0832315 ± 0.0012273 | 0.0001083 |
+| 0 | 1,024 | 0.0273856 ± 0.0003956 | 0.0000331 |
+| 1 | 256 | 0.4794506 ± 0.0126484 | 0.0004426 |
+
+The other five conditions are incomplete in this snapshot and are represented
+only by their withheld status. No partial-cohort mean, candidate value, or
+successful-case subset is published for them. This is a release of completed
+conditions, not a claim that the entire computation has finished.
+
+## Paired transformer comparisons
+
+`comparisons.tsv` and `summary.json` compare both training runs of all existing
+model milestones on exactly the same sequence identities. The eight-layer
+final 400k models have the following excess regrets over Bayes:
+
+| Depth, context | Run 1 (bits, mean ± paired SE) | Run 2 (bits, mean ± paired SE) |
+| --- | --- | --- |
+| 0, 256 | 0.004698 ± 0.000507 | 0.003026 ± 0.000336 |
+| 0, 1,024 | 0.004088 ± 0.000170 | 0.002465 ± 0.000138 |
+| 1, 256 | 0.005081 ± 0.001375 | 0.001299 ± 0.001137 |
+
+At depth 0 and 1,024 tokens, the four-layer 100k gaps are
+0.008993 ± 0.000330 and 0.008461 ± 0.000298 bits; the four-layer 400k gaps
+are 0.008855 ± 0.000319 and 0.008425 ± 0.000294. Both final eight-layer
+models improve on these values. All runs and milestones are retained,
+with no selection of the better seed. The final 400k evaluations are complete.
+
+Standard errors describe variation across source sequences, not training
+randomness. They are pointwise and are computed from paired per-sequence
+differences before aggregation. The reference's Monte Carlo error and local
+Jensen allowance are reported separately. These are previously examined
+diagnostic cohorts, not independent confirmation data.
+
+## Validation
+
+The importer binds the snapshot to the frozen launch and plan, checks all 4,064
+task identities and all eight group declarations, and verifies the old pilot
+input hashes. It reconstructs the exact planned combination of pilot and new
+references and replays each complete-cohort numerical decision using both
+integration orders. The rule is 16 versus 32 nodes, except depth 0 at 1,024
+tokens, which uses 32 versus 64. Every sequence and both orders are required.
+
+For each released reference, the saved prediction is scored independently
+against the original true transition row, with original source/token/matrix
+hashes checked and paired to the compact transformer input cohort. Raw
+probabilities are neither clipped nor renormalized. The largest raw
+normalization discrepancy is 9.91e-12, within the original 1e-7 Bayesian audit
+contract; the largest score discrepancy is 1.90e-15 bits. Monte Carlo variance,
+scalar mixing, local Jensen checks, integration agreement and the complete
+cohort's declared numerical budget are replayed from the saved audit receipts.
+
+The original `per_sequence_precision_passed` field is informational under the
+frozen cohort rule. It is not silently changed or made a new acceptance gate.
+All required mixing, raw validity, prior, source and integration checks must
+pass, as must the cohort precision budget.
+
+This does **not** locally repeat raw-chain diagnostics, final-state
+recomputation, or finer-grid sampling checks. Those remain the frozen cluster
+auditor's provenance. The numerical allowances are local diagnostics conditional
+on adequate posterior exploration, not rigorous posterior-convergence proofs.
+No sampling, inference, or new source generation is performed by the exporter.
+
+## Files and use
+
+- `summary.json`: only accepted group statistics, paired comparisons and
+  separate numerical uncertainty; withheld statuses for the remaining groups.
+- `paired_scores.npz`: all 256 source identities and Bayes/model scores for
+  each accepted condition; no values from rejected or incomplete conditions.
+- `comparisons.tsv`: compact paired endpoint table for every model and run.
+- `validation.json`: source, code and input/output hashes and validation scope.
+
+Reproduce from the repository root:
+
+```bash
+python code/scripts/shared_base_full_cohort_results.py --campaign-input output/kuma_results_2026-09-20/shared_base_campaign_2026-09-18
+python -m pytest -q code/tests/test_shared_base_full_cohort_results.py
+```
+
+The default input is
+`output/shared_base_posterior_full_download_2026-09-19`. The existing frozen
+source records, pilot summaries and independently audited campaign transfer
+must also be present. `--out /tmp/shared-base-full-cohort-audit` writes an
+isolated smoke release. No figures are generated by this exporter.
+
+The main-figure interface is `load_full_cohort(source)`, returning
+`(input_paths, audited_report, curves_by_depth)`. Each depth's curve contains
+`times`, `mean`, `se`; empty lists represent no newly validated point. These
+points may be appended to the existing 1/4/16/64-token Bayesian curves without
+interpolation or extrapolation to still-unvalidated contexts.

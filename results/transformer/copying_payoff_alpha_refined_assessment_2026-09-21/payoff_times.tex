@@ -1,0 +1,32 @@
+\begin{table}[tbp]
+\centering\scriptsize
+\begin{tabular}{clcccc}
+\toprule
+& & \multicolumn{2}{c}{Next-token gain} & \multicolumn{2}{c}{Cumulative gain} \\
+\cmidrule(lr){3-4}\cmidrule(lr){5-6}
+Depth & Predictor & First positive & Final positive run & First positive & Final positive run \\
+\midrule
+$0$ & Informed Bayes & \(>8\,[1,>8,>8]\) & \(>8\,[>8,>8,>8]\) & \(>8\,[1,>8,>8]\) & \(>8\,[>8,>8,>8]\) \\
+ & Transformer run 1 & \(>8\,[1,>8,>8]\) & \(>8\,[>8,>8,>8]\) & \(>8\,[1,>8,>8]\) & \(>8\,[>8,>8,>8]\) \\
+ & Transformer run 2 & \(>8\,[>8,>8,>8]\) & \(>8\,[>8,>8,>8]\) & \(>8\,[>8,>8,>8]\) & \(>8\,[>8,>8,>8]\) \\
+\addlinespace
+$2$ & Informed Bayes & \(1\,[1,1,2]\) & \(1\,[1,5,>8]\) & \(1\,[1,1,2]\) & \(1\,[1,2,5]\) \\
+ & Transformer run 1 & \(3\,[1,2,4]\) & \(8\,[2,8,>8]\) & \(4\,[1,3,5]\) & \(4\,[1,4,5]\) \\
+ & Transformer run 2 & \(3\,[2,3,5]\) & \(8\,[2,8,>8]\) & \(5\,[4,5,>8]\) & \(5\,[4,5,>8]\) \\
+\addlinespace
+$3$ & Informed Bayes & \(1\,[1,1,1]\) & \(1\,[1,4,6]\) & \(1\,[1,1,1]\) & \(1\,[1,1,6]\) \\
+ & Transformer run 1 & \(1\,[1,1,3]\) & \(6\,[1,6,6]\) & \(1\,[1,1,5]\) & \(1\,[1,1,6]\) \\
+ & Transformer run 2 & \(2\,[1,2,4]\) & \(2\,[2,5,6]\) & \(5\,[1,3,7]\) & \(5\,[1,5,7]\) \\
+\bottomrule
+\end{tabular}
+\caption{\textbf{Copying-payoff times through eight observations.}
+Each cell gives the crossing of the mean followed by the
+$[2.5\%,50\%,97.5\%]$ whole-sequence paired-bootstrap quantiles.
+The final positive run starts at the first time after which the mean
+remains positive through $t=8$; $>8$ denotes right-censoring at that
+horizon. The Bayesian gain is stationary-frequency-surrogate loss
+minus informed-Bayes loss; the transformer gain is shuffled-training
+loss minus ordered-training loss. Positive values favour prediction
+that uses token order.}
+\label{tab:shared-shuffle-payoff-times}
+\end{table}

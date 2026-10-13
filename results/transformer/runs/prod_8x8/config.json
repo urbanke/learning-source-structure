@@ -1,0 +1,44 @@
+{
+ "d": 64,
+ "n_ctx": 1024,
+ "alpha": [
+  0.5,
+  1.5
+ ],
+ "ls": [
+  1,
+  8
+ ],
+ "no_permute": false,
+ "family": "product:8x8",
+ "n_layer": 2,
+ "n_head": 4,
+ "d_model": 128,
+ "no_mlp": false,
+ "batch": 64,
+ "steps": 100000,
+ "lr": 0.0003,
+ "warmup": 1000,
+ "wd": 0.1,
+ "clip": 1.0,
+ "seed": 0,
+ "workers": 6,
+ "device": "cuda",
+ "log_every": 50,
+ "val_every": 1000,
+ "ckpt_every": 5000,
+ "val_settings": "1,2;1,4;0.75,2;1.25,3",
+ "val_n": 64,
+ "out": "results/transformer/runs/prod_8x8",
+ "resume": true,
+ "n_params": 544256,
+ "model": {
+  "vocab": 64,
+  "n_ctx": 1024,
+  "n_layer": 2,
+  "n_head": 4,
+  "d_model": 128,
+  "mlp": true,
+  "dropout": 0.0
+ }
+}

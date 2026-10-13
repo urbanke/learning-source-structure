@@ -1,0 +1,24 @@
+{
+  "schema": "hidden-factor-training-v1",
+  "experiment": "hidden-factor-dirichlet1-v1",
+  "seed": 1,
+  "n_ctx": 1024,
+  "batch": 64,
+  "steps": 100000,
+  "warmup": 1000,
+  "lr": 0.0003,
+  "wd": 0.1,
+  "clip": 1.0,
+  "n_layer": 2,
+  "n_head": 4,
+  "d_model": 128,
+  "val_n": 256,
+  "log_every": 100,
+  "val_every": 5000,
+  "ckpt_every": 10000,
+  "weight_steps": [
+    100000
+  ],
+  "validation_seed": 20260917,
+  "val_chunk": 32
+}

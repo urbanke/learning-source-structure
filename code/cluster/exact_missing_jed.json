@@ -1,0 +1,143 @@
+{
+ "note": "23 exact-crossing cells missing from the Mac pilot: d=1024, alpha>=1.1. Prior summaries in exact_priors_jed/. sbatch --array=0-22 job_exact_jed.sbatch",
+ "tasks": [
+  {
+   "task": 0,
+   "d": 1024,
+   "alpha": 1.1,
+   "L": 5
+  },
+  {
+   "task": 1,
+   "d": 1024,
+   "alpha": 1.1,
+   "L": 6
+  },
+  {
+   "task": 2,
+   "d": 1024,
+   "alpha": 1.1,
+   "L": 8
+  },
+  {
+   "task": 3,
+   "d": 1024,
+   "alpha": 1.25,
+   "L": 2
+  },
+  {
+   "task": 4,
+   "d": 1024,
+   "alpha": 1.25,
+   "L": 3
+  },
+  {
+   "task": 5,
+   "d": 1024,
+   "alpha": 1.25,
+   "L": 4
+  },
+  {
+   "task": 6,
+   "d": 1024,
+   "alpha": 1.25,
+   "L": 5
+  },
+  {
+   "task": 7,
+   "d": 1024,
+   "alpha": 1.25,
+   "L": 6
+  },
+  {
+   "task": 8,
+   "d": 1024,
+   "alpha": 1.25,
+   "L": 8
+  },
+  {
+   "task": 9,
+   "d": 1024,
+   "alpha": 1.25,
+   "L": 10
+  },
+  {
+   "task": 10,
+   "d": 1024,
+   "alpha": 1.25,
+   "L": 12
+  },
+  {
+   "task": 11,
+   "d": 1024,
+   "alpha": 1.25,
+   "L": 16
+  },
+  {
+   "task": 12,
+   "d": 1024,
+   "alpha": 1.25,
+   "L": 24
+  },
+  {
+   "task": 13,
+   "d": 1024,
+   "alpha": 1.5,
+   "L": 2
+  },
+  {
+   "task": 14,
+   "d": 1024,
+   "alpha": 1.5,
+   "L": 3
+  },
+  {
+   "task": 15,
+   "d": 1024,
+   "alpha": 1.5,
+   "L": 4
+  },
+  {
+   "task": 16,
+   "d": 1024,
+   "alpha": 1.5,
+   "L": 5
+  },
+  {
+   "task": 17,
+   "d": 1024,
+   "alpha": 1.5,
+   "L": 6
+  },
+  {
+   "task": 18,
+   "d": 1024,
+   "alpha": 1.5,
+   "L": 8
+  },
+  {
+   "task": 19,
+   "d": 1024,
+   "alpha": 1.5,
+   "L": 10
+  },
+  {
+   "task": 20,
+   "d": 1024,
+   "alpha": 1.5,
+   "L": 12
+  },
+  {
+   "task": 21,
+   "d": 1024,
+   "alpha": 1.5,
+   "L": 16
+  },
+  {
+   "task": 22,
+   "d": 1024,
+   "alpha": 1.5,
+   "L": 24
+  }
+ ]
+}

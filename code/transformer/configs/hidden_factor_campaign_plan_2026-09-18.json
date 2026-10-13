@@ -1,0 +1,168 @@
+{
+  "schema": "hidden-factor-campaign-plan-v1",
+  "experiment": "hidden-factor-campaign-2026-09-18",
+  "source_dimensions": [
+    2,
+    8
+  ],
+  "seeds": [
+    0,
+    1
+  ],
+  "implementation_sha256": {
+    "hidden_factor.py": "f35bd787af99d19d2bcf4c2a69f9a7e85a089e7ad7676031c07de400544bef65",
+    "model.py": "742fe0e5c8ffaecee8072a3b270b23beaa2e0bd2a94d1a27a9af67c31eff9c28",
+    "train_hidden_factor.py": "55f067abb92bc8859b5945bc987fcdce501bdd17437664f3ec06b2f5d7438f07",
+    "train_mixture.py": "c364416f472813bd2e5bbfe988af710a278cbac1e73ff14b58611916fe123d2d"
+  },
+  "adapter_dependencies_sha256": {
+    "train_hidden_factor_scaling.py": "53e6425e1e08c21c1c369f2a0023f34ee70bdc3d8d078f5f487eedc867d2fbe1",
+    "hidden_factor_scaling_eval.py": "80bafca73f289ce81b222a21983f58507e663d045a3f251b296a32f0b6a60fd3",
+    "eval_hidden_factor.py": "8957cee51f6b939fcb2acaefe4145c6a5269ac2523f8ea56e4c990d9fbfebe3b"
+  },
+  "parent": {
+    "plan_path": "code/transformer/configs/hidden_factor_scaling_plan_2026-09-16.json",
+    "plan_sha256": "0d63d4554dc62c9d96b0ee5ce8febf548ddc3d6713a52e96f04775d545dae91f",
+    "config": {
+      "schema": "hidden-factor-training-v1",
+      "experiment": "hidden-factor-dirichlet1-v1",
+      "n_ctx": 1024,
+      "batch": 64,
+      "steps": 100000,
+      "warmup": 1000,
+      "lr": 0.0003,
+      "wd": 0.1,
+      "clip": 1.0,
+      "n_layer": 4,
+      "n_head": 8,
+      "d_model": 256,
+      "val_n": 256,
+      "log_every": 100,
+      "val_every": 5000,
+      "ckpt_every": 10000,
+      "weight_steps": [
+        50000,
+        100000
+      ],
+      "validation_seed": 20260917,
+      "val_chunk": 32
+    },
+    "final_step": 100000,
+    "completed_sequences": 6400000,
+    "n_params": 3429888,
+    "checkpoint_sha256": {
+      "0": "94a380ee54b55765769da6f307ea15505b46e17c50bba6674fdac7a5794a943c",
+      "1": "844fd1a8c392b9ca72f10a4057858f6f23fcc70a36c9fd27ccf7886b3b7fc591"
+    }
+  },
+  "arms": {
+    "continue_large": {
+      "mode": "continuation",
+      "config": {
+        "schema": "hidden-factor-training-v1",
+        "experiment": "hidden-factor-dirichlet1-v1",
+        "n_ctx": 1024,
+        "batch": 64,
+        "steps": 400000,
+        "warmup": 1000,
+        "lr": 0.0003,
+        "wd": 0.1,
+        "clip": 1.0,
+        "n_layer": 4,
+        "n_head": 8,
+        "d_model": 256,
+        "val_n": 256,
+        "log_every": 100,
+        "val_every": 5000,
+        "ckpt_every": 10000,
+        "weight_steps": [
+          200000,
+          400000
+        ],
+        "validation_seed": 20260917,
+        "val_chunk": 32
+      },
+      "n_params": 3429888,
+      "continuation_lr": 3e-05,
+      "parent_step": 100000,
+      "milestones": [
+        200000,
+        400000
+      ],
+      "additional_sequences": 19200000
+    },
+    "xlarge": {
+      "mode": "fresh",
+      "config": {
+        "schema": "hidden-factor-training-v1",
+        "experiment": "hidden-factor-dirichlet1-v1",
+        "n_ctx": 1024,
+        "batch": 64,
+        "steps": 400000,
+        "warmup": 1000,
+        "lr": 0.0003,
+        "wd": 0.1,
+        "clip": 1.0,
+        "n_layer": 8,
+        "n_head": 8,
+        "d_model": 512,
+        "val_n": 256,
+        "log_every": 100,
+        "val_every": 5000,
+        "ckpt_every": 10000,
+        "weight_steps": [
+          100000,
+          200000,
+          400000
+        ],
+        "validation_seed": 20260917,
+        "val_chunk": 32
+      },
+      "n_params": 25760768,
+      "milestones": [
+        100000,
+        200000,
+        400000
+      ],
+      "total_sequences": 25600000
+    }
+  },
+  "benchmark": {
+    "arm": "xlarge",
+    "seed": 0,
+    "steps": 1000,
+    "separate_output": true,
+    "maximum_projected_training_hours": 72,
+    "maximum_reserved_memory_fraction": 0.92
+  },
+  "evaluation": {
+    "development_prefix": 256,
+    "planned_cohort": 4096,
+    "cohort_id": "47b562f94e235d3eb63b8da89a9cc7f60d14c175af85c9db0cdcc3cf0edd0be1",
+    "cohort_data_sha256": "3702b05ec9eef063ba30c4f85ee7cbf6919072da19748bb3a7e7e5b5b3348353",
+    "times": [
+      1,
+      4,
+      16,
+      64,
+      256,
+      1024
+    ],
+    "milestones": "Evaluate all fixed milestones on the original 256 exploratory sequences only.",
+    "final_comparison": "The existing 3840-sequence comparison has already been inspected. Any reuse is a fixed previously examined comparison, not fresh confirmation.",
+    "fresh_confirmation_scheduled": false
+  },
+  "primary": {
+    "final_steps": {
+      "continue_large": 400000,
+      "xlarge": 400000
+    },
+    "report_seeds_separately": true
+  },
+  "allocation": {
+    "hours": 24,
+    "signal_seconds": 180,
+    "requeue": false
+  },
+  "interpretation": "Tests continuation at the original learning-rate floor, and a larger architecture with a 400000-update cosine schedule. These schedules differ; intermediate architecture checkpoints do not isolate capacity alone."
+}

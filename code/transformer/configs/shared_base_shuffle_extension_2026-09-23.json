@@ -1,0 +1,47 @@
+{
+  "schema": "shared-base-shuffle-large-extension-v1",
+  "experiment": "shared-base-shuffle-extension-2026-09-23",
+  "n_sequences": 16384,
+  "retained_sequences": 1024,
+  "depths": [
+    0,
+    2,
+    3
+  ],
+  "seeds": [
+    0
+  ],
+  "d": 64,
+  "n_tokens": 1025,
+  "master_seed": 20260930,
+  "dtype": "float64",
+  "batch": 4,
+  "threads": 4,
+  "source_workers": 6,
+  "chunk": 64,
+  "bootstrap": 1000,
+  "parent_manifest_sha256": "697c3ed70022be6735f84a2afb97c846689ff13f73afc7d199e4059b6781a874",
+  "parent_summary_sha256": "82d0f91593ed5c4198f3b89cc616ab2dab62828ad6cf39ed312cb9d8eaca3b72",
+  "checkpoint_sha256": {
+    "ordered_seed0": "9a1954947e4a650c4811122a7752d6c808f7920bbebce5442f52e832210b196e",
+    "shuffled_seed0": "38515a9da6d873ef1bf42a277f3dbc97a0ea6f85a16f5c23e05dbd0c654f4733"
+  },
+  "dependencies_sha256": {
+    "code/transformer/shared_base_shuffle_eval.py": "f85d106aaad6977cd0f3d3fbe527158c349593ec66dcff00e2eb32b0ab37ab9e",
+    "code/transformer/source.py": "d1bb83004e3654cb3f84f6083437cae2b6d71fa19a33b06d26d2455ac440dab4",
+    "code/transformer/model.py": "742fe0e5c8ffaecee8072a3b270b23beaa2e0bd2a94d1a27a9af67c31eff9c28",
+    "code/transformer/configs/shared_base_shuffle_plan_2026-09-17.json": "f8be35e3f574864ba40aff52c4d11cdd2fda2df16bb425c6f707f6f3724ccec4",
+    "code/transformer/configs/shared_base_shuffle_evaluation_cohort_2026-09-17.json": "552083ec6eb9b2e5d0403d418c2d1fb5be6e2db43f1cea6b6e5557568b44110e"
+  },
+  "scheduler": {
+    "gpus": 1,
+    "cpus": 8,
+    "memory_gib": 32,
+    "wall_minutes": 240,
+    "automatic_retries": false
+  },
+  "maximum_projection_seconds": 13800,
+  "gpu_hour_rate_chf": 0.5175,
+  "scope": "Fixed original1024 histories retained exactly; new indices1024..16383 use frozen per-example source seeds. Same seed0 ordered/shuffled checkpoints; L0 control and L2/L3. Full1024-token grid. No retraining, Bayesian extension, smoothing, selected-cohort averaging or seed averaging. Original256 Bayesian comparison remains separate.",
+  "projection": "Pilot64 newhistories at eachdepth, bothmodels.1.5x measured source/inference extrapolation plus600seconds; failclosed ifabove13800seconds. Nominal4h bound, maxrate-basedGPUcost2.07CHF, notinvoice."
+}
