@@ -42,7 +42,7 @@ pip install -r code/transformer/requirements.txt   # numpy, torch, scipy, matplo
 pip install pytest
 ```
 
-## Check the setup (two minutes)
+## Check the setup (seconds)
 
 ```sh
 python3 code/scripts/smoke_test.py
@@ -50,8 +50,9 @@ python3 code/scripts/smoke_test.py
 
 This trains a tiny transformer on coins with the two-point prior (the source of
 Figure 1a), evaluates it, computes the exact informed-Bayes reference on the same
-sequences, and prints the regret of both at several context lengths. It exercises the
-three programs the experiments ran. `--steps 2000` brings the model closer to Bayes.
+sequences, and prints the regret of both at several context lengths (a few seconds on a
+laptop). It exercises the three programs the experiments ran. `--steps 2000` brings the
+model closer to Bayes.
 
 The test suite runs in about a minute:
 
