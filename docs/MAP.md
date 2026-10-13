@@ -2,7 +2,7 @@
 
 Paper: *Learning Source Structure: Bayesian Prediction with Transformers* (`arxiv.tex` in the paper repository `layered_architectures`). This map lists, for every figure and table, the script that makes it and the files it reads, and where those files are. It was built on 13 October 2026 from the receipts the figure scripts wrote (`receipt.json` next to each figure), and every input hash below was checked against its receipt.
 
-Status tags: `git` = in this repository; `disk` = on the research Mac under `results/`, ignored by git until now; `output` = on the research Mac under `output/`, never in git; `ext` = needs the sealed LSA anchor store and the `lsa` package (`LSA_STORE`, `PMM_SRC`), which are not in any repository.
+Status tags: `git` = in this repository; `disk` = on the research Mac under `results/`, ignored by git until now; `output` = was under `output/` on the research Mac when this map was built; copied into `results/transformer/` under the same folder name on 13 October 2026 and committed; `ext` = needs the sealed LSA anchor store and the `lsa` package (`LSA_STORE`, `PMM_SRC`), which are not in any repository.
 
 ## 1. Figures
 
@@ -177,7 +177,7 @@ The summaries above come from campaign scripts (`code/scripts/*_results.py`, `*_
 
 ## 4. What this means for a reader of the repository
 
-- Today a clone cannot draw a single figure: of the 64 data files the figure scripts read, 26 are in git, 29 are ignored summaries under `results/` and 9 are under `output/`.
-- Committing those files (about 50 MB) makes all twelve figures and the generated tables reproducible from a clone in minutes, with no external store.
+- When this map was built, a clone could not draw a single figure: of the 64 data files the figure scripts read, 26 are in git, 29 are ignored summaries under `results/` and 9 are under `output/`.
+- Those files are committed now (13 October 2026). All twelve figures regenerate from a clone in minutes, with no external store; see `README.md`.
 - Recomputing the summaries from the raw evaluations needs the `output/` folders named above (a few hundred MB per experiment) and, for the Bayesian references, the sealed LSA store (2.8 GB) and the `lsa` package. These belong on Zenodo (or a release asset), not in git.
 - Retraining needs a GPU and the Kuma launchers under `code/transformer/kuma`; the configurations are in git.
