@@ -19,6 +19,7 @@ import matplotlib.pyplot as plt
 from matplotlib.lines import Line2D
 import numpy as np
 
+import shared_base_conditional_figures as shared_full
 from shared_base_conditional_figures import read_panels
 from hidden_factor_campaign_results import load_campaign as load_hidden_campaign
 from shared_base_campaign_results import load_campaign as load_shared_campaign
@@ -341,7 +342,8 @@ def collect():
             pooled_panel='Two-layer solid and four-layer dashed, matched training run1 at all six times. Informed Bayesian mixture at times1,4,16,64,256,1024, black open circles only. Both runs separately in appendix. Transformer and short Bayes use3072 sequences; long Bayes uses192. Equal-family averages; one stratified source standard error.',
             pooled_training_seed=0,
             connecting_lines='Transformer estimates are joined by straight visual guides; Bayesian estimates are unconnected points.'),
-        new_sequences=False, new_model_inference=False, new_bayesian_computation=False)
+        new_sequences=False, new_model_inference=False, new_bayesian_computation=False,
+        time64_raw_audit_rehash=shared_full.RAW_AUDIT_REHASH)
 
 
 def draw_curves(ax, cases, sparse=False):

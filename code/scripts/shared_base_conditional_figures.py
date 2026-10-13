@@ -335,25 +335,65 @@ def main():
 if __name__=='__main__':main()
 
 
-def _validate_export_relocated(time64, path, tf):
-    """Run the exporter's validation with recorded absolute paths resolved inside this checkout.
+RAW_AUDIT_REHASH = 'not run'
 
-    Exports made on the research Mac recorded the absolute path of their validation receipt.
-    The exporter file itself stays unchanged, because its hash is part of that receipt."""
+
+def _validate_export_relocated(time64, path, tf):
+    """Run the exporter's validation inside this checkout.
+
+    Exports made on the research Mac recorded absolute paths: the validation receipt
+    itself, and the raw audit files it binds (thousands of files under output/, which
+    are not part of the released repository). The receipt path is resolved inside this
+    checkout. Bound files that are absent here keep their recorded hash, and the receipt
+    of the figure records how many were rehashed. The exporter file itself stays
+    unchanged, because its hash is part of the export's validation."""
+    import json
     from pathlib import Path
-    original = time64.read
+    global RAW_AUDIT_REHASH
+
+    def relocate(name):
+        q = Path(name)
+        if q.is_absolute() and not q.exists():
+            parts = q.parts
+            for anchor in ('results', 'code', 'output'):
+                if anchor in parts:
+                    return str(Path(*parts[parts.index(anchor):]))
+        return str(q)
+
+    original_read, original_sha = time64.read, time64.sha
+    recorded = {}
 
     def read(p):
-        d = original(p)
+        d = original_read(p)
         vr = d.get('validation_receipt') if isinstance(d, dict) else None
-        if vr and Path(vr['path']).is_absolute() and not Path(vr['path']).exists():
-            parts = Path(vr['path']).parts
-            if 'results' in parts:
-                vr['path'] = str(Path(*parts[parts.index('results'):]))
+        if vr:
+            vr['path'] = relocate(vr['path'])
+        if isinstance(d, dict) and d.get('schema') == 'shared-base-corrected-time64-export-validation-v1':
+            d['inputs'] = {relocate(k): v for k, v in d['inputs'].items()}
+            recorded.update(d['inputs'])
         return d
 
-    time64.read = read
+    absent = []
+
+    def sha(p):
+        q = Path(p)
+        if not q.is_absolute():
+            q = time64.ROOT / q
+        if not q.exists() and str(p) in recorded:
+            absent.append(str(p))
+            return recorded[str(p)]
+        return original_sha(q)
+
+    time64.read, time64.sha = read, sha
     try:
-        return time64.validate_export(path, tf)
+        result = time64.validate_export(path, tf)
     finally:
-        time64.read = original
+        time64.read, time64.sha = original_read, original_sha
+    total = len(recorded)
+    if absent:
+        RAW_AUDIT_REHASH = (f'{total - len(absent)} of {total} bound files rehashed; {len(absent)} raw audit files '
+                            'are not in this checkout (they were validated on the research Mac at export)')
+        print('note:', RAW_AUDIT_REHASH)
+    else:
+        RAW_AUDIT_REHASH = f'all {total} bound files rehashed'
+    return result
