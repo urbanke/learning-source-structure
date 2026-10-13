@@ -24,6 +24,7 @@ code/tests/         the test suite (about 1,750 tests)
 code/compat/        adapter that runs the reference code on the public LSA engine (see below)
 results/            the measurements behind every number in the paper, with receipts
 results_manifest.json   every campaign with its command, smoke variant, inputs, outputs and checks
+weights_manifest.json   the trained weights attached to release weights-v1, with SHA-256 and model sizes
 docs/MAP.md         figure by figure and table by table: script, inputs, where the inputs are
 output/             raw experiment outputs; not in git
 ```
@@ -100,8 +101,23 @@ python3 code/transformer/eval_model.py --run results/transformer/runs/bin_twopoi
 ```
 
 `code/transformer/README.md` describes the evaluation files. The four- and eight-layer
-models were trained on the Kuma cluster; their evaluations are in `results/`, their
-weights are not in the repository.
+models were trained on the Kuma cluster; their evaluations are in `results/`, and their
+final weights are attached to the release
+[weights-v1](https://github.com/urbanke/learning-source-structure/releases/tag/weights-v1)
+(26 archives, 0.6 GB, two seeds of each of 13 models). Each archive is the run directory
+of one model: `config.json`, `log.jsonl` and the final `model_<step>.pt` (the state dict).
+`weights_manifest.json` lists every archive with its SHA-256, layers, width and training
+steps. To evaluate one, extract it into `output/` and point `eval_model.py` at it, for
+example the ordered-training model of the copying experiment:
+
+```sh
+curl -LO https://github.com/urbanke/learning-source-structure/releases/download/weights-v1/shared_base_scaling_2026-09-17__train__seed0.tar.gz
+tar -C output -xzf shared_base_scaling_2026-09-17__train__seed0.tar.gz
+python3 code/transformer/eval_model.py --run output/shared_base_scaling_2026-09-17/train/seed0 --ckpt 100000 ...
+```
+
+with the evaluation settings of the experiment, recorded in `results_manifest.json` and in
+the README files under `code/transformer/kuma/`.
 
 ## Retrain (GPU hours)
 
@@ -154,7 +170,7 @@ expensive ones: days of CPU for the complete cohorts.
 ## What is not in the repository
 
 The raw per-sequence outputs of the experiments (`output/`, about 60 GB), the
-intermediate checkpoints, the reference-predictor outputs of the family experiments
-(`results/transformer/eval`, `refs_fam`, `refs2048`), and the weights of the four- and
-eight-layer models. The summaries computed from them are in `results/`. The raw
-outputs are available from the authors.
+intermediate checkpoints, and the reference-predictor outputs of the family experiments
+(`results/transformer/eval`, `refs_fam`, `refs2048`). The summaries computed from them
+are in `results/`; the final weights of the larger models are in the release
+`weights-v1` (above). The raw outputs are available from the authors.

@@ -1,0 +1,474 @@
+{
+ "schema": "learning-source-structure-weights-v1",
+ "note": "One archive per trained model and seed: the run directory with config.json, log.jsonl and the final weight file model_<step>.pt (weights only, torch.save of the state dict). Extract into output/ and evaluate with code/transformer/eval_model.py --run <dir> --ckpt <step>.",
+ "archives": [
+  {
+   "file": "hidden_factor_2026-09-16__2x8__train__seed0.tar.gz",
+   "bytes": 2041691,
+   "sha256": "03d920a71b9af7e3cace619e19ca331e2706f35e0ce6ebcd0228bd95d5498d58",
+   "run": "hidden_factor_2026-09-16/2x8/train/seed0",
+   "weights": "model_100000.pt",
+   "step": 100000,
+   "n_layer": 2,
+   "d_model": 128,
+   "n_head": 4,
+   "schema": "hidden-factor-training-v1",
+   "config_hash": "c1e604098a62cc4391f7a69cafc009b4db8af234b4a74f64d8c9da2a2199fbfd",
+   "members": [
+    "hidden_factor_2026-09-16/2x8/train/seed0/config.json",
+    "hidden_factor_2026-09-16/2x8/train/seed0/log.jsonl",
+    "hidden_factor_2026-09-16/2x8/train/seed0/model_100000.pt"
+   ]
+  },
+  {
+   "file": "hidden_factor_2026-09-16__2x8__train__seed1.tar.gz",
+   "bytes": 2042245,
+   "sha256": "4d884b28c278306b9b480cf09149530f975aba2f63e302662565a1f605099211",
+   "run": "hidden_factor_2026-09-16/2x8/train/seed1",
+   "weights": "model_100000.pt",
+   "step": 100000,
+   "n_layer": 2,
+   "d_model": 128,
+   "n_head": 4,
+   "schema": "hidden-factor-training-v1",
+   "config_hash": "6c4380199798a7ff88bc75f64ec6667b4d032634f1ba44bcda2edc10612494c3",
+   "members": [
+    "hidden_factor_2026-09-16/2x8/train/seed1/config.json",
+    "hidden_factor_2026-09-16/2x8/train/seed1/log.jsonl",
+    "hidden_factor_2026-09-16/2x8/train/seed1/model_100000.pt"
+   ]
+  },
+  {
+   "file": "hidden_factor_campaign_2026-09-18__train__continue_large__seed0.tar.gz",
+   "bytes": 12974035,
+   "sha256": "9219cc0be1923b4a06c7e861747eac460f9c2ad550ee9948e37acd7cf2259645",
+   "run": "hidden_factor_campaign_2026-09-18/train/continue_large/seed0",
+   "weights": "model_400000.pt",
+   "step": 400000,
+   "n_layer": 4,
+   "d_model": 256,
+   "n_head": 8,
+   "schema": "hidden-factor-training-v1",
+   "config_hash": "cf887cff6fb5e26eb9bf7b9ed790bcee3757dd149a9383a5b47e1d4b9a426b6b",
+   "members": [
+    "hidden_factor_campaign_2026-09-18/train/continue_large/seed0/config.json",
+    "hidden_factor_campaign_2026-09-18/train/continue_large/seed0/log.jsonl",
+    "hidden_factor_campaign_2026-09-18/train/continue_large/seed0/model_400000.pt"
+   ]
+  },
+  {
+   "file": "hidden_factor_campaign_2026-09-18__train__continue_large__seed1.tar.gz",
+   "bytes": 12938502,
+   "sha256": "10d44921f04e42bf1e21eebebe5f01a7147d1f655bfd511c87ab3f290fdc5554",
+   "run": "hidden_factor_campaign_2026-09-18/train/continue_large/seed1",
+   "weights": "model_400000.pt",
+   "step": 400000,
+   "n_layer": 4,
+   "d_model": 256,
+   "n_head": 8,
+   "schema": "hidden-factor-training-v1",
+   "config_hash": "57cadefa41d6f3829419931bfec8c0b5ca6e986ab5d9853bc85b518f42963cdb",
+   "members": [
+    "hidden_factor_campaign_2026-09-18/train/continue_large/seed1/config.json",
+    "hidden_factor_campaign_2026-09-18/train/continue_large/seed1/log.jsonl",
+    "hidden_factor_campaign_2026-09-18/train/continue_large/seed1/model_400000.pt"
+   ]
+  },
+  {
+   "file": "hidden_factor_campaign_2026-09-18__train__xlarge__seed0.tar.gz",
+   "bytes": 96467542,
+   "sha256": "199fb7a786ab3a6327994f21e77bce3c25442eddc6ec9519e5f94a0bd0fb8d70",
+   "run": "hidden_factor_campaign_2026-09-18/train/xlarge/seed0",
+   "weights": "model_400000.pt",
+   "step": 400000,
+   "n_layer": 8,
+   "d_model": 512,
+   "n_head": 8,
+   "schema": "hidden-factor-training-v1",
+   "config_hash": "dc5842fa7421afd9cf82de0e91ddab26c8dbeb95d49a85dda200efa470eab037",
+   "members": [
+    "hidden_factor_campaign_2026-09-18/train/xlarge/seed0/config.json",
+    "hidden_factor_campaign_2026-09-18/train/xlarge/seed0/log.jsonl",
+    "hidden_factor_campaign_2026-09-18/train/xlarge/seed0/model_400000.pt"
+   ]
+  },
+  {
+   "file": "hidden_factor_campaign_2026-09-18__train__xlarge__seed1.tar.gz",
+   "bytes": 96482575,
+   "sha256": "def1f1046efdba6e91a13e297086a6aba6dbd51305c1e264c1578677647f421f",
+   "run": "hidden_factor_campaign_2026-09-18/train/xlarge/seed1",
+   "weights": "model_400000.pt",
+   "step": 400000,
+   "n_layer": 8,
+   "d_model": 512,
+   "n_head": 8,
+   "schema": "hidden-factor-training-v1",
+   "config_hash": "a151823510430056c80bc70f1525bd1998b20334feca18451aa3596ffafd160b",
+   "members": [
+    "hidden_factor_campaign_2026-09-18/train/xlarge/seed1/config.json",
+    "hidden_factor_campaign_2026-09-18/train/xlarge/seed1/log.jsonl",
+    "hidden_factor_campaign_2026-09-18/train/xlarge/seed1/model_400000.pt"
+   ]
+  },
+  {
+   "file": "hidden_factor_scaling_2026-09-16__train__large__seed0.tar.gz",
+   "bytes": 12909837,
+   "sha256": "7d43928f8971c9ec5748da84b4b0e6bcc61bb234ae05210d561648c8d1fe5f40",
+   "run": "hidden_factor_scaling_2026-09-16/train/large/seed0",
+   "weights": "model_100000.pt",
+   "step": 100000,
+   "n_layer": 4,
+   "d_model": 256,
+   "n_head": 8,
+   "schema": "hidden-factor-training-v1",
+   "config_hash": "3dc1cf4935fdc6e9823a19cdc69ce691e1a2e2999c91498b3957fd82f619b2ee",
+   "members": [
+    "hidden_factor_scaling_2026-09-16/train/large/seed0/config.json",
+    "hidden_factor_scaling_2026-09-16/train/large/seed0/log.jsonl",
+    "hidden_factor_scaling_2026-09-16/train/large/seed0/model_100000.pt"
+   ]
+  },
+  {
+   "file": "hidden_factor_scaling_2026-09-16__train__large__seed1.tar.gz",
+   "bytes": 12870609,
+   "sha256": "9653724e8e85ae0fba533e1715e860b9a2bef394524bf5a9156bde65ae139336",
+   "run": "hidden_factor_scaling_2026-09-16/train/large/seed1",
+   "weights": "model_100000.pt",
+   "step": 100000,
+   "n_layer": 4,
+   "d_model": 256,
+   "n_head": 8,
+   "schema": "hidden-factor-training-v1",
+   "config_hash": "5eff3ab40e21961d92fb7327508c3116b310692adbdffa058c4e7f96bdd3fcf4",
+   "members": [
+    "hidden_factor_scaling_2026-09-16/train/large/seed1/config.json",
+    "hidden_factor_scaling_2026-09-16/train/large/seed1/log.jsonl",
+    "hidden_factor_scaling_2026-09-16/train/large/seed1/model_100000.pt"
+   ]
+  },
+  {
+   "file": "hidden_factor_scaling_2026-09-16__train__longsmall__seed0.tar.gz",
+   "bytes": 2110344,
+   "sha256": "a9bbfa79e99f15290665263f0a108e862d56a1398af3408b5ff9c5cc8d4db5ed",
+   "run": "hidden_factor_scaling_2026-09-16/train/longsmall/seed0",
+   "weights": "model_400000.pt",
+   "step": 400000,
+   "n_layer": 2,
+   "d_model": 128,
+   "n_head": 4,
+   "schema": "hidden-factor-training-v1",
+   "config_hash": "321e2187c7fc308e764c5894512a6bdd066c4878fdbc2a21f5e8bdb542d0fa1d",
+   "members": [
+    "hidden_factor_scaling_2026-09-16/train/longsmall/seed0/config.json",
+    "hidden_factor_scaling_2026-09-16/train/longsmall/seed0/log.jsonl",
+    "hidden_factor_scaling_2026-09-16/train/longsmall/seed0/model_400000.pt"
+   ]
+  },
+  {
+   "file": "hidden_factor_scaling_2026-09-16__train__longsmall__seed1.tar.gz",
+   "bytes": 2110814,
+   "sha256": "b8bedc8ed785961b50956d1949c86a88046a8a52ff94f3adcf5d19c2245de064",
+   "run": "hidden_factor_scaling_2026-09-16/train/longsmall/seed1",
+   "weights": "model_400000.pt",
+   "step": 400000,
+   "n_layer": 2,
+   "d_model": 128,
+   "n_head": 4,
+   "schema": "hidden-factor-training-v1",
+   "config_hash": "81cc61db8c0c85624d1030b7e99fcbecea3d9eb484274994525c3bb62e7d8d9e",
+   "members": [
+    "hidden_factor_scaling_2026-09-16/train/longsmall/seed1/config.json",
+    "hidden_factor_scaling_2026-09-16/train/longsmall/seed1/log.jsonl",
+    "hidden_factor_scaling_2026-09-16/train/longsmall/seed1/model_400000.pt"
+   ]
+  },
+  {
+   "file": "multifamily_2026-09-16__train__seed0.tar.gz",
+   "bytes": 2207908,
+   "sha256": "1064742e6428be377e65b420ffae4a9db8029c2da25f62b94fc4f30367335659",
+   "run": "multifamily_2026-09-16/train/seed0",
+   "weights": "model_300000.pt",
+   "step": 300000,
+   "n_layer": 2,
+   "d_model": 128,
+   "n_head": 4,
+   "schema": "mixture-training-v1",
+   "config_hash": "514a4a49d51de8b158dd9e832fcd53bb59dc07bead836c1db0b6e6b6b5e20d2e",
+   "members": [
+    "multifamily_2026-09-16/train/seed0/config.json",
+    "multifamily_2026-09-16/train/seed0/log.jsonl",
+    "multifamily_2026-09-16/train/seed0/model_300000.pt"
+   ]
+  },
+  {
+   "file": "multifamily_2026-09-16__train__seed1.tar.gz",
+   "bytes": 2208730,
+   "sha256": "252127b4e3404acfce6311bf1cdfe5c453e46701731c9caaabb20ad678e632d9",
+   "run": "multifamily_2026-09-16/train/seed1",
+   "weights": "model_300000.pt",
+   "step": 300000,
+   "n_layer": 2,
+   "d_model": 128,
+   "n_head": 4,
+   "schema": "mixture-training-v1",
+   "config_hash": "8ae63b5b20a3dc8bc136381a7402937116bf742dcc01d6a528311f75a58a7d52",
+   "members": [
+    "multifamily_2026-09-16/train/seed1/config.json",
+    "multifamily_2026-09-16/train/seed1/log.jsonl",
+    "multifamily_2026-09-16/train/seed1/model_300000.pt"
+   ]
+  },
+  {
+   "file": "pooled_transformer_large_2026-09-22__train__seed0.tar.gz",
+   "bytes": 13119827,
+   "sha256": "8c8d8133af06a8a8a646314ae9115180bb9538388cfba98d81801a31c5cce64a",
+   "run": "pooled_transformer_large_2026-09-22/train/seed0",
+   "weights": "model_300000.pt",
+   "step": 300000,
+   "n_layer": 4,
+   "d_model": 256,
+   "n_head": 8,
+   "schema": "mixture-training-v1",
+   "config_hash": "d2f45c9fd3e4e64e1414504d7f352586c5b182b1a0f011f37a4b6ff6e33e056e",
+   "members": [
+    "pooled_transformer_large_2026-09-22/train/seed0/config.json",
+    "pooled_transformer_large_2026-09-22/train/seed0/log.jsonl",
+    "pooled_transformer_large_2026-09-22/train/seed0/model_300000.pt"
+   ]
+  },
+  {
+   "file": "pooled_transformer_large_2026-09-22__train__seed1.tar.gz",
+   "bytes": 13141905,
+   "sha256": "3a74a38b104d9034a30ddfe04c3497e4bf0d085599f772cf362deadd3cf06100",
+   "run": "pooled_transformer_large_2026-09-22/train/seed1",
+   "weights": "model_300000.pt",
+   "step": 300000,
+   "n_layer": 4,
+   "d_model": 256,
+   "n_head": 8,
+   "schema": "mixture-training-v1",
+   "config_hash": "47897a766e2c4a70913cf4147bd06565736066bb795a985df2acaa549de40639",
+   "members": [
+    "pooled_transformer_large_2026-09-22/train/seed1/config.json",
+    "pooled_transformer_large_2026-09-22/train/seed1/log.jsonl",
+    "pooled_transformer_large_2026-09-22/train/seed1/model_300000.pt"
+   ]
+  },
+  {
+   "file": "shared_base_campaign_2026-09-18__continue_large__seed0.tar.gz",
+   "bytes": 13082094,
+   "sha256": "f16e5fff6c5cf95515c326302d597e5d8bf5cb8ba16d52368446d0214f0624be",
+   "run": "shared_base_campaign_2026-09-18/continue_large/seed0",
+   "weights": "model_400000.pt",
+   "step": 400000,
+   "n_layer": 4,
+   "d_model": 256,
+   "n_head": 8,
+   "schema": "shared-base-campaign-training-v1",
+   "config_hash": "87e2b23e603f1909bf3032cae86285d5ee7e4a836e4cb64de515b6e226814763",
+   "members": [
+    "shared_base_campaign_2026-09-18/continue_large/seed0/config.json",
+    "shared_base_campaign_2026-09-18/continue_large/seed0/log.jsonl",
+    "shared_base_campaign_2026-09-18/continue_large/seed0/model_400000.pt"
+   ]
+  },
+  {
+   "file": "shared_base_campaign_2026-09-18__continue_large__seed1.tar.gz",
+   "bytes": 13080016,
+   "sha256": "570d4f205b3226db9f19f98f1b7ffc32e1822727e1658210fef182742c8cbc53",
+   "run": "shared_base_campaign_2026-09-18/continue_large/seed1",
+   "weights": "model_400000.pt",
+   "step": 400000,
+   "n_layer": 4,
+   "d_model": 256,
+   "n_head": 8,
+   "schema": "shared-base-campaign-training-v1",
+   "config_hash": "ffcd2c7a39e893bcc32f36d5a537d772f5a7a228ed3097652b852ddc78695183",
+   "members": [
+    "shared_base_campaign_2026-09-18/continue_large/seed1/config.json",
+    "shared_base_campaign_2026-09-18/continue_large/seed1/log.jsonl",
+    "shared_base_campaign_2026-09-18/continue_large/seed1/model_400000.pt"
+   ]
+  },
+  {
+   "file": "shared_base_campaign_2026-09-18__xlarge__seed0.tar.gz",
+   "bytes": 96753020,
+   "sha256": "10e5bfa821a86a8566a37d86384bdeea8d43b49f60779a07a1738561536d4bad",
+   "run": "shared_base_campaign_2026-09-18/xlarge/seed0",
+   "weights": "model_400000.pt",
+   "step": 400000,
+   "n_layer": 8,
+   "d_model": 512,
+   "n_head": 8,
+   "schema": "shared-base-campaign-training-v1",
+   "config_hash": "6eeac950de78186fb5dd253f9ab0ceb762330f1839947ea7375bd76bf1ea3f5c",
+   "members": [
+    "shared_base_campaign_2026-09-18/xlarge/seed0/config.json",
+    "shared_base_campaign_2026-09-18/xlarge/seed0/log.jsonl",
+    "shared_base_campaign_2026-09-18/xlarge/seed0/model_400000.pt"
+   ]
+  },
+  {
+   "file": "shared_base_campaign_2026-09-18__xlarge__seed1.tar.gz",
+   "bytes": 96812060,
+   "sha256": "3ebfc114b2148f9e11a7bac62d024953019fb887dbac75d5bb1fff4c08c4b491",
+   "run": "shared_base_campaign_2026-09-18/xlarge/seed1",
+   "weights": "model_400000.pt",
+   "step": 400000,
+   "n_layer": 8,
+   "d_model": 512,
+   "n_head": 8,
+   "schema": "shared-base-campaign-training-v1",
+   "config_hash": "b4a1fb613a2ac98ec71f58926e2c2113781afaed833688926ed1c457b3b9ef91",
+   "members": [
+    "shared_base_campaign_2026-09-18/xlarge/seed1/config.json",
+    "shared_base_campaign_2026-09-18/xlarge/seed1/log.jsonl",
+    "shared_base_campaign_2026-09-18/xlarge/seed1/model_400000.pt"
+   ]
+  },
+  {
+   "file": "shared_base_scaling_2026-09-17__train__seed0.tar.gz",
+   "bytes": 12975361,
+   "sha256": "de849f0c3dabede78ee239355d40f3c5e1910aba57153460cf323da65245d062",
+   "run": "shared_base_scaling_2026-09-17/train/seed0",
+   "weights": "model_100000.pt",
+   "step": 100000,
+   "n_layer": 4,
+   "d_model": 256,
+   "n_head": 8,
+   "schema": "shared-base-scaling-training-v1",
+   "config_hash": "84d24e2cac7d62186bbc4684d321f1552ea084bb47652eb4138a32b1bcbd94d8",
+   "members": [
+    "shared_base_scaling_2026-09-17/train/seed0/config.json",
+    "shared_base_scaling_2026-09-17/train/seed0/log.jsonl",
+    "shared_base_scaling_2026-09-17/train/seed0/model_100000.pt"
+   ]
+  },
+  {
+   "file": "shared_base_scaling_2026-09-17__train__seed1.tar.gz",
+   "bytes": 12974364,
+   "sha256": "bcb4c0e632a202a1b0416469bb2f2241e639a47271338ac9b40811170513b4f5",
+   "run": "shared_base_scaling_2026-09-17/train/seed1",
+   "weights": "model_100000.pt",
+   "step": 100000,
+   "n_layer": 4,
+   "d_model": 256,
+   "n_head": 8,
+   "schema": "shared-base-scaling-training-v1",
+   "config_hash": "6e754d781f0027f6c0a367de05a59bc8896941aa06f10ad803c6274ea1d56a69",
+   "members": [
+    "shared_base_scaling_2026-09-17/train/seed1/config.json",
+    "shared_base_scaling_2026-09-17/train/seed1/log.jsonl",
+    "shared_base_scaling_2026-09-17/train/seed1/model_100000.pt"
+   ]
+  },
+  {
+   "file": "shared_base_shuffle_2026-09-17__train__seed0.tar.gz",
+   "bytes": 12997061,
+   "sha256": "5c2893c451d39d3428fd44ea5ad7fd9681659ec3392e371e474fed38f9b80aeb",
+   "run": "shared_base_shuffle_2026-09-17/train/seed0",
+   "weights": "model_100000.pt",
+   "step": 100000,
+   "n_layer": 4,
+   "d_model": 256,
+   "n_head": 8,
+   "schema": "shared-base-shuffle-training-v1",
+   "config_hash": "85cde48b9e35f1efe881c56909dcb7724140f0a9d11d0dd372eaf8b5dd823fc7",
+   "members": [
+    "shared_base_shuffle_2026-09-17/train/seed0/config.json",
+    "shared_base_shuffle_2026-09-17/train/seed0/log.jsonl",
+    "shared_base_shuffle_2026-09-17/train/seed0/model_100000.pt"
+   ]
+  },
+  {
+   "file": "shared_base_shuffle_2026-09-17__train__seed1.tar.gz",
+   "bytes": 12998023,
+   "sha256": "1dd79b2be21b530cd9f98d4a23c3289d4234c3d48ae12056f5744fd623219a1c",
+   "run": "shared_base_shuffle_2026-09-17/train/seed1",
+   "weights": "model_100000.pt",
+   "step": 100000,
+   "n_layer": 4,
+   "d_model": 256,
+   "n_head": 8,
+   "schema": "shared-base-shuffle-training-v1",
+   "config_hash": "18f545eb5c73d1d92ab2c3619b03c42bb16d10cd960b43aa43d03677c534d0b3",
+   "members": [
+    "shared_base_shuffle_2026-09-17/train/seed1/config.json",
+    "shared_base_shuffle_2026-09-17/train/seed1/log.jsonl",
+    "shared_base_shuffle_2026-09-17/train/seed1/model_100000.pt"
+   ]
+  },
+  {
+   "file": "specialist_transformer_large_2026-09-22__train__product__seed0.tar.gz",
+   "bytes": 13042357,
+   "sha256": "6398cf0332d3231f401a77eb0409ae8925c36cefaf4f8f79e4a424fa925b2582",
+   "run": "specialist_transformer_large_2026-09-22/train/product/seed0",
+   "weights": "model_100000.pt",
+   "step": 100000,
+   "n_layer": 4,
+   "d_model": 256,
+   "n_head": 8,
+   "schema": null,
+   "config_hash": null,
+   "members": [
+    "specialist_transformer_large_2026-09-22/train/product/seed0/config.json",
+    "specialist_transformer_large_2026-09-22/train/product/seed0/log.jsonl",
+    "specialist_transformer_large_2026-09-22/train/product/seed0/model_100000.pt"
+   ]
+  },
+  {
+   "file": "specialist_transformer_large_2026-09-22__train__product__seed1.tar.gz",
+   "bytes": 13038298,
+   "sha256": "9f03eb802ce4c3376831a79c1b8bfb962e09efc71fd5ea9ec94f8f7af2f4c3b9",
+   "run": "specialist_transformer_large_2026-09-22/train/product/seed1",
+   "weights": "model_100000.pt",
+   "step": 100000,
+   "n_layer": 4,
+   "d_model": 256,
+   "n_head": 8,
+   "schema": null,
+   "config_hash": null,
+   "members": [
+    "specialist_transformer_large_2026-09-22/train/product/seed1/config.json",
+    "specialist_transformer_large_2026-09-22/train/product/seed1/log.jsonl",
+    "specialist_transformer_large_2026-09-22/train/product/seed1/model_100000.pt"
+   ]
+  },
+  {
+   "file": "specialist_transformer_large_2026-09-22__train__uniform_base__seed0.tar.gz",
+   "bytes": 13013166,
+   "sha256": "ed1e7c41b30092a4313b0f0fd086f5a916ee0dcb5ec517ea549d5ba262677eaa",
+   "run": "specialist_transformer_large_2026-09-22/train/uniform_base/seed0",
+   "weights": "model_100000.pt",
+   "step": 100000,
+   "n_layer": 4,
+   "d_model": 256,
+   "n_head": 8,
+   "schema": null,
+   "config_hash": null,
+   "members": [
+    "specialist_transformer_large_2026-09-22/train/uniform_base/seed0/config.json",
+    "specialist_transformer_large_2026-09-22/train/uniform_base/seed0/log.jsonl",
+    "specialist_transformer_large_2026-09-22/train/uniform_base/seed0/model_100000.pt"
+   ]
+  },
+  {
+   "file": "specialist_transformer_large_2026-09-22__train__uniform_base__seed1.tar.gz",
+   "bytes": 13011614,
+   "sha256": "02a239b0346678b96d7cb7b33d5f3e0c8369934727912db1f68d48f7b3aa4404",
+   "run": "specialist_transformer_large_2026-09-22/train/uniform_base/seed1",
+   "weights": "model_100000.pt",
+   "step": 100000,
+   "n_layer": 4,
+   "d_model": 256,
+   "n_head": 8,
+   "schema": null,
+   "config_hash": null,
+   "members": [
+    "specialist_transformer_large_2026-09-22/train/uniform_base/seed1/config.json",
+    "specialist_transformer_large_2026-09-22/train/uniform_base/seed1/log.jsonl",
+    "specialist_transformer_large_2026-09-22/train/uniform_base/seed1/model_100000.pt"
+   ]
+  }
+ ]
+}
