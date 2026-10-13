@@ -1,0 +1,564 @@
+{
+  "schema": "section4-product-accuracy-v1",
+  "exploratory": true,
+  "definition": "min tested t with mean next-token KL regret <= target; null means not reached on saved grid",
+  "threshold_confidence_intervals": null,
+  "uncertainty": "Per-time SE over independent source-matrix/sequence draws; no threshold confidence intervals, interpolation, or training-seed uncertainty.",
+  "scope": "Four fixed-depth subsets; Bayes retains the full training depth prior; one frozen transformer checkpoint.",
+  "targets_bits": [
+    0.05,
+    0.1,
+    0.2,
+    0.5,
+    1.0,
+    2.0
+  ],
+  "compact_case_ids": [
+    "L1_1",
+    "L8_8"
+  ],
+  "cases": [
+    {
+      "id": "L1_1",
+      "depth_pair": [
+        1,
+        1
+      ],
+      "color": "#2468A0",
+      "times": [
+        1,
+        2,
+        4,
+        8,
+        16,
+        32,
+        64,
+        128,
+        256,
+        512,
+        1024
+      ],
+      "n_sequences": 256,
+      "n_tokens": 1025,
+      "raw_directory": "output/conditional_accuracy/product/L1_1",
+      "raw_records_sha256": "10d5ab9f6c81f2b3d0dabc9e780016248224a14964212fbe36198f3184a42c59",
+      "informed_bayes": {
+        "mean": [
+          1.0554074600191756,
+          1.0817602216829902,
+          1.1091078963707948,
+          1.11242250353924,
+          0.9802158266385222,
+          0.788358581456897,
+          0.5877363879111156,
+          0.36012100303819333,
+          0.23681096669048643,
+          0.1347950896096096,
+          0.07404440860510426
+        ],
+        "se": [
+          0.019955559913191402,
+          0.021708151472273098,
+          0.024679323306933534,
+          0.02470683931132395,
+          0.0239642361587792,
+          0.019949099174325125,
+          0.014665444532646945,
+          0.009357451365260526,
+          0.006954701316238785,
+          0.003882817002297467,
+          0.002282686101203578
+        ]
+      },
+      "transformer": {
+        "mean": [
+          1.0564994520494568,
+          1.0829056505396382,
+          1.1094034147309397,
+          1.1378414380005135,
+          1.0620791388379789,
+          0.9121796316093493,
+          0.6559602774157154,
+          0.39332601035016057,
+          0.2458085093893432,
+          0.13906012920934324,
+          0.07805616434439538
+        ],
+        "se": [
+          0.019990659905277392,
+          0.021604125748746022,
+          0.024517671906170664,
+          0.025094598685392964,
+          0.02609869316677781,
+          0.02462528311546848,
+          0.01866729541017137,
+          0.011858661515947139,
+          0.007654103992357917,
+          0.004213799306767508,
+          0.0024543671605961825
+        ]
+      },
+      "targets": [
+        {
+          "target_bits": 0.05,
+          "informed_bayes": null,
+          "transformer": null
+        },
+        {
+          "target_bits": 0.1,
+          "informed_bayes": 1024,
+          "transformer": 1024
+        },
+        {
+          "target_bits": 0.2,
+          "informed_bayes": 512,
+          "transformer": 512
+        },
+        {
+          "target_bits": 0.5,
+          "informed_bayes": 128,
+          "transformer": 128
+        },
+        {
+          "target_bits": 1.0,
+          "informed_bayes": 16,
+          "transformer": 32
+        },
+        {
+          "target_bits": 2.0,
+          "informed_bayes": 1,
+          "transformer": 1
+        }
+      ]
+    },
+    {
+      "id": "L1_8",
+      "depth_pair": [
+        1,
+        8
+      ],
+      "color": "#BF611C",
+      "times": [
+        1,
+        2,
+        4,
+        8,
+        16,
+        32,
+        64,
+        128,
+        256,
+        512,
+        1024
+      ],
+      "n_sequences": 256,
+      "n_tokens": 1025,
+      "raw_directory": "output/conditional_accuracy/product/L1_8",
+      "raw_records_sha256": "0f45956e5796c0dafd6e386f8ef2e930abf12797a1161a982d56ec36d55a4f55",
+      "informed_bayes": {
+        "mean": [
+          2.3756768835001862,
+          2.4018893098418013,
+          2.0324514834744,
+          1.574671863454055,
+          1.224696495076671,
+          0.7909559456771051,
+          0.5362995077315291,
+          0.30965461112341647,
+          0.19932600764482375,
+          0.11791923198215831,
+          0.05861773102529222
+        ],
+        "se": [
+          0.041435357899068055,
+          0.04485108098888859,
+          0.05071524972095521,
+          0.04959529465640671,
+          0.04285790834964779,
+          0.029119959936582614,
+          0.023815869795203254,
+          0.011402538757286034,
+          0.01238793000591761,
+          0.005258211813865689,
+          0.002402230586454697
+        ]
+      },
+      "transformer": {
+        "mean": [
+          2.375905204238242,
+          2.4025805787198062,
+          2.03753811320989,
+          1.5996453337821193,
+          1.2750136686213793,
+          0.866245821367639,
+          0.5938946018010174,
+          0.33370897066853517,
+          0.21262120984024402,
+          0.12618020383326567,
+          0.06413829090524185
+        ],
+        "se": [
+          0.04141478419076561,
+          0.04471538635598629,
+          0.050372069189869535,
+          0.05027492088514208,
+          0.04257310011324647,
+          0.030593501386246155,
+          0.025598210839813357,
+          0.011651643729609562,
+          0.01270157656875576,
+          0.005620333863199128,
+          0.002513431864991087
+        ]
+      },
+      "targets": [
+        {
+          "target_bits": 0.05,
+          "informed_bayes": null,
+          "transformer": null
+        },
+        {
+          "target_bits": 0.1,
+          "informed_bayes": 1024,
+          "transformer": 1024
+        },
+        {
+          "target_bits": 0.2,
+          "informed_bayes": 256,
+          "transformer": 512
+        },
+        {
+          "target_bits": 0.5,
+          "informed_bayes": 128,
+          "transformer": 128
+        },
+        {
+          "target_bits": 1.0,
+          "informed_bayes": 32,
+          "transformer": 32
+        },
+        {
+          "target_bits": 2.0,
+          "informed_bayes": 8,
+          "transformer": 8
+        }
+      ]
+    },
+    {
+      "id": "L4_4",
+      "depth_pair": [
+        4,
+        4
+      ],
+      "color": "#288167",
+      "times": [
+        1,
+        2,
+        4,
+        8,
+        16,
+        32,
+        64,
+        128,
+        256,
+        512,
+        1024
+      ],
+      "n_sequences": 256,
+      "n_tokens": 1025,
+      "raw_directory": "output/conditional_accuracy/product/L4_4",
+      "raw_records_sha256": "aae0531ee6c4a1c4288b4219f1e9ff9faa8ae1d2c5a9271fb015951380f7a79f",
+      "informed_bayes": {
+        "mean": [
+          2.790641548827289,
+          2.6768278912801478,
+          2.3839984728970403,
+          1.9345490532174199,
+          1.3702330853882423,
+          0.9726502467285372,
+          0.5743491310465547,
+          0.3574095211644289,
+          0.21179570471251472,
+          0.11162369091095824,
+          0.06331776725297404
+        ],
+        "se": [
+          0.0495369005596134,
+          0.04485903906147866,
+          0.054365392844536974,
+          0.0555371131589444,
+          0.046544995588806044,
+          0.039606045927872785,
+          0.02664672213541242,
+          0.01858847007807008,
+          0.012909347083697441,
+          0.005233528007332616,
+          0.0024245151949175863
+        ]
+      },
+      "transformer": {
+        "mean": [
+          2.792421741074826,
+          2.678535730322462,
+          2.386843714177282,
+          1.9330555556760656,
+          1.3617312762865021,
+          0.9735093013749051,
+          0.5774941603220105,
+          0.3597735424074052,
+          0.2155125380793972,
+          0.1128161609314728,
+          0.06730731777476766
+        ],
+        "se": [
+          0.04963454192745717,
+          0.04458320510084215,
+          0.05426810526446307,
+          0.05499522583160107,
+          0.04610043742854722,
+          0.03866474099548317,
+          0.02650456481442744,
+          0.018177527194037493,
+          0.01307297380631144,
+          0.005095042746171456,
+          0.0025400975965959678
+        ]
+      },
+      "targets": [
+        {
+          "target_bits": 0.05,
+          "informed_bayes": null,
+          "transformer": null
+        },
+        {
+          "target_bits": 0.1,
+          "informed_bayes": 1024,
+          "transformer": 1024
+        },
+        {
+          "target_bits": 0.2,
+          "informed_bayes": 512,
+          "transformer": 512
+        },
+        {
+          "target_bits": 0.5,
+          "informed_bayes": 128,
+          "transformer": 128
+        },
+        {
+          "target_bits": 1.0,
+          "informed_bayes": 32,
+          "transformer": 32
+        },
+        {
+          "target_bits": 2.0,
+          "informed_bayes": 8,
+          "transformer": 8
+        }
+      ]
+    },
+    {
+      "id": "L8_8",
+      "depth_pair": [
+        8,
+        8
+      ],
+      "color": "#8A4E98",
+      "times": [
+        1,
+        2,
+        4,
+        8,
+        16,
+        32,
+        64,
+        128,
+        256,
+        512,
+        1024
+      ],
+      "n_sequences": 256,
+      "n_tokens": 1025,
+      "raw_directory": "output/conditional_accuracy/product/L8_8",
+      "raw_records_sha256": "4fb84496e709c0189007dc2874351c28178b4e8524f9df0bfe378cdfa498b220",
+      "informed_bayes": {
+        "mean": [
+          3.611373056681003,
+          3.582259975284959,
+          2.794451094426174,
+          2.096695799369837,
+          1.3724845940861528,
+          0.8478178796675139,
+          0.46591792514997693,
+          0.28435468911306455,
+          0.156519268555316,
+          0.08816144192559025,
+          0.054570966571153776
+        ],
+        "se": [
+          0.05372081358955587,
+          0.059369584528439844,
+          0.06047853271153496,
+          0.06593232439983762,
+          0.05669279613298071,
+          0.039523357185374655,
+          0.025463508192051416,
+          0.018015243444028068,
+          0.010483620596941938,
+          0.005231144461807749,
+          0.006343433844963934
+        ]
+      },
+      "transformer": {
+        "mean": [
+          3.613992111857602,
+          3.5766286573752106,
+          2.802166690722232,
+          2.1091561624356534,
+          1.4012374026961805,
+          0.8708513735601572,
+          0.48911206946170016,
+          0.2923481617661937,
+          0.16370196933364198,
+          0.09398254467159387,
+          0.0631932659210296
+        ],
+        "se": [
+          0.053753745459694274,
+          0.05952344533055063,
+          0.06045633279721744,
+          0.06560161005213459,
+          0.05567660424885841,
+          0.038438101338668276,
+          0.025538076148528762,
+          0.017778562073736126,
+          0.009949000579224019,
+          0.0050666119650906605,
+          0.006715919759989328
+        ]
+      },
+      "targets": [
+        {
+          "target_bits": 0.05,
+          "informed_bayes": null,
+          "transformer": null
+        },
+        {
+          "target_bits": 0.1,
+          "informed_bayes": 512,
+          "transformer": 512
+        },
+        {
+          "target_bits": 0.2,
+          "informed_bayes": 256,
+          "transformer": 256
+        },
+        {
+          "target_bits": 0.5,
+          "informed_bayes": 64,
+          "transformer": 64
+        },
+        {
+          "target_bits": 1.0,
+          "informed_bayes": 32,
+          "transformer": 32
+        },
+        {
+          "target_bits": 2.0,
+          "informed_bayes": 16,
+          "transformer": 16
+        }
+      ]
+    }
+  ],
+  "source_protocol": {
+    "schema": "conditional-product-accuracy-v1",
+    "depth_pairs": [
+      [
+        1,
+        1
+      ],
+      [
+        1,
+        8
+      ],
+      [
+        4,
+        4
+      ],
+      [
+        8,
+        8
+      ]
+    ],
+    "n_sequences_per_pair": 256,
+    "n_tokens": 1025,
+    "times": [
+      1,
+      2,
+      4,
+      8,
+      16,
+      32,
+      64,
+      128,
+      256,
+      512,
+      1024
+    ],
+    "master_seed": 20260916,
+    "selection": "low, asymmetric, middle and high depths selected before evaluation",
+    "source": "fresh transition matrices and independent coordinate permutations for every sequence",
+    "source_depths_fixed": true,
+    "reference_depths_revealed": false,
+    "reference_depth_prior": "independent uniform 1..8, shared across each coordinate's rows",
+    "source_code_sha256": {
+      "source.py": "d1bb83004e3654cb3f84f6083437cae2b6d71fa19a33b06d26d2455ac440dab4",
+      "families.py": "24d7ab304d9de7133e38ec8ffe2422d2de38b9e3374670117807eab61d606e00"
+    },
+    "checkpoint_sha256": "29cac698253475a539a0b1bb76a47436a6eee0b0ab3d8c651a61bfe239b9b271",
+    "config_sha256": "7369b744e526a007d45e8b3e9e5333a1021ca9f7582da971dd4bb6430a3f2a06",
+    "source_numpy_version": "2.4.6"
+  },
+  "source_receipt_sha256": "3c8cead3382c589a2cff6bd2907410a5f0c6dfc5f5a4aadcda8d3c14b19e844a",
+  "source_summary_sha256": "bdf147619cbb70e390e46f6547e34661fc324326094863ee8140fbffdeae5c03",
+  "verification": {
+    "raw_sequences": 1024,
+    "raw_records": 3072,
+    "raw_summary_max_abs_error": 0.0,
+    "original_validation": {
+      "passed": true,
+      "selected_sequences_per_pair": [
+        0,
+        255
+      ],
+      "maximum_errors": {
+        "wider_grid_probability_error": 0.0,
+        "wider_grid_risk_error_bits": 0.0,
+        "dirichlet_probability_error": 2.8332891588433995e-13,
+        "causal_future_change_error": 0.0,
+        "dirichlet_final_log_evidence_error": 5.4569682106375694e-12
+      },
+      "tolerances": {
+        "wider_grid_probability_error": 2e-06,
+        "wider_grid_risk_error_bits": 2e-06,
+        "dirichlet_probability_error": 2e-12,
+        "causal_future_change_error": 2e-12,
+        "dirichlet_final_log_evidence_error": 2e-08
+      },
+      "wider_integration_range": [
+        -45,
+        40
+      ],
+      "main_integration_range": [
+        -30.0,
+        30.0
+      ]
+    }
+  },
+  "provenance": {
+    "script_sha256": "50195f7365a597d61d2a53d8c2ebd9889d45678663e03a634370d1e80612e481",
+    "checkpoint": "results/transformer/runs/prod_8x8/model_100000.pt",
+    "checkpoint_sha256": "29cac698253475a539a0b1bb76a47436a6eee0b0ab3d8c651a61bfe239b9b271"
+  }
+}

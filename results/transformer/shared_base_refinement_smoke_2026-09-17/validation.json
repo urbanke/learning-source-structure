@@ -1,0 +1,90 @@
+{
+  "schema": "shared-base-forced-continuation-smoke-validation-v1",
+  "passed": true,
+  "completed_utc": "2026-09-17T07:34:16.689643+00:00",
+  "scope": "Tiny software continuation test on copies, not new scientific evidence;64 worker draws plus64 verification replay draws acrossfourchains.",
+  "old_draws_per_chain": 4096,
+  "new_draws_per_chain": 4112,
+  "worker_status": {
+    "worker_exit_code": 0,
+    "worker_wall_seconds": 3.121788291959092,
+    "completed_utc": "2026-09-17T07:32:54.423615+00:00"
+  },
+  "independent_replay_wall_seconds": 1.78921766707208,
+  "single_reference_audit_wall_seconds": 0.8079901670571417,
+  "runtime": {
+    "python": [
+      3,
+      14,
+      6
+    ],
+    "numpy": "2.4.6",
+    "scipy": "1.18.1"
+  },
+  "checks": {
+    "original_three_hashes_unchanged": true,
+    "reference_identity_unchanged": true,
+    "forced_total_despite_previously_ready": true,
+    "copied_checkpoint_path_updated": true,
+    "history_extended_preserving_original": true,
+    "sampling_config_and_initializations_unchanged": true,
+    "burn_not_repeated": true,
+    "original_sample_prefixes_bitwise_preserved": true,
+    "exactly_sixteen_new_draws_each_chain": true,
+    "rng_states_advanced": true,
+    "replay_loaded_original_rng_exactly": true,
+    "replayed_final_rng_states_exact": true,
+    "replayed_samples_bitwise_equal": true,
+    "replayed_move_counters_exact": true,
+    "unchanged_independent_single_reference_audit_passed": true,
+    "original_three_hashes_still_unchanged_after_audit": true
+  },
+  "original_files_sha256": {
+    "/Users/ruediger/Projects/layered_architectures/output/shared_base_curve_references_2026-09-15/a1_L0/alpha16/seq_000000_t0064.json": "f6d9a11d75e1fa5b0f47aeb4489969b7e87fce447eeb1e29fae929090ecad424",
+    "/Users/ruediger/Projects/layered_architectures/output/shared_base_curve_references_2026-09-15/a1_L0/alpha16/seq_000000_t0064_chains.npz": "d8546e559da2641526848f7f7c28780cf8132389b5fa93287078ec61e4972953",
+    "/Users/ruediger/Projects/layered_architectures/output/shared_base_curve_references_2026-09-15/a1_L0/alpha16/seq_000000_t0064_moments.npz": "7a530302d120ffcd9d2082ba88312d0319c7124dd436c3c5e4b62101544b88e4"
+  },
+  "copied_outputs_sha256": {
+    "output/shared_base_refinement_smoke_2026-09-17/references/a1_L0/alpha16/seq_000000_t0064.json": "1439ea49d1f83f3c47c68226114724c3c6af9895ba0d3d7a97d29789fa9d8db0",
+    "output/shared_base_refinement_smoke_2026-09-17/references/a1_L0/alpha16/seq_000000_t0064_chains.npz": "c54dfa97ea98177b2c83b8ff8a95408bbc11c23067f2fbeb5157c3785a53611e",
+    "output/shared_base_refinement_smoke_2026-09-17/references/a1_L0/alpha16/seq_000000_t0064_moments.npz": "718d9bc92f137036752ba6c4b1ebb3c3905afc738f8c62a9d17ba5aea5c57735"
+  },
+  "invocation_sha256": "52546af1b57bc667db88bdafc453b43651c7e570e689907012793b97aae45130",
+  "single_reference_audit_sha256": "c3a1ca614f02805fa4ea5de61ef01c3e4b3aae4ce82743bcdede1ea255c1cced",
+  "new_checkpoint": "/Users/ruediger/Projects/layered_architectures/output/shared_base_refinement_smoke_2026-09-17/references/a1_L0/alpha16/seq_000000_t0064_chains.npz",
+  "worker_argv": [
+    "/private/tmp/layered-shared-depth-env/bin/python",
+    "code/scripts/shared_base_curve_reference.py",
+    "--input",
+    "output/shared_base_conditional_curves_2026-09-15/a1_L0",
+    "--out",
+    "output/shared_base_refinement_smoke_2026-09-17/references",
+    "--index",
+    "0",
+    "--prefix",
+    "64",
+    "--alpha-order",
+    "16",
+    "--proposal",
+    "iid",
+    "--steps",
+    "64",
+    "--burn",
+    "16384",
+    "--initial-draws",
+    "4112",
+    "--max-draws",
+    "4112",
+    "--seed",
+    "20261006"
+  ],
+  "environment": {
+    "OPENBLAS_NUM_THREADS": "1",
+    "OMP_NUM_THREADS": "1",
+    "MKL_NUM_THREADS": "1",
+    "NUMEXPR_NUM_THREADS": "1",
+    "VECLIB_MAXIMUM_THREADS": "1",
+    "LSA_STORE": "/Users/ruediger/Projects/product_model_with_memory/tables/anchors_prod",
+    "PMM_SRC": "/Users/ruediger/Projects/product_model_with_memory/src"
+  }
+}

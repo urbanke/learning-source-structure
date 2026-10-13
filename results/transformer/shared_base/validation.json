@@ -1,0 +1,729 @@
+{
+  "schema": "shared_base_validation_v1",
+  "smoke": false,
+  "settings": {
+    "u_lo": -32.0,
+    "u_hi": 32.0,
+    "step": 0.03125,
+    "depths": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8
+    ],
+    "alpha_bounds": [
+      0.5,
+      1.5
+    ]
+  },
+  "runtime": {
+    "python": "3.14.6",
+    "numpy": "2.4.6",
+    "scipy": "1.18.1",
+    "platform": "macOS-26.6.2-arm64-arm-64bit-Mach-O"
+  },
+  "store": "/Users/ruediger/Projects/product_model_with_memory/tables/anchors_prod",
+  "backend_source": "/Users/ruediger/Projects/product_model_with_memory/src",
+  "code_sha256": {
+    "weighted_lsa.py": "847f0ffaa622d86e88633447327dce8e7f518e4c86c1e44e76a794e470d2dec9",
+    "shared_base.py": "3d2319221db65e629d5ef7c8d0ddbf0dea0a2ae7149da93a84f7bcb50a6d6af3",
+    "shared_depth.py": "616f536153458499078d17d7939e6a800c7b52e3eb4f1dd6503db95030d7a395",
+    "source.py": "d1bb83004e3654cb3f84f6083437cae2b6d71fa19a33b06d26d2455ac440dab4",
+    "phi_source.py": "456eb407fd7f280786a441681a704a6fff172af9fc9aea3c6f9456fb55174831",
+    "validate_shared_base.py": "14bb85652440e40ebee07c76fe01c47687106b7ab36cd5490043ecf36314dc75"
+  },
+  "passed": true,
+  "elapsed_seconds": 14.862126125022769,
+  "checks": [
+    {
+      "name": "simplex_quadrature_d2_m1-0",
+      "error": 9.992007221626409e-16,
+      "tolerance": 1.4426950408889636e-10,
+      "passed": true,
+      "units": "bits"
+    },
+    {
+      "name": "weighted_L1_vs_simplex_d2_m1-0",
+      "error": 2.1538326677728037e-14,
+      "tolerance": 2.885390081777927e-08,
+      "passed": true,
+      "units": "bits"
+    },
+    {
+      "name": "simplex_quadrature_d2_m0-1",
+      "error": 5.10702591327572e-15,
+      "tolerance": 1.4426950408889636e-10,
+      "passed": true,
+      "units": "bits"
+    },
+    {
+      "name": "weighted_L1_vs_simplex_d2_m0-1",
+      "error": 1.6431300764452317e-14,
+      "tolerance": 2.885390081777927e-08,
+      "passed": true,
+      "units": "bits"
+    },
+    {
+      "name": "simplex_quadrature_d2_m16-16",
+      "error": 0.0,
+      "tolerance": 1.4426950408889636e-10,
+      "passed": true,
+      "units": "bits"
+    },
+    {
+      "name": "weighted_L1_vs_simplex_d2_m16-16",
+      "error": 2.1316282072803006e-14,
+      "tolerance": 2.885390081777927e-08,
+      "passed": true,
+      "units": "bits"
+    },
+    {
+      "name": "simplex_quadrature_d2_m32-0",
+      "error": 9.769962616701378e-15,
+      "tolerance": 1.4426950408889636e-10,
+      "passed": true,
+      "units": "bits"
+    },
+    {
+      "name": "weighted_L1_vs_simplex_d2_m32-0",
+      "error": 3.2862601528904634e-14,
+      "tolerance": 2.885390081777927e-08,
+      "passed": true,
+      "units": "bits"
+    },
+    {
+      "name": "simplex_quadrature_d3_m1-0-0",
+      "error": 6.661338147750939e-16,
+      "tolerance": 1.4426950408889636e-10,
+      "passed": true,
+      "units": "bits"
+    },
+    {
+      "name": "weighted_L1_vs_simplex_d3_m1-0-0",
+      "error": 2.1094237467877974e-14,
+      "tolerance": 2.885390081777927e-08,
+      "passed": true,
+      "units": "bits"
+    },
+    {
+      "name": "simplex_quadrature_d3_m10-11-11",
+      "error": 0.0,
+      "tolerance": 1.4426950408889636e-10,
+      "passed": true,
+      "units": "bits"
+    },
+    {
+      "name": "weighted_L1_vs_simplex_d3_m10-11-11",
+      "error": 0.0,
+      "tolerance": 2.885390081777927e-08,
+      "passed": true,
+      "units": "bits"
+    },
+    {
+      "name": "simplex_quadrature_d3_m32-0-0",
+      "error": 1.7763568394002505e-15,
+      "tolerance": 1.4426950408889636e-10,
+      "passed": true,
+      "units": "bits"
+    },
+    {
+      "name": "weighted_L1_vs_simplex_d3_m32-0-0",
+      "error": 6.217248937900877e-15,
+      "tolerance": 2.885390081777927e-08,
+      "passed": true,
+      "units": "bits"
+    },
+    {
+      "name": "uniform_limit_d3_loss",
+      "error": 1.3322676295501878e-15,
+      "tolerance": 2e-07,
+      "passed": true,
+      "units": "bits"
+    },
+    {
+      "name": "uniform_limit_d3_probs",
+      "error": 5.551115123125783e-16,
+      "tolerance": 2e-07,
+      "passed": true
+    },
+    {
+      "name": "uniform_limit_d4_loss",
+      "error": 1.7763568394002505e-15,
+      "tolerance": 2e-07,
+      "passed": true,
+      "units": "bits"
+    },
+    {
+      "name": "uniform_limit_d4_probs",
+      "error": 6.661338147750939e-16,
+      "tolerance": 2e-07,
+      "passed": true
+    },
+    {
+      "name": "depth0_independent_joint_d3_n1",
+      "error": 0.0,
+      "tolerance": 2.885390081777927e-08,
+      "passed": true,
+      "units": "bits"
+    },
+    {
+      "name": "depth0_independent_predictive_d3_prefix1",
+      "error": 1.6653345369377348e-16,
+      "tolerance": 2e-08,
+      "passed": true
+    },
+    {
+      "name": "depth0_independent_joint_d3_n2",
+      "error": 4.440892098500626e-16,
+      "tolerance": 2.885390081777927e-08,
+      "passed": true,
+      "units": "bits"
+    },
+    {
+      "name": "depth0_independent_predictive_d3_prefix2",
+      "error": 2.220446049250313e-16,
+      "tolerance": 2e-08,
+      "passed": true
+    },
+    {
+      "name": "depth0_independent_joint_d3_n8",
+      "error": 1.7763568394002505e-15,
+      "tolerance": 2.885390081777927e-08,
+      "passed": true,
+      "units": "bits"
+    },
+    {
+      "name": "depth0_independent_predictive_d3_prefix8",
+      "error": 6.106226635438361e-16,
+      "tolerance": 2e-08,
+      "passed": true
+    },
+    {
+      "name": "depth0_independent_joint_d3_n32",
+      "error": 0.0,
+      "tolerance": 2.885390081777927e-08,
+      "passed": true,
+      "units": "bits"
+    },
+    {
+      "name": "depth0_firsttoken_d3",
+      "error": 1.1102230246251565e-16,
+      "tolerance": 2e-10,
+      "passed": true
+    },
+    {
+      "name": "depth0_independent_joint_d4_n1",
+      "error": 1.3322676295501878e-15,
+      "tolerance": 2.885390081777927e-08,
+      "passed": true,
+      "units": "bits"
+    },
+    {
+      "name": "depth0_independent_predictive_d4_prefix1",
+      "error": 1.942890293094024e-16,
+      "tolerance": 2e-08,
+      "passed": true
+    },
+    {
+      "name": "depth0_independent_joint_d4_n2",
+      "error": 1.3322676295501878e-15,
+      "tolerance": 2.885390081777927e-08,
+      "passed": true,
+      "units": "bits"
+    },
+    {
+      "name": "depth0_independent_predictive_d4_prefix2",
+      "error": 0.0,
+      "tolerance": 2e-08,
+      "passed": true
+    },
+    {
+      "name": "depth0_independent_joint_d4_n8",
+      "error": 0.0,
+      "tolerance": 2.885390081777927e-08,
+      "passed": true,
+      "units": "bits"
+    },
+    {
+      "name": "depth0_independent_predictive_d4_prefix8",
+      "error": 3.3306690738754696e-16,
+      "tolerance": 2e-08,
+      "passed": true
+    },
+    {
+      "name": "depth0_independent_joint_d4_n32",
+      "error": 0.0,
+      "tolerance": 2.885390081777927e-08,
+      "passed": true,
+      "units": "bits"
+    },
+    {
+      "name": "depth0_firsttoken_d4",
+      "error": 5.551115123125783e-17,
+      "tolerance": 2e-10,
+      "passed": true
+    },
+    {
+      "name": "full_prior_predictive_normalization_d3_alpha8",
+      "error": 3.6637359812630166e-14,
+      "tolerance": 2e-07,
+      "passed": true
+    },
+    {
+      "name": "joint_sequential_d3_alpha8",
+      "error": 0.0,
+      "tolerance": 2.8853900817779266e-07,
+      "passed": true,
+      "units": "bits"
+    },
+    {
+      "name": "full_prior_predictive_normalization_d3_alpha16",
+      "error": 3.7192471324942744e-14,
+      "tolerance": 2e-07,
+      "passed": true
+    },
+    {
+      "name": "joint_sequential_d3_alpha16",
+      "error": 0.0,
+      "tolerance": 2.8853900817779266e-07,
+      "passed": true,
+      "units": "bits"
+    },
+    {
+      "name": "full_prior_predictive_normalization_d3_alpha32",
+      "error": 3.6415315207705135e-14,
+      "tolerance": 2e-07,
+      "passed": true
+    },
+    {
+      "name": "joint_sequential_d3_alpha32",
+      "error": 1.4210854715202004e-14,
+      "tolerance": 2.8853900817779266e-07,
+      "passed": true,
+      "units": "bits"
+    },
+    {
+      "name": "label_equivariance_d3",
+      "error": 4.440892098500626e-16,
+      "tolerance": 2e-08,
+      "passed": true
+    },
+    {
+      "name": "label_invariant_joint_d3",
+      "error": 0.0,
+      "tolerance": 2.885390081777927e-08,
+      "passed": true,
+      "units": "bits"
+    },
+    {
+      "name": "joint_extension_d3_prefix1",
+      "error": 0.0,
+      "tolerance": 2e-07,
+      "passed": true
+    },
+    {
+      "name": "joint_extension_d3_prefix4",
+      "error": 3.3306690738754696e-16,
+      "tolerance": 2e-07,
+      "passed": true
+    },
+    {
+      "name": "joint_extension_d3_prefix31",
+      "error": 1.1102230246251565e-15,
+      "tolerance": 2e-07,
+      "passed": true
+    },
+    {
+      "name": "full_prior_joint_normalization_d3_n3",
+      "error": 3.730349362740526e-14,
+      "tolerance": 2e-07,
+      "passed": true
+    },
+    {
+      "name": "alpha_refinement_d3_8_to_16_logjoint",
+      "error": 1.5198509117908543e-10,
+      "tolerance": 2.8853900817779266e-07,
+      "passed": true,
+      "units": "bits"
+    },
+    {
+      "name": "alpha_refinement_d3_8_to_16_probs",
+      "error": 2.5745905407603686e-11,
+      "tolerance": 2e-07,
+      "passed": true
+    },
+    {
+      "name": "alpha_refinement_d3_16_to_32_logjoint",
+      "error": 1.4210854715202004e-14,
+      "tolerance": 2.8853900817779266e-07,
+      "passed": true,
+      "units": "bits"
+    },
+    {
+      "name": "alpha_refinement_d3_16_to_32_probs",
+      "error": 5.551115123125783e-16,
+      "tolerance": 2e-07,
+      "passed": true
+    },
+    {
+      "name": "full_prior_predictive_normalization_d4_alpha8",
+      "error": 8.903988657493755e-14,
+      "tolerance": 2e-07,
+      "passed": true
+    },
+    {
+      "name": "joint_sequential_d4_alpha8",
+      "error": 0.0,
+      "tolerance": 2.8853900817779266e-07,
+      "passed": true,
+      "units": "bits"
+    },
+    {
+      "name": "full_prior_predictive_normalization_d4_alpha16",
+      "error": 8.881784197001252e-14,
+      "tolerance": 2e-07,
+      "passed": true
+    },
+    {
+      "name": "joint_sequential_d4_alpha16",
+      "error": 0.0,
+      "tolerance": 2.8853900817779266e-07,
+      "passed": true,
+      "units": "bits"
+    },
+    {
+      "name": "full_prior_predictive_normalization_d4_alpha32",
+      "error": 8.903988657493755e-14,
+      "tolerance": 2e-07,
+      "passed": true
+    },
+    {
+      "name": "joint_sequential_d4_alpha32",
+      "error": 0.0,
+      "tolerance": 2.8853900817779266e-07,
+      "passed": true,
+      "units": "bits"
+    },
+    {
+      "name": "label_equivariance_d4",
+      "error": 4.440892098500626e-16,
+      "tolerance": 2e-08,
+      "passed": true
+    },
+    {
+      "name": "label_invariant_joint_d4",
+      "error": 0.0,
+      "tolerance": 2.885390081777927e-08,
+      "passed": true,
+      "units": "bits"
+    },
+    {
+      "name": "joint_extension_d4_prefix1",
+      "error": 0.0,
+      "tolerance": 2e-07,
+      "passed": true
+    },
+    {
+      "name": "joint_extension_d4_prefix4",
+      "error": 3.885780586188048e-16,
+      "tolerance": 2e-07,
+      "passed": true
+    },
+    {
+      "name": "joint_extension_d4_prefix31",
+      "error": 7.771561172376096e-16,
+      "tolerance": 2e-07,
+      "passed": true
+    },
+    {
+      "name": "full_prior_joint_normalization_d4_n2",
+      "error": 7.682743330406083e-14,
+      "tolerance": 2e-07,
+      "passed": true
+    },
+    {
+      "name": "alpha_refinement_d4_8_to_16_logjoint",
+      "error": 1.3282175359563553e-09,
+      "tolerance": 2.8853900817779266e-07,
+      "passed": true,
+      "units": "bits"
+    },
+    {
+      "name": "alpha_refinement_d4_8_to_16_probs",
+      "error": 1.3303252943686061e-10,
+      "tolerance": 2e-07,
+      "passed": true
+    },
+    {
+      "name": "alpha_refinement_d4_16_to_32_logjoint",
+      "error": 1.4210854715202004e-14,
+      "tolerance": 2.8853900817779266e-07,
+      "passed": true,
+      "units": "bits"
+    },
+    {
+      "name": "alpha_refinement_d4_16_to_32_probs",
+      "error": 5.551115123125783e-16,
+      "tolerance": 2e-07,
+      "passed": true
+    },
+    {
+      "name": "row_bounds_refinement_d3_m1-0-0",
+      "error": 2.5757174171303632e-14,
+      "tolerance": 2.885390081777927e-08,
+      "passed": true,
+      "units": "bits"
+    },
+    {
+      "name": "row_grid_refinement_d3_m1-0-0",
+      "error": 6.661338147750939e-16,
+      "tolerance": 2.885390081777927e-08,
+      "passed": true,
+      "units": "bits"
+    },
+    {
+      "name": "row_bounds_refinement_d3_m32-0-0",
+      "error": 0.0,
+      "tolerance": 2.885390081777927e-08,
+      "passed": true,
+      "units": "bits"
+    },
+    {
+      "name": "row_grid_refinement_d3_m32-0-0",
+      "error": 2.042810365310288e-14,
+      "tolerance": 2.885390081777927e-08,
+      "passed": true,
+      "units": "bits"
+    },
+    {
+      "name": "row_bounds_refinement_d3_m11-11-10",
+      "error": 0.0,
+      "tolerance": 2.885390081777927e-08,
+      "passed": true,
+      "units": "bits"
+    },
+    {
+      "name": "row_grid_refinement_d3_m11-11-10",
+      "error": 0.0,
+      "tolerance": 2.885390081777927e-08,
+      "passed": true,
+      "units": "bits"
+    },
+    {
+      "name": "row_bounds_refinement_d4_m1-0-0-0",
+      "error": 2.8199664825478976e-14,
+      "tolerance": 2.885390081777927e-08,
+      "passed": true,
+      "units": "bits"
+    },
+    {
+      "name": "row_grid_refinement_d4_m1-0-0-0",
+      "error": 2.4424906541753444e-15,
+      "tolerance": 2.885390081777927e-08,
+      "passed": true,
+      "units": "bits"
+    },
+    {
+      "name": "row_bounds_refinement_d4_m32-0-0-0",
+      "error": 0.0,
+      "tolerance": 2.885390081777927e-08,
+      "passed": true,
+      "units": "bits"
+    },
+    {
+      "name": "row_grid_refinement_d4_m32-0-0-0",
+      "error": 2.042810365310288e-14,
+      "tolerance": 2.885390081777927e-08,
+      "passed": true,
+      "units": "bits"
+    },
+    {
+      "name": "row_bounds_refinement_d4_m8-8-8-8",
+      "error": 0.0,
+      "tolerance": 2.885390081777927e-08,
+      "passed": true,
+      "units": "bits"
+    },
+    {
+      "name": "row_grid_refinement_d4_m8-8-8-8",
+      "error": 2.842170943040401e-14,
+      "tolerance": 2.885390081777927e-08,
+      "passed": true,
+      "units": "bits"
+    },
+    {
+      "name": "full_grid_refinement_d3_logjoint",
+      "error": 1.4210854715202004e-14,
+      "tolerance": 4.3280851226668904e-07,
+      "passed": true,
+      "units": "bits"
+    },
+    {
+      "name": "full_grid_refinement_d3_probs",
+      "error": 8.43769498715119e-15,
+      "tolerance": 3e-07,
+      "passed": true
+    },
+    {
+      "name": "full_grid_refinement_d4_logjoint",
+      "error": 0.0,
+      "tolerance": 4.3280851226668904e-07,
+      "passed": true,
+      "units": "bits"
+    },
+    {
+      "name": "full_grid_refinement_d4_probs",
+      "error": 7.66053886991358e-15,
+      "tolerance": 3e-07,
+      "passed": true
+    },
+    {
+      "name": "actual_source_MC_joint_d3_0000",
+      "error": 0.00031103034892773773,
+      "tolerance": 0.0017598611726640466,
+      "passed": true,
+      "analytic_probability": 0.06652219754254908,
+      "monte_carlo": {
+        "path": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "mean": 0.06683322789147682,
+        "se": 0.0003519682345328093,
+        "samples": 131072,
+        "seed": 20260915
+      },
+      "units": "probability",
+      "interpretation": "five standard errors plus numerical slack; source-model check, not numerical precision certificate"
+    },
+    {
+      "name": "actual_source_MC_joint_d3_0102",
+      "error": 5.3033390667817613e-05,
+      "tolerance": 0.00017881836134859194,
+      "passed": true,
+      "analytic_probability": 0.006076140922199612,
+      "monte_carlo": {
+        "path": [
+          0,
+          1,
+          0,
+          2
+        ],
+        "mean": 0.006023107531531794,
+        "se": 3.575967226971839e-05,
+        "samples": 131072,
+        "seed": 20260915
+      },
+      "units": "probability",
+      "interpretation": "five standard errors plus numerical slack; source-model check, not numerical precision certificate"
+    }
+  ],
+  "timings": [
+    {
+      "name": "construct_d3_alpha8",
+      "seconds": 0.00022779195569455624
+    },
+    {
+      "name": "run_d3_alpha8_n16",
+      "seconds": 0.200366250006482,
+      "tokens": 16
+    },
+    {
+      "name": "run_d3_alpha8_n32",
+      "seconds": 0.22504962503444403,
+      "tokens": 32
+    },
+    {
+      "name": "construct_d3_alpha16",
+      "seconds": 0.00023387500550597906
+    },
+    {
+      "name": "run_d3_alpha16_n16",
+      "seconds": 0.3934861660236493,
+      "tokens": 16
+    },
+    {
+      "name": "run_d3_alpha16_n32",
+      "seconds": 0.44391375000122935,
+      "tokens": 32
+    },
+    {
+      "name": "construct_d3_alpha32",
+      "seconds": 0.00031108304392546415
+    },
+    {
+      "name": "run_d3_alpha32_n16",
+      "seconds": 0.782704042037949,
+      "tokens": 16
+    },
+    {
+      "name": "run_d3_alpha32_n32",
+      "seconds": 0.8788593749050051,
+      "tokens": 32
+    },
+    {
+      "name": "construct_d4_alpha8",
+      "seconds": 0.00023758294992148876
+    },
+    {
+      "name": "run_d4_alpha8_n16",
+      "seconds": 0.30295174999628216,
+      "tokens": 16
+    },
+    {
+      "name": "run_d4_alpha8_n32",
+      "seconds": 0.5098513329867274,
+      "tokens": 32
+    },
+    {
+      "name": "construct_d4_alpha16",
+      "seconds": 0.0002967079635709524
+    },
+    {
+      "name": "run_d4_alpha16_n16",
+      "seconds": 0.64137850003317,
+      "tokens": 16
+    },
+    {
+      "name": "run_d4_alpha16_n32",
+      "seconds": 1.0715110420715064,
+      "tokens": 32
+    },
+    {
+      "name": "construct_d4_alpha32",
+      "seconds": 0.0003666669363155961
+    },
+    {
+      "name": "run_d4_alpha32_n16",
+      "seconds": 1.1542952089803293,
+      "tokens": 16
+    },
+    {
+      "name": "run_d4_alpha32_n32",
+      "seconds": 1.9753170830663294,
+      "tokens": 32
+    },
+    {
+      "name": "full_refined_grid_d3_alpha16_n32",
+      "seconds": 1.3269387920154259,
+      "tokens": 32
+    },
+    {
+      "name": "full_refined_grid_d4_alpha16_n32",
+      "seconds": 2.5150777499657124,
+      "tokens": 32
+    },
+    {
+      "name": "independent_source_likelihood_monte_carlo",
+      "seconds": 0.07022316695656627,
+      "samples": 131072
+    }
+  ]
+}

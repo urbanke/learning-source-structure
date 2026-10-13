@@ -1,0 +1,69 @@
+{
+  "schema": "shared-base-short-evidence-validation-v1",
+  "passed": true,
+  "available_token_lengths": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5
+  ],
+  "available_prediction_times": [
+    0,
+    1,
+    2,
+    3,
+    4
+  ],
+  "prior": {
+    "alpha": [
+      0.5,
+      1.5
+    ],
+    "depths": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8
+    ],
+    "ranks": "uniform permutation"
+  },
+  "pattern_counts": [
+    1,
+    1,
+    2,
+    5,
+    15,
+    52
+  ],
+  "normalization_errors": {
+    "0": 0.0,
+    "1": 1.4587886454364707e-11,
+    "2": 1.4587886454364707e-11,
+    "3": 1.4587886454364707e-11,
+    "4": 1.4588108498969632e-11,
+    "5": 1.4587886454364707e-11
+  },
+  "maximum_child_parent_relative_error": 1.4587886454364707e-11,
+  "maximum_independent_first_step_error": 5.496159083406837e-13,
+  "tolerance": 1e-09,
+  "renormalized": false,
+  "verified_file_sha256": {
+    "/Users/ruediger/Projects/layered_architectures/results/transformer/shared_base_conditional_curves/shortprefix_reference.json": "a1659aa766a6c15ffb849d71f67352f88fe385658297a920c2baf376dbbb0c1c",
+    "/Users/ruediger/Projects/layered_architectures/results/transformer/conditional_shared_base/first_step.json": "b856ef15840ba31c8c42a1a50a3fa933372c15d61ca1be45fef1bcf9c375ced4",
+    "/Users/ruediger/Projects/layered_architectures/results/transformer/shared_base_conditional_curves/time4_summary.json": "e4997691be5bf98016e9e3b67f03e37f08556068b4777af229a2a6f164259482",
+    "/Users/ruediger/Projects/layered_architectures/code/scripts/shortprefix_shared_base_exact.py": "b6e229cb48f9b1a58e570521df9eb92ebec65da6b0db8386c3a23a71183791a6",
+    "/Users/ruediger/Projects/layered_architectures/code/scripts/shortprefix_shared_base_summary.py": "71bb461091932c015b3e816ec68f6320f0ccb8eae75795e31c57b5e840afadfc",
+    "/Users/ruediger/Projects/layered_architectures/code/scripts/conditional_shared_base_first_step.py": "8abba4e59ddbbe6ac4484d029f88d4244db50237d5726eabadd0f6325209f5cd",
+    "/Users/ruediger/Projects/layered_architectures/output/shortprefix_shared_base_exact_2026-09-15/alpha16_step32_bounds-32_32.json": "978fb8e733763910ac61b1b3fb2912df824d4aeafa0cd1779d74a8e14a89cdfa",
+    "/Users/ruediger/Projects/layered_architectures/output/shortprefix_shared_base_exact_2026-09-15/alpha32_step32_bounds-32_32.json": "c0d94195d4048a3e013337bc52588b3b547f8a4957601dd882b7d3a804bed130",
+    "/Users/ruediger/Projects/layered_architectures/output/shortprefix_shared_base_exact_2026-09-15/alpha32_step64_bounds-36_34.json": "2e2dd8fdd501a19c9a628bb8e883329a3bb37ca0fab7fedc335f2f772b419a64"
+  },
+  "unavailable_optional_numerical_reports": []
+}

@@ -1,0 +1,14 @@
+{
+  "passed": true,
+  "inputs": {
+    "/Users/ruediger/Projects/layered_architectures/results/transformer/section4_copying_pilot_2026-09-17/records.csv": "cae5c426068a990b790603d2dd8948cb0b138a8f4702ee101579f86ca27572f7",
+    "/Users/ruediger/Projects/layered_architectures/code/scripts/section4_copying_figures.py": "371901d0c6d213b90e819885d3cb1e62350574e2e785871b08f19c44d3441c6b"
+  },
+  "outputs": {
+    "transition.pdf": "d57a449aff49c1d26cfbf2baeb157eec05711aa13fcf21505646c6ee4bd2c15b",
+    "transition.png": "e92667c40682c980305dfdb2a9887f6f016bdf0c4a93d1170557be99743dd052",
+    "all_candidates.pdf": "7e78d98162eb6bf2a338a41394c85dad0add31ff8071457561d43a1ff37df552",
+    "all_candidates.png": "3a03dbc2a2bd732aef42c99d06105446d55a0491aeec13903f67cfe27370eba2",
+    "plot_data.json": "a3726dcdc426028317156d2695f8568fde15bb472c468b4aca4595d4e60e49c9"
+  }
+}

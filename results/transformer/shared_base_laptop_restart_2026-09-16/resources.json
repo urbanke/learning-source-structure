@@ -1,0 +1,72 @@
+{
+  "measured_at": "2026-09-16T21:37:12.538699+02:00",
+  "hardware_cores": 15,
+  "ram_gib": 24,
+  "workers": 12,
+  "aggregate_worker_cpu_percent": 1166.3,
+  "aggregate_worker_rss_gib": 4.8496856689453125,
+  "rows": [
+    {
+      "pid": 79008,
+      "cpu_percent": 96.6,
+      "rss_kib": 489376
+    },
+    {
+      "pid": 79217,
+      "cpu_percent": 96.4,
+      "rss_kib": 467424
+    },
+    {
+      "pid": 79349,
+      "cpu_percent": 96.0,
+      "rss_kib": 328064
+    },
+    {
+      "pid": 79355,
+      "cpu_percent": 97.9,
+      "rss_kib": 601104
+    },
+    {
+      "pid": 79378,
+      "cpu_percent": 98.1,
+      "rss_kib": 330816
+    },
+    {
+      "pid": 79497,
+      "cpu_percent": 97.2,
+      "rss_kib": 464320
+    },
+    {
+      "pid": 79537,
+      "cpu_percent": 97.3,
+      "rss_kib": 491696
+    },
+    {
+      "pid": 79636,
+      "cpu_percent": 95.5,
+      "rss_kib": 427200
+    },
+    {
+      "pid": 79637,
+      "cpu_percent": 97.3,
+      "rss_kib": 471840
+    },
+    {
+      "pid": 79642,
+      "cpu_percent": 98.2,
+      "rss_kib": 453856
+    },
+    {
+      "pid": 79665,
+      "cpu_percent": 97.6,
+      "rss_kib": 277120
+    },
+    {
+      "pid": 79677,
+      "cpu_percent": 98.2,
+      "rss_kib": 282448
+    }
+  ],
+  "memory_pressure": "The system has 25769803776 (1572864 pages with a page size of 16384).\nSystem-wide memory free percentage: 36%",
+  "swap": "vm.swapusage: total = 6144.00M  used = 4901.31M  free = 1242.69M  (encrypted)"
+}

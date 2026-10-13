@@ -1,0 +1,48 @@
+{
+ "d64_a1_L2": {
+  "transformer trained on the paper's source": {
+   "bits": 4.776850079217796,
+   "regret": 787.7481276293653
+  },
+  "informed copier": {
+   "bits": 4.769361817323291,
+   "regret": 780.0801474493928
+  },
+  "oracle copier": {
+   "bits": 4.7092987773530695,
+   "regret": 718.5755945198858
+  },
+  "copier of the paper": {
+   "bits": 4.94242463026103,
+   "regret": 957.2964678976374
+  },
+  "unigram predictor": {
+   "bits": 5.1043352071549934,
+   "regret": 1123.0928986370564
+  },
+  "n_seq": 48
+ },
+ "d128_a1_L2": {
+  "transformer trained on the paper's source": {
+   "bits": 5.611369010152116,
+   "regret": 1010.9870392967218
+  },
+  "informed copier": {
+   "bits": 5.621638567191742,
+   "regret": 1021.5030657052994
+  },
+  "oracle copier": {
+   "bits": 5.511841684487081,
+   "regret": 909.0710578157256
+  },
+  "copier of the paper": {
+   "bits": 5.967310382110857,
+   "regret": 1375.4710041824728
+  },
+  "unigram predictor": {
+   "bits": 5.869328403595621,
+   "regret": 1275.1374581828713
+  },
+  "n_seq": 24
+ }
+}

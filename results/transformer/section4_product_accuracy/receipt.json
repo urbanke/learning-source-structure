@@ -1,0 +1,15 @@
+{
+  "schema": "section4-product-accuracy-receipt-v1",
+  "verified": true,
+  "meaning": "Verifies reused artifacts and derived discrete estimates; not prospective scientific confirmation.",
+  "script_sha256": "50195f7365a597d61d2a53d8c2ebd9889d45678663e03a634370d1e80612e481",
+  "source_receipt_sha256": "3c8cead3382c589a2cff6bd2907410a5f0c6dfc5f5a4aadcda8d3c14b19e844a",
+  "outputs_sha256": {
+    "summary.json": "e483bb3097dd827da6311f72eacfbce0609bc942bcd759e50439a20ac6b0c513",
+    "requirements.tsv": "a3af71fdbb4eba6fc953f5b582a1f4cc5dde97aedcce2d27fa9d365768d4ee18",
+    "compact.pdf": "f0af10380e40f3949f972dac3ce5d0c21998934222d6bf0b05ba40bf1f63663e",
+    "compact.png": "f297f5be3e2e9b632e06b28ae458ca8166cb7a5e512810bbcec5e268b9c8b87e",
+    "all_four.pdf": "1fdd1923c7f26ba87f7bbbfc55a0d5ad00ca7a62d03125fff23c18a3b12a4e1a",
+    "all_four.png": "c9d605e0729167737598be76f1dfd67f57726e15bd4eeccc9cc39a6dac64b921"
+  }
+}

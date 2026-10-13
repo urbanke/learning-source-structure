@@ -1,0 +1,1211 @@
+category	condition	query	head	quantity	mean	standard_error	n_families	ci95_lower	ci95_upper
+successor_probability	intact	paired_A		original_successor	0.06278350298827218	0.0001905340577340918	1024	0.062409620746727526	0.06315738522981683
+successor_probability	intact	paired_A		other_successor	0.014861209170151948	6.993658085397349e-06	1024	0.014847485615462242	0.014874932724841654
+successor_probability	intact	paired_A		paired_preference	0.04792229381812023	0.00019349387232022933	1024	0.04754260357497638	0.048301984061264076
+successor_probability	intact	paired_A		original_change_from_intact	0.0	0.0	1024	0.0	0.0
+successor_probability	intact	paired_A		other_change_from_intact	0.0	0.0	1024	0.0	0.0
+successor_probability	zero_candidate	paired_A		original_successor	0.015615093709109816	4.794376354241613e-06	1024	0.015605685773334712	0.01562450164488492
+successor_probability	zero_candidate	paired_A		other_successor	0.015615761286013689	4.78300308796053e-06	1024	0.015606375667835456	0.015625146904191922
+successor_probability	zero_candidate	paired_A		paired_preference	-6.675769038707871e-07	2.310804837071105e-06	1024	-5.202036005466764e-06	3.86688219772519e-06
+successor_probability	zero_candidate	paired_A		original_change_from_intact	-0.047168409279162354	0.00019008898958506297	1024	-0.047541418169878405	-0.046795400388446304
+successor_probability	zero_candidate	paired_A		other_change_from_intact	0.0007545521158617401	7.299932419683323e-06	1024	0.0007402275634501987	0.0007688766682732816
+successor_probability	swap_successors	paired_A		original_successor	0.014984964984536556	7.718033969955673e-06	1024	0.014969819997465363	0.01500010997160775
+successor_probability	swap_successors	paired_A		other_successor	0.055436123276054	0.00026470433105435314	1024	0.054916697773767696	0.05595554877834031
+successor_probability	swap_successors	paired_A		paired_preference	-0.04045115829151745	0.00026883814753447176	1024	-0.04097869552243696	-0.03992362106059794
+successor_probability	swap_successors	paired_A		original_change_from_intact	-0.04779853800373561	0.0001926534740061568	1024	-0.048176579145352984	-0.04742049686211824
+successor_probability	swap_successors	paired_A		other_change_from_intact	0.040574914105902055	0.0002662064170622907	1024	0.0400525410818429	0.04109728712996121
+successor_probability	restore_successors	paired_A		original_successor	0.14246262161226658	0.0016255511549080708	1024	0.13927282595698948	0.1456524172675437
+successor_probability	restore_successors	paired_A		other_successor	0.013572189216885796	2.8256592520770253e-05	1024	0.013516741711722055	0.013627636722049537
+successor_probability	restore_successors	paired_A		paired_preference	0.1288904323953808	0.0016503214971012043	1024	0.12565203025382438	0.13212883453693725
+successor_probability	restore_successors	paired_A		original_change_from_intact	0.07967911862399443	0.001519848405305765	1024	0.07669674195421909	0.08266149529376977
+successor_probability	restore_successors	paired_A		other_change_from_intact	-0.0012890199532661507	2.5951784054339018e-05	1024	-0.0013399447659201715	-0.0012380951406121298
+successor_probability	restore_contexts	paired_A		original_successor	0.015615398333507797	4.805587110038094e-06	1024	0.015605968399027807	0.015624828267987787
+successor_probability	restore_contexts	paired_A		other_successor	0.015616004951613117	4.795532523696259e-06	1024	0.015606594747103318	0.015625415156122917
+successor_probability	restore_contexts	paired_A		paired_preference	-6.066181053211366e-07	2.323120297560078e-06	1024	-5.16524365793396e-06	3.952007447291687e-06
+successor_probability	restore_contexts	paired_A		original_change_from_intact	-0.04716810465476437	0.00019008718835026038	1024	-0.047541110010943265	-0.046795099298585476
+successor_probability	restore_contexts	paired_A		other_change_from_intact	0.0007547957814611696	7.308525241452912e-06	1024	0.0007404543674790374	0.0007691371954433018
+successor_probability	swap_contexts	paired_A		original_successor	0.06264684871767318	0.00019036825984060767	1024	0.06227329181895068	0.06302040561639567
+successor_probability	swap_contexts	paired_A		other_successor	0.014862953903946534	6.9995134394189796e-06	1024	0.014849218859379834	0.014876688948513234
+successor_probability	swap_contexts	paired_A		paired_preference	0.047783894813726635	0.00019332696497366118	1024	0.04740453209046877	0.0481632575369845
+successor_probability	swap_contexts	paired_A		original_change_from_intact	-0.00013665427059900625	2.8501703500156567e-05	1024	-0.00019258275351281368	-8.072578768519883e-05
+successor_probability	swap_contexts	paired_A		other_change_from_intact	1.7447337945877358e-06	5.101232068326457e-07	1024	7.437263615716864e-07	2.745741227603785e-06
+successor_probability	sham	paired_A		original_successor	0.06278350298827218	0.0001905340577340918	1024	0.062409620746727526	0.06315738522981683
+successor_probability	sham	paired_A		other_successor	0.014861209170151948	6.993658085397349e-06	1024	0.014847485615462242	0.014874932724841654
+successor_probability	sham	paired_A		paired_preference	0.04792229381812023	0.00019349387232022933	1024	0.04754260357497638	0.048301984061264076
+successor_probability	sham	paired_A		original_change_from_intact	0.0	0.0	1024	0.0	0.0
+successor_probability	sham	paired_A		other_change_from_intact	0.0	0.0	1024	0.0	0.0
+successor_probability	swap_L1H1	paired_A		original_successor	0.0650305062837395	0.00020208750199374748	1024	0.06463395288466674	0.06542705968281227
+successor_probability	swap_L1H1	paired_A		other_successor	0.014815975496879066	7.35702347222788e-06	1024	0.014801538915516105	0.014830412078242027
+successor_probability	swap_L1H1	paired_A		paired_preference	0.050214530786860445	0.00020532944332239336	1024	0.04981161577293873	0.05061744580078216
+successor_probability	swap_L1H1	paired_A		original_change_from_intact	0.002247003295467339	9.60089777821924e-05	1024	0.002058606259008309	0.002435400331926369
+successor_probability	swap_L1H1	paired_A		other_change_from_intact	-4.523367327288122e-05	2.214150481620775e-06	1024	-4.957846892270074e-05	-4.08888776230617e-05
+successor_probability	swap_L1H3	paired_A		original_successor	0.06402837129655321	0.00019443054868516067	1024	0.0636468430268482	0.06440989956625823
+successor_probability	swap_L1H3	paired_A		other_successor	0.0148372535189495	7.173532551458275e-06	1024	0.014823176999181701	0.014851330038717298
+successor_probability	swap_L1H3	paired_A		paired_preference	0.04919111777760372	0.00019759264126489824	1024	0.04880338457910149	0.04957885097610595
+successor_probability	swap_L1H3	paired_A		original_change_from_intact	0.0012448683082810462	9.3588082187482e-05	1024	0.0010612217604341837	0.0014285148561279087
+successor_probability	swap_L1H3	paired_A		other_change_from_intact	-2.3955651202448156e-05	2.200116459144486e-06	1024	-2.8272908091776647e-05	-1.9638394313119666e-05
+successor_probability	swap_L1H4	paired_A		original_successor	0.06416723122885197	0.00019719815489244584	1024	0.06378027212528554	0.0645541903324184
+successor_probability	swap_L1H4	paired_A		other_successor	0.0148355290047907	7.402469711585943e-06	1024	0.01482100324492578	0.014850054764655618
+successor_probability	swap_L1H4	paired_A		paired_preference	0.049331702224061275	0.000200386991157245	1024	0.04893848571294903	0.04972491873517352
+successor_probability	swap_L1H4	paired_A		original_change_from_intact	0.0013837282405797999	9.532444588809902e-05	1024	0.001196674451212739	0.0015707820299468607
+successor_probability	swap_L1H4	paired_A		other_change_from_intact	-2.5680165361248367e-05	2.187860781247373e-06	1024	-2.9973373110080323e-05	-2.138695761241641e-05
+condition	intact			A	4.141060725020906	0.009277047852970732	1024	NA	NA
+condition	intact			D	-4.1395269235469145	0.009148099073812543	1024	NA	NA
+condition	intact			E	-0.0001996866315107534	0.000896727324513483	1024	NA	NA
+condition	intact			query_specific	4.141260411652416	0.009327241062813008	1024	NA	NA
+condition	intact	demonstrated_successor		probabilities	0.06278350298827218	0.0001905340577340918	1024	NA	NA
+condition	intact	other_successor		probabilities	0.014861209170151948	6.993658085397349e-06	1024	NA	NA
+condition	intact			reduction_from_intact	0.0	0.0	1024	NA	NA
+condition	intact			recovery_from_zero	4.141617316053397	0.009318859966966573	1024	NA	NA
+condition	intact	clean_A		log_odds_B_over_C	2.0664618261666066	0.005153447026184073	1024	NA	NA
+condition	intact	counterfactual_A		log_odds_B_over_C	-2.0745988988542994	0.005491532034878567	1024	NA	NA
+condition	intact	clean_D		log_odds_B_over_C	-2.0730921231793347	0.005204049706642458	1024	NA	NA
+condition	intact	counterfactual_D		log_odds_B_over_C	2.06643480036758	0.005164773146693202	1024	NA	NA
+condition	intact	clean_E		log_odds_B_over_C	-0.0002891366354832969	0.0009409881442925783	1024	NA	NA
+condition	intact	counterfactual_E		log_odds_B_over_C	-8.945000397254325e-05	0.0008937516019007477	1024	NA	NA
+condition	intact	clean_A		log_odds_change_from_intact	0.0	0.0	1024	NA	NA
+condition	intact	counterfactual_A		log_odds_change_from_intact	0.0	0.0	1024	NA	NA
+condition	intact	clean_D		log_odds_change_from_intact	0.0	0.0	1024	NA	NA
+condition	intact	counterfactual_D		log_odds_change_from_intact	0.0	0.0	1024	NA	NA
+condition	intact	clean_E		log_odds_change_from_intact	0.0	0.0	1024	NA	NA
+condition	intact	counterfactual_E		log_odds_change_from_intact	0.0	0.0	1024	NA	NA
+condition	zero_candidate			A	-0.00012643003925951512	0.000425677620982751	1024	NA	NA
+condition	zero_candidate			D	-9.450264130180911e-05	0.00040463276644815585	1024	NA	NA
+condition	zero_candidate			E	0.00023047436172028598	0.00036827889252786096	1024	NA	NA
+condition	zero_candidate			query_specific	-0.000356904400979801	0.00048412913109721297	1024	NA	NA
+condition	zero_candidate	demonstrated_successor		probabilities	0.015615093709109816	4.794376354241613e-06	1024	NA	NA
+condition	zero_candidate	other_successor		probabilities	0.015615761286013689	4.78300308796053e-06	1024	NA	NA
+condition	zero_candidate			reduction_from_intact	4.141617316053397	0.009318859966966572	1024	NA	NA
+condition	zero_candidate			recovery_from_zero	-1.0587911840678754e-20	5.1686467564394004e-20	1024	NA	NA
+condition	zero_candidate	clean_A		log_odds_B_over_C	-0.0008131541036470072	0.0008699412171059196	1024	NA	NA
+condition	zero_candidate	counterfactual_A		log_odds_B_over_C	-0.000686724064387492	0.0008756284684629408	1024	NA	NA
+condition	zero_candidate	clean_D		log_odds_B_over_C	-0.0008429961016545773	0.0008884412178280313	1024	NA	NA
+condition	zero_candidate	counterfactual_D		log_odds_B_over_C	-0.0007484934603527683	0.000880383314190389	1024	NA	NA
+condition	zero_candidate	clean_E		log_odds_B_over_C	0.00015075344256576295	0.0008542573573636951	1024	NA	NA
+condition	zero_candidate	counterfactual_E		log_odds_B_over_C	-7.972091915452311e-05	0.0008379965338610379	1024	NA	NA
+condition	zero_candidate	clean_A		log_odds_change_from_intact	-2.0672749802702532	0.005103766704567557	1024	NA	NA
+condition	zero_candidate	counterfactual_A		log_odds_change_from_intact	2.0739121747899123	0.005424862930436462	1024	NA	NA
+condition	zero_candidate	clean_D		log_odds_change_from_intact	2.07224912707768	0.005154859756035809	1024	NA	NA
+condition	zero_candidate	counterfactual_D		log_odds_change_from_intact	-2.0671832938279326	0.005115975997210046	1024	NA	NA
+condition	zero_candidate	clean_E		log_odds_change_from_intact	0.00043989007804906	0.0008060299385142859	1024	NA	NA
+condition	zero_candidate	counterfactual_E		log_odds_change_from_intact	9.72908481802027e-06	0.0007698822583345052	1024	NA	NA
+condition	swap_successors			A	-3.735658668037184	0.015075643571294362	1024	NA	NA
+condition	swap_successors			D	3.726290765091016	0.014759886735339919	1024	NA	NA
+condition	swap_successors			E	0.00030937888076133313	0.0010823823013615024	1024	NA	NA
+condition	swap_successors			query_specific	-3.7359680469179453	0.01517949008369185	1024	NA	NA
+condition	swap_successors	demonstrated_successor		probabilities	0.014984964984536556	7.718033969955673e-06	1024	NA	NA
+condition	swap_successors	other_successor		probabilities	0.055436123276054	0.00026470433105435314	1024	NA	NA
+condition	swap_successors			reduction_from_intact	7.877228458570363	0.021177392104327394	1024	NA	NA
+condition	swap_successors			recovery_from_zero	-3.735611142516966	0.015131419294837804	1024	NA	NA
+condition	swap_successors	clean_A		log_odds_B_over_C	-1.872824199812659	0.008166566391367015	1024	NA	NA
+condition	swap_successors	counterfactual_A		log_odds_B_over_C	1.862834468224525	0.007904692665707312	1024	NA	NA
+condition	swap_successors	clean_D		log_odds_B_over_C	1.8621328975482765	0.007924912032991106	1024	NA	NA
+condition	swap_successors	counterfactual_D		log_odds_B_over_C	-1.86415786754274	0.00782582861938317	1024	NA	NA
+condition	swap_successors	clean_E		log_odds_B_over_C	-6.24798402957047e-05	0.0009464653750225983	1024	NA	NA
+condition	swap_successors	counterfactual_E		log_odds_B_over_C	-0.0003718587210570381	0.0009906313005543631	1024	NA	NA
+condition	swap_successors	clean_A		log_odds_change_from_intact	-3.939286025979265	0.010733293848170315	1024	NA	NA
+condition	swap_successors	counterfactual_A		log_odds_change_from_intact	3.9374333670788246	0.010753100259945515	1024	NA	NA
+condition	swap_successors	clean_D		log_odds_change_from_intact	3.935225020727611	0.010475838462229424	1024	NA	NA
+condition	swap_successors	counterfactual_D		log_odds_change_from_intact	-3.9305926679103202	0.010563666039403037	1024	NA	NA
+condition	swap_successors	clean_E		log_odds_change_from_intact	0.00022665679518759212	0.0009308592281132857	1024	NA	NA
+condition	swap_successors	counterfactual_E		log_odds_change_from_intact	-0.0002824087170844949	0.0009414400245803005	1024	NA	NA
+condition	restore_successors			A	6.573574721018243	0.037986717931372045	1024	NA	NA
+condition	restore_successors			D	-6.648705306352883	0.03880685962908406	1024	NA	NA
+condition	restore_successors			E	3.1331736707516716e-05	0.0007336469099942771	1024	NA	NA
+condition	restore_successors			query_specific	6.573543389281536	0.03800016096118002	1024	NA	NA
+condition	restore_successors	demonstrated_successor		probabilities	0.14246262161226658	0.0016255511549080708	1024	NA	NA
+condition	restore_successors	other_successor		probabilities	0.013572189216885796	2.8256592520770253e-05	1024	NA	NA
+condition	restore_successors			reduction_from_intact	-2.432282977629119	0.03345358758213202	1024	NA	NA
+condition	restore_successors			recovery_from_zero	6.573900293682515	0.037980970754407005	1024	NA	NA
+condition	restore_successors	clean_A		log_odds_B_over_C	3.27401954843903	0.020901816056012906	1024	NA	NA
+condition	restore_successors	counterfactual_A		log_odds_B_over_C	-3.299555172579213	0.02049377613678345	1024	NA	NA
+condition	restore_successors	clean_D		log_odds_B_over_C	-3.3401273878419087	0.020964996449905685	1024	NA	NA
+condition	restore_successors	counterfactual_D		log_odds_B_over_C	3.3085779185109745	0.02113244693670199	1024	NA	NA
+condition	restore_successors	clean_E		log_odds_B_over_C	2.1470424257532422e-05	0.0009249174109355379	1024	NA	NA
+condition	restore_successors	counterfactual_E		log_odds_B_over_C	-9.861312449984077e-06	0.0009048409699108127	1024	NA	NA
+condition	restore_successors	clean_A		log_odds_change_from_intact	1.2075577222724245	0.018293978870144223	1024	NA	NA
+condition	restore_successors	counterfactual_A		log_odds_change_from_intact	-1.2249562737249131	0.017846270035114423	1024	NA	NA
+condition	restore_successors	clean_D		log_odds_change_from_intact	-1.267035264662574	0.018203372709114558	1024	NA	NA
+condition	restore_successors	counterfactual_D		log_odds_change_from_intact	1.2421431181433948	0.01840701657565242	1024	NA	NA
+condition	restore_successors	clean_E		log_odds_change_from_intact	0.00031060705974082927	0.0006335799067443669	1024	NA	NA
+condition	restore_successors	counterfactual_E		log_odds_change_from_intact	7.958869152255922e-05	0.0006325632549383788	1024	NA	NA
+condition	restore_contexts			A	-0.00011513494200092336	0.0004278911170931914	1024	NA	NA
+condition	restore_contexts			D	-8.830299774835015e-05	0.0004058976033711898	1024	NA	NA
+condition	restore_contexts			E	0.00023701115171400743	0.0003693424827962749	1024	NA	NA
+condition	restore_contexts			query_specific	-0.0003521460937149309	0.000486697068095166	1024	NA	NA
+condition	restore_contexts	demonstrated_successor		probabilities	0.015615398333507797	4.805587110038094e-06	1024	NA	NA
+condition	restore_contexts	other_successor		probabilities	0.015616004951613117	4.795532523696259e-06	1024	NA	NA
+condition	restore_contexts			reduction_from_intact	4.141612557746131	0.009318510078301138	1024	NA	NA
+condition	restore_contexts			recovery_from_zero	4.758307264870121e-06	1.352187577860418e-05	1024	NA	NA
+condition	restore_contexts	clean_A		log_odds_B_over_C	-0.0009212275855589268	0.0008706401024449768	1024	NA	NA
+condition	restore_contexts	counterfactual_A		log_odds_B_over_C	-0.0008060926435580033	0.0008768726793321114	1024	NA	NA
+condition	restore_contexts	clean_D		log_odds_B_over_C	-0.0008453487626947113	0.0008869481213117889	1024	NA	NA
+condition	restore_contexts	counterfactual_D		log_odds_B_over_C	-0.0007570457649463612	0.0008795363240344223	1024	NA	NA
+condition	restore_contexts	clean_E		log_odds_B_over_C	7.557157384073987e-05	0.0008541311482302993	1024	NA	NA
+condition	restore_contexts	counterfactual_E		log_odds_B_over_C	-0.00016143957787326772	0.0008364446868077087	1024	NA	NA
+condition	restore_contexts	clean_A		log_odds_change_from_intact	-2.067383053752165	0.0051035763782188	1024	NA	NA
+condition	restore_contexts	counterfactual_A		log_odds_change_from_intact	2.073792806210742	0.0054250808730451575	1024	NA	NA
+condition	restore_contexts	clean_D		log_odds_change_from_intact	2.07224677441664	0.005154514496479012	1024	NA	NA
+condition	restore_contexts	counterfactual_D		log_odds_change_from_intact	-2.067191846132526	0.005116895762862381	1024	NA	NA
+condition	restore_contexts	clean_E		log_odds_change_from_intact	0.00036470820932403694	0.0008043290214948636	1024	NA	NA
+condition	restore_contexts	counterfactual_E		log_odds_change_from_intact	-7.198957390072472e-05	0.0007677045207729556	1024	NA	NA
+condition	swap_contexts			A	4.13438580686316	0.009303023947078609	1024	NA	NA
+condition	swap_contexts			D	-4.135047930010286	0.00915734738187886	1024	NA	NA
+condition	swap_contexts			E	-0.00018511105991860663	0.0008951978029646193	1024	NA	NA
+condition	swap_contexts			query_specific	4.134570917923078	0.00935566957238518	1024	NA	NA
+condition	swap_contexts	demonstrated_successor		probabilities	0.06264684871767318	0.00019036825984060767	1024	NA	NA
+condition	swap_contexts	other_successor		probabilities	0.014862953903946534	6.9995134394189796e-06	1024	NA	NA
+condition	swap_contexts			reduction_from_intact	0.006689493729337918	0.0014190983225920444	1024	NA	NA
+condition	swap_contexts			recovery_from_zero	4.134927822324059	0.009348244981740533	1024	NA	NA
+condition	swap_contexts	clean_A		log_odds_B_over_C	2.0634383046302247	0.005166004800849689	1024	NA	NA
+condition	swap_contexts	counterfactual_A		log_odds_B_over_C	-2.070947502232935	0.005495936121152555	1024	NA	NA
+condition	swap_contexts	clean_D		log_odds_B_over_C	-2.0707500580360154	0.00520513643161086	1024	NA	NA
+condition	swap_contexts	counterfactual_D		log_odds_B_over_C	2.0642978719742704	0.005181409333073136	1024	NA	NA
+condition	swap_contexts	clean_E		log_odds_B_over_C	-0.0003159203649165303	0.0009386668894593801	1024	NA	NA
+condition	swap_contexts	counterfactual_E		log_odds_B_over_C	-0.00013080930499792366	0.0008916138909837331	1024	NA	NA
+condition	swap_contexts	clean_A		log_odds_change_from_intact	-0.003023521536381551	0.0007468306939247246	1024	NA	NA
+condition	swap_contexts	counterfactual_A		log_odds_change_from_intact	0.003651396621364264	0.0007176520034133092	1024	NA	NA
+condition	swap_contexts	clean_D		log_odds_change_from_intact	0.0023420651433193017	0.0005423376271311713	1024	NA	NA
+condition	swap_contexts	counterfactual_D		log_odds_change_from_intact	-0.0021369283933096008	0.0005202479179002711	1024	NA	NA
+condition	swap_contexts	clean_E		log_odds_change_from_intact	-2.6783729433233383e-05	6.039722992151464e-05	1024	NA	NA
+condition	swap_contexts	counterfactual_E		log_odds_change_from_intact	-4.135930102538045e-05	6.0014704566590216e-05	1024	NA	NA
+condition	sham			A	4.141060725020906	0.009277047852970732	1024	NA	NA
+condition	sham			D	-4.1395269235469145	0.009148099073812543	1024	NA	NA
+condition	sham			E	-0.0001996866315107534	0.000896727324513483	1024	NA	NA
+condition	sham			query_specific	4.141260411652416	0.009327241062813008	1024	NA	NA
+condition	sham	demonstrated_successor		probabilities	0.06278350298827218	0.0001905340577340918	1024	NA	NA
+condition	sham	other_successor		probabilities	0.014861209170151948	6.993658085397349e-06	1024	NA	NA
+condition	sham			reduction_from_intact	0.0	0.0	1024	NA	NA
+condition	sham			recovery_from_zero	4.141617316053397	0.009318859966966573	1024	NA	NA
+condition	sham	clean_A		log_odds_B_over_C	2.0664618261666066	0.005153447026184073	1024	NA	NA
+condition	sham	counterfactual_A		log_odds_B_over_C	-2.0745988988542994	0.005491532034878567	1024	NA	NA
+condition	sham	clean_D		log_odds_B_over_C	-2.0730921231793347	0.005204049706642458	1024	NA	NA
+condition	sham	counterfactual_D		log_odds_B_over_C	2.06643480036758	0.005164773146693202	1024	NA	NA
+condition	sham	clean_E		log_odds_B_over_C	-0.0002891366354832969	0.0009409881442925783	1024	NA	NA
+condition	sham	counterfactual_E		log_odds_B_over_C	-8.945000397254325e-05	0.0008937516019007477	1024	NA	NA
+condition	sham	clean_A		log_odds_change_from_intact	0.0	0.0	1024	NA	NA
+condition	sham	counterfactual_A		log_odds_change_from_intact	0.0	0.0	1024	NA	NA
+condition	sham	clean_D		log_odds_change_from_intact	0.0	0.0	1024	NA	NA
+condition	sham	counterfactual_D		log_odds_change_from_intact	0.0	0.0	1024	NA	NA
+condition	sham	clean_E		log_odds_change_from_intact	0.0	0.0	1024	NA	NA
+condition	sham	counterfactual_E		log_odds_change_from_intact	0.0	0.0	1024	NA	NA
+condition	swap_L1H1			A	4.249683792783303	0.009493414224108623	1024	NA	NA
+condition	swap_L1H1			D	-4.239434358626292	0.009707314412135046	1024	NA	NA
+condition	swap_L1H1			E	0.00014261509379541782	0.0008967346022654663	1024	NA	NA
+condition	swap_L1H1			query_specific	4.249541177689508	0.009476647543781634	1024	NA	NA
+condition	swap_L1H1	demonstrated_successor		probabilities	0.0650305062837395	0.00020208750199374748	1024	NA	NA
+condition	swap_L1H1	other_successor		probabilities	0.014815975496879066	7.35702347222788e-06	1024	NA	NA
+condition	swap_L1H1			reduction_from_intact	-0.10828076603709076	0.004571036028918747	1024	NA	NA
+condition	swap_L1H1			recovery_from_zero	4.249898082090487	0.009469029561203905	1024	NA	NA
+condition	swap_L1H1	clean_A		log_odds_B_over_C	2.1197608418236564	0.005449383430511973	1024	NA	NA
+condition	swap_L1H1	counterfactual_A		log_odds_B_over_C	-2.1299229509596467	0.005743819725949683	1024	NA	NA
+condition	swap_L1H1	clean_D		log_odds_B_over_C	-2.1236128353134314	0.005629196074963773	1024	NA	NA
+condition	swap_L1H1	counterfactual_D		log_odds_B_over_C	2.1158215233128614	0.005578067901052495	1024	NA	NA
+condition	swap_L1H1	clean_E		log_odds_B_over_C	-9.116973965365567e-05	0.0009546303756934682	1024	NA	NA
+condition	swap_L1H1	counterfactual_E		log_odds_B_over_C	-0.00023378483344907336	0.0009033121974683909	1024	NA	NA
+condition	swap_L1H1	clean_A		log_odds_change_from_intact	0.05329901565704995	0.002898435795272841	1024	NA	NA
+condition	swap_L1H1	counterfactual_A		log_odds_change_from_intact	-0.05532405210534695	0.0027968781877812294	1024	NA	NA
+condition	swap_L1H1	clean_D		log_odds_change_from_intact	-0.05052071213409633	0.002740083815261217	1024	NA	NA
+condition	swap_L1H1	counterfactual_D		log_odds_change_from_intact	0.04938672294528172	0.002744595146090085	1024	NA	NA
+condition	swap_L1H1	clean_E		log_odds_change_from_intact	0.00019796689582964123	0.00015935413682115597	1024	NA	NA
+condition	swap_L1H1	counterfactual_E		log_odds_change_from_intact	-0.00014433482947652997	0.00014762412260782806	1024	NA	NA
+condition	swap_L1H3			A	4.201548706679604	0.009263490919522457	1024	NA	NA
+condition	swap_L1H3			D	-4.2013887706739474	0.009550930292659262	1024	NA	NA
+condition	swap_L1H3			E	-0.0005087427139917278	0.0009104563464928054	1024	NA	NA
+condition	swap_L1H3			query_specific	4.202057449393596	0.009262651086947458	1024	NA	NA
+condition	swap_L1H3	demonstrated_successor		probabilities	0.06402837129655321	0.00019443054868516067	1024	NA	NA
+condition	swap_L1H3	other_successor		probabilities	0.0148372535189495	7.173532551458275e-06	1024	NA	NA
+condition	swap_L1H3			reduction_from_intact	-0.06079703774117876	0.004510853865727683	1024	NA	NA
+condition	swap_L1H3			recovery_from_zero	4.202414353794575	0.009256326948963738	1024	NA	NA
+condition	swap_L1H3	clean_A		log_odds_B_over_C	2.0983393895116085	0.005259783029074431	1024	NA	NA
+condition	swap_L1H3	counterfactual_A		log_odds_B_over_C	-2.103209317167995	0.005646748409753116	1024	NA	NA
+condition	swap_L1H3	clean_D		log_odds_B_over_C	-2.1038984218951082	0.005560981834173556	1024	NA	NA
+condition	swap_L1H3	counterfactual_D		log_odds_B_over_C	2.0974903487788388	0.0055028911449506255	1024	NA	NA
+condition	swap_L1H3	clean_E		log_odds_B_over_C	-0.0004337338297945249	0.0009462792854152564	1024	NA	NA
+condition	swap_L1H3	counterfactual_E		log_odds_B_over_C	7.50088841972033e-05	0.0009050462670786812	1024	NA	NA
+condition	swap_L1H3	clean_A		log_odds_change_from_intact	0.031877563345002254	0.002852256537297883	1024	NA	NA
+condition	swap_L1H3	counterfactual_A		log_odds_change_from_intact	-0.028610418313695513	0.002687756162453352	1024	NA	NA
+condition	swap_L1H3	clean_D		log_odds_change_from_intact	-0.030806298715773714	0.002655900520814982	1024	NA	NA
+condition	swap_L1H3	counterfactual_D		log_odds_change_from_intact	0.031055548411258804	0.002759014171394426	1024	NA	NA
+condition	swap_L1H3	clean_E		log_odds_change_from_intact	-0.00014459719431122775	0.0001547301631043006	1024	NA	NA
+condition	swap_L1H3	counterfactual_E		log_odds_change_from_intact	0.00016445888816974633	0.0001636524345363629	1024	NA	NA
+condition	swap_L1H4			A	4.207942218082108	0.009400811397092026	1024	NA	NA
+condition	swap_L1H4			D	-4.208299105682991	0.009461944527042871	1024	NA	NA
+condition	swap_L1H4			E	-0.0005408947859676092	0.0009296894857658242	1024	NA	NA
+condition	swap_L1H4			query_specific	4.208483112868075	0.009395363565304002	1024	NA	NA
+condition	swap_L1H4	demonstrated_successor		probabilities	0.06416723122885197	0.00019719815489244584	1024	NA	NA
+condition	swap_L1H4	other_successor		probabilities	0.0148355290047907	7.402469711585943e-06	1024	NA	NA
+condition	swap_L1H4			reduction_from_intact	-0.06722270121565868	0.004614184513619822	1024	NA	NA
+condition	swap_L1H4			recovery_from_zero	4.208840017269056	0.009394301911391723	1024	NA	NA
+condition	swap_L1H4	clean_A		log_odds_B_over_C	2.1004456071139073	0.00532443604535888	1024	NA	NA
+condition	swap_L1H4	counterfactual_A		log_odds_B_over_C	-2.1074966109682003	0.005667337433382699	1024	NA	NA
+condition	swap_L1H4	clean_D		log_odds_B_over_C	-2.108111736950428	0.005435772561825196	1024	NA	NA
+condition	swap_L1H4	counterfactual_D		log_odds_B_over_C	2.1001873687325627	0.005485202629712114	1024	NA	NA
+condition	swap_L1H4	clean_E		log_odds_B_over_C	-0.0005366913554303854	0.0009513352738555287	1024	NA	NA
+condition	swap_L1H4	counterfactual_E		log_odds_B_over_C	4.20343053722386e-06	0.0009017593660026056	1024	NA	NA
+condition	swap_L1H4	clean_A		log_odds_change_from_intact	0.03398378094730109	0.0027681171101570936	1024	NA	NA
+condition	swap_L1H4	counterfactual_A		log_odds_change_from_intact	-0.032897712113900725	0.00275510458663595	1024	NA	NA
+condition	swap_L1H4	clean_D		log_odds_change_from_intact	-0.035019613771093194	0.0029011872928148183	1024	NA	NA
+condition	swap_L1H4	counterfactual_D		log_odds_change_from_intact	0.03375256836498271	0.0028952738023770063	1024	NA	NA
+condition	swap_L1H4	clean_E		log_odds_change_from_intact	-0.0002475547199470882	0.00015982832895951397	1024	NA	NA
+condition	swap_L1H4	counterfactual_E		log_odds_change_from_intact	9.365343450976727e-05	0.00015041495825210115	1024	NA	NA
+attention	intact	clean_A	L2H1	earlier_A_successor_site	0.2804748799894364	0.00414457702413227	1024	NA	NA
+attention	intact	clean_A	L2H1	earlier_D_successor_site	0.003155701454269462	0.0001438998229167941	1024	NA	NA
+attention	intact	clean_A	L2H1	site_attention_difference	0.2773191785351669	0.004169087127422008	1024	NA	NA
+attention	intact	clean_A	L2H1	difference_change_from_intact	0.0	0.0	1024	NA	NA
+attention	intact	clean_A	L2H2	earlier_A_successor_site	0.34218963487005805	0.005350821960933181	1024	NA	NA
+attention	intact	clean_A	L2H2	earlier_D_successor_site	0.002031039913728677	0.00011306741250596569	1024	NA	NA
+attention	intact	clean_A	L2H2	site_attention_difference	0.3401585949563293	0.0053665922409039495	1024	NA	NA
+attention	intact	clean_A	L2H2	difference_change_from_intact	0.0	0.0	1024	NA	NA
+attention	intact	clean_A	L2H3	earlier_A_successor_site	0.36419099582499925	0.004512633751149907	1024	NA	NA
+attention	intact	clean_A	L2H3	earlier_D_successor_site	0.0022792371827727925	0.00012063371888181586	1024	NA	NA
+attention	intact	clean_A	L2H3	site_attention_difference	0.3619117586422265	0.004528716433602097	1024	NA	NA
+attention	intact	clean_A	L2H3	difference_change_from_intact	0.0	0.0	1024	NA	NA
+attention	intact	clean_A	L2H4	earlier_A_successor_site	0.29703941034771747	0.004990538410340337	1024	NA	NA
+attention	intact	clean_A	L2H4	earlier_D_successor_site	0.0024518077049666444	0.00015109594745518317	1024	NA	NA
+attention	intact	clean_A	L2H4	site_attention_difference	0.29458760264275086	0.0050160664684616085	1024	NA	NA
+attention	intact	clean_A	L2H4	difference_change_from_intact	0.0	0.0	1024	NA	NA
+attention	intact	counterfactual_A	L2H1	earlier_A_successor_site	0.2844942053049111	0.0041522874205948525	1024	NA	NA
+attention	intact	counterfactual_A	L2H1	earlier_D_successor_site	0.002982652356367656	0.00013491493047279403	1024	NA	NA
+attention	intact	counterfactual_A	L2H1	site_attention_difference	0.28151155294854346	0.004172792696049287	1024	NA	NA
+attention	intact	counterfactual_A	L2H1	difference_change_from_intact	0.0	0.0	1024	NA	NA
+attention	intact	counterfactual_A	L2H2	earlier_A_successor_site	0.32952677137334024	0.005261633717396327	1024	NA	NA
+attention	intact	counterfactual_A	L2H2	earlier_D_successor_site	0.002410054989488022	0.0001347060901223036	1024	NA	NA
+attention	intact	counterfactual_A	L2H2	site_attention_difference	0.3271167163838523	0.005283868253084607	1024	NA	NA
+attention	intact	counterfactual_A	L2H2	difference_change_from_intact	0.0	0.0	1024	NA	NA
+attention	intact	counterfactual_A	L2H3	earlier_A_successor_site	0.3576738253167503	0.0045471513785567035	1024	NA	NA
+attention	intact	counterfactual_A	L2H3	earlier_D_successor_site	0.0023608927218747447	0.00012504410543463226	1024	NA	NA
+attention	intact	counterfactual_A	L2H3	site_attention_difference	0.3553129325948756	0.0045649483764988235	1024	NA	NA
+attention	intact	counterfactual_A	L2H3	difference_change_from_intact	0.0	0.0	1024	NA	NA
+attention	intact	counterfactual_A	L2H4	earlier_A_successor_site	0.30784273905436893	0.005178385241234139	1024	NA	NA
+attention	intact	counterfactual_A	L2H4	earlier_D_successor_site	0.002199488793942479	0.00013138963144991572	1024	NA	NA
+attention	intact	counterfactual_A	L2H4	site_attention_difference	0.3056432502604265	0.005199261891683974	1024	NA	NA
+attention	intact	counterfactual_A	L2H4	difference_change_from_intact	0.0	0.0	1024	NA	NA
+attention	intact	clean_D	L2H1	earlier_A_successor_site	0.003059380813949135	0.00013724423638864657	1024	NA	NA
+attention	intact	clean_D	L2H1	earlier_D_successor_site	0.28627780236034295	0.004159474985502116	1024	NA	NA
+attention	intact	clean_D	L2H1	site_attention_difference	-0.28321842154639376	0.004179496317178901	1024	NA	NA
+attention	intact	clean_D	L2H1	difference_change_from_intact	0.0	0.0	1024	NA	NA
+attention	intact	clean_D	L2H2	earlier_A_successor_site	0.0024652359408578934	0.00014149807303018308	1024	NA	NA
+attention	intact	clean_D	L2H2	earlier_D_successor_site	0.3291468530058138	0.005287197403755651	1024	NA	NA
+attention	intact	clean_D	L2H2	site_attention_difference	-0.3266816170649559	0.005310942934062452	1024	NA	NA
+attention	intact	clean_D	L2H2	difference_change_from_intact	0.0	0.0	1024	NA	NA
+attention	intact	clean_D	L2H3	earlier_A_successor_site	0.0024074129465966165	0.00012707461391754584	1024	NA	NA
+attention	intact	clean_D	L2H3	earlier_D_successor_site	0.3558493111117092	0.00449743472847263	1024	NA	NA
+attention	intact	clean_D	L2H3	site_attention_difference	-0.3534418981651126	0.004514841917890575	1024	NA	NA
+attention	intact	clean_D	L2H3	difference_change_from_intact	0.0	0.0	1024	NA	NA
+attention	intact	clean_D	L2H4	earlier_A_successor_site	0.0021997745822001967	0.0001299415656024079	1024	NA	NA
+attention	intact	clean_D	L2H4	earlier_D_successor_site	0.3085927105678913	0.005201830970374672	1024	NA	NA
+attention	intact	clean_D	L2H4	site_attention_difference	-0.30639293598569106	0.005225229181994313	1024	NA	NA
+attention	intact	clean_D	L2H4	difference_change_from_intact	0.0	0.0	1024	NA	NA
+attention	intact	counterfactual_D	L2H1	earlier_A_successor_site	0.003255848998182359	0.00014862742604440895	1024	NA	NA
+attention	intact	counterfactual_D	L2H1	earlier_D_successor_site	0.2823161763372205	0.004104483794576252	1024	NA	NA
+attention	intact	counterfactual_D	L2H1	site_attention_difference	-0.2790603273390382	0.004131189105973735	1024	NA	NA
+attention	intact	counterfactual_D	L2H1	difference_change_from_intact	0.0	0.0	1024	NA	NA
+attention	intact	counterfactual_D	L2H2	earlier_A_successor_site	0.002043492267590193	0.00011568181627301566	1024	NA	NA
+attention	intact	counterfactual_D	L2H2	earlier_D_successor_site	0.3421023594721714	0.005333992424275082	1024	NA	NA
+attention	intact	counterfactual_D	L2H2	site_attention_difference	-0.34005886720458117	0.005349666695531251	1024	NA	NA
+attention	intact	counterfactual_D	L2H2	difference_change_from_intact	0.0	0.0	1024	NA	NA
+attention	intact	counterfactual_D	L2H3	earlier_A_successor_site	0.00235042137990689	0.0001294640980082753	1024	NA	NA
+attention	intact	counterfactual_D	L2H3	earlier_D_successor_site	0.3630005760164852	0.004527748513276933	1024	NA	NA
+attention	intact	counterfactual_D	L2H3	site_attention_difference	-0.36065015463657835	0.004544995518476881	1024	NA	NA
+attention	intact	counterfactual_D	L2H3	difference_change_from_intact	0.0	0.0	1024	NA	NA
+attention	intact	counterfactual_D	L2H4	earlier_A_successor_site	0.0024098354579875055	0.00014500534709032057	1024	NA	NA
+attention	intact	counterfactual_D	L2H4	earlier_D_successor_site	0.2976648997133807	0.004992473316797362	1024	NA	NA
+attention	intact	counterfactual_D	L2H4	site_attention_difference	-0.2952550642553933	0.005018319200274564	1024	NA	NA
+attention	intact	counterfactual_D	L2H4	difference_change_from_intact	0.0	0.0	1024	NA	NA
+attention	intact	clean_E	L2H1	earlier_A_successor_site	0.0045232282232897545	0.00018800253142867455	1024	NA	NA
+attention	intact	clean_E	L2H1	earlier_D_successor_site	0.004472025995044755	0.00018487786858548624	1024	NA	NA
+attention	intact	clean_E	L2H1	site_attention_difference	5.1202228244999034e-05	0.0002596729860884614	1024	NA	NA
+attention	intact	clean_E	L2H1	difference_change_from_intact	0.0	0.0	1024	NA	NA
+attention	intact	clean_E	L2H2	earlier_A_successor_site	0.00322697419855138	0.00017409842928815602	1024	NA	NA
+attention	intact	clean_E	L2H2	earlier_D_successor_site	0.003301981246111485	0.00017358146617684224	1024	NA	NA
+attention	intact	clean_E	L2H2	site_attention_difference	-7.500704756010539e-05	0.00024214778521457878	1024	NA	NA
+attention	intact	clean_E	L2H2	difference_change_from_intact	0.0	0.0	1024	NA	NA
+attention	intact	clean_E	L2H3	earlier_A_successor_site	0.003676904025047778	0.00018507669895943544	1024	NA	NA
+attention	intact	clean_E	L2H3	earlier_D_successor_site	0.0034865219686659524	0.000168698000505294	1024	NA	NA
+attention	intact	clean_E	L2H3	site_attention_difference	0.0001903820563818261	0.00024611488352391676	1024	NA	NA
+attention	intact	clean_E	L2H3	difference_change_from_intact	0.0	0.0	1024	NA	NA
+attention	intact	clean_E	L2H4	earlier_A_successor_site	0.0031437556943829607	0.0001846270371855335	1024	NA	NA
+attention	intact	clean_E	L2H4	earlier_D_successor_site	0.003526787914286465	0.0001945618956619648	1024	NA	NA
+attention	intact	clean_E	L2H4	site_attention_difference	-0.00038303221990350453	0.0002734045493400303	1024	NA	NA
+attention	intact	clean_E	L2H4	difference_change_from_intact	0.0	0.0	1024	NA	NA
+attention	intact	counterfactual_E	L2H1	earlier_A_successor_site	0.0045082015474531435	0.00019505278327547717	1024	NA	NA
+attention	intact	counterfactual_E	L2H1	earlier_D_successor_site	0.004491247949077377	0.00018554251584617146	1024	NA	NA
+attention	intact	counterfactual_E	L2H1	site_attention_difference	1.6953598375766713e-05	0.0002649013793348191	1024	NA	NA
+attention	intact	counterfactual_E	L2H1	difference_change_from_intact	0.0	0.0	1024	NA	NA
+attention	intact	counterfactual_E	L2H2	earlier_A_successor_site	0.0030555873656255075	0.00016176978548366507	1024	NA	NA
+attention	intact	counterfactual_E	L2H2	earlier_D_successor_site	0.0034944232225400606	0.00018053747462611986	1024	NA	NA
+attention	intact	counterfactual_E	L2H2	site_attention_difference	-0.00043883585691455325	0.00023918686998590508	1024	NA	NA
+attention	intact	counterfactual_E	L2H2	difference_change_from_intact	0.0	0.0	1024	NA	NA
+attention	intact	counterfactual_E	L2H3	earlier_A_successor_site	0.0036368373886291137	0.0001867690868032228	1024	NA	NA
+attention	intact	counterfactual_E	L2H3	earlier_D_successor_site	0.0036099128696183693	0.00017289142034392158	1024	NA	NA
+attention	intact	counterfactual_E	L2H3	site_attention_difference	2.6924519010744892e-05	0.00025213519039791907	1024	NA	NA
+attention	intact	counterfactual_E	L2H3	difference_change_from_intact	0.0	0.0	1024	NA	NA
+attention	intact	counterfactual_E	L2H4	earlier_A_successor_site	0.0033657038231348006	0.00018927975048851347	1024	NA	NA
+attention	intact	counterfactual_E	L2H4	earlier_D_successor_site	0.00311291645923353	0.00018075527302229387	1024	NA	NA
+attention	intact	counterfactual_E	L2H4	site_attention_difference	0.00025278736390127053	0.000265006114193266	1024	NA	NA
+attention	intact	counterfactual_E	L2H4	difference_change_from_intact	0.0	0.0	1024	NA	NA
+attention	zero_candidate	clean_A	L2H1	earlier_A_successor_site	0.0038012813814815166	0.000146417665531089	1024	NA	NA
+attention	zero_candidate	clean_A	L2H1	earlier_D_successor_site	0.0040074728039851465	0.0001534781157660544	1024	NA	NA
+attention	zero_candidate	clean_A	L2H1	site_attention_difference	-0.00020619142250363016	0.0002006868113008463	1024	NA	NA
+attention	zero_candidate	clean_A	L2H1	difference_change_from_intact	-0.2775253699576706	0.0040778886856162495	1024	NA	NA
+attention	zero_candidate	clean_A	L2H2	earlier_A_successor_site	0.0026087622309667615	0.00012928417625101697	1024	NA	NA
+attention	zero_candidate	clean_A	L2H2	earlier_D_successor_site	0.002361230719090216	0.00011284003797017129	1024	NA	NA
+attention	zero_candidate	clean_A	L2H2	site_attention_difference	0.0002475315118765456	0.0001687645459746485	1024	NA	NA
+attention	zero_candidate	clean_A	L2H2	difference_change_from_intact	-0.33991106344445277	0.005284367379412295	1024	NA	NA
+attention	zero_candidate	clean_A	L2H3	earlier_A_successor_site	0.0026842249404080243	0.00011867390738084129	1024	NA	NA
+attention	zero_candidate	clean_A	L2H3	earlier_D_successor_site	0.002494541552549862	0.00011057982735257728	1024	NA	NA
+attention	zero_candidate	clean_A	L2H3	site_attention_difference	0.0001896833878581622	0.00015859419242343075	1024	NA	NA
+attention	zero_candidate	clean_A	L2H3	difference_change_from_intact	-0.36172207525436834	0.0044522893868403695	1024	NA	NA
+attention	zero_candidate	clean_A	L2H4	earlier_A_successor_site	0.0022008152676009857	0.00011761387127140513	1024	NA	NA
+attention	zero_candidate	clean_A	L2H4	earlier_D_successor_site	0.0025664102377812087	0.00014240571027411818	1024	NA	NA
+attention	zero_candidate	clean_A	L2H4	site_attention_difference	-0.00036559497018022274	0.0001836313116718715	1024	NA	NA
+attention	zero_candidate	clean_A	L2H4	difference_change_from_intact	-0.29495319761293104	0.004926030594657361	1024	NA	NA
+attention	zero_candidate	counterfactual_A	L2H1	earlier_A_successor_site	0.003970516090595084	0.000149497207865964	1024	NA	NA
+attention	zero_candidate	counterfactual_A	L2H1	earlier_D_successor_site	0.003821371584805248	0.00014813018908483127	1024	NA	NA
+attention	zero_candidate	counterfactual_A	L2H1	site_attention_difference	0.00014914450578983626	0.0001994246871630494	1024	NA	NA
+attention	zero_candidate	counterfactual_A	L2H1	difference_change_from_intact	-0.2813624084427536	0.004076563115601788	1024	NA	NA
+attention	zero_candidate	counterfactual_A	L2H2	earlier_A_successor_site	0.00243253843146959	0.0001260272349521639	1024	NA	NA
+attention	zero_candidate	counterfactual_A	L2H2	earlier_D_successor_site	0.00266503672695276	0.0001290270093457646	1024	NA	NA
+attention	zero_candidate	counterfactual_A	L2H2	site_attention_difference	-0.00023249829548317066	0.00017917622081789359	1024	NA	NA
+attention	zero_candidate	counterfactual_A	L2H2	difference_change_from_intact	-0.3273492146793354	0.0051977294286209225	1024	NA	NA
+attention	zero_candidate	counterfactual_A	L2H3	earlier_A_successor_site	0.0024958362912147333	0.00011102409000500251	1024	NA	NA
+attention	zero_candidate	counterfactual_A	L2H3	earlier_D_successor_site	0.0026268466603042353	0.00010859039237800293	1024	NA	NA
+attention	zero_candidate	counterfactual_A	L2H3	site_attention_difference	-0.0001310103690895017	0.00015123573361165889	1024	NA	NA
+attention	zero_candidate	counterfactual_A	L2H3	difference_change_from_intact	-0.3554439429639651	0.004493181647371895	1024	NA	NA
+attention	zero_candidate	counterfactual_A	L2H4	earlier_A_successor_site	0.0023977959792643696	0.00013203420949371106	1024	NA	NA
+attention	zero_candidate	counterfactual_A	L2H4	earlier_D_successor_site	0.0023516825538081355	0.00013337171302721352	1024	NA	NA
+attention	zero_candidate	counterfactual_A	L2H4	site_attention_difference	4.611342545623379e-05	0.00018635448893449818	1024	NA	NA
+attention	zero_candidate	counterfactual_A	L2H4	difference_change_from_intact	-0.30559713683497025	0.005109700029987253	1024	NA	NA
+attention	zero_candidate	clean_D	L2H1	earlier_A_successor_site	0.0037027684091886517	0.00013109123010698873	1024	NA	NA
+attention	zero_candidate	clean_D	L2H1	earlier_D_successor_site	0.0036976417430620943	0.0001274036616195366	1024	NA	NA
+attention	zero_candidate	clean_D	L2H1	site_attention_difference	5.126666126557293e-06	0.0001741172194391302	1024	NA	NA
+attention	zero_candidate	clean_D	L2H1	difference_change_from_intact	0.2832235482125203	0.004096998162892233	1024	NA	NA
+attention	zero_candidate	clean_D	L2H2	earlier_A_successor_site	0.0024969003000775477	0.00011779355910477282	1024	NA	NA
+attention	zero_candidate	clean_D	L2H2	earlier_D_successor_site	0.002383840081675869	0.00011892782294414864	1024	NA	NA
+attention	zero_candidate	clean_D	L2H2	site_attention_difference	0.00011306021840167815	0.00016868231158018176	1024	NA	NA
+attention	zero_candidate	clean_D	L2H2	difference_change_from_intact	0.3267946772833576	0.005225004212533008	1024	NA	NA
+attention	zero_candidate	clean_D	L2H3	earlier_A_successor_site	0.0025889308367616046	0.00010783632988925203	1024	NA	NA
+attention	zero_candidate	clean_D	L2H3	earlier_D_successor_site	0.0025949736677296554	0.00011592482259338583	1024	NA	NA
+attention	zero_candidate	clean_D	L2H3	site_attention_difference	-6.042830968050833e-06	0.00015003733780302907	1024	NA	NA
+attention	zero_candidate	clean_D	L2H3	difference_change_from_intact	0.35343585533414457	0.004440703793216178	1024	NA	NA
+attention	zero_candidate	clean_D	L2H4	earlier_A_successor_site	0.002248488395089592	0.00012737042202614214	1024	NA	NA
+attention	zero_candidate	clean_D	L2H4	earlier_D_successor_site	0.0024403714602904197	0.00012627073518097049	1024	NA	NA
+attention	zero_candidate	clean_D	L2H4	site_attention_difference	-0.0001918830652008282	0.00017358301914772125	1024	NA	NA
+attention	zero_candidate	clean_D	L2H4	difference_change_from_intact	0.3062010529204902	0.005127689179015525	1024	NA	NA
+attention	zero_candidate	counterfactual_D	L2H1	earlier_A_successor_site	0.0037877158845238236	0.00014131692215668348	1024	NA	NA
+attention	zero_candidate	counterfactual_D	L2H1	earlier_D_successor_site	0.003645602278397195	0.00013074229835441595	1024	NA	NA
+attention	zero_candidate	counterfactual_D	L2H1	site_attention_difference	0.00014211360612662803	0.00018570178912821525	1024	NA	NA
+attention	zero_candidate	counterfactual_D	L2H1	difference_change_from_intact	0.2792024409451648	0.004049945205229553	1024	NA	NA
+attention	zero_candidate	counterfactual_D	L2H2	earlier_A_successor_site	0.0024004120089079167	0.00011690610436041692	1024	NA	NA
+attention	zero_candidate	counterfactual_D	L2H2	earlier_D_successor_site	0.002461439888540951	0.00010845721290983467	1024	NA	NA
+attention	zero_candidate	counterfactual_D	L2H2	site_attention_difference	-6.1027879633034025e-05	0.00016017159405174483	1024	NA	NA
+attention	zero_candidate	counterfactual_D	L2H2	difference_change_from_intact	0.3399978393249481	0.0052650743952053795	1024	NA	NA
+attention	zero_candidate	counterfactual_D	L2H3	earlier_A_successor_site	0.00254071275644005	0.00010950983553892974	1024	NA	NA
+attention	zero_candidate	counterfactual_D	L2H3	earlier_D_successor_site	0.0026497878558721885	0.00011548973175823932	1024	NA	NA
+attention	zero_candidate	counterfactual_D	L2H3	site_attention_difference	-0.00010907509943213869	0.0001513480627232632	1024	NA	NA
+attention	zero_candidate	counterfactual_D	L2H3	difference_change_from_intact	0.3605410795371462	0.00446867147629209	1024	NA	NA
+attention	zero_candidate	counterfactual_D	L2H4	earlier_A_successor_site	0.0023456983826104713	0.00012942410785172847	1024	NA	NA
+attention	zero_candidate	counterfactual_D	L2H4	earlier_D_successor_site	0.002276674621857322	0.00012956540937435247	1024	NA	NA
+attention	zero_candidate	counterfactual_D	L2H4	site_attention_difference	6.902376075314957e-05	0.00017722160854625788	1024	NA	NA
+attention	zero_candidate	counterfactual_D	L2H4	difference_change_from_intact	0.2953240880161464	0.004923366126417469	1024	NA	NA
+attention	zero_candidate	clean_E	L2H1	earlier_A_successor_site	0.004130584259027636	0.00013053912157942827	1024	NA	NA
+attention	zero_candidate	clean_E	L2H1	earlier_D_successor_site	0.0041343797866665	0.00013680997824302207	1024	NA	NA
+attention	zero_candidate	clean_E	L2H1	site_attention_difference	-3.7955276388651764e-06	0.0001845438339379293	1024	NA	NA
+attention	zero_candidate	clean_E	L2H1	difference_change_from_intact	-5.499775588386425e-05	0.0002697558379551018	1024	NA	NA
+attention	zero_candidate	clean_E	L2H2	earlier_A_successor_site	0.002593389863968595	0.00011240074829999232	1024	NA	NA
+attention	zero_candidate	clean_E	L2H2	earlier_D_successor_site	0.002320614028652115	0.00010074682482624385	1024	NA	NA
+attention	zero_candidate	clean_E	L2H2	site_attention_difference	0.0002727758353164807	0.00015014776763426277	1024	NA	NA
+attention	zero_candidate	clean_E	L2H2	difference_change_from_intact	0.0003477828828765861	0.00023419761053007849	1024	NA	NA
+attention	zero_candidate	clean_E	L2H3	earlier_A_successor_site	0.0027670182265027666	0.00010408803658012596	1024	NA	NA
+attention	zero_candidate	clean_E	L2H3	earlier_D_successor_site	0.0025174924712052303	9.399659265120459e-05	1024	NA	NA
+attention	zero_candidate	clean_E	L2H3	site_attention_difference	0.0002495257552975365	0.00013521195069791307	1024	NA	NA
+attention	zero_candidate	clean_E	L2H3	difference_change_from_intact	5.914369891571037e-05	0.0002337370737526212	1024	NA	NA
+attention	zero_candidate	clean_E	L2H4	earlier_A_successor_site	0.002356374826853495	0.00012111881387334062	1024	NA	NA
+attention	zero_candidate	clean_E	L2H4	earlier_D_successor_site	0.0024971636319101893	0.00012725554381829988	1024	NA	NA
+attention	zero_candidate	clean_E	L2H4	site_attention_difference	-0.0001407888050566939	0.00017587726355174747	1024	NA	NA
+attention	zero_candidate	clean_E	L2H4	difference_change_from_intact	0.0002422434148468106	0.0002543997962226177	1024	NA	NA
+attention	zero_candidate	counterfactual_E	L2H1	earlier_A_successor_site	0.004282417437903997	0.00013904434755033932	1024	NA	NA
+attention	zero_candidate	counterfactual_E	L2H1	earlier_D_successor_site	0.0039008455589354895	0.00011148075233925444	1024	NA	NA
+attention	zero_candidate	counterfactual_E	L2H1	site_attention_difference	0.0003815718789685077	0.0001718115429183746	1024	NA	NA
+attention	zero_candidate	counterfactual_E	L2H1	difference_change_from_intact	0.0003646182805927409	0.0002740262715593238	1024	NA	NA
+attention	zero_candidate	counterfactual_E	L2H2	earlier_A_successor_site	0.0023811672038455637	0.00010474014168795137	1024	NA	NA
+attention	zero_candidate	counterfactual_E	L2H2	earlier_D_successor_site	0.0025965062250450574	0.00011247070772807016	1024	NA	NA
+attention	zero_candidate	counterfactual_E	L2H2	site_attention_difference	-0.00021533902119949335	0.0001539241591605549	1024	NA	NA
+attention	zero_candidate	counterfactual_E	L2H2	difference_change_from_intact	0.00022349683571505987	0.0002331963154659084	1024	NA	NA
+attention	zero_candidate	counterfactual_E	L2H3	earlier_A_successor_site	0.0026409537567721793	0.00010437498959054604	1024	NA	NA
+attention	zero_candidate	counterfactual_E	L2H3	earlier_D_successor_site	0.0026538759387453076	0.00010100410676420895	1024	NA	NA
+attention	zero_candidate	counterfactual_E	L2H3	site_attention_difference	-1.29221819731287e-05	0.00014107062976942043	1024	NA	NA
+attention	zero_candidate	counterfactual_E	L2H3	difference_change_from_intact	-3.9846700983873606e-05	0.0002371753421160732	1024	NA	NA
+attention	zero_candidate	counterfactual_E	L2H4	earlier_A_successor_site	0.0025262514665037056	0.00012941465235262583	1024	NA	NA
+attention	zero_candidate	counterfactual_E	L2H4	earlier_D_successor_site	0.0023558351657987924	0.00012679281430541113	1024	NA	NA
+attention	zero_candidate	counterfactual_E	L2H4	site_attention_difference	0.0001704163007049134	0.00018192274505854982	1024	NA	NA
+attention	zero_candidate	counterfactual_E	L2H4	difference_change_from_intact	-8.237106319635719e-05	0.00024241492257948306	1024	NA	NA
+attention	swap_successors	clean_A	L2H1	earlier_A_successor_site	0.0031183235145994205	0.00014987721124953496	1024	NA	NA
+attention	swap_successors	clean_A	L2H1	earlier_D_successor_site	0.2725672985205722	0.004080144727132649	1024	NA	NA
+attention	swap_successors	clean_A	L2H1	site_attention_difference	-0.2694489750059728	0.004101524676424111	1024	NA	NA
+attention	swap_successors	clean_A	L2H1	difference_change_from_intact	-0.5467681535411397	0.0056714426315288245	1024	NA	NA
+attention	swap_successors	clean_A	L2H2	earlier_A_successor_site	0.002546486752597984	0.00015628423369612972	1024	NA	NA
+attention	swap_successors	clean_A	L2H2	earlier_D_successor_site	0.31674176822038985	0.005143745925870014	1024	NA	NA
+attention	swap_successors	clean_A	L2H2	site_attention_difference	-0.31419528146779196	0.005170841216118566	1024	NA	NA
+attention	swap_successors	clean_A	L2H2	difference_change_from_intact	-0.6543538764241212	0.007146025959531961	1024	NA	NA
+attention	swap_successors	clean_A	L2H3	earlier_A_successor_site	0.0025689704799339167	0.0001534055970730039	1024	NA	NA
+attention	swap_successors	clean_A	L2H3	earlier_D_successor_site	0.3459325609025832	0.004572529390626951	1024	NA	NA
+attention	swap_successors	clean_A	L2H3	site_attention_difference	-0.3433635904226493	0.004596497251671416	1024	NA	NA
+attention	swap_successors	clean_A	L2H3	difference_change_from_intact	-0.7052753490648758	0.006397498648267439	1024	NA	NA
+attention	swap_successors	clean_A	L2H4	earlier_A_successor_site	0.002297065410848638	0.0001466128513053618	1024	NA	NA
+attention	swap_successors	clean_A	L2H4	earlier_D_successor_site	0.2965361289034684	0.005145726674576307	1024	NA	NA
+attention	swap_successors	clean_A	L2H4	site_attention_difference	-0.29423906349261975	0.005170868097722488	1024	NA	NA
+attention	swap_successors	clean_A	L2H4	difference_change_from_intact	-0.5888266661353707	0.00695749000895198	1024	NA	NA
+attention	swap_successors	counterfactual_A	L2H1	earlier_A_successor_site	0.0033333514869325846	0.00016483065186546585	1024	NA	NA
+attention	swap_successors	counterfactual_A	L2H1	earlier_D_successor_site	0.26938474074568997	0.0041041036967748865	1024	NA	NA
+attention	swap_successors	counterfactual_A	L2H1	site_attention_difference	-0.26605138925875743	0.004132362413527443	1024	NA	NA
+attention	swap_successors	counterfactual_A	L2H1	difference_change_from_intact	-0.5475629422073008	0.005683496572801606	1024	NA	NA
+attention	swap_successors	counterfactual_A	L2H2	earlier_A_successor_site	0.0022094927692261814	0.00014041853402947348	1024	NA	NA
+attention	swap_successors	counterfactual_A	L2H2	earlier_D_successor_site	0.32859272711659243	0.005237902979473418	1024	NA	NA
+attention	swap_successors	counterfactual_A	L2H2	site_attention_difference	-0.32638323434736627	0.005259890900834177	1024	NA	NA
+attention	swap_successors	counterfactual_A	L2H2	difference_change_from_intact	-0.6534999507312185	0.0071526637689315565	1024	NA	NA
+attention	swap_successors	counterfactual_A	L2H3	earlier_A_successor_site	0.0024693766008879346	0.00014849158762395804	1024	NA	NA
+attention	swap_successors	counterfactual_A	L2H3	earlier_D_successor_site	0.35199451616452393	0.004487411839312679	1024	NA	NA
+attention	swap_successors	counterfactual_A	L2H3	site_attention_difference	-0.34952513956363596	0.004506439605891499	1024	NA	NA
+attention	swap_successors	counterfactual_A	L2H3	difference_change_from_intact	-0.7048380721585116	0.006393043147881048	1024	NA	NA
+attention	swap_successors	counterfactual_A	L2H4	earlier_A_successor_site	0.002523906358208365	0.00016382337012553984	1024	NA	NA
+attention	swap_successors	counterfactual_A	L2H4	earlier_D_successor_site	0.2850282174288543	0.004943738792929373	1024	NA	NA
+attention	swap_successors	counterfactual_A	L2H4	site_attention_difference	-0.2825043110706459	0.004973103570235177	1024	NA	NA
+attention	swap_successors	counterfactual_A	L2H4	difference_change_from_intact	-0.5881475613310724	0.00696206120982936	1024	NA	NA
+attention	swap_successors	clean_D	L2H1	earlier_A_successor_site	0.2723857655318218	0.004080602140063798	1024	NA	NA
+attention	swap_successors	clean_D	L2H1	earlier_D_successor_site	0.0033769799878661188	0.00016547188273924882	1024	NA	NA
+attention	swap_successors	clean_D	L2H1	site_attention_difference	0.2690087855439557	0.004110989939964871	1024	NA	NA
+attention	swap_successors	clean_D	L2H1	difference_change_from_intact	0.5522272070903496	0.005637262528205547	1024	NA	NA
+attention	swap_successors	clean_D	L2H2	earlier_A_successor_site	0.3289663587211653	0.005297812158884064	1024	NA	NA
+attention	swap_successors	clean_D	L2H2	earlier_D_successor_site	0.0021616587828433725	0.00013959989001521733	1024	NA	NA
+attention	swap_successors	clean_D	L2H2	site_attention_difference	0.32680469993832195	0.005317393777666655	1024	NA	NA
+attention	swap_successors	clean_D	L2H2	difference_change_from_intact	0.653486317003278	0.007242728298338032	1024	NA	NA
+attention	swap_successors	clean_D	L2H3	earlier_A_successor_site	0.3505385595778439	0.004510036293846475	1024	NA	NA
+attention	swap_successors	clean_D	L2H3	earlier_D_successor_site	0.002533255548735988	0.00016124898987051714	1024	NA	NA
+attention	swap_successors	clean_D	L2H3	site_attention_difference	0.34800530402910795	0.004535326372660693	1024	NA	NA
+attention	swap_successors	clean_D	L2H3	difference_change_from_intact	0.7014472021942206	0.00627757163062562	1024	NA	NA
+attention	swap_successors	clean_D	L2H4	earlier_A_successor_site	0.2854453587037573	0.004886563478633728	1024	NA	NA
+attention	swap_successors	clean_D	L2H4	earlier_D_successor_site	0.002668365328326759	0.00017679949628103038	1024	NA	NA
+attention	swap_successors	clean_D	L2H4	site_attention_difference	0.2827769933754305	0.004917719278333535	1024	NA	NA
+attention	swap_successors	clean_D	L2H4	difference_change_from_intact	0.5891699293611216	0.006901408083589339	1024	NA	NA
+attention	swap_successors	counterfactual_D	L2H1	earlier_A_successor_site	0.2761292651134441	0.004097169244636014	1024	NA	NA
+attention	swap_successors	counterfactual_D	L2H1	earlier_D_successor_site	0.003202037683781496	0.0001615598572365956	1024	NA	NA
+attention	swap_successors	counterfactual_D	L2H1	site_attention_difference	0.2729272274296626	0.0041211599152699	1024	NA	NA
+attention	swap_successors	counterfactual_D	L2H1	difference_change_from_intact	0.5519875547687008	0.005639049178352666	1024	NA	NA
+attention	swap_successors	counterfactual_D	L2H2	earlier_A_successor_site	0.3161812182051946	0.005224926380918319	1024	NA	NA
+attention	swap_successors	counterfactual_D	L2H2	earlier_D_successor_site	0.0025947697381411687	0.0001597145218854993	1024	NA	NA
+attention	swap_successors	counterfactual_D	L2H2	site_attention_difference	0.3135864484670534	0.005252445527902866	1024	NA	NA
+attention	swap_successors	counterfactual_D	L2H2	difference_change_from_intact	0.6536453156716346	0.0072478051925412915	1024	NA	NA
+attention	swap_successors	counterfactual_D	L2H3	earlier_A_successor_site	0.3436146789587504	0.00447198138438857	1024	NA	NA
+attention	swap_successors	counterfactual_D	L2H3	earlier_D_successor_site	0.0025760826914327643	0.0001507411765030731	1024	NA	NA
+attention	swap_successors	counterfactual_D	L2H3	site_attention_difference	0.3410385962673176	0.004496928395040568	1024	NA	NA
+attention	swap_successors	counterfactual_D	L2H3	difference_change_from_intact	0.701688750903896	0.006276014124023692	1024	NA	NA
+attention	swap_successors	counterfactual_D	L2H4	earlier_A_successor_site	0.2956711372254753	0.005105078102930767	1024	NA	NA
+attention	swap_successors	counterfactual_D	L2H4	earlier_D_successor_site	0.002305174359069904	0.00015167568682211398	1024	NA	NA
+attention	swap_successors	counterfactual_D	L2H4	site_attention_difference	0.2933659628664053	0.005130196690866224	1024	NA	NA
+attention	swap_successors	counterfactual_D	L2H4	difference_change_from_intact	0.5886210271217986	0.006892025065031791	1024	NA	NA
+attention	swap_successors	clean_E	L2H1	earlier_A_successor_site	0.004847862891935393	0.00023003637854251112	1024	NA	NA
+attention	swap_successors	clean_E	L2H1	earlier_D_successor_site	0.004669353062106691	0.00022933214428302808	1024	NA	NA
+attention	swap_successors	clean_E	L2H1	site_attention_difference	0.00017850982982870286	0.00033291088571824263	1024	NA	NA
+attention	swap_successors	clean_E	L2H1	difference_change_from_intact	0.00012730760158370376	0.0004908764406934598	1024	NA	NA
+attention	swap_successors	clean_E	L2H2	earlier_A_successor_site	0.0036451426310933873	0.00020562736462315418	1024	NA	NA
+attention	swap_successors	clean_E	L2H2	earlier_D_successor_site	0.0031877148823290747	0.00018767248097119798	1024	NA	NA
+attention	swap_successors	clean_E	L2H2	site_attention_difference	0.00045742774876431243	0.00028247357375724326	1024	NA	NA
+attention	swap_successors	clean_E	L2H2	difference_change_from_intact	0.0005324347963244178	0.0004074833289129392	1024	NA	NA
+attention	swap_successors	clean_E	L2H3	earlier_A_successor_site	0.0038844107529873023	0.0002101042620809675	1024	NA	NA
+attention	swap_successors	clean_E	L2H3	earlier_D_successor_site	0.0038086736672516886	0.00020902377704727081	1024	NA	NA
+attention	swap_successors	clean_E	L2H3	site_attention_difference	7.573708573561405e-05	0.00030133102773572843	1024	NA	NA
+attention	swap_successors	clean_E	L2H3	difference_change_from_intact	-0.0001146449706462121	0.00043425296483391636	1024	NA	NA
+attention	swap_successors	clean_E	L2H4	earlier_A_successor_site	0.0031949147607282288	0.00019079246228875297	1024	NA	NA
+attention	swap_successors	clean_E	L2H4	earlier_D_successor_site	0.0035620401424951843	0.0002210574354839564	1024	NA	NA
+attention	swap_successors	clean_E	L2H4	site_attention_difference	-0.0003671253817669555	0.0002988910490626539	1024	NA	NA
+attention	swap_successors	clean_E	L2H4	difference_change_from_intact	1.5906838136549035e-05	0.0004221405232973661	1024	NA	NA
+attention	swap_successors	counterfactual_E	L2H1	earlier_A_successor_site	0.0047313977939785635	0.0002110246971948038	1024	NA	NA
+attention	swap_successors	counterfactual_E	L2H1	earlier_D_successor_site	0.004624986273214531	0.00020784247174858623	1024	NA	NA
+attention	swap_successors	counterfactual_E	L2H1	site_attention_difference	0.00010641152076403268	0.00030208538646421404	1024	NA	NA
+attention	swap_successors	counterfactual_E	L2H1	difference_change_from_intact	8.945792238826606e-05	0.00047869816601649873	1024	NA	NA
+attention	swap_successors	counterfactual_E	L2H2	earlier_A_successor_site	0.003505263564058933	0.00020562868404663232	1024	NA	NA
+attention	swap_successors	counterfactual_E	L2H2	earlier_D_successor_site	0.0035503870368388873	0.00022350398963183623	1024	NA	NA
+attention	swap_successors	counterfactual_E	L2H2	site_attention_difference	-4.512347277995445e-05	0.00031008779234748034	1024	NA	NA
+attention	swap_successors	counterfactual_E	L2H2	difference_change_from_intact	0.0003937123841345987	0.0004246090685359106	1024	NA	NA
+attention	swap_successors	counterfactual_E	L2H3	earlier_A_successor_site	0.0037370663909314754	0.00019808896265167988	1024	NA	NA
+attention	swap_successors	counterfactual_E	L2H3	earlier_D_successor_site	0.00387402214941547	0.00021791229735503297	1024	NA	NA
+attention	swap_successors	counterfactual_E	L2H3	site_attention_difference	-0.00013695575848399444	0.00029869078209097423	1024	NA	NA
+attention	swap_successors	counterfactual_E	L2H3	difference_change_from_intact	-0.00016388027749473925	0.0004323857698990856	1024	NA	NA
+attention	swap_successors	counterfactual_E	L2H4	earlier_A_successor_site	0.0037889940306083114	0.00022931599762369915	1024	NA	NA
+attention	swap_successors	counterfactual_E	L2H4	earlier_D_successor_site	0.003242401780232463	0.00019939938458750386	1024	NA	NA
+attention	swap_successors	counterfactual_E	L2H4	site_attention_difference	0.0005465922503758484	0.00031354450970123713	1024	NA	NA
+attention	swap_successors	counterfactual_E	L2H4	difference_change_from_intact	0.0002938048864745778	0.00041728535698707086	1024	NA	NA
+attention	restore_successors	clean_A	L2H1	earlier_A_successor_site	0.5119396386030377	0.00440274925911112	1024	NA	NA
+attention	restore_successors	clean_A	L2H1	earlier_D_successor_site	0.0025487112524313947	0.00012941721607929275	1024	NA	NA
+attention	restore_successors	clean_A	L2H1	site_attention_difference	0.5093909273506063	0.004431622452900529	1024	NA	NA
+attention	restore_successors	clean_A	L2H1	difference_change_from_intact	0.23207174881543943	0.001424669206542975	1024	NA	NA
+attention	restore_successors	clean_A	L2H2	earlier_A_successor_site	0.48208409636618554	0.005714336531555399	1024	NA	NA
+attention	restore_successors	clean_A	L2H2	earlier_D_successor_site	0.001148649874445496	7.130470965364724e-05	1024	NA	NA
+attention	restore_successors	clean_A	L2H2	site_attention_difference	0.48093544649174	0.005725399525857971	1024	NA	NA
+attention	restore_successors	clean_A	L2H2	difference_change_from_intact	0.1407768515354107	0.0010398233872875586	1024	NA	NA
+attention	restore_successors	clean_A	L2H3	earlier_A_successor_site	0.5312317922846616	0.0040675210115600005	1024	NA	NA
+attention	restore_successors	clean_A	L2H3	earlier_D_successor_site	0.001224987493059938	6.721627698877896e-05	1024	NA	NA
+attention	restore_successors	clean_A	L2H3	site_attention_difference	0.5300068047916016	0.004077736008064169	1024	NA	NA
+attention	restore_successors	clean_A	L2H3	difference_change_from_intact	0.16809504614937507	0.0013359117138264445	1024	NA	NA
+attention	restore_successors	clean_A	L2H4	earlier_A_successor_site	0.4311822726749718	0.005339924190360962	1024	NA	NA
+attention	restore_successors	clean_A	L2H4	earlier_D_successor_site	0.0014773212670803767	0.00010135837214388228	1024	NA	NA
+attention	restore_successors	clean_A	L2H4	site_attention_difference	0.42970495140789133	0.005357958669187569	1024	NA	NA
+attention	restore_successors	clean_A	L2H4	difference_change_from_intact	0.13511734876514053	0.000985625507544266	1024	NA	NA
+attention	restore_successors	counterfactual_A	L2H1	earlier_A_successor_site	0.5181153075333604	0.004285293613168701	1024	NA	NA
+attention	restore_successors	counterfactual_A	L2H1	earlier_D_successor_site	0.0023852948793698144	0.00011824024392939775	1024	NA	NA
+attention	restore_successors	counterfactual_A	L2H1	site_attention_difference	0.5157300126539905	0.004306900716487907	1024	NA	NA
+attention	restore_successors	counterfactual_A	L2H1	difference_change_from_intact	0.23421845970544714	0.0014272535156755362	1024	NA	NA
+attention	restore_successors	counterfactual_A	L2H2	earlier_A_successor_site	0.46792224535342497	0.005701816474355852	1024	NA	NA
+attention	restore_successors	counterfactual_A	L2H2	earlier_D_successor_site	0.001411593713629325	8.949854474502387e-05	1024	NA	NA
+attention	restore_successors	counterfactual_A	L2H2	site_attention_difference	0.46651065163979566	0.005718162507326074	1024	NA	NA
+attention	restore_successors	counterfactual_A	L2H2	difference_change_from_intact	0.13939393525594335	0.0010688756294156185	1024	NA	NA
+attention	restore_successors	counterfactual_A	L2H3	earlier_A_successor_site	0.5245852759187828	0.004159454950929619	1024	NA	NA
+attention	restore_successors	counterfactual_A	L2H3	earlier_D_successor_site	0.0012695458773529177	6.945211868205432e-05	1024	NA	NA
+attention	restore_successors	counterfactual_A	L2H3	site_attention_difference	0.52331573004143	0.004170662855531279	1024	NA	NA
+attention	restore_successors	counterfactual_A	L2H3	difference_change_from_intact	0.1680027974465543	0.0013416034078237887	1024	NA	NA
+attention	restore_successors	counterfactual_A	L2H4	earlier_A_successor_site	0.44293697731948045	0.00553942240143509	1024	NA	NA
+attention	restore_successors	counterfactual_A	L2H4	earlier_D_successor_site	0.0013060445053400863	8.696363037205755e-05	1024	NA	NA
+attention	restore_successors	counterfactual_A	L2H4	site_attention_difference	0.4416309328141404	0.005554185113199625	1024	NA	NA
+attention	restore_successors	counterfactual_A	L2H4	difference_change_from_intact	0.13598768255371393	0.0009777883135875733	1024	NA	NA
+attention	restore_successors	clean_D	L2H1	earlier_A_successor_site	0.002463641137005902	0.00011896095015965214	1024	NA	NA
+attention	restore_successors	clean_D	L2H1	earlier_D_successor_site	0.522171823014186	0.004373411347150817	1024	NA	NA
+attention	restore_successors	clean_D	L2H1	site_attention_difference	-0.51970818187718	0.004395252913571726	1024	NA	NA
+attention	restore_successors	clean_D	L2H1	difference_change_from_intact	-0.23648976033078625	0.001380974624360457	1024	NA	NA
+attention	restore_successors	clean_D	L2H2	earlier_A_successor_site	0.0014593034721693274	9.579647576477965e-05	1024	NA	NA
+attention	restore_successors	clean_D	L2H2	earlier_D_successor_site	0.46884316876390636	0.00567784996073831	1024	NA	NA
+attention	restore_successors	clean_D	L2H2	site_attention_difference	-0.46738386529173703	0.005695182991424544	1024	NA	NA
+attention	restore_successors	clean_D	L2H2	difference_change_from_intact	-0.1407022482267811	0.0010465565930680722	1024	NA	NA
+attention	restore_successors	clean_D	L2H3	earlier_A_successor_site	0.0013049308212699114	7.275837112940237e-05	1024	NA	NA
+attention	restore_successors	clean_D	L2H3	earlier_D_successor_site	0.5245405981598412	0.004105483387638823	1024	NA	NA
+attention	restore_successors	clean_D	L2H3	site_attention_difference	-0.5232356673385714	0.004117475938509316	1024	NA	NA
+attention	restore_successors	clean_D	L2H3	difference_change_from_intact	-0.16979376917345873	0.001280280369605176	1024	NA	NA
+attention	restore_successors	clean_D	L2H4	earlier_A_successor_site	0.0013240860275700063	8.833021046173343e-05	1024	NA	NA
+attention	restore_successors	clean_D	L2H4	earlier_D_successor_site	0.4443162451395459	0.005509256760798842	1024	NA	NA
+attention	restore_successors	clean_D	L2H4	site_attention_difference	-0.4429921591119759	0.00552620341780627	1024	NA	NA
+attention	restore_successors	clean_D	L2H4	difference_change_from_intact	-0.13659922312628484	0.0009293186707190035	1024	NA	NA
+attention	restore_successors	counterfactual_D	L2H1	earlier_A_successor_site	0.0026415785727275753	0.00013158096842739444	1024	NA	NA
+attention	restore_successors	counterfactual_D	L2H1	earlier_D_successor_site	0.5169821000651789	0.004316797796168341	1024	NA	NA
+attention	restore_successors	counterfactual_D	L2H1	site_attention_difference	-0.5143405214924514	0.004347467770838169	1024	NA	NA
+attention	restore_successors	counterfactual_D	L2H1	difference_change_from_intact	-0.23528019415341314	0.0013724515003347682	1024	NA	NA
+attention	restore_successors	counterfactual_D	L2H2	earlier_A_successor_site	0.001171174123317862	7.616293858647641e-05	1024	NA	NA
+attention	restore_successors	counterfactual_D	L2H2	earlier_D_successor_site	0.48377810392357945	0.00576280816645146	1024	NA	NA
+attention	restore_successors	counterfactual_D	L2H2	site_attention_difference	-0.4826069298002616	0.005774944184893865	1024	NA	NA
+attention	restore_successors	counterfactual_D	L2H2	difference_change_from_intact	-0.14254806259568042	0.0010611813135781528	1024	NA	NA
+attention	restore_successors	counterfactual_D	L2H3	earlier_A_successor_site	0.0012714058393343522	7.199969564242902e-05	1024	NA	NA
+attention	restore_successors	counterfactual_D	L2H3	earlier_D_successor_site	0.5321196903109671	0.004083729905677053	1024	NA	NA
+attention	restore_successors	counterfactual_D	L2H3	site_attention_difference	-0.5308482844716328	0.004094592547571775	1024	NA	NA
+attention	restore_successors	counterfactual_D	L2H3	difference_change_from_intact	-0.1701981298350544	0.001324957075004404	1024	NA	NA
+attention	restore_successors	counterfactual_D	L2H4	earlier_A_successor_site	0.0014556495368051889	9.711281494428087e-05	1024	NA	NA
+attention	restore_successors	counterfactual_D	L2H4	earlier_D_successor_site	0.4328174449776493	0.005287369666138624	1024	NA	NA
+attention	restore_successors	counterfactual_D	L2H4	site_attention_difference	-0.4313617954408442	0.005305911235490574	1024	NA	NA
+attention	restore_successors	counterfactual_D	L2H4	difference_change_from_intact	-0.13610673118545089	0.0009333191604705464	1024	NA	NA
+attention	restore_successors	clean_E	L2H1	earlier_A_successor_site	0.005906094770500636	0.0002586402091531576	1024	NA	NA
+attention	restore_successors	clean_E	L2H1	earlier_D_successor_site	0.005721898537820586	0.00024229541633906065	1024	NA	NA
+attention	restore_successors	clean_E	L2H1	site_attention_difference	0.0001841962326800487	0.00034897391947556197	1024	NA	NA
+attention	restore_successors	clean_E	L2H1	difference_change_from_intact	0.00013299400443504963	0.00012035234762366709	1024	NA	NA
+attention	restore_successors	clean_E	L2H2	earlier_A_successor_site	0.0025719558551715056	0.00015080889692784913	1024	NA	NA
+attention	restore_successors	clean_E	L2H2	earlier_D_successor_site	0.0026178383429324727	0.00015019617708048405	1024	NA	NA
+attention	restore_successors	clean_E	L2H2	site_attention_difference	-4.588248776096738e-05	0.00021029209959968752	1024	NA	NA
+attention	restore_successors	clean_E	L2H2	difference_change_from_intact	2.9124559799137988e-05	5.144300653844592e-05	1024	NA	NA
+attention	restore_successors	clean_E	L2H3	earlier_A_successor_site	0.0030128308006865654	0.0001557634916859781	1024	NA	NA
+attention	restore_successors	clean_E	L2H3	earlier_D_successor_site	0.002834327325913273	0.00014011844072212885	1024	NA	NA
+attention	restore_successors	clean_E	L2H3	site_attention_difference	0.0001785034747732916	0.00020584215233783286	1024	NA	NA
+attention	restore_successors	clean_E	L2H3	difference_change_from_intact	-1.1878581608534476e-05	6.591883201920668e-05	1024	NA	NA
+attention	restore_successors	clean_E	L2H4	earlier_A_successor_site	0.002571532643889105	0.00016253831402828202	1024	NA	NA
+attention	restore_successors	clean_E	L2H4	earlier_D_successor_site	0.002822129094120035	0.000168792897025978	1024	NA	NA
+attention	restore_successors	clean_E	L2H4	site_attention_difference	-0.00025059645023092997	0.0002390757552972525	1024	NA	NA
+attention	restore_successors	clean_E	L2H4	difference_change_from_intact	0.00013243576967257462	5.4798823864229936e-05	1024	NA	NA
+attention	restore_successors	counterfactual_E	L2H1	earlier_A_successor_site	0.005834715336900295	0.0002590268131764485	1024	NA	NA
+attention	restore_successors	counterfactual_E	L2H1	earlier_D_successor_site	0.005760160942886702	0.00024837616546299093	1024	NA	NA
+attention	restore_successors	counterfactual_E	L2H1	site_attention_difference	7.455439401359302e-05	0.0003527492371702826	1024	NA	NA
+attention	restore_successors	counterfactual_E	L2H1	difference_change_from_intact	5.7600795637826325e-05	0.00011816819165257898	1024	NA	NA
+attention	restore_successors	counterfactual_E	L2H2	earlier_A_successor_site	0.0024344304611910988	0.00013980855193241836	1024	NA	NA
+attention	restore_successors	counterfactual_E	L2H2	earlier_D_successor_site	0.00272846434485786	0.00015147626669885844	1024	NA	NA
+attention	restore_successors	counterfactual_E	L2H2	site_attention_difference	-0.0002940338836667615	0.00020355237163291345	1024	NA	NA
+attention	restore_successors	counterfactual_E	L2H2	difference_change_from_intact	0.00014480197324779178	5.4395370714828786e-05	1024	NA	NA
+attention	restore_successors	counterfactual_E	L2H3	earlier_A_successor_site	0.0029733608520627493	0.0001559066388034037	1024	NA	NA
+attention	restore_successors	counterfactual_E	L2H3	earlier_D_successor_site	0.002901467436920686	0.00014106080154979524	1024	NA	NA
+attention	restore_successors	counterfactual_E	L2H3	site_attention_difference	7.189341514206356e-05	0.0002078895822745742	1024	NA	NA
+attention	restore_successors	counterfactual_E	L2H3	difference_change_from_intact	4.496889613131869e-05	6.651826290419482e-05	1024	NA	NA
+attention	restore_successors	counterfactual_E	L2H4	earlier_A_successor_site	0.002759148720320284	0.00016809073657279876	1024	NA	NA
+attention	restore_successors	counterfactual_E	L2H4	earlier_D_successor_site	0.0025088784582350653	0.00015999857658149274	1024	NA	NA
+attention	restore_successors	counterfactual_E	L2H4	site_attention_difference	0.0002502702620852186	0.0002357585790659031	1024	NA	NA
+attention	restore_successors	counterfactual_E	L2H4	difference_change_from_intact	-2.51710181605201e-06	5.012810182791524e-05	1024	NA	NA
+attention	restore_contexts	clean_A	L2H1	earlier_A_successor_site	0.003795965228339279	0.00014648063233126118	1024	NA	NA
+attention	restore_contexts	clean_A	L2H1	earlier_D_successor_site	0.00400251538537396	0.0001535079811726244	1024	NA	NA
+attention	restore_contexts	clean_A	L2H1	site_attention_difference	-0.00020655015703468122	0.00020049324484738083	1024	NA	NA
+attention	restore_contexts	clean_A	L2H1	difference_change_from_intact	-0.2775257286922016	0.004078058390316111	1024	NA	NA
+attention	restore_contexts	clean_A	L2H2	earlier_A_successor_site	0.002614693684380825	0.00012993596074813634	1024	NA	NA
+attention	restore_contexts	clean_A	L2H2	earlier_D_successor_site	0.0023631749944888073	0.00011307763862922218	1024	NA	NA
+attention	restore_contexts	clean_A	L2H2	site_attention_difference	0.00025151868989201727	0.0001692946047681967	1024	NA	NA
+attention	restore_contexts	clean_A	L2H2	difference_change_from_intact	-0.3399070762664373	0.005284209133481161	1024	NA	NA
+attention	restore_contexts	clean_A	L2H3	earlier_A_successor_site	0.0026870187287719007	0.0001188553928409	1024	NA	NA
+attention	restore_contexts	clean_A	L2H3	earlier_D_successor_site	0.002497962344397672	0.00011146024497403762	1024	NA	NA
+attention	restore_contexts	clean_A	L2H3	site_attention_difference	0.0001890563843742283	0.00015933816064297621	1024	NA	NA
+attention	restore_contexts	clean_A	L2H3	difference_change_from_intact	-0.3617227022578523	0.004452212631560864	1024	NA	NA
+attention	restore_contexts	clean_A	L2H4	earlier_A_successor_site	0.0022021341100577465	0.00011779757690149332	1024	NA	NA
+attention	restore_contexts	clean_A	L2H4	earlier_D_successor_site	0.0025662808455762715	0.0001424816391974515	1024	NA	NA
+attention	restore_contexts	clean_A	L2H4	site_attention_difference	-0.00036414673551852497	0.00018384246897056714	1024	NA	NA
+attention	restore_contexts	clean_A	L2H4	difference_change_from_intact	-0.29495174937826935	0.004925970413388824	1024	NA	NA
+attention	restore_contexts	counterfactual_A	L2H1	earlier_A_successor_site	0.003966369994070654	0.0001496059336291334	1024	NA	NA
+attention	restore_contexts	counterfactual_A	L2H1	earlier_D_successor_site	0.0038164773327519783	0.0001486470803888127	1024	NA	NA
+attention	restore_contexts	counterfactual_A	L2H1	site_attention_difference	0.00014989266131867535	0.0001996642517940955	1024	NA	NA
+attention	restore_contexts	counterfactual_A	L2H1	difference_change_from_intact	-0.2813616602872248	0.00407665085380379	1024	NA	NA
+attention	restore_contexts	counterfactual_A	L2H2	earlier_A_successor_site	0.002434721257232651	0.0001262585516972332	1024	NA	NA
+attention	restore_contexts	counterfactual_A	L2H2	earlier_D_successor_site	0.0026693672126005554	0.00012941100207176234	1024	NA	NA
+attention	restore_contexts	counterfactual_A	L2H2	site_attention_difference	-0.00023464595536790438	0.00017946901316870297	1024	NA	NA
+attention	restore_contexts	counterfactual_A	L2H2	difference_change_from_intact	-0.32735136233922013	0.005197661791310218	1024	NA	NA
+attention	restore_contexts	counterfactual_A	L2H3	earlier_A_successor_site	0.0024973874171195596	0.000111133335813823	1024	NA	NA
+attention	restore_contexts	counterfactual_A	L2H3	earlier_D_successor_site	0.0026305055586273913	0.00010913237264031445	1024	NA	NA
+attention	restore_contexts	counterfactual_A	L2H3	site_attention_difference	-0.0001331181415078314	0.00015167683248640742	1024	NA	NA
+attention	restore_contexts	counterfactual_A	L2H3	difference_change_from_intact	-0.35544605073638347	0.0044931303250938335	1024	NA	NA
+attention	restore_contexts	counterfactual_A	L2H4	earlier_A_successor_site	0.0023982829130654013	0.00013217198078754723	1024	NA	NA
+attention	restore_contexts	counterfactual_A	L2H4	earlier_D_successor_site	0.002352790013444109	0.00013345196279117475	1024	NA	NA
+attention	restore_contexts	counterfactual_A	L2H4	site_attention_difference	4.5492899621292355e-05	0.00018654273069297405	1024	NA	NA
+attention	restore_contexts	counterfactual_A	L2H4	difference_change_from_intact	-0.30559775736080513	0.005109648555732838	1024	NA	NA
+attention	restore_contexts	clean_D	L2H1	earlier_A_successor_site	0.0036954713878235854	0.00013093824030937023	1024	NA	NA
+attention	restore_contexts	clean_D	L2H1	earlier_D_successor_site	0.0036923514029230963	0.0001272113647216798	1024	NA	NA
+attention	restore_contexts	clean_D	L2H1	site_attention_difference	3.1199849004892103e-06	0.00017395065667836045	1024	NA	NA
+attention	restore_contexts	clean_D	L2H1	difference_change_from_intact	0.2832215415312943	0.004097021586881179	1024	NA	NA
+attention	restore_contexts	clean_D	L2H2	earlier_A_successor_site	0.002499526840673969	0.00011801111843197635	1024	NA	NA
+attention	restore_contexts	clean_D	L2H2	earlier_D_successor_site	0.0023859311783213906	0.00011907202420634757	1024	NA	NA
+attention	restore_contexts	clean_D	L2H2	site_attention_difference	0.00011359566235257852	0.0001688888510904927	1024	NA	NA
+attention	restore_contexts	clean_D	L2H2	difference_change_from_intact	0.3267952127273085	0.005224940431691725	1024	NA	NA
+attention	restore_contexts	clean_D	L2H3	earlier_A_successor_site	0.0025920591640560533	0.00010804105680759412	1024	NA	NA
+attention	restore_contexts	clean_D	L2H3	earlier_D_successor_site	0.0025973323185746844	0.00011626116530586751	1024	NA	NA
+attention	restore_contexts	clean_D	L2H3	site_attention_difference	-5.273154518631209e-06	0.00015037090598596484	1024	NA	NA
+attention	restore_contexts	clean_D	L2H3	difference_change_from_intact	0.353436625010594	0.00444063649596771	1024	NA	NA
+attention	restore_contexts	clean_D	L2H4	earlier_A_successor_site	0.002250463039417108	0.00012762729843056707	1024	NA	NA
+attention	restore_contexts	clean_D	L2H4	earlier_D_successor_site	0.0024418293092288374	0.00012639510636721512	1024	NA	NA
+attention	restore_contexts	clean_D	L2H4	site_attention_difference	-0.00019136626981172935	0.00017386359271795207	1024	NA	NA
+attention	restore_contexts	clean_D	L2H4	difference_change_from_intact	0.30620156971587936	0.005127601194065332	1024	NA	NA
+attention	restore_contexts	counterfactual_D	L2H1	earlier_A_successor_site	0.003781869450107472	0.0001410907224812089	1024	NA	NA
+attention	restore_contexts	counterfactual_D	L2H1	earlier_D_successor_site	0.003639227761619438	0.00013053041526881257	1024	NA	NA
+attention	restore_contexts	counterfactual_D	L2H1	site_attention_difference	0.00014264168848803372	0.0001854522866600919	1024	NA	NA
+attention	restore_contexts	counterfactual_D	L2H1	difference_change_from_intact	0.27920296902752617	0.0040500068113305514	1024	NA	NA
+attention	restore_contexts	counterfactual_D	L2H2	earlier_A_successor_site	0.002402894226919981	0.00011715293499477872	1024	NA	NA
+attention	restore_contexts	counterfactual_D	L2H2	earlier_D_successor_site	0.0024641980208277674	0.00010870313343998495	1024	NA	NA
+attention	restore_contexts	counterfactual_D	L2H2	site_attention_difference	-6.130379390778608e-05	0.00016047705429320764	1024	NA	NA
+attention	restore_contexts	counterfactual_D	L2H2	difference_change_from_intact	0.33999756341067333	0.0052649755993639455	1024	NA	NA
+attention	restore_contexts	counterfactual_D	L2H3	earlier_A_successor_site	0.0025429830768600296	0.00010968825799191379	1024	NA	NA
+attention	restore_contexts	counterfactual_D	L2H3	earlier_D_successor_site	0.002652422291391369	0.00011557250102726781	1024	NA	NA
+attention	restore_contexts	counterfactual_D	L2H3	site_attention_difference	-0.00010943921453133959	0.00015146109168587068	1024	NA	NA
+attention	restore_contexts	counterfactual_D	L2H3	difference_change_from_intact	0.360540715422047	0.004468622980495248	1024	NA	NA
+attention	restore_contexts	counterfactual_D	L2H4	earlier_A_successor_site	0.002346955276141576	0.00012955930060065172	1024	NA	NA
+attention	restore_contexts	counterfactual_D	L2H4	earlier_D_successor_site	0.002277683497006948	0.000129658671005757	1024	NA	NA
+attention	restore_contexts	counterfactual_D	L2H4	site_attention_difference	6.927177913462804e-05	0.00017737799228947985	1024	NA	NA
+attention	restore_contexts	counterfactual_D	L2H4	difference_change_from_intact	0.2953243360345279	0.004923331567494281	1024	NA	NA
+attention	restore_contexts	clean_E	L2H1	earlier_A_successor_site	0.004116861310756121	0.00013017319139598752	1024	NA	NA
+attention	restore_contexts	clean_E	L2H1	earlier_D_successor_site	0.0041224961039291255	0.0001367041370644782	1024	NA	NA
+attention	restore_contexts	clean_E	L2H1	site_attention_difference	-5.634793173004728e-06	0.00018406616263340233	1024	NA	NA
+attention	restore_contexts	clean_E	L2H1	difference_change_from_intact	-5.68370214180038e-05	0.00026948484827092443	1024	NA	NA
+attention	restore_contexts	clean_E	L2H2	earlier_A_successor_site	0.002596730988488222	0.0001130336079158806	1024	NA	NA
+attention	restore_contexts	clean_E	L2H2	earlier_D_successor_site	0.002320933836494808	0.00010086184032520206	1024	NA	NA
+attention	restore_contexts	clean_E	L2H2	site_attention_difference	0.0002757971519934136	0.0001506564173386102	1024	NA	NA
+attention	restore_contexts	clean_E	L2H2	difference_change_from_intact	0.00035080419955351897	0.00023441819232983627	1024	NA	NA
+attention	restore_contexts	clean_E	L2H3	earlier_A_successor_site	0.002767800215542536	0.00010429762976802093	1024	NA	NA
+attention	restore_contexts	clean_E	L2H3	earlier_D_successor_site	0.0025176437473086264	9.424765506996651e-05	1024	NA	NA
+attention	restore_contexts	clean_E	L2H3	site_attention_difference	0.00025015646823390995	0.0001354813463593734	1024	NA	NA
+attention	restore_contexts	clean_E	L2H3	difference_change_from_intact	5.977441185208388e-05	0.00023385697120749694	1024	NA	NA
+attention	restore_contexts	clean_E	L2H4	earlier_A_successor_site	0.0023546043167075705	0.00012100924029167988	1024	NA	NA
+attention	restore_contexts	clean_E	L2H4	earlier_D_successor_site	0.0024969794412589307	0.0001273367516223595	1024	NA	NA
+attention	restore_contexts	clean_E	L2H4	site_attention_difference	-0.0001423751245513604	0.00017581529030390267	1024	NA	NA
+attention	restore_contexts	clean_E	L2H4	difference_change_from_intact	0.00024065709535214428	0.00025426985548084285	1024	NA	NA
+attention	restore_contexts	counterfactual_E	L2H1	earlier_A_successor_site	0.0042720320111467175	0.0001394183670233119	1024	NA	NA
+attention	restore_contexts	counterfactual_E	L2H1	earlier_D_successor_site	0.0038870174484254808	0.0001112099829392907	1024	NA	NA
+attention	restore_contexts	counterfactual_E	L2H1	site_attention_difference	0.00038501456272123683	0.0001718098246129712	1024	NA	NA
+attention	restore_contexts	counterfactual_E	L2H1	difference_change_from_intact	0.0003680609643454701	0.00027399332136383343	1024	NA	NA
+attention	restore_contexts	counterfactual_E	L2H2	earlier_A_successor_site	0.0023820369222182242	0.00010491289176038379	1024	NA	NA
+attention	restore_contexts	counterfactual_E	L2H2	earlier_D_successor_site	0.002598127481255024	0.00011268673143436122	1024	NA	NA
+attention	restore_contexts	counterfactual_E	L2H2	site_attention_difference	-0.0002160905590367994	0.00015414179112656853	1024	NA	NA
+attention	restore_contexts	counterfactual_E	L2H2	difference_change_from_intact	0.00022274529787775393	0.00023328992961995135	1024	NA	NA
+attention	restore_contexts	counterfactual_E	L2H3	earlier_A_successor_site	0.002641101299619991	0.0001045156187113345	1024	NA	NA
+attention	restore_contexts	counterfactual_E	L2H3	earlier_D_successor_site	0.0026540634569867066	0.0001010581515878711	1024	NA	NA
+attention	restore_contexts	counterfactual_E	L2H3	site_attention_difference	-1.2962157366715486e-05	0.0001411326204562673	1024	NA	NA
+attention	restore_contexts	counterfactual_E	L2H3	difference_change_from_intact	-3.9886676377460405e-05	0.00023720867820838825	1024	NA	NA
+attention	restore_contexts	counterfactual_E	L2H4	earlier_A_successor_site	0.002526414022899202	0.00012953548525713147	1024	NA	NA
+attention	restore_contexts	counterfactual_E	L2H4	earlier_D_successor_site	0.002354517108511949	0.00012677442128193115	1024	NA	NA
+attention	restore_contexts	counterfactual_E	L2H4	site_attention_difference	0.0001718969143872532	0.0001819757787729423	1024	NA	NA
+attention	restore_contexts	counterfactual_E	L2H4	difference_change_from_intact	-8.089044951401734e-05	0.0002423818366001523	1024	NA	NA
+attention	swap_contexts	clean_A	L2H1	earlier_A_successor_site	0.28032172229526364	0.004143246692318214	1024	NA	NA
+attention	swap_contexts	clean_A	L2H1	earlier_D_successor_site	0.003153927721930754	0.00014374820236765044	1024	NA	NA
+attention	swap_contexts	clean_A	L2H1	site_attention_difference	0.27716779457333296	0.004167717448721047	1024	NA	NA
+attention	swap_contexts	clean_A	L2H1	difference_change_from_intact	-0.00015138396183400106	5.2676604148370934e-05	1024	NA	NA
+attention	swap_contexts	clean_A	L2H2	earlier_A_successor_site	0.34209701848531904	0.005347312464655243	1024	NA	NA
+attention	swap_contexts	clean_A	L2H2	earlier_D_successor_site	0.0020312920877272878	0.0001131275261171132	1024	NA	NA
+attention	swap_contexts	clean_A	L2H2	site_attention_difference	0.3400657263975918	0.005363096150059857	1024	NA	NA
+attention	swap_contexts	clean_A	L2H2	difference_change_from_intact	-9.286855873751881e-05	4.669558370838191e-05	1024	NA	NA
+attention	swap_contexts	clean_A	L2H3	earlier_A_successor_site	0.3640215570636177	0.004515034826104305	1024	NA	NA
+attention	swap_contexts	clean_A	L2H3	earlier_D_successor_site	0.00227876697685995	0.00012064228201980274	1024	NA	NA
+attention	swap_contexts	clean_A	L2H3	site_attention_difference	0.3617427900867578	0.004531060665483918	1024	NA	NA
+attention	swap_contexts	clean_A	L2H3	difference_change_from_intact	-0.00016896855546869141	5.78619891744474e-05	1024	NA	NA
+attention	swap_contexts	clean_A	L2H4	earlier_A_successor_site	0.2968686586567424	0.004988162748368386	1024	NA	NA
+attention	swap_contexts	clean_A	L2H4	earlier_D_successor_site	0.0024511480553460812	0.00015109265722125216	1024	NA	NA
+attention	swap_contexts	clean_A	L2H4	site_attention_difference	0.29441751060139637	0.005013642514421735	1024	NA	NA
+attention	swap_contexts	clean_A	L2H4	difference_change_from_intact	-0.0001700920413544929	5.2973306377581145e-05	1024	NA	NA
+attention	swap_contexts	counterfactual_A	L2H1	earlier_A_successor_site	0.2843408205769936	0.004151625691234302	1024	NA	NA
+attention	swap_contexts	counterfactual_A	L2H1	earlier_D_successor_site	0.002981933611656582	0.00013492985185895596	1024	NA	NA
+attention	swap_contexts	counterfactual_A	L2H1	site_attention_difference	0.28135888696533695	0.004172092592984845	1024	NA	NA
+attention	swap_contexts	counterfactual_A	L2H1	difference_change_from_intact	-0.00015266598320644808	5.100495591866293e-05	1024	NA	NA
+attention	swap_contexts	counterfactual_A	L2H2	earlier_A_successor_site	0.32945594347645035	0.005261640547718117	1024	NA	NA
+attention	swap_contexts	counterfactual_A	L2H2	earlier_D_successor_site	0.00240866391376406	0.00013460023813247017	1024	NA	NA
+attention	swap_contexts	counterfactual_A	L2H2	site_attention_difference	0.3270472795626863	0.0052838888139680445	1024	NA	NA
+attention	swap_contexts	counterfactual_A	L2H2	difference_change_from_intact	-6.943682116592865e-05	4.6159121142679895e-05	1024	NA	NA
+attention	swap_contexts	counterfactual_A	L2H3	earlier_A_successor_site	0.3574925115146179	0.004545856909410951	1024	NA	NA
+attention	swap_contexts	counterfactual_A	L2H3	earlier_D_successor_site	0.002360602386877672	0.00012506604471623542	1024	NA	NA
+attention	swap_contexts	counterfactual_A	L2H3	site_attention_difference	0.3551319091277403	0.004563585675263227	1024	NA	NA
+attention	swap_contexts	counterfactual_A	L2H3	difference_change_from_intact	-0.000181023467135368	6.334707453362713e-05	1024	NA	NA
+attention	swap_contexts	counterfactual_A	L2H4	earlier_A_successor_site	0.30769812694113297	0.0051816320277289635	1024	NA	NA
+attention	swap_contexts	counterfactual_A	L2H4	earlier_D_successor_site	0.0021971098570375135	0.00013119677317170573	1024	NA	NA
+attention	swap_contexts	counterfactual_A	L2H4	site_attention_difference	0.3055010170840955	0.005202490424492896	1024	NA	NA
+attention	swap_contexts	counterfactual_A	L2H4	difference_change_from_intact	-0.00014223317633098732	5.176277202757152e-05	1024	NA	NA
+attention	swap_contexts	clean_D	L2H1	earlier_A_successor_site	0.003058365753246253	0.00013718486257939245	1024	NA	NA
+attention	swap_contexts	clean_D	L2H1	earlier_D_successor_site	0.2861489763787945	0.0041588913093808175	1024	NA	NA
+attention	swap_contexts	clean_D	L2H1	site_attention_difference	-0.2830906106255483	0.004178841264918534	1024	NA	NA
+attention	swap_contexts	clean_D	L2H1	difference_change_from_intact	0.00012781092084553422	3.8921954494567554e-05	1024	NA	NA
+attention	swap_contexts	clean_D	L2H2	earlier_A_successor_site	0.0024652941632797034	0.0001414727798655282	1024	NA	NA
+attention	swap_contexts	clean_D	L2H2	earlier_D_successor_site	0.3291592729435846	0.005285388345182546	1024	NA	NA
+attention	swap_contexts	clean_D	L2H2	site_attention_difference	-0.32669397878030493	0.005309124220427407	1024	NA	NA
+attention	swap_contexts	clean_D	L2H2	difference_change_from_intact	-1.2361715348974378e-05	4.792698891123406e-05	1024	NA	NA
+attention	swap_contexts	clean_D	L2H3	earlier_A_successor_site	0.0024061305465887433	0.00012699105419533788	1024	NA	NA
+attention	swap_contexts	clean_D	L2H3	earlier_D_successor_site	0.3557746417171419	0.004498342613690256	1024	NA	NA
+attention	swap_contexts	clean_D	L2H3	site_attention_difference	-0.3533685111705532	0.0045157866112542555	1024	NA	NA
+attention	swap_contexts	clean_D	L2H3	difference_change_from_intact	7.338699455944399e-05	5.891920278910672e-05	1024	NA	NA
+attention	swap_contexts	clean_D	L2H4	earlier_A_successor_site	0.002198801817892139	0.00012995556311288037	1024	NA	NA
+attention	swap_contexts	clean_D	L2H4	earlier_D_successor_site	0.3085006367453845	0.0051995698701172545	1024	NA	NA
+attention	swap_contexts	clean_D	L2H4	site_attention_difference	-0.3063018349274924	0.00522300447690336	1024	NA	NA
+attention	swap_contexts	clean_D	L2H4	difference_change_from_intact	9.110105819863125e-05	5.371063661034676e-05	1024	NA	NA
+attention	swap_contexts	counterfactual_D	L2H1	earlier_A_successor_site	0.0032549048134035393	0.00014856979918268109	1024	NA	NA
+attention	swap_contexts	counterfactual_D	L2H1	earlier_D_successor_site	0.2821790939227325	0.004103518366617672	1024	NA	NA
+attention	swap_contexts	counterfactual_D	L2H1	site_attention_difference	-0.2789241891093289	0.004130152457834045	1024	NA	NA
+attention	swap_contexts	counterfactual_D	L2H1	difference_change_from_intact	0.00013613822970921812	3.848759555973949e-05	1024	NA	NA
+attention	swap_contexts	counterfactual_D	L2H2	earlier_A_successor_site	0.0020429419118762754	0.00011563445975299876	1024	NA	NA
+attention	swap_contexts	counterfactual_D	L2H2	earlier_D_successor_site	0.34212284633718404	0.00533468275342216	1024	NA	NA
+attention	swap_contexts	counterfactual_D	L2H2	site_attention_difference	-0.3400799044253078	0.005350355334085016	1024	NA	NA
+attention	swap_contexts	counterfactual_D	L2H2	difference_change_from_intact	-2.103722072659741e-05	4.7429581834387835e-05	1024	NA	NA
+attention	swap_contexts	counterfactual_D	L2H3	earlier_A_successor_site	0.0023496179664928892	0.00012939135548218955	1024	NA	NA
+attention	swap_contexts	counterfactual_D	L2H3	earlier_D_successor_site	0.36291641820538134	0.0045262591284070276	1024	NA	NA
+attention	swap_contexts	counterfactual_D	L2H3	site_attention_difference	-0.36056680023888843	0.004543522124140318	1024	NA	NA
+attention	swap_contexts	counterfactual_D	L2H3	difference_change_from_intact	8.335439768986945e-05	5.7933186428982694e-05	1024	NA	NA
+attention	swap_contexts	counterfactual_D	L2H4	earlier_A_successor_site	0.002407552739353843	0.00014478740096531106	1024	NA	NA
+attention	swap_contexts	counterfactual_D	L2H4	earlier_D_successor_site	0.29758015734410215	0.004990156072463761	1024	NA	NA
+attention	swap_contexts	counterfactual_D	L2H4	site_attention_difference	-0.29517260460474826	0.0050160543115805355	1024	NA	NA
+attention	swap_contexts	counterfactual_D	L2H4	difference_change_from_intact	8.245965064500255e-05	5.266978066441041e-05	1024	NA	NA
+attention	swap_contexts	clean_E	L2H1	earlier_A_successor_site	0.0045211618227309625	0.0001879290654611107	1024	NA	NA
+attention	swap_contexts	clean_E	L2H1	earlier_D_successor_site	0.004470017276024578	0.00018483620063116803	1024	NA	NA
+attention	swap_contexts	clean_E	L2H1	site_attention_difference	5.114454670638483e-05	0.000259472243481986	1024	NA	NA
+attention	swap_contexts	clean_E	L2H1	difference_change_from_intact	-5.768153861408326e-08	2.187889031373021e-06	1024	NA	NA
+attention	swap_contexts	clean_E	L2H2	earlier_A_successor_site	0.003227670189400503	0.00017415182873406986	1024	NA	NA
+attention	swap_contexts	clean_E	L2H2	earlier_D_successor_site	0.003303476741054259	0.00017374360940511615	1024	NA	NA
+attention	swap_contexts	clean_E	L2H2	site_attention_difference	-7.58065516537563e-05	0.00024226126773807497	1024	NA	NA
+attention	swap_contexts	clean_E	L2H2	difference_change_from_intact	-7.995040936509309e-07	1.4653458536145357e-06	1024	NA	NA
+attention	swap_contexts	clean_E	L2H3	earlier_A_successor_site	0.0036736098921425478	0.00018486932325945037	1024	NA	NA
+attention	swap_contexts	clean_E	L2H3	earlier_D_successor_site	0.003485126478531617	0.00016849359851741513	1024	NA	NA
+attention	swap_contexts	clean_E	L2H3	site_attention_difference	0.00018848341361093075	0.00024588810035406315	1024	NA	NA
+attention	swap_contexts	clean_E	L2H3	difference_change_from_intact	-1.8986427708953543e-06	1.632899432531521e-06	1024	NA	NA
+attention	swap_contexts	clean_E	L2H4	earlier_A_successor_site	0.0031414496015697685	0.00018444083598683048	1024	NA	NA
+attention	swap_contexts	clean_E	L2H4	earlier_D_successor_site	0.0035239287432388827	0.00019424324609469392	1024	NA	NA
+attention	swap_contexts	clean_E	L2H4	site_attention_difference	-0.0003824791416691143	0.00027301369517283164	1024	NA	NA
+attention	swap_contexts	clean_E	L2H4	difference_change_from_intact	5.530782343902629e-07	2.297431007981769e-06	1024	NA	NA
+attention	swap_contexts	counterfactual_E	L2H1	earlier_A_successor_site	0.004506577744106188	0.00019508465716076978	1024	NA	NA
+attention	swap_contexts	counterfactual_E	L2H1	earlier_D_successor_site	0.004489223944325388	0.00018548495301313092	1024	NA	NA
+attention	swap_contexts	counterfactual_E	L2H1	site_attention_difference	1.7353799780800243e-05	0.0002647626453739934	1024	NA	NA
+attention	swap_contexts	counterfactual_E	L2H1	difference_change_from_intact	4.0020140503356623e-07	2.1048973407350493e-06	1024	NA	NA
+attention	swap_contexts	counterfactual_E	L2H2	earlier_A_successor_site	0.003056302952101996	0.00016183650673458057	1024	NA	NA
+attention	swap_contexts	counterfactual_E	L2H2	earlier_D_successor_site	0.0034961247143650174	0.00018074778113770935	1024	NA	NA
+attention	swap_contexts	counterfactual_E	L2H2	site_attention_difference	-0.0004398217622630212	0.0002393549970938482	1024	NA	NA
+attention	swap_contexts	counterfactual_E	L2H2	difference_change_from_intact	-9.859053484679134e-07	1.8875037169912588e-06	1024	NA	NA
+attention	swap_contexts	counterfactual_E	L2H3	earlier_A_successor_site	0.003633592998289269	0.00018659349221045307	1024	NA	NA
+attention	swap_contexts	counterfactual_E	L2H3	earlier_D_successor_site	0.0036084288216836837	0.0001728465131652368	1024	NA	NA
+attention	swap_contexts	counterfactual_E	L2H3	site_attention_difference	2.516417660558559e-05	0.0002520390738316589	1024	NA	NA
+attention	swap_contexts	counterfactual_E	L2H3	difference_change_from_intact	-1.760342405159259e-06	1.7001046235640091e-06	1024	NA	NA
+attention	swap_contexts	counterfactual_E	L2H4	earlier_A_successor_site	0.003364505388322795	0.0001893139560618744	1024	NA	NA
+attention	swap_contexts	counterfactual_E	L2H4	earlier_D_successor_site	0.0031115223343176177	0.0001807563248052218	1024	NA	NA
+attention	swap_contexts	counterfactual_E	L2H4	site_attention_difference	0.00025298305400517774	0.0002650095451327167	1024	NA	NA
+attention	swap_contexts	counterfactual_E	L2H4	difference_change_from_intact	1.9569010390710948e-07	2.178239178889033e-06	1024	NA	NA
+attention	sham	clean_A	L2H1	earlier_A_successor_site	0.2804748799894364	0.00414457702413227	1024	NA	NA
+attention	sham	clean_A	L2H1	earlier_D_successor_site	0.003155701454269462	0.0001438998229167941	1024	NA	NA
+attention	sham	clean_A	L2H1	site_attention_difference	0.2773191785351669	0.004169087127422008	1024	NA	NA
+attention	sham	clean_A	L2H1	difference_change_from_intact	0.0	0.0	1024	NA	NA
+attention	sham	clean_A	L2H2	earlier_A_successor_site	0.34218963487005805	0.005350821960933181	1024	NA	NA
+attention	sham	clean_A	L2H2	earlier_D_successor_site	0.002031039913728677	0.00011306741250596569	1024	NA	NA
+attention	sham	clean_A	L2H2	site_attention_difference	0.3401585949563293	0.0053665922409039495	1024	NA	NA
+attention	sham	clean_A	L2H2	difference_change_from_intact	0.0	0.0	1024	NA	NA
+attention	sham	clean_A	L2H3	earlier_A_successor_site	0.36419099582499925	0.004512633751149907	1024	NA	NA
+attention	sham	clean_A	L2H3	earlier_D_successor_site	0.0022792371827727925	0.00012063371888181586	1024	NA	NA
+attention	sham	clean_A	L2H3	site_attention_difference	0.3619117586422265	0.004528716433602097	1024	NA	NA
+attention	sham	clean_A	L2H3	difference_change_from_intact	0.0	0.0	1024	NA	NA
+attention	sham	clean_A	L2H4	earlier_A_successor_site	0.29703941034771747	0.004990538410340337	1024	NA	NA
+attention	sham	clean_A	L2H4	earlier_D_successor_site	0.0024518077049666444	0.00015109594745518317	1024	NA	NA
+attention	sham	clean_A	L2H4	site_attention_difference	0.29458760264275086	0.0050160664684616085	1024	NA	NA
+attention	sham	clean_A	L2H4	difference_change_from_intact	0.0	0.0	1024	NA	NA
+attention	sham	counterfactual_A	L2H1	earlier_A_successor_site	0.2844942053049111	0.0041522874205948525	1024	NA	NA
+attention	sham	counterfactual_A	L2H1	earlier_D_successor_site	0.002982652356367656	0.00013491493047279403	1024	NA	NA
+attention	sham	counterfactual_A	L2H1	site_attention_difference	0.28151155294854346	0.004172792696049287	1024	NA	NA
+attention	sham	counterfactual_A	L2H1	difference_change_from_intact	0.0	0.0	1024	NA	NA
+attention	sham	counterfactual_A	L2H2	earlier_A_successor_site	0.32952677137334024	0.005261633717396327	1024	NA	NA
+attention	sham	counterfactual_A	L2H2	earlier_D_successor_site	0.002410054989488022	0.0001347060901223036	1024	NA	NA
+attention	sham	counterfactual_A	L2H2	site_attention_difference	0.3271167163838523	0.005283868253084607	1024	NA	NA
+attention	sham	counterfactual_A	L2H2	difference_change_from_intact	0.0	0.0	1024	NA	NA
+attention	sham	counterfactual_A	L2H3	earlier_A_successor_site	0.3576738253167503	0.0045471513785567035	1024	NA	NA
+attention	sham	counterfactual_A	L2H3	earlier_D_successor_site	0.0023608927218747447	0.00012504410543463226	1024	NA	NA
+attention	sham	counterfactual_A	L2H3	site_attention_difference	0.3553129325948756	0.0045649483764988235	1024	NA	NA
+attention	sham	counterfactual_A	L2H3	difference_change_from_intact	0.0	0.0	1024	NA	NA
+attention	sham	counterfactual_A	L2H4	earlier_A_successor_site	0.30784273905436893	0.005178385241234139	1024	NA	NA
+attention	sham	counterfactual_A	L2H4	earlier_D_successor_site	0.002199488793942479	0.00013138963144991572	1024	NA	NA
+attention	sham	counterfactual_A	L2H4	site_attention_difference	0.3056432502604265	0.005199261891683974	1024	NA	NA
+attention	sham	counterfactual_A	L2H4	difference_change_from_intact	0.0	0.0	1024	NA	NA
+attention	sham	clean_D	L2H1	earlier_A_successor_site	0.003059380813949135	0.00013724423638864657	1024	NA	NA
+attention	sham	clean_D	L2H1	earlier_D_successor_site	0.28627780236034295	0.004159474985502116	1024	NA	NA
+attention	sham	clean_D	L2H1	site_attention_difference	-0.28321842154639376	0.004179496317178901	1024	NA	NA
+attention	sham	clean_D	L2H1	difference_change_from_intact	0.0	0.0	1024	NA	NA
+attention	sham	clean_D	L2H2	earlier_A_successor_site	0.0024652359408578934	0.00014149807303018308	1024	NA	NA
+attention	sham	clean_D	L2H2	earlier_D_successor_site	0.3291468530058138	0.005287197403755651	1024	NA	NA
+attention	sham	clean_D	L2H2	site_attention_difference	-0.3266816170649559	0.005310942934062452	1024	NA	NA
+attention	sham	clean_D	L2H2	difference_change_from_intact	0.0	0.0	1024	NA	NA
+attention	sham	clean_D	L2H3	earlier_A_successor_site	0.0024074129465966165	0.00012707461391754584	1024	NA	NA
+attention	sham	clean_D	L2H3	earlier_D_successor_site	0.3558493111117092	0.00449743472847263	1024	NA	NA
+attention	sham	clean_D	L2H3	site_attention_difference	-0.3534418981651126	0.004514841917890575	1024	NA	NA
+attention	sham	clean_D	L2H3	difference_change_from_intact	0.0	0.0	1024	NA	NA
+attention	sham	clean_D	L2H4	earlier_A_successor_site	0.0021997745822001967	0.0001299415656024079	1024	NA	NA
+attention	sham	clean_D	L2H4	earlier_D_successor_site	0.3085927105678913	0.005201830970374672	1024	NA	NA
+attention	sham	clean_D	L2H4	site_attention_difference	-0.30639293598569106	0.005225229181994313	1024	NA	NA
+attention	sham	clean_D	L2H4	difference_change_from_intact	0.0	0.0	1024	NA	NA
+attention	sham	counterfactual_D	L2H1	earlier_A_successor_site	0.003255848998182359	0.00014862742604440895	1024	NA	NA
+attention	sham	counterfactual_D	L2H1	earlier_D_successor_site	0.2823161763372205	0.004104483794576252	1024	NA	NA
+attention	sham	counterfactual_D	L2H1	site_attention_difference	-0.2790603273390382	0.004131189105973735	1024	NA	NA
+attention	sham	counterfactual_D	L2H1	difference_change_from_intact	0.0	0.0	1024	NA	NA
+attention	sham	counterfactual_D	L2H2	earlier_A_successor_site	0.002043492267590193	0.00011568181627301566	1024	NA	NA
+attention	sham	counterfactual_D	L2H2	earlier_D_successor_site	0.3421023594721714	0.005333992424275082	1024	NA	NA
+attention	sham	counterfactual_D	L2H2	site_attention_difference	-0.34005886720458117	0.005349666695531251	1024	NA	NA
+attention	sham	counterfactual_D	L2H2	difference_change_from_intact	0.0	0.0	1024	NA	NA
+attention	sham	counterfactual_D	L2H3	earlier_A_successor_site	0.00235042137990689	0.0001294640980082753	1024	NA	NA
+attention	sham	counterfactual_D	L2H3	earlier_D_successor_site	0.3630005760164852	0.004527748513276933	1024	NA	NA
+attention	sham	counterfactual_D	L2H3	site_attention_difference	-0.36065015463657835	0.004544995518476881	1024	NA	NA
+attention	sham	counterfactual_D	L2H3	difference_change_from_intact	0.0	0.0	1024	NA	NA
+attention	sham	counterfactual_D	L2H4	earlier_A_successor_site	0.0024098354579875055	0.00014500534709032057	1024	NA	NA
+attention	sham	counterfactual_D	L2H4	earlier_D_successor_site	0.2976648997133807	0.004992473316797362	1024	NA	NA
+attention	sham	counterfactual_D	L2H4	site_attention_difference	-0.2952550642553933	0.005018319200274564	1024	NA	NA
+attention	sham	counterfactual_D	L2H4	difference_change_from_intact	0.0	0.0	1024	NA	NA
+attention	sham	clean_E	L2H1	earlier_A_successor_site	0.0045232282232897545	0.00018800253142867455	1024	NA	NA
+attention	sham	clean_E	L2H1	earlier_D_successor_site	0.004472025995044755	0.00018487786858548624	1024	NA	NA
+attention	sham	clean_E	L2H1	site_attention_difference	5.1202228244999034e-05	0.0002596729860884614	1024	NA	NA
+attention	sham	clean_E	L2H1	difference_change_from_intact	0.0	0.0	1024	NA	NA
+attention	sham	clean_E	L2H2	earlier_A_successor_site	0.00322697419855138	0.00017409842928815602	1024	NA	NA
+attention	sham	clean_E	L2H2	earlier_D_successor_site	0.003301981246111485	0.00017358146617684224	1024	NA	NA
+attention	sham	clean_E	L2H2	site_attention_difference	-7.500704756010539e-05	0.00024214778521457878	1024	NA	NA
+attention	sham	clean_E	L2H2	difference_change_from_intact	0.0	0.0	1024	NA	NA
+attention	sham	clean_E	L2H3	earlier_A_successor_site	0.003676904025047778	0.00018507669895943544	1024	NA	NA
+attention	sham	clean_E	L2H3	earlier_D_successor_site	0.0034865219686659524	0.000168698000505294	1024	NA	NA
+attention	sham	clean_E	L2H3	site_attention_difference	0.0001903820563818261	0.00024611488352391676	1024	NA	NA
+attention	sham	clean_E	L2H3	difference_change_from_intact	0.0	0.0	1024	NA	NA
+attention	sham	clean_E	L2H4	earlier_A_successor_site	0.0031437556943829607	0.0001846270371855335	1024	NA	NA
+attention	sham	clean_E	L2H4	earlier_D_successor_site	0.003526787914286465	0.0001945618956619648	1024	NA	NA
+attention	sham	clean_E	L2H4	site_attention_difference	-0.00038303221990350453	0.0002734045493400303	1024	NA	NA
+attention	sham	clean_E	L2H4	difference_change_from_intact	0.0	0.0	1024	NA	NA
+attention	sham	counterfactual_E	L2H1	earlier_A_successor_site	0.0045082015474531435	0.00019505278327547717	1024	NA	NA
+attention	sham	counterfactual_E	L2H1	earlier_D_successor_site	0.004491247949077377	0.00018554251584617146	1024	NA	NA
+attention	sham	counterfactual_E	L2H1	site_attention_difference	1.6953598375766713e-05	0.0002649013793348191	1024	NA	NA
+attention	sham	counterfactual_E	L2H1	difference_change_from_intact	0.0	0.0	1024	NA	NA
+attention	sham	counterfactual_E	L2H2	earlier_A_successor_site	0.0030555873656255075	0.00016176978548366507	1024	NA	NA
+attention	sham	counterfactual_E	L2H2	earlier_D_successor_site	0.0034944232225400606	0.00018053747462611986	1024	NA	NA
+attention	sham	counterfactual_E	L2H2	site_attention_difference	-0.00043883585691455325	0.00023918686998590508	1024	NA	NA
+attention	sham	counterfactual_E	L2H2	difference_change_from_intact	0.0	0.0	1024	NA	NA
+attention	sham	counterfactual_E	L2H3	earlier_A_successor_site	0.0036368373886291137	0.0001867690868032228	1024	NA	NA
+attention	sham	counterfactual_E	L2H3	earlier_D_successor_site	0.0036099128696183693	0.00017289142034392158	1024	NA	NA
+attention	sham	counterfactual_E	L2H3	site_attention_difference	2.6924519010744892e-05	0.00025213519039791907	1024	NA	NA
+attention	sham	counterfactual_E	L2H3	difference_change_from_intact	0.0	0.0	1024	NA	NA
+attention	sham	counterfactual_E	L2H4	earlier_A_successor_site	0.0033657038231348006	0.00018927975048851347	1024	NA	NA
+attention	sham	counterfactual_E	L2H4	earlier_D_successor_site	0.00311291645923353	0.00018075527302229387	1024	NA	NA
+attention	sham	counterfactual_E	L2H4	site_attention_difference	0.00025278736390127053	0.000265006114193266	1024	NA	NA
+attention	sham	counterfactual_E	L2H4	difference_change_from_intact	0.0	0.0	1024	NA	NA
+attention	swap_L1H1	clean_A	L2H1	earlier_A_successor_site	0.28100379041285084	0.004167950852456126	1024	NA	NA
+attention	swap_L1H1	clean_A	L2H1	earlier_D_successor_site	0.003171760274783087	0.00014705184856578924	1024	NA	NA
+attention	swap_L1H1	clean_A	L2H1	site_attention_difference	0.2778320301380678	0.004193531833353188	1024	NA	NA
+attention	swap_L1H1	clean_A	L2H1	difference_change_from_intact	0.0005128516029008717	0.00028744882442131755	1024	NA	NA
+attention	swap_L1H1	clean_A	L2H2	earlier_A_successor_site	0.3428211923865697	0.005355357028412334	1024	NA	NA
+attention	swap_L1H1	clean_A	L2H2	earlier_D_successor_site	0.001982003317754298	0.0001108374543509221	1024	NA	NA
+attention	swap_L1H1	clean_A	L2H2	site_attention_difference	0.3408391890688155	0.0053706696706966595	1024	NA	NA
+attention	swap_L1H1	clean_A	L2H2	difference_change_from_intact	0.0006805941124861423	0.0003058286829804479	1024	NA	NA
+attention	swap_L1H1	clean_A	L2H3	earlier_A_successor_site	0.36339044306054247	0.004523596042933986	1024	NA	NA
+attention	swap_L1H1	clean_A	L2H3	earlier_D_successor_site	0.002221149527420149	0.00011762166205372333	1024	NA	NA
+attention	swap_L1H1	clean_A	L2H3	site_attention_difference	0.3611692935331223	0.00453963720971922	1024	NA	NA
+attention	swap_L1H1	clean_A	L2H3	difference_change_from_intact	-0.0007424651091041937	0.00036951322019130656	1024	NA	NA
+attention	swap_L1H1	clean_A	L2H4	earlier_A_successor_site	0.29686246325807936	0.004938530769232497	1024	NA	NA
+attention	swap_L1H1	clean_A	L2H4	earlier_D_successor_site	0.002479968418316757	0.00015653829994358495	1024	NA	NA
+attention	swap_L1H1	clean_A	L2H4	site_attention_difference	0.29438249483976264	0.00496482512404731	1024	NA	NA
+attention	swap_L1H1	clean_A	L2H4	difference_change_from_intact	-0.00020510780298823325	0.00027269900248902266	1024	NA	NA
+attention	swap_L1H1	counterfactual_A	L2H1	earlier_A_successor_site	0.28507096253012815	0.004160240815288368	1024	NA	NA
+attention	swap_L1H1	counterfactual_A	L2H1	earlier_D_successor_site	0.003034788605025398	0.00014231316062646057	1024	NA	NA
+attention	swap_L1H1	counterfactual_A	L2H1	site_attention_difference	0.2820361739251028	0.004183248885261394	1024	NA	NA
+attention	swap_L1H1	counterfactual_A	L2H1	difference_change_from_intact	0.0005246209765593112	0.00029054024091705946	1024	NA	NA
+attention	swap_L1H1	counterfactual_A	L2H2	earlier_A_successor_site	0.3304097127958753	0.005262663839488164	1024	NA	NA
+attention	swap_L1H1	counterfactual_A	L2H2	earlier_D_successor_site	0.002358104453392949	0.0001297532803653294	1024	NA	NA
+attention	swap_L1H1	counterfactual_A	L2H2	site_attention_difference	0.32805160834248226	0.005283380616523415	1024	NA	NA
+attention	swap_L1H1	counterfactual_A	L2H2	difference_change_from_intact	0.0009348919586300399	0.00029236393956324797	1024	NA	NA
+attention	swap_L1H1	counterfactual_A	L2H3	earlier_A_successor_site	0.35686221266502993	0.004539155151891381	1024	NA	NA
+attention	swap_L1H1	counterfactual_A	L2H3	earlier_D_successor_site	0.002325386913901169	0.00012331067713734181	1024	NA	NA
+attention	swap_L1H1	counterfactual_A	L2H3	site_attention_difference	0.35453682575112877	0.0045557438029814904	1024	NA	NA
+attention	swap_L1H1	counterfactual_A	L2H3	difference_change_from_intact	-0.0007761068437468479	0.0003674552294743922	1024	NA	NA
+attention	swap_L1H1	counterfactual_A	L2H4	earlier_A_successor_site	0.3079377992196475	0.005154960623662646	1024	NA	NA
+attention	swap_L1H1	counterfactual_A	L2H4	earlier_D_successor_site	0.0022367272474452574	0.00013856934252598734	1024	NA	NA
+attention	swap_L1H1	counterfactual_A	L2H4	site_attention_difference	0.3057010719722022	0.005176429022122461	1024	NA	NA
+attention	swap_L1H1	counterfactual_A	L2H4	difference_change_from_intact	5.782171177575338e-05	0.0002685739598400581	1024	NA	NA
+attention	swap_L1H1	clean_D	L2H1	earlier_A_successor_site	0.0031550977065089233	0.000142470746129367	1024	NA	NA
+attention	swap_L1H1	clean_D	L2H1	earlier_D_successor_site	0.287384467147943	0.004169874317292669	1024	NA	NA
+attention	swap_L1H1	clean_D	L2H1	site_attention_difference	-0.28422936944143407	0.004191092760314385	1024	NA	NA
+attention	swap_L1H1	clean_D	L2H1	difference_change_from_intact	-0.001010947895040291	0.0002908112511802376	1024	NA	NA
+attention	swap_L1H1	clean_D	L2H2	earlier_A_successor_site	0.002498951682170235	0.00014251324226802566	1024	NA	NA
+attention	swap_L1H1	clean_D	L2H2	earlier_D_successor_site	0.3314467870819703	0.005306379366438859	1024	NA	NA
+attention	swap_L1H1	clean_D	L2H2	site_attention_difference	-0.3289478353998001	0.005328621315128715	1024	NA	NA
+attention	swap_L1H1	clean_D	L2H2	difference_change_from_intact	-0.002266218334844146	0.0003080244374139302	1024	NA	NA
+attention	swap_L1H1	clean_D	L2H3	earlier_A_successor_site	0.0024413281176368777	0.00012919731250305385	1024	NA	NA
+attention	swap_L1H1	clean_D	L2H3	earlier_D_successor_site	0.3567827136505968	0.0045234719388118575	1024	NA	NA
+attention	swap_L1H1	clean_D	L2H3	site_attention_difference	-0.35434138553295996	0.004540610958888289	1024	NA	NA
+attention	swap_L1H1	clean_D	L2H3	difference_change_from_intact	-0.0008994873678473329	0.00036825552986672374	1024	NA	NA
+attention	swap_L1H1	clean_D	L2H4	earlier_A_successor_site	0.0023403853606299312	0.00014324892480292546	1024	NA	NA
+attention	swap_L1H1	clean_D	L2H4	earlier_D_successor_site	0.3096493484506412	0.005172995318353377	1024	NA	NA
+attention	swap_L1H1	clean_D	L2H4	site_attention_difference	-0.30730896309001127	0.005198270941183479	1024	NA	NA
+attention	swap_L1H1	clean_D	L2H4	difference_change_from_intact	-0.0009160271043202114	0.00025970990761690904	1024	NA	NA
+attention	swap_L1H1	counterfactual_D	L2H1	earlier_A_successor_site	0.0033518566914694918	0.00015554465224436217	1024	NA	NA
+attention	swap_L1H1	counterfactual_D	L2H1	earlier_D_successor_site	0.28294162938189465	0.004123339493385067	1024	NA	NA
+attention	swap_L1H1	counterfactual_D	L2H1	site_attention_difference	-0.2795897726904252	0.004151965742259919	1024	NA	NA
+attention	swap_L1H1	counterfactual_D	L2H1	difference_change_from_intact	-0.0005294453513869919	0.00029864551991501127	1024	NA	NA
+attention	swap_L1H1	counterfactual_D	L2H2	earlier_A_successor_site	0.0020351804817869508	0.00011485929248195148	1024	NA	NA
+attention	swap_L1H1	counterfactual_D	L2H2	earlier_D_successor_site	0.3437442972534246	0.005343131624579903	1024	NA	NA
+attention	swap_L1H1	counterfactual_D	L2H2	site_attention_difference	-0.3417091167716376	0.005357746754408733	1024	NA	NA
+attention	swap_L1H1	counterfactual_D	L2H2	difference_change_from_intact	-0.001650249567056445	0.0002975618286761463	1024	NA	NA
+attention	swap_L1H1	counterfactual_D	L2H3	earlier_A_successor_site	0.0023391090928355576	0.00012660604040632306	1024	NA	NA
+attention	swap_L1H1	counterfactual_D	L2H3	earlier_D_successor_site	0.36298288122682465	0.004513608576989224	1024	NA	NA
+attention	swap_L1H1	counterfactual_D	L2H3	site_attention_difference	-0.3606437721339891	0.004530977637567051	1024	NA	NA
+attention	swap_L1H1	counterfactual_D	L2H3	difference_change_from_intact	6.382502589189702e-06	0.00036829772956380435	1024	NA	NA
+attention	swap_L1H1	counterfactual_D	L2H4	earlier_A_successor_site	0.0024854835417889277	0.00015442562701985634	1024	NA	NA
+attention	swap_L1H1	counterfactual_D	L2H4	earlier_D_successor_site	0.297969529512577	0.004971342408583226	1024	NA	NA
+attention	swap_L1H1	counterfactual_D	L2H4	site_attention_difference	-0.2954840459707881	0.004998575956574874	1024	NA	NA
+attention	swap_L1H1	counterfactual_D	L2H4	difference_change_from_intact	-0.00022898171539481694	0.00027597381320849907	1024	NA	NA
+attention	swap_L1H1	clean_E	L2H1	earlier_A_successor_site	0.00461761211106574	0.00019723321241285415	1024	NA	NA
+attention	swap_L1H1	clean_E	L2H1	earlier_D_successor_site	0.004562278673383215	0.00019822298911110684	1024	NA	NA
+attention	swap_L1H1	clean_E	L2H1	site_attention_difference	5.533343768252528e-05	0.00027911486928621296	1024	NA	NA
+attention	swap_L1H1	clean_E	L2H1	difference_change_from_intact	4.131209437526148e-06	8.478914780438157e-05	1024	NA	NA
+attention	swap_L1H1	clean_E	L2H2	earlier_A_successor_site	0.003320012033043756	0.00017986095362316262	1024	NA	NA
+attention	swap_L1H1	clean_E	L2H2	earlier_D_successor_site	0.003239190776829954	0.00016848218702740972	1024	NA	NA
+attention	swap_L1H1	clean_E	L2H2	site_attention_difference	8.082125621380209e-05	0.00024357001487994762	1024	NA	NA
+attention	swap_L1H1	clean_E	L2H2	difference_change_from_intact	0.00015582830377390753	6.331925469867367e-05	1024	NA	NA
+attention	swap_L1H1	clean_E	L2H3	earlier_A_successor_site	0.003675730033813855	0.00018190910436885387	1024	NA	NA
+attention	swap_L1H1	clean_E	L2H3	earlier_D_successor_site	0.003398076031489497	0.00016180698171676231	1024	NA	NA
+attention	swap_L1H1	clean_E	L2H3	site_attention_difference	0.0002776540023243574	0.00023930051424581077	1024	NA	NA
+attention	swap_L1H1	clean_E	L2H3	difference_change_from_intact	8.727194594253135e-05	6.143749998997484e-05	1024	NA	NA
+attention	swap_L1H1	clean_E	L2H4	earlier_A_successor_site	0.0032718313800236443	0.0001979231286279673	1024	NA	NA
+attention	swap_L1H1	clean_E	L2H4	earlier_D_successor_site	0.0035265156721474462	0.00019957704577149924	1024	NA	NA
+attention	swap_L1H1	clean_E	L2H4	site_attention_difference	-0.00025468429212380234	0.0002881014102184577	1024	NA	NA
+attention	swap_L1H1	clean_E	L2H4	difference_change_from_intact	0.00012834792777970217	8.038735195747337e-05	1024	NA	NA
+attention	swap_L1H1	counterfactual_E	L2H1	earlier_A_successor_site	0.004562106818126528	0.0001996225287559176	1024	NA	NA
+attention	swap_L1H1	counterfactual_E	L2H1	earlier_D_successor_site	0.004488178133173643	0.00018854859971222497	1024	NA	NA
+attention	swap_L1H1	counterfactual_E	L2H1	site_attention_difference	7.392868495288548e-05	0.00027126720768340157	1024	NA	NA
+attention	swap_L1H1	counterfactual_E	L2H1	difference_change_from_intact	5.697508657711877e-05	7.530906404092756e-05	1024	NA	NA
+attention	swap_L1H1	counterfactual_E	L2H2	earlier_A_successor_site	0.0030572944750073446	0.0001612181148266777	1024	NA	NA
+attention	swap_L1H1	counterfactual_E	L2H2	earlier_D_successor_site	0.003433931214863636	0.00017869584749385248	1024	NA	NA
+attention	swap_L1H1	counterfactual_E	L2H2	site_attention_difference	-0.000376636739856291	0.00023726626434076158	1024	NA	NA
+attention	swap_L1H1	counterfactual_E	L2H2	difference_change_from_intact	6.219911705826219e-05	6.030650765433684e-05	1024	NA	NA
+attention	swap_L1H1	counterfactual_E	L2H3	earlier_A_successor_site	0.0036226040428136643	0.00018540431800881155	1024	NA	NA
+attention	swap_L1H1	counterfactual_E	L2H3	earlier_D_successor_site	0.0035160498612335127	0.00016822268342766056	1024	NA	NA
+attention	swap_L1H1	counterfactual_E	L2H3	site_attention_difference	0.00010655418158015198	0.00024836024542203284	1024	NA	NA
+attention	swap_L1H1	counterfactual_E	L2H3	difference_change_from_intact	7.962966256940714e-05	6.0404508323097115e-05	1024	NA	NA
+attention	swap_L1H1	counterfactual_E	L2H4	earlier_A_successor_site	0.003400712841466226	0.0001930087544449277	1024	NA	NA
+attention	swap_L1H1	counterfactual_E	L2H4	earlier_D_successor_site	0.0030528577300353733	0.00017370284062252612	1024	NA	NA
+attention	swap_L1H1	counterfactual_E	L2H4	site_attention_difference	0.0003478551114308531	0.0002627709169761807	1024	NA	NA
+attention	swap_L1H1	counterfactual_E	L2H4	difference_change_from_intact	9.506774752958251e-05	7.092485552074012e-05	1024	NA	NA
+attention	swap_L1H3	clean_A	L2H1	earlier_A_successor_site	0.2828308993682871	0.004155887552469468	1024	NA	NA
+attention	swap_L1H3	clean_A	L2H1	earlier_D_successor_site	0.0032979434122480836	0.0001548475444637593	1024	NA	NA
+attention	swap_L1H3	clean_A	L2H1	site_attention_difference	0.27953295595603905	0.0041812182988319214	1024	NA	NA
+attention	swap_L1H3	clean_A	L2H1	difference_change_from_intact	0.002213777420872126	0.00022732008144612744	1024	NA	NA
+attention	swap_L1H3	clean_A	L2H2	earlier_A_successor_site	0.34515805738513095	0.005302829668510848	1024	NA	NA
+attention	swap_L1H3	clean_A	L2H2	earlier_D_successor_site	0.0021582396009659664	0.0001247301495767769	1024	NA	NA
+attention	swap_L1H3	clean_A	L2H2	site_attention_difference	0.342999817784165	0.005320193876097032	1024	NA	NA
+attention	swap_L1H3	clean_A	L2H2	difference_change_from_intact	0.0028412228278356572	0.00032440254330239277	1024	NA	NA
+attention	swap_L1H3	clean_A	L2H3	earlier_A_successor_site	0.36757097587930176	0.004538537355786747	1024	NA	NA
+attention	swap_L1H3	clean_A	L2H3	earlier_D_successor_site	0.002307850713557005	0.00012088860854475667	1024	NA	NA
+attention	swap_L1H3	clean_A	L2H3	site_attention_difference	0.3652631251657448	0.004554069611834267	1024	NA	NA
+attention	swap_L1H3	clean_A	L2H3	difference_change_from_intact	0.003351366523518246	0.00034753073737462753	1024	NA	NA
+attention	swap_L1H3	clean_A	L2H4	earlier_A_successor_site	0.30017969461278987	0.0050266111488057345	1024	NA	NA
+attention	swap_L1H3	clean_A	L2H4	earlier_D_successor_site	0.0025209444512215295	0.00015725257096760358	1024	NA	NA
+attention	swap_L1H3	clean_A	L2H4	site_attention_difference	0.2976587501615683	0.005053253003018761	1024	NA	NA
+attention	swap_L1H3	clean_A	L2H4	difference_change_from_intact	0.0030711475188175017	0.00026488789682638263	1024	NA	NA
+attention	swap_L1H3	counterfactual_A	L2H1	earlier_A_successor_site	0.28666770493615795	0.004153698672384714	1024	NA	NA
+attention	swap_L1H3	counterfactual_A	L2H1	earlier_D_successor_site	0.0030580970834056444	0.00014104113745253916	1024	NA	NA
+attention	swap_L1H3	counterfactual_A	L2H1	site_attention_difference	0.28360960785275235	0.004175073318340612	1024	NA	NA
+attention	swap_L1H3	counterfactual_A	L2H1	difference_change_from_intact	0.0020980549042088816	0.00022868196260478942	1024	NA	NA
+attention	swap_L1H3	counterfactual_A	L2H2	earlier_A_successor_site	0.33217810519946545	0.005218250949014816	1024	NA	NA
+attention	swap_L1H3	counterfactual_A	L2H2	earlier_D_successor_site	0.0025012827107887352	0.0001424626648294947	1024	NA	NA
+attention	swap_L1H3	counterfactual_A	L2H2	site_attention_difference	0.3296768224886767	0.005241077390733066	1024	NA	NA
+attention	swap_L1H3	counterfactual_A	L2H2	difference_change_from_intact	0.002560106104824496	0.0003370101052395487	1024	NA	NA
+attention	swap_L1H3	counterfactual_A	L2H3	earlier_A_successor_site	0.36051768487504704	0.0046314914822037905	1024	NA	NA
+attention	swap_L1H3	counterfactual_A	L2H3	earlier_D_successor_site	0.0023791673978572738	0.0001237014603204762	1024	NA	NA
+attention	swap_L1H3	counterfactual_A	L2H3	site_attention_difference	0.3581385174771897	0.004647557100172805	1024	NA	NA
+attention	swap_L1H3	counterfactual_A	L2H3	difference_change_from_intact	0.0028255848823141656	0.0003581001825801936	1024	NA	NA
+attention	swap_L1H3	counterfactual_A	L2H4	earlier_A_successor_site	0.31063872488385497	0.005198721127646315	1024	NA	NA
+attention	swap_L1H3	counterfactual_A	L2H4	earlier_D_successor_site	0.0022475716284443767	0.00013583389044599884	1024	NA	NA
+attention	swap_L1H3	counterfactual_A	L2H4	site_attention_difference	0.3083911532554106	0.005220762185164359	1024	NA	NA
+attention	swap_L1H3	counterfactual_A	L2H4	difference_change_from_intact	0.0027479029949841324	0.0002828423132829282	1024	NA	NA
+attention	swap_L1H3	clean_D	L2H1	earlier_A_successor_site	0.003117157589397999	0.00014516883755542575	1024	NA	NA
+attention	swap_L1H3	clean_D	L2H1	earlier_D_successor_site	0.2881551393110189	0.004175713101866311	1024	NA	NA
+attention	swap_L1H3	clean_D	L2H1	site_attention_difference	-0.28503798172162087	0.004197675614782968	1024	NA	NA
+attention	swap_L1H3	clean_D	L2H1	difference_change_from_intact	-0.0018195601752270703	0.00021479931289830566	1024	NA	NA
+attention	swap_L1H3	clean_D	L2H2	earlier_A_successor_site	0.0025461871512444463	0.00014908926419543656	1024	NA	NA
+attention	swap_L1H3	clean_D	L2H2	earlier_D_successor_site	0.3309373779955619	0.005236135195216637	1024	NA	NA
+attention	swap_L1H3	clean_D	L2H2	site_attention_difference	-0.3283911908443174	0.005260191026398511	1024	NA	NA
+attention	swap_L1H3	clean_D	L2H2	difference_change_from_intact	-0.001709573779361465	0.00029289990448103716	1024	NA	NA
+attention	swap_L1H3	clean_D	L2H3	earlier_A_successor_site	0.00239579625599224	0.00012600411391234904	1024	NA	NA
+attention	swap_L1H3	clean_D	L2H3	earlier_D_successor_site	0.357605121378356	0.004545613834812253	1024	NA	NA
+attention	swap_L1H3	clean_D	L2H3	site_attention_difference	-0.3552093251223637	0.004562139355744353	1024	NA	NA
+attention	swap_L1H3	clean_D	L2H3	difference_change_from_intact	-0.0017674269572510938	0.00030944818568910253	1024	NA	NA
+attention	swap_L1H3	clean_D	L2H4	earlier_A_successor_site	0.0022010687179580325	0.00012918576501811673	1024	NA	NA
+attention	swap_L1H3	clean_D	L2H4	earlier_D_successor_site	0.31078959146907276	0.005206840937095642	1024	NA	NA
+attention	swap_L1H3	clean_D	L2H4	site_attention_difference	-0.3085885227511147	0.005229629030826216	1024	NA	NA
+attention	swap_L1H3	clean_D	L2H4	difference_change_from_intact	-0.0021955867654236735	0.00023214755358819315	1024	NA	NA
+attention	swap_L1H3	counterfactual_D	L2H1	earlier_A_successor_site	0.003323248948337121	0.00015784932510377276	1024	NA	NA
+attention	swap_L1H3	counterfactual_D	L2H1	earlier_D_successor_site	0.2841242482522288	0.004099709501947346	1024	NA	NA
+attention	swap_L1H3	counterfactual_D	L2H1	site_attention_difference	-0.28080099930389174	0.004127795438685289	1024	NA	NA
+attention	swap_L1H3	counterfactual_D	L2H1	difference_change_from_intact	-0.0017406719648535743	0.00020467091299721811	1024	NA	NA
+attention	swap_L1H3	counterfactual_D	L2H2	earlier_A_successor_site	0.0021099118823840668	0.00012004327338628978	1024	NA	NA
+attention	swap_L1H3	counterfactual_D	L2H2	earlier_D_successor_site	0.3443888998500097	0.005288779563851566	1024	NA	NA
+attention	swap_L1H3	counterfactual_D	L2H2	site_attention_difference	-0.3422789879676256	0.0053052130611884385	1024	NA	NA
+attention	swap_L1H3	counterfactual_D	L2H2	difference_change_from_intact	-0.0022201207630444795	0.0003067713090572078	1024	NA	NA
+attention	swap_L1H3	counterfactual_D	L2H3	earlier_A_successor_site	0.0023126459011269585	0.00012544422483722216	1024	NA	NA
+attention	swap_L1H3	counterfactual_D	L2H3	earlier_D_successor_site	0.36546738116804667	0.004585389772353104	1024	NA	NA
+attention	swap_L1H3	counterfactual_D	L2H3	site_attention_difference	-0.36315473526691966	0.0046029049455451705	1024	NA	NA
+attention	swap_L1H3	counterfactual_D	L2H3	difference_change_from_intact	-0.002504580630341348	0.0003206238882520545	1024	NA	NA
+attention	swap_L1H3	counterfactual_D	L2H4	earlier_A_successor_site	0.002452479911343365	0.00014906218888458583	1024	NA	NA
+attention	swap_L1H3	counterfactual_D	L2H4	earlier_D_successor_site	0.3001545108792658	0.00501162906583562	1024	NA	NA
+attention	swap_L1H3	counterfactual_D	L2H4	site_attention_difference	-0.29770203096792247	0.005037793854847735	1024	NA	NA
+attention	swap_L1H3	counterfactual_D	L2H4	difference_change_from_intact	-0.0024469667125292132	0.0002435982110365082	1024	NA	NA
+attention	swap_L1H3	clean_E	L2H1	earlier_A_successor_site	0.004561179201137321	0.00019081037066039227	1024	NA	NA
+attention	swap_L1H3	clean_E	L2H1	earlier_D_successor_site	0.004624804587740068	0.0001951523163787498	1024	NA	NA
+attention	swap_L1H3	clean_E	L2H1	site_attention_difference	-6.362538660274739e-05	0.0002703728371849032	1024	NA	NA
+attention	swap_L1H3	clean_E	L2H1	difference_change_from_intact	-0.00011482761484774652	7.775468983324626e-05	1024	NA	NA
+attention	swap_L1H3	clean_E	L2H2	earlier_A_successor_site	0.003308075862219596	0.00018091448092683613	1024	NA	NA
+attention	swap_L1H3	clean_E	L2H2	earlier_D_successor_site	0.0034240285743530633	0.0001830804828895183	1024	NA	NA
+attention	swap_L1H3	clean_E	L2H2	site_attention_difference	-0.00011595271213346723	0.00025619860336103845	1024	NA	NA
+attention	swap_L1H3	clean_E	L2H2	difference_change_from_intact	-4.094566457336179e-05	6.777716930466347e-05	1024	NA	NA
+attention	swap_L1H3	clean_E	L2H3	earlier_A_successor_site	0.0036520541072765965	0.00018139411643911855	1024	NA	NA
+attention	swap_L1H3	clean_E	L2H3	earlier_D_successor_site	0.003534849232534493	0.00016877423030586537	1024	NA	NA
+attention	swap_L1H3	clean_E	L2H3	site_attention_difference	0.00011720487474210343	0.00024315801006373648	1024	NA	NA
+attention	swap_L1H3	clean_E	L2H3	difference_change_from_intact	-7.317718163972277e-05	6.52403856862878e-05	1024	NA	NA
+attention	swap_L1H3	clean_E	L2H4	earlier_A_successor_site	0.003178835830303154	0.00018874814206972865	1024	NA	NA
+attention	swap_L1H3	clean_E	L2H4	earlier_D_successor_site	0.0036310638489427042	0.00020144043097112326	1024	NA	NA
+attention	swap_L1H3	clean_E	L2H4	site_attention_difference	-0.0004522280186395503	0.00028198977325816655	1024	NA	NA
+attention	swap_L1H3	clean_E	L2H4	difference_change_from_intact	-6.919579873604572e-05	6.873284410000046e-05	1024	NA	NA
+attention	swap_L1H3	counterfactual_E	L2H1	earlier_A_successor_site	0.004603650425770018	0.00019951569583790413	1024	NA	NA
+attention	swap_L1H3	counterfactual_E	L2H1	earlier_D_successor_site	0.004603927187312186	0.00019439335182786776	1024	NA	NA
+attention	swap_L1H3	counterfactual_E	L2H1	site_attention_difference	-2.76761542168148e-07	0.00027605859620218433	1024	NA	NA
+attention	swap_L1H3	counterfactual_E	L2H1	difference_change_from_intact	-1.723035991793489e-05	7.550116199239481e-05	1024	NA	NA
+attention	swap_L1H3	counterfactual_E	L2H2	earlier_A_successor_site	0.003167265096645869	0.00017096894834130172	1024	NA	NA
+attention	swap_L1H3	counterfactual_E	L2H2	earlier_D_successor_site	0.003574429898524992	0.00018402145753945636	1024	NA	NA
+attention	swap_L1H3	counterfactual_E	L2H2	site_attention_difference	-0.000407164801879123	0.00024938556231201046	1024	NA	NA
+attention	swap_L1H3	counterfactual_E	L2H2	difference_change_from_intact	3.167105503543037e-05	7.272914580758069e-05	1024	NA	NA
+attention	swap_L1H3	counterfactual_E	L2H3	earlier_A_successor_site	0.0036027183287333344	0.0001782919705332911	1024	NA	NA
+attention	swap_L1H3	counterfactual_E	L2H3	earlier_D_successor_site	0.0036267915416587533	0.00017249198528320855	1024	NA	NA
+attention	swap_L1H3	counterfactual_E	L2H3	site_attention_difference	-2.407321292541902e-05	0.00024406620327739123	1024	NA	NA
+attention	swap_L1H3	counterfactual_E	L2H3	difference_change_from_intact	-5.099773193616393e-05	7.154930967813278e-05	1024	NA	NA
+attention	swap_L1H3	counterfactual_E	L2H4	earlier_A_successor_site	0.0034623062844294224	0.00019758376622293336	1024	NA	NA
+attention	swap_L1H3	counterfactual_E	L2H4	earlier_D_successor_site	0.003202006296010696	0.00018989244782833376	1024	NA	NA
+attention	swap_L1H3	counterfactual_E	L2H4	site_attention_difference	0.0002602999884187264	0.00027877905439242047	1024	NA	NA
+attention	swap_L1H3	counterfactual_E	L2H4	difference_change_from_intact	7.512624517455879e-06	7.912581970979409e-05	1024	NA	NA
+attention	swap_L1H4	clean_A	L2H1	earlier_A_successor_site	0.28224781850448544	0.0041321519095260046	1024	NA	NA
+attention	swap_L1H4	clean_A	L2H1	earlier_D_successor_site	0.003231743760126122	0.0001468809855349834	1024	NA	NA
+attention	swap_L1H4	clean_A	L2H1	site_attention_difference	0.2790160747443593	0.004158604713791172	1024	NA	NA
+attention	swap_L1H4	clean_A	L2H1	difference_change_from_intact	0.0016968962091923833	0.0002655595620364672	1024	NA	NA
+attention	swap_L1H4	clean_A	L2H2	earlier_A_successor_site	0.3438721383640292	0.005363673816099644	1024	NA	NA
+attention	swap_L1H4	clean_A	L2H2	earlier_D_successor_site	0.0020700554288986686	0.00011387295140019766	1024	NA	NA
+attention	swap_L1H4	clean_A	L2H2	site_attention_difference	0.3418020829351305	0.005379665594484318	1024	NA	NA
+attention	swap_L1H4	clean_A	L2H2	difference_change_from_intact	0.0016434879788011908	0.0003095441982762096	1024	NA	NA
+attention	swap_L1H4	clean_A	L2H3	earlier_A_successor_site	0.36532434972111305	0.004526435217971327	1024	NA	NA
+attention	swap_L1H4	clean_A	L2H3	earlier_D_successor_site	0.0023934336386714303	0.00013147893117962988	1024	NA	NA
+attention	swap_L1H4	clean_A	L2H3	site_attention_difference	0.36293091608244166	0.004542586994121324	1024	NA	NA
+attention	swap_L1H4	clean_A	L2H3	difference_change_from_intact	0.0010191574402151219	0.0003333333206142146	1024	NA	NA
+attention	swap_L1H4	clean_A	L2H4	earlier_A_successor_site	0.29858246550941436	0.005011867758411975	1024	NA	NA
+attention	swap_L1H4	clean_A	L2H4	earlier_D_successor_site	0.002476945451714216	0.00015048643029275298	1024	NA	NA
+attention	swap_L1H4	clean_A	L2H4	site_attention_difference	0.29610552005770013	0.005036381267102459	1024	NA	NA
+attention	swap_L1H4	clean_A	L2H4	difference_change_from_intact	0.0015179174149492916	0.00025688732804042883	1024	NA	NA
+attention	swap_L1H4	counterfactual_A	L2H1	earlier_A_successor_site	0.2861247541030978	0.004153156908451416	1024	NA	NA
+attention	swap_L1H4	counterfactual_A	L2H1	earlier_D_successor_site	0.0029959006909061423	0.00013608085265333456	1024	NA	NA
+attention	swap_L1H4	counterfactual_A	L2H1	site_attention_difference	0.28312885341219163	0.004173289864473305	1024	NA	NA
+attention	swap_L1H4	counterfactual_A	L2H1	difference_change_from_intact	0.0016173004636482128	0.00023920692700086482	1024	NA	NA
+attention	swap_L1H4	counterfactual_A	L2H2	earlier_A_successor_site	0.3308625098773412	0.005275303913803094	1024	NA	NA
+attention	swap_L1H4	counterfactual_A	L2H2	earlier_D_successor_site	0.0024342191745755077	0.0001381912383785189	1024	NA	NA
+attention	swap_L1H4	counterfactual_A	L2H2	site_attention_difference	0.32842829070276575	0.005298841588897485	1024	NA	NA
+attention	swap_L1H4	counterfactual_A	L2H2	difference_change_from_intact	0.001311574318913466	0.00027697988235955354	1024	NA	NA
+attention	swap_L1H4	counterfactual_A	L2H3	earlier_A_successor_site	0.3585033413902765	0.004553466246834951	1024	NA	NA
+attention	swap_L1H4	counterfactual_A	L2H3	earlier_D_successor_site	0.002356400333646649	0.00012406608967793943	1024	NA	NA
+attention	swap_L1H4	counterfactual_A	L2H3	site_attention_difference	0.35614694105662986	0.004570949709247342	1024	NA	NA
+attention	swap_L1H4	counterfactual_A	L2H3	difference_change_from_intact	0.0008340084617542215	0.0003061034979090107	1024	NA	NA
+attention	swap_L1H4	counterfactual_A	L2H4	earlier_A_successor_site	0.3091765047827171	0.005189468171268414	1024	NA	NA
+attention	swap_L1H4	counterfactual_A	L2H4	earlier_D_successor_site	0.002220128554741455	0.00013449957764670995	1024	NA	NA
+attention	swap_L1H4	counterfactual_A	L2H4	site_attention_difference	0.30695637622797556	0.005211004654621032	1024	NA	NA
+attention	swap_L1H4	counterfactual_A	L2H4	difference_change_from_intact	0.0013131259675491238	0.00023305022309135298	1024	NA	NA
+attention	swap_L1H4	clean_D	L2H1	earlier_A_successor_site	0.0030950882816397655	0.00014033409456279056	1024	NA	NA
+attention	swap_L1H4	clean_D	L2H1	earlier_D_successor_site	0.2877408673811254	0.004172669292030199	1024	NA	NA
+attention	swap_L1H4	clean_D	L2H1	site_attention_difference	-0.2846457790994857	0.004192298758425924	1024	NA	NA
+attention	swap_L1H4	clean_D	L2H1	difference_change_from_intact	-0.0014273575530919023	0.00023285197198796064	1024	NA	NA
+attention	swap_L1H4	clean_D	L2H2	earlier_A_successor_site	0.002495810025444479	0.00014586251434213648	1024	NA	NA
+attention	swap_L1H4	clean_D	L2H2	earlier_D_successor_site	0.3300039854950546	0.005291969645858614	1024	NA	NA
+attention	swap_L1H4	clean_D	L2H2	site_attention_difference	-0.3275081754696101	0.005316709670480334	1024	NA	NA
+attention	swap_L1H4	clean_D	L2H2	difference_change_from_intact	-0.0008265584046541933	0.00026838081052081407	1024	NA	NA
+attention	swap_L1H4	clean_D	L2H3	earlier_A_successor_site	0.002410693005635502	0.00012642322881474479	1024	NA	NA
+attention	swap_L1H4	clean_D	L2H3	earlier_D_successor_site	0.3564184587395095	0.004492631912807027	1024	NA	NA
+attention	swap_L1H4	clean_D	L2H3	site_attention_difference	-0.354007765733874	0.004511428517125973	1024	NA	NA
+attention	swap_L1H4	clean_D	L2H3	difference_change_from_intact	-0.0005658675687613792	0.0003004832588217624	1024	NA	NA
+attention	swap_L1H4	clean_D	L2H4	earlier_A_successor_site	0.002181249085602275	0.00012655871434726762	1024	NA	NA
+attention	swap_L1H4	clean_D	L2H4	earlier_D_successor_site	0.30944505202750977	0.005194238917924904	1024	NA	NA
+attention	swap_L1H4	clean_D	L2H4	site_attention_difference	-0.30726380294190747	0.0052172550998460954	1024	NA	NA
+attention	swap_L1H4	clean_D	L2H4	difference_change_from_intact	-0.0008708669562164466	0.00022290621196146822	1024	NA	NA
+attention	swap_L1H4	counterfactual_D	L2H1	earlier_A_successor_site	0.003299849310057058	0.00015022773286676967	1024	NA	NA
+attention	swap_L1H4	counterfactual_D	L2H1	earlier_D_successor_site	0.28374678676461473	0.004112354779557825	1024	NA	NA
+attention	swap_L1H4	counterfactual_D	L2H1	site_attention_difference	-0.2804469374545577	0.004138946146704975	1024	NA	NA
+attention	swap_L1H4	counterfactual_D	L2H1	difference_change_from_intact	-0.0013866101155195231	0.0002445620437688834	1024	NA	NA
+attention	swap_L1H4	counterfactual_D	L2H2	earlier_A_successor_site	0.0020982637311863536	0.000120134287563625	1024	NA	NA
+attention	swap_L1H4	counterfactual_D	L2H2	earlier_D_successor_site	0.34286953845764934	0.0053405267510481845	1024	NA	NA
+attention	swap_L1H4	counterfactual_D	L2H2	site_attention_difference	-0.34077127472646296	0.0053560733532041545	1024	NA	NA
+attention	swap_L1H4	counterfactual_D	L2H2	difference_change_from_intact	-0.0007124075218817923	0.00026013335660947514	1024	NA	NA
+attention	swap_L1H4	counterfactual_D	L2H3	earlier_A_successor_site	0.0024054909300244127	0.00013416678071950135	1024	NA	NA
+attention	swap_L1H4	counterfactual_D	L2H3	earlier_D_successor_site	0.36346443171923754	0.004526344795295426	1024	NA	NA
+attention	swap_L1H4	counterfactual_D	L2H3	site_attention_difference	-0.3610589407892131	0.004543476744108602	1024	NA	NA
+attention	swap_L1H4	counterfactual_D	L2H3	difference_change_from_intact	-0.0004087861526347696	0.0002927230551143092	1024	NA	NA
+attention	swap_L1H4	counterfactual_D	L2H4	earlier_A_successor_site	0.002515749988591152	0.0001542710894788126	1024	NA	NA
+attention	swap_L1H4	counterfactual_D	L2H4	earlier_D_successor_site	0.2984664363143796	0.0049889201507907315	1024	NA	NA
+attention	swap_L1H4	counterfactual_D	L2H4	site_attention_difference	-0.29595068632578847	0.005016316962217518	1024	NA	NA
+attention	swap_L1H4	counterfactual_D	L2H4	difference_change_from_intact	-0.0006956220703951589	0.00022101059631450765	1024	NA	NA
+attention	swap_L1H4	clean_E	L2H1	earlier_A_successor_site	0.004610081944802382	0.0001986712317807409	1024	NA	NA
+attention	swap_L1H4	clean_E	L2H1	earlier_D_successor_site	0.004578448138455482	0.0001877949268404236	1024	NA	NA
+attention	swap_L1H4	clean_E	L2H1	site_attention_difference	3.1633806346899435e-05	0.00027131924567382114	1024	NA	NA
+attention	swap_L1H4	clean_E	L2H1	difference_change_from_intact	-1.9568421898099606e-05	6.794930429891455e-05	1024	NA	NA
+attention	swap_L1H4	clean_E	L2H2	earlier_A_successor_site	0.0032137884356557922	0.0001720123602592331	1024	NA	NA
+attention	swap_L1H4	clean_E	L2H2	earlier_D_successor_site	0.0034138902092136878	0.00018060856575885325	1024	NA	NA
+attention	swap_L1H4	clean_E	L2H2	site_attention_difference	-0.00020010177355789515	0.0002464226527635781	1024	NA	NA
+attention	swap_L1H4	clean_E	L2H2	difference_change_from_intact	-0.00012509472599778985	6.604619434951734e-05	1024	NA	NA
+attention	swap_L1H4	clean_E	L2H3	earlier_A_successor_site	0.0036615451182519104	0.00018505372557610508	1024	NA	NA
+attention	swap_L1H4	clean_E	L2H3	earlier_D_successor_site	0.003629505626924316	0.00018058369255832365	1024	NA	NA
+attention	swap_L1H4	clean_E	L2H3	site_attention_difference	3.203949132759449e-05	0.0002560127399619218	1024	NA	NA
+attention	swap_L1H4	clean_E	L2H3	difference_change_from_intact	-0.00015834256505423155	6.70369999319139e-05	1024	NA	NA
+attention	swap_L1H4	clean_E	L2H4	earlier_A_successor_site	0.0031016591288390567	0.00018065808062758758	1024	NA	NA
+attention	swap_L1H4	clean_E	L2H4	earlier_D_successor_site	0.0036283150271559294	0.00019888791654404283	1024	NA	NA
+attention	swap_L1H4	clean_E	L2H4	site_attention_difference	-0.0005266558983168723	0.0002741564734032974	1024	NA	NA
+attention	swap_L1H4	clean_E	L2H4	difference_change_from_intact	-0.0001436236784133678	6.261669090221207e-05	1024	NA	NA
+attention	swap_L1H4	counterfactual_E	L2H1	earlier_A_successor_site	0.004530913019814644	0.00019688775550535042	1024	NA	NA
+attention	swap_L1H4	counterfactual_E	L2H1	earlier_D_successor_site	0.004601418941688787	0.00019384513008520378	1024	NA	NA
+attention	swap_L1H4	counterfactual_E	L2H1	site_attention_difference	-7.050592187414258e-05	0.0002738253107774254	1024	NA	NA
+attention	swap_L1H4	counterfactual_E	L2H1	difference_change_from_intact	-8.74595202499093e-05	6.685158276651542e-05	1024	NA	NA
+attention	swap_L1H4	counterfactual_E	L2H2	earlier_A_successor_site	0.0030689798967735594	0.00016311963859534398	1024	NA	NA
+attention	swap_L1H4	counterfactual_E	L2H2	earlier_D_successor_site	0.003606410619270215	0.00019070640645083405	1024	NA	NA
+attention	swap_L1H4	counterfactual_E	L2H2	site_attention_difference	-0.0005374307224966558	0.00024938210799282137	1024	NA	NA
+attention	swap_L1H4	counterfactual_E	L2H2	difference_change_from_intact	-9.859486558210247e-05	6.479146403924324e-05	1024	NA	NA
+attention	swap_L1H4	counterfactual_E	L2H3	earlier_A_successor_site	0.0036497148011125752	0.0001881501055435203	1024	NA	NA
+attention	swap_L1H4	counterfactual_E	L2H3	earlier_D_successor_site	0.003680147313846906	0.00017496858504514342	1024	NA	NA
+attention	swap_L1H4	counterfactual_E	L2H3	site_attention_difference	-3.0432512734330575e-05	0.00025563569080146414	1024	NA	NA
+attention	swap_L1H4	counterfactual_E	L2H3	difference_change_from_intact	-5.735703174507555e-05	7.058382052187168e-05	1024	NA	NA
+attention	swap_L1H4	counterfactual_E	L2H4	earlier_A_successor_site	0.003445755332351205	0.0001976387504485161	1024	NA	NA
+attention	swap_L1H4	counterfactual_E	L2H4	earlier_D_successor_site	0.0031877797275162625	0.00018681011463759164	1024	NA	NA
+attention	swap_L1H4	counterfactual_E	L2H4	site_attention_difference	0.0002579756048349422	0.000276942848453229	1024	NA	NA
+attention	swap_L1H4	counterfactual_E	L2H4	difference_change_from_intact	5.18824093367166e-06	6.142423246158972e-05	1024	NA	NA

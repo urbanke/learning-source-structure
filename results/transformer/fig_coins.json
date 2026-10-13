@@ -1,0 +1,42 @@
+{
+ "binary_twopoint": {
+  "two-point Bayes": 0.8169359093444655,
+  "transformer trained on the two-point prior": 0.8186482200412455,
+  "eight-point Bayes": 2.6649175443271815,
+  "transformer trained on the eight-point prior": 2.7048236578937277,
+  "add-one (uniform Bayes)": 3.1065023115343138,
+  "transformer trained on the uniform prior": 3.111481572590324
+ },
+ "binary_eightpoint": {
+  "two-point Bayes": 16.33137494065886,
+  "transformer trained on the two-point prior": 14.83922868333548,
+  "eight-point Bayes": 2.6208847558409616,
+  "transformer trained on the eight-point prior": 2.6546490951709827,
+  "add-one (uniform Bayes)": 3.0375899344089703,
+  "transformer trained on the uniform prior": 3.041182404588847
+ },
+ "binary_uniform": {
+  "two-point Bayes": 26.810428285825765,
+  "transformer trained on the two-point prior": 22.37300606633315,
+  "eight-point Bayes": 5.592565808583458,
+  "transformer trained on the eight-point prior": 5.489142252223335,
+  "add-one (uniform Bayes)": 3.6010634532008226,
+  "transformer trained on the uniform prior": 3.6009100392766733
+ },
+ "binary_fixed0.5": {
+  "two-point Bayes": 70.9568878469654,
+  "transformer trained on the two-point prior": 36.275604442394105,
+  "eight-point Bayes": 6.702516706001916,
+  "transformer trained on the eight-point prior": 6.2441254153642785,
+  "add-one (uniform Bayes)": 2.973142098679091,
+  "transformer trained on the uniform prior": 2.9622688262229566
+ },
+ "binary_fixed0.2": {
+  "two-point Bayes": 1.0283616783999605,
+  "transformer trained on the two-point prior": 1.0423166241696717,
+  "eight-point Bayes": 2.8484663959570753,
+  "transformer trained on the eight-point prior": 2.9348852871314626,
+  "add-one (uniform Bayes)": 3.284688434070631,
+  "transformer trained on the uniform prior": 3.3051115256076637
+ }
+}

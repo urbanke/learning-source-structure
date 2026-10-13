@@ -1,0 +1,122 @@
+{
+  "config": {
+    "schema": "shared-base-scaling-training-v1",
+    "batch": 64,
+    "steps": 100000,
+    "warmup": 1000,
+    "lr": 0.0003,
+    "wd": 0.1,
+    "clip": 1.0,
+    "n_layer": 4,
+    "n_head": 8,
+    "d_model": 256,
+    "val_n": 64,
+    "val_settings": [
+      [
+        1,
+        2
+      ],
+      [
+        1,
+        4
+      ],
+      [
+        0.75,
+        2
+      ],
+      [
+        1.25,
+        3
+      ]
+    ],
+    "val_chunk": 32,
+    "log_every": 100,
+    "val_every": 1000,
+    "ckpt_every": 5000,
+    "weight_steps": [
+      50000,
+      100000
+    ],
+    "d": 64,
+    "n_ctx": 1024,
+    "alpha": [
+      0.5,
+      1.5
+    ],
+    "ls": [
+      0,
+      8
+    ],
+    "permute": true,
+    "seed": 1
+  },
+  "config_hash": "6e754d781f0027f6c0a367de05a59bc8896941aa06f10ad803c6274ea1d56a69",
+  "plan_sha256": "28d3af403a7972ed30877ce2afb2201509c052cac4202c0b4485dea677d37202",
+  "family": "lsa",
+  "d": 64,
+  "n_ctx": 1024,
+  "alpha": [
+    0.5,
+    1.5
+  ],
+  "ls": [
+    0,
+    8
+  ],
+  "no_permute": false,
+  "seed": 1,
+  "model": {
+    "vocab": 64,
+    "n_ctx": 1024,
+    "n_layer": 4,
+    "n_head": 8,
+    "d_model": 256,
+    "mlp": true,
+    "dropout": 0.0
+  },
+  "n_params": 3454464,
+  "source_contract": {
+    "version": "shared-base-scaling-source-v1",
+    "alphabet": 64,
+    "alpha_uniform": [
+      0.5,
+      1.5
+    ],
+    "depth_uniform_inclusive": [
+      0,
+      8
+    ],
+    "alphabet_permutation": true,
+    "parameters": "Fresh exponent, common depth, rank permutation and transition matrix per sequence.",
+    "initial_token": "Drawn from the same base law q.",
+    "model_input": "Tokens only.",
+    "sampling": "indexed-batch-seedsequence-v1"
+  },
+  "source_contract_hash": "60852c39fe4b3e17bad82a610929228e7e27f0d6428bf42d64dcb5be6b02f863",
+  "implementation_hashes": {
+    "source.py": "d1bb83004e3654cb3f84f6083437cae2b6d71fa19a33b06d26d2455ac440dab4",
+    "families.py": "24d7ab304d9de7133e38ec8ffe2422d2de38b9e3374670117807eab61d606e00",
+    "model.py": "742fe0e5c8ffaecee8072a3b270b23beaa2e0bd2a94d1a27a9af67c31eff9c28",
+    "mixture_source.py": "7fdfaa367429ebb43b1f1cfae3fa094dd378350f7f1ef1942f03639648aebc5e",
+    "train_mixture.py": "c364416f472813bd2e5bbfe988af710a278cbac1e73ff14b58611916fe123d2d",
+    "train_shared_base_scaling.py": "ffc6f6fe70811d4d6ef7b71d5140fc6b98e2b248dde8eefeb66e1713c469b602"
+  },
+  "validation_hashes": {
+    "a1_L2": "870a2d8eeb3205fd4bfa836363d2cb200c714b33e187a073cff86c241cd53f41",
+    "a1_L4": "ac096bdb5b03e64679bc558994b9621a042f571f1909574e8d0032cea1dd845e",
+    "a0.75_L2": "4e7bbfd9207bc4b8985268f16c57ddc2709ce0af88bfc5eeee82726c421e2cea",
+    "a1.25_L3": "ffac5f0b2f0f85560077c9fcf978c9a1bb8701098de332bf74ef7058bb8e7f1c"
+  },
+  "precision": "float32",
+  "runtime": {
+    "torch_version": "2.14.0+cu126",
+    "numpy_version": "2.4.6",
+    "device": "cuda",
+    "cuda_version": "12.6",
+    "float32_matmul_precision": "highest",
+    "cuda_matmul_allow_tf32": false,
+    "cudnn_allow_tf32": false,
+    "num_threads": 1
+  },
+  "device": "cuda"
+}

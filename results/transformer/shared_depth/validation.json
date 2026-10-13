@@ -1,0 +1,118 @@
+{
+  "schema": "shared_depth_numerical_validation_v1",
+  "passed": true,
+  "smoke": false,
+  "seed": 17092026,
+  "depths": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8
+  ],
+  "alphabet_sizes": [
+    8,
+    64
+  ],
+  "profile_totals": [
+    1,
+    8,
+    64,
+    1024
+  ],
+  "row_cases": 198,
+  "prefix_checks": 16,
+  "production_bounds": [
+    -30,
+    30
+  ],
+  "expanded_bounds": [
+    -36,
+    36
+  ],
+  "production_step": 0.015625,
+  "refined_step": 0.0078125,
+  "tolerances": {
+    "bits": 1e-06,
+    "probabilities": 1e-08
+  },
+  "row_refinement": {
+    "bounds_error_bits": {
+      "max_abs": 8.551867394584304e-12,
+      "signed_value": -8.551867394584304e-12,
+      "case": {
+        "d": 64,
+        "total": 1,
+        "profile": "balanced",
+        "depth": 0
+      }
+    },
+    "grid_error_bits": {
+      "max_abs": 1.3121234959625903e-12,
+      "signed_value": 1.3121234959625903e-12,
+      "case": {
+        "d": 8,
+        "total": 1024,
+        "profile": "mixed",
+        "depth": 1
+      }
+    },
+    "analytic_error_bits": {
+      "max_abs": 5.120100649577459e-11,
+      "signed_value": 5.120100649577459e-11,
+      "case": {
+        "d": 64,
+        "total": 1,
+        "profile": "balanced",
+        "depth": 3
+      }
+    }
+  },
+  "batch_vs_sequential": {
+    "joint_error_bits": {
+      "max_abs": 4.920463109859714e-13,
+      "signed_value": -4.920463109859714e-13,
+      "case": {
+        "d": 64,
+        "prefix_length": 128
+      }
+    },
+    "predictive_error_bits": {
+      "max_abs": 1.0036416142611415e-13,
+      "signed_value": 1.0036416142611415e-13,
+      "case": {
+        "d": 64,
+        "prefix_length": 128
+      }
+    },
+    "posterior_error": {
+      "max_abs": 9.009459844833145e-14,
+      "signed_value": 9.009459844833145e-14,
+      "case": {
+        "d": 64,
+        "prefix_length": 128
+      }
+    },
+    "probability_sum_error": {
+      "max_abs": 5.323741447682551e-12,
+      "signed_value": -5.323741447682551e-12,
+      "case": {
+        "d": 64,
+        "prefix_length": 128
+      }
+    },
+    "observed_probability_error": {
+      "max_abs": 9.43689570931383e-16,
+      "signed_value": -9.43689570931383e-16,
+      "case": {
+        "d": 8,
+        "prefix_length": 64
+      }
+    }
+  },
+  "elapsed_seconds": 4.399736082996242
+}

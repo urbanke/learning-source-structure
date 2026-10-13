@@ -1,0 +1,55 @@
+{
+  "schema": "hidden-factor-confirmation-independent-audit-v1",
+  "passed": true,
+  "model_checks_passed": true,
+  "full_reference_checked": true,
+  "summary_sha256": "87a380209cde7a756a837dbc11004559c624ebc9628e9f75f87e2e68a6653ea1",
+  "plan_sha256": "0d63d4554dc62c9d96b0ee5ce8febf548ddc3d6713a52e96f04775d545dae91f",
+  "consumer_sha256": "05b422a12f5aa84a8cbc98af3a72580020d9843fc87a31abeabdec22324f1f2f",
+  "cohort_data_sha256": "3702b05ec9eef063ba30c4f85ee7cbf6919072da19748bb3a7e7e5b5b3348353",
+  "reference_records_sha256": "42a34f1f0d23ca4478c83624a8a45d7ba9a728f0c374aad6856d0aa7546da8be",
+  "reference_manifest_sha256": "d042d3ad7b4dc6160c8819a31841988a3b1038cc471b546faf301b2c75deac63",
+  "models": {
+    "baseline_seed0": {
+      "data_sha256": "6905b9e715d95c7e1ccd8be51f8ae7a72cae132087548bbd93e95e3252069f7b",
+      "receipt_sha256": "b8c32a5baf2832d9604e61baeb07dbab1bdf977bbd4c535c27c37e3cca01c7de"
+    },
+    "baseline_seed1": {
+      "data_sha256": "ead57cc7e6acf2d9c495853873aa52b2fd979f850e0236b3931944767bbf944a",
+      "receipt_sha256": "b355e6770107aee43ce806c45853d5ddbb3503d461e5a123d34e7ef80645b817"
+    },
+    "large_seed0": {
+      "data_sha256": "1f74ffc0a24d897dd38ef29552b477f81054dc2c7fd301a13b7c47e9e4a49461",
+      "receipt_sha256": "d823ba4fcc5fad649a417a32527cbecd2b490f226adcf62875d51d767d093f5e"
+    },
+    "large_seed1": {
+      "data_sha256": "9639133cfb4e3c916d0c846bdb4a274048c11562dae50384b41a4f619548b37e",
+      "receipt_sha256": "9ec411134d658d4a64a9ce58fa84a2a46416db4ec363332a3d3cc5cf3e3d56c5"
+    },
+    "longsmall_seed0": {
+      "data_sha256": "10a480d5e52baee5595d26fcdd1e266fc54548f96959b4e72c6cb75e3d210324",
+      "receipt_sha256": "97999752bea3df2ebb3c44f305f931526bd27b3aca34bfe3d51965c7dd39da18"
+    },
+    "longsmall_seed1": {
+      "data_sha256": "1eded81bd2c1ba65fc5e48f11c6c2c99d558813d20e117547f45bb6cb9cc82fe",
+      "receipt_sha256": "2c3a211d4974ed25cb9f7402cebf0b9c6f3bd320ec6f00668f8f36ccc1ad029b"
+    }
+  },
+  "evaluated_sequences": 3840,
+  "excluded_development_sequences": 256,
+  "groups_checked": 5,
+  "metric_summaries_checked": 330,
+  "scientific_scope": "Final preselected models on the untouched suffix; each training run separate.",
+  "limitations": [
+    "Saved cumulative model losses are aggregated, not recomputed by tokenwise model inference.",
+    "Weight binaries are not transferred; recorded identities match the independently audited pilot.",
+    "Bayesian probability arrays and record hashes are checked; exact encoding enumeration is not rerun.",
+    "Sequence standard errors do not estimate variability over training runs."
+  ],
+  "artifacts": {
+    "figures/next_token_regret.pdf": "67252a4325aed8eaf26c8c1e97853369485d80e6fda526d8637a7f7bfc1c3c24",
+    "figures/next_token_regret.png": "738046c351f3ba1b12a2e1b49c22fd7b06eaa1eb4e9a4eba746a0cc51a2b72f9",
+    "figures/conditional_curves.pdf": "cd53ba131f5a98a4509035a1828ce3ab3980b83447588f7df43c5e46d7539632",
+    "figures/conditional_curves.png": "5f3a982b5c41726879804a759d1919151df6c43e0bc991ea4fc24645913311dd"
+  }
+}

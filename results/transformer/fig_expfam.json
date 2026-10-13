@@ -1,0 +1,29 @@
+{
+ "expfam_k1": {
+  "Bayes, one term, labels known": 2.012523570447229,
+  "Bayes, two terms, labels known": 3.5004108143621124,
+  "Zipf plug-in, labels unknown": 65.43683701538248,
+  "LSA unigram predictor": 70.48117167304736,
+  "transformer trained on one term": 2.032291607052118,
+  "transformer trained on two terms": 3.461162918646957,
+  "transformer trained on one term, relabelled": 52.93397682348285
+ },
+ "expfam_k2": {
+  "Bayes, one term, labels known": 17.26942441909341,
+  "Bayes, two terms, labels known": 5.838487254572101,
+  "Zipf plug-in, labels unknown": 76.43821871036198,
+  "LSA unigram predictor": 72.24989061899396,
+  "transformer trained on one term": 17.21938478933847,
+  "transformer trained on two terms": 5.865997480988425,
+  "transformer trained on one term, relabelled": 60.0705242991571
+ },
+ "expfam_k1_perm": {
+  "Bayes, one term, labels known": 2.1059497460373677,
+  "Bayes, two terms, labels known": 3.581844766100403,
+  "Zipf plug-in, labels unknown": 65.62645982665708,
+  "LSA unigram predictor": 71.19679726615868,
+  "transformer trained on one term": 1034.7953830133254,
+  "transformer trained on two terms": 891.7244784650202,
+  "transformer trained on one term, relabelled": 55.09317501582843
+ }
+}

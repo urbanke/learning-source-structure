@@ -1,0 +1,51 @@
+{
+  "schema": "product-context-figure-validation-v1",
+  "passed": true,
+  "sequences": 4096,
+  "raw_records": 12288,
+  "independent_aggregation_max_error": 6.217248937900877e-15,
+  "forecast_precedes_model": true,
+  "numerical_validation": {
+    "passed": true,
+    "selected_sequences_per_pair": [
+      0,
+      1023
+    ],
+    "maximum_errors": {
+      "wider_grid_probability_error": 0.0,
+      "wider_grid_risk_error_bits": 0.0,
+      "dirichlet_probability_error": 4.614642001854463e-13,
+      "causal_future_change_error": 0.0,
+      "dirichlet_final_log_evidence_error": 2.2737367544323206e-12
+    },
+    "tolerances": {
+      "wider_grid_probability_error": 2e-06,
+      "wider_grid_risk_error_bits": 2e-06,
+      "dirichlet_probability_error": 2e-12,
+      "causal_future_change_error": 2e-12,
+      "dirichlet_final_log_evidence_error": 2e-08
+    },
+    "wider_integration_range": [
+      -45,
+      40
+    ],
+    "main_integration_range": [
+      -30.0,
+      30.0
+    ]
+  },
+  "inputs": {
+    "/Users/ruediger/Projects/layered_architectures/results/transformer/product_context_confirmation_2026-09-17/summary.json": "00c0777fd8128679cdc9c1bf11c1e644c045c4681047222813c43371d5d6d4f9",
+    "/Users/ruediger/Projects/layered_architectures/code/scripts/product_context_figures.py": "628d1fcb39cb279338cb8dd923a623abad37bf342d22b1ef7756f8d970bad9c1",
+    "/Users/ruediger/Projects/layered_architectures/code/scripts/section4_unseen_row_transfer.py": "a3a8909a83d7e25dc9653ce121e7a66f963434ae8199e67891aa2d1835dabd59",
+    "/Users/ruediger/Projects/layered_architectures/results/transformer/section4_unseen_row_transfer/summary.json": "b41b1d7b37ebf3170885014a162eb703c400840878300c235e15f18a4fbea086",
+    "/Users/ruediger/Projects/layered_architectures/results/transformer/section4_unseen_row_transfer/validation.json": "9c4f0a62fda9e016e608b2073cefce5e0846f94154fcc0a7e2bbcbbcf55b23a5"
+  },
+  "outputs": {
+    "overview.pdf": "3a2c99f55418fa2a4296f8eccc81492dad0e270122bddf835467103dad010c2f",
+    "overview.png": "d6f570ea9cccc8cf0018d29573bc575714ce6369fab6b4fee703a064d416c7c3",
+    "risk_curves.pdf": "33b549eedadff41c67c0767fc966fc5a8a7cb2cea32412dd505fa01b69dee929",
+    "risk_curves.png": "cabbb5ba2099e11d4f6332f0a9eee454d0985ad4e9b9c208bd3c930104e3491a",
+    "requirements.tsv": "349d7c1dd1770476feb36551244ee90a81b787125240cfb35c588abd46deba9e"
+  }
+}

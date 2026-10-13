@@ -1,0 +1,3376 @@
+{
+  "schema": "shared-base-surrogate-pair-audit-v1",
+  "sequence_index": 3,
+  "prefix_length": 1024,
+  "coarse_order": 64,
+  "refined_order": 128,
+  "passed": true,
+  "error": null,
+  "checks": [
+    {
+      "name": "cohort:object",
+      "passed": true
+    },
+    {
+      "name": "source3:object",
+      "passed": true
+    },
+    {
+      "name": "source3:schema",
+      "passed": true
+    },
+    {
+      "name": "source3:identity",
+      "passed": true
+    },
+    {
+      "name": "source3:declaration",
+      "passed": true
+    },
+    {
+      "name": "source3:prior",
+      "passed": true
+    },
+    {
+      "name": "source3:stable_seed",
+      "passed": true
+    },
+    {
+      "name": "source3:source_code",
+      "passed": true
+    },
+    {
+      "name": "source3:construction_code",
+      "passed": true
+    },
+    {
+      "name": "source3:tokens",
+      "passed": true
+    },
+    {
+      "name": "source3:oracle",
+      "passed": true
+    },
+    {
+      "name": "model3:d64:object",
+      "passed": true
+    },
+    {
+      "name": "model3:d64:checkpoint",
+      "passed": true
+    },
+    {
+      "name": "model3:d64:training_prior",
+      "passed": true
+    },
+    {
+      "name": "model3:d64:producer",
+      "passed": true
+    },
+    {
+      "name": "model3:d64:array_name",
+      "passed": true
+    },
+    {
+      "name": "model3:d64:array_hash",
+      "passed": true
+    },
+    {
+      "name": "model3:d64:logits",
+      "passed": true
+    },
+    {
+      "name": "model3:d64:alignment",
+      "passed": true
+    },
+    {
+      "name": "model3:d64:causal_alignment_checks",
+      "passed": true
+    },
+    {
+      "name": "model3:d64_seed1:object",
+      "passed": true
+    },
+    {
+      "name": "model3:d64_seed1:checkpoint",
+      "passed": true
+    },
+    {
+      "name": "model3:d64_seed1:training_prior",
+      "passed": true
+    },
+    {
+      "name": "model3:d64_seed1:producer",
+      "passed": true
+    },
+    {
+      "name": "model3:d64_seed1:array_name",
+      "passed": true
+    },
+    {
+      "name": "model3:d64_seed1:array_hash",
+      "passed": true
+    },
+    {
+      "name": "model3:d64_seed1:logits",
+      "passed": true
+    },
+    {
+      "name": "model3:d64_seed1:alignment",
+      "passed": true
+    },
+    {
+      "name": "model3:d64_seed1:causal_alignment_checks",
+      "passed": true
+    },
+    {
+      "name": "reference3:t1024:alpha64:object",
+      "passed": true
+    },
+    {
+      "name": "reference3:t1024:alpha64:identity",
+      "passed": true
+    },
+    {
+      "name": "reference3:t1024:alpha64:nonempty_code_hashes",
+      "passed": true
+    },
+    {
+      "name": "reference3:t1024:alpha64:complete_code_hashes",
+      "passed": true
+    },
+    {
+      "name": "reference3:t1024:alpha64:code_name",
+      "passed": true
+    },
+    {
+      "name": "reference3:t1024:alpha64:code:eval_shared_base_surrogate.py",
+      "passed": true
+    },
+    {
+      "name": "reference3:t1024:alpha64:code_name",
+      "passed": true
+    },
+    {
+      "name": "reference3:t1024:alpha64:code:surrogate_chain_runner.py",
+      "passed": true
+    },
+    {
+      "name": "reference3:t1024:alpha64:code_name",
+      "passed": true
+    },
+    {
+      "name": "reference3:t1024:alpha64:code:shared_base_surrogate.py",
+      "passed": true
+    },
+    {
+      "name": "reference3:t1024:alpha64:code_name",
+      "passed": true
+    },
+    {
+      "name": "reference3:t1024:alpha64:code:eval_shared_base_reference.py",
+      "passed": true
+    },
+    {
+      "name": "reference3:t1024:alpha64:code_name",
+      "passed": true
+    },
+    {
+      "name": "reference3:t1024:alpha64:code:full_context_statistics.py",
+      "passed": true
+    },
+    {
+      "name": "reference3:t1024:alpha64:code_name",
+      "passed": true
+    },
+    {
+      "name": "reference3:t1024:alpha64:code:eval_shared_base_models.py",
+      "passed": true
+    },
+    {
+      "name": "reference3:t1024:alpha64:code_name",
+      "passed": true
+    },
+    {
+      "name": "reference3:t1024:alpha64:code:validate_shared_base_mcmc.py",
+      "passed": true
+    },
+    {
+      "name": "reference3:t1024:alpha64:code_name",
+      "passed": true
+    },
+    {
+      "name": "reference3:t1024:alpha64:code:stable_chain_statistics.py",
+      "passed": true
+    },
+    {
+      "name": "reference3:t1024:alpha64:observations",
+      "passed": true
+    },
+    {
+      "name": "reference3:t1024:alpha64:numerical_files",
+      "passed": true
+    },
+    {
+      "name": "reference3:t1024:alpha64:numerical_hash:shared_base_chain_runner.py",
+      "passed": true
+    },
+    {
+      "name": "reference3:t1024:alpha64:numerical_hash:shared_base_mcmc.py",
+      "passed": true
+    },
+    {
+      "name": "reference3:t1024:alpha64:numerical_hash:ranked_lsa.py",
+      "passed": true
+    },
+    {
+      "name": "reference3:t1024:alpha64:numerical_hash:weighted_lsa.py",
+      "passed": true
+    },
+    {
+      "name": "reference3:t1024:alpha64:numerical_hash:shared_depth.py",
+      "passed": true
+    },
+    {
+      "name": "reference3:t1024:alpha64:numerical_hash:lsa_seq.py",
+      "passed": true
+    },
+    {
+      "name": "reference3:t1024:alpha64:numerical_hash:phi_source.py",
+      "passed": true
+    },
+    {
+      "name": "reference3:t1024:alpha64:numerical_hash:source.py",
+      "passed": true
+    },
+    {
+      "name": "reference3:t1024:alpha64:numerical_hash:store/manifest.json",
+      "passed": true
+    },
+    {
+      "name": "reference3:t1024:alpha64:numerical_hash:store/anchors.json",
+      "passed": true
+    },
+    {
+      "name": "reference3:t1024:alpha64:numerical_hash:pmm/universal_tables.py",
+      "passed": true
+    },
+    {
+      "name": "reference3:t1024:alpha64:numerical_hash:pmm/production_coding.py",
+      "passed": true
+    },
+    {
+      "name": "reference3:t1024:alpha64:numerical_hash:pmm/mellin.py",
+      "passed": true
+    },
+    {
+      "name": "reference3:t1024:alpha64:numerical_hash:pmm/kernel.py",
+      "passed": true
+    },
+    {
+      "name": "reference3:t1024:alpha64:runtime",
+      "passed": true
+    },
+    {
+      "name": "reference3:t1024:alpha64:prior",
+      "passed": true
+    },
+    {
+      "name": "reference3:t1024:alpha64:row_grid",
+      "passed": true
+    },
+    {
+      "name": "reference3:t1024:alpha64:proposal",
+      "passed": true
+    },
+    {
+      "name": "reference3:t1024:alpha64:seed",
+      "passed": true
+    },
+    {
+      "name": "reference3:t1024:alpha64:checkpoint_path",
+      "passed": true
+    },
+    {
+      "name": "reference3:t1024:alpha64:metadata_checksum",
+      "passed": true
+    },
+    {
+      "name": "reference3:t1024:alpha64:checkpoint_identity",
+      "passed": true
+    },
+    {
+      "name": "reference3:t1024:alpha64:complete_raw_arrays",
+      "passed": true
+    },
+    {
+      "name": "reference3:t1024:alpha64:array_checksum:predictions_3",
+      "passed": true
+    },
+    {
+      "name": "reference3:t1024:alpha64:array_checksum:predictions_0",
+      "passed": true
+    },
+    {
+      "name": "reference3:t1024:alpha64:array_checksum:predictions_1",
+      "passed": true
+    },
+    {
+      "name": "reference3:t1024:alpha64:array_checksum:accepts",
+      "passed": true
+    },
+    {
+      "name": "reference3:t1024:alpha64:array_checksum:depths_0",
+      "passed": true
+    },
+    {
+      "name": "reference3:t1024:alpha64:array_checksum:scalars_3",
+      "passed": true
+    },
+    {
+      "name": "reference3:t1024:alpha64:array_checksum:predictions_2",
+      "passed": true
+    },
+    {
+      "name": "reference3:t1024:alpha64:array_checksum:scalars_2",
+      "passed": true
+    },
+    {
+      "name": "reference3:t1024:alpha64:array_checksum:depths_1",
+      "passed": true
+    },
+    {
+      "name": "reference3:t1024:alpha64:array_checksum:burn_done",
+      "passed": true
+    },
+    {
+      "name": "reference3:t1024:alpha64:array_checksum:max_errors",
+      "passed": true
+    },
+    {
+      "name": "reference3:t1024:alpha64:array_checksum:depths_2",
+      "passed": true
+    },
+    {
+      "name": "reference3:t1024:alpha64:array_checksum:alpha_indices_2",
+      "passed": true
+    },
+    {
+      "name": "reference3:t1024:alpha64:array_checksum:attempts",
+      "passed": true
+    },
+    {
+      "name": "reference3:t1024:alpha64:array_checksum:depths_3",
+      "passed": true
+    },
+    {
+      "name": "reference3:t1024:alpha64:array_checksum:alpha_indices_3",
+      "passed": true
+    },
+    {
+      "name": "reference3:t1024:alpha64:array_checksum:scalars_1",
+      "passed": true
+    },
+    {
+      "name": "reference3:t1024:alpha64:array_checksum:scalars_0",
+      "passed": true
+    },
+    {
+      "name": "reference3:t1024:alpha64:array_checksum:alpha_indices_1",
+      "passed": true
+    },
+    {
+      "name": "reference3:t1024:alpha64:array_checksum:alpha_indices_0",
+      "passed": true
+    },
+    {
+      "name": "reference3:t1024:alpha64:raw_config",
+      "passed": true
+    },
+    {
+      "name": "reference3:t1024:alpha64:sample_shapes:0",
+      "passed": true
+    },
+    {
+      "name": "reference3:t1024:alpha64:alpha_trace:0",
+      "passed": true
+    },
+    {
+      "name": "reference3:t1024:alpha64:last_state:0",
+      "passed": true
+    },
+    {
+      "name": "reference3:t1024:alpha64:sample_shapes:1",
+      "passed": true
+    },
+    {
+      "name": "reference3:t1024:alpha64:alpha_trace:1",
+      "passed": true
+    },
+    {
+      "name": "reference3:t1024:alpha64:last_state:1",
+      "passed": true
+    },
+    {
+      "name": "reference3:t1024:alpha64:sample_shapes:2",
+      "passed": true
+    },
+    {
+      "name": "reference3:t1024:alpha64:alpha_trace:2",
+      "passed": true
+    },
+    {
+      "name": "reference3:t1024:alpha64:last_state:2",
+      "passed": true
+    },
+    {
+      "name": "reference3:t1024:alpha64:sample_shapes:3",
+      "passed": true
+    },
+    {
+      "name": "reference3:t1024:alpha64:alpha_trace:3",
+      "passed": true
+    },
+    {
+      "name": "reference3:t1024:alpha64:last_state:3",
+      "passed": true
+    },
+    {
+      "name": "reference3:t1024:alpha64:transition_counters",
+      "passed": true
+    },
+    {
+      "name": "reference3:t1024:alpha64:depth_samples",
+      "passed": true
+    },
+    {
+      "name": "reference3:t1024:alpha64:raw_summary:predictive_probs",
+      "passed": true
+    },
+    {
+      "name": "reference3:t1024:alpha64:raw_summary:mcse_probs",
+      "passed": true
+    },
+    {
+      "name": "reference3:t1024:alpha64:raw_summary:posterior_depth",
+      "passed": true
+    },
+    {
+      "name": "reference3:t1024:alpha64:raw_summary:mcse_depth",
+      "passed": true
+    },
+    {
+      "name": "reference3:t1024:alpha64:raw_summary:posterior_alpha",
+      "passed": true
+    },
+    {
+      "name": "reference3:t1024:alpha64:raw_summary:mcse_alpha",
+      "passed": true
+    },
+    {
+      "name": "reference3:t1024:alpha64:chain_mean_readback",
+      "passed": true
+    },
+    {
+      "name": "reference3:t1024:alpha64:raw_diagnostic:rhat_probs",
+      "passed": true
+    },
+    {
+      "name": "reference3:t1024:alpha64:raw_diagnostic:rhat_depth",
+      "passed": true
+    },
+    {
+      "name": "reference3:t1024:alpha64:raw_diagnostic:rhat_alpha_and_loglik",
+      "passed": true
+    },
+    {
+      "name": "reference3:t1024:alpha64:raw_diagnostic:ess_probs",
+      "passed": true
+    },
+    {
+      "name": "reference3:t1024:alpha64:normalization_record",
+      "passed": true
+    },
+    {
+      "name": "reference3:t1024:alpha64:moments_name",
+      "passed": true
+    },
+    {
+      "name": "reference3:t1024:alpha64:moments_hash",
+      "passed": true
+    },
+    {
+      "name": "reference3:t1024:alpha64:moments_keys",
+      "passed": true
+    },
+    {
+      "name": "reference3:t1024:alpha64:moments_readback:mean",
+      "passed": true
+    },
+    {
+      "name": "reference3:t1024:alpha64:moments_readback:mcse_probs",
+      "passed": true
+    },
+    {
+      "name": "reference3:t1024:alpha64:moments_readback:cov_batch",
+      "passed": true
+    },
+    {
+      "name": "reference3:t1024:alpha64:moments_readback:cov_chain",
+      "passed": true
+    },
+    {
+      "name": "reference3:t1024:alpha64:moments_readback:chain_means",
+      "passed": true
+    },
+    {
+      "name": "reference3:t1024:alpha64:moments_readback:batch_length",
+      "passed": true
+    },
+    {
+      "name": "reference3:t1024:alpha64:moments_readback:batches_per_chain",
+      "passed": true
+    },
+    {
+      "name": "reference3:t1024:alpha64:moments_readback:chains",
+      "passed": true
+    },
+    {
+      "name": "reference3:t1024:alpha64:moments_readback:draws",
+      "passed": true
+    },
+    {
+      "name": "reference3:t1024:alpha64:stored_diagnostic_gates",
+      "passed": true
+    },
+    {
+      "name": "reference3:t1024:alpha64:diagnostic:split_rhat_below_1_05",
+      "passed": true
+    },
+    {
+      "name": "reference3:t1024:alpha64:diagnostic:probability_ess_at_least_200",
+      "passed": true
+    },
+    {
+      "name": "reference3:t1024:alpha64:diagnostic:maximum_probability_mcse_at_most_0_005",
+      "passed": true
+    },
+    {
+      "name": "reference3:t1024:alpha64:diagnostic:raw_normalization",
+      "passed": true
+    },
+    {
+      "name": "reference3:t1024:alpha64:all_final_grid_checks",
+      "passed": true
+    },
+    {
+      "name": "reference3:t1024:alpha64:stored_grid_gate:0",
+      "passed": true
+    },
+    {
+      "name": "reference3:t1024:alpha64:grid:0",
+      "passed": true
+    },
+    {
+      "name": "reference3:t1024:alpha64:stored_grid_gate:1",
+      "passed": true
+    },
+    {
+      "name": "reference3:t1024:alpha64:grid:1",
+      "passed": true
+    },
+    {
+      "name": "reference3:t1024:alpha64:stored_grid_gate:2",
+      "passed": true
+    },
+    {
+      "name": "reference3:t1024:alpha64:grid:2",
+      "passed": true
+    },
+    {
+      "name": "reference3:t1024:alpha64:stored_grid_gate:3",
+      "passed": true
+    },
+    {
+      "name": "reference3:t1024:alpha64:grid:3",
+      "passed": true
+    },
+    {
+      "name": "reference3:t1024:alpha64:metric_readback:d64:tv",
+      "passed": true
+    },
+    {
+      "name": "reference3:t1024:alpha64:metric_readback:d64:kl_bits",
+      "passed": true
+    },
+    {
+      "name": "reference3:t1024:alpha64:metric_readback:d64:true_loss_gap_bits",
+      "passed": true
+    },
+    {
+      "name": "reference3:t1024:alpha64:metric_readback:d64:kl_mcse_bits",
+      "passed": true
+    },
+    {
+      "name": "reference3:t1024:alpha64:metric_readback:d64:gap_mcse_bits",
+      "passed": true
+    },
+    {
+      "name": "reference3:t1024:alpha64:metric_readback:d64_seed1:tv",
+      "passed": true
+    },
+    {
+      "name": "reference3:t1024:alpha64:metric_readback:d64_seed1:kl_bits",
+      "passed": true
+    },
+    {
+      "name": "reference3:t1024:alpha64:metric_readback:d64_seed1:true_loss_gap_bits",
+      "passed": true
+    },
+    {
+      "name": "reference3:t1024:alpha64:metric_readback:d64_seed1:kl_mcse_bits",
+      "passed": true
+    },
+    {
+      "name": "reference3:t1024:alpha64:metric_readback:d64_seed1:gap_mcse_bits",
+      "passed": true
+    },
+    {
+      "name": "reference3:t1024:alpha128:object",
+      "passed": true
+    },
+    {
+      "name": "reference3:t1024:alpha128:identity",
+      "passed": true
+    },
+    {
+      "name": "reference3:t1024:alpha128:nonempty_code_hashes",
+      "passed": true
+    },
+    {
+      "name": "reference3:t1024:alpha128:complete_code_hashes",
+      "passed": true
+    },
+    {
+      "name": "reference3:t1024:alpha128:code_name",
+      "passed": true
+    },
+    {
+      "name": "reference3:t1024:alpha128:code:eval_shared_base_surrogate.py",
+      "passed": true
+    },
+    {
+      "name": "reference3:t1024:alpha128:code_name",
+      "passed": true
+    },
+    {
+      "name": "reference3:t1024:alpha128:code:surrogate_chain_runner.py",
+      "passed": true
+    },
+    {
+      "name": "reference3:t1024:alpha128:code_name",
+      "passed": true
+    },
+    {
+      "name": "reference3:t1024:alpha128:code:shared_base_surrogate.py",
+      "passed": true
+    },
+    {
+      "name": "reference3:t1024:alpha128:code_name",
+      "passed": true
+    },
+    {
+      "name": "reference3:t1024:alpha128:code:eval_shared_base_reference.py",
+      "passed": true
+    },
+    {
+      "name": "reference3:t1024:alpha128:code_name",
+      "passed": true
+    },
+    {
+      "name": "reference3:t1024:alpha128:code:full_context_statistics.py",
+      "passed": true
+    },
+    {
+      "name": "reference3:t1024:alpha128:code_name",
+      "passed": true
+    },
+    {
+      "name": "reference3:t1024:alpha128:code:eval_shared_base_models.py",
+      "passed": true
+    },
+    {
+      "name": "reference3:t1024:alpha128:code_name",
+      "passed": true
+    },
+    {
+      "name": "reference3:t1024:alpha128:code:validate_shared_base_mcmc.py",
+      "passed": true
+    },
+    {
+      "name": "reference3:t1024:alpha128:code_name",
+      "passed": true
+    },
+    {
+      "name": "reference3:t1024:alpha128:code:stable_chain_statistics.py",
+      "passed": true
+    },
+    {
+      "name": "reference3:t1024:alpha128:observations",
+      "passed": true
+    },
+    {
+      "name": "reference3:t1024:alpha128:numerical_files",
+      "passed": true
+    },
+    {
+      "name": "reference3:t1024:alpha128:numerical_hash:shared_base_chain_runner.py",
+      "passed": true
+    },
+    {
+      "name": "reference3:t1024:alpha128:numerical_hash:shared_base_mcmc.py",
+      "passed": true
+    },
+    {
+      "name": "reference3:t1024:alpha128:numerical_hash:ranked_lsa.py",
+      "passed": true
+    },
+    {
+      "name": "reference3:t1024:alpha128:numerical_hash:weighted_lsa.py",
+      "passed": true
+    },
+    {
+      "name": "reference3:t1024:alpha128:numerical_hash:shared_depth.py",
+      "passed": true
+    },
+    {
+      "name": "reference3:t1024:alpha128:numerical_hash:lsa_seq.py",
+      "passed": true
+    },
+    {
+      "name": "reference3:t1024:alpha128:numerical_hash:phi_source.py",
+      "passed": true
+    },
+    {
+      "name": "reference3:t1024:alpha128:numerical_hash:source.py",
+      "passed": true
+    },
+    {
+      "name": "reference3:t1024:alpha128:numerical_hash:store/manifest.json",
+      "passed": true
+    },
+    {
+      "name": "reference3:t1024:alpha128:numerical_hash:store/anchors.json",
+      "passed": true
+    },
+    {
+      "name": "reference3:t1024:alpha128:numerical_hash:pmm/universal_tables.py",
+      "passed": true
+    },
+    {
+      "name": "reference3:t1024:alpha128:numerical_hash:pmm/production_coding.py",
+      "passed": true
+    },
+    {
+      "name": "reference3:t1024:alpha128:numerical_hash:pmm/mellin.py",
+      "passed": true
+    },
+    {
+      "name": "reference3:t1024:alpha128:numerical_hash:pmm/kernel.py",
+      "passed": true
+    },
+    {
+      "name": "reference3:t1024:alpha128:runtime",
+      "passed": true
+    },
+    {
+      "name": "reference3:t1024:alpha128:prior",
+      "passed": true
+    },
+    {
+      "name": "reference3:t1024:alpha128:row_grid",
+      "passed": true
+    },
+    {
+      "name": "reference3:t1024:alpha128:proposal",
+      "passed": true
+    },
+    {
+      "name": "reference3:t1024:alpha128:seed",
+      "passed": true
+    },
+    {
+      "name": "reference3:t1024:alpha128:checkpoint_path",
+      "passed": true
+    },
+    {
+      "name": "reference3:t1024:alpha128:metadata_checksum",
+      "passed": true
+    },
+    {
+      "name": "reference3:t1024:alpha128:checkpoint_identity",
+      "passed": true
+    },
+    {
+      "name": "reference3:t1024:alpha128:complete_raw_arrays",
+      "passed": true
+    },
+    {
+      "name": "reference3:t1024:alpha128:array_checksum:predictions_3",
+      "passed": true
+    },
+    {
+      "name": "reference3:t1024:alpha128:array_checksum:predictions_0",
+      "passed": true
+    },
+    {
+      "name": "reference3:t1024:alpha128:array_checksum:predictions_1",
+      "passed": true
+    },
+    {
+      "name": "reference3:t1024:alpha128:array_checksum:accepts",
+      "passed": true
+    },
+    {
+      "name": "reference3:t1024:alpha128:array_checksum:depths_0",
+      "passed": true
+    },
+    {
+      "name": "reference3:t1024:alpha128:array_checksum:scalars_3",
+      "passed": true
+    },
+    {
+      "name": "reference3:t1024:alpha128:array_checksum:predictions_2",
+      "passed": true
+    },
+    {
+      "name": "reference3:t1024:alpha128:array_checksum:scalars_2",
+      "passed": true
+    },
+    {
+      "name": "reference3:t1024:alpha128:array_checksum:depths_1",
+      "passed": true
+    },
+    {
+      "name": "reference3:t1024:alpha128:array_checksum:burn_done",
+      "passed": true
+    },
+    {
+      "name": "reference3:t1024:alpha128:array_checksum:max_errors",
+      "passed": true
+    },
+    {
+      "name": "reference3:t1024:alpha128:array_checksum:depths_2",
+      "passed": true
+    },
+    {
+      "name": "reference3:t1024:alpha128:array_checksum:alpha_indices_2",
+      "passed": true
+    },
+    {
+      "name": "reference3:t1024:alpha128:array_checksum:attempts",
+      "passed": true
+    },
+    {
+      "name": "reference3:t1024:alpha128:array_checksum:depths_3",
+      "passed": true
+    },
+    {
+      "name": "reference3:t1024:alpha128:array_checksum:alpha_indices_3",
+      "passed": true
+    },
+    {
+      "name": "reference3:t1024:alpha128:array_checksum:scalars_1",
+      "passed": true
+    },
+    {
+      "name": "reference3:t1024:alpha128:array_checksum:scalars_0",
+      "passed": true
+    },
+    {
+      "name": "reference3:t1024:alpha128:array_checksum:alpha_indices_1",
+      "passed": true
+    },
+    {
+      "name": "reference3:t1024:alpha128:array_checksum:alpha_indices_0",
+      "passed": true
+    },
+    {
+      "name": "reference3:t1024:alpha128:raw_config",
+      "passed": true
+    },
+    {
+      "name": "reference3:t1024:alpha128:sample_shapes:0",
+      "passed": true
+    },
+    {
+      "name": "reference3:t1024:alpha128:alpha_trace:0",
+      "passed": true
+    },
+    {
+      "name": "reference3:t1024:alpha128:last_state:0",
+      "passed": true
+    },
+    {
+      "name": "reference3:t1024:alpha128:sample_shapes:1",
+      "passed": true
+    },
+    {
+      "name": "reference3:t1024:alpha128:alpha_trace:1",
+      "passed": true
+    },
+    {
+      "name": "reference3:t1024:alpha128:last_state:1",
+      "passed": true
+    },
+    {
+      "name": "reference3:t1024:alpha128:sample_shapes:2",
+      "passed": true
+    },
+    {
+      "name": "reference3:t1024:alpha128:alpha_trace:2",
+      "passed": true
+    },
+    {
+      "name": "reference3:t1024:alpha128:last_state:2",
+      "passed": true
+    },
+    {
+      "name": "reference3:t1024:alpha128:sample_shapes:3",
+      "passed": true
+    },
+    {
+      "name": "reference3:t1024:alpha128:alpha_trace:3",
+      "passed": true
+    },
+    {
+      "name": "reference3:t1024:alpha128:last_state:3",
+      "passed": true
+    },
+    {
+      "name": "reference3:t1024:alpha128:transition_counters",
+      "passed": true
+    },
+    {
+      "name": "reference3:t1024:alpha128:depth_samples",
+      "passed": true
+    },
+    {
+      "name": "reference3:t1024:alpha128:raw_summary:predictive_probs",
+      "passed": true
+    },
+    {
+      "name": "reference3:t1024:alpha128:raw_summary:mcse_probs",
+      "passed": true
+    },
+    {
+      "name": "reference3:t1024:alpha128:raw_summary:posterior_depth",
+      "passed": true
+    },
+    {
+      "name": "reference3:t1024:alpha128:raw_summary:mcse_depth",
+      "passed": true
+    },
+    {
+      "name": "reference3:t1024:alpha128:raw_summary:posterior_alpha",
+      "passed": true
+    },
+    {
+      "name": "reference3:t1024:alpha128:raw_summary:mcse_alpha",
+      "passed": true
+    },
+    {
+      "name": "reference3:t1024:alpha128:chain_mean_readback",
+      "passed": true
+    },
+    {
+      "name": "reference3:t1024:alpha128:raw_diagnostic:rhat_probs",
+      "passed": true
+    },
+    {
+      "name": "reference3:t1024:alpha128:raw_diagnostic:rhat_depth",
+      "passed": true
+    },
+    {
+      "name": "reference3:t1024:alpha128:raw_diagnostic:rhat_alpha_and_loglik",
+      "passed": true
+    },
+    {
+      "name": "reference3:t1024:alpha128:raw_diagnostic:ess_probs",
+      "passed": true
+    },
+    {
+      "name": "reference3:t1024:alpha128:normalization_record",
+      "passed": true
+    },
+    {
+      "name": "reference3:t1024:alpha128:moments_name",
+      "passed": true
+    },
+    {
+      "name": "reference3:t1024:alpha128:moments_hash",
+      "passed": true
+    },
+    {
+      "name": "reference3:t1024:alpha128:moments_keys",
+      "passed": true
+    },
+    {
+      "name": "reference3:t1024:alpha128:moments_readback:mean",
+      "passed": true
+    },
+    {
+      "name": "reference3:t1024:alpha128:moments_readback:mcse_probs",
+      "passed": true
+    },
+    {
+      "name": "reference3:t1024:alpha128:moments_readback:cov_batch",
+      "passed": true
+    },
+    {
+      "name": "reference3:t1024:alpha128:moments_readback:cov_chain",
+      "passed": true
+    },
+    {
+      "name": "reference3:t1024:alpha128:moments_readback:chain_means",
+      "passed": true
+    },
+    {
+      "name": "reference3:t1024:alpha128:moments_readback:batch_length",
+      "passed": true
+    },
+    {
+      "name": "reference3:t1024:alpha128:moments_readback:batches_per_chain",
+      "passed": true
+    },
+    {
+      "name": "reference3:t1024:alpha128:moments_readback:chains",
+      "passed": true
+    },
+    {
+      "name": "reference3:t1024:alpha128:moments_readback:draws",
+      "passed": true
+    },
+    {
+      "name": "reference3:t1024:alpha128:stored_diagnostic_gates",
+      "passed": true
+    },
+    {
+      "name": "reference3:t1024:alpha128:diagnostic:split_rhat_below_1_05",
+      "passed": true
+    },
+    {
+      "name": "reference3:t1024:alpha128:diagnostic:probability_ess_at_least_200",
+      "passed": true
+    },
+    {
+      "name": "reference3:t1024:alpha128:diagnostic:maximum_probability_mcse_at_most_0_005",
+      "passed": true
+    },
+    {
+      "name": "reference3:t1024:alpha128:diagnostic:raw_normalization",
+      "passed": true
+    },
+    {
+      "name": "reference3:t1024:alpha128:all_final_grid_checks",
+      "passed": true
+    },
+    {
+      "name": "reference3:t1024:alpha128:stored_grid_gate:0",
+      "passed": true
+    },
+    {
+      "name": "reference3:t1024:alpha128:grid:0",
+      "passed": true
+    },
+    {
+      "name": "reference3:t1024:alpha128:stored_grid_gate:1",
+      "passed": true
+    },
+    {
+      "name": "reference3:t1024:alpha128:grid:1",
+      "passed": true
+    },
+    {
+      "name": "reference3:t1024:alpha128:stored_grid_gate:2",
+      "passed": true
+    },
+    {
+      "name": "reference3:t1024:alpha128:grid:2",
+      "passed": true
+    },
+    {
+      "name": "reference3:t1024:alpha128:stored_grid_gate:3",
+      "passed": true
+    },
+    {
+      "name": "reference3:t1024:alpha128:grid:3",
+      "passed": true
+    },
+    {
+      "name": "reference3:t1024:alpha128:metric_readback:d64:tv",
+      "passed": true
+    },
+    {
+      "name": "reference3:t1024:alpha128:metric_readback:d64:kl_bits",
+      "passed": true
+    },
+    {
+      "name": "reference3:t1024:alpha128:metric_readback:d64:true_loss_gap_bits",
+      "passed": true
+    },
+    {
+      "name": "reference3:t1024:alpha128:metric_readback:d64:kl_mcse_bits",
+      "passed": true
+    },
+    {
+      "name": "reference3:t1024:alpha128:metric_readback:d64:gap_mcse_bits",
+      "passed": true
+    },
+    {
+      "name": "reference3:t1024:alpha128:metric_readback:d64_seed1:tv",
+      "passed": true
+    },
+    {
+      "name": "reference3:t1024:alpha128:metric_readback:d64_seed1:kl_bits",
+      "passed": true
+    },
+    {
+      "name": "reference3:t1024:alpha128:metric_readback:d64_seed1:true_loss_gap_bits",
+      "passed": true
+    },
+    {
+      "name": "reference3:t1024:alpha128:metric_readback:d64_seed1:kl_mcse_bits",
+      "passed": true
+    },
+    {
+      "name": "reference3:t1024:alpha128:metric_readback:d64_seed1:gap_mcse_bits",
+      "passed": true
+    },
+    {
+      "name": "independent_sampling_seeds",
+      "passed": true
+    },
+    {
+      "name": "probability_refinement:max_absolute_difference_below_0_01",
+      "passed": true
+    },
+    {
+      "name": "probability_refinement:every_coordinate_within_five_mcse_plus_0_0002",
+      "passed": true
+    },
+    {
+      "name": "metric_refinement:d64:kl_numerical_precision",
+      "passed": true
+    },
+    {
+      "name": "metric_refinement:d64:kl_refinement_resolution",
+      "passed": true
+    },
+    {
+      "name": "metric_refinement:d64:kl_refinement_mcse",
+      "passed": true
+    },
+    {
+      "name": "metric_refinement:d64:gap_numerical_precision",
+      "passed": true
+    },
+    {
+      "name": "metric_refinement:d64:gap_refinement_resolution",
+      "passed": true
+    },
+    {
+      "name": "metric_refinement:d64:gap_refinement_mcse",
+      "passed": true
+    },
+    {
+      "name": "metric_refinement:d64_seed1:kl_numerical_precision",
+      "passed": true
+    },
+    {
+      "name": "metric_refinement:d64_seed1:kl_refinement_resolution",
+      "passed": true
+    },
+    {
+      "name": "metric_refinement:d64_seed1:kl_refinement_mcse",
+      "passed": true
+    },
+    {
+      "name": "metric_refinement:d64_seed1:gap_numerical_precision",
+      "passed": true
+    },
+    {
+      "name": "metric_refinement:d64_seed1:gap_refinement_resolution",
+      "passed": true
+    },
+    {
+      "name": "metric_refinement:d64_seed1:gap_refinement_mcse",
+      "passed": true
+    },
+    {
+      "name": "cohort:unchanged_during_audit",
+      "passed": true
+    },
+    {
+      "name": "source3:unchanged_during_audit",
+      "passed": true
+    },
+    {
+      "name": "model3:d64:unchanged_during_audit",
+      "passed": true
+    },
+    {
+      "name": "model3:d64:arrays:unchanged_during_audit",
+      "passed": true
+    },
+    {
+      "name": "model3:d64_seed1:unchanged_during_audit",
+      "passed": true
+    },
+    {
+      "name": "model3:d64_seed1:arrays:unchanged_during_audit",
+      "passed": true
+    },
+    {
+      "name": "reference3:t1024:alpha64:unchanged_during_audit",
+      "passed": true
+    },
+    {
+      "name": "reference3:t1024:alpha64:checkpoint:unchanged_during_audit",
+      "passed": true
+    },
+    {
+      "name": "reference3:t1024:alpha64:moments:unchanged_during_audit",
+      "passed": true
+    },
+    {
+      "name": "reference3:t1024:alpha128:unchanged_during_audit",
+      "passed": true
+    },
+    {
+      "name": "reference3:t1024:alpha128:checkpoint:unchanged_during_audit",
+      "passed": true
+    },
+    {
+      "name": "reference3:t1024:alpha128:moments:unchanged_during_audit",
+      "passed": true
+    }
+  ],
+  "inputs": {
+    "cohort": {
+      "path": "/Users/ruediger/Projects/layered_architectures/output/shared_base_full_context/cohort.json",
+      "sha256": "d9327e71a746018a7f1d0a453dcc06f08aa66d9ce2d17677d4304f1d6053ad47"
+    },
+    "source3": {
+      "path": "/Users/ruediger/Projects/layered_architectures/output/shared_base_full_context/data/seq_000003.json",
+      "sha256": "d8573014d7315345c9c30a3c75ebabf538477c089ba8547060d564a491b75c65"
+    },
+    "model3:d64": {
+      "path": "/Users/ruediger/Projects/layered_architectures/output/shared_base_full_context/models/d64/seq_000003.json",
+      "sha256": "b34a4ddd1bd8ab8d83b2afae45a803158bfd7e92d207afe2db0ec8cb496f2607"
+    },
+    "model3:d64:arrays": {
+      "path": "/Users/ruediger/Projects/layered_architectures/output/shared_base_full_context/models/d64/seq_000003.npz",
+      "sha256": "633e056518c237c2406f3fd0fa8954182a102ff6775f461ecc4b4bddee1945c3"
+    },
+    "model3:d64_seed1": {
+      "path": "/Users/ruediger/Projects/layered_architectures/output/shared_base_full_context/models/d64_seed1/seq_000003.json",
+      "sha256": "d7b7009a79a16c225597dcd913bc0d369c4d3e666447dd8965265e947273f48d"
+    },
+    "model3:d64_seed1:arrays": {
+      "path": "/Users/ruediger/Projects/layered_architectures/output/shared_base_full_context/models/d64_seed1/seq_000003.npz",
+      "sha256": "1dcc73f13228a34cbba6229668aaa5ca994385408cf3123d9ebfa20e55870dee"
+    },
+    "reference3:t1024:alpha64": {
+      "path": "/Users/ruediger/Projects/layered_architectures/output/shared_base_surrogate_refined_2026-09-15/refs/alpha64/seq_000003_t1024.json",
+      "sha256": "4a55ac5bcfd7390622d583b718b9277661403f03dfeaf9b7271506afc4af9e7f"
+    },
+    "reference3:t1024:alpha64:checkpoint": {
+      "path": "/Users/ruediger/Projects/layered_architectures/output/shared_base_surrogate_refined_2026-09-15/chains/alpha64/seq_000003_t1024.npz",
+      "sha256": "b03a37a09d5b721085ee73c14a0e3d4427bcec391c5dc4d588fe448996e9355a"
+    },
+    "reference3:t1024:alpha64:moments": {
+      "path": "/Users/ruediger/Projects/layered_architectures/output/shared_base_surrogate_refined_2026-09-15/refs/alpha64/seq_000003_t1024.npz",
+      "sha256": "652e1b9abc18d839e6edb167db7583872d9fc0348d9dfb9198eb4600bea9af94"
+    },
+    "reference3:t1024:alpha128": {
+      "path": "/Users/ruediger/Projects/layered_architectures/output/shared_base_surrogate_refined_2026-09-15/refs/alpha128/seq_000003_t1024.json",
+      "sha256": "2daa0d05277cf4e8f4d8ee23e7440688ff10d1dc9cd6350734df6d42da14eb5e"
+    },
+    "reference3:t1024:alpha128:checkpoint": {
+      "path": "/Users/ruediger/Projects/layered_architectures/output/shared_base_surrogate_refined_2026-09-15/chains/alpha128/seq_000003_t1024.npz",
+      "sha256": "941e8949d2e6687ddadd0520b438851a488ac425f439c9ce5719e68a70c9e5d4"
+    },
+    "reference3:t1024:alpha128:moments": {
+      "path": "/Users/ruediger/Projects/layered_architectures/output/shared_base_surrogate_refined_2026-09-15/refs/alpha128/seq_000003_t1024.npz",
+      "sha256": "d737b5319e2bf97853e0d7f35ebe07d6d69145be29222cb9598942c859b50183"
+    }
+  },
+  "references": {
+    "64": {
+      "order": 64,
+      "seed": 3959959219,
+      "mean": [
+        0.02325206256393543,
+        0.011716023272296261,
+        0.002725158736107594,
+        0.0029912527828804573,
+        0.02857996882517399,
+        0.012454933620434299,
+        0.04174275287147898,
+        0.0029944093003738837,
+        0.0045114974968360234,
+        0.006114746186218871,
+        0.07816076039928309,
+        0.006338505635106904,
+        0.005342266597469588,
+        0.05470846836750441,
+        0.0029865081696411736,
+        0.003020878436556942,
+        0.0061668571191627365,
+        0.004524100102045216,
+        0.004522673293135517,
+        0.0030438009535186518,
+        0.003790925698168227,
+        0.0028106703713228825,
+        0.003845936312026563,
+        0.0037197950857930854,
+        0.0038381914738504796,
+        0.002955937710081209,
+        0.01597198270906526,
+        0.002994129443907831,
+        0.004513222303920372,
+        0.0029847535177319673,
+        0.12701953542483693,
+        0.0044481161899682705,
+        0.0029867234360022063,
+        0.008330642365320266,
+        0.0029998599041234954,
+        0.0038192718466950053,
+        0.003925707720062006,
+        0.003865739097971384,
+        0.0027064402292737893,
+        0.005273779169702325,
+        0.024857931090353676,
+        0.29138263616630716,
+        0.030323380423570773,
+        0.009138998800391235,
+        0.0033706655159693316,
+        0.0027802024145839157,
+        0.006325258912889303,
+        0.0029863383291909565,
+        0.003347513938710893,
+        0.017244001282890022,
+        0.007273539261027082,
+        0.00999797430590878,
+        0.002785942629467973,
+        0.0026121908073629446,
+        0.0045594382486356996,
+        0.003940079724381857,
+        0.009044113229106528,
+        0.0030696198675486033,
+        0.006105264225064587,
+        0.00789799689228573,
+        0.0038673520197509362,
+        0.0037318555918595545,
+        0.00816407779494025,
+        0.016494643788818052
+      ],
+      "mcse": [
+        0.0002032143400349975,
+        0.00016600282455628875,
+        2.554105986983212e-05,
+        4.7832508989470585e-05,
+        0.00026940884324129765,
+        9.972245233898045e-05,
+        0.0002063273709435859,
+        3.5787358361490054e-05,
+        0.00011685316543451303,
+        8.294305597992821e-05,
+        2.695911024274874e-05,
+        9.968272542656066e-05,
+        0.00014773039591193973,
+        0.0001280344153510847,
+        3.486326321429494e-05,
+        3.620221640984093e-05,
+        0.00010418074412811853,
+        6.395392183379096e-05,
+        8.342404487230221e-05,
+        3.524356651949422e-05,
+        5.948437359288483e-05,
+        3.90369335431438e-05,
+        5.5595474318643395e-05,
+        7.488162336403956e-05,
+        6.315728626826345e-05,
+        4.3086328318348515e-05,
+        0.00012770949268365393,
+        3.2911993934341566e-05,
+        7.019624424522766e-05,
+        4.5739948915477035e-05,
+        9.417149420430975e-05,
+        6.712013887455414e-05,
+        3.9085754452246366e-05,
+        0.00011813790652862311,
+        3.659878266788711e-05,
+        6.004750786498088e-05,
+        6.178928902391239e-05,
+        4.9678038913789394e-05,
+        2.5788423035216287e-05,
+        0.00010012524660907658,
+        0.00020915064202233473,
+        0.0004159651768130123,
+        0.00031227196822910196,
+        0.00011641978433091842,
+        4.735143347624399e-05,
+        3.0288976031221555e-05,
+        0.00013655477353320873,
+        3.674814777179504e-05,
+        7.039834867385433e-05,
+        0.00012724283499574994,
+        8.675310982222022e-05,
+        0.00010116163168628889,
+        2.8940678957447472e-05,
+        2.4703159406139303e-05,
+        8.410646708077178e-05,
+        5.92910141889378e-05,
+        0.00010393404451607519,
+        7.169697734631037e-05,
+        7.970388938782138e-05,
+        0.0001170826375006572,
+        6.215173315751507e-05,
+        5.007684480152221e-05,
+        0.00012786589389070417,
+        0.00015014627155615496
+      ],
+      "diagnostics": {
+        "gates": {
+          "split_rhat_below_1_05": true,
+          "probability_ess_at_least_200": true,
+          "maximum_probability_mcse_at_most_0_005": true,
+          "raw_normalization": true
+        },
+        "min_probability_ess": 239.113216473236,
+        "max_probability_mcse": 0.0004159651768130123
+      },
+      "metrics": {
+        "d64": {
+          "total_variation": 0.12601604027240948,
+          "kl_bits": 0.1048661450111937,
+          "true_expected_loss_gap_bits": 0.0778315852668199,
+          "kl_uncertainty": {
+            "batch_mcse_bits": 0.0006308370010640165,
+            "between_mcse_bits": 0.00033026533447662906,
+            "mcse_bits": 0.0006308370010640165
+          },
+          "gap_uncertainty": {
+            "batch_mcse_bits": 0.0002647717274727316,
+            "between_mcse_bits": 0.00012701138325201778,
+            "mcse_bits": 0.0002647717274727316
+          },
+          "kl_second_order": {
+            "batch": {
+              "mean_scale_bits": 3.976367910201966e-05,
+              "sd_scale_bits": 1.042611129708032e-05
+            },
+            "between": {
+              "mean_scale_bits": 4.2190888694828035e-05,
+              "sd_scale_bits": 3.495115462721664e-05
+            },
+            "mean_scale_bits": 4.2190888694828035e-05,
+            "sd_scale_bits": 3.495115462721664e-05,
+            "noise_scale_bits": 5.2023136305389196e-05
+          },
+          "gap_second_order": {
+            "batch": {
+              "mean_scale_bits": 3.608000492890496e-05,
+              "sd_scale_bits": 9.628600155452536e-06
+            },
+            "between": {
+              "mean_scale_bits": 3.86761754937954e-05,
+              "sd_scale_bits": 3.214363532012023e-05
+            },
+            "mean_scale_bits": 3.86761754937954e-05,
+            "sd_scale_bits": 3.214363532012023e-05,
+            "noise_scale_bits": 4.777837471910221e-05
+          },
+          "max_relative_probability_mcse": 0.0276531305985204,
+          "kl_numerical_scale_bits": 0.0006308370010640165,
+          "gap_numerical_scale_bits": 0.0002647717274727316,
+          "gradient_kl": [
+            0.9673432989742368,
+            -0.4068756851290405,
+            0.35496773038260643,
+            -0.706912610218371,
+            0.6963070712690616,
+            -0.35315402099313875,
+            0.4364032876659716,
+            -0.9262979954469289,
+            0.7266438956110222,
+            -0.2457160652915149,
+            -0.10511344822904589,
+            0.0537981160558243,
+            -0.29857638759047656,
+            0.7307618947853272,
+            -1.4932459052621436,
+            -0.28564233685177354,
+            -0.32012259158603507,
+            0.24973237914770174,
+            0.41013431797724276,
+            -0.7026614443162503,
+            0.034373852841046215,
+            0.3560514463893887,
+            -0.8200897144811031,
+            0.6782614855298557,
+            -0.7786970632468538,
+            0.24209872790137354,
+            -1.354126266662258,
+            0.2131207694322319,
+            -0.7372016204447671,
+            0.3800525292218466,
+            -0.2240097158118477,
+            0.5161221894996657,
+            0.13201185834729312,
+            -0.5988768636672733,
+            0.4214453496093824,
+            0.18280827249458542,
+            0.35840883159030956,
+            0.20671305391304684,
+            -1.1199248315851043,
+            -0.5728346810599128,
+            -1.309587543943545,
+            -0.20674591050418223,
+            -0.6418645080086253,
+            1.280404114083855,
+            -0.945861032940524,
+            -0.10590751131988907,
+            0.9103111810551472,
+            0.12803274852230717,
+            0.07472020408592983,
+            -0.7801472162870238,
+            1.1960169686806317,
+            0.3402449571388484,
+            0.08322419959560245,
+            0.18543307832089884,
+            0.4540192325640058,
+            0.188291434046292,
+            -0.5882146346519472,
+            0.19700309269807104,
+            1.1464469352121347,
+            0.2136294036930979,
+            0.8273319336675391,
+            -0.5294475594204202,
+            0.15280713017917202,
+            1.4323781927674324
+          ],
+          "gradient_gap": [
+            -0.07211556209435055,
+            -0.10627233839547645,
+            0.5982094109848384,
+            -0.03456496360565575,
+            -0.43283717097488317,
+            -0.08297680640616067,
+            0.12200425494792633,
+            -0.43706165889948234,
+            0.4128239507953646,
+            0.8476918429156679,
+            0.13029973664403904,
+            0.1953088025712948,
+            0.011888070444964871,
+            0.13074498880551744,
+            -0.3138921221332378,
+            -0.40807437309250594,
+            0.3310890316455153,
+            0.589515636866409,
+            -0.6747905548619596,
+            0.3382694267887658,
+            -0.6392971106125976,
+            -0.17362523028830856,
+            -0.2953234001014311,
+            0.24280077115496246,
+            -0.4638329531520743,
+            0.3320098147313395,
+            -0.047776650407693744,
+            -0.16317955370131743,
+            -0.7266087180597126,
+            0.26369278091371506,
+            0.15510997046782848,
+            0.1499391460056223,
+            -0.06680045367871768,
+            0.15806865710197138,
+            -0.27164746715647525,
+            0.32539486403099027,
+            -0.2574865570368414,
+            0.07665121906391703,
+            0.9171716542218455,
+            -0.7806370226436068,
+            0.2774103702607207,
+            0.19818930841977234,
+            0.2649814082322668,
+            -0.4284598150110853,
+            -0.4866507552592204,
+            -0.04118735327719936,
+            -0.14481360811582267,
+            -0.2908152960810253,
+            0.005055638171387766,
+            0.6345740891318785,
+            -0.3873625851454727,
+            0.36333612139006655,
+            0.14011879478705547,
+            0.3313784557458541,
+            -0.09416674330707764,
+            -0.46569206725744905,
+            0.7226764969028954,
+            0.1715773989852527,
+            0.168660675293286,
+            0.13783448318266367,
+            -0.6661624853624025,
+            -0.3458075693942888,
+            0.002241277246900042,
+            0.053200396661036375
+          ],
+          "note": "Metrics of the posterior mean. MCSE uses covariance projections; KL quadratic scales are local estimates, not bounds or bias corrections."
+        },
+        "d64_seed1": {
+          "total_variation": 0.1293632846528801,
+          "kl_bits": 0.10085941942615148,
+          "true_expected_loss_gap_bits": 0.09095401214378696,
+          "kl_uncertainty": {
+            "batch_mcse_bits": 0.0005825672082727156,
+            "between_mcse_bits": 0.00037980294704226714,
+            "mcse_bits": 0.0005825672082727156
+          },
+          "gap_uncertainty": {
+            "batch_mcse_bits": 0.0002647717274727316,
+            "between_mcse_bits": 0.00012701138325201778,
+            "mcse_bits": 0.0002647717274727316
+          },
+          "kl_second_order": {
+            "batch": {
+              "mean_scale_bits": 3.976367910201966e-05,
+              "sd_scale_bits": 1.042611129708032e-05
+            },
+            "between": {
+              "mean_scale_bits": 4.2190888694828035e-05,
+              "sd_scale_bits": 3.495115462721664e-05
+            },
+            "mean_scale_bits": 4.2190888694828035e-05,
+            "sd_scale_bits": 3.495115462721664e-05,
+            "noise_scale_bits": 5.2023136305389196e-05
+          },
+          "gap_second_order": {
+            "batch": {
+              "mean_scale_bits": 3.608000492890496e-05,
+              "sd_scale_bits": 9.628600155452536e-06
+            },
+            "between": {
+              "mean_scale_bits": 3.86761754937954e-05,
+              "sd_scale_bits": 3.214363532012023e-05
+            },
+            "mean_scale_bits": 3.86761754937954e-05,
+            "sd_scale_bits": 3.214363532012023e-05,
+            "noise_scale_bits": 4.777837471910221e-05
+          },
+          "max_relative_probability_mcse": 0.0276531305985204,
+          "kl_numerical_scale_bits": 0.0005825672082727156,
+          "gap_numerical_scale_bits": 0.0002647717274727316,
+          "gradient_kl": [
+            1.1573339916239496,
+            -0.5895269393837858,
+            -0.14623937783301866,
+            -1.0843937655681082,
+            1.3946324422633842,
+            0.6252342942710105,
+            1.1237042160257706,
+            -0.8258216498358818,
+            0.6367455077020154,
+            -0.27381468039177004,
+            0.18861266487652828,
+            0.3852677137024014,
+            0.5321169247396862,
+            1.0916683869188843,
+            0.18262439243637663,
+            -0.14346329409421088,
+            -0.405399117735755,
+            0.6519823826614477,
+            -0.6765002719228506,
+            -0.9115378600487754,
+            -0.3260737108106112,
+            0.01179828509092573,
+            -0.9431819578851879,
+            0.1891211960467183,
+            -0.7421409935340345,
+            0.04772036364525811,
+            -0.19996218017485834,
+            0.06897183016975905,
+            -0.6437175304741867,
+            -0.053292976685727744,
+            -0.09006855603928843,
+            -0.20704435205829297,
+            -0.3077491163854167,
+            -0.37341887148626873,
+            -0.2984817267369242,
+            0.24326468520648392,
+            -0.11005957321574544,
+            -0.1437982120850121,
+            -0.913840045463312,
+            -0.3442434713242848,
+            -0.7207250993800204,
+            0.2090208114801495,
+            -0.31315557587369813,
+            1.0449513912961512,
+            -1.0349346350516555,
+            -0.06260327234384011,
+            -0.2747930644966896,
+            -0.266819944434455,
+            -0.22178902548915969,
+            0.20033051620245734,
+            1.1272667714002718,
+            0.49068241331036044,
+            0.02412790445612467,
+            -0.043711062859180805,
+            0.17188912846225457,
+            -0.8023417092159152,
+            0.1402984533384437,
+            0.20500720465392508,
+            0.6595909192977567,
+            0.02552612742335092,
+            0.19732719020340772,
+            -1.1656192137835275,
+            1.164247286264449,
+            1.4691974389317348
+          ],
+          "gradient_gap": [
+            -0.07211556209435055,
+            -0.10627233839547645,
+            0.5982094109848384,
+            -0.03456496360565575,
+            -0.43283717097488317,
+            -0.08297680640616067,
+            0.12200425494792633,
+            -0.43706165889948234,
+            0.4128239507953646,
+            0.8476918429156679,
+            0.13029973664403904,
+            0.1953088025712948,
+            0.011888070444964871,
+            0.13074498880551744,
+            -0.3138921221332378,
+            -0.40807437309250594,
+            0.3310890316455153,
+            0.589515636866409,
+            -0.6747905548619596,
+            0.3382694267887658,
+            -0.6392971106125976,
+            -0.17362523028830856,
+            -0.2953234001014311,
+            0.24280077115496246,
+            -0.4638329531520743,
+            0.3320098147313395,
+            -0.047776650407693744,
+            -0.16317955370131743,
+            -0.7266087180597126,
+            0.26369278091371506,
+            0.15510997046782848,
+            0.1499391460056223,
+            -0.06680045367871768,
+            0.15806865710197138,
+            -0.27164746715647525,
+            0.32539486403099027,
+            -0.2574865570368414,
+            0.07665121906391703,
+            0.9171716542218455,
+            -0.7806370226436068,
+            0.2774103702607207,
+            0.19818930841977234,
+            0.2649814082322668,
+            -0.4284598150110853,
+            -0.4866507552592204,
+            -0.04118735327719936,
+            -0.14481360811582267,
+            -0.2908152960810253,
+            0.005055638171387766,
+            0.6345740891318785,
+            -0.3873625851454727,
+            0.36333612139006655,
+            0.14011879478705547,
+            0.3313784557458541,
+            -0.09416674330707764,
+            -0.46569206725744905,
+            0.7226764969028954,
+            0.1715773989852527,
+            0.168660675293286,
+            0.13783448318266367,
+            -0.6661624853624025,
+            -0.3458075693942888,
+            0.002241277246900042,
+            0.053200396661036375
+          ],
+          "note": "Metrics of the posterior mean. MCSE uses covariance projections; KL quadratic scales are local estimates, not bounds or bias corrections."
+        }
+      }
+    },
+    "128": {
+      "order": 128,
+      "seed": 250563252,
+      "mean": [
+        0.023588085986175435,
+        0.011657198413427465,
+        0.0027559375947410147,
+        0.002991232531713175,
+        0.028316039602472923,
+        0.012272339906266812,
+        0.041867926789921905,
+        0.0029756562013702323,
+        0.004451094515888667,
+        0.006300113747248341,
+        0.07820127146486916,
+        0.006305161018703258,
+        0.005317495906066352,
+        0.054559336017432195,
+        0.002928130900747703,
+        0.0029751013113069793,
+        0.006228772331106524,
+        0.004452786658304085,
+        0.0045432242471860245,
+        0.002987991230879906,
+        0.003886009588573188,
+        0.002773589467829459,
+        0.003836567889167905,
+        0.0038365802084919195,
+        0.003798030704327545,
+        0.002995770224520783,
+        0.015845832616244695,
+        0.00299515269788021,
+        0.00454573417397691,
+        0.0030246832649816692,
+        0.1271624092815556,
+        0.0044720986531940265,
+        0.002979260418553267,
+        0.008038549337033164,
+        0.0029548520410055067,
+        0.0037736596834624645,
+        0.0038161853198470934,
+        0.0037628705486556467,
+        0.0027975226544690738,
+        0.005270074067043731,
+        0.025104079969512097,
+        0.29201686663920984,
+        0.029878328606913307,
+        0.009126172550070134,
+        0.003350226948178538,
+        0.0027400985934814734,
+        0.0062834355453063396,
+        0.003021937012187755,
+        0.003378578646836451,
+        0.017231330170721926,
+        0.007122652458847507,
+        0.010039445138849724,
+        0.0027354807988926645,
+        0.0025591882242782028,
+        0.004520711260615472,
+        0.0037399175819364523,
+        0.00915838574452769,
+        0.0030217111159710746,
+        0.006167446300643168,
+        0.008147620370747793,
+        0.0038320848508016513,
+        0.0037970233027699576,
+        0.00812060793880202,
+        0.016666341013258364
+      ],
+      "mcse": [
+        0.00015817368130787427,
+        8.281007650166546e-05,
+        3.50423797045781e-05,
+        2.769808759069103e-05,
+        0.00018197907649589705,
+        8.013279998356115e-05,
+        0.00019536520950675312,
+        2.7449471137216647e-05,
+        5.1690323077273256e-05,
+        6.324511689659267e-05,
+        1.645511648662536e-05,
+        6.484983746629274e-05,
+        5.2180073536904226e-05,
+        0.00013221669594158927,
+        2.2522213436972908e-05,
+        3.7108839889521224e-05,
+        8.774855127986192e-05,
+        8.14951353090381e-05,
+        6.450676154812318e-05,
+        2.755581531881177e-05,
+        6.43963077297364e-05,
+        2.821980619529871e-05,
+        4.862023778275748e-05,
+        3.765156073583382e-05,
+        4.160885327807404e-05,
+        3.057648700662412e-05,
+        8.618865642110601e-05,
+        2.5172318596612605e-05,
+        7.52221784103067e-05,
+        3.1063955726261746e-05,
+        5.6192504075388337e-05,
+        5.108633024174477e-05,
+        2.842955306581872e-05,
+        6.459132550755458e-05,
+        2.6299069280977467e-05,
+        4.048618248460954e-05,
+        3.9812922590721855e-05,
+        4.1183156261221826e-05,
+        3.0735546175926503e-05,
+        6.475654392363666e-05,
+        0.00016538376537121068,
+        0.0002449550186924414,
+        0.00018985162532238764,
+        7.836654992183637e-05,
+        6.047924039891079e-05,
+        1.920814628153801e-05,
+        9.20715656871395e-05,
+        2.7980855991449888e-05,
+        4.612338795578117e-05,
+        9.474596432795031e-05,
+        6.838705937336874e-05,
+        7.028481495250375e-05,
+        2.2014193413663293e-05,
+        1.8219143296688842e-05,
+        5.6444601807608735e-05,
+        3.9547969302205916e-05,
+        9.83126896577319e-05,
+        2.9055583977011803e-05,
+        6.143460224822405e-05,
+        0.0001286954922607398,
+        4.193541376031218e-05,
+        4.0030969302364286e-05,
+        6.122083295994116e-05,
+        9.51412922468454e-05
+      ],
+      "diagnostics": {
+        "gates": {
+          "split_rhat_below_1_05": true,
+          "probability_ess_at_least_200": true,
+          "maximum_probability_mcse_at_most_0_005": true,
+          "raw_normalization": true
+        },
+        "min_probability_ess": 449.9190031637327,
+        "max_probability_mcse": 0.0002449550186924414
+      },
+      "metrics": {
+        "d64": {
+          "total_variation": 0.125837035413231,
+          "kl_bits": 0.10521325500985484,
+          "true_expected_loss_gap_bits": 0.07845385642124734,
+          "kl_uncertainty": {
+            "batch_mcse_bits": 0.0005028733008238472,
+            "between_mcse_bits": 0.0006763323569246502,
+            "mcse_bits": 0.0006763323569246502
+          },
+          "gap_uncertainty": {
+            "batch_mcse_bits": 0.0001822055882107055,
+            "between_mcse_bits": 0.00024833544006702327,
+            "mcse_bits": 0.00024833544006702327
+          },
+          "kl_second_order": {
+            "batch": {
+              "mean_scale_bits": 2.1565972590516046e-05,
+              "sd_scale_bits": 5.390470157344264e-06
+            },
+            "between": {
+              "mean_scale_bits": 2.0789285915952156e-05,
+              "sd_scale_bits": 1.72051936430505e-05
+            },
+            "mean_scale_bits": 2.1565972590516046e-05,
+            "sd_scale_bits": 1.72051936430505e-05,
+            "noise_scale_bits": 2.705213126362751e-05
+          },
+          "gap_second_order": {
+            "batch": {
+              "mean_scale_bits": 1.9762918868164098e-05,
+              "sd_scale_bits": 5.079423019330636e-06
+            },
+            "between": {
+              "mean_scale_bits": 1.8961581385960333e-05,
+              "sd_scale_bits": 1.5856368188747793e-05
+            },
+            "mean_scale_bits": 1.9762918868164098e-05,
+            "sd_scale_bits": 1.5856368188747793e-05,
+            "noise_scale_bits": 2.4726364237165382e-05
+          },
+          "max_relative_probability_mcse": 0.01830205252637835,
+          "kl_numerical_scale_bits": 0.0006763323569246502,
+          "gap_numerical_scale_bits": 0.00024833544006702327,
+          "gradient_kl": [
+            0.991638167475482,
+            -0.4105423377244686,
+            0.3747658891626786,
+            -0.7033271718291372,
+            0.6865174324501444,
+            -0.3708658012344088,
+            0.44431822680451116,
+            -0.931766372733976,
+            0.7107928517126796,
+            -0.19903559915625357,
+            -0.1007706811111464,
+            0.04978378476575629,
+            -0.30168613769132513,
+            0.7304190212091801,
+            -1.5181303178256418,
+            -0.3040764633703188,
+            -0.30211496541597294,
+            0.230405224576804,
+            0.42027025722016065,
+            -0.7257643427826619,
+            0.07370833913328956,
+            0.34048664752496216,
+            -0.8200130969190256,
+            0.726454458676792,
+            -0.7902769732153325,
+            0.26500503876893733,
+            -1.3619710084144618,
+            0.21720893681704778,
+            -0.7232509361660552,
+            0.402820012815019,
+            -0.21879265281869054,
+            0.5274749356921502,
+            0.1319976462949719,
+            -0.6467742308707526,
+            0.4032313197972428,
+            0.16907019047111915,
+            0.32118250567102624,
+            0.1713976457046711,
+            -1.0685763386912517,
+            -0.5702533995060011,
+            -1.2917767119368317,
+            -0.20001391260383117,
+            -0.6596004491398867,
+            1.2819731278758404,
+            -0.951040468883651,
+            -0.12327442408160105,
+            0.9043354376308286,
+            0.14872392314891703,
+            0.09164178562738368,
+            -0.7776125110396719,
+            1.1693692299526846,
+            0.3498119747436639,
+            0.060448285298954296,
+            0.15945426088152748,
+            0.44530812711917056,
+            0.1166682951496465,
+            -0.5665051516794146,
+            0.17790403210758732,
+            1.1646616561803391,
+            0.26211657033119495,
+            0.8177105557080839,
+            -0.5008766614398488,
+            0.14870014300461087,
+            1.4509131807765603
+          ],
+          "gradient_gap": [
+            -0.09197079935113783,
+            -0.10196704490423758,
+            0.574749260065949,
+            -0.03644339054973855,
+            -0.42633011337002313,
+            -0.06625919219357401,
+            0.11576567539393756,
+            -0.4332998126802695,
+            0.4346340324615765,
+            0.7816297179296763,
+            0.12765425172196676,
+            0.20150626095688806,
+            0.01626779482126084,
+            0.1328599399394268,
+            -0.295453125380005,
+            -0.3957233856816278,
+            0.3126561693586458,
+            0.6184252794001341,
+            -0.6796570834329275,
+            0.3676062168890064,
+            -0.6581685496011517,
+            -0.1600066949363712,
+            -0.29467569355184353,
+            0.19293324792470634,
+            -0.4565249666992178,
+            0.3079784903003491,
+            -0.03942867106077541,
+            -0.16546657457405245,
+            -0.7328360269012271,
+            0.24072146826327057,
+            0.15155029490501315,
+            0.14009708288233447,
+            -0.06551478038008862,
+            0.21037732207767035,
+            -0.2573617784930968,
+            0.34355783020832176,
+            -0.22849480391814292,
+            0.11331249136119359,
+            0.8420088026385417,
+            -0.7821356045756293,
+            0.25972864540252827,
+            0.19297556943987604,
+            0.28690327755493095,
+            -0.42907515822172415,
+            -0.48337207174941066,
+            -0.02416143692556827,
+            -0.1387892440425189,
+            -0.30498460677452655,
+            -0.009138431914613054,
+            0.6341340464143079,
+            -0.3692082471596002,
+            0.3544399183529463,
+            0.16541434935146793,
+            0.36397058176448716,
+            -0.08543773052023429,
+            -0.421137557791309,
+            0.6951344891712847,
+            0.19355182937984283,
+            0.15162892034202513,
+            0.09087126629592746,
+            -0.6619087591289212,
+            -0.3646451940425868,
+            0.007503943780952538,
+            0.03702806375570389
+          ],
+          "note": "Metrics of the posterior mean. MCSE uses covariance projections; KL quadratic scales are local estimates, not bounds or bias corrections."
+        },
+        "d64_seed1": {
+          "total_variation": 0.12977439792221435,
+          "kl_bits": 0.1010610602954787,
+          "true_expected_loss_gap_bits": 0.09157628329821435,
+          "kl_uncertainty": {
+            "batch_mcse_bits": 0.00045548911491203307,
+            "between_mcse_bits": 0.0005274158946163239,
+            "mcse_bits": 0.0005274158946163239
+          },
+          "gap_uncertainty": {
+            "batch_mcse_bits": 0.0001822055882107055,
+            "between_mcse_bits": 0.00024833544006702327,
+            "mcse_bits": 0.00024833544006702327
+          },
+          "kl_second_order": {
+            "batch": {
+              "mean_scale_bits": 2.1565972590516046e-05,
+              "sd_scale_bits": 5.390470157344264e-06
+            },
+            "between": {
+              "mean_scale_bits": 2.0789285915952156e-05,
+              "sd_scale_bits": 1.72051936430505e-05
+            },
+            "mean_scale_bits": 2.1565972590516046e-05,
+            "sd_scale_bits": 1.72051936430505e-05,
+            "noise_scale_bits": 2.705213126362751e-05
+          },
+          "gap_second_order": {
+            "batch": {
+              "mean_scale_bits": 1.9762918868164098e-05,
+              "sd_scale_bits": 5.079423019330636e-06
+            },
+            "between": {
+              "mean_scale_bits": 1.8961581385960333e-05,
+              "sd_scale_bits": 1.5856368188747793e-05
+            },
+            "mean_scale_bits": 1.9762918868164098e-05,
+            "sd_scale_bits": 1.5856368188747793e-05,
+            "noise_scale_bits": 2.4726364237165382e-05
+          },
+          "max_relative_probability_mcse": 0.01830205252637835,
+          "kl_numerical_scale_bits": 0.0005274158946163239,
+          "gap_numerical_scale_bits": 0.00024833544006702327,
+          "gradient_kl": [
+            1.181628860125195,
+            -0.5931935919792137,
+            -0.1264412190529458,
+            -1.0808083271788742,
+            1.3848428034444673,
+            0.6075225140297407,
+            1.1316191551643104,
+            -0.8312900271229285,
+            0.6208944638036729,
+            -0.22713421425650826,
+            0.192955431994428,
+            0.38125338241233364,
+            0.5290071746388374,
+            1.0913255133427375,
+            0.15773997987287847,
+            -0.16189742061275592,
+            -0.38739149156569275,
+            0.63265522809055,
+            -0.6663643326799323,
+            -0.9346407585151866,
+            -0.28673922451836775,
+            -0.003766513773500124,
+            -0.9431053403231102,
+            0.23731416919365467,
+            -0.753720903502513,
+            0.0706266745128219,
+            -0.20780692192706196,
+            0.07305999755457515,
+            -0.6297668461954744,
+            -0.030525493092555145,
+            -0.08485149304613082,
+            -0.1956916058658087,
+            -0.3077633284377378,
+            -0.4213162386897479,
+            -0.316695756549064,
+            0.2295266031830181,
+            -0.14728589913502876,
+            -0.1791136202933874,
+            -0.8624915525694594,
+            -0.3416621897703729,
+            -0.7029142673733069,
+            0.2157528093805008,
+            -0.3308915170049592,
+            1.046520405088137,
+            -1.0401140709947823,
+            -0.07997018510555187,
+            -0.28076880792100756,
+            -0.24612876980784493,
+            -0.2048674439477054,
+            0.20286522144980967,
+            1.1006190326723249,
+            0.5002494309151762,
+            0.0013519901594767347,
+            -0.06968988029855172,
+            0.16317802301741913,
+            -0.8739648481125606,
+            0.16200793631097699,
+            0.18590814406344158,
+            0.6778056402659616,
+            0.07401329406144797,
+            0.18770581224395255,
+            -1.1370483158029563,
+            1.1601402990898881,
+            1.487732426940863
+          ],
+          "gradient_gap": [
+            -0.09197079935113783,
+            -0.10196704490423758,
+            0.574749260065949,
+            -0.03644339054973855,
+            -0.42633011337002313,
+            -0.06625919219357401,
+            0.11576567539393756,
+            -0.4332998126802695,
+            0.4346340324615765,
+            0.7816297179296763,
+            0.12765425172196676,
+            0.20150626095688806,
+            0.01626779482126084,
+            0.1328599399394268,
+            -0.295453125380005,
+            -0.3957233856816278,
+            0.3126561693586458,
+            0.6184252794001341,
+            -0.6796570834329275,
+            0.3676062168890064,
+            -0.6581685496011517,
+            -0.1600066949363712,
+            -0.29467569355184353,
+            0.19293324792470634,
+            -0.4565249666992178,
+            0.3079784903003491,
+            -0.03942867106077541,
+            -0.16546657457405245,
+            -0.7328360269012271,
+            0.24072146826327057,
+            0.15155029490501315,
+            0.14009708288233447,
+            -0.06551478038008862,
+            0.21037732207767035,
+            -0.2573617784930968,
+            0.34355783020832176,
+            -0.22849480391814292,
+            0.11331249136119359,
+            0.8420088026385417,
+            -0.7821356045756293,
+            0.25972864540252827,
+            0.19297556943987604,
+            0.28690327755493095,
+            -0.42907515822172415,
+            -0.48337207174941066,
+            -0.02416143692556827,
+            -0.1387892440425189,
+            -0.30498460677452655,
+            -0.009138431914613054,
+            0.6341340464143079,
+            -0.3692082471596002,
+            0.3544399183529463,
+            0.16541434935146793,
+            0.36397058176448716,
+            -0.08543773052023429,
+            -0.421137557791309,
+            0.6951344891712847,
+            0.19355182937984283,
+            0.15162892034202513,
+            0.09087126629592746,
+            -0.6619087591289212,
+            -0.3646451940425868,
+            0.007503943780952538,
+            0.03702806375570389
+          ],
+          "note": "Metrics of the posterior mean. MCSE uses covariance projections; KL quadratic scales are local estimates, not bounds or bias corrections."
+        }
+      }
+    }
+  },
+  "rows": [
+    {
+      "sequence_index": 3,
+      "prefix_length": 1024,
+      "run": "d64",
+      "coarse": {
+        "total_variation": 0.12601604027240948,
+        "kl_bits": 0.1048661450111937,
+        "true_expected_loss_gap_bits": 0.0778315852668199,
+        "kl_uncertainty": {
+          "batch_mcse_bits": 0.0006308370010640165,
+          "between_mcse_bits": 0.00033026533447662906,
+          "mcse_bits": 0.0006308370010640165
+        },
+        "gap_uncertainty": {
+          "batch_mcse_bits": 0.0002647717274727316,
+          "between_mcse_bits": 0.00012701138325201778,
+          "mcse_bits": 0.0002647717274727316
+        },
+        "kl_second_order": {
+          "batch": {
+            "mean_scale_bits": 3.976367910201966e-05,
+            "sd_scale_bits": 1.042611129708032e-05
+          },
+          "between": {
+            "mean_scale_bits": 4.2190888694828035e-05,
+            "sd_scale_bits": 3.495115462721664e-05
+          },
+          "mean_scale_bits": 4.2190888694828035e-05,
+          "sd_scale_bits": 3.495115462721664e-05,
+          "noise_scale_bits": 5.2023136305389196e-05
+        },
+        "gap_second_order": {
+          "batch": {
+            "mean_scale_bits": 3.608000492890496e-05,
+            "sd_scale_bits": 9.628600155452536e-06
+          },
+          "between": {
+            "mean_scale_bits": 3.86761754937954e-05,
+            "sd_scale_bits": 3.214363532012023e-05
+          },
+          "mean_scale_bits": 3.86761754937954e-05,
+          "sd_scale_bits": 3.214363532012023e-05,
+          "noise_scale_bits": 4.777837471910221e-05
+        },
+        "max_relative_probability_mcse": 0.0276531305985204,
+        "kl_numerical_scale_bits": 0.0006308370010640165,
+        "gap_numerical_scale_bits": 0.0002647717274727316,
+        "gradient_kl": [
+          0.9673432989742368,
+          -0.4068756851290405,
+          0.35496773038260643,
+          -0.706912610218371,
+          0.6963070712690616,
+          -0.35315402099313875,
+          0.4364032876659716,
+          -0.9262979954469289,
+          0.7266438956110222,
+          -0.2457160652915149,
+          -0.10511344822904589,
+          0.0537981160558243,
+          -0.29857638759047656,
+          0.7307618947853272,
+          -1.4932459052621436,
+          -0.28564233685177354,
+          -0.32012259158603507,
+          0.24973237914770174,
+          0.41013431797724276,
+          -0.7026614443162503,
+          0.034373852841046215,
+          0.3560514463893887,
+          -0.8200897144811031,
+          0.6782614855298557,
+          -0.7786970632468538,
+          0.24209872790137354,
+          -1.354126266662258,
+          0.2131207694322319,
+          -0.7372016204447671,
+          0.3800525292218466,
+          -0.2240097158118477,
+          0.5161221894996657,
+          0.13201185834729312,
+          -0.5988768636672733,
+          0.4214453496093824,
+          0.18280827249458542,
+          0.35840883159030956,
+          0.20671305391304684,
+          -1.1199248315851043,
+          -0.5728346810599128,
+          -1.309587543943545,
+          -0.20674591050418223,
+          -0.6418645080086253,
+          1.280404114083855,
+          -0.945861032940524,
+          -0.10590751131988907,
+          0.9103111810551472,
+          0.12803274852230717,
+          0.07472020408592983,
+          -0.7801472162870238,
+          1.1960169686806317,
+          0.3402449571388484,
+          0.08322419959560245,
+          0.18543307832089884,
+          0.4540192325640058,
+          0.188291434046292,
+          -0.5882146346519472,
+          0.19700309269807104,
+          1.1464469352121347,
+          0.2136294036930979,
+          0.8273319336675391,
+          -0.5294475594204202,
+          0.15280713017917202,
+          1.4323781927674324
+        ],
+        "gradient_gap": [
+          -0.07211556209435055,
+          -0.10627233839547645,
+          0.5982094109848384,
+          -0.03456496360565575,
+          -0.43283717097488317,
+          -0.08297680640616067,
+          0.12200425494792633,
+          -0.43706165889948234,
+          0.4128239507953646,
+          0.8476918429156679,
+          0.13029973664403904,
+          0.1953088025712948,
+          0.011888070444964871,
+          0.13074498880551744,
+          -0.3138921221332378,
+          -0.40807437309250594,
+          0.3310890316455153,
+          0.589515636866409,
+          -0.6747905548619596,
+          0.3382694267887658,
+          -0.6392971106125976,
+          -0.17362523028830856,
+          -0.2953234001014311,
+          0.24280077115496246,
+          -0.4638329531520743,
+          0.3320098147313395,
+          -0.047776650407693744,
+          -0.16317955370131743,
+          -0.7266087180597126,
+          0.26369278091371506,
+          0.15510997046782848,
+          0.1499391460056223,
+          -0.06680045367871768,
+          0.15806865710197138,
+          -0.27164746715647525,
+          0.32539486403099027,
+          -0.2574865570368414,
+          0.07665121906391703,
+          0.9171716542218455,
+          -0.7806370226436068,
+          0.2774103702607207,
+          0.19818930841977234,
+          0.2649814082322668,
+          -0.4284598150110853,
+          -0.4866507552592204,
+          -0.04118735327719936,
+          -0.14481360811582267,
+          -0.2908152960810253,
+          0.005055638171387766,
+          0.6345740891318785,
+          -0.3873625851454727,
+          0.36333612139006655,
+          0.14011879478705547,
+          0.3313784557458541,
+          -0.09416674330707764,
+          -0.46569206725744905,
+          0.7226764969028954,
+          0.1715773989852527,
+          0.168660675293286,
+          0.13783448318266367,
+          -0.6661624853624025,
+          -0.3458075693942888,
+          0.002241277246900042,
+          0.053200396661036375
+        ],
+        "note": "Metrics of the posterior mean. MCSE uses covariance projections; KL quadratic scales are local estimates, not bounds or bias corrections."
+      },
+      "refined": {
+        "total_variation": 0.125837035413231,
+        "kl_bits": 0.10521325500985484,
+        "true_expected_loss_gap_bits": 0.07845385642124734,
+        "kl_uncertainty": {
+          "batch_mcse_bits": 0.0005028733008238472,
+          "between_mcse_bits": 0.0006763323569246502,
+          "mcse_bits": 0.0006763323569246502
+        },
+        "gap_uncertainty": {
+          "batch_mcse_bits": 0.0001822055882107055,
+          "between_mcse_bits": 0.00024833544006702327,
+          "mcse_bits": 0.00024833544006702327
+        },
+        "kl_second_order": {
+          "batch": {
+            "mean_scale_bits": 2.1565972590516046e-05,
+            "sd_scale_bits": 5.390470157344264e-06
+          },
+          "between": {
+            "mean_scale_bits": 2.0789285915952156e-05,
+            "sd_scale_bits": 1.72051936430505e-05
+          },
+          "mean_scale_bits": 2.1565972590516046e-05,
+          "sd_scale_bits": 1.72051936430505e-05,
+          "noise_scale_bits": 2.705213126362751e-05
+        },
+        "gap_second_order": {
+          "batch": {
+            "mean_scale_bits": 1.9762918868164098e-05,
+            "sd_scale_bits": 5.079423019330636e-06
+          },
+          "between": {
+            "mean_scale_bits": 1.8961581385960333e-05,
+            "sd_scale_bits": 1.5856368188747793e-05
+          },
+          "mean_scale_bits": 1.9762918868164098e-05,
+          "sd_scale_bits": 1.5856368188747793e-05,
+          "noise_scale_bits": 2.4726364237165382e-05
+        },
+        "max_relative_probability_mcse": 0.01830205252637835,
+        "kl_numerical_scale_bits": 0.0006763323569246502,
+        "gap_numerical_scale_bits": 0.00024833544006702327,
+        "gradient_kl": [
+          0.991638167475482,
+          -0.4105423377244686,
+          0.3747658891626786,
+          -0.7033271718291372,
+          0.6865174324501444,
+          -0.3708658012344088,
+          0.44431822680451116,
+          -0.931766372733976,
+          0.7107928517126796,
+          -0.19903559915625357,
+          -0.1007706811111464,
+          0.04978378476575629,
+          -0.30168613769132513,
+          0.7304190212091801,
+          -1.5181303178256418,
+          -0.3040764633703188,
+          -0.30211496541597294,
+          0.230405224576804,
+          0.42027025722016065,
+          -0.7257643427826619,
+          0.07370833913328956,
+          0.34048664752496216,
+          -0.8200130969190256,
+          0.726454458676792,
+          -0.7902769732153325,
+          0.26500503876893733,
+          -1.3619710084144618,
+          0.21720893681704778,
+          -0.7232509361660552,
+          0.402820012815019,
+          -0.21879265281869054,
+          0.5274749356921502,
+          0.1319976462949719,
+          -0.6467742308707526,
+          0.4032313197972428,
+          0.16907019047111915,
+          0.32118250567102624,
+          0.1713976457046711,
+          -1.0685763386912517,
+          -0.5702533995060011,
+          -1.2917767119368317,
+          -0.20001391260383117,
+          -0.6596004491398867,
+          1.2819731278758404,
+          -0.951040468883651,
+          -0.12327442408160105,
+          0.9043354376308286,
+          0.14872392314891703,
+          0.09164178562738368,
+          -0.7776125110396719,
+          1.1693692299526846,
+          0.3498119747436639,
+          0.060448285298954296,
+          0.15945426088152748,
+          0.44530812711917056,
+          0.1166682951496465,
+          -0.5665051516794146,
+          0.17790403210758732,
+          1.1646616561803391,
+          0.26211657033119495,
+          0.8177105557080839,
+          -0.5008766614398488,
+          0.14870014300461087,
+          1.4509131807765603
+        ],
+        "gradient_gap": [
+          -0.09197079935113783,
+          -0.10196704490423758,
+          0.574749260065949,
+          -0.03644339054973855,
+          -0.42633011337002313,
+          -0.06625919219357401,
+          0.11576567539393756,
+          -0.4332998126802695,
+          0.4346340324615765,
+          0.7816297179296763,
+          0.12765425172196676,
+          0.20150626095688806,
+          0.01626779482126084,
+          0.1328599399394268,
+          -0.295453125380005,
+          -0.3957233856816278,
+          0.3126561693586458,
+          0.6184252794001341,
+          -0.6796570834329275,
+          0.3676062168890064,
+          -0.6581685496011517,
+          -0.1600066949363712,
+          -0.29467569355184353,
+          0.19293324792470634,
+          -0.4565249666992178,
+          0.3079784903003491,
+          -0.03942867106077541,
+          -0.16546657457405245,
+          -0.7328360269012271,
+          0.24072146826327057,
+          0.15155029490501315,
+          0.14009708288233447,
+          -0.06551478038008862,
+          0.21037732207767035,
+          -0.2573617784930968,
+          0.34355783020832176,
+          -0.22849480391814292,
+          0.11331249136119359,
+          0.8420088026385417,
+          -0.7821356045756293,
+          0.25972864540252827,
+          0.19297556943987604,
+          0.28690327755493095,
+          -0.42907515822172415,
+          -0.48337207174941066,
+          -0.02416143692556827,
+          -0.1387892440425189,
+          -0.30498460677452655,
+          -0.009138431914613054,
+          0.6341340464143079,
+          -0.3692082471596002,
+          0.3544399183529463,
+          0.16541434935146793,
+          0.36397058176448716,
+          -0.08543773052023429,
+          -0.421137557791309,
+          0.6951344891712847,
+          0.19355182937984283,
+          0.15162892034202513,
+          0.09087126629592746,
+          -0.6619087591289212,
+          -0.3646451940425868,
+          0.007503943780952538,
+          0.03702806375570389
+        ],
+        "note": "Metrics of the posterior mean. MCSE uses covariance projections; KL quadratic scales are local estimates, not bounds or bias corrections."
+      },
+      "probability_refinement": {
+        "passed": true,
+        "checks": {
+          "max_absolute_difference_below_0_01": true,
+          "every_coordinate_within_five_mcse_plus_0_0002": true
+        },
+        "max_absolute_difference": 0.0006342304729026749,
+        "total_variation": 0.003034882716823697,
+        "max_combined_mcse": 0.00048273179872854334,
+        "absolute_difference": [
+          0.00033602342224000464,
+          5.882485886879625e-05,
+          3.077885863342084e-05,
+          2.0251167282166194e-08,
+          0.0002639292227010655,
+          0.0001825937141674873,
+          0.00012517391844292514,
+          1.8753099003651456e-05,
+          6.040298094735653e-05,
+          0.00018536756102946993,
+          4.0511065586071315e-05,
+          3.334461640364626e-05,
+          2.477069140323536e-05,
+          0.00014913235007221748,
+          5.8377268893470505e-05,
+          4.577712524996263e-05,
+          6.191521194378723e-05,
+          7.131344374113058e-05,
+          2.0550954050507254e-05,
+          5.58097226387457e-05,
+          9.508389040496128e-05,
+          3.7080903493423405e-05,
+          9.368422858657861e-06,
+          0.00011678512269883406,
+          4.0160769522934545e-05,
+          3.98325144395739e-05,
+          0.0001261500928205657,
+          1.0232539723788875e-06,
+          3.2511870056537925e-05,
+          3.9929747249701966e-05,
+          0.00014287385671865604,
+          2.3982463225756014e-05,
+          7.463017448939083e-06,
+          0.00029209302828710204,
+          4.500786311798866e-05,
+          4.561216323254076e-05,
+          0.00010952240021491278,
+          0.00010286854931573731,
+          9.10824251952845e-05,
+          3.7051026585939797e-06,
+          0.00024614887915842126,
+          0.0006342304729026749,
+          0.00044505181665746574,
+          1.2826250321101157e-05,
+          2.0438567790793775e-05,
+          4.0103821102442216e-05,
+          4.182336758296306e-05,
+          3.559868299679841e-05,
+          3.1064708125557675e-05,
+          1.2671112168096549e-05,
+          0.00015088680217957475,
+          4.14708329409437e-05,
+          5.0461830575308526e-05,
+          5.300258308474186e-05,
+          3.8726988020227476e-05,
+          0.00020016214244540512,
+          0.00011427251542116094,
+          4.790875157752866e-05,
+          6.218207557858162e-05,
+          0.00024962347846206254,
+          3.526716894928497e-05,
+          6.516771091040312e-05,
+          4.346985613822886e-05,
+          0.000171697224440312
+        ],
+        "tolerance": [
+          0.0014875847686108337,
+          0.0011275565552956552,
+          0.0004168129444148905,
+          0.00047636628649354903,
+          0.001825557666609475,
+          0.000839645079980016,
+          0.0016207264786554593,
+          0.0004255110021820777,
+          0.0008388769790010154,
+          0.0007215240969157891,
+          0.000357921221157029,
+          0.0007946038001869747,
+          0.0009833745903240544,
+          0.001120245431936567,
+          0.0004075269392181274,
+          0.00045921354473344356,
+          0.000881054984909498,
+          0.0007179662440005398,
+          0.0007272734951683594,
+          0.00042368683124507326,
+          0.0006383285055458065,
+          0.0004408443295031069,
+          0.000569282557358414,
+          0.0006190733093230246,
+          0.000578158018554667,
+          0.00046416629448241384,
+          0.0009703602893645237,
+          0.0004071741398113858,
+          0.0007144387434604742,
+          0.00047645579538841277,
+          0.0007483125895630812,
+          0.0006217501090725419,
+          0.00044165759291937736,
+          0.0008732125275458814,
+          0.0004253392962743564,
+          0.0005621061368222045,
+          0.0005675250006222499,
+          0.0005226437629164783,
+          0.00040060636588701423,
+          0.0007962062350701786,
+          0.0015331896049204188,
+          0.0026136589936427168,
+          0.002027275442969871,
+          0.0009016922817430235,
+          0.0005840539275767273,
+          0.0003793303482816612,
+          0.001023474033937731,
+          0.0004309412623737874,
+          0.0006208115496432182,
+          0.0009932139814417809,
+          0.0007523335032741283,
+          0.0008159064648617529,
+          0.00038180948890062223,
+          0.0003534750197190418,
+          0.0007064555972153051,
+          0.0005563518710306235,
+          0.0009153263338715938,
+          0.0005868036814988491,
+          0.0007031630038303582,
+          0.0010699263436111193,
+          0.0005748805430310948,
+          0.0005205529943926033,
+          0.0009088313834893641,
+          0.0010887599275481298
+        ]
+      },
+      "metric_refinement": {
+        "passed": true,
+        "checks": {
+          "kl_numerical_precision": true,
+          "kl_refinement_resolution": true,
+          "kl_refinement_mcse": true,
+          "gap_numerical_precision": true,
+          "gap_refinement_resolution": true,
+          "gap_refinement_mcse": true
+        },
+        "differences": {
+          "kl": {
+            "absolute_difference_bits": 0.0003471099986611381,
+            "combined_mcse_bits": 0.0009248679791920003,
+            "five_mcse_allowance_bits": 0.004724339895960002,
+            "resolution_limit_bits": 0.0033333333333333335
+          },
+          "gap": {
+            "absolute_difference_bits": 0.0006222711544274506,
+            "combined_mcse_bits": 0.00036300765620324944,
+            "five_mcse_allowance_bits": 0.0019150382810162474,
+            "resolution_limit_bits": 0.0033333333333333335
+          }
+        }
+      },
+      "resolved": true
+    },
+    {
+      "sequence_index": 3,
+      "prefix_length": 1024,
+      "run": "d64_seed1",
+      "coarse": {
+        "total_variation": 0.1293632846528801,
+        "kl_bits": 0.10085941942615148,
+        "true_expected_loss_gap_bits": 0.09095401214378696,
+        "kl_uncertainty": {
+          "batch_mcse_bits": 0.0005825672082727156,
+          "between_mcse_bits": 0.00037980294704226714,
+          "mcse_bits": 0.0005825672082727156
+        },
+        "gap_uncertainty": {
+          "batch_mcse_bits": 0.0002647717274727316,
+          "between_mcse_bits": 0.00012701138325201778,
+          "mcse_bits": 0.0002647717274727316
+        },
+        "kl_second_order": {
+          "batch": {
+            "mean_scale_bits": 3.976367910201966e-05,
+            "sd_scale_bits": 1.042611129708032e-05
+          },
+          "between": {
+            "mean_scale_bits": 4.2190888694828035e-05,
+            "sd_scale_bits": 3.495115462721664e-05
+          },
+          "mean_scale_bits": 4.2190888694828035e-05,
+          "sd_scale_bits": 3.495115462721664e-05,
+          "noise_scale_bits": 5.2023136305389196e-05
+        },
+        "gap_second_order": {
+          "batch": {
+            "mean_scale_bits": 3.608000492890496e-05,
+            "sd_scale_bits": 9.628600155452536e-06
+          },
+          "between": {
+            "mean_scale_bits": 3.86761754937954e-05,
+            "sd_scale_bits": 3.214363532012023e-05
+          },
+          "mean_scale_bits": 3.86761754937954e-05,
+          "sd_scale_bits": 3.214363532012023e-05,
+          "noise_scale_bits": 4.777837471910221e-05
+        },
+        "max_relative_probability_mcse": 0.0276531305985204,
+        "kl_numerical_scale_bits": 0.0005825672082727156,
+        "gap_numerical_scale_bits": 0.0002647717274727316,
+        "gradient_kl": [
+          1.1573339916239496,
+          -0.5895269393837858,
+          -0.14623937783301866,
+          -1.0843937655681082,
+          1.3946324422633842,
+          0.6252342942710105,
+          1.1237042160257706,
+          -0.8258216498358818,
+          0.6367455077020154,
+          -0.27381468039177004,
+          0.18861266487652828,
+          0.3852677137024014,
+          0.5321169247396862,
+          1.0916683869188843,
+          0.18262439243637663,
+          -0.14346329409421088,
+          -0.405399117735755,
+          0.6519823826614477,
+          -0.6765002719228506,
+          -0.9115378600487754,
+          -0.3260737108106112,
+          0.01179828509092573,
+          -0.9431819578851879,
+          0.1891211960467183,
+          -0.7421409935340345,
+          0.04772036364525811,
+          -0.19996218017485834,
+          0.06897183016975905,
+          -0.6437175304741867,
+          -0.053292976685727744,
+          -0.09006855603928843,
+          -0.20704435205829297,
+          -0.3077491163854167,
+          -0.37341887148626873,
+          -0.2984817267369242,
+          0.24326468520648392,
+          -0.11005957321574544,
+          -0.1437982120850121,
+          -0.913840045463312,
+          -0.3442434713242848,
+          -0.7207250993800204,
+          0.2090208114801495,
+          -0.31315557587369813,
+          1.0449513912961512,
+          -1.0349346350516555,
+          -0.06260327234384011,
+          -0.2747930644966896,
+          -0.266819944434455,
+          -0.22178902548915969,
+          0.20033051620245734,
+          1.1272667714002718,
+          0.49068241331036044,
+          0.02412790445612467,
+          -0.043711062859180805,
+          0.17188912846225457,
+          -0.8023417092159152,
+          0.1402984533384437,
+          0.20500720465392508,
+          0.6595909192977567,
+          0.02552612742335092,
+          0.19732719020340772,
+          -1.1656192137835275,
+          1.164247286264449,
+          1.4691974389317348
+        ],
+        "gradient_gap": [
+          -0.07211556209435055,
+          -0.10627233839547645,
+          0.5982094109848384,
+          -0.03456496360565575,
+          -0.43283717097488317,
+          -0.08297680640616067,
+          0.12200425494792633,
+          -0.43706165889948234,
+          0.4128239507953646,
+          0.8476918429156679,
+          0.13029973664403904,
+          0.1953088025712948,
+          0.011888070444964871,
+          0.13074498880551744,
+          -0.3138921221332378,
+          -0.40807437309250594,
+          0.3310890316455153,
+          0.589515636866409,
+          -0.6747905548619596,
+          0.3382694267887658,
+          -0.6392971106125976,
+          -0.17362523028830856,
+          -0.2953234001014311,
+          0.24280077115496246,
+          -0.4638329531520743,
+          0.3320098147313395,
+          -0.047776650407693744,
+          -0.16317955370131743,
+          -0.7266087180597126,
+          0.26369278091371506,
+          0.15510997046782848,
+          0.1499391460056223,
+          -0.06680045367871768,
+          0.15806865710197138,
+          -0.27164746715647525,
+          0.32539486403099027,
+          -0.2574865570368414,
+          0.07665121906391703,
+          0.9171716542218455,
+          -0.7806370226436068,
+          0.2774103702607207,
+          0.19818930841977234,
+          0.2649814082322668,
+          -0.4284598150110853,
+          -0.4866507552592204,
+          -0.04118735327719936,
+          -0.14481360811582267,
+          -0.2908152960810253,
+          0.005055638171387766,
+          0.6345740891318785,
+          -0.3873625851454727,
+          0.36333612139006655,
+          0.14011879478705547,
+          0.3313784557458541,
+          -0.09416674330707764,
+          -0.46569206725744905,
+          0.7226764969028954,
+          0.1715773989852527,
+          0.168660675293286,
+          0.13783448318266367,
+          -0.6661624853624025,
+          -0.3458075693942888,
+          0.002241277246900042,
+          0.053200396661036375
+        ],
+        "note": "Metrics of the posterior mean. MCSE uses covariance projections; KL quadratic scales are local estimates, not bounds or bias corrections."
+      },
+      "refined": {
+        "total_variation": 0.12977439792221435,
+        "kl_bits": 0.1010610602954787,
+        "true_expected_loss_gap_bits": 0.09157628329821435,
+        "kl_uncertainty": {
+          "batch_mcse_bits": 0.00045548911491203307,
+          "between_mcse_bits": 0.0005274158946163239,
+          "mcse_bits": 0.0005274158946163239
+        },
+        "gap_uncertainty": {
+          "batch_mcse_bits": 0.0001822055882107055,
+          "between_mcse_bits": 0.00024833544006702327,
+          "mcse_bits": 0.00024833544006702327
+        },
+        "kl_second_order": {
+          "batch": {
+            "mean_scale_bits": 2.1565972590516046e-05,
+            "sd_scale_bits": 5.390470157344264e-06
+          },
+          "between": {
+            "mean_scale_bits": 2.0789285915952156e-05,
+            "sd_scale_bits": 1.72051936430505e-05
+          },
+          "mean_scale_bits": 2.1565972590516046e-05,
+          "sd_scale_bits": 1.72051936430505e-05,
+          "noise_scale_bits": 2.705213126362751e-05
+        },
+        "gap_second_order": {
+          "batch": {
+            "mean_scale_bits": 1.9762918868164098e-05,
+            "sd_scale_bits": 5.079423019330636e-06
+          },
+          "between": {
+            "mean_scale_bits": 1.8961581385960333e-05,
+            "sd_scale_bits": 1.5856368188747793e-05
+          },
+          "mean_scale_bits": 1.9762918868164098e-05,
+          "sd_scale_bits": 1.5856368188747793e-05,
+          "noise_scale_bits": 2.4726364237165382e-05
+        },
+        "max_relative_probability_mcse": 0.01830205252637835,
+        "kl_numerical_scale_bits": 0.0005274158946163239,
+        "gap_numerical_scale_bits": 0.00024833544006702327,
+        "gradient_kl": [
+          1.181628860125195,
+          -0.5931935919792137,
+          -0.1264412190529458,
+          -1.0808083271788742,
+          1.3848428034444673,
+          0.6075225140297407,
+          1.1316191551643104,
+          -0.8312900271229285,
+          0.6208944638036729,
+          -0.22713421425650826,
+          0.192955431994428,
+          0.38125338241233364,
+          0.5290071746388374,
+          1.0913255133427375,
+          0.15773997987287847,
+          -0.16189742061275592,
+          -0.38739149156569275,
+          0.63265522809055,
+          -0.6663643326799323,
+          -0.9346407585151866,
+          -0.28673922451836775,
+          -0.003766513773500124,
+          -0.9431053403231102,
+          0.23731416919365467,
+          -0.753720903502513,
+          0.0706266745128219,
+          -0.20780692192706196,
+          0.07305999755457515,
+          -0.6297668461954744,
+          -0.030525493092555145,
+          -0.08485149304613082,
+          -0.1956916058658087,
+          -0.3077633284377378,
+          -0.4213162386897479,
+          -0.316695756549064,
+          0.2295266031830181,
+          -0.14728589913502876,
+          -0.1791136202933874,
+          -0.8624915525694594,
+          -0.3416621897703729,
+          -0.7029142673733069,
+          0.2157528093805008,
+          -0.3308915170049592,
+          1.046520405088137,
+          -1.0401140709947823,
+          -0.07997018510555187,
+          -0.28076880792100756,
+          -0.24612876980784493,
+          -0.2048674439477054,
+          0.20286522144980967,
+          1.1006190326723249,
+          0.5002494309151762,
+          0.0013519901594767347,
+          -0.06968988029855172,
+          0.16317802301741913,
+          -0.8739648481125606,
+          0.16200793631097699,
+          0.18590814406344158,
+          0.6778056402659616,
+          0.07401329406144797,
+          0.18770581224395255,
+          -1.1370483158029563,
+          1.1601402990898881,
+          1.487732426940863
+        ],
+        "gradient_gap": [
+          -0.09197079935113783,
+          -0.10196704490423758,
+          0.574749260065949,
+          -0.03644339054973855,
+          -0.42633011337002313,
+          -0.06625919219357401,
+          0.11576567539393756,
+          -0.4332998126802695,
+          0.4346340324615765,
+          0.7816297179296763,
+          0.12765425172196676,
+          0.20150626095688806,
+          0.01626779482126084,
+          0.1328599399394268,
+          -0.295453125380005,
+          -0.3957233856816278,
+          0.3126561693586458,
+          0.6184252794001341,
+          -0.6796570834329275,
+          0.3676062168890064,
+          -0.6581685496011517,
+          -0.1600066949363712,
+          -0.29467569355184353,
+          0.19293324792470634,
+          -0.4565249666992178,
+          0.3079784903003491,
+          -0.03942867106077541,
+          -0.16546657457405245,
+          -0.7328360269012271,
+          0.24072146826327057,
+          0.15155029490501315,
+          0.14009708288233447,
+          -0.06551478038008862,
+          0.21037732207767035,
+          -0.2573617784930968,
+          0.34355783020832176,
+          -0.22849480391814292,
+          0.11331249136119359,
+          0.8420088026385417,
+          -0.7821356045756293,
+          0.25972864540252827,
+          0.19297556943987604,
+          0.28690327755493095,
+          -0.42907515822172415,
+          -0.48337207174941066,
+          -0.02416143692556827,
+          -0.1387892440425189,
+          -0.30498460677452655,
+          -0.009138431914613054,
+          0.6341340464143079,
+          -0.3692082471596002,
+          0.3544399183529463,
+          0.16541434935146793,
+          0.36397058176448716,
+          -0.08543773052023429,
+          -0.421137557791309,
+          0.6951344891712847,
+          0.19355182937984283,
+          0.15162892034202513,
+          0.09087126629592746,
+          -0.6619087591289212,
+          -0.3646451940425868,
+          0.007503943780952538,
+          0.03702806375570389
+        ],
+        "note": "Metrics of the posterior mean. MCSE uses covariance projections; KL quadratic scales are local estimates, not bounds or bias corrections."
+      },
+      "probability_refinement": {
+        "passed": true,
+        "checks": {
+          "max_absolute_difference_below_0_01": true,
+          "every_coordinate_within_five_mcse_plus_0_0002": true
+        },
+        "max_absolute_difference": 0.0006342304729026749,
+        "total_variation": 0.003034882716823697,
+        "max_combined_mcse": 0.00048273179872854334,
+        "absolute_difference": [
+          0.00033602342224000464,
+          5.882485886879625e-05,
+          3.077885863342084e-05,
+          2.0251167282166194e-08,
+          0.0002639292227010655,
+          0.0001825937141674873,
+          0.00012517391844292514,
+          1.8753099003651456e-05,
+          6.040298094735653e-05,
+          0.00018536756102946993,
+          4.0511065586071315e-05,
+          3.334461640364626e-05,
+          2.477069140323536e-05,
+          0.00014913235007221748,
+          5.8377268893470505e-05,
+          4.577712524996263e-05,
+          6.191521194378723e-05,
+          7.131344374113058e-05,
+          2.0550954050507254e-05,
+          5.58097226387457e-05,
+          9.508389040496128e-05,
+          3.7080903493423405e-05,
+          9.368422858657861e-06,
+          0.00011678512269883406,
+          4.0160769522934545e-05,
+          3.98325144395739e-05,
+          0.0001261500928205657,
+          1.0232539723788875e-06,
+          3.2511870056537925e-05,
+          3.9929747249701966e-05,
+          0.00014287385671865604,
+          2.3982463225756014e-05,
+          7.463017448939083e-06,
+          0.00029209302828710204,
+          4.500786311798866e-05,
+          4.561216323254076e-05,
+          0.00010952240021491278,
+          0.00010286854931573731,
+          9.10824251952845e-05,
+          3.7051026585939797e-06,
+          0.00024614887915842126,
+          0.0006342304729026749,
+          0.00044505181665746574,
+          1.2826250321101157e-05,
+          2.0438567790793775e-05,
+          4.0103821102442216e-05,
+          4.182336758296306e-05,
+          3.559868299679841e-05,
+          3.1064708125557675e-05,
+          1.2671112168096549e-05,
+          0.00015088680217957475,
+          4.14708329409437e-05,
+          5.0461830575308526e-05,
+          5.300258308474186e-05,
+          3.8726988020227476e-05,
+          0.00020016214244540512,
+          0.00011427251542116094,
+          4.790875157752866e-05,
+          6.218207557858162e-05,
+          0.00024962347846206254,
+          3.526716894928497e-05,
+          6.516771091040312e-05,
+          4.346985613822886e-05,
+          0.000171697224440312
+        ],
+        "tolerance": [
+          0.0014875847686108337,
+          0.0011275565552956552,
+          0.0004168129444148905,
+          0.00047636628649354903,
+          0.001825557666609475,
+          0.000839645079980016,
+          0.0016207264786554593,
+          0.0004255110021820777,
+          0.0008388769790010154,
+          0.0007215240969157891,
+          0.000357921221157029,
+          0.0007946038001869747,
+          0.0009833745903240544,
+          0.001120245431936567,
+          0.0004075269392181274,
+          0.00045921354473344356,
+          0.000881054984909498,
+          0.0007179662440005398,
+          0.0007272734951683594,
+          0.00042368683124507326,
+          0.0006383285055458065,
+          0.0004408443295031069,
+          0.000569282557358414,
+          0.0006190733093230246,
+          0.000578158018554667,
+          0.00046416629448241384,
+          0.0009703602893645237,
+          0.0004071741398113858,
+          0.0007144387434604742,
+          0.00047645579538841277,
+          0.0007483125895630812,
+          0.0006217501090725419,
+          0.00044165759291937736,
+          0.0008732125275458814,
+          0.0004253392962743564,
+          0.0005621061368222045,
+          0.0005675250006222499,
+          0.0005226437629164783,
+          0.00040060636588701423,
+          0.0007962062350701786,
+          0.0015331896049204188,
+          0.0026136589936427168,
+          0.002027275442969871,
+          0.0009016922817430235,
+          0.0005840539275767273,
+          0.0003793303482816612,
+          0.001023474033937731,
+          0.0004309412623737874,
+          0.0006208115496432182,
+          0.0009932139814417809,
+          0.0007523335032741283,
+          0.0008159064648617529,
+          0.00038180948890062223,
+          0.0003534750197190418,
+          0.0007064555972153051,
+          0.0005563518710306235,
+          0.0009153263338715938,
+          0.0005868036814988491,
+          0.0007031630038303582,
+          0.0010699263436111193,
+          0.0005748805430310948,
+          0.0005205529943926033,
+          0.0009088313834893641,
+          0.0010887599275481298
+        ]
+      },
+      "metric_refinement": {
+        "passed": true,
+        "checks": {
+          "kl_numerical_precision": true,
+          "kl_refinement_resolution": true,
+          "kl_refinement_mcse": true,
+          "gap_numerical_precision": true,
+          "gap_refinement_resolution": true,
+          "gap_refinement_mcse": true
+        },
+        "differences": {
+          "kl": {
+            "absolute_difference_bits": 0.00020164086932722425,
+            "combined_mcse_bits": 0.0007858448180452696,
+            "five_mcse_allowance_bits": 0.004029224090226349,
+            "resolution_limit_bits": 0.0033333333333333335
+          },
+          "gap": {
+            "absolute_difference_bits": 0.0006222711544273951,
+            "combined_mcse_bits": 0.00036300765620324944,
+            "five_mcse_allowance_bits": 0.0019150382810162474,
+            "resolution_limit_bits": 0.0033333333333333335
+          }
+        }
+      },
+      "resolved": true
+    }
+  ],
+  "aggregate": {
+    "reported": false,
+    "reason": "Selected-source audit; no resolved-only cohort average."
+  },
+  "exporter_sha256": "48a5421a08cee96f97b5fa40f6289a92f5b0b9b32ae1e15809f45a189c6183bc"
+}

@@ -1,0 +1,3319 @@
+{
+  "schema": "general-lsa-copying-diagnostics-v1",
+  "d": 64,
+  "alpha": 1,
+  "source_depths": [
+    0,
+    2,
+    3
+  ],
+  "n_tokens": 1025,
+  "checkpoint": "results/transformer/runs/d64/model_100000.pt",
+  "checkpoint_sha256": "2f7d5d39ffcd02dd200d4e535835b32a58e6b14f3e19598b696fd0045e76dd27",
+  "trained_source_prior": {
+    "alpha": [
+      0.5,
+      1.5
+    ],
+    "depth": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8
+    ],
+    "permutation": "uniform"
+  },
+  "candidate": "L1H4",
+  "control": "L1H3",
+  "controlled_confirmation": {
+    "intact": {
+      "mean": 6.436960154130453,
+      "se": 0.02139070452232159,
+      "n": 1024
+    },
+    "zero_candidate": {
+      "mean": -0.024566215590018915,
+      "se": 0.020172526480383632,
+      "n": 1024
+    },
+    "swap_successors": {
+      "mean": -6.075569922615571,
+      "se": 0.0343033446523759,
+      "n": 1024
+    },
+    "swap_contexts": {
+      "mean": 6.430903257111383,
+      "se": 0.02138438724637423,
+      "n": 1024
+    },
+    "sham": {
+      "mean": 6.436960154130453,
+      "se": 0.02139070452232159,
+      "n": 1024
+    }
+  },
+  "key_path_controlled": {
+    "protocol": {
+      "schema": "general-lsa-key-path-controlled-v1",
+      "n_probes": 512,
+      "seed": 2026091722,
+      "controlled_length": 64,
+      "candidate_head": [
+        0,
+        3
+      ],
+      "control_head": [
+        0,
+        2
+      ],
+      "source": {
+        "d": 64,
+        "alpha": [
+          0.5,
+          1.5
+        ],
+        "ls": [
+          0,
+          8
+        ],
+        "no_permute": false,
+        "seed": 0
+      },
+      "checkpoint": "results/transformer/runs/d64/model_100000.pt",
+      "architecture": {
+        "vocab": 64,
+        "n_ctx": 1024,
+        "n_layer": 2,
+        "n_head": 4,
+        "d_model": 128,
+        "mlp": true,
+        "dropout": 0.0
+      },
+      "provenance": {
+        "results/transformer/runs/d64/model_100000.pt": "2f7d5d39ffcd02dd200d4e535835b32a58e6b14f3e19598b696fd0045e76dd27",
+        "results/transformer/runs/d64/config.json": "b04057ec915ed9d2952a6b65c87198a4ab3f020f85b5a80bad2f253579fe6855",
+        "code/transformer/general_lsa_copying_discovery.py": "ebec4af4decccde95d6eeeda11a1809c29427fc790645d50a32b313f4922066c",
+        "code/transformer/model.py": "742fe0e5c8ffaecee8072a3b270b23beaa2e0bd2a94d1a27a9af67c31eff9c28",
+        "code/transformer/source.py": "d1bb83004e3654cb3f84f6083437cae2b6d71fa19a33b06d26d2455ac440dab4",
+        "code/transformer/circuit_probe.py": "02adbe36056898797aab585c282ec37050c0f62527e06d43eae3c278f12e07a8",
+        "code/transformer/identify_copier.py": "653123adb875512db5314032577d4af185cf07d9e8bcff6b1aec644633367509",
+        "code/transformer/copier_probes.py": "1334b0d4a54656b5982425ba5f49ee0dda4e0780ca597d87eac2b84e44e9a6ad",
+        "code/transformer/general_lsa_key_path.py": "40d8ef26c06bf1a6dd6a863eb5771d836ec213e4807c5f5fead749c5d7d6d3a8",
+        "output/general_lsa_copying_2026-09-17/discovery/selection.json": "970e1e15c766117e1a83d459b10d350908fdde71f3070c2c0912716c1c8b1b8c"
+      },
+      "fidelity": {
+        "double_manual_logit_max_abs": 0.0,
+        "double_causal_logit_max_abs": 2.220446049250313e-15,
+        "original_float32_probability_max_abs": 2.1297370866868448e-07,
+        "tolerances": {
+          "double_logits": 1e-10,
+          "float32_probability": 1e-05
+        }
+      },
+      "intervention": "Intact recipient second-layer Q,V,residual; replace all second-layer K by keys from same-input donor with one first-layer head deleted.",
+      "interpretation": "Mediated effect through retrieval keys; not an isolated unigram or pure copying contribution."
+    },
+    "checks": {
+      "sham_max_logit_error": 0.0,
+      "first_prediction_max_logit_error": 0.0,
+      "causal_prefix_max_logit_error": 2.220446049250313e-15,
+      "hooks_restored": true,
+      "parameters_preserved": true
+    },
+    "conditions": {
+      "intact": {
+        "A": {
+          "mean": 6.421337294150308,
+          "se": 0.019799687634078206,
+          "n": 512
+        },
+        "D": {
+          "mean": -6.414551806604524,
+          "se": 0.02051542977248557,
+          "n": 512
+        },
+        "E": {
+          "mean": 0.013505012885055326,
+          "se": 0.023612818445480233,
+          "n": 512
+        },
+        "query_specific": {
+          "mean": 6.407832281265252,
+          "se": 0.02780881203122033,
+          "n": 512
+        },
+        "reduction_from_intact": {
+          "mean": 0.0,
+          "se": 0.0,
+          "n": 512
+        },
+        "probabilities": {
+          "demonstrated_successor": {
+            "mean": 0.12761341957466746,
+            "se": 0.0004576296176580803,
+            "n": 512
+          },
+          "other_successor": {
+            "mean": 0.013862701051766515,
+            "se": 8.103920503863136e-05,
+            "n": 512
+          }
+        }
+      },
+      "sham": {
+        "A": {
+          "mean": 6.421337294150308,
+          "se": 0.019799687634078206,
+          "n": 512
+        },
+        "D": {
+          "mean": -6.414551806604524,
+          "se": 0.02051542977248557,
+          "n": 512
+        },
+        "E": {
+          "mean": 0.013505012885055326,
+          "se": 0.023612818445480233,
+          "n": 512
+        },
+        "query_specific": {
+          "mean": 6.407832281265252,
+          "se": 0.02780881203122033,
+          "n": 512
+        },
+        "reduction_from_intact": {
+          "mean": 0.0,
+          "se": 0.0,
+          "n": 512
+        },
+        "probabilities": {
+          "demonstrated_successor": {
+            "mean": 0.12761341957466746,
+            "se": 0.0004576296176580803,
+            "n": 512
+          },
+          "other_successor": {
+            "mean": 0.013862701051766515,
+            "se": 8.103920503863136e-05,
+            "n": 512
+          }
+        }
+      },
+      "candidate_keys_off": {
+        "A": {
+          "mean": -0.003865067427792516,
+          "se": 0.007436365250755389,
+          "n": 512
+        },
+        "D": {
+          "mean": 0.00650813801101645,
+          "se": 0.00700134836174337,
+          "n": 512
+        },
+        "E": {
+          "mean": -0.007392186568663349,
+          "se": 0.0072858387518191245,
+          "n": 512
+        },
+        "query_specific": {
+          "mean": 0.003527119140870833,
+          "se": 0.009278936733957504,
+          "n": 512
+        },
+        "reduction_from_intact": {
+          "mean": 6.404305162124382,
+          "se": 0.02993891658355697,
+          "n": 512
+        },
+        "probabilities": {
+          "demonstrated_successor": {
+            "mean": 0.015479623935990863,
+            "se": 3.565100216820524e-05,
+            "n": 512
+          },
+          "other_successor": {
+            "mean": 0.01550170527690601,
+            "se": 3.672243014745141e-05,
+            "n": 512
+          }
+        }
+      },
+      "control_keys_off": {
+        "A": {
+          "mean": 5.401464343836233,
+          "se": 0.0278940910023853,
+          "n": 512
+        },
+        "D": {
+          "mean": -5.3995691296681585,
+          "se": 0.027557582975885765,
+          "n": 512
+        },
+        "E": {
+          "mean": 0.014829037588085065,
+          "se": 0.022102011676362943,
+          "n": 512
+        },
+        "query_specific": {
+          "mean": 5.386635306248148,
+          "se": 0.03441778173539561,
+          "n": 512
+        },
+        "reduction_from_intact": {
+          "mean": 1.0211969750171046,
+          "se": 0.020765540251684582,
+          "n": 512
+        },
+        "probabilities": {
+          "demonstrated_successor": {
+            "mean": 0.095037363756759,
+            "se": 0.0006965636628127352,
+            "n": 512
+          },
+          "other_successor": {
+            "mean": 0.014399464483910055,
+            "se": 8.057388553396883e-05,
+            "n": 512
+          }
+        }
+      }
+    },
+    "elapsed_seconds": 7.377274833037518,
+    "records_sha256": "190b8eb0fbb4a0893b859fe287fcae78365631d65de61f2f3068c7e5f20f6ebd"
+  },
+  "interpretation": [
+    "Independent controlled successor-site swaps support a copying computation through the candidate.",
+    "The L=0 control checks whether head deletion leaves the ability to learn a nonuniform common base.",
+    "Deleting the entire head changes the first prediction, when no past continuation exists. Its full loss effect is not a pure copying effect.",
+    "The narrower key-path intervention preserves the first prediction and removes controlled copying responses, but also changes natural predictions with no earlier completed continuation of the current token.",
+    "Neither intervention is identified with the archived LSA unigram or an informed Bayesian unigram.",
+    "Natural loss changes are conditional expected next-token log losses, averaged across independent sequences before accumulation.",
+    "No shared-base informed-Bayes cumulative curve is provided by this diagnostic.",
+    "Archived unigram/copier results in archived/ concern distinct statistical predictors."
+  ],
+  "groups": [
+    {
+      "depth": 0,
+      "n_sequences": 256,
+      "predictors": {
+        "intact": {
+          "total_loss_change_bits": {
+            "mean": 0.0,
+            "se": 0.0,
+            "n": 256
+          },
+          "time1_loss_change_bits": {
+            "mean": 0.0,
+            "se": 0.0,
+            "n": 256
+          },
+          "at_times": {
+            "1": {
+              "regret_bits": {
+                "mean": 1.070113744238535,
+                "se": 0.010804093527573137,
+                "n": 256
+              },
+              "loss_change_bits": {
+                "mean": 0.0,
+                "se": 0.0,
+                "n": 256
+              },
+              "cumulative_loss_change_bits": {
+                "mean": 0.0,
+                "se": 0.0,
+                "n": 256
+              },
+              "distance_to_base": {
+                "mean": 0.45390679188859895,
+                "se": 0.0015334669959882338,
+                "n": 256
+              }
+            },
+            "4": {
+              "regret_bits": {
+                "mean": 0.9447705598864711,
+                "se": 0.013651602218661508,
+                "n": 256
+              },
+              "loss_change_bits": {
+                "mean": 0.0,
+                "se": 0.0,
+                "n": 256
+              },
+              "cumulative_loss_change_bits": {
+                "mean": 0.0,
+                "se": 0.0,
+                "n": 256
+              },
+              "distance_to_base": {
+                "mean": 0.43260021495175355,
+                "se": 0.0026752357222236353,
+                "n": 256
+              }
+            },
+            "16": {
+              "regret_bits": {
+                "mean": 0.6915522160439603,
+                "se": 0.013130580890708789,
+                "n": 256
+              },
+              "loss_change_bits": {
+                "mean": 0.0,
+                "se": 0.0,
+                "n": 256
+              },
+              "cumulative_loss_change_bits": {
+                "mean": 0.0,
+                "se": 0.0,
+                "n": 256
+              },
+              "distance_to_base": {
+                "mean": 0.37777075777088476,
+                "se": 0.0034833078659703425,
+                "n": 256
+              }
+            },
+            "32": {
+              "regret_bits": {
+                "mean": 0.5621342311676892,
+                "se": 0.010207627591400073,
+                "n": 256
+              },
+              "loss_change_bits": {
+                "mean": 0.0,
+                "se": 0.0,
+                "n": 256
+              },
+              "cumulative_loss_change_bits": {
+                "mean": 0.0,
+                "se": 0.0,
+                "n": 256
+              },
+              "distance_to_base": {
+                "mean": 0.3417629175482477,
+                "se": 0.003363572587785566,
+                "n": 256
+              }
+            },
+            "64": {
+              "regret_bits": {
+                "mean": 0.46364789245134336,
+                "se": 0.010352456499524269,
+                "n": 256
+              },
+              "loss_change_bits": {
+                "mean": 0.0,
+                "se": 0.0,
+                "n": 256
+              },
+              "cumulative_loss_change_bits": {
+                "mean": 0.0,
+                "se": 0.0,
+                "n": 256
+              },
+              "distance_to_base": {
+                "mean": 0.310080278263399,
+                "se": 0.0036979108344130165,
+                "n": 256
+              }
+            },
+            "128": {
+              "regret_bits": {
+                "mean": 0.38240364708929087,
+                "se": 0.00896205413890814,
+                "n": 256
+              },
+              "loss_change_bits": {
+                "mean": 0.0,
+                "se": 0.0,
+                "n": 256
+              },
+              "cumulative_loss_change_bits": {
+                "mean": 0.0,
+                "se": 0.0,
+                "n": 256
+              },
+              "distance_to_base": {
+                "mean": 0.2827194123885194,
+                "se": 0.0036700618738628957,
+                "n": 256
+              }
+            },
+            "256": {
+              "regret_bits": {
+                "mean": 0.3201171720734334,
+                "se": 0.007562363149156521,
+                "n": 256
+              },
+              "loss_change_bits": {
+                "mean": 0.0,
+                "se": 0.0,
+                "n": 256
+              },
+              "cumulative_loss_change_bits": {
+                "mean": 0.0,
+                "se": 0.0,
+                "n": 256
+              },
+              "distance_to_base": {
+                "mean": 0.25783571492825735,
+                "se": 0.003429527891135389,
+                "n": 256
+              }
+            },
+            "512": {
+              "regret_bits": {
+                "mean": 0.2795984761123841,
+                "se": 0.007701141801959608,
+                "n": 256
+              },
+              "loss_change_bits": {
+                "mean": 0.0,
+                "se": 0.0,
+                "n": 256
+              },
+              "cumulative_loss_change_bits": {
+                "mean": 0.0,
+                "se": 0.0,
+                "n": 256
+              },
+              "distance_to_base": {
+                "mean": 0.23934097830660553,
+                "se": 0.0038934582971580597,
+                "n": 256
+              }
+            },
+            "1024": {
+              "regret_bits": {
+                "mean": 0.24361407662925422,
+                "se": 0.006982237643208677,
+                "n": 256
+              },
+              "loss_change_bits": {
+                "mean": 0.0,
+                "se": 0.0,
+                "n": 256
+              },
+              "cumulative_loss_change_bits": {
+                "mean": 0.0,
+                "se": 0.0,
+                "n": 256
+              },
+              "distance_to_base": {
+                "mean": 0.22150204421736103,
+                "se": 0.0034901167875964027,
+                "n": 256
+              }
+            }
+          }
+        },
+        "off_L1H4": {
+          "total_loss_change_bits": {
+            "mean": -93.23612550001279,
+            "se": 1.9684226974919625,
+            "n": 256
+          },
+          "time1_loss_change_bits": {
+            "mean": 0.015545223264801393,
+            "se": 0.003772768278317065,
+            "n": 256
+          },
+          "at_times": {
+            "1": {
+              "regret_bits": {
+                "mean": 1.0856589675033363,
+                "se": 0.013669739642096754,
+                "n": 256
+              },
+              "loss_change_bits": {
+                "mean": 0.015545223264801393,
+                "se": 0.003772768278317065,
+                "n": 256
+              },
+              "cumulative_loss_change_bits": {
+                "mean": 0.015545223264801393,
+                "se": 0.003772768278317065,
+                "n": 256
+              },
+              "distance_to_base": {
+                "mean": 0.45262031964240457,
+                "se": 0.002266155284434854,
+                "n": 256
+              }
+            },
+            "4": {
+              "regret_bits": {
+                "mean": 0.9783115111140068,
+                "se": 0.013133697989545156,
+                "n": 256
+              },
+              "loss_change_bits": {
+                "mean": 0.03354095122753582,
+                "se": 0.009283988260278254,
+                "n": 256
+              },
+              "cumulative_loss_change_bits": {
+                "mean": 0.10952508770072183,
+                "se": 0.022049596177099135,
+                "n": 256
+              },
+              "distance_to_base": {
+                "mean": 0.4399484676037373,
+                "se": 0.0022296664717483907,
+                "n": 256
+              }
+            },
+            "16": {
+              "regret_bits": {
+                "mean": 0.6730232264215211,
+                "se": 0.013173753877421932,
+                "n": 256
+              },
+              "loss_change_bits": {
+                "mean": -0.018528989622439134,
+                "se": 0.010867557857707521,
+                "n": 256
+              },
+              "cumulative_loss_change_bits": {
+                "mean": 0.1399482868961069,
+                "se": 0.08048850394611642,
+                "n": 256
+              },
+              "distance_to_base": {
+                "mean": 0.3683632349831549,
+                "se": 0.003450411466382357,
+                "n": 256
+              }
+            },
+            "32": {
+              "regret_bits": {
+                "mean": 0.5045113612824617,
+                "se": 0.008906478359139628,
+                "n": 256
+              },
+              "loss_change_bits": {
+                "mean": -0.05762286988522752,
+                "se": 0.011298105871987766,
+                "n": 256
+              },
+              "cumulative_loss_change_bits": {
+                "mean": -0.49599591384414315,
+                "se": 0.15080293451540364,
+                "n": 256
+              },
+              "distance_to_base": {
+                "mean": 0.3133579848089586,
+                "se": 0.0029741252045038797,
+                "n": 256
+              }
+            },
+            "64": {
+              "regret_bits": {
+                "mean": 0.32234413139845935,
+                "se": 0.005628855536602579,
+                "n": 256
+              },
+              "loss_change_bits": {
+                "mean": -0.14130376105288406,
+                "se": 0.010802254490402285,
+                "n": 256
+              },
+              "cumulative_loss_change_bits": {
+                "mean": -3.716631451694309,
+                "se": 0.23581916495814068,
+                "n": 256
+              },
+              "distance_to_base": {
+                "mean": 0.24776615158889753,
+                "se": 0.002426130161201577,
+                "n": 256
+              }
+            },
+            "128": {
+              "regret_bits": {
+                "mean": 0.2023474022919377,
+                "se": 0.003198181125140947,
+                "n": 256
+              },
+              "loss_change_bits": {
+                "mean": -0.18005624479735322,
+                "se": 0.00973066579639132,
+                "n": 256
+              },
+              "cumulative_loss_change_bits": {
+                "mean": -14.61751701536955,
+                "se": 0.3622553757336107,
+                "n": 256
+              },
+              "distance_to_base": {
+                "mean": 0.19894742176885466,
+                "se": 0.0017809930764415454,
+                "n": 256
+              }
+            },
+            "256": {
+              "regret_bits": {
+                "mean": 0.15163829599891998,
+                "se": 0.00273880252987828,
+                "n": 256
+              },
+              "loss_change_bits": {
+                "mean": -0.16847887607451337,
+                "se": 0.008645570391448752,
+                "n": 256
+              },
+              "cumulative_loss_change_bits": {
+                "mean": -38.105576292006816,
+                "se": 0.5639647081692176,
+                "n": 256
+              },
+              "distance_to_base": {
+                "mean": 0.17540991379577908,
+                "se": 0.0019509039728809177,
+                "n": 256
+              }
+            },
+            "512": {
+              "regret_bits": {
+                "mean": 0.147318788819765,
+                "se": 0.005636147423011611,
+                "n": 256
+              },
+              "loss_change_bits": {
+                "mean": -0.13227968729261905,
+                "se": 0.011597633861949981,
+                "n": 256
+              },
+              "cumulative_loss_change_bits": {
+                "mean": -78.89853439325893,
+                "se": 0.8767245682952047,
+                "n": 256
+              },
+              "distance_to_base": {
+                "mean": 0.1695892234403109,
+                "se": 0.0031452573088829785,
+                "n": 256
+              }
+            },
+            "1024": {
+              "regret_bits": {
+                "mean": 0.31335204005272876,
+                "se": 0.00892830922037007,
+                "n": 256
+              },
+              "loss_change_bits": {
+                "mean": 0.06973796342347446,
+                "se": 0.013882832417306843,
+                "n": 256
+              },
+              "cumulative_loss_change_bits": {
+                "mean": -93.23612550001279,
+                "se": 1.9684226974919625,
+                "n": 256
+              },
+              "distance_to_base": {
+                "mean": 0.25412449114985824,
+                "se": 0.003228342116336729,
+                "n": 256
+              }
+            }
+          }
+        },
+        "off_L1H3": {
+          "total_loss_change_bits": {
+            "mean": 24.804273444401904,
+            "se": 1.1027202176473716,
+            "n": 256
+          },
+          "time1_loss_change_bits": {
+            "mean": 0.014769887038606003,
+            "se": 0.0038155457200727706,
+            "n": 256
+          },
+          "at_times": {
+            "1": {
+              "regret_bits": {
+                "mean": 1.0848836312771408,
+                "se": 0.01284042206197179,
+                "n": 256
+              },
+              "loss_change_bits": {
+                "mean": 0.014769887038606003,
+                "se": 0.0038155457200727706,
+                "n": 256
+              },
+              "cumulative_loss_change_bits": {
+                "mean": 0.014769887038606003,
+                "se": 0.0038155457200727706,
+                "n": 256
+              },
+              "distance_to_base": {
+                "mean": 0.4532635696540773,
+                "se": 0.002177562678531298,
+                "n": 256
+              }
+            },
+            "4": {
+              "regret_bits": {
+                "mean": 0.991577072466234,
+                "se": 0.019665723524831324,
+                "n": 256
+              },
+              "loss_change_bits": {
+                "mean": 0.046806512579762975,
+                "se": 0.01084000190658346,
+                "n": 256
+              },
+              "cumulative_loss_change_bits": {
+                "mean": 0.11914723564867973,
+                "se": 0.023205360949028114,
+                "n": 256
+              },
+              "distance_to_base": {
+                "mean": 0.4403326796078347,
+                "se": 0.0032652461350559004,
+                "n": 256
+              }
+            },
+            "16": {
+              "regret_bits": {
+                "mean": 0.7548076183573111,
+                "se": 0.015822366955280033,
+                "n": 256
+              },
+              "loss_change_bits": {
+                "mean": 0.06325540231335076,
+                "se": 0.007687440836546713,
+                "n": 256
+              },
+              "cumulative_loss_change_bits": {
+                "mean": 0.849383555378391,
+                "se": 0.056585573063481866,
+                "n": 256
+              },
+              "distance_to_base": {
+                "mean": 0.3918619987541324,
+                "se": 0.0038972879195447985,
+                "n": 256
+              }
+            },
+            "32": {
+              "regret_bits": {
+                "mean": 0.6273233696971687,
+                "se": 0.013477321931006037,
+                "n": 256
+              },
+              "loss_change_bits": {
+                "mean": 0.06518913852947966,
+                "se": 0.006669569140146616,
+                "n": 256
+              },
+              "cumulative_loss_change_bits": {
+                "mean": 1.9768053031299204,
+                "se": 0.09729889485989526,
+                "n": 256
+              },
+              "distance_to_base": {
+                "mean": 0.3596283599511477,
+                "se": 0.0038986721898420502,
+                "n": 256
+              }
+            },
+            "64": {
+              "regret_bits": {
+                "mean": 0.5195506668463901,
+                "se": 0.01257596807713965,
+                "n": 256
+              },
+              "loss_change_bits": {
+                "mean": 0.05590277439504672,
+                "se": 0.005999735221702752,
+                "n": 256
+              },
+              "cumulative_loss_change_bits": {
+                "mean": 4.004470635270437,
+                "se": 0.15439313941766236,
+                "n": 256
+              },
+              "distance_to_base": {
+                "mean": 0.32680566324031546,
+                "se": 0.004193556710601218,
+                "n": 256
+              }
+            },
+            "128": {
+              "regret_bits": {
+                "mean": 0.4213992336131112,
+                "se": 0.009976480097166653,
+                "n": 256
+              },
+              "loss_change_bits": {
+                "mean": 0.03899558652382033,
+                "se": 0.004548985957026427,
+                "n": 256
+              },
+              "cumulative_loss_change_bits": {
+                "mean": 7.517045600766692,
+                "se": 0.24059048626035706,
+                "n": 256
+              },
+              "distance_to_base": {
+                "mean": 0.2964620875314975,
+                "se": 0.0037670278463448345,
+                "n": 256
+              }
+            },
+            "256": {
+              "regret_bits": {
+                "mean": 0.34704981796499124,
+                "se": 0.007915525122896472,
+                "n": 256
+              },
+              "loss_change_bits": {
+                "mean": 0.026932645891557916,
+                "se": 0.0037073571023680425,
+                "n": 256
+              },
+              "cumulative_loss_change_bits": {
+                "mean": 11.710313948403073,
+                "se": 0.39492045958280714,
+                "n": 256
+              },
+              "distance_to_base": {
+                "mean": 0.27021331831857326,
+                "se": 0.0033550023935192694,
+                "n": 256
+              }
+            },
+            "512": {
+              "regret_bits": {
+                "mean": 0.2859107803123135,
+                "se": 0.007140990210461462,
+                "n": 256
+              },
+              "loss_change_bits": {
+                "mean": 0.006312304199929425,
+                "se": 0.003888175915980608,
+                "n": 256
+              },
+              "cumulative_loss_change_bits": {
+                "mean": 15.22071869877673,
+                "se": 0.6278203277531322,
+                "n": 256
+              },
+              "distance_to_base": {
+                "mean": 0.24613779876835945,
+                "se": 0.003402119808235204,
+                "n": 256
+              }
+            },
+            "1024": {
+              "regret_bits": {
+                "mean": 0.29750143371417426,
+                "se": 0.00853199114403587,
+                "n": 256
+              },
+              "loss_change_bits": {
+                "mean": 0.05388735708492004,
+                "se": 0.00422061489772882,
+                "n": 256
+              },
+              "cumulative_loss_change_bits": {
+                "mean": 24.804273444401904,
+                "se": 1.1027202176473716,
+                "n": 256
+              },
+              "distance_to_base": {
+                "mean": 0.24884885948716406,
+                "se": 0.0038014261913261556,
+                "n": 256
+              }
+            }
+          }
+        }
+      }
+    },
+    {
+      "depth": 2,
+      "n_sequences": 256,
+      "predictors": {
+        "intact": {
+          "total_loss_change_bits": {
+            "mean": 0.0,
+            "se": 0.0,
+            "n": 256
+          },
+          "time1_loss_change_bits": {
+            "mean": 0.0,
+            "se": 0.0,
+            "n": 256
+          },
+          "at_times": {
+            "1": {
+              "regret_bits": {
+                "mean": 1.9571536816121384,
+                "se": 0.041544925512634626,
+                "n": 256
+              },
+              "loss_change_bits": {
+                "mean": 0.0,
+                "se": 0.0,
+                "n": 256
+              },
+              "cumulative_loss_change_bits": {
+                "mean": 0.0,
+                "se": 0.0,
+                "n": 256
+              },
+              "distance_to_base": {
+                "mean": 0.45493634337963007,
+                "se": 0.0015144404883360057,
+                "n": 256
+              }
+            },
+            "4": {
+              "regret_bits": {
+                "mean": 1.8471991349496664,
+                "se": 0.03924620292864424,
+                "n": 256
+              },
+              "loss_change_bits": {
+                "mean": 0.0,
+                "se": 0.0,
+                "n": 256
+              },
+              "cumulative_loss_change_bits": {
+                "mean": 0.0,
+                "se": 0.0,
+                "n": 256
+              },
+              "distance_to_base": {
+                "mean": 0.4368912435350162,
+                "se": 0.0025145801032619786,
+                "n": 256
+              }
+            },
+            "16": {
+              "regret_bits": {
+                "mean": 1.4767134766218801,
+                "se": 0.03085767469504424,
+                "n": 256
+              },
+              "loss_change_bits": {
+                "mean": 0.0,
+                "se": 0.0,
+                "n": 256
+              },
+              "cumulative_loss_change_bits": {
+                "mean": 0.0,
+                "se": 0.0,
+                "n": 256
+              },
+              "distance_to_base": {
+                "mean": 0.3952253030422247,
+                "se": 0.003172437555184974,
+                "n": 256
+              }
+            },
+            "32": {
+              "regret_bits": {
+                "mean": 1.3329020023102922,
+                "se": 0.0290306942250868,
+                "n": 256
+              },
+              "loss_change_bits": {
+                "mean": 0.0,
+                "se": 0.0,
+                "n": 256
+              },
+              "cumulative_loss_change_bits": {
+                "mean": 0.0,
+                "se": 0.0,
+                "n": 256
+              },
+              "distance_to_base": {
+                "mean": 0.38909539070540855,
+                "se": 0.003797478684910619,
+                "n": 256
+              }
+            },
+            "64": {
+              "regret_bits": {
+                "mean": 1.136039964254783,
+                "se": 0.0240677354863218,
+                "n": 256
+              },
+              "loss_change_bits": {
+                "mean": 0.0,
+                "se": 0.0,
+                "n": 256
+              },
+              "cumulative_loss_change_bits": {
+                "mean": 0.0,
+                "se": 0.0,
+                "n": 256
+              },
+              "distance_to_base": {
+                "mean": 0.3629688730872674,
+                "se": 0.004665728676448164,
+                "n": 256
+              }
+            },
+            "128": {
+              "regret_bits": {
+                "mean": 1.0000705118999698,
+                "se": 0.028195565813422054,
+                "n": 256
+              },
+              "loss_change_bits": {
+                "mean": 0.0,
+                "se": 0.0,
+                "n": 256
+              },
+              "cumulative_loss_change_bits": {
+                "mean": 0.0,
+                "se": 0.0,
+                "n": 256
+              },
+              "distance_to_base": {
+                "mean": 0.37196529924624777,
+                "se": 0.005034170380278076,
+                "n": 256
+              }
+            },
+            "256": {
+              "regret_bits": {
+                "mean": 0.8600955582544636,
+                "se": 0.029179489436725586,
+                "n": 256
+              },
+              "loss_change_bits": {
+                "mean": 0.0,
+                "se": 0.0,
+                "n": 256
+              },
+              "cumulative_loss_change_bits": {
+                "mean": 0.0,
+                "se": 0.0,
+                "n": 256
+              },
+              "distance_to_base": {
+                "mean": 0.3775946611690889,
+                "se": 0.005594668755747668,
+                "n": 256
+              }
+            },
+            "512": {
+              "regret_bits": {
+                "mean": 0.6821388585700539,
+                "se": 0.02608377564085465,
+                "n": 256
+              },
+              "loss_change_bits": {
+                "mean": 0.0,
+                "se": 0.0,
+                "n": 256
+              },
+              "cumulative_loss_change_bits": {
+                "mean": 0.0,
+                "se": 0.0,
+                "n": 256
+              },
+              "distance_to_base": {
+                "mean": 0.3788354616945425,
+                "se": 0.005831973004643938,
+                "n": 256
+              }
+            },
+            "1024": {
+              "regret_bits": {
+                "mean": 0.5643143225392633,
+                "se": 0.022839945651618346,
+                "n": 256
+              },
+              "loss_change_bits": {
+                "mean": 0.0,
+                "se": 0.0,
+                "n": 256
+              },
+              "cumulative_loss_change_bits": {
+                "mean": 0.0,
+                "se": 0.0,
+                "n": 256
+              },
+              "distance_to_base": {
+                "mean": 0.3977030176242138,
+                "se": 0.006823669580325718,
+                "n": 256
+              }
+            }
+          }
+        },
+        "off_L1H4": {
+          "total_loss_change_bits": {
+            "mean": 480.19987742256166,
+            "se": 7.314392337245399,
+            "n": 256
+          },
+          "time1_loss_change_bits": {
+            "mean": 0.02043139878762061,
+            "se": 0.005729291639990942,
+            "n": 256
+          },
+          "at_times": {
+            "1": {
+              "regret_bits": {
+                "mean": 1.9775850803997592,
+                "se": 0.04224920661149933,
+                "n": 256
+              },
+              "loss_change_bits": {
+                "mean": 0.02043139878762061,
+                "se": 0.005729291639990942,
+                "n": 256
+              },
+              "cumulative_loss_change_bits": {
+                "mean": 0.02043139878762061,
+                "se": 0.005729291639990942,
+                "n": 256
+              },
+              "distance_to_base": {
+                "mean": 0.45425014223517723,
+                "se": 0.0021957789853461326,
+                "n": 256
+              }
+            },
+            "4": {
+              "regret_bits": {
+                "mean": 1.9211650449530147,
+                "se": 0.03831508811210919,
+                "n": 256
+              },
+              "loss_change_bits": {
+                "mean": 0.07396591000334808,
+                "se": 0.01715090499529313,
+                "n": 256
+              },
+              "cumulative_loss_change_bits": {
+                "mean": 0.22557928019958592,
+                "se": 0.03592655094905542,
+                "n": 256
+              },
+              "distance_to_base": {
+                "mean": 0.4422585949127045,
+                "se": 0.0023053386206386395,
+                "n": 256
+              }
+            },
+            "16": {
+              "regret_bits": {
+                "mean": 1.6281016326585331,
+                "se": 0.030886920558578487,
+                "n": 256
+              },
+              "loss_change_bits": {
+                "mean": 0.1513881560366532,
+                "se": 0.021734681512413243,
+                "n": 256
+              },
+              "cumulative_loss_change_bits": {
+                "mean": 1.4216302964091994,
+                "se": 0.10742501312645207,
+                "n": 256
+              },
+              "distance_to_base": {
+                "mean": 0.3806340118997855,
+                "se": 0.003477820137459504,
+                "n": 256
+              }
+            },
+            "32": {
+              "regret_bits": {
+                "mean": 1.4855196609884598,
+                "se": 0.030459990882660385,
+                "n": 256
+              },
+              "loss_change_bits": {
+                "mean": 0.15261765867816768,
+                "se": 0.0254428651914755,
+                "n": 256
+              },
+              "cumulative_loss_change_bits": {
+                "mean": 3.595290315641244,
+                "se": 0.19815085123560336,
+                "n": 256
+              },
+              "distance_to_base": {
+                "mean": 0.34090557838896474,
+                "se": 0.003384944873611597,
+                "n": 256
+              }
+            },
+            "64": {
+              "regret_bits": {
+                "mean": 1.336569972371882,
+                "se": 0.02662305620361498,
+                "n": 256
+              },
+              "loss_change_bits": {
+                "mean": 0.20053000811709915,
+                "se": 0.025617337363155454,
+                "n": 256
+              },
+              "cumulative_loss_change_bits": {
+                "mean": 9.06007783250107,
+                "se": 0.3719415935227866,
+                "n": 256
+              },
+              "distance_to_base": {
+                "mean": 0.27861174878177314,
+                "se": 0.0031161023863657553,
+                "n": 256
+              }
+            },
+            "128": {
+              "regret_bits": {
+                "mean": 1.202349574671397,
+                "se": 0.02523562526305328,
+                "n": 256
+              },
+              "loss_change_bits": {
+                "mean": 0.2022790627714274,
+                "se": 0.026617814871445846,
+                "n": 256
+              },
+              "cumulative_loss_change_bits": {
+                "mean": 21.78929788366534,
+                "se": 0.662434219950818,
+                "n": 256
+              },
+              "distance_to_base": {
+                "mean": 0.23458317142010354,
+                "se": 0.0026468204827154694,
+                "n": 256
+              }
+            },
+            "256": {
+              "regret_bits": {
+                "mean": 1.2177327213648685,
+                "se": 0.02655032507742591,
+                "n": 256
+              },
+              "loss_change_bits": {
+                "mean": 0.35763716311040494,
+                "se": 0.027210895916894556,
+                "n": 256
+              },
+              "cumulative_loss_change_bits": {
+                "mean": 58.73669335034653,
+                "se": 1.2120484183528923,
+                "n": 256
+              },
+              "distance_to_base": {
+                "mean": 0.2137517610243052,
+                "se": 0.0023919787357313486,
+                "n": 256
+              }
+            },
+            "512": {
+              "regret_bits": {
+                "mean": 1.1405637682181329,
+                "se": 0.024319725701279802,
+                "n": 256
+              },
+              "loss_change_bits": {
+                "mean": 0.4584249096480789,
+                "se": 0.027839908077223082,
+                "n": 256
+              },
+              "cumulative_loss_change_bits": {
+                "mean": 164.81421448339927,
+                "se": 2.6522583212141067,
+                "n": 256
+              },
+              "distance_to_base": {
+                "mean": 0.21189934413959707,
+                "se": 0.00336511490726771,
+                "n": 256
+              }
+            },
+            "1024": {
+              "regret_bits": {
+                "mean": 1.2950494651054136,
+                "se": 0.025319129212466034,
+                "n": 256
+              },
+              "loss_change_bits": {
+                "mean": 0.7307351425661504,
+                "se": 0.0344666489216458,
+                "n": 256
+              },
+              "cumulative_loss_change_bits": {
+                "mean": 480.19987742256166,
+                "se": 7.314392337245399,
+                "n": 256
+              },
+              "distance_to_base": {
+                "mean": 0.2857332578617454,
+                "se": 0.0026534311216261093,
+                "n": 256
+              }
+            }
+          }
+        },
+        "off_L1H3": {
+          "total_loss_change_bits": {
+            "mean": 40.23538604784622,
+            "se": 1.2980835420579606,
+            "n": 256
+          },
+          "time1_loss_change_bits": {
+            "mean": 0.023186379317900307,
+            "se": 0.005532274467374693,
+            "n": 256
+          },
+          "at_times": {
+            "1": {
+              "regret_bits": {
+                "mean": 1.9803400609300386,
+                "se": 0.042362813576209836,
+                "n": 256
+              },
+              "loss_change_bits": {
+                "mean": 0.023186379317900307,
+                "se": 0.005532274467374693,
+                "n": 256
+              },
+              "cumulative_loss_change_bits": {
+                "mean": 0.023186379317900307,
+                "se": 0.005532274467374693,
+                "n": 256
+              },
+              "distance_to_base": {
+                "mean": 0.4556731290273863,
+                "se": 0.0020564625274199495,
+                "n": 256
+              }
+            },
+            "4": {
+              "regret_bits": {
+                "mean": 1.880455945784783,
+                "se": 0.039036585241436626,
+                "n": 256
+              },
+              "loss_change_bits": {
+                "mean": 0.03325681083511613,
+                "se": 0.008348240141665539,
+                "n": 256
+              },
+              "cumulative_loss_change_bits": {
+                "mean": 0.10408657201471384,
+                "se": 0.018891948966793852,
+                "n": 256
+              },
+              "distance_to_base": {
+                "mean": 0.44319770918704726,
+                "se": 0.0027343414766833503,
+                "n": 256
+              }
+            },
+            "16": {
+              "regret_bits": {
+                "mean": 1.5408797793426259,
+                "se": 0.032765402272379215,
+                "n": 256
+              },
+              "loss_change_bits": {
+                "mean": 0.06416630272074568,
+                "se": 0.009015661225569797,
+                "n": 256
+              },
+              "cumulative_loss_change_bits": {
+                "mean": 0.7258421562226921,
+                "se": 0.06317912430744489,
+                "n": 256
+              },
+              "distance_to_base": {
+                "mean": 0.4098011567801195,
+                "se": 0.0034769701702740945,
+                "n": 256
+              }
+            },
+            "32": {
+              "regret_bits": {
+                "mean": 1.3873575740680697,
+                "se": 0.030181723218282525,
+                "n": 256
+              },
+              "loss_change_bits": {
+                "mean": 0.054455571757777585,
+                "se": 0.008429833653632583,
+                "n": 256
+              },
+              "cumulative_loss_change_bits": {
+                "mean": 1.5807426856467202,
+                "se": 0.09905313557821406,
+                "n": 256
+              },
+              "distance_to_base": {
+                "mean": 0.4067448103007374,
+                "se": 0.004409763963344837,
+                "n": 256
+              }
+            },
+            "64": {
+              "regret_bits": {
+                "mean": 1.1886043614696455,
+                "se": 0.02489575332442766,
+                "n": 256
+              },
+              "loss_change_bits": {
+                "mean": 0.05256439721486238,
+                "se": 0.006287289289088881,
+                "n": 256
+              },
+              "cumulative_loss_change_bits": {
+                "mean": 3.3103127984072307,
+                "se": 0.15493911236804161,
+                "n": 256
+              },
+              "distance_to_base": {
+                "mean": 0.3801571205801813,
+                "se": 0.005102936182867954,
+                "n": 256
+              }
+            },
+            "128": {
+              "regret_bits": {
+                "mean": 1.0458031147010622,
+                "se": 0.02896380198916005,
+                "n": 256
+              },
+              "loss_change_bits": {
+                "mean": 0.045732602801092606,
+                "se": 0.006087290757669063,
+                "n": 256
+              },
+              "cumulative_loss_change_bits": {
+                "mean": 6.319187152544512,
+                "se": 0.2292231004047904,
+                "n": 256
+              },
+              "distance_to_base": {
+                "mean": 0.3840747554894437,
+                "se": 0.005362787492166612,
+                "n": 256
+              }
+            },
+            "256": {
+              "regret_bits": {
+                "mean": 0.8900391043069062,
+                "se": 0.02908648125988359,
+                "n": 256
+              },
+              "loss_change_bits": {
+                "mean": 0.029943546052442614,
+                "se": 0.0056738311178170025,
+                "n": 256
+              },
+              "cumulative_loss_change_bits": {
+                "mean": 10.232773970997227,
+                "se": 0.3645334630069085,
+                "n": 256
+              },
+              "distance_to_base": {
+                "mean": 0.3786397079190832,
+                "se": 0.005490320914260884,
+                "n": 256
+              }
+            },
+            "512": {
+              "regret_bits": {
+                "mean": 0.7198009692096388,
+                "se": 0.02539428571018776,
+                "n": 256
+              },
+              "loss_change_bits": {
+                "mean": 0.037662110639584835,
+                "se": 0.006250667997965042,
+                "n": 256
+              },
+              "cumulative_loss_change_bits": {
+                "mean": 17.36012192305975,
+                "se": 0.6445600335633815,
+                "n": 256
+              },
+              "distance_to_base": {
+                "mean": 0.3590215130998803,
+                "se": 0.0053878303731657445,
+                "n": 256
+              }
+            },
+            "1024": {
+              "regret_bits": {
+                "mean": 0.6205619784960796,
+                "se": 0.023390662573959255,
+                "n": 256
+              },
+              "loss_change_bits": {
+                "mean": 0.056247655956816384,
+                "se": 0.005658642086299039,
+                "n": 256
+              },
+              "cumulative_loss_change_bits": {
+                "mean": 40.23538604784622,
+                "se": 1.2980835420579606,
+                "n": 256
+              },
+              "distance_to_base": {
+                "mean": 0.3879845196907977,
+                "se": 0.006042904461894419,
+                "n": 256
+              }
+            }
+          }
+        }
+      }
+    },
+    {
+      "depth": 3,
+      "n_sequences": 256,
+      "predictors": {
+        "intact": {
+          "total_loss_change_bits": {
+            "mean": 0.0,
+            "se": 0.0,
+            "n": 256
+          },
+          "time1_loss_change_bits": {
+            "mean": 0.0,
+            "se": 0.0,
+            "n": 256
+          },
+          "at_times": {
+            "1": {
+              "regret_bits": {
+                "mean": 2.336571257171531,
+                "se": 0.046209426794684344,
+                "n": 256
+              },
+              "loss_change_bits": {
+                "mean": 0.0,
+                "se": 0.0,
+                "n": 256
+              },
+              "cumulative_loss_change_bits": {
+                "mean": 0.0,
+                "se": 0.0,
+                "n": 256
+              },
+              "distance_to_base": {
+                "mean": 0.4550765905268461,
+                "se": 0.0015549898182996137,
+                "n": 256
+              }
+            },
+            "4": {
+              "regret_bits": {
+                "mean": 2.085758751128208,
+                "se": 0.041813238825112,
+                "n": 256
+              },
+              "loss_change_bits": {
+                "mean": 0.0,
+                "se": 0.0,
+                "n": 256
+              },
+              "cumulative_loss_change_bits": {
+                "mean": 0.0,
+                "se": 0.0,
+                "n": 256
+              },
+              "distance_to_base": {
+                "mean": 0.4408560526815877,
+                "se": 0.00262812806265919,
+                "n": 256
+              }
+            },
+            "16": {
+              "regret_bits": {
+                "mean": 1.8850020652252346,
+                "se": 0.043012106749647346,
+                "n": 256
+              },
+              "loss_change_bits": {
+                "mean": 0.0,
+                "se": 0.0,
+                "n": 256
+              },
+              "cumulative_loss_change_bits": {
+                "mean": 0.0,
+                "se": 0.0,
+                "n": 256
+              },
+              "distance_to_base": {
+                "mean": 0.40862055078062165,
+                "se": 0.0037643960402542966,
+                "n": 256
+              }
+            },
+            "32": {
+              "regret_bits": {
+                "mean": 1.6548697296303216,
+                "se": 0.0417895245889256,
+                "n": 256
+              },
+              "loss_change_bits": {
+                "mean": 0.0,
+                "se": 0.0,
+                "n": 256
+              },
+              "cumulative_loss_change_bits": {
+                "mean": 0.0,
+                "se": 0.0,
+                "n": 256
+              },
+              "distance_to_base": {
+                "mean": 0.3927121251645966,
+                "se": 0.004314249249135083,
+                "n": 256
+              }
+            },
+            "64": {
+              "regret_bits": {
+                "mean": 1.4433054575510997,
+                "se": 0.04130161241302631,
+                "n": 256
+              },
+              "loss_change_bits": {
+                "mean": 0.0,
+                "se": 0.0,
+                "n": 256
+              },
+              "cumulative_loss_change_bits": {
+                "mean": 0.0,
+                "se": 0.0,
+                "n": 256
+              },
+              "distance_to_base": {
+                "mean": 0.3833239383109146,
+                "se": 0.005057519310294829,
+                "n": 256
+              }
+            },
+            "128": {
+              "regret_bits": {
+                "mean": 1.221226683531758,
+                "se": 0.03653013414654043,
+                "n": 256
+              },
+              "loss_change_bits": {
+                "mean": 0.0,
+                "se": 0.0,
+                "n": 256
+              },
+              "cumulative_loss_change_bits": {
+                "mean": 0.0,
+                "se": 0.0,
+                "n": 256
+              },
+              "distance_to_base": {
+                "mean": 0.39320497966701606,
+                "se": 0.0060102734490621625,
+                "n": 256
+              }
+            },
+            "256": {
+              "regret_bits": {
+                "mean": 0.9384281432814392,
+                "se": 0.03320015749408117,
+                "n": 256
+              },
+              "loss_change_bits": {
+                "mean": 0.0,
+                "se": 0.0,
+                "n": 256
+              },
+              "cumulative_loss_change_bits": {
+                "mean": 0.0,
+                "se": 0.0,
+                "n": 256
+              },
+              "distance_to_base": {
+                "mean": 0.4123741728885839,
+                "se": 0.006915811743320647,
+                "n": 256
+              }
+            },
+            "512": {
+              "regret_bits": {
+                "mean": 0.7527043191986043,
+                "se": 0.0299206985036044,
+                "n": 256
+              },
+              "loss_change_bits": {
+                "mean": 0.0,
+                "se": 0.0,
+                "n": 256
+              },
+              "cumulative_loss_change_bits": {
+                "mean": 0.0,
+                "se": 0.0,
+                "n": 256
+              },
+              "distance_to_base": {
+                "mean": 0.4366508676256516,
+                "se": 0.007457924964109385,
+                "n": 256
+              }
+            },
+            "1024": {
+              "regret_bits": {
+                "mean": 0.6441905122141415,
+                "se": 0.025319386707505144,
+                "n": 256
+              },
+              "loss_change_bits": {
+                "mean": 0.0,
+                "se": 0.0,
+                "n": 256
+              },
+              "cumulative_loss_change_bits": {
+                "mean": 0.0,
+                "se": 0.0,
+                "n": 256
+              },
+              "distance_to_base": {
+                "mean": 0.4449949197630607,
+                "se": 0.007311829990257296,
+                "n": 256
+              }
+            }
+          }
+        },
+        "off_L1H4": {
+          "total_loss_change_bits": {
+            "mean": 768.7055322388508,
+            "se": 8.393733013096572,
+            "n": 256
+          },
+          "time1_loss_change_bits": {
+            "mean": 0.028225042615735677,
+            "se": 0.006104070720695375,
+            "n": 256
+          },
+          "at_times": {
+            "1": {
+              "regret_bits": {
+                "mean": 2.3647962997872667,
+                "se": 0.04757294062255072,
+                "n": 256
+              },
+              "loss_change_bits": {
+                "mean": 0.028225042615735677,
+                "se": 0.006104070720695375,
+                "n": 256
+              },
+              "cumulative_loss_change_bits": {
+                "mean": 0.028225042615735677,
+                "se": 0.006104070720695375,
+                "n": 256
+              },
+              "distance_to_base": {
+                "mean": 0.4532252177886282,
+                "se": 0.002286792541799702,
+                "n": 256
+              }
+            },
+            "4": {
+              "regret_bits": {
+                "mean": 2.1704092065229936,
+                "se": 0.043273342973851894,
+                "n": 256
+              },
+              "loss_change_bits": {
+                "mean": 0.08465045539478594,
+                "se": 0.018592131157404407,
+                "n": 256
+              },
+              "cumulative_loss_change_bits": {
+                "mean": 0.23316002048258133,
+                "se": 0.03555148750852603,
+                "n": 256
+              },
+              "distance_to_base": {
+                "mean": 0.4429597236228935,
+                "se": 0.002208942234145558,
+                "n": 256
+              }
+            },
+            "16": {
+              "regret_bits": {
+                "mean": 2.067564554125882,
+                "se": 0.04276510489375526,
+                "n": 256
+              },
+              "loss_change_bits": {
+                "mean": 0.18256248890064752,
+                "se": 0.024637431475663017,
+                "n": 256
+              },
+              "cumulative_loss_change_bits": {
+                "mean": 2.034634890284921,
+                "se": 0.14755343520314657,
+                "n": 256
+              },
+              "distance_to_base": {
+                "mean": 0.39087201778849656,
+                "se": 0.003491366231020633,
+                "n": 256
+              }
+            },
+            "32": {
+              "regret_bits": {
+                "mean": 1.9197103446284034,
+                "se": 0.03793277898853716,
+                "n": 256
+              },
+              "loss_change_bits": {
+                "mean": 0.26484061499808176,
+                "se": 0.03259134232348315,
+                "n": 256
+              },
+              "cumulative_loss_change_bits": {
+                "mean": 5.746046348840343,
+                "se": 0.26470465072031574,
+                "n": 256
+              },
+              "distance_to_base": {
+                "mean": 0.3570098210821177,
+                "se": 0.003589007534379333,
+                "n": 256
+              }
+            },
+            "64": {
+              "regret_bits": {
+                "mean": 1.751653177191574,
+                "se": 0.039391622086674176,
+                "n": 256
+              },
+              "loss_change_bits": {
+                "mean": 0.308347719640474,
+                "se": 0.03217287055144562,
+                "n": 256
+              },
+              "cumulative_loss_change_bits": {
+                "mean": 15.66020885052952,
+                "se": 0.4665508037414347,
+                "n": 256
+              },
+              "distance_to_base": {
+                "mean": 0.3023741726258693,
+                "se": 0.003623173960396769,
+                "n": 256
+              }
+            },
+            "128": {
+              "regret_bits": {
+                "mean": 1.633440963966684,
+                "se": 0.03371747018096126,
+                "n": 256
+              },
+              "loss_change_bits": {
+                "mean": 0.41221428043492603,
+                "se": 0.031465728362657576,
+                "n": 256
+              },
+              "cumulative_loss_change_bits": {
+                "mean": 40.333175343202626,
+                "se": 0.797437309996811,
+                "n": 256
+              },
+              "distance_to_base": {
+                "mean": 0.2621517613591464,
+                "se": 0.002942826081784797,
+                "n": 256
+              }
+            },
+            "256": {
+              "regret_bits": {
+                "mean": 1.5179374354367021,
+                "se": 0.03073057746553193,
+                "n": 256
+              },
+              "loss_change_bits": {
+                "mean": 0.5795092921552629,
+                "se": 0.031723588159554776,
+                "n": 256
+              },
+              "cumulative_loss_change_bits": {
+                "mean": 106.80303088924666,
+                "se": 1.5120492075375835,
+                "n": 256
+              },
+              "distance_to_base": {
+                "mean": 0.24425704960719924,
+                "se": 0.0030040885901965768,
+                "n": 256
+              }
+            },
+            "512": {
+              "regret_bits": {
+                "mean": 1.5627895073121394,
+                "se": 0.02931522222535006,
+                "n": 256
+              },
+              "loss_change_bits": {
+                "mean": 0.8100851881135349,
+                "se": 0.03168582101484749,
+                "n": 256
+              },
+              "cumulative_loss_change_bits": {
+                "mean": 288.50832697427643,
+                "se": 3.3070925896668038,
+                "n": 256
+              },
+              "distance_to_base": {
+                "mean": 0.23859583949049137,
+                "se": 0.0029925994772298198,
+                "n": 256
+              }
+            },
+            "1024": {
+              "regret_bits": {
+                "mean": 1.6581629500129853,
+                "se": 0.02944489825607982,
+                "n": 256
+              },
+              "loss_change_bits": {
+                "mean": 1.013972437798844,
+                "se": 0.0400470961289109,
+                "n": 256
+              },
+              "cumulative_loss_change_bits": {
+                "mean": 768.7055322388508,
+                "se": 8.393733013096572,
+                "n": 256
+              },
+              "distance_to_base": {
+                "mean": 0.29797134737532366,
+                "se": 0.0024554299079861015,
+                "n": 256
+              }
+            }
+          }
+        },
+        "off_L1H3": {
+          "total_loss_change_bits": {
+            "mean": 47.32159205217796,
+            "se": 1.377821703312137,
+            "n": 256
+          },
+          "time1_loss_change_bits": {
+            "mean": 0.016705785207225564,
+            "se": 0.006586333498919001,
+            "n": 256
+          },
+          "at_times": {
+            "1": {
+              "regret_bits": {
+                "mean": 2.3532770423787563,
+                "se": 0.04653186214062961,
+                "n": 256
+              },
+              "loss_change_bits": {
+                "mean": 0.016705785207225564,
+                "se": 0.006586333498919001,
+                "n": 256
+              },
+              "cumulative_loss_change_bits": {
+                "mean": 0.016705785207225564,
+                "se": 0.006586333498919001,
+                "n": 256
+              },
+              "distance_to_base": {
+                "mean": 0.45600801465441165,
+                "se": 0.002093891913210687,
+                "n": 256
+              }
+            },
+            "4": {
+              "regret_bits": {
+                "mean": 2.127913136895501,
+                "se": 0.04242225864830908,
+                "n": 256
+              },
+              "loss_change_bits": {
+                "mean": 0.042154385767293245,
+                "se": 0.010165196170447147,
+                "n": 256
+              },
+              "cumulative_loss_change_bits": {
+                "mean": 0.10668909170592217,
+                "se": 0.01733727808418027,
+                "n": 256
+              },
+              "distance_to_base": {
+                "mean": 0.44711704810891134,
+                "se": 0.0034030006995990885,
+                "n": 256
+              }
+            },
+            "16": {
+              "regret_bits": {
+                "mean": 1.9341448971905912,
+                "se": 0.043899902989442845,
+                "n": 256
+              },
+              "loss_change_bits": {
+                "mean": 0.04914283196535674,
+                "se": 0.009385056966529148,
+                "n": 256
+              },
+              "cumulative_loss_change_bits": {
+                "mean": 0.6132137505817957,
+                "se": 0.06449633063960902,
+                "n": 256
+              },
+              "distance_to_base": {
+                "mean": 0.42115531514647303,
+                "se": 0.003982810648463914,
+                "n": 256
+              }
+            },
+            "32": {
+              "regret_bits": {
+                "mean": 1.700321778228268,
+                "se": 0.04314550544642368,
+                "n": 256
+              },
+              "loss_change_bits": {
+                "mean": 0.04545204859794645,
+                "se": 0.009277541045943612,
+                "n": 256
+              },
+              "cumulative_loss_change_bits": {
+                "mean": 1.3990076992356584,
+                "se": 0.11286220414056637,
+                "n": 256
+              },
+              "distance_to_base": {
+                "mean": 0.4081421690303457,
+                "se": 0.004757588751046813,
+                "n": 256
+              }
+            },
+            "64": {
+              "regret_bits": {
+                "mean": 1.4723570692285302,
+                "se": 0.04107491984973534,
+                "n": 256
+              },
+              "loss_change_bits": {
+                "mean": 0.029051611677430436,
+                "se": 0.006430167400299363,
+                "n": 256
+              },
+              "cumulative_loss_change_bits": {
+                "mean": 2.796996292605339,
+                "se": 0.15606756162499674,
+                "n": 256
+              },
+              "distance_to_base": {
+                "mean": 0.39650633504361177,
+                "se": 0.00542101383156589,
+                "n": 256
+              }
+            },
+            "128": {
+              "regret_bits": {
+                "mean": 1.2548041944902502,
+                "se": 0.03753535798821384,
+                "n": 256
+              },
+              "loss_change_bits": {
+                "mean": 0.03357751095849217,
+                "se": 0.006481467260695493,
+                "n": 256
+              },
+              "cumulative_loss_change_bits": {
+                "mean": 5.209729834925675,
+                "se": 0.21716227859892973,
+                "n": 256
+              },
+              "distance_to_base": {
+                "mean": 0.40636560560429624,
+                "se": 0.006089669443392736,
+                "n": 256
+              }
+            },
+            "256": {
+              "regret_bits": {
+                "mean": 0.9721978487738729,
+                "se": 0.033124912185163835,
+                "n": 256
+              },
+              "loss_change_bits": {
+                "mean": 0.03376970549243376,
+                "se": 0.0056148828885917035,
+                "n": 256
+              },
+              "cumulative_loss_change_bits": {
+                "mean": 8.983472166848982,
+                "se": 0.32743522340824793,
+                "n": 256
+              },
+              "distance_to_base": {
+                "mean": 0.4088552422388027,
+                "se": 0.006568628697779831,
+                "n": 256
+              }
+            },
+            "512": {
+              "regret_bits": {
+                "mean": 0.8086404399469844,
+                "se": 0.030382083133602036,
+                "n": 256
+              },
+              "loss_change_bits": {
+                "mean": 0.055936120748380246,
+                "se": 0.005897864398932014,
+                "n": 256
+              },
+              "cumulative_loss_change_bits": {
+                "mean": 18.60502611981324,
+                "se": 0.6141221397654354,
+                "n": 256
+              },
+              "distance_to_base": {
+                "mean": 0.4102627085705301,
+                "se": 0.007039700865456432,
+                "n": 256
+              }
+            },
+            "1024": {
+              "regret_bits": {
+                "mean": 0.7003210092087735,
+                "se": 0.02476738322937153,
+                "n": 256
+              },
+              "loss_change_bits": {
+                "mean": 0.05613049699463217,
+                "se": 0.006448082643505779,
+                "n": 256
+              },
+              "cumulative_loss_change_bits": {
+                "mean": 47.32159205217796,
+                "se": 1.377821703312137,
+                "n": 256
+              },
+              "distance_to_base": {
+                "mean": 0.4264115432410594,
+                "se": 0.006486355006234139,
+                "n": 256
+              }
+            }
+          }
+        }
+      }
+    }
+  ],
+  "key_path_groups": [
+    {
+      "depth": 0,
+      "n_sequences": 256,
+      "predictors": {
+        "candidate_keys_off": {
+          "total_loss_change_bits": {
+            "mean": 12.783466883933743,
+            "se": 1.8089657887400081,
+            "n": 256
+          },
+          "time1_loss_change_bits": {
+            "mean": 0.0,
+            "se": 0.0,
+            "n": 256
+          },
+          "no_previous_continuation_tv": {
+            "mean": 0.07455745016596618,
+            "se": 0.0005037973845627965,
+            "n": 256
+          },
+          "no_previous_continuation_max_tv": 0.2251277845860473,
+          "at_times": {
+            "1": {
+              "regret_bits": {
+                "mean": 1.070113744238535,
+                "se": 0.010804093527573137,
+                "n": 256
+              },
+              "loss_change_bits": {
+                "mean": 0.0,
+                "se": 0.0,
+                "n": 256
+              },
+              "cumulative_loss_change_bits": {
+                "mean": 0.0,
+                "se": 0.0,
+                "n": 256
+              }
+            },
+            "4": {
+              "regret_bits": {
+                "mean": 0.9290536615629481,
+                "se": 0.011322914338718511,
+                "n": 256
+              },
+              "loss_change_bits": {
+                "mean": -0.015716898323522945,
+                "se": 0.006889996983890895,
+                "n": 256
+              },
+              "cumulative_loss_change_bits": {
+                "mean": -0.022014040497285104,
+                "se": 0.011828109159410745,
+                "n": 256
+              }
+            },
+            "16": {
+              "regret_bits": {
+                "mean": 0.5828126555246815,
+                "se": 0.009624062372943462,
+                "n": 256
+              },
+              "loss_change_bits": {
+                "mean": -0.10873956051927883,
+                "se": 0.008661725613785455,
+                "n": 256
+              },
+              "cumulative_loss_change_bits": {
+                "mean": -0.8529846142222055,
+                "se": 0.03809091516377696,
+                "n": 256
+              }
+            },
+            "32": {
+              "regret_bits": {
+                "mean": 0.4279070483952144,
+                "se": 0.006880303465840954,
+                "n": 256
+              },
+              "loss_change_bits": {
+                "mean": -0.13422718277247478,
+                "se": 0.009781849588781503,
+                "n": 256
+              },
+              "cumulative_loss_change_bits": {
+                "mean": -2.815247940779155,
+                "se": 0.07425122854930792,
+                "n": 256
+              }
+            },
+            "64": {
+              "regret_bits": {
+                "mean": 0.3058571345563308,
+                "se": 0.004612383507231496,
+                "n": 256
+              },
+              "loss_change_bits": {
+                "mean": -0.1577907578950126,
+                "se": 0.009633263898382398,
+                "n": 256
+              },
+              "cumulative_loss_change_bits": {
+                "mean": -7.485971502897683,
+                "se": 0.13313653884917903,
+                "n": 256
+              }
+            },
+            "128": {
+              "regret_bits": {
+                "mean": 0.24388023606733192,
+                "se": 0.003680606228569203,
+                "n": 256
+              },
+              "loss_change_bits": {
+                "mean": -0.138523411021959,
+                "se": 0.008696130524590399,
+                "n": 256
+              },
+              "cumulative_loss_change_bits": {
+                "mean": -17.24193439550424,
+                "se": 0.2353827562442579,
+                "n": 256
+              }
+            },
+            "256": {
+              "regret_bits": {
+                "mean": 0.20223536064266923,
+                "se": 0.0035810612823228703,
+                "n": 256
+              },
+              "loss_change_bits": {
+                "mean": -0.11788181143076414,
+                "se": 0.007557183350920114,
+                "n": 256
+              },
+              "cumulative_loss_change_bits": {
+                "mean": -34.05407852580423,
+                "se": 0.4585761323515592,
+                "n": 256
+              }
+            },
+            "512": {
+              "regret_bits": {
+                "mean": 0.2760789646274041,
+                "se": 0.005319042888494245,
+                "n": 256
+              },
+              "loss_change_bits": {
+                "mean": -0.0035195114849799654,
+                "se": 0.010659223883121861,
+                "n": 256
+              },
+              "cumulative_loss_change_bits": {
+                "mean": -52.97947176931304,
+                "se": 0.929188144868752,
+                "n": 256
+              }
+            },
+            "1024": {
+              "regret_bits": {
+                "mean": 0.47832328618867237,
+                "se": 0.008779673507760629,
+                "n": 256
+              },
+              "loss_change_bits": {
+                "mean": 0.23470920955941812,
+                "se": 0.01339222127813857,
+                "n": 256
+              },
+              "cumulative_loss_change_bits": {
+                "mean": 12.783466883933743,
+                "se": 1.8089657887400081,
+                "n": 256
+              }
+            }
+          }
+        },
+        "control_keys_off": {
+          "total_loss_change_bits": {
+            "mean": 3.831728693003467,
+            "se": 0.8458384027331406,
+            "n": 256
+          },
+          "time1_loss_change_bits": {
+            "mean": 0.0,
+            "se": 0.0,
+            "n": 256
+          },
+          "no_previous_continuation_tv": {
+            "mean": 0.033919268373591833,
+            "se": 0.0007366318957322454,
+            "n": 256
+          },
+          "no_previous_continuation_max_tv": 0.2817547789936991,
+          "at_times": {
+            "1": {
+              "regret_bits": {
+                "mean": 1.070113744238535,
+                "se": 0.010804093527573137,
+                "n": 256
+              },
+              "loss_change_bits": {
+                "mean": 0.0,
+                "se": 0.0,
+                "n": 256
+              },
+              "cumulative_loss_change_bits": {
+                "mean": 0.0,
+                "se": 0.0,
+                "n": 256
+              }
+            },
+            "4": {
+              "regret_bits": {
+                "mean": 0.9517993931803288,
+                "se": 0.015806818970471332,
+                "n": 256
+              },
+              "loss_change_bits": {
+                "mean": 0.007028833293857704,
+                "se": 0.004731242090962449,
+                "n": 256
+              },
+              "cumulative_loss_change_bits": {
+                "mean": 0.009813819135332462,
+                "se": 0.008846789689756605,
+                "n": 256
+              }
+            },
+            "16": {
+              "regret_bits": {
+                "mean": 0.686331151480783,
+                "se": 0.013097996730011408,
+                "n": 256
+              },
+              "loss_change_bits": {
+                "mean": -0.005221064563177346,
+                "se": 0.004158902847952792,
+                "n": 256
+              },
+              "cumulative_loss_change_bits": {
+                "mean": 0.05693730052458351,
+                "se": 0.03155588411109364,
+                "n": 256
+              }
+            },
+            "32": {
+              "regret_bits": {
+                "mean": 0.5486557025608798,
+                "se": 0.010076965563372611,
+                "n": 256
+              },
+              "loss_change_bits": {
+                "mean": -0.013478528606809394,
+                "se": 0.0033485672069862946,
+                "n": 256
+              },
+              "cumulative_loss_change_bits": {
+                "mean": -0.03562087678946164,
+                "se": 0.05980781804756095,
+                "n": 256
+              }
+            },
+            "64": {
+              "regret_bits": {
+                "mean": 0.43597659102937303,
+                "se": 0.00929787640544737,
+                "n": 256
+              },
+              "loss_change_bits": {
+                "mean": -0.02767130142197034,
+                "se": 0.0029304580298694983,
+                "n": 256
+              },
+              "cumulative_loss_change_bits": {
+                "mean": -0.680206706114831,
+                "se": 0.0926951743940027,
+                "n": 256
+              }
+            },
+            "128": {
+              "regret_bits": {
+                "mean": 0.3538354872276175,
+                "se": 0.0072109564269037555,
+                "n": 256
+              },
+              "loss_change_bits": {
+                "mean": -0.028568159861673433,
+                "se": 0.0028276015093004693,
+                "n": 256
+              },
+              "cumulative_loss_change_bits": {
+                "mean": -2.6058106947531234,
+                "se": 0.11927804192072963,
+                "n": 256
+              }
+            },
+            "256": {
+              "regret_bits": {
+                "mean": 0.2993164159687079,
+                "se": 0.006350288483128807,
+                "n": 256
+              },
+              "loss_change_bits": {
+                "mean": -0.020800756104725454,
+                "se": 0.0022684676407400332,
+                "n": 256
+              },
+              "cumulative_loss_change_bits": {
+                "mean": -6.048547118266949,
+                "se": 0.16418961689296035,
+                "n": 256
+              }
+            },
+            "512": {
+              "regret_bits": {
+                "mean": 0.2768798887015494,
+                "se": 0.00699622766950121,
+                "n": 256
+              },
+              "loss_change_bits": {
+                "mean": -0.0027185874108346664,
+                "se": 0.0027009578458271617,
+                "n": 256
+              },
+              "cumulative_loss_change_bits": {
+                "mean": -9.158773968031836,
+                "se": 0.3290736094057043,
+                "n": 256
+              }
+            },
+            "1024": {
+              "regret_bits": {
+                "mean": 0.288436043998251,
+                "se": 0.008076176973736693,
+                "n": 256
+              },
+              "loss_change_bits": {
+                "mean": 0.044821967368996754,
+                "se": 0.004518006933257721,
+                "n": 256
+              },
+              "cumulative_loss_change_bits": {
+                "mean": 3.831728693003467,
+                "se": 0.8458384027331406,
+                "n": 256
+              }
+            }
+          }
+        }
+      }
+    },
+    {
+      "depth": 2,
+      "n_sequences": 256,
+      "predictors": {
+        "candidate_keys_off": {
+          "total_loss_change_bits": {
+            "mean": 574.9512910810215,
+            "se": 6.1862945285090705,
+            "n": 256
+          },
+          "time1_loss_change_bits": {
+            "mean": 0.0,
+            "se": 0.0,
+            "n": 256
+          },
+          "no_previous_continuation_tv": {
+            "mean": 0.07592587125518205,
+            "se": 0.0006510653569069283,
+            "n": 256
+          },
+          "no_previous_continuation_max_tv": 0.27827318405906454,
+          "at_times": {
+            "1": {
+              "regret_bits": {
+                "mean": 1.9571536816121384,
+                "se": 0.041544925512634626,
+                "n": 256
+              },
+              "loss_change_bits": {
+                "mean": 0.0,
+                "se": 0.0,
+                "n": 256
+              },
+              "cumulative_loss_change_bits": {
+                "mean": 0.0,
+                "se": 0.0,
+                "n": 256
+              }
+            },
+            "4": {
+              "regret_bits": {
+                "mean": 1.8799097261806745,
+                "se": 0.03731253019300796,
+                "n": 256
+              },
+              "loss_change_bits": {
+                "mean": 0.0327105912310078,
+                "se": 0.013455219963285019,
+                "n": 256
+              },
+              "cumulative_loss_change_bits": {
+                "mean": 0.08958447826177621,
+                "se": 0.033685200598333374,
+                "n": 256
+              }
+            },
+            "16": {
+              "regret_bits": {
+                "mean": 1.5210239017626197,
+                "se": 0.027041055365999652,
+                "n": 256
+              },
+              "loss_change_bits": {
+                "mean": 0.04431042514073942,
+                "se": 0.016692394107277422,
+                "n": 256
+              },
+              "cumulative_loss_change_bits": {
+                "mean": 0.3992852009449079,
+                "se": 0.07954660476626867,
+                "n": 256
+              }
+            },
+            "32": {
+              "regret_bits": {
+                "mean": 1.4011609098090703,
+                "se": 0.025147711194576455,
+                "n": 256
+              },
+              "loss_change_bits": {
+                "mean": 0.0682589074987783,
+                "se": 0.02066844893242864,
+                "n": 256
+              },
+              "cumulative_loss_change_bits": {
+                "mean": 1.1747050149145628,
+                "se": 0.1570771585773123,
+                "n": 256
+              }
+            },
+            "64": {
+              "regret_bits": {
+                "mean": 1.307310045317735,
+                "se": 0.02376622828030547,
+                "n": 256
+              },
+              "loss_change_bits": {
+                "mean": 0.17127008106295197,
+                "se": 0.02413441217947246,
+                "n": 256
+              },
+              "cumulative_loss_change_bits": {
+                "mean": 4.908223153552691,
+                "se": 0.3118741854436223,
+                "n": 256
+              }
+            },
+            "128": {
+              "regret_bits": {
+                "mean": 1.245162772950297,
+                "se": 0.022766490003694132,
+                "n": 256
+              },
+              "loss_change_bits": {
+                "mean": 0.24509226105032741,
+                "se": 0.027090416734577846,
+                "n": 256
+              },
+              "cumulative_loss_change_bits": {
+                "mean": 18.888107907969385,
+                "se": 0.6091144786368776,
+                "n": 256
+              }
+            },
+            "256": {
+              "regret_bits": {
+                "mean": 1.2469074529723536,
+                "se": 0.02428541217159307,
+                "n": 256
+              },
+              "loss_change_bits": {
+                "mean": 0.38681189471788985,
+                "se": 0.028730166625168252,
+                "n": 256
+              },
+              "cumulative_loss_change_bits": {
+                "mean": 62.644614432569085,
+                "se": 1.166514695601464,
+                "n": 256
+              }
+            },
+            "512": {
+              "regret_bits": {
+                "mean": 1.261630776966672,
+                "se": 0.02343589155124975,
+                "n": 256
+              },
+              "loss_change_bits": {
+                "mean": 0.5794919183966181,
+                "se": 0.03187912669435457,
+                "n": 256
+              },
+              "cumulative_loss_change_bits": {
+                "mean": 189.73330581647713,
+                "se": 2.371256969086898,
+                "n": 256
+              }
+            },
+            "1024": {
+              "regret_bits": {
+                "mean": 1.4370038366064561,
+                "se": 0.0303517891846591,
+                "n": 256
+              },
+              "loss_change_bits": {
+                "mean": 0.8726895140671926,
+                "se": 0.04004269993189834,
+                "n": 256
+              },
+              "cumulative_loss_change_bits": {
+                "mean": 574.9512910810215,
+                "se": 6.1862945285090705,
+                "n": 256
+              }
+            }
+          }
+        },
+        "control_keys_off": {
+          "total_loss_change_bits": {
+            "mean": 12.590903539580015,
+            "se": 0.8714839118257173,
+            "n": 256
+          },
+          "time1_loss_change_bits": {
+            "mean": 0.0,
+            "se": 0.0,
+            "n": 256
+          },
+          "no_previous_continuation_tv": {
+            "mean": 0.0292298093032268,
+            "se": 0.0006392928321993101,
+            "n": 256
+          },
+          "no_previous_continuation_max_tv": 0.3101813534176858,
+          "at_times": {
+            "1": {
+              "regret_bits": {
+                "mean": 1.9571536816121384,
+                "se": 0.041544925512634626,
+                "n": 256
+              },
+              "loss_change_bits": {
+                "mean": 0.0,
+                "se": 0.0,
+                "n": 256
+              },
+              "cumulative_loss_change_bits": {
+                "mean": 0.0,
+                "se": 0.0,
+                "n": 256
+              }
+            },
+            "4": {
+              "regret_bits": {
+                "mean": 1.8553886673000781,
+                "se": 0.03914424870013272,
+                "n": 256
+              },
+              "loss_change_bits": {
+                "mean": 0.008189532350411402,
+                "se": 0.0042007375925556594,
+                "n": 256
+              },
+              "cumulative_loss_change_bits": {
+                "mean": 0.005968206065908881,
+                "se": 0.007365737669570831,
+                "n": 256
+              }
+            },
+            "16": {
+              "regret_bits": {
+                "mean": 1.4897935959937798,
+                "se": 0.03095496839737471,
+                "n": 256
+              },
+              "loss_change_bits": {
+                "mean": 0.013080119371899698,
+                "se": 0.0048390824299534676,
+                "n": 256
+              },
+              "cumulative_loss_change_bits": {
+                "mean": 0.13175574586335892,
+                "se": 0.031685754167009784,
+                "n": 256
+              }
+            },
+            "32": {
+              "regret_bits": {
+                "mean": 1.3275195724836182,
+                "se": 0.02867374441172411,
+                "n": 256
+              },
+              "loss_change_bits": {
+                "mean": -0.005382429826673862,
+                "se": 0.005010051951917218,
+                "n": 256
+              },
+              "cumulative_loss_change_bits": {
+                "mean": 0.18192238055516263,
+                "se": 0.05480115970998953,
+                "n": 256
+              }
+            },
+            "64": {
+              "regret_bits": {
+                "mean": 1.1322947496395763,
+                "se": 0.023600353076058636,
+                "n": 256
+              },
+              "loss_change_bits": {
+                "mean": -0.003745214615206641,
+                "se": 0.003714789038751719,
+                "n": 256
+              },
+              "cumulative_loss_change_bits": {
+                "mean": 0.017666283561600583,
+                "se": 0.09161449547307793,
+                "n": 256
+              }
+            },
+            "128": {
+              "regret_bits": {
+                "mean": 0.9879339622170537,
+                "se": 0.026849474426469764,
+                "n": 256
+              },
+              "loss_change_bits": {
+                "mean": -0.01213654968291611,
+                "se": 0.004002943611188486,
+                "n": 256
+              },
+              "cumulative_loss_change_bits": {
+                "mean": -0.5626121979796647,
+                "se": 0.13105802238705758,
+                "n": 256
+              }
+            },
+            "256": {
+              "regret_bits": {
+                "mean": 0.8585370736355882,
+                "se": 0.028601809082554597,
+                "n": 256
+              },
+              "loss_change_bits": {
+                "mean": -0.0015584846188755018,
+                "se": 0.0036326236475134055,
+                "n": 256
+              },
+              "cumulative_loss_change_bits": {
+                "mean": -1.480452097321241,
+                "se": 0.1806840066693125,
+                "n": 256
+              }
+            },
+            "512": {
+              "regret_bits": {
+                "mean": 0.6914888455378915,
+                "se": 0.025669398970163834,
+                "n": 256
+              },
+              "loss_change_bits": {
+                "mean": 0.009349986967837556,
+                "se": 0.0028926297613340738,
+                "n": 256
+              },
+              "cumulative_loss_change_bits": {
+                "mean": -1.2325890066172933,
+                "se": 0.32376641446643756,
+                "n": 256
+              }
+            },
+            "1024": {
+              "regret_bits": {
+                "mean": 0.6117784042750471,
+                "se": 0.024158688928076866,
+                "n": 256
+              },
+              "loss_change_bits": {
+                "mean": 0.047464081735783745,
+                "se": 0.005193594031326024,
+                "n": 256
+              },
+              "cumulative_loss_change_bits": {
+                "mean": 12.590903539580015,
+                "se": 0.8714839118257173,
+                "n": 256
+              }
+            }
+          }
+        }
+      }
+    },
+    {
+      "depth": 3,
+      "n_sequences": 256,
+      "predictors": {
+        "candidate_keys_off": {
+          "total_loss_change_bits": {
+            "mean": 860.2249121035629,
+            "se": 7.41189892438345,
+            "n": 256
+          },
+          "time1_loss_change_bits": {
+            "mean": 0.0,
+            "se": 0.0,
+            "n": 256
+          },
+          "no_previous_continuation_tv": {
+            "mean": 0.07814015566769189,
+            "se": 0.0011153728783221933,
+            "n": 256
+          },
+          "no_previous_continuation_max_tv": 0.42854618376408776,
+          "at_times": {
+            "1": {
+              "regret_bits": {
+                "mean": 2.336571257171531,
+                "se": 0.046209426794684344,
+                "n": 256
+              },
+              "loss_change_bits": {
+                "mean": 0.0,
+                "se": 0.0,
+                "n": 256
+              },
+              "cumulative_loss_change_bits": {
+                "mean": 0.0,
+                "se": 0.0,
+                "n": 256
+              }
+            },
+            "4": {
+              "regret_bits": {
+                "mean": 2.1069250300223605,
+                "se": 0.04045371918915114,
+                "n": 256
+              },
+              "loss_change_bits": {
+                "mean": 0.021166278894152957,
+                "se": 0.013430010322330481,
+                "n": 256
+              },
+              "cumulative_loss_change_bits": {
+                "mean": 0.07031741285676277,
+                "se": 0.028167181520587902,
+                "n": 256
+              }
+            },
+            "16": {
+              "regret_bits": {
+                "mean": 1.9536573252820626,
+                "se": 0.03879242207299556,
+                "n": 256
+              },
+              "loss_change_bits": {
+                "mean": 0.06865526005682805,
+                "se": 0.020422493715852495,
+                "n": 256
+              },
+              "cumulative_loss_change_bits": {
+                "mean": 0.8859830307536252,
+                "se": 0.11973407960513086,
+                "n": 256
+              }
+            },
+            "32": {
+              "regret_bits": {
+                "mean": 1.8569677191083738,
+                "se": 0.03519100493176723,
+                "n": 256
+              },
+              "loss_change_bits": {
+                "mean": 0.202097989478052,
+                "se": 0.03040226099726383,
+                "n": 256
+              },
+              "cumulative_loss_change_bits": {
+                "mean": 3.08413350985623,
+                "se": 0.23220311001574612,
+                "n": 256
+              }
+            },
+            "64": {
+              "regret_bits": {
+                "mean": 1.7225257033238868,
+                "se": 0.03481444754252489,
+                "n": 256
+              },
+              "loss_change_bits": {
+                "mean": 0.2792202457727868,
+                "se": 0.0327736698302318,
+                "n": 256
+              },
+              "cumulative_loss_change_bits": {
+                "mean": 10.978629169651434,
+                "se": 0.4514176320469108,
+                "n": 256
+              }
+            },
+            "128": {
+              "regret_bits": {
+                "mean": 1.6810675303785665,
+                "se": 0.03084834669736202,
+                "n": 256
+              },
+              "loss_change_bits": {
+                "mean": 0.45984084684680876,
+                "se": 0.03360877574540674,
+                "n": 256
+              },
+              "cumulative_loss_change_bits": {
+                "mean": 36.286554987211616,
+                "se": 0.8051328222071102,
+                "n": 256
+              }
+            },
+            "256": {
+              "regret_bits": {
+                "mean": 1.570502342050443,
+                "se": 0.02851580572792639,
+                "n": 256
+              },
+              "loss_change_bits": {
+                "mean": 0.6320741987690037,
+                "se": 0.035204962196808444,
+                "n": 256
+              },
+              "cumulative_loss_change_bits": {
+                "mean": 110.43390522954164,
+                "se": 1.5367951663898884,
+                "n": 256
+              }
+            },
+            "512": {
+              "regret_bits": {
+                "mean": 1.6689629945113733,
+                "se": 0.029112199351855505,
+                "n": 256
+              },
+              "loss_change_bits": {
+                "mean": 0.9162586753127688,
+                "se": 0.0376005639757528,
+                "n": 256
+              },
+              "cumulative_loss_change_bits": {
+                "mean": 313.03976018806054,
+                "se": 3.027253831140646,
+                "n": 256
+              }
+            },
+            "1024": {
+              "regret_bits": {
+                "mean": 1.794700556698917,
+                "se": 0.03392964008004635,
+                "n": 256
+              },
+              "loss_change_bits": {
+                "mean": 1.1505100444847756,
+                "se": 0.045516489220274264,
+                "n": 256
+              },
+              "cumulative_loss_change_bits": {
+                "mean": 860.2249121035629,
+                "se": 7.41189892438345,
+                "n": 256
+              }
+            }
+          }
+        },
+        "control_keys_off": {
+          "total_loss_change_bits": {
+            "mean": 15.503718824223643,
+            "se": 0.8092096873929058,
+            "n": 256
+          },
+          "time1_loss_change_bits": {
+            "mean": 0.0,
+            "se": 0.0,
+            "n": 256
+          },
+          "no_previous_continuation_tv": {
+            "mean": 0.028434453647782413,
+            "se": 0.0007208167375743311,
+            "n": 256
+          },
+          "no_previous_continuation_max_tv": 0.3533924306520395,
+          "at_times": {
+            "1": {
+              "regret_bits": {
+                "mean": 2.336571257171531,
+                "se": 0.046209426794684344,
+                "n": 256
+              },
+              "loss_change_bits": {
+                "mean": 0.0,
+                "se": 0.0,
+                "n": 256
+              },
+              "cumulative_loss_change_bits": {
+                "mean": 0.0,
+                "se": 0.0,
+                "n": 256
+              }
+            },
+            "4": {
+              "regret_bits": {
+                "mean": 2.091960079258153,
+                "se": 0.041692291284804096,
+                "n": 256
+              },
+              "loss_change_bits": {
+                "mean": 0.0062013281299453885,
+                "se": 0.004730191623604661,
+                "n": 256
+              },
+              "cumulative_loss_change_bits": {
+                "mean": 0.011452661437641731,
+                "se": 0.008181485858337846,
+                "n": 256
+              }
+            },
+            "16": {
+              "regret_bits": {
+                "mean": 1.886206764681236,
+                "se": 0.04321378753256296,
+                "n": 256
+              },
+              "loss_change_bits": {
+                "mean": 0.0012046994560014918,
+                "se": 0.004898672265366444,
+                "n": 256
+              },
+              "cumulative_loss_change_bits": {
+                "mean": 0.09744840768965925,
+                "se": 0.03144712462083699,
+                "n": 256
+              }
+            },
+            "32": {
+              "regret_bits": {
+                "mean": 1.6562110275908033,
+                "se": 0.04156051741642952,
+                "n": 256
+              },
+              "loss_change_bits": {
+                "mean": 0.0013412979604816564,
+                "se": 0.005325305975580769,
+                "n": 256
+              },
+              "cumulative_loss_change_bits": {
+                "mean": 0.23015174612591915,
+                "se": 0.05904946971000154,
+                "n": 256
+              }
+            },
+            "64": {
+              "regret_bits": {
+                "mean": 1.4432097828441686,
+                "se": 0.040498400347199495,
+                "n": 256
+              },
+              "loss_change_bits": {
+                "mean": -9.567470693112607e-05,
+                "se": 0.0050201000055862454,
+                "n": 256
+              },
+              "cumulative_loss_change_bits": {
+                "mean": 0.32577348738390466,
+                "se": 0.0874924191872868,
+                "n": 256
+              }
+            },
+            "128": {
+              "regret_bits": {
+                "mean": 1.2248523356688286,
+                "se": 0.035880067421185824,
+                "n": 256
+              },
+              "loss_change_bits": {
+                "mean": 0.0036256521370706804,
+                "se": 0.005274990885392883,
+                "n": 256
+              },
+              "cumulative_loss_change_bits": {
+                "mean": 0.38152023386949546,
+                "se": 0.1260484248446703,
+                "n": 256
+              }
+            },
+            "256": {
+              "regret_bits": {
+                "mean": 0.9419269270760501,
+                "se": 0.03238366762078974,
+                "n": 256
+              },
+              "loss_change_bits": {
+                "mean": 0.0034987837946108763,
+                "se": 0.00316777540726936,
+                "n": 256
+              },
+              "cumulative_loss_change_bits": {
+                "mean": 0.8917832416906973,
+                "se": 0.18784098175442684,
+                "n": 256
+              }
+            },
+            "512": {
+              "regret_bits": {
+                "mean": 0.7667268864217369,
+                "se": 0.029782464048890782,
+                "n": 256
+              },
+              "loss_change_bits": {
+                "mean": 0.014022567223132627,
+                "se": 0.0027614525736853694,
+                "n": 256
+              },
+              "cumulative_loss_change_bits": {
+                "mean": 2.7044586713637395,
+                "se": 0.31949385072489206,
+                "n": 256
+              }
+            },
+            "1024": {
+              "regret_bits": {
+                "mean": 0.6769773645772941,
+                "se": 0.025841509804349235,
+                "n": 256
+              },
+              "loss_change_bits": {
+                "mean": 0.032786852363152624,
+                "se": 0.004727826620282693,
+                "n": 256
+              },
+              "cumulative_loss_change_bits": {
+                "mean": 15.503718824223643,
+                "se": 0.8092096873929058,
+                "n": 256
+              }
+            }
+          }
+        }
+      }
+    }
+  ],
+  "inputs": [
+    {
+      "path": "output/general_lsa_copying_2026-09-17/natural/a1_L0.npz",
+      "sha256": "440fbcd420a55671411e3113290f6c2e3faf3b3092dbed41b555b9120d930e36"
+    },
+    {
+      "path": "output/general_lsa_copying_2026-09-17/natural/a1_L2.npz",
+      "sha256": "415fdf810f3b73c166618cfca235def58e3e9aaa85653e229699ca2256ffc096"
+    },
+    {
+      "path": "output/general_lsa_copying_2026-09-17/natural/a1_L3.npz",
+      "sha256": "652a3e6b81cc9785e50794842c176d6003ccdf2602fc5206a77c8891a3a6da8d"
+    },
+    {
+      "path": "output/general_lsa_copying_2026-09-17/key_path_natural/a1_L0.npz",
+      "sha256": "f0aa46fe86e89bae1afb1c5487aee648b290b25e4db99b03d01cd2208ddad26c"
+    },
+    {
+      "path": "output/general_lsa_copying_2026-09-17/key_path_natural/a1_L2.npz",
+      "sha256": "cc54fee3dfe50284acc0009481c4c6627030de2fd5bff69adff9890ba441e448"
+    },
+    {
+      "path": "output/general_lsa_copying_2026-09-17/key_path_natural/a1_L3.npz",
+      "sha256": "b1d7f00d42f6ea51c8b4ba4fe178b25724f29759e2dc9f34483568b50d3384e0"
+    }
+  ],
+  "controlled_inputs": {
+    "discovery/selection.json": "970e1e15c766117e1a83d459b10d350908fdde71f3070c2c0912716c1c8b1b8c",
+    "discovery/summary.json": "25989fa4dcc73df2dfa8f9046fd11785f353cf046346b1bb86f85ba2e171ddae",
+    "confirmation/summary.json": "bea6989e74bf823767d1660a4cbe8df3b5c8805ad34512bbd47fc32e685be3ac",
+    "confirmation/records.npz": "df4c85f5001bec44f28e9a98f502c859bab9448843473553208fbbc4ddbd53da"
+  },
+  "code_sha256": "7343f231939721cdc9e7ed2eb056e34503b2f714771dfe4ffded40719fbd14b5",
+  "curves_sha256": "1d1a1a0680505b4de1a831c0c1cc9509eec88637533265efe0cd91ee555eaa53"
+}

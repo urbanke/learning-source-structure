@@ -1,0 +1,25 @@
+{
+  "schema": "overnight-workflow-preparation-v1",
+  "verified_local": "2026-09-16 22:09 CEST",
+  "combined_tests_passed": 120,
+  "combined_tests_seconds": 12.2,
+  "posterior_validation": {
+    "schema": "shared-base-posterior-preparation-validation-v1",
+    "plan_sha256": "c3f6046ef8abab26d84a357c3fda54acd683b3bd6e0d7decffb5d5dc42573c53",
+    "input_archive_sha256": "2acd15288a1b198ac1aaa9c315cf41c961005a1176f9be13fb1ebf97f4c42b20",
+    "input_bytes": 669236,
+    "tests_passed": 17,
+    "inputs_verified": 48,
+    "sources_verified": 8,
+    "actual_sealed_runtime_preflight_passed": true,
+    "preflight_sha256": "7edc5de37551cf4db3d96a573f2f31821038f05b53e2efedca1079072b94704a",
+    "sampling_started": false,
+    "cluster_job_submitted": false
+  },
+  "overnight_protocol_sha256": "73c14df6c7cdb758c3d7a3b37bdd5daa4d5d90cb9c128389cf7c1e010d0c5c47",
+  "launcher_dry_runs_passed": true,
+  "original_bound_code_changed": false,
+  "scientific_results_validated": false,
+  "cluster_jobs_submitted_by_agent": false,
+  "posterior_archive_transfer_user_confirmed": true
+}

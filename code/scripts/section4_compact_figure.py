@@ -30,11 +30,11 @@ from copying_endpoint64_figure_input import load as load_copying_endpoint64
 from copying_endpoint128_provisional_figure_input import load as load_copying_endpoint128
 
 ROOT = Path(__file__).resolve().parents[2]
-SHIFT = ROOT / "output/product_shift_2026-09-18"
+SHIFT = ROOT / "results/transformer/product_shift_2026-09-18"
 UNSEEN = ROOT / "results/transformer/section4_unseen_context_refined_2026-09-20"
 UNIFORM = ROOT / "results/transformer/section4_unseen_uniform_control_2026-09-17"
 COPY = ROOT / "results/transformer/shared_base_shuffle_2026-09-18"
-COPY_RAW = ROOT / "output/shared_base_shuffle_download_2026-09-18/eval"
+COPY_RAW = ROOT / "results/transformer/shared_base_shuffle_download_2026-09-18/eval"
 COPY_PRECISION = ROOT / "results/transformer/copying_bayes_precision_2026-09-24"
 COPY_ENDPOINT32 = ROOT / "results/transformer/copying_bayes_endpoint32_2026-09-24"
 COPY_ENDPOINT64 = ROOT / "results/transformer/copying_bayes_endpoint64_2026-09-24"

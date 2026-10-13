@@ -1,0 +1,109 @@
+{
+  "pairs": [
+    {
+      "source": 0,
+      "passed": true,
+      "checks": 226,
+      "failed": 0,
+      "draws16": 32768,
+      "draws32": 65536,
+      "ess16": 401.9074642871652,
+      "ess32": 481.444515670567,
+      "max_probability_refinement": 0.00013300453194620143,
+      "tv_refinement": 0.0005543261334403369,
+      "metric_refinement": true,
+      "raw_errors": {
+        "reference0:alpha16": {
+          "mean": 0.0,
+          "covariance_batch": 4.1359030627651384e-25,
+          "covariance_between": 4.1359030627651384e-25
+        },
+        "reference0:alpha32": {
+          "mean": 0.0,
+          "covariance_batch": 1.2924697071141057e-26,
+          "covariance_between": 4.1359030627651384e-25
+        }
+      }
+    },
+    {
+      "source": 1,
+      "passed": true,
+      "checks": 226,
+      "failed": 0,
+      "draws16": 16384,
+      "draws32": 32768,
+      "ess16": 270.57571954550207,
+      "ess32": 390.6286228554044,
+      "max_probability_refinement": 0.0005134686640065889,
+      "tv_refinement": 0.0007983229630154612,
+      "metric_refinement": true,
+      "raw_errors": {
+        "reference1:alpha16": {
+          "mean": 0.0,
+          "covariance_batch": 3.308722450212111e-24,
+          "covariance_between": 1.6543612251060553e-24
+        },
+        "reference1:alpha32": {
+          "mean": 0.0,
+          "covariance_batch": 1.6543612251060553e-24,
+          "covariance_between": 1.6543612251060553e-24
+        }
+      }
+    },
+    {
+      "source": 2,
+      "passed": true,
+      "checks": 208,
+      "failed": 0,
+      "draws16": 32768,
+      "draws32": 16384,
+      "ess16": 656.7339029048801,
+      "ess32": 208.11521705994375,
+      "max_probability_refinement": 0.00021479725185356846,
+      "tv_refinement": 0.001022820718089239,
+      "metric_refinement": true,
+      "raw_errors": {
+        "reference2:alpha16": {
+          "mean": 0.0,
+          "covariance_batch": 8.271806125530277e-25,
+          "covariance_between": 4.1359030627651384e-25
+        },
+        "reference2:alpha32": {
+          "mean": 0.0,
+          "covariance_batch": 8.271806125530277e-25,
+          "covariance_between": 1.6543612251060553e-24
+        }
+      }
+    },
+    {
+      "source": 3,
+      "passed": false,
+      "checks": 208,
+      "failed": 5,
+      "draws16": 65536,
+      "draws32": 65536,
+      "ess16": 199.5554706169931,
+      "ess32": 146.73580020174515,
+      "max_probability_refinement": 0.008305198038556505,
+      "tv_refinement": 0.011011685656223538,
+      "metric_refinement": true,
+      "raw_errors": {
+        "reference3:alpha16": {
+          "mean": 0.0,
+          "covariance_batch": 2.5849394142282115e-26,
+          "covariance_between": 6.617444900424222e-24
+        },
+        "reference3:alpha32": {
+          "mean": 0.0,
+          "covariance_batch": 2.5849394142282115e-26,
+          "covariance_between": 1.3234889800848443e-23
+        }
+      }
+    }
+  ],
+  "complete_cohort_admissible": false,
+  "unresolved": [
+    3
+  ],
+  "aggregate_reported": false
+}

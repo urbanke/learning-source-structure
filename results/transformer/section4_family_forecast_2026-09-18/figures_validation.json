@@ -1,0 +1,164 @@
+{
+  "schema": "section4-family-forecast-figures-v1",
+  "passed": true,
+  "summary_sha256": "490af10322304a6857ed074f7100f969b1ffe1aeb7a2e022467b5c6c8a43a103",
+  "validation_sha256": "20a5f4b4e37f1b25169454db4867a22fcf8abce05d4e3aa207b0ee397a4b3565",
+  "script_sha256": "1698371ccc0a302251b42f4997afef892bb36ce68c3120b236c28e30140789b0",
+  "plotted": {
+    "prediction_times": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "bayes_mean": [
+      8.542471359090449e-16,
+      0.0116322910667331,
+      0.0441474482920264,
+      0.10227454549012023,
+      0.1756181556625864
+    ],
+    "transformer_times": [
+      1,
+      4
+    ],
+    "groups": {
+      "equal_family_average": {
+        "bayes": [
+          0.0116322910667331,
+          0.1756181556625864
+        ],
+        "models": {
+          "pooled_seed0": {
+            "mean": [
+              0.01646737422653326,
+              0.20932155563691524
+            ],
+            "se": [
+              0.0026913858978975893,
+              0.006616567437908832
+            ],
+            "n_seq": 3072,
+            "coefficient": 1
+          },
+          "pooled_seed1": {
+            "mean": [
+              0.01914371141980497,
+              0.211644439672449
+            ],
+            "se": [
+              0.002725148769737076,
+              0.006854713469297647
+            ],
+            "n_seq": 3072,
+            "coefficient": 1
+          }
+        }
+      },
+      "product": {
+        "bayes": [
+          0.007704205472754896,
+          0.2277943292359496
+        ],
+        "models": {
+          "pooled_seed0": {
+            "mean": [
+              0.0026635437585703784,
+              0.25071984587577745
+            ],
+            "se": [
+              0.003821312402784622,
+              0.010697958260010458
+            ],
+            "n_seq": 1024,
+            "coefficient": 1
+          },
+          "pooled_seed1": {
+            "mean": [
+              0.007140438796348212,
+              0.20952562795006327
+            ],
+            "se": [
+              0.0039205049488098805,
+              0.010777265020886476
+            ],
+            "n_seq": 1024,
+            "coefficient": 1
+          }
+        }
+      },
+      "shared_base": {
+        "bayes": [
+          0.019488462254689504,
+          0.16037248196973708
+        ],
+        "models": {
+          "pooled_seed0": {
+            "mean": [
+              0.050565841697365575,
+              0.2651106086131582
+            ],
+            "se": [
+              0.006403851776129447,
+              0.014107315227014337
+            ],
+            "n_seq": 1024,
+            "coefficient": 1
+          },
+          "pooled_seed1": {
+            "mean": [
+              0.052991858594261546,
+              0.29138058048474713
+            ],
+            "se": [
+              0.006385949254704718,
+              0.014979548853980063
+            ],
+            "n_seq": 1024,
+            "coefficient": 1
+          }
+        }
+      },
+      "uniform_base": {
+        "bayes": [
+          0.007704205472754896,
+          0.13868765578207246
+        ],
+        "models": {
+          "pooled_seed0": {
+            "mean": [
+              -0.0038272627763361704,
+              0.11213421242180995
+            ],
+            "se": [
+              0.003095202160167614,
+              0.008974855324532119
+            ],
+            "n_seq": 1024,
+            "coefficient": 1
+          },
+          "pooled_seed1": {
+            "mean": [
+              -0.002701163131194846,
+              0.13402711058253655
+            ],
+            "se": [
+              0.0032691306822286805,
+              0.009074554838466548
+            ],
+            "n_seq": 1024,
+            "coefficient": 1
+          }
+        }
+      }
+    }
+  },
+  "artifacts": {
+    "forecast.pdf": "d53f86d9208875a5ba52b3f79ffb6cd852d17e3f520c57a58233cac01deb7eee",
+    "forecast.png": "686e3fd35e1193a9caf8e891ff6bc16660dc9894772be616bd697cbfd3f30b57",
+    "forecast_runs.pdf": "8569a20ec5f9fec3d203e1dcbae815d93f1bce70ddef0b36b02487cfe2e8c291",
+    "forecast_runs.png": "56fffee5cf846fdaf156d1164b6ae78b400aa33c367e550362957a793c919891"
+  },
+  "horizontal_offsets": "Appendix only: training runs displaced slightly for visibility; prediction times are 1 and 4."
+}

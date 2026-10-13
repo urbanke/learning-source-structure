@@ -1,0 +1,148 @@
+{
+  "schema": "product-backoff-components-validation-v1",
+  "passed": true,
+  "seed": 20260927,
+  "n_ctx": 1024,
+  "coordinate_sizes": [
+    8,
+    8
+  ],
+  "source_depth_prior": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8
+  ],
+  "source_depths": [
+    5,
+    2
+  ],
+  "bayes_depths": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8
+  ],
+  "posterior_scope": "one depth shared by all rows of each coordinate",
+  "tokens_sha256": "586c484ce3fdfb6ec1625017194c9a1e9010e8d9f8a0967670c0a2915950afd8",
+  "weights_sha256": "dbca78de0a67131b74711143e9700bce9f9ebed5557ee6d6b6a9dc8cecc7b24e",
+  "joint_reconstruction_error": 1.3655743202889425e-14,
+  "coordinate_checks": {
+    "coordinate1": {
+      "reference_error": 9.992007221626409e-15,
+      "maximum_component_sum_error": 2.7485791420645e-12,
+      "maximum_reconstruction_error": 3.3306690738754696e-16,
+      "depth_one_closed_form_error": 0.0,
+      "minimum_context_probability": 0.0,
+      "minimum_context_weight": 0.0,
+      "maximum_context_weight": 0.9923909032374996,
+      "maximum_uniform_context_tv": 0.8750000000001409,
+      "all_successors_observed_prefixes": 0,
+      "empty_context_prefixes": 8
+    },
+    "coordinate2": {
+      "reference_error": 1.4988010832439613e-14,
+      "maximum_component_sum_error": 9.265921363521556e-13,
+      "maximum_reconstruction_error": 3.3306690738754696e-16,
+      "depth_one_closed_form_error": 0.0,
+      "minimum_context_probability": 0.0,
+      "minimum_context_weight": 0.0,
+      "maximum_context_weight": 0.9847395331723491,
+      "maximum_uniform_context_tv": 0.8750000000000894,
+      "all_successors_observed_prefixes": 79,
+      "empty_context_prefixes": 8
+    }
+  },
+  "grid": {
+    "lower": -30,
+    "upper": 30,
+    "step": 0.015625,
+    "rmax": 1025
+  },
+  "runtime": {
+    "python": [
+      3,
+      14,
+      6
+    ],
+    "numpy": "2.4.6",
+    "scipy": "1.18.1"
+  },
+  "backend": {
+    "read_only": true,
+    "settings": {
+      "PMM_UNIVERSAL_TABLES": "/Users/ruediger/Projects/product_model_with_memory/tables/anchors_prod",
+      "PMM_PHI_LADDER_EVERY": "1",
+      "PMM_PHI_LADDER_DEGREE": "11",
+      "PMM_PHI_SADDLE_MIN_L": "54"
+    }
+  },
+  "provenance": {
+    "product_components.py": {
+      "path": "/Users/ruediger/Projects/layered_architectures/code/transformer/product_components.py",
+      "sha256": "461bc31690b32232587b50135f751829c88f9fe4e2da9c7364a7f5a9b8d6a128"
+    },
+    "eval_conditional_crossing.py": {
+      "path": "/Users/ruediger/Projects/layered_architectures/code/transformer/eval_conditional_crossing.py",
+      "sha256": "eb948526f5b90fd7d5437c1ae56a1a39be0825a0080f0dc680815ad477e27d45"
+    },
+    "shared_depth.py": {
+      "path": "/Users/ruediger/Projects/layered_architectures/code/transformer/shared_depth.py",
+      "sha256": "616f536153458499078d17d7939e6a800c7b52e3eb4f1dd6503db95030d7a395"
+    },
+    "lsa_seq.py": {
+      "path": "/Users/ruediger/Projects/layered_architectures/code/transformer/lsa_seq.py",
+      "sha256": "7e39960e91f3bb27eea82e201afd8a86ce717ea50a304daa86534b4fdbadfc51"
+    },
+    "phi_source.py": {
+      "path": "/Users/ruediger/Projects/layered_architectures/code/transformer/phi_source.py",
+      "sha256": "456eb407fd7f280786a441681a704a6fff172af9fc9aea3c6f9456fb55174831"
+    },
+    "source.py": {
+      "path": "/Users/ruediger/Projects/layered_architectures/code/transformer/source.py",
+      "sha256": "d1bb83004e3654cb3f84f6083437cae2b6d71fa19a33b06d26d2455ac440dab4"
+    },
+    "families.py": {
+      "path": "/Users/ruediger/Projects/layered_architectures/code/transformer/families.py",
+      "sha256": "24d7ab304d9de7133e38ec8ffe2422d2de38b9e3374670117807eab61d606e00"
+    },
+    "pmm/production_coding.py": {
+      "path": "/Users/ruediger/Projects/product_model_with_memory/src/product_model_with_memory/production_coding.py",
+      "sha256": "6f709444496865ff124fc5bf1849fa6dce442a594f3cc7fe7c53ccfb504560f6"
+    },
+    "pmm/universal_tables.py": {
+      "path": "/Users/ruediger/Projects/product_model_with_memory/src/product_model_with_memory/universal_tables.py",
+      "sha256": "aef2f63c0ccdb4de58bb8c617dd99aaadc73b803bee67a029f5d89230878d5c2"
+    },
+    "pmm/mellin.py": {
+      "path": "/Users/ruediger/Projects/product_model_with_memory/src/product_model_with_memory/mellin.py",
+      "sha256": "201e2161b98a5b3dcf464930447c02dc22092fe78dec9e49b44bd8b2b931f969"
+    },
+    "pmm/kernel.py": {
+      "path": "/Users/ruediger/Projects/product_model_with_memory/src/product_model_with_memory/kernel.py",
+      "sha256": "5dd1b42d05ffcb0b51383c1eaa9e88a0e494192a26215e71809d02b8d06a52d0"
+    },
+    "store/anchors.json": {
+      "path": "/Users/ruediger/Projects/product_model_with_memory/tables/anchors_prod/anchors.json",
+      "sha256": "5c409244487deeba8d597ad66fa13479a8d15476d55d4509c33b2ec797b07c68"
+    },
+    "store/manifest.json": {
+      "path": "/Users/ruediger/Projects/product_model_with_memory/tables/anchors_prod/manifest.json",
+      "sha256": "cf0449a4b704174890f0a1fb95f20954839dd7266ae307e799d1dc6d0234ffb5"
+    }
+  },
+  "interpretation": "predictive backoff weights, not posterior iid/Markov hypothesis probabilities",
+  "elapsed_seconds": 2.839033416006714,
+  "limitations": [
+    "One long sampled product path; independent small-case tests are separate.",
+    "The decomposition checks predictive identities, not a learned transformer implementation."
+  ]
+}

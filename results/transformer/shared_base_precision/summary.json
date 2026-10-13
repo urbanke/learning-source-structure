@@ -1,0 +1,1437 @@
+{
+  "schema": "shared-base-precision-diagnostic-v1",
+  "checks": {
+    "passed": true,
+    "exact_binomial_jensen_bias_bits": 0.0008454033439972974,
+    "second_order_jensen_bias_bits": 0.0008434122794312607,
+    "relative_second_order_error": 0.0023607251335959756
+  },
+  "diagnostic_sha256": "d0068bce328cf0c5f51a3e5068e8a1b00399cb9159bf6e8f9b83f4ca1a531072",
+  "rows": [
+    {
+      "time": 16,
+      "order": 16,
+      "index": 0,
+      "chain_file": "/Users/ruediger/Projects/layered_architectures/output/conditional_shared_base_benchmark_2026-09-15/a1_L4/chains/alpha16/seq_000000_t0016.npz",
+      "chain_sha256": "731018d3957867f0f6399b9a29365581b168df98fa529eb6b372743798de81fb",
+      "numerical_problem": {
+        "alpha_nodes": [
+          0.505299532504175,
+          0.5277124884633837,
+          0.5671843988060842,
+          0.6222977958224984,
+          0.6910618777986781,
+          0.7709916111713864,
+          0.8591982246103705,
+          0.9524937450811812,
+          1.0475062549188188,
+          1.1408017753896296,
+          1.2290083888286136,
+          1.3089381222013219,
+          1.3777022041775016,
+          1.4328156011939157,
+          1.4722875115366163,
+          1.494700467495825
+        ],
+        "alpha_weights": [
+          0.01357622970587703,
+          0.031126761969323805,
+          0.04757925584124649,
+          0.06231448562776698,
+          0.07479799440828833,
+          0.0845782596975013,
+          0.09130170752246179,
+          0.09472530522753428,
+          0.09472530522753428,
+          0.09130170752246179,
+          0.0845782596975013,
+          0.07479799440828833,
+          0.06231448562776698,
+          0.04757925584124649,
+          0.031126761969323805,
+          0.01357622970587703
+        ],
+        "base_laws_hash": "f0d4426559c79af0a7da810618d36a2eb247ff7a987c42c014a45e0d6f741732",
+        "d": 64,
+        "depth_prior": [
+          0.11111111111111109,
+          0.11111111111111109,
+          0.11111111111111109,
+          0.11111111111111109,
+          0.11111111111111109,
+          0.11111111111111109,
+          0.11111111111111109,
+          0.11111111111111109,
+          0.11111111111111109
+        ],
+        "depths": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8
+        ],
+        "kernel_grid": {
+          "lower": -32.0,
+          "step": 0.03125,
+          "u_hash": "339625ef028e944e941ebdef207d1ceac19811460cedf1ff9e16b1a56895d17c",
+          "upper": 32.0
+        },
+        "numerical_code_hashes": {
+          "lsa_seq.py": "7e39960e91f3bb27eea82e201afd8a86ce717ea50a304daa86534b4fdbadfc51",
+          "phi_source.py": "456eb407fd7f280786a441681a704a6fff172af9fc9aea3c6f9456fb55174831",
+          "pmm/kernel.py": "5dd1b42d05ffcb0b51383c1eaa9e88a0e494192a26215e71809d02b8d06a52d0",
+          "pmm/mellin.py": "201e2161b98a5b3dcf464930447c02dc22092fe78dec9e49b44bd8b2b931f969",
+          "pmm/production_coding.py": "6f709444496865ff124fc5bf1849fa6dce442a594f3cc7fe7c53ccfb504560f6",
+          "pmm/universal_tables.py": "aef2f63c0ccdb4de58bb8c617dd99aaadc73b803bee67a029f5d89230878d5c2",
+          "ranked_lsa.py": "3fa7952048ab3f25d508dda8c2a7c232064aa5db56008de8b4ed9623709aac8d",
+          "shared_base_chain_runner.py": "efa186974ee0c6c9f3b9c71a22aa3071052f48ccad075f0d855367d0c17f263e",
+          "shared_base_mcmc.py": "26469e21c04fc2fe91a40bcb418aff3ae866fe707b2ee198d644091580b1f7a8",
+          "shared_depth.py": "616f536153458499078d17d7939e6a800c7b52e3eb4f1dd6503db95030d7a395",
+          "source.py": "d1bb83004e3654cb3f84f6083437cae2b6d71fa19a33b06d26d2455ac440dab4",
+          "store/anchors.json": "5c409244487deeba8d597ad66fa13479a8d15476d55d4509c33b2ec797b07c68",
+          "store/manifest.json": "cf0449a4b704174890f0a1fb95f20954839dd7266ae307e799d1dc6d0234ffb5",
+          "weighted_lsa.py": "847f0ffaa622d86e88633447327dce8e7f518e4c86c1e44e76a794e470d2dec9"
+        },
+        "prefix_length": 16,
+        "prob_tol": 1e-07,
+        "rank_proposal_weights": [
+          0.21079742774414,
+          0.10539871387207,
+          0.07026580924804667,
+          0.052699356936035,
+          0.04215948554882801,
+          0.03513290462402333,
+          0.030113918249162857,
+          0.0263496784680175,
+          0.023421936416015556,
+          0.021079742774414004,
+          0.019163402522194548,
+          0.017566452312011666,
+          0.016215186749549235,
+          0.015056959124581428,
+          0.014053161849609334,
+          0.01317483923400875,
+          0.012399848690831767,
+          0.011710968208007778,
+          0.011094601460217896,
+          0.010539871387207002,
+          0.010037972749720953,
+          0.009581701261097274,
+          0.009165105554093044,
+          0.008783226156005833,
+          0.008431897109765602,
+          0.008107593374774617,
+          0.007807312138671852,
+          0.007528479562290714,
+          0.007268876818763449,
+          0.007026580924804667,
+          0.006799917024004516,
+          0.006587419617004375,
+          0.0063878008407315156,
+          0.006199924345415883,
+          0.006022783649832572,
+          0.005855484104003889,
+          0.005697227776868649,
+          0.005547300730108948,
+          0.005405062249849744,
+          0.005269935693603501,
+          0.005141400676686342,
+          0.0050189863748604764,
+          0.004902265761491629,
+          0.004790850630548637,
+          0.004684387283203112,
+          0.004582552777046522,
+          0.004485051654130639,
+          0.0043916130780029166,
+          0.00430198832130898,
+          0.004215948554882801,
+          0.004133282896943922,
+          0.004053796687387309,
+          0.003977309957436604,
+          0.003903656069335926,
+          0.0038326805044389092,
+          0.003764239781145357,
+          0.003698200486739298,
+          0.0036344384093817245,
+          0.0035728377583752547,
+          0.0035132904624023335,
+          0.0034556955367891808,
+          0.003399958512002258,
+          0.003345990916573651,
+          0.0032937098085021876
+        ],
+        "runtime": {
+          "numpy": "2.4.6",
+          "python": [
+            3,
+            14,
+            6
+          ],
+          "scipy": "1.18.1"
+        },
+        "token_hash": "c38a38ba78cd1169547cac24263586afa15b1c5d42dce8fdbabb88316cb65783"
+      },
+      "chains": 4,
+      "draws_per_chain": 16384,
+      "bayes_cross_entropy_bits": 6.129271787496999,
+      "oracle_entropy_bits": 4.496078247996641,
+      "bayes_regret_bits": 1.6331935395003585,
+      "covariance_projection_checks": {
+        "between": {
+          "scalar_variance": 9.069784581488806e-06,
+          "matrix_variance": 9.069784581485498e-06
+        },
+        "batch": {
+          "scalar_variance": 6.3729086302165895e-06,
+          "matrix_variance": 6.372908630216588e-06
+        }
+      },
+      "loss_mcse": {
+        "batch_mcse_bits": 0.0025244620476879004,
+        "between_mcse_bits": 0.0030116083047908968,
+        "mcse_bits": 0.0030116083047908968
+      },
+      "longer_block_mcse": [
+        {
+          "batch_length": 64,
+          "mcse_bits": 0.002388268471094805
+        },
+        {
+          "batch_length": 128,
+          "mcse_bits": 0.0025244620476879004
+        },
+        {
+          "batch_length": 256,
+          "mcse_bits": 0.002519653680097233
+        },
+        {
+          "batch_length": 512,
+          "mcse_bits": 0.0027713614289415233
+        },
+        {
+          "batch_length": 1024,
+          "mcse_bits": 0.002604019243181449
+        },
+        {
+          "batch_length": 2048,
+          "mcse_bits": 0.002629632291819779
+        }
+      ],
+      "max_relative_probability_mcse": 0.02369192632780471,
+      "jensen_bias_local_scale": {
+        "batch": {
+          "mean_scale_bits": 3.5529198131027784e-05,
+          "sd_scale_bits": 3.103371490039808e-05
+        },
+        "between": {
+          "mean_scale_bits": 3.501707387990729e-05,
+          "sd_scale_bits": 4.499361751151497e-05
+        },
+        "mean_scale_bits": 3.5529198131027784e-05,
+        "sd_scale_bits": 4.499361751151497e-05,
+        "noise_scale_bits": 4.8988091508719546e-05
+      },
+      "independent_chain_jackknife_bias_bits": 3.478244444465872e-05,
+      "chain_count_loss_diagnostic": [
+        {
+          "chains_averaged": 1,
+          "mean_cross_entropy_bits": 6.129379148722447
+        },
+        {
+          "chains_averaged": 2,
+          "mean_cross_entropy_bits": 6.129306812718506
+        },
+        {
+          "chains_averaged": 4,
+          "mean_cross_entropy_bits": 6.129271787496999
+        }
+      ],
+      "chain_cross_entropy_bits": [
+        6.126055051337337,
+        6.138021063245893,
+        6.124157100107405,
+        6.12928338019915
+      ],
+      "chain_mean_alpha": [
+        0.8241723309121176,
+        0.8207706308585707,
+        0.8157037190399081,
+        0.8381562385677745
+      ],
+      "chain_mean_expected_depth": [
+        4.274547917142436,
+        4.2801242444000405,
+        4.252968877686715,
+        4.350633476398345
+      ],
+      "correlation_with_alpha": -0.47006660497435376,
+      "correlation_with_expected_depth": -0.06931731517620754,
+      "joint_quadratic_alpha_depth_r2": 0.38969882140008727,
+      "most_sensitive_tokens": [
+        {
+          "token": 60,
+          "true_probability": 0.08383806965722891,
+          "bayes_probability": 0.022626916042585755,
+          "probability_mcse": 0.00040425331358018724,
+          "loss_gradient_weight": 5.345525970244658,
+          "correlation_with_loss_projection": 0.5028933235557493,
+          "diagonal_loss_variance_scale": 4.669690148843129e-06
+        },
+        {
+          "token": 45,
+          "true_probability": 0.05294709543545673,
+          "bayes_probability": 0.02242089116675352,
+          "probability_mcse": 0.0005311941017264517,
+          "loss_gradient_weight": 3.4069346952397987,
+          "correlation_with_loss_projection": 0.24042152313660267,
+          "diagonal_loss_variance_scale": 3.2751719523177148e-06
+        },
+        {
+          "token": 16,
+          "true_probability": 0.10347610936542811,
+          "bayes_probability": 0.012898139674990514,
+          "probability_mcse": 2.6779960422341593e-05,
+          "loss_gradient_weight": 11.574108638430213,
+          "correlation_with_loss_projection": 0.6130994223376276,
+          "diagonal_loss_variance_scale": 9.607158828212e-08
+        },
+        {
+          "token": 25,
+          "true_probability": 0.08874067981462908,
+          "bayes_probability": 0.012898139674990514,
+          "probability_mcse": 2.6779960422341593e-05,
+          "loss_gradient_weight": 9.925907295136719,
+          "correlation_with_loss_projection": 0.6130994223376276,
+          "diagonal_loss_variance_scale": 7.065782927991487e-08
+        },
+        {
+          "token": 41,
+          "true_probability": 0.07801835698895637,
+          "bayes_probability": 0.012898139674990514,
+          "probability_mcse": 2.6779960422341593e-05,
+          "loss_gradient_weight": 8.726583799097751,
+          "correlation_with_loss_projection": 0.6130994223376276,
+          "diagonal_loss_variance_scale": 5.46145536453095e-08
+        },
+        {
+          "token": 4,
+          "true_probability": 0.009497272721661572,
+          "bayes_probability": 0.020437344195003503,
+          "probability_mcse": 0.00032796177373000854,
+          "loss_gradient_weight": 0.6704231296775315,
+          "correlation_with_loss_projection": -0.1191784705524748,
+          "diagonal_loss_variance_scale": 4.834420594251388e-08
+        },
+        {
+          "token": 28,
+          "true_probability": 0.07036041757494697,
+          "bayes_probability": 0.012898139674990514,
+          "probability_mcse": 2.6779960422341593e-05,
+          "loss_gradient_weight": 7.8700206439133105,
+          "correlation_with_loss_projection": 0.6130994223376276,
+          "diagonal_loss_variance_scale": 4.4419289214364384e-08
+        },
+        {
+          "token": 33,
+          "true_probability": 0.060017833105407065,
+          "bayes_probability": 0.012898139674990514,
+          "probability_mcse": 2.6779960422341593e-05,
+          "loss_gradient_weight": 6.713172005259425,
+          "correlation_with_loss_projection": 0.6130994223376276,
+          "diagonal_loss_variance_scale": 3.2320302090159316e-08
+        }
+      ],
+      "note": "Token diagonal scales do not partition total variance; covariance matters. Alpha/depth associations are descriptive, not causal attributions. Jensen scales and jackknife do not bound unknown-mode bias."
+    },
+    {
+      "time": 16,
+      "order": 32,
+      "index": 0,
+      "chain_file": "/Users/ruediger/Projects/layered_architectures/output/conditional_shared_base_benchmark_2026-09-15/a1_L4/chains/alpha32/seq_000000_t0016.npz",
+      "chain_sha256": "514690699af0b1bf7eb3c9804d01b75acf0525259f6dd41578d60d9f92de1a24",
+      "numerical_problem": {
+        "alpha_nodes": [
+          0.5013680690752592,
+          0.5071942442273658,
+          0.5176188722062468,
+          0.5325469620311302,
+          0.551839422116974,
+          0.575316193133715,
+          0.6027581020160289,
+          0.6339089406298551,
+          0.6684778665348924,
+          0.7061421213796188,
+          0.7465500455338854,
+          0.7893243619346824,
+          0.8340656988589361,
+          0.8803563188739315,
+          0.9277640192086017,
+          0.9758461671561308,
+          1.024153832843869,
+          1.0722359807913981,
+          1.1196436811260686,
+          1.165934301141064,
+          1.2106756380653176,
+          1.2534499544661146,
+          1.2938578786203812,
+          1.3315221334651075,
+          1.3660910593701447,
+          1.3972418979839711,
+          1.424683806866285,
+          1.448160577883026,
+          1.4674530379688697,
+          1.482381127793753,
+          1.4928057557726342,
+          1.498631930924741
+        ],
+        "alpha_weights": [
+          0.003509305004735182,
+          0.008137197365453246,
+          0.012696032654631362,
+          0.017136931456510816,
+          0.021417949011113466,
+          0.025499029631187976,
+          0.029342046739267727,
+          0.03291111138818079,
+          0.03617289705442409,
+          0.03909694789353506,
+          0.04165596211347332,
+          0.043826046502201836,
+          0.04558693934788186,
+          0.046922199540402186,
+          0.04781936003963729,
+          0.04827004425736378,
+          0.04827004425736378,
+          0.04781936003963729,
+          0.046922199540402186,
+          0.04558693934788186,
+          0.043826046502201836,
+          0.04165596211347332,
+          0.03909694789353506,
+          0.03617289705442409,
+          0.03291111138818079,
+          0.029342046739267727,
+          0.025499029631187976,
+          0.021417949011113466,
+          0.017136931456510816,
+          0.012696032654631362,
+          0.008137197365453246,
+          0.003509305004735182
+        ],
+        "base_laws_hash": "00004273ad2a0062e9522c2379971d08d7d5e2aec53df74a995242504f6dcb52",
+        "d": 64,
+        "depth_prior": [
+          0.11111111111111109,
+          0.11111111111111109,
+          0.11111111111111109,
+          0.11111111111111109,
+          0.11111111111111109,
+          0.11111111111111109,
+          0.11111111111111109,
+          0.11111111111111109,
+          0.11111111111111109
+        ],
+        "depths": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8
+        ],
+        "kernel_grid": {
+          "lower": -32.0,
+          "step": 0.03125,
+          "u_hash": "339625ef028e944e941ebdef207d1ceac19811460cedf1ff9e16b1a56895d17c",
+          "upper": 32.0
+        },
+        "numerical_code_hashes": {
+          "lsa_seq.py": "7e39960e91f3bb27eea82e201afd8a86ce717ea50a304daa86534b4fdbadfc51",
+          "phi_source.py": "456eb407fd7f280786a441681a704a6fff172af9fc9aea3c6f9456fb55174831",
+          "pmm/kernel.py": "5dd1b42d05ffcb0b51383c1eaa9e88a0e494192a26215e71809d02b8d06a52d0",
+          "pmm/mellin.py": "201e2161b98a5b3dcf464930447c02dc22092fe78dec9e49b44bd8b2b931f969",
+          "pmm/production_coding.py": "6f709444496865ff124fc5bf1849fa6dce442a594f3cc7fe7c53ccfb504560f6",
+          "pmm/universal_tables.py": "aef2f63c0ccdb4de58bb8c617dd99aaadc73b803bee67a029f5d89230878d5c2",
+          "ranked_lsa.py": "3fa7952048ab3f25d508dda8c2a7c232064aa5db56008de8b4ed9623709aac8d",
+          "shared_base_chain_runner.py": "efa186974ee0c6c9f3b9c71a22aa3071052f48ccad075f0d855367d0c17f263e",
+          "shared_base_mcmc.py": "26469e21c04fc2fe91a40bcb418aff3ae866fe707b2ee198d644091580b1f7a8",
+          "shared_depth.py": "616f536153458499078d17d7939e6a800c7b52e3eb4f1dd6503db95030d7a395",
+          "source.py": "d1bb83004e3654cb3f84f6083437cae2b6d71fa19a33b06d26d2455ac440dab4",
+          "store/anchors.json": "5c409244487deeba8d597ad66fa13479a8d15476d55d4509c33b2ec797b07c68",
+          "store/manifest.json": "cf0449a4b704174890f0a1fb95f20954839dd7266ae307e799d1dc6d0234ffb5",
+          "weighted_lsa.py": "847f0ffaa622d86e88633447327dce8e7f518e4c86c1e44e76a794e470d2dec9"
+        },
+        "prefix_length": 16,
+        "prob_tol": 1e-07,
+        "rank_proposal_weights": [
+          0.21079742774414,
+          0.10539871387207,
+          0.07026580924804667,
+          0.052699356936035,
+          0.04215948554882801,
+          0.03513290462402333,
+          0.030113918249162857,
+          0.0263496784680175,
+          0.023421936416015556,
+          0.021079742774414004,
+          0.019163402522194548,
+          0.017566452312011666,
+          0.016215186749549235,
+          0.015056959124581428,
+          0.014053161849609334,
+          0.01317483923400875,
+          0.012399848690831767,
+          0.011710968208007778,
+          0.011094601460217896,
+          0.010539871387207002,
+          0.010037972749720953,
+          0.009581701261097274,
+          0.009165105554093044,
+          0.008783226156005833,
+          0.008431897109765602,
+          0.008107593374774617,
+          0.007807312138671852,
+          0.007528479562290714,
+          0.007268876818763449,
+          0.007026580924804667,
+          0.006799917024004516,
+          0.006587419617004375,
+          0.0063878008407315156,
+          0.006199924345415883,
+          0.006022783649832572,
+          0.005855484104003889,
+          0.005697227776868649,
+          0.005547300730108948,
+          0.005405062249849744,
+          0.005269935693603501,
+          0.005141400676686342,
+          0.0050189863748604764,
+          0.004902265761491629,
+          0.004790850630548637,
+          0.004684387283203112,
+          0.004582552777046522,
+          0.004485051654130639,
+          0.0043916130780029166,
+          0.00430198832130898,
+          0.004215948554882801,
+          0.004133282896943922,
+          0.004053796687387309,
+          0.003977309957436604,
+          0.003903656069335926,
+          0.0038326805044389092,
+          0.003764239781145357,
+          0.003698200486739298,
+          0.0036344384093817245,
+          0.0035728377583752547,
+          0.0035132904624023335,
+          0.0034556955367891808,
+          0.003399958512002258,
+          0.003345990916573651,
+          0.0032937098085021876
+        ],
+        "runtime": {
+          "numpy": "2.4.6",
+          "python": [
+            3,
+            14,
+            6
+          ],
+          "scipy": "1.18.1"
+        },
+        "token_hash": "c38a38ba78cd1169547cac24263586afa15b1c5d42dce8fdbabb88316cb65783"
+      },
+      "chains": 4,
+      "draws_per_chain": 16384,
+      "bayes_cross_entropy_bits": 6.131319926462345,
+      "oracle_entropy_bits": 4.496078247996641,
+      "bayes_regret_bits": 1.6352416784657038,
+      "covariance_projection_checks": {
+        "between": {
+          "scalar_variance": 5.918310901943725e-06,
+          "matrix_variance": 5.918310901946186e-06
+        },
+        "batch": {
+          "scalar_variance": 5.9716288785039e-06,
+          "matrix_variance": 5.9716288785038995e-06
+        }
+      },
+      "loss_mcse": {
+        "batch_mcse_bits": 0.0024436916496366518,
+        "between_mcse_bits": 0.0024327578798446397,
+        "mcse_bits": 0.0024436916496366518
+      },
+      "longer_block_mcse": [
+        {
+          "batch_length": 64,
+          "mcse_bits": 0.0023229929891806092
+        },
+        {
+          "batch_length": 128,
+          "mcse_bits": 0.0024436916496366518
+        },
+        {
+          "batch_length": 256,
+          "mcse_bits": 0.0026636584256258472
+        },
+        {
+          "batch_length": 512,
+          "mcse_bits": 0.002517537681559656
+        },
+        {
+          "batch_length": 1024,
+          "mcse_bits": 0.0022036448004842334
+        },
+        {
+          "batch_length": 2048,
+          "mcse_bits": 0.001978860262617675
+        }
+      ],
+      "max_relative_probability_mcse": 0.02416100971052838,
+      "jensen_bias_local_scale": {
+        "batch": {
+          "mean_scale_bits": 2.6737583879916057e-05,
+          "sd_scale_bits": 2.1491522637598572e-05
+        },
+        "between": {
+          "mean_scale_bits": 3.562836636399802e-05,
+          "sd_scale_bits": 3.625197417386391e-05
+        },
+        "mean_scale_bits": 3.562836636399802e-05,
+        "sd_scale_bits": 3.625197417386391e-05,
+        "noise_scale_bits": 4.241189271266205e-05
+      },
+      "independent_chain_jackknife_bias_bits": 3.5434475218032446e-05,
+      "chain_count_loss_diagnostic": [
+        {
+          "chains_averaged": 1,
+          "mean_cross_entropy_bits": 6.131428754581434
+        },
+        {
+          "chains_averaged": 2,
+          "mean_cross_entropy_bits": 6.131355564373723
+        },
+        {
+          "chains_averaged": 4,
+          "mean_cross_entropy_bits": 6.131319926462346
+        }
+      ],
+      "chain_cross_entropy_bits": [
+        6.134381819946821,
+        6.128368980886109,
+        6.136690677174043,
+        6.126273540318768
+      ],
+      "chain_mean_alpha": [
+        0.8232316676241005,
+        0.8191828494412992,
+        0.8329568246300816,
+        0.8306257890849738
+      ],
+      "chain_mean_expected_depth": [
+        4.2921872502557825,
+        4.26853607302245,
+        4.3196881930139925,
+        4.314322539708222
+      ],
+      "correlation_with_alpha": -0.5103812209698178,
+      "correlation_with_expected_depth": -0.11172580271696432,
+      "joint_quadratic_alpha_depth_r2": 0.41880276654037696,
+      "most_sensitive_tokens": [
+        {
+          "token": 45,
+          "true_probability": 0.05294709543545673,
+          "bayes_probability": 0.02217565509153156,
+          "probability_mcse": 0.0005357862180038221,
+          "loss_gradient_weight": 3.444611295536365,
+          "correlation_with_loss_projection": 0.24560450303069,
+          "diagonal_loss_variance_scale": 3.406148034893185e-06
+        },
+        {
+          "token": 60,
+          "true_probability": 0.08383806965722891,
+          "bayes_probability": 0.022432448389552953,
+          "probability_mcse": 0.00031786024467007836,
+          "loss_gradient_weight": 5.391866515494435,
+          "correlation_with_loss_projection": 0.485885457621563,
+          "diagonal_loss_variance_scale": 2.937316133340638e-06
+        },
+        {
+          "token": 16,
+          "true_probability": 0.10347610936542811,
+          "bayes_probability": 0.01289806648362197,
+          "probability_mcse": 2.6116710996745422e-05,
+          "loss_gradient_weight": 11.57417431686752,
+          "correlation_with_loss_projection": 0.638866911117286,
+          "diagonal_loss_variance_scale": 9.137281490355953e-08
+        },
+        {
+          "token": 25,
+          "true_probability": 0.08874067981462908,
+          "bayes_probability": 0.01289806648362197,
+          "probability_mcse": 2.6116710996745422e-05,
+          "loss_gradient_weight": 9.925963620690624,
+          "correlation_with_loss_projection": 0.638866911117286,
+          "diagonal_loss_variance_scale": 6.720201957442337e-08
+        },
+        {
+          "token": 41,
+          "true_probability": 0.07801835698895637,
+          "bayes_probability": 0.01289806648362197,
+          "probability_mcse": 2.6116710996745422e-05,
+          "loss_gradient_weight": 8.7266333189705,
+          "correlation_with_loss_projection": 0.638866911117286,
+          "diagonal_loss_variance_scale": 5.194340585500797e-08
+        },
+        {
+          "token": 28,
+          "true_probability": 0.07036041757494697,
+          "bayes_probability": 0.01289806648362197,
+          "probability_mcse": 2.6116710996745422e-05,
+          "loss_gradient_weight": 7.870065303132747,
+          "correlation_with_loss_projection": 0.638866911117286,
+          "diagonal_loss_variance_scale": 4.2246782468227046e-08
+        },
+        {
+          "token": 4,
+          "true_probability": 0.009497272721661572,
+          "bayes_probability": 0.020298896268280815,
+          "probability_mcse": 0.000303102782963434,
+          "loss_gradient_weight": 0.6749957276702524,
+          "correlation_with_loss_projection": -0.08977659951513937,
+          "diagonal_loss_variance_scale": 4.1858329834566626e-08
+        },
+        {
+          "token": 33,
+          "true_probability": 0.060017833105407065,
+          "bayes_probability": 0.01289806648362197,
+          "probability_mcse": 2.6116710996745422e-05,
+          "loss_gradient_weight": 6.713210099825535,
+          "correlation_with_loss_projection": 0.638866911117286,
+          "diagonal_loss_variance_scale": 3.073954572124919e-08
+        }
+      ],
+      "note": "Token diagonal scales do not partition total variance; covariance matters. Alpha/depth associations are descriptive, not causal attributions. Jensen scales and jackknife do not bound unknown-mode bias."
+    },
+    {
+      "time": 64,
+      "order": 16,
+      "index": 0,
+      "chain_file": "/Users/ruediger/Projects/layered_architectures/output/conditional_shared_base_benchmark_2026-09-15/a1_L4/chains/alpha16/seq_000000_t0064.npz",
+      "chain_sha256": "b0cac59b56845cefb54fe1bfe85529427e30235607f5559d79518216c6aaf81c",
+      "numerical_problem": {
+        "alpha_nodes": [
+          0.505299532504175,
+          0.5277124884633837,
+          0.5671843988060842,
+          0.6222977958224984,
+          0.6910618777986781,
+          0.7709916111713864,
+          0.8591982246103705,
+          0.9524937450811812,
+          1.0475062549188188,
+          1.1408017753896296,
+          1.2290083888286136,
+          1.3089381222013219,
+          1.3777022041775016,
+          1.4328156011939157,
+          1.4722875115366163,
+          1.494700467495825
+        ],
+        "alpha_weights": [
+          0.01357622970587703,
+          0.031126761969323805,
+          0.04757925584124649,
+          0.06231448562776698,
+          0.07479799440828833,
+          0.0845782596975013,
+          0.09130170752246179,
+          0.09472530522753428,
+          0.09472530522753428,
+          0.09130170752246179,
+          0.0845782596975013,
+          0.07479799440828833,
+          0.06231448562776698,
+          0.04757925584124649,
+          0.031126761969323805,
+          0.01357622970587703
+        ],
+        "base_laws_hash": "f0d4426559c79af0a7da810618d36a2eb247ff7a987c42c014a45e0d6f741732",
+        "d": 64,
+        "depth_prior": [
+          0.11111111111111109,
+          0.11111111111111109,
+          0.11111111111111109,
+          0.11111111111111109,
+          0.11111111111111109,
+          0.11111111111111109,
+          0.11111111111111109,
+          0.11111111111111109,
+          0.11111111111111109
+        ],
+        "depths": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8
+        ],
+        "kernel_grid": {
+          "lower": -32.0,
+          "step": 0.03125,
+          "u_hash": "339625ef028e944e941ebdef207d1ceac19811460cedf1ff9e16b1a56895d17c",
+          "upper": 32.0
+        },
+        "numerical_code_hashes": {
+          "lsa_seq.py": "7e39960e91f3bb27eea82e201afd8a86ce717ea50a304daa86534b4fdbadfc51",
+          "phi_source.py": "456eb407fd7f280786a441681a704a6fff172af9fc9aea3c6f9456fb55174831",
+          "pmm/kernel.py": "5dd1b42d05ffcb0b51383c1eaa9e88a0e494192a26215e71809d02b8d06a52d0",
+          "pmm/mellin.py": "201e2161b98a5b3dcf464930447c02dc22092fe78dec9e49b44bd8b2b931f969",
+          "pmm/production_coding.py": "6f709444496865ff124fc5bf1849fa6dce442a594f3cc7fe7c53ccfb504560f6",
+          "pmm/universal_tables.py": "aef2f63c0ccdb4de58bb8c617dd99aaadc73b803bee67a029f5d89230878d5c2",
+          "ranked_lsa.py": "3fa7952048ab3f25d508dda8c2a7c232064aa5db56008de8b4ed9623709aac8d",
+          "shared_base_chain_runner.py": "efa186974ee0c6c9f3b9c71a22aa3071052f48ccad075f0d855367d0c17f263e",
+          "shared_base_mcmc.py": "26469e21c04fc2fe91a40bcb418aff3ae866fe707b2ee198d644091580b1f7a8",
+          "shared_depth.py": "616f536153458499078d17d7939e6a800c7b52e3eb4f1dd6503db95030d7a395",
+          "source.py": "d1bb83004e3654cb3f84f6083437cae2b6d71fa19a33b06d26d2455ac440dab4",
+          "store/anchors.json": "5c409244487deeba8d597ad66fa13479a8d15476d55d4509c33b2ec797b07c68",
+          "store/manifest.json": "cf0449a4b704174890f0a1fb95f20954839dd7266ae307e799d1dc6d0234ffb5",
+          "weighted_lsa.py": "847f0ffaa622d86e88633447327dce8e7f518e4c86c1e44e76a794e470d2dec9"
+        },
+        "prefix_length": 64,
+        "prob_tol": 1e-07,
+        "rank_proposal_weights": [
+          0.21079742774414,
+          0.10539871387207,
+          0.07026580924804667,
+          0.052699356936035,
+          0.04215948554882801,
+          0.03513290462402333,
+          0.030113918249162857,
+          0.0263496784680175,
+          0.023421936416015556,
+          0.021079742774414004,
+          0.019163402522194548,
+          0.017566452312011666,
+          0.016215186749549235,
+          0.015056959124581428,
+          0.014053161849609334,
+          0.01317483923400875,
+          0.012399848690831767,
+          0.011710968208007778,
+          0.011094601460217896,
+          0.010539871387207002,
+          0.010037972749720953,
+          0.009581701261097274,
+          0.009165105554093044,
+          0.008783226156005833,
+          0.008431897109765602,
+          0.008107593374774617,
+          0.007807312138671852,
+          0.007528479562290714,
+          0.007268876818763449,
+          0.007026580924804667,
+          0.006799917024004516,
+          0.006587419617004375,
+          0.0063878008407315156,
+          0.006199924345415883,
+          0.006022783649832572,
+          0.005855484104003889,
+          0.005697227776868649,
+          0.005547300730108948,
+          0.005405062249849744,
+          0.005269935693603501,
+          0.005141400676686342,
+          0.0050189863748604764,
+          0.004902265761491629,
+          0.004790850630548637,
+          0.004684387283203112,
+          0.004582552777046522,
+          0.004485051654130639,
+          0.0043916130780029166,
+          0.00430198832130898,
+          0.004215948554882801,
+          0.004133282896943922,
+          0.004053796687387309,
+          0.003977309957436604,
+          0.003903656069335926,
+          0.0038326805044389092,
+          0.003764239781145357,
+          0.003698200486739298,
+          0.0036344384093817245,
+          0.0035728377583752547,
+          0.0035132904624023335,
+          0.0034556955367891808,
+          0.003399958512002258,
+          0.003345990916573651,
+          0.0032937098085021876
+        ],
+        "runtime": {
+          "numpy": "2.4.6",
+          "python": [
+            3,
+            14,
+            6
+          ],
+          "scipy": "1.18.1"
+        },
+        "token_hash": "5db6ab982baa5f6217057e51441f4a4c637ea2ab95d3e3c7e5c5280e8e732c16"
+      },
+      "chains": 4,
+      "draws_per_chain": 16384,
+      "bayes_cross_entropy_bits": 5.630148642112287,
+      "oracle_entropy_bits": 3.4055051653553914,
+      "bayes_regret_bits": 2.2246434767568957,
+      "covariance_projection_checks": {
+        "between": {
+          "scalar_variance": 0.000108339844661501,
+          "matrix_variance": 0.00010833984466151556
+        },
+        "batch": {
+          "scalar_variance": 8.766150650979934e-05,
+          "matrix_variance": 8.766150650979935e-05
+        }
+      },
+      "loss_mcse": {
+        "batch_mcse_bits": 0.009362772373063405,
+        "between_mcse_bits": 0.010408642786718908,
+        "mcse_bits": 0.010408642786718908
+      },
+      "longer_block_mcse": [
+        {
+          "batch_length": 64,
+          "mcse_bits": 0.00754374219163523
+        },
+        {
+          "batch_length": 128,
+          "mcse_bits": 0.009362772373063405
+        },
+        {
+          "batch_length": 256,
+          "mcse_bits": 0.010890035374784817
+        },
+        {
+          "batch_length": 512,
+          "mcse_bits": 0.011895844880322764
+        },
+        {
+          "batch_length": 1024,
+          "mcse_bits": 0.012721767156292108
+        },
+        {
+          "batch_length": 2048,
+          "mcse_bits": 0.012353729553602456
+        }
+      ],
+      "max_relative_probability_mcse": 0.037860566001975175,
+      "jensen_bias_local_scale": {
+        "batch": {
+          "mean_scale_bits": 0.0001432076360489626,
+          "sd_scale_bits": 0.0001061712960333346
+        },
+        "between": {
+          "mean_scale_bits": 0.00045478180547368327,
+          "sd_scale_bits": 0.0005464723941096647
+        },
+        "mean_scale_bits": 0.00045478180547368327,
+        "sd_scale_bits": 0.0005464723941096647,
+        "noise_scale_bits": 0.0004645313503200241
+      },
+      "independent_chain_jackknife_bias_bits": 0.00045726478850571795,
+      "chain_count_loss_diagnostic": [
+        {
+          "chains_averaged": 1,
+          "mean_cross_entropy_bits": 5.631494706277826
+        },
+        {
+          "chains_averaged": 2,
+          "mean_cross_entropy_bits": 5.630603876718907
+        },
+        {
+          "chains_averaged": 4,
+          "mean_cross_entropy_bits": 5.630148642112282
+        }
+      ],
+      "chain_cross_entropy_bits": [
+        5.6306203503706636,
+        5.629333084404683,
+        5.65787575059704,
+        5.608149639738917
+      ],
+      "chain_mean_alpha": [
+        0.9481680123570077,
+        0.9924274091933251,
+        0.9634612091768588,
+        0.9620258925668925
+      ],
+      "chain_mean_expected_depth": [
+        5.531353779733473,
+        5.6539285598148155,
+        5.602949173048289,
+        5.644168277783289
+      ],
+      "correlation_with_alpha": 0.1779146491249081,
+      "correlation_with_expected_depth": -0.09220984101617034,
+      "joint_quadratic_alpha_depth_r2": 0.072465040879655,
+      "most_sensitive_tokens": [
+        {
+          "token": 28,
+          "true_probability": 0.3211508164255545,
+          "bayes_probability": 0.023781799927843288,
+          "probability_mcse": 0.0007898154733896129,
+          "loss_gradient_weight": 19.482238167016945,
+          "correlation_with_loss_projection": 0.7752469968704847,
+          "diagonal_loss_variance_scale": 0.0002367712527826815
+        },
+        {
+          "token": 52,
+          "true_probability": 0.2347147578779012,
+          "bayes_probability": 0.01054047220468169,
+          "probability_mcse": 0.0003121628080895392,
+          "loss_gradient_weight": 32.12586785851003,
+          "correlation_with_loss_projection": 0.5987883190591151,
+          "diagonal_loss_variance_scale": 0.00010057083477453297
+        },
+        {
+          "token": 60,
+          "true_probability": 0.0767843827756429,
+          "bayes_probability": 0.03590404100139913,
+          "probability_mcse": 0.0005080097774555667,
+          "loss_gradient_weight": 3.0853476421727333,
+          "correlation_with_loss_projection": 0.16242329521265342,
+          "diagonal_loss_variance_scale": 2.4567012838658123e-06
+        },
+        {
+          "token": 54,
+          "true_probability": 0.08661525131169553,
+          "bayes_probability": 0.13775130725821016,
+          "probability_mcse": 0.0015142283361683038,
+          "loss_gradient_weight": 0.9071376237359569,
+          "correlation_with_loss_projection": -0.08192876710043909,
+          "diagonal_loss_variance_scale": 1.8868140327268014e-06
+        },
+        {
+          "token": 58,
+          "true_probability": 0.04900821370459297,
+          "bayes_probability": 0.04399879086476479,
+          "probability_mcse": 0.0006221364472012564,
+          "loss_gradient_weight": 1.6069511339927316,
+          "correlation_with_loss_projection": 0.18120835864562698,
+          "diagonal_loss_variance_scale": 9.994858047727188e-07
+        },
+        {
+          "token": 16,
+          "true_probability": 0.023333317153112824,
+          "bayes_probability": 0.01078029978108274,
+          "probability_mcse": 0.0001552083324750969,
+          "loss_gradient_weight": 3.1226275361429945,
+          "correlation_with_loss_projection": 0.06602581687091882,
+          "diagonal_loss_variance_scale": 2.348931955328697e-07
+        },
+        {
+          "token": 23,
+          "true_probability": 0.009872707660333553,
+          "bayes_probability": 0.010180432858917093,
+          "probability_mcse": 0.0002785177381630974,
+          "loss_gradient_weight": 1.399086520101541,
+          "correlation_with_loss_projection": -0.010317857122891879,
+          "diagonal_loss_variance_scale": 1.5184303082460724e-07
+        },
+        {
+          "token": 19,
+          "true_probability": 0.012470627926373767,
+          "bayes_probability": 0.011353389068010169,
+          "probability_mcse": 0.0002028695066459325,
+          "loss_gradient_weight": 1.5846645401102304,
+          "correlation_with_loss_projection": -0.04554089734660873,
+          "diagonal_loss_variance_scale": 1.0334946334476744e-07
+        }
+      ],
+      "note": "Token diagonal scales do not partition total variance; covariance matters. Alpha/depth associations are descriptive, not causal attributions. Jensen scales and jackknife do not bound unknown-mode bias."
+    },
+    {
+      "time": 64,
+      "order": 32,
+      "index": 0,
+      "chain_file": "/Users/ruediger/Projects/layered_architectures/output/conditional_shared_base_benchmark_2026-09-15/a1_L4/chains/alpha32/seq_000000_t0064.npz",
+      "chain_sha256": "e25664c966990cbfc8d15afeb48d5af24cdfc07706f9eaeb73155206f090e5ec",
+      "numerical_problem": {
+        "alpha_nodes": [
+          0.5013680690752592,
+          0.5071942442273658,
+          0.5176188722062468,
+          0.5325469620311302,
+          0.551839422116974,
+          0.575316193133715,
+          0.6027581020160289,
+          0.6339089406298551,
+          0.6684778665348924,
+          0.7061421213796188,
+          0.7465500455338854,
+          0.7893243619346824,
+          0.8340656988589361,
+          0.8803563188739315,
+          0.9277640192086017,
+          0.9758461671561308,
+          1.024153832843869,
+          1.0722359807913981,
+          1.1196436811260686,
+          1.165934301141064,
+          1.2106756380653176,
+          1.2534499544661146,
+          1.2938578786203812,
+          1.3315221334651075,
+          1.3660910593701447,
+          1.3972418979839711,
+          1.424683806866285,
+          1.448160577883026,
+          1.4674530379688697,
+          1.482381127793753,
+          1.4928057557726342,
+          1.498631930924741
+        ],
+        "alpha_weights": [
+          0.003509305004735182,
+          0.008137197365453246,
+          0.012696032654631362,
+          0.017136931456510816,
+          0.021417949011113466,
+          0.025499029631187976,
+          0.029342046739267727,
+          0.03291111138818079,
+          0.03617289705442409,
+          0.03909694789353506,
+          0.04165596211347332,
+          0.043826046502201836,
+          0.04558693934788186,
+          0.046922199540402186,
+          0.04781936003963729,
+          0.04827004425736378,
+          0.04827004425736378,
+          0.04781936003963729,
+          0.046922199540402186,
+          0.04558693934788186,
+          0.043826046502201836,
+          0.04165596211347332,
+          0.03909694789353506,
+          0.03617289705442409,
+          0.03291111138818079,
+          0.029342046739267727,
+          0.025499029631187976,
+          0.021417949011113466,
+          0.017136931456510816,
+          0.012696032654631362,
+          0.008137197365453246,
+          0.003509305004735182
+        ],
+        "base_laws_hash": "00004273ad2a0062e9522c2379971d08d7d5e2aec53df74a995242504f6dcb52",
+        "d": 64,
+        "depth_prior": [
+          0.11111111111111109,
+          0.11111111111111109,
+          0.11111111111111109,
+          0.11111111111111109,
+          0.11111111111111109,
+          0.11111111111111109,
+          0.11111111111111109,
+          0.11111111111111109,
+          0.11111111111111109
+        ],
+        "depths": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8
+        ],
+        "kernel_grid": {
+          "lower": -32.0,
+          "step": 0.03125,
+          "u_hash": "339625ef028e944e941ebdef207d1ceac19811460cedf1ff9e16b1a56895d17c",
+          "upper": 32.0
+        },
+        "numerical_code_hashes": {
+          "lsa_seq.py": "7e39960e91f3bb27eea82e201afd8a86ce717ea50a304daa86534b4fdbadfc51",
+          "phi_source.py": "456eb407fd7f280786a441681a704a6fff172af9fc9aea3c6f9456fb55174831",
+          "pmm/kernel.py": "5dd1b42d05ffcb0b51383c1eaa9e88a0e494192a26215e71809d02b8d06a52d0",
+          "pmm/mellin.py": "201e2161b98a5b3dcf464930447c02dc22092fe78dec9e49b44bd8b2b931f969",
+          "pmm/production_coding.py": "6f709444496865ff124fc5bf1849fa6dce442a594f3cc7fe7c53ccfb504560f6",
+          "pmm/universal_tables.py": "aef2f63c0ccdb4de58bb8c617dd99aaadc73b803bee67a029f5d89230878d5c2",
+          "ranked_lsa.py": "3fa7952048ab3f25d508dda8c2a7c232064aa5db56008de8b4ed9623709aac8d",
+          "shared_base_chain_runner.py": "efa186974ee0c6c9f3b9c71a22aa3071052f48ccad075f0d855367d0c17f263e",
+          "shared_base_mcmc.py": "26469e21c04fc2fe91a40bcb418aff3ae866fe707b2ee198d644091580b1f7a8",
+          "shared_depth.py": "616f536153458499078d17d7939e6a800c7b52e3eb4f1dd6503db95030d7a395",
+          "source.py": "d1bb83004e3654cb3f84f6083437cae2b6d71fa19a33b06d26d2455ac440dab4",
+          "store/anchors.json": "5c409244487deeba8d597ad66fa13479a8d15476d55d4509c33b2ec797b07c68",
+          "store/manifest.json": "cf0449a4b704174890f0a1fb95f20954839dd7266ae307e799d1dc6d0234ffb5",
+          "weighted_lsa.py": "847f0ffaa622d86e88633447327dce8e7f518e4c86c1e44e76a794e470d2dec9"
+        },
+        "prefix_length": 64,
+        "prob_tol": 1e-07,
+        "rank_proposal_weights": [
+          0.21079742774414,
+          0.10539871387207,
+          0.07026580924804667,
+          0.052699356936035,
+          0.04215948554882801,
+          0.03513290462402333,
+          0.030113918249162857,
+          0.0263496784680175,
+          0.023421936416015556,
+          0.021079742774414004,
+          0.019163402522194548,
+          0.017566452312011666,
+          0.016215186749549235,
+          0.015056959124581428,
+          0.014053161849609334,
+          0.01317483923400875,
+          0.012399848690831767,
+          0.011710968208007778,
+          0.011094601460217896,
+          0.010539871387207002,
+          0.010037972749720953,
+          0.009581701261097274,
+          0.009165105554093044,
+          0.008783226156005833,
+          0.008431897109765602,
+          0.008107593374774617,
+          0.007807312138671852,
+          0.007528479562290714,
+          0.007268876818763449,
+          0.007026580924804667,
+          0.006799917024004516,
+          0.006587419617004375,
+          0.0063878008407315156,
+          0.006199924345415883,
+          0.006022783649832572,
+          0.005855484104003889,
+          0.005697227776868649,
+          0.005547300730108948,
+          0.005405062249849744,
+          0.005269935693603501,
+          0.005141400676686342,
+          0.0050189863748604764,
+          0.004902265761491629,
+          0.004790850630548637,
+          0.004684387283203112,
+          0.004582552777046522,
+          0.004485051654130639,
+          0.0043916130780029166,
+          0.00430198832130898,
+          0.004215948554882801,
+          0.004133282896943922,
+          0.004053796687387309,
+          0.003977309957436604,
+          0.003903656069335926,
+          0.0038326805044389092,
+          0.003764239781145357,
+          0.003698200486739298,
+          0.0036344384093817245,
+          0.0035728377583752547,
+          0.0035132904624023335,
+          0.0034556955367891808,
+          0.003399958512002258,
+          0.003345990916573651,
+          0.0032937098085021876
+        ],
+        "runtime": {
+          "numpy": "2.4.6",
+          "python": [
+            3,
+            14,
+            6
+          ],
+          "scipy": "1.18.1"
+        },
+        "token_hash": "5db6ab982baa5f6217057e51441f4a4c637ea2ab95d3e3c7e5c5280e8e732c16"
+      },
+      "chains": 4,
+      "draws_per_chain": 16384,
+      "bayes_cross_entropy_bits": 5.600438421408361,
+      "oracle_entropy_bits": 3.4055051653553914,
+      "bayes_regret_bits": 2.1949332560529697,
+      "covariance_projection_checks": {
+        "between": {
+          "scalar_variance": 0.00018659903195214183,
+          "matrix_variance": 0.00018659903195216676
+        },
+        "batch": {
+          "scalar_variance": 0.00010827177156572884,
+          "matrix_variance": 0.00010827177156572881
+        }
+      },
+      "loss_mcse": {
+        "batch_mcse_bits": 0.010405372245418652,
+        "between_mcse_bits": 0.013660125619926296,
+        "mcse_bits": 0.013660125619926296
+      },
+      "longer_block_mcse": [
+        {
+          "batch_length": 64,
+          "mcse_bits": 0.008302028453265818
+        },
+        {
+          "batch_length": 128,
+          "mcse_bits": 0.010405372245418652
+        },
+        {
+          "batch_length": 256,
+          "mcse_bits": 0.012645166835721942
+        },
+        {
+          "batch_length": 512,
+          "mcse_bits": 0.014206133087610711
+        },
+        {
+          "batch_length": 1024,
+          "mcse_bits": 0.014537439225263774
+        },
+        {
+          "batch_length": 2048,
+          "mcse_bits": 0.01453550175184266
+        }
+      ],
+      "max_relative_probability_mcse": 0.0535037021508511,
+      "jensen_bias_local_scale": {
+        "batch": {
+          "mean_scale_bits": 0.00017379998505814167,
+          "sd_scale_bits": 0.0001319485641256378
+        },
+        "between": {
+          "mean_scale_bits": 0.0003185264301095672,
+          "sd_scale_bits": 0.00028038352052517173
+        },
+        "mean_scale_bits": 0.0003185264301095672,
+        "sd_scale_bits": 0.00028038352052517173,
+        "noise_scale_bits": 0.00032209549727930844
+      },
+      "independent_chain_jackknife_bias_bits": 0.00031752696451370355,
+      "chain_count_loss_diagnostic": [
+        {
+          "chains_averaged": 1,
+          "mean_cross_entropy_bits": 5.601405423337319
+        },
+        {
+          "chains_averaged": 2,
+          "mean_cross_entropy_bits": 5.600757175867828
+        },
+        {
+          "chains_averaged": 4,
+          "mean_cross_entropy_bits": 5.60043842140835
+        }
+      ],
+      "chain_cross_entropy_bits": [
+        5.5720278553311,
+        5.611666824534263,
+        5.634856951481065,
+        5.587070062002849
+      ],
+      "chain_mean_alpha": [
+        0.9477175603511356,
+        0.9194604079484043,
+        0.978561769967683,
+        0.9402852427157478
+      ],
+      "chain_mean_expected_depth": [
+        5.613193150347053,
+        5.75299701297718,
+        5.683013162546656,
+        5.618056256551846
+      ],
+      "correlation_with_alpha": 0.2841278404133065,
+      "correlation_with_expected_depth": -0.03030135192504466,
+      "joint_quadratic_alpha_depth_r2": 0.1107196331487218,
+      "most_sensitive_tokens": [
+        {
+          "token": 28,
+          "true_probability": 0.3211508164255545,
+          "bayes_probability": 0.02483096722677126,
+          "probability_mcse": 0.0005935334590437217,
+          "loss_gradient_weight": 18.659067365489598,
+          "correlation_with_loss_projection": 0.7897223726957406,
+          "diagonal_loss_variance_scale": 0.00012265076967876078
+        },
+        {
+          "token": 52,
+          "true_probability": 0.2347147578779012,
+          "bayes_probability": 0.010907864194505918,
+          "probability_mcse": 0.00019803902043501613,
+          "loss_gradient_weight": 31.04382408652091,
+          "correlation_with_loss_projection": 0.618352515689379,
+          "diagonal_loss_variance_scale": 3.779653316399302e-05
+        },
+        {
+          "token": 60,
+          "true_probability": 0.0767843827756429,
+          "bayes_probability": 0.03572991231651308,
+          "probability_mcse": 0.0012320622206485542,
+          "loss_gradient_weight": 3.1003839938600426,
+          "correlation_with_loss_projection": 0.1307880947911496,
+          "diagonal_loss_variance_scale": 1.4591376168864788e-05
+        },
+        {
+          "token": 58,
+          "true_probability": 0.04900821370459297,
+          "bayes_probability": 0.040724429213357845,
+          "probability_mcse": 0.0008837315038481483,
+          "loss_gradient_weight": 1.7361546432982669,
+          "correlation_with_loss_projection": 0.18969168056930907,
+          "diagonal_loss_variance_scale": 2.3540597779275055e-06
+        },
+        {
+          "token": 54,
+          "true_probability": 0.08661525131169553,
+          "bayes_probability": 0.14133070481917243,
+          "probability_mcse": 0.0012689766621202293,
+          "loss_gradient_weight": 0.8841630959996662,
+          "correlation_with_loss_projection": -0.10085737170574918,
+          "diagonal_loss_variance_scale": 1.2588443585520612e-06
+        },
+        {
+          "token": 16,
+          "true_probability": 0.023333317153112824,
+          "bayes_probability": 0.011105520705290597,
+          "probability_mcse": 0.00021291449104074051,
+          "loss_gradient_weight": 3.031182583653956,
+          "correlation_with_loss_projection": -0.008336816447937599,
+          "diagonal_loss_variance_scale": 4.165188256518405e-07
+        },
+        {
+          "token": 0,
+          "true_probability": 0.007396016314463886,
+          "bayes_probability": 0.017520787325668044,
+          "probability_mcse": 0.0009374269865209501,
+          "loss_gradient_weight": 0.6090020876846683,
+          "correlation_with_loss_projection": -0.006547010839732154,
+          "diagonal_loss_variance_scale": 3.2592109171165435e-07
+        },
+        {
+          "token": 19,
+          "true_probability": 0.012470627926373767,
+          "bayes_probability": 0.011220955058419038,
+          "probability_mcse": 0.0002514904923304753,
+          "loss_gradient_weight": 1.6033673579908014,
+          "correlation_with_loss_projection": 0.03196754221912786,
+          "diagonal_loss_variance_scale": 1.625957605356465e-07
+        }
+      ],
+      "note": "Token diagonal scales do not partition total variance; covariance matters. Alpha/depth associations are descriptive, not causal attributions. Jensen scales and jackknife do not bound unknown-mode bias."
+    }
+  ],
+  "interpretation": "Single declared sequence, no population average. Existing reference validation status is unchanged."
+}

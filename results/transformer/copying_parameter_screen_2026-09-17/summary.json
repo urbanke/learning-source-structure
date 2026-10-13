@@ -1,0 +1,735 @@
+{
+  "schema": "copying-parameter-screen-v1",
+  "d": 128,
+  "alpha": 0.0,
+  "n_tokens": 1025,
+  "horizon": 1024,
+  "source_depths": [
+    2,
+    3,
+    4
+  ],
+  "supplied_first_token": true,
+  "estimator": "Observed next-token log loss in bits; uniform loss7 minus predictor loss; average cumulative losses before taking a crossing",
+  "bayes_prior": "One shared source depth drawn uniformly0..8; independent symmetric LSA rows conditional on that depth",
+  "crossing": "First time after the last nonpositive cumulative mean, required positive through1024 only; null if right-censored",
+  "numerical_zero_tolerance": 1e-12,
+  "uncertainty": {
+    "pointwise_bands": "95% Student intervals across independent whole sequences",
+    "bootstrap": 2000,
+    "seed": 20260917128,
+    "seed_rule": "SeedSequence([seed,source_depth])",
+    "method": "Multinomial whole-sequence resampling, identical weights for both predictors; inverted-CDF quantiles",
+    "censoring": "Infinite crossings retained; paired differences bounded when one or both crossings are censored"
+  },
+  "cautions": [
+    "No copying circuit intervention is available for this checkpoint; this is intact prediction versus known uniform.",
+    "These are realized next-token losses; the earlier d64 intervention used lower-variance conditional expected next-token losses.",
+    "Parameters were explored after inspecting d64 results; crossing intervals are exploratory and not corrected for parameter selection.",
+    "A final positive run within1024 does not establish positivity for all larger context lengths.",
+    "The historic row-local-depth references are not used; these references integrate one shared depth for the entire sequence."
+  ],
+  "validation": {
+    "token_identity": true,
+    "prior_identity": true,
+    "complete_loss_arrays": true,
+    "synthetic_crossing_and_censoring_checks": true,
+    "wider_integration_checks_passed": true,
+    "scope": "Input identities and analysis checked; expanded integration bounds checked on first4 sequences per source depth only"
+  },
+  "groups": [
+    {
+      "source_depth": 2,
+      "n_sequences": 2048,
+      "crossings": {
+        "transformer": {
+          "time": 227,
+          "status": "final_upward_crossing",
+          "bootstrap_percentiles": {
+            "lower": 212,
+            "median": 228,
+            "upper": 245
+          },
+          "bootstrap_censored_count": 0,
+          "bootstrap_positive_from_start_count": 0,
+          "local_slope": {
+            "first_time": 211,
+            "last_time": 242,
+            "mean_bits_per_token": 0.01976987757947813,
+            "se_bits_per_token": 0.002480285852038781
+          }
+        },
+        "bayes": {
+          "time": 76,
+          "status": "final_upward_crossing",
+          "bootstrap_percentiles": {
+            "lower": 44,
+            "median": 76,
+            "upper": 81
+          },
+          "bootstrap_censored_count": 0,
+          "bootstrap_positive_from_start_count": 0,
+          "local_slope": {
+            "first_time": 60,
+            "last_time": 91,
+            "mean_bits_per_token": 0.0065205557471991905,
+            "se_bits_per_token": 0.0012768698920351664
+          }
+        }
+      },
+      "paired_crossing_difference": {
+        "definition": "transformer crossing minus Bayesian crossing, in observed tokens",
+        "point_difference": 151,
+        "point_bounds": {
+          "lower": 151,
+          "upper": 151
+        },
+        "paired_bootstrap_count": 2000,
+        "both_observed_count": 2000,
+        "transformer_only_censored_count": 0,
+        "bayes_only_censored_count": 0,
+        "both_censored_count": 0,
+        "conservative_percentile_interval": {
+          "lower": 138,
+          "upper": 184
+        },
+        "null_bound_meaning": "unbounded; all censored replicates retained",
+        "paired_bootstrap_percentiles": {
+          "lower": 138,
+          "median": 156,
+          "upper": 184
+        }
+      },
+      "selected_times": {
+        "16": {
+          "transformer": {
+            "cumulative_saving_bits": -0.03697396360715513,
+            "se_bits": 0.01322896357903318
+          },
+          "bayes": {
+            "cumulative_saving_bits": -0.0046288950136883136,
+            "se_bits": 0.013820435916233453
+          }
+        },
+        "32": {
+          "transformer": {
+            "cumulative_saving_bits": -0.10324921170156698,
+            "se_bits": 0.026263710792759985
+          },
+          "bayes": {
+            "cumulative_saving_bits": -0.04427109034783623,
+            "se_bits": 0.02518075825764341
+          }
+        },
+        "64": {
+          "transformer": {
+            "cumulative_saving_bits": -0.3201167840631145,
+            "se_bits": 0.05299742979582785
+          },
+          "bayes": {
+            "cumulative_saving_bits": -0.015767631036701972,
+            "se_bits": 0.043042401775245744
+          }
+        },
+        "128": {
+          "transformer": {
+            "cumulative_saving_bits": -0.8304912936108653,
+            "se_bits": 0.1052068742638481
+          },
+          "bayes": {
+            "cumulative_saving_bits": 0.6784919552176709,
+            "se_bits": 0.0696271609395891
+          }
+        },
+        "256": {
+          "transformer": {
+            "cumulative_saving_bits": 0.6194308496241153,
+            "se_bits": 0.189638615358948
+          },
+          "bayes": {
+            "cumulative_saving_bits": 4.715426641542746,
+            "se_bits": 0.12196015186260961
+          }
+        },
+        "500": {
+          "transformer": {
+            "cumulative_saving_bits": 13.752529038045623,
+            "se_bits": 0.31086990259218916
+          },
+          "bayes": {
+            "cumulative_saving_bits": 21.597776002906787,
+            "se_bits": 0.23590673246468158
+          }
+        },
+        "512": {
+          "transformer": {
+            "cumulative_saving_bits": 14.752012169809335,
+            "se_bits": 0.3156848453747689
+          },
+          "bayes": {
+            "cumulative_saving_bits": 22.781273750655316,
+            "se_bits": 0.24126534919246043
+          }
+        },
+        "1024": {
+          "transformer": {
+            "cumulative_saving_bits": 73.35417532748295,
+            "se_bits": 0.5190770389938686
+          },
+          "bayes": {
+            "cumulative_saving_bits": 93.23950773751967,
+            "se_bits": 0.48024545691709836
+          }
+        }
+      },
+      "cumulative_minima": {
+        "transformer": {
+          "time": 140,
+          "mean_bits": -0.9353132721234079,
+          "se_bits": 0.11342594077561363
+        },
+        "bayes": {
+          "time": 41,
+          "mean_bits": -0.06752656573563413,
+          "se_bits": 0.030920254105007722
+        }
+      }
+    },
+    {
+      "source_depth": 3,
+      "n_sequences": 2048,
+      "crossings": {
+        "transformer": {
+          "time": 19,
+          "status": "final_upward_crossing",
+          "bootstrap_percentiles": {
+            "lower": 17,
+            "median": 19,
+            "upper": 24
+          },
+          "bootstrap_censored_count": 0,
+          "bootstrap_positive_from_start_count": 0,
+          "local_slope": {
+            "first_time": 3,
+            "last_time": 34,
+            "mean_bits_per_token": 0.007180399607093725,
+            "se_bits_per_token": 0.0012058417434320323
+          }
+        },
+        "bayes": {
+          "time": 3,
+          "status": "final_upward_crossing",
+          "bootstrap_percentiles": {
+            "lower": 3,
+            "median": 5,
+            "upper": 17
+          },
+          "bootstrap_censored_count": 0,
+          "bootstrap_positive_from_start_count": 0,
+          "local_slope": {
+            "first_time": 1,
+            "last_time": 32,
+            "mean_bits_per_token": 0.007990968413016894,
+            "se_bits_per_token": 0.0011098710204966986
+          }
+        }
+      },
+      "paired_crossing_difference": {
+        "definition": "transformer crossing minus Bayesian crossing, in observed tokens",
+        "point_difference": 16,
+        "point_bounds": {
+          "lower": 16,
+          "upper": 16
+        },
+        "paired_bootstrap_count": 2000,
+        "both_observed_count": 2000,
+        "transformer_only_censored_count": 0,
+        "bayes_only_censored_count": 0,
+        "both_censored_count": 0,
+        "conservative_percentile_interval": {
+          "lower": 5,
+          "upper": 20
+        },
+        "null_bound_meaning": "unbounded; all censored replicates retained",
+        "paired_bootstrap_percentiles": {
+          "lower": 5,
+          "median": 16,
+          "upper": 20
+        }
+      },
+      "selected_times": {
+        "16": {
+          "transformer": {
+            "cumulative_saving_bits": -0.025909464214619222,
+            "se_bits": 0.014971416110881007
+          },
+          "bayes": {
+            "cumulative_saving_bits": 0.03369118918442156,
+            "se_bits": 0.016208180356502143
+          }
+        },
+        "32": {
+          "transformer": {
+            "cumulative_saving_bits": 0.15549941417273452,
+            "se_bits": 0.03556884963429996
+          },
+          "bayes": {
+            "cumulative_saving_bits": 0.25571098921653845,
+            "se_bits": 0.035515872655894024
+          }
+        },
+        "64": {
+          "transformer": {
+            "cumulative_saving_bits": 0.7960357594506463,
+            "se_bits": 0.0697456383932491
+          },
+          "bayes": {
+            "cumulative_saving_bits": 1.0189573023413563,
+            "se_bits": 0.06220002140055313
+          }
+        },
+        "128": {
+          "transformer": {
+            "cumulative_saving_bits": 3.729255748882324,
+            "se_bits": 0.13704575323432824
+          },
+          "bayes": {
+            "cumulative_saving_bits": 4.213356384616881,
+            "se_bits": 0.11605997429873771
+          }
+        },
+        "256": {
+          "transformer": {
+            "cumulative_saving_bits": 16.57704877156984,
+            "se_bits": 0.2567185477314237
+          },
+          "bayes": {
+            "cumulative_saving_bits": 18.339105576368755,
+            "se_bits": 0.2365455938063177
+          }
+        },
+        "500": {
+          "transformer": {
+            "cumulative_saving_bits": 62.24376701288661,
+            "se_bits": 0.47084546905127916
+          },
+          "bayes": {
+            "cumulative_saving_bits": 69.86440677017836,
+            "se_bits": 0.4649508830527766
+          }
+        },
+        "512": {
+          "transformer": {
+            "cumulative_saving_bits": 65.17146235340316,
+            "se_bits": 0.48222574461724416
+          },
+          "bayes": {
+            "cumulative_saving_bits": 73.18144104517026,
+            "se_bits": 0.4779877888850984
+          }
+        },
+        "1024": {
+          "transformer": {
+            "cumulative_saving_bits": 228.61630999549516,
+            "se_bits": 0.9857205340035644
+          },
+          "bayes": {
+            "cumulative_saving_bits": 261.278696316511,
+            "se_bits": 0.937510945568928
+          }
+        }
+      },
+      "cumulative_minima": {
+        "transformer": {
+          "time": 17,
+          "mean_bits": -0.029010310826209806,
+          "se_bits": 0.015551225086873387
+        },
+        "bayes": {
+          "time": 2,
+          "mean_bits": -0.0010074257552787286,
+          "se_bits": 0.00025922518199244555
+        }
+      }
+    },
+    {
+      "source_depth": 4,
+      "n_sequences": 2048,
+      "crossings": {
+        "transformer": {
+          "time": 8,
+          "status": "final_upward_crossing",
+          "bootstrap_percentiles": {
+            "lower": 6,
+            "median": 8,
+            "upper": 12
+          },
+          "bootstrap_censored_count": 0,
+          "bootstrap_positive_from_start_count": 0,
+          "local_slope": {
+            "first_time": 1,
+            "last_time": 32,
+            "mean_bits_per_token": 0.016448237823323077,
+            "se_bits_per_token": 0.0014537814936911929
+          }
+        },
+        "bayes": {
+          "time": 4,
+          "status": "final_upward_crossing",
+          "bootstrap_percentiles": {
+            "lower": 3,
+            "median": 4,
+            "upper": 5
+          },
+          "bootstrap_censored_count": 0,
+          "bootstrap_positive_from_start_count": 0,
+          "local_slope": {
+            "first_time": 1,
+            "last_time": 32,
+            "mean_bits_per_token": 0.020534813601249265,
+            "se_bits_per_token": 0.0015009877711444541
+          }
+        }
+      },
+      "paired_crossing_difference": {
+        "definition": "transformer crossing minus Bayesian crossing, in observed tokens",
+        "point_difference": 4,
+        "point_bounds": {
+          "lower": 4,
+          "upper": 4
+        },
+        "paired_bootstrap_count": 2000,
+        "both_observed_count": 2000,
+        "transformer_only_censored_count": 0,
+        "bayes_only_censored_count": 0,
+        "both_censored_count": 0,
+        "conservative_percentile_interval": {
+          "lower": 2,
+          "upper": 9
+        },
+        "null_bound_meaning": "unbounded; all censored replicates retained",
+        "paired_bootstrap_percentiles": {
+          "lower": 2,
+          "median": 4,
+          "upper": 9
+        }
+      },
+      "selected_times": {
+        "16": {
+          "transformer": {
+            "cumulative_saving_bits": 0.09247857401800591,
+            "se_bits": 0.021606113247444946
+          },
+          "bayes": {
+            "cumulative_saving_bits": 0.18080808483465466,
+            "se_bits": 0.024593504504835363
+          }
+        },
+        "32": {
+          "transformer": {
+            "cumulative_saving_bits": 0.5263436103463381,
+            "se_bits": 0.04652100779811818
+          },
+          "bayes": {
+            "cumulative_saving_bits": 0.6571140352399791,
+            "se_bits": 0.048031608676622685
+          }
+        },
+        "64": {
+          "transformer": {
+            "cumulative_saving_bits": 2.470100441948966,
+            "se_bits": 0.09367211545648084
+          },
+          "bayes": {
+            "cumulative_saving_bits": 2.6534788546250883,
+            "se_bits": 0.0916063295375824
+          }
+        },
+        "128": {
+          "transformer": {
+            "cumulative_saving_bits": 10.57606944681197,
+            "se_bits": 0.20328428388965575
+          },
+          "bayes": {
+            "cumulative_saving_bits": 10.843074914314753,
+            "se_bits": 0.20385471307789288
+          }
+        },
+        "256": {
+          "transformer": {
+            "cumulative_saving_bits": 40.07427507836912,
+            "se_bits": 0.39573452573251416
+          },
+          "bayes": {
+            "cumulative_saving_bits": 42.08376280852687,
+            "se_bits": 0.4022595548521505
+          }
+        },
+        "500": {
+          "transformer": {
+            "cumulative_saving_bits": 134.57047357337302,
+            "se_bits": 0.7683132968960336
+          },
+          "bayes": {
+            "cumulative_saving_bits": 145.82686422307702,
+            "se_bits": 0.760196436719761
+          }
+        },
+        "512": {
+          "transformer": {
+            "cumulative_saving_bits": 140.53031843418472,
+            "se_bits": 0.7862841106034556
+          },
+          "bayes": {
+            "cumulative_saving_bits": 152.34338284217984,
+            "se_bits": 0.7763470384583543
+          }
+        },
+        "1024": {
+          "transformer": {
+            "cumulative_saving_bits": 467.92370338902293,
+            "se_bits": 1.6191779547325686
+          },
+          "bayes": {
+            "cumulative_saving_bits": 508.5224669126536,
+            "se_bits": 1.5036111670157588
+          }
+        }
+      },
+      "cumulative_minima": {
+        "transformer": {
+          "time": 3,
+          "mean_bits": -0.025423765585445957,
+          "se_bits": 0.0051048481268468
+        },
+        "bayes": {
+          "time": 3,
+          "mean_bits": -0.0013074591529008098,
+          "se_bits": 0.0018395003877002655
+        }
+      }
+    }
+  ],
+  "inputs": [
+    {
+      "transformer": {
+        "path": "results/transformer/eval/lsa_a0_d128/d128_a0_L2_step100000.npz",
+        "sha256": "5ef0a19ad41f5c1778756b73e7f3b867a45b9383d13549ba4ec7424939f57a13"
+      },
+      "bayes": {
+        "path": "output/copying_parameter_screen_2026-09-17/bayes_d128_L2.npz",
+        "sha256": "4d4d2814b74ccf62ac40c740c388ebe5fe2438d372f9b524e23eade1606468cd",
+        "configuration": {
+          "anchor_src": "/Users/ruediger/Projects/product_model_with_memory/src",
+          "anchor_store": "/Users/ruediger/Projects/product_model_with_memory/tables/anchors_prod",
+          "code_sha256": {
+            "lsa_seq.py": "7e39960e91f3bb27eea82e201afd8a86ce717ea50a304daa86534b4fdbadfc51",
+            "phi_source.py": "456eb407fd7f280786a441681a704a6fff172af9fc9aea3c6f9456fb55174831",
+            "refs_shared_depth.py": "6e771c98c632208a36536f7f0096cb09c563ea71001f4dc0fc7718322b937756",
+            "shared_depth.py": "616f536153458499078d17d7939e6a800c7b52e3eb4f1dd6503db95030d7a395"
+          },
+          "d": 128,
+          "d1": null,
+          "d2": null,
+          "depth_posteriors": false,
+          "depths": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8
+          ],
+          "grid_step": 0.015625,
+          "kind": "uniform",
+          "n_seq": 2048,
+          "n_tokens": 1025,
+          "positions": [],
+          "prior": "uniform",
+          "schema": "shared_depth_v1",
+          "table_dir": "/Users/ruediger/Projects/layered_architectures/code/scripts/building_block",
+          "token_hash_encoding": "little-endian int64",
+          "tokens_sha256": "28b849b47b32f8cf195521ddccded8d63685e413895c992680ba7dcedf001c2a",
+          "u_hi": 30.0,
+          "u_lo": -30.0
+        }
+      },
+      "transformer_config": {
+        "path": "results/transformer/runs/lsa_a0_d128/config.json",
+        "sha256": "bb9f178b73b8c39b1297fa22c2e47f90128b776a03076d270cdef6514323c5f9"
+      },
+      "wider_integration_check": {
+        "path": "output/copying_parameter_screen_2026-09-17/check_d128_L2_wide.npz",
+        "sha256": "1ce9c479412e5d77e88609b84ee01489ddea562ba4370316ab8427657b088900",
+        "result": {
+          "sequences_checked": 4,
+          "wider_integration_bounds": [
+            -36,
+            36
+          ],
+          "maximum_loss_difference_bits": 0.0,
+          "maximum_cumulative_difference_bits": 0.0,
+          "maximum_probability_normalization_error": 3.5402014653129754e-11,
+          "maximum_saved_probability_loss_error_bits": 5.329070518200751e-15,
+          "scope": "First4 sequences at each source depth; bound expansion at unchanged grid spacing, not all2048 sequences",
+          "passed": true
+        }
+      },
+      "tokens_sha256": "28b849b47b32f8cf195521ddccded8d63685e413895c992680ba7dcedf001c2a",
+      "source_depth": 2
+    },
+    {
+      "transformer": {
+        "path": "results/transformer/eval/lsa_a0_d128/d128_a0_L3_step100000.npz",
+        "sha256": "4190c2fecb22a58fc1fc8d401c7fb6ff703a89445b8d926b6e1a8a81b8c5b55d"
+      },
+      "bayes": {
+        "path": "output/copying_parameter_screen_2026-09-17/bayes_d128_L3.npz",
+        "sha256": "12503e41f2489cc643231037bc84c6d98d139639275deeda4effbd271ab9d12d",
+        "configuration": {
+          "anchor_src": "/Users/ruediger/Projects/product_model_with_memory/src",
+          "anchor_store": "/Users/ruediger/Projects/product_model_with_memory/tables/anchors_prod",
+          "code_sha256": {
+            "lsa_seq.py": "7e39960e91f3bb27eea82e201afd8a86ce717ea50a304daa86534b4fdbadfc51",
+            "phi_source.py": "456eb407fd7f280786a441681a704a6fff172af9fc9aea3c6f9456fb55174831",
+            "refs_shared_depth.py": "6e771c98c632208a36536f7f0096cb09c563ea71001f4dc0fc7718322b937756",
+            "shared_depth.py": "616f536153458499078d17d7939e6a800c7b52e3eb4f1dd6503db95030d7a395"
+          },
+          "d": 128,
+          "d1": null,
+          "d2": null,
+          "depth_posteriors": false,
+          "depths": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8
+          ],
+          "grid_step": 0.015625,
+          "kind": "uniform",
+          "n_seq": 2048,
+          "n_tokens": 1025,
+          "positions": [],
+          "prior": "uniform",
+          "schema": "shared_depth_v1",
+          "table_dir": "/Users/ruediger/Projects/layered_architectures/code/scripts/building_block",
+          "token_hash_encoding": "little-endian int64",
+          "tokens_sha256": "8dced55da4688ee3d7de28904b558347628e416503f7688518b77fb8c3d553a7",
+          "u_hi": 30.0,
+          "u_lo": -30.0
+        }
+      },
+      "transformer_config": {
+        "path": "results/transformer/runs/lsa_a0_d128/config.json",
+        "sha256": "bb9f178b73b8c39b1297fa22c2e47f90128b776a03076d270cdef6514323c5f9"
+      },
+      "wider_integration_check": {
+        "path": "output/copying_parameter_screen_2026-09-17/check_d128_L3_wide.npz",
+        "sha256": "18328fe003f50596af159fb505ece98421817431904e676edfa179b80e4ae6b3",
+        "result": {
+          "sequences_checked": 4,
+          "wider_integration_bounds": [
+            -36,
+            36
+          ],
+          "maximum_loss_difference_bits": 0.0,
+          "maximum_cumulative_difference_bits": 0.0,
+          "maximum_probability_normalization_error": 2.9890312447378165e-11,
+          "maximum_saved_probability_loss_error_bits": 4.440892098500626e-15,
+          "scope": "First4 sequences at each source depth; bound expansion at unchanged grid spacing, not all2048 sequences",
+          "passed": true
+        }
+      },
+      "tokens_sha256": "8dced55da4688ee3d7de28904b558347628e416503f7688518b77fb8c3d553a7",
+      "source_depth": 3
+    },
+    {
+      "transformer": {
+        "path": "results/transformer/eval/lsa_a0_d128/d128_a0_L4_step100000.npz",
+        "sha256": "7d56564ab587cc1621801607ff58990d33600c2a73893d5dbdb60a70699d62ed"
+      },
+      "bayes": {
+        "path": "output/copying_parameter_screen_2026-09-17/bayes_d128_L4.npz",
+        "sha256": "9fbddc32875fe1730822c7aafb81c7bdf5734ac1a3016c98a2f61bec5ccad0ed",
+        "configuration": {
+          "anchor_src": "/Users/ruediger/Projects/product_model_with_memory/src",
+          "anchor_store": "/Users/ruediger/Projects/product_model_with_memory/tables/anchors_prod",
+          "code_sha256": {
+            "lsa_seq.py": "7e39960e91f3bb27eea82e201afd8a86ce717ea50a304daa86534b4fdbadfc51",
+            "phi_source.py": "456eb407fd7f280786a441681a704a6fff172af9fc9aea3c6f9456fb55174831",
+            "refs_shared_depth.py": "6e771c98c632208a36536f7f0096cb09c563ea71001f4dc0fc7718322b937756",
+            "shared_depth.py": "616f536153458499078d17d7939e6a800c7b52e3eb4f1dd6503db95030d7a395"
+          },
+          "d": 128,
+          "d1": null,
+          "d2": null,
+          "depth_posteriors": false,
+          "depths": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8
+          ],
+          "grid_step": 0.015625,
+          "kind": "uniform",
+          "n_seq": 2048,
+          "n_tokens": 1025,
+          "positions": [],
+          "prior": "uniform",
+          "schema": "shared_depth_v1",
+          "table_dir": "/Users/ruediger/Projects/layered_architectures/code/scripts/building_block",
+          "token_hash_encoding": "little-endian int64",
+          "tokens_sha256": "730fcf594fe2d3056479734c4c2d6a6db90db7053dfb18e21968726f944c2a51",
+          "u_hi": 30.0,
+          "u_lo": -30.0
+        }
+      },
+      "transformer_config": {
+        "path": "results/transformer/runs/lsa_a0_d128/config.json",
+        "sha256": "bb9f178b73b8c39b1297fa22c2e47f90128b776a03076d270cdef6514323c5f9"
+      },
+      "wider_integration_check": {
+        "path": "output/copying_parameter_screen_2026-09-17/check_d128_L4_wide.npz",
+        "sha256": "f51d635f4fa393f0404667b71226de39878cbf92a311a46cabef83a7c458d240",
+        "result": {
+          "sequences_checked": 4,
+          "wider_integration_bounds": [
+            -36,
+            36
+          ],
+          "maximum_loss_difference_bits": 0.0,
+          "maximum_cumulative_difference_bits": 0.0,
+          "maximum_probability_normalization_error": 2.3297808127153985e-11,
+          "maximum_saved_probability_loss_error_bits": 5.329070518200751e-15,
+          "scope": "First4 sequences at each source depth; bound expansion at unchanged grid spacing, not all2048 sequences",
+          "passed": true
+        }
+      },
+      "tokens_sha256": "730fcf594fe2d3056479734c4c2d6a6db90db7053dfb18e21968726f944c2a51",
+      "source_depth": 4
+    }
+  ],
+  "script": {
+    "path": "code/scripts/copying_parameter_screen.py",
+    "sha256": "2fc54a8683d9690911f2a5cf379c1c14f5a228e6f5f1d681705ed1ae3a2eadd1"
+  },
+  "outputs": {
+    "curves.npz": "a11d61f0eaf2a0da4435f61dc5c043f31c1dc3c14a0e1ba32c3798a826d04086",
+    "bootstrap_crossings.npz": "3a010058a2224729cbf4f07d5dc410b828d6feb0cd1809e85c4de4b7c9e5627f",
+    "curves.tsv": "bbbd4cac0718ed9aa56586f357e7c650ce619056c595f67bbc5bb75e7d31622b",
+    "cumulative_payoff.png": "c66bbf07e464a23a941000d640a94ebffba496fcc1161927642d848cd4966f43"
+  }
+}

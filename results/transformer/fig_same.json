@@ -1,0 +1,23 @@
+{
+ "d64_a1_L2": {
+  "unigram predictor": 5.105455918908575,
+  "copier, depths 0 to 8": 4.891677936920601,
+  "informed copier (48 sequences)": 4.769361817323291,
+  "transformer trained on independent contexts": 4.941720182666902,
+  "transformer trained on product chains": 5.621870792962984,
+  "transformer trained on the paper's source": 4.757454315032266,
+  "n_star_fam": 374,
+  "n_star": 473,
+  "n_star_inf": 58
+ },
+ "d128_a1_L3": {
+  "unigram predictor": 5.9478729495680795,
+  "copier, depths 0 to 8": 5.722560074204466,
+  "informed copier (24 sequences)": 5.537598849320905,
+  "transformer trained on independent contexts": 5.808950054888625,
+  "transformer trained on the paper's source": 5.492053990372022,
+  "n_star_fam": 441,
+  "n_star": 501,
+  "n_star_inf": 51
+ }
+}

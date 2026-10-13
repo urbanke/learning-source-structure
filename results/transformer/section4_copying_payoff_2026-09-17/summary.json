@@ -1,0 +1,5466 @@
+{
+  "schema": "copying-payoff-crossings-v1",
+  "horizon": 1024,
+  "n_sequences": 1024,
+  "sequence_length": 1025,
+  "source_alpha": 0,
+  "alphabet_size": 64,
+  "source_depth_prior": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8
+  ],
+  "candidate_head": [
+    0,
+    1
+  ],
+  "control_head": [
+    0,
+    0
+  ],
+  "protocol": {
+    "path": "output/copier_time/run_2026-09-15/protocol.json",
+    "sha256": "5a5b82a2830ccf7de372a6fbde0bc6f780ac297b1143c6c46837d216a75f597d"
+  },
+  "source_checkpoint": {
+    "path": "/Users/ruediger/Projects/layered_architectures/results/transformer/runs/lsa_a0_d64/model_100000.pt",
+    "sha256": "6b8752b882d1be1eb51278ca0f5b58eccc8048b3fcf552467f9da6438153d53c"
+  },
+  "script": {
+    "path": "code/scripts/section4_copying_payoff.py",
+    "sha256": "b4217e281c3e6541ba9f384e58f2186e0e65e042c6f78346e680a213291a9772"
+  },
+  "definitions": {
+    "transformer": "True-row expected loss with identified copying head removed minus intact-network loss, on identical observed sequences.",
+    "bayes": "Known-uniform expected loss minus saved informed Bayesian predictive loss. This is a different baseline from the disabled transformer.",
+    "control": "True-row expected loss with independently selected comparison head removed minus intact-network loss.",
+    "transformer_vs_uniform": "Known-uniform expected loss minus intact-transformer expected loss; matches the Bayesian comparison baseline.",
+    "disabled_vs_uniform": "Disabled-transformer expected loss minus known-uniform expected loss; directly measures the baseline discrepancy.",
+    "first_positive": "Earliest saved time whose mean benefit exceeds numerical zero; early isolated positive points may precede the eventual crossing.",
+    "final_positive_run": "First time of the final strictly positive run through time 1024; right-censored if the last value is nonpositive. It is not a claim of positivity beyond 1024.",
+    "zero_tolerance_bits": 1e-12,
+    "expectation": "At each observed sequence, average next-token log loss over its true transition row; then average over independent sequences conditional on source depth.",
+    "cumulative": "Sum of those paired expected next-token loss differences from t=1 through n; first token supplied free."
+  },
+  "uncertainty": {
+    "repetitions": 2000,
+    "seed": 20260917,
+    "resampling": "Whole source sequences, independently within each depth, paired across all times and predictors.",
+    "curve_intervals": "Pointwise 95% Student-t intervals; not simultaneous bands.",
+    "crossing_intervals": "2.5%, 50%, 97.5% order statistics across all bootstrap draws. Right-censored crossings retained as infinity (JSON null for a censored quantile); finite-only intervals are not reported.",
+    "caution": "Last crossings of unsmoothed empirical means are sensitive to late fluctuations. Bootstrap intervals are exploratory, particularly if multiple crossings or censoring occur."
+  },
+  "selection": "Depth one is highlighted after reviewing existing results because it has delayed payoff; all nine depths and the comparison-head intervention remain in the appendix data.",
+  "limitations": [
+    "The ablated transformer has not been identified with the original adaptive LSA unigram.",
+    "The intact transformer and informed Bayes are not pure copier components.",
+    "Agreement between these two payoff times is therefore an empirical comparison, not a direct test of the archived pure-unigram/pure-copier crossing formula.",
+    "A causal effect of deleting this path need not equal an additive component weight."
+  ],
+  "validation": {
+    "passed": true,
+    "maximum_saved_metric_error": 6.217248937900877e-15,
+    "maximum_saved_cumulative_error": 1.8189894035458565e-12,
+    "maximum_previous_summary_error": 0.0,
+    "independent_audit": {
+      "path": "results/transformer/copier_time/summary.json",
+      "sha256": "b409276fd06183868f8e80d09cc3c133dc084e1b571e64afa04859a56ab96d1c"
+    },
+    "bayes_numerical_validation": {
+      "path": "results/transformer/copier_time/numerical_validation.json",
+      "sha256": "e318c59421331ccd44daeeec90db18ea00ed7676528f5c66287a13d33d44f633",
+      "passed": true,
+      "matched_production_indices": [
+        0,
+        7
+      ],
+      "limitations": [
+        "Two source-selected finite paths, not all possible count profiles.",
+        "Wider bounds and a half-cell phase shift test the quadrature; all grids share the same sealed table approximation.",
+        "This validates the Bayes/source numerics, not transformer behavior or a causal timing conclusion."
+      ]
+    },
+    "input_manifest_sha256": "b936c33717e248fb1c7dcc2d6e04a19cf0c5ed4ada39474eaeb67586446fde59"
+  },
+  "groups": [
+    {
+      "depth": 0,
+      "n_sequences": 112,
+      "ci95_multiplier": 1.9815667570749007,
+      "curves": {
+        "transformer": {
+          "instantaneous": {
+            "first_positive": {
+              "time": null,
+              "status": "no_positive_point",
+              "bootstrap_percentiles": {
+                "lower": 2,
+                "median": null,
+                "upper": null
+              },
+              "bootstrap_censored_count": 1629,
+              "bootstrap_positive_from_start_count": 0
+            },
+            "final_positive_run": {
+              "time": null,
+              "status": "not_positive_at_horizon",
+              "bootstrap_percentiles": {
+                "lower": null,
+                "median": null,
+                "upper": null
+              },
+              "bootstrap_censored_count": 2000,
+              "bootstrap_positive_from_start_count": 0
+            },
+            "at_times": {
+              "1": {
+                "mean": -0.0008149626977598166,
+                "se": 6.741256187519375e-06
+              },
+              "4": {
+                "mean": -0.00620161317339423,
+                "se": 0.0027481806093566075
+              },
+              "16": {
+                "mean": -0.03592852361387127,
+                "se": 0.006009407806358622
+              },
+              "64": {
+                "mean": -0.07150165632164451,
+                "se": 0.007209787446994367
+              },
+              "128": {
+                "mean": -0.0935860019884178,
+                "se": 0.007313955952066444
+              },
+              "256": {
+                "mean": -0.07823672917913461,
+                "se": 0.006405967549396206
+              },
+              "512": {
+                "mean": -0.04672206015900886,
+                "se": 0.004256561997975431
+              },
+              "1024": {
+                "mean": -0.02989132342322418,
+                "se": 0.002623877027015321
+              }
+            }
+          },
+          "cumulative": {
+            "first_positive": {
+              "time": null,
+              "status": "no_positive_point",
+              "bootstrap_percentiles": {
+                "lower": null,
+                "median": null,
+                "upper": null
+              },
+              "bootstrap_censored_count": 1972,
+              "bootstrap_positive_from_start_count": 0
+            },
+            "final_positive_run": {
+              "time": null,
+              "status": "not_positive_at_horizon",
+              "bootstrap_percentiles": {
+                "lower": null,
+                "median": null,
+                "upper": null
+              },
+              "bootstrap_censored_count": 2000,
+              "bootstrap_positive_from_start_count": 0
+            },
+            "at_times": {
+              "1": {
+                "mean": -0.0008149626977598166,
+                "se": 6.741256187519375e-06
+              },
+              "4": {
+                "mean": -0.016135807281694423,
+                "se": 0.005912867747099176
+              },
+              "16": {
+                "mean": -0.2822686153414161,
+                "se": 0.0174486205091863
+              },
+              "64": {
+                "mean": -3.4180384500941408,
+                "se": 0.07349805131974359
+              },
+              "128": {
+                "mean": -9.42535111340285,
+                "se": 0.24552089470298907
+              },
+              "256": {
+                "mean": -19.990554996887493,
+                "se": 0.826255914399403
+              },
+              "512": {
+                "mean": -34.960337613168285,
+                "se": 1.6410938385992133
+              },
+              "1024": {
+                "mean": -54.59935085013417,
+                "se": 2.291719074788254
+              }
+            }
+          }
+        },
+        "bayes": {
+          "instantaneous": {
+            "first_positive": {
+              "time": null,
+              "status": "no_positive_point",
+              "bootstrap_percentiles": {
+                "lower": null,
+                "median": null,
+                "upper": null
+              },
+              "bootstrap_censored_count": 2000,
+              "bootstrap_positive_from_start_count": 0
+            },
+            "final_positive_run": {
+              "time": null,
+              "status": "not_positive_at_horizon",
+              "bootstrap_percentiles": {
+                "lower": null,
+                "median": null,
+                "upper": null
+              },
+              "bootstrap_censored_count": 2000,
+              "bootstrap_positive_from_start_count": 0
+            },
+            "at_times": {
+              "1": {
+                "mean": 0.0,
+                "se": 0.0
+              },
+              "4": {
+                "mean": -0.006660791954994519,
+                "se": 0.0029246322608738624
+              },
+              "16": {
+                "mean": -0.031368718878798565,
+                "se": 0.005242100326412287
+              },
+              "64": {
+                "mean": -0.012285117003793034,
+                "se": 0.0017698698283906361
+              },
+              "128": {
+                "mean": -0.006863137798697302,
+                "se": 0.0010357861283617864
+              },
+              "256": {
+                "mean": -0.0031754386179501976,
+                "se": 0.000663932019116844
+              },
+              "512": {
+                "mean": -0.000712231244562711,
+                "se": 0.0004077041463283966
+              },
+              "1024": {
+                "mean": -8.564577618536922e-16,
+                "se": 1.3129295478021173e-15
+              }
+            }
+          },
+          "cumulative": {
+            "first_positive": {
+              "time": null,
+              "status": "no_positive_point",
+              "bootstrap_percentiles": {
+                "lower": null,
+                "median": null,
+                "upper": null
+              },
+              "bootstrap_censored_count": 2000,
+              "bootstrap_positive_from_start_count": 0
+            },
+            "final_positive_run": {
+              "time": null,
+              "status": "not_positive_at_horizon",
+              "bootstrap_percentiles": {
+                "lower": null,
+                "median": null,
+                "upper": null
+              },
+              "bootstrap_censored_count": 2000,
+              "bootstrap_positive_from_start_count": 0
+            },
+            "at_times": {
+              "1": {
+                "mean": 0.0,
+                "se": 0.0
+              },
+              "4": {
+                "mean": -0.013321583909989039,
+                "se": 0.004038261710462668
+              },
+              "16": {
+                "mean": -0.27394786512503544,
+                "se": 0.014500722326857483
+              },
+              "64": {
+                "mean": -1.6342718862177692,
+                "se": 0.06015585978832386
+              },
+              "128": {
+                "mean": -2.3237850457631795,
+                "se": 0.10547595256739656
+              },
+              "256": {
+                "mean": -2.864104147113919,
+                "se": 0.14478311752483397
+              },
+              "512": {
+                "mean": -3.366895630273606,
+                "se": 0.22594432410201995
+              },
+              "1024": {
+                "mean": -3.4215296087062863,
+                "se": 0.2494180551665176
+              }
+            }
+          }
+        },
+        "control": {
+          "instantaneous": {
+            "first_positive": {
+              "time": 1,
+              "status": "positive_from_start",
+              "bootstrap_percentiles": {
+                "lower": 1,
+                "median": 1,
+                "upper": 1
+              },
+              "bootstrap_censored_count": 0,
+              "bootstrap_positive_from_start_count": 2000
+            },
+            "final_positive_run": {
+              "time": null,
+              "status": "not_positive_at_horizon",
+              "bootstrap_percentiles": {
+                "lower": null,
+                "median": null,
+                "upper": null
+              },
+              "bootstrap_censored_count": 1998,
+              "bootstrap_positive_from_start_count": 0
+            },
+            "at_times": {
+              "1": {
+                "mean": 0.0006431255830059911,
+                "se": 3.9769242770336005e-05
+              },
+              "4": {
+                "mean": 0.001727337768509331,
+                "se": 0.0012323796997896184
+              },
+              "16": {
+                "mean": 0.008493713566526586,
+                "se": 0.005634802206816729
+              },
+              "64": {
+                "mean": -0.004720101893265073,
+                "se": 0.008654735222208707
+              },
+              "128": {
+                "mean": -0.040689839599809145,
+                "se": 0.004911443227376572
+              },
+              "256": {
+                "mean": -0.039412295215622825,
+                "se": 0.007581692252466443
+              },
+              "512": {
+                "mean": -0.02484934803115968,
+                "se": 0.002993360032791142
+              },
+              "1024": {
+                "mean": -0.007774572624163779,
+                "se": 0.0025082949989810787
+              }
+            }
+          },
+          "cumulative": {
+            "first_positive": {
+              "time": 1,
+              "status": "positive_from_start",
+              "bootstrap_percentiles": {
+                "lower": 1,
+                "median": 1,
+                "upper": 1
+              },
+              "bootstrap_censored_count": 0,
+              "bootstrap_positive_from_start_count": 2000
+            },
+            "final_positive_run": {
+              "time": null,
+              "status": "not_positive_at_horizon",
+              "bootstrap_percentiles": {
+                "lower": null,
+                "median": null,
+                "upper": null
+              },
+              "bootstrap_censored_count": 2000,
+              "bootstrap_positive_from_start_count": 0
+            },
+            "at_times": {
+              "1": {
+                "mean": 0.0006431255830059911,
+                "se": 3.9769242770336005e-05
+              },
+              "4": {
+                "mean": 0.016497493966700066,
+                "se": 0.008620875112717726
+              },
+              "16": {
+                "mean": 0.0968419156154728,
+                "se": 0.021132075188423378
+              },
+              "64": {
+                "mean": 0.11571761951158624,
+                "se": 0.09299668432130608
+              },
+              "128": {
+                "mean": -1.6765554251085244,
+                "se": 0.24374775960629452
+              },
+              "256": {
+                "mean": -6.716054411510084,
+                "se": 0.6757965744914802
+              },
+              "512": {
+                "mean": -14.774831586222051,
+                "se": 1.315651580047846
+              },
+              "1024": {
+                "mean": -22.25936370975038,
+                "se": 1.75535419058789
+              }
+            }
+          }
+        },
+        "transformer_vs_uniform": {
+          "instantaneous": {
+            "first_positive": {
+              "time": null,
+              "status": "no_positive_point",
+              "bootstrap_percentiles": {
+                "lower": null,
+                "median": null,
+                "upper": null
+              },
+              "bootstrap_censored_count": 2000,
+              "bootstrap_positive_from_start_count": 0
+            },
+            "final_positive_run": {
+              "time": null,
+              "status": "not_positive_at_horizon",
+              "bootstrap_percentiles": {
+                "lower": null,
+                "median": null,
+                "upper": null
+              },
+              "bootstrap_censored_count": 2000,
+              "bootstrap_positive_from_start_count": 0
+            },
+            "at_times": {
+              "1": {
+                "mean": -0.004240397189558328,
+                "se": 2.9745282806021217e-05
+              },
+              "4": {
+                "mean": -0.006761489740902674,
+                "se": 0.0027479669713437968
+              },
+              "16": {
+                "mean": -0.03635645245046199,
+                "se": 0.006010267140761585
+              },
+              "64": {
+                "mean": -0.0717930428935848,
+                "se": 0.007212194355832354
+              },
+              "128": {
+                "mean": -0.09385869615926172,
+                "se": 0.007321154222532584
+              },
+              "256": {
+                "mean": -0.07837021870415635,
+                "se": 0.006412368985120814
+              },
+              "512": {
+                "mean": -0.046795387910116705,
+                "se": 0.004257555211394061
+              },
+              "1024": {
+                "mean": -0.030042298459657668,
+                "se": 0.002625979834984834
+              }
+            }
+          },
+          "cumulative": {
+            "first_positive": {
+              "time": null,
+              "status": "no_positive_point",
+              "bootstrap_percentiles": {
+                "lower": null,
+                "median": null,
+                "upper": null
+              },
+              "bootstrap_censored_count": 2000,
+              "bootstrap_positive_from_start_count": 0
+            },
+            "final_positive_run": {
+              "time": null,
+              "status": "not_positive_at_horizon",
+              "bootstrap_percentiles": {
+                "lower": null,
+                "median": null,
+                "upper": null
+              },
+              "bootstrap_censored_count": 2000,
+              "bootstrap_positive_from_start_count": 0
+            },
+            "at_times": {
+              "1": {
+                "mean": -0.004240397189558328,
+                "se": 2.9745282806021217e-05
+              },
+              "4": {
+                "mean": -0.022448963241361388,
+                "se": 0.005923803281290703
+              },
+              "16": {
+                "mean": -0.2941153816892768,
+                "se": 0.01747635131791808
+              },
+              "64": {
+                "mean": -3.4488234652090037,
+                "se": 0.07364928902450876
+              },
+              "128": {
+                "mean": -9.473176923988053,
+                "se": 0.24583621595909283
+              },
+              "256": {
+                "mean": -20.068919081237,
+                "se": 0.8278433372981111
+              },
+              "512": {
+                "mean": -35.060365279682074,
+                "se": 1.6432934800657686
+              },
+              "1024": {
+                "mean": -54.740326200735566,
+                "se": 2.2939953871291583
+              }
+            }
+          }
+        },
+        "disabled_vs_uniform": {
+          "instantaneous": {
+            "first_positive": {
+              "time": 1,
+              "status": "positive_from_start",
+              "bootstrap_percentiles": {
+                "lower": 1,
+                "median": 1,
+                "upper": 1
+              },
+              "bootstrap_censored_count": 0,
+              "bootstrap_positive_from_start_count": 2000
+            },
+            "final_positive_run": {
+              "time": 1,
+              "status": "positive_from_start",
+              "bootstrap_percentiles": {
+                "lower": 1,
+                "median": 1,
+                "upper": 1
+              },
+              "bootstrap_censored_count": 0,
+              "bootstrap_positive_from_start_count": 2000
+            },
+            "at_times": {
+              "1": {
+                "mean": 0.003425434491798512,
+                "se": 2.4423625570508213e-05
+              },
+              "4": {
+                "mean": 0.0005598765675084438,
+                "se": 1.636605736281624e-05
+              },
+              "16": {
+                "mean": 0.00042792883659072335,
+                "se": 1.1542700767682459e-05
+              },
+              "64": {
+                "mean": 0.0002913865719402854,
+                "se": 9.010684210345084e-06
+              },
+              "128": {
+                "mean": 0.00027269417084396785,
+                "se": 1.9817432415930235e-05
+              },
+              "256": {
+                "mean": 0.00013348952502173494,
+                "se": 1.0355462502303278e-05
+              },
+              "512": {
+                "mean": 7.332775110784657e-05,
+                "se": 2.329128516465056e-06
+              },
+              "1024": {
+                "mean": 0.0001509750364334888,
+                "se": 4.681054897123176e-06
+              }
+            }
+          },
+          "cumulative": {
+            "first_positive": {
+              "time": 1,
+              "status": "positive_from_start",
+              "bootstrap_percentiles": {
+                "lower": 1,
+                "median": 1,
+                "upper": 1
+              },
+              "bootstrap_censored_count": 0,
+              "bootstrap_positive_from_start_count": 2000
+            },
+            "final_positive_run": {
+              "time": 1,
+              "status": "positive_from_start",
+              "bootstrap_percentiles": {
+                "lower": 1,
+                "median": 1,
+                "upper": 1
+              },
+              "bootstrap_censored_count": 0,
+              "bootstrap_positive_from_start_count": 2000
+            },
+            "at_times": {
+              "1": {
+                "mean": 0.003425434491798512,
+                "se": 2.4423625570508213e-05
+              },
+              "4": {
+                "mean": 0.006313155959666964,
+                "se": 8.271081800095133e-05
+              },
+              "16": {
+                "mean": 0.011846766347860456,
+                "se": 0.00021834881783437806
+              },
+              "64": {
+                "mean": 0.03078501511486153,
+                "se": 0.0006990917638544543
+              },
+              "128": {
+                "mean": 0.04782581058519766,
+                "se": 0.0010650324666049463
+              },
+              "256": {
+                "mean": 0.07836408434950425,
+                "se": 0.0021301359682075393
+              },
+              "512": {
+                "mean": 0.10002766651382429,
+                "se": 0.002690937408496191
+              },
+              "1024": {
+                "mean": 0.14097535060139743,
+                "se": 0.0028755644254865945
+              }
+            }
+          }
+        }
+      }
+    },
+    {
+      "depth": 1,
+      "n_sequences": 101,
+      "ci95_multiplier": 1.983971518523552,
+      "curves": {
+        "transformer": {
+          "instantaneous": {
+            "first_positive": {
+              "time": 244,
+              "status": "upward_crossing_after_nonpositive_values",
+              "bootstrap_percentiles": {
+                "lower": 2,
+                "median": 4,
+                "upper": 222
+              },
+              "bootstrap_censored_count": 0,
+              "bootstrap_positive_from_start_count": 0
+            },
+            "final_positive_run": {
+              "time": 305,
+              "status": "upward_crossing_after_nonpositive_values",
+              "bootstrap_percentiles": {
+                "lower": 297,
+                "median": 348,
+                "upper": 459
+              },
+              "bootstrap_censored_count": 0,
+              "bootstrap_positive_from_start_count": 0
+            },
+            "at_times": {
+              "1": {
+                "mean": -0.0008564072144951105,
+                "se": 0.000209631658826036
+              },
+              "4": {
+                "mean": -0.0008117398422635351,
+                "se": 0.0008772175275262776
+              },
+              "16": {
+                "mean": -0.02400113886973381,
+                "se": 0.005257601173086607
+              },
+              "64": {
+                "mean": -0.045088921724863146,
+                "se": 0.007876773912380078
+              },
+              "128": {
+                "mean": -0.030400061797598212,
+                "se": 0.009396238532583371
+              },
+              "256": {
+                "mean": 0.005143570277275936,
+                "se": 0.008535828247432816
+              },
+              "512": {
+                "mean": 0.03823838349817005,
+                "se": 0.006300440000885874
+              },
+              "1024": {
+                "mean": 0.10451955778334565,
+                "se": 0.007474093431020992
+              }
+            }
+          },
+          "cumulative": {
+            "first_positive": {
+              "time": 543,
+              "status": "upward_crossing_after_nonpositive_values",
+              "bootstrap_percentiles": {
+                "lower": 2,
+                "median": 537,
+                "upper": 591
+              },
+              "bootstrap_censored_count": 0,
+              "bootstrap_positive_from_start_count": 0
+            },
+            "final_positive_run": {
+              "time": 543,
+              "status": "upward_crossing_after_nonpositive_values",
+              "bootstrap_percentiles": {
+                "lower": 498,
+                "median": 541,
+                "upper": 594
+              },
+              "bootstrap_censored_count": 0,
+              "bootstrap_positive_from_start_count": 0
+            },
+            "at_times": {
+              "1": {
+                "mean": -0.0008564072144951105,
+                "se": 0.000209631658826036
+              },
+              "4": {
+                "mean": -0.0037908744986768607,
+                "se": 0.002206676649472775
+              },
+              "16": {
+                "mean": -0.139990064440908,
+                "se": 0.013905369496379348
+              },
+              "64": {
+                "mean": -1.9400683365313274,
+                "se": 0.06425130838543158
+              },
+              "128": {
+                "mean": -4.826483691174588,
+                "se": 0.19712637918952572
+              },
+              "256": {
+                "mean": -7.488968470321656,
+                "se": 0.565456161452311
+              },
+              "512": {
+                "mean": -1.3955050791585415,
+                "se": 1.0657873819211976
+              },
+              "1024": {
+                "mean": 34.27207259187997,
+                "se": 1.5077499390907927
+              }
+            }
+          }
+        },
+        "bayes": {
+          "instantaneous": {
+            "first_positive": {
+              "time": 60,
+              "status": "upward_crossing_after_nonpositive_values",
+              "bootstrap_percentiles": {
+                "lower": 4,
+                "median": 46,
+                "upper": 61
+              },
+              "bootstrap_censored_count": 0,
+              "bootstrap_positive_from_start_count": 0
+            },
+            "final_positive_run": {
+              "time": 108,
+              "status": "upward_crossing_after_nonpositive_values",
+              "bootstrap_percentiles": {
+                "lower": 74,
+                "median": 110,
+                "upper": 136
+              },
+              "bootstrap_censored_count": 0,
+              "bootstrap_positive_from_start_count": 0
+            },
+            "at_times": {
+              "1": {
+                "mean": 0.0,
+                "se": 0.0
+              },
+              "4": {
+                "mean": -0.0015657283020136512,
+                "se": 0.0013270764651657394
+              },
+              "16": {
+                "mean": -0.022075236464423494,
+                "se": 0.0049379800918857965
+              },
+              "64": {
+                "mean": -0.001440106738545947,
+                "se": 0.0043534368401490905
+              },
+              "128": {
+                "mean": 0.0106925914321596,
+                "se": 0.003057744586550291
+              },
+              "256": {
+                "mean": 0.03239933050632895,
+                "se": 0.004781533108292386
+              },
+              "512": {
+                "mean": 0.051871255667549375,
+                "se": 0.005266114588241607
+              },
+              "1024": {
+                "mean": 0.1284786059907104,
+                "se": 0.00764438999370068
+              }
+            }
+          },
+          "cumulative": {
+            "first_positive": {
+              "time": 158,
+              "status": "upward_crossing_after_nonpositive_values",
+              "bootstrap_percentiles": {
+                "lower": 142,
+                "median": 158,
+                "upper": 174
+              },
+              "bootstrap_censored_count": 0,
+              "bootstrap_positive_from_start_count": 0
+            },
+            "final_positive_run": {
+              "time": 158,
+              "status": "upward_crossing_after_nonpositive_values",
+              "bootstrap_percentiles": {
+                "lower": 143,
+                "median": 158,
+                "upper": 174
+              },
+              "bootstrap_censored_count": 0,
+              "bootstrap_positive_from_start_count": 0
+            },
+            "at_times": {
+              "1": {
+                "mean": 0.0,
+                "se": 0.0
+              },
+              "4": {
+                "mean": -0.00453725551054051,
+                "se": 0.002236776824967286
+              },
+              "16": {
+                "mean": -0.15066970179145658,
+                "se": 0.015139369505274461
+              },
+              "64": {
+                "mean": -0.7928553727925964,
+                "se": 0.07127178140338059
+              },
+              "128": {
+                "mean": -0.4202657648747817,
+                "se": 0.12143296481878998
+              },
+              "256": {
+                "mean": 2.1336714332008073,
+                "se": 0.178630673960112
+              },
+              "512": {
+                "mean": 13.62187342659991,
+                "se": 0.3038633440560453
+              },
+              "1024": {
+                "mean": 58.396356003113745,
+                "se": 0.6467505089718562
+              }
+            }
+          }
+        },
+        "control": {
+          "instantaneous": {
+            "first_positive": {
+              "time": 1,
+              "status": "positive_from_start",
+              "bootstrap_percentiles": {
+                "lower": 1,
+                "median": 1,
+                "upper": 1
+              },
+              "bootstrap_censored_count": 0,
+              "bootstrap_positive_from_start_count": 2000
+            },
+            "final_positive_run": {
+              "time": 973,
+              "status": "upward_crossing_after_nonpositive_values",
+              "bootstrap_percentiles": {
+                "lower": 954,
+                "median": 1007,
+                "upper": 1024
+              },
+              "bootstrap_censored_count": 0,
+              "bootstrap_positive_from_start_count": 0
+            },
+            "at_times": {
+              "1": {
+                "mean": 0.0006703467106913264,
+                "se": 0.00020755095647497144
+              },
+              "4": {
+                "mean": 0.005498609824660776,
+                "se": 0.00338432797295546
+              },
+              "16": {
+                "mean": 0.005254305168149384,
+                "se": 0.0029389732586806044
+              },
+              "64": {
+                "mean": -0.01457061740738063,
+                "se": 0.00791854513574476
+              },
+              "128": {
+                "mean": -0.022746575794429527,
+                "se": 0.004937931370349442
+              },
+              "256": {
+                "mean": -0.026366353974407803,
+                "se": 0.005264576399027698
+              },
+              "512": {
+                "mean": -0.004463978386662233,
+                "se": 0.003251915989815659
+              },
+              "1024": {
+                "mean": 0.01157581942218733,
+                "se": 0.0033894356934510155
+              }
+            }
+          },
+          "cumulative": {
+            "first_positive": {
+              "time": 1,
+              "status": "positive_from_start",
+              "bootstrap_percentiles": {
+                "lower": 1,
+                "median": 1,
+                "upper": 1
+              },
+              "bootstrap_censored_count": 0,
+              "bootstrap_positive_from_start_count": 2000
+            },
+            "final_positive_run": {
+              "time": null,
+              "status": "not_positive_at_horizon",
+              "bootstrap_percentiles": {
+                "lower": null,
+                "median": null,
+                "upper": null
+              },
+              "bootstrap_censored_count": 2000,
+              "bootstrap_positive_from_start_count": 0
+            },
+            "at_times": {
+              "1": {
+                "mean": 0.0006703467106913264,
+                "se": 0.00020755095647497144
+              },
+              "4": {
+                "mean": 0.013855957467809063,
+                "se": 0.008518973883611305
+              },
+              "16": {
+                "mean": 0.07961612326602871,
+                "se": 0.024249497152113872
+              },
+              "64": {
+                "mean": 0.026871394790198403,
+                "se": 0.0762313824915467
+              },
+              "128": {
+                "mean": -1.3124219411881923,
+                "se": 0.20566675625932515
+              },
+              "256": {
+                "mean": -5.001760586138059,
+                "se": 0.5047546955663219
+              },
+              "512": {
+                "mean": -8.28806036441022,
+                "se": 0.9639746475818901
+              },
+              "1024": {
+                "mean": -7.892352529054239,
+                "se": 1.4246105066284784
+              }
+            }
+          }
+        },
+        "transformer_vs_uniform": {
+          "instantaneous": {
+            "first_positive": {
+              "time": 244,
+              "status": "upward_crossing_after_nonpositive_values",
+              "bootstrap_percentiles": {
+                "lower": 2,
+                "median": 185,
+                "upper": 228
+              },
+              "bootstrap_censored_count": 0,
+              "bootstrap_positive_from_start_count": 1
+            },
+            "final_positive_run": {
+              "time": 305,
+              "status": "upward_crossing_after_nonpositive_values",
+              "bootstrap_percentiles": {
+                "lower": 297,
+                "median": 347,
+                "upper": 459
+              },
+              "bootstrap_censored_count": 0,
+              "bootstrap_positive_from_start_count": 0
+            },
+            "at_times": {
+              "1": {
+                "mean": -0.005411034300580064,
+                "se": 0.0014815626502796505
+              },
+              "4": {
+                "mean": -0.00118097068565374,
+                "se": 0.0009760046383425138
+              },
+              "16": {
+                "mean": -0.0248183112936339,
+                "se": 0.005252910789298844
+              },
+              "64": {
+                "mean": -0.045041333499896995,
+                "se": 0.00788414543091073
+              },
+              "128": {
+                "mean": -0.030295079346743085,
+                "se": 0.009451015040049988
+              },
+              "256": {
+                "mean": 0.005136266866789785,
+                "se": 0.008506918884262122
+              },
+              "512": {
+                "mean": 0.03814742762887638,
+                "se": 0.006287425676450742
+              },
+              "1024": {
+                "mean": 0.10491989248968918,
+                "se": 0.0075327134033888205
+              }
+            }
+          },
+          "cumulative": {
+            "first_positive": {
+              "time": 544,
+              "status": "upward_crossing_after_nonpositive_values",
+              "bootstrap_percentiles": {
+                "lower": 499,
+                "median": 543,
+                "upper": 595
+              },
+              "bootstrap_censored_count": 0,
+              "bootstrap_positive_from_start_count": 1
+            },
+            "final_positive_run": {
+              "time": 544,
+              "status": "upward_crossing_after_nonpositive_values",
+              "bootstrap_percentiles": {
+                "lower": 499,
+                "median": 543,
+                "upper": 595
+              },
+              "bootstrap_censored_count": 0,
+              "bootstrap_positive_from_start_count": 0
+            },
+            "at_times": {
+              "1": {
+                "mean": -0.005411034300580064,
+                "se": 0.0014815626502796505
+              },
+              "4": {
+                "mean": -0.010620103987685505,
+                "se": 0.002751511284020124
+              },
+              "16": {
+                "mean": -0.1527904121617416,
+                "se": 0.014056623315990622
+              },
+              "64": {
+                "mean": -1.9785458979625488,
+                "se": 0.06517543590165593
+              },
+              "128": {
+                "mean": -4.87481945078833,
+                "se": 0.19863320905525345
+              },
+              "256": {
+                "mean": -7.557820620266157,
+                "se": 0.5684458586565433
+              },
+              "512": {
+                "mean": -1.4593452682629526,
+                "se": 1.0697590146346254
+              },
+              "1024": {
+                "mean": 34.242958786683744,
+                "se": 1.5118258413041032
+              }
+            }
+          }
+        },
+        "disabled_vs_uniform": {
+          "instantaneous": {
+            "first_positive": {
+              "time": 1,
+              "status": "positive_from_start",
+              "bootstrap_percentiles": {
+                "lower": 1,
+                "median": 1,
+                "upper": 1
+              },
+              "bootstrap_censored_count": 0,
+              "bootstrap_positive_from_start_count": 1999
+            },
+            "final_positive_run": {
+              "time": null,
+              "status": "not_positive_at_horizon",
+              "bootstrap_percentiles": {
+                "lower": 1021,
+                "median": null,
+                "upper": null
+              },
+              "bootstrap_censored_count": 1858,
+              "bootstrap_positive_from_start_count": 0
+            },
+            "at_times": {
+              "1": {
+                "mean": 0.004554627086084953,
+                "se": 0.00132527698365694
+              },
+              "4": {
+                "mean": 0.00036923084339020513,
+                "se": 0.0004818763580906527
+              },
+              "16": {
+                "mean": 0.0008171724239000923,
+                "se": 0.000412875607086978
+              },
+              "64": {
+                "mean": -4.7588224966153466e-05,
+                "se": 0.00039869586481774565
+              },
+              "128": {
+                "mean": -0.00010498245085512979,
+                "se": 0.0003064454129785907
+              },
+              "256": {
+                "mean": 7.303410486150329e-06,
+                "se": 0.00021185177414448052
+              },
+              "512": {
+                "mean": 9.095586929367152e-05,
+                "se": 0.00018858293513045041
+              },
+              "1024": {
+                "mean": -0.0004003347063434507,
+                "se": 0.00028850848586041417
+              }
+            }
+          },
+          "cumulative": {
+            "first_positive": {
+              "time": 1,
+              "status": "positive_from_start",
+              "bootstrap_percentiles": {
+                "lower": 1,
+                "median": 1,
+                "upper": 1
+              },
+              "bootstrap_censored_count": 0,
+              "bootstrap_positive_from_start_count": 1999
+            },
+            "final_positive_run": {
+              "time": 1,
+              "status": "positive_from_start",
+              "bootstrap_percentiles": {
+                "lower": 1,
+                "median": 1,
+                "upper": null
+              },
+              "bootstrap_censored_count": 193,
+              "bootstrap_positive_from_start_count": 1797
+            },
+            "at_times": {
+              "1": {
+                "mean": 0.004554627086084953,
+                "se": 0.00132527698365694
+              },
+              "4": {
+                "mean": 0.0068292294890086435,
+                "se": 0.0017695803783321507
+              },
+              "16": {
+                "mean": 0.012800347720833563,
+                "se": 0.0023598651821961007
+              },
+              "64": {
+                "mean": 0.0384775614312213,
+                "se": 0.004498166976681904
+              },
+              "128": {
+                "mean": 0.04833575961373892,
+                "se": 0.00671454542472634
+              },
+              "256": {
+                "mean": 0.06885214994450067,
+                "se": 0.00982516181408857
+              },
+              "512": {
+                "mean": 0.06384018910441142,
+                "se": 0.012588922378644153
+              },
+              "1024": {
+                "mean": 0.02911380519622413,
+                "se": 0.021987092262236708
+              }
+            }
+          }
+        }
+      }
+    },
+    {
+      "depth": 2,
+      "n_sequences": 127,
+      "ci95_multiplier": 1.9789706019906281,
+      "curves": {
+        "transformer": {
+          "instantaneous": {
+            "first_positive": {
+              "time": 3,
+              "status": "upward_crossing_after_nonpositive_values",
+              "bootstrap_percentiles": {
+                "lower": 2,
+                "median": 3,
+                "upper": 6
+              },
+              "bootstrap_censored_count": 0,
+              "bootstrap_positive_from_start_count": 3
+            },
+            "final_positive_run": {
+              "time": 65,
+              "status": "upward_crossing_after_nonpositive_values",
+              "bootstrap_percentiles": {
+                "lower": 65,
+                "median": 81,
+                "upper": 125
+              },
+              "bootstrap_censored_count": 0,
+              "bootstrap_positive_from_start_count": 0
+            },
+            "at_times": {
+              "1": {
+                "mean": -0.0007978582414900716,
+                "se": 0.0002822172687714026
+              },
+              "4": {
+                "mean": 0.0040777311120204435,
+                "se": 0.005009436135218267
+              },
+              "16": {
+                "mean": 0.0011358887865109012,
+                "se": 0.007844353930747814
+              },
+              "64": {
+                "mean": -0.009776080655067559,
+                "se": 0.011395899070978625
+              },
+              "128": {
+                "mean": 0.06872016350314655,
+                "se": 0.018277895997926463
+              },
+              "256": {
+                "mean": 0.16062065395942698,
+                "se": 0.019445655073080003
+              },
+              "512": {
+                "mean": 0.22586385416563867,
+                "se": 0.02194114974579305
+              },
+              "1024": {
+                "mean": 0.40230011912761193,
+                "se": 0.0229512652851982
+              }
+            }
+          },
+          "cumulative": {
+            "first_positive": {
+              "time": 3,
+              "status": "upward_crossing_after_nonpositive_values",
+              "bootstrap_percentiles": {
+                "lower": 2,
+                "median": 3,
+                "upper": 13
+              },
+              "bootstrap_censored_count": 0,
+              "bootstrap_positive_from_start_count": 3
+            },
+            "final_positive_run": {
+              "time": 3,
+              "status": "upward_crossing_after_nonpositive_values",
+              "bootstrap_percentiles": {
+                "lower": 2,
+                "median": 8,
+                "upper": 41
+              },
+              "bootstrap_censored_count": 0,
+              "bootstrap_positive_from_start_count": 0
+            },
+            "at_times": {
+              "1": {
+                "mean": -0.0007978582414900716,
+                "se": 0.0002822172687714026
+              },
+              "4": {
+                "mean": 0.007841452851192738,
+                "se": 0.008007632725058104
+              },
+              "16": {
+                "mean": 0.04668459006581872,
+                "se": 0.02760418005367993
+              },
+              "64": {
+                "mean": 0.35428286138825815,
+                "se": 0.09758434473876147
+              },
+              "128": {
+                "mean": 2.98123304085114,
+                "se": 0.23813613519496668
+              },
+              "256": {
+                "mean": 16.10003773667705,
+                "se": 0.5833521140760388
+              },
+              "512": {
+                "mean": 66.38149149360484,
+                "se": 1.281145610161256
+              },
+              "1024": {
+                "mean": 240.2797819763237,
+                "se": 2.869117135253014
+              }
+            }
+          }
+        },
+        "bayes": {
+          "instantaneous": {
+            "first_positive": {
+              "time": 3,
+              "status": "upward_crossing_after_nonpositive_values",
+              "bootstrap_percentiles": {
+                "lower": 3,
+                "median": 3,
+                "upper": 7
+              },
+              "bootstrap_censored_count": 0,
+              "bootstrap_positive_from_start_count": 0
+            },
+            "final_positive_run": {
+              "time": 50,
+              "status": "upward_crossing_after_nonpositive_values",
+              "bootstrap_percentiles": {
+                "lower": 39,
+                "median": 53,
+                "upper": 65
+              },
+              "bootstrap_censored_count": 0,
+              "bootstrap_positive_from_start_count": 0
+            },
+            "at_times": {
+              "1": {
+                "mean": 0.0,
+                "se": 0.0
+              },
+              "4": {
+                "mean": 0.0033178831369026942,
+                "se": 0.004723655125378075
+              },
+              "16": {
+                "mean": -0.0010746272897416535,
+                "se": 0.008433763923291333
+              },
+              "64": {
+                "mean": 0.009530961481087473,
+                "se": 0.00987688930456082
+              },
+              "128": {
+                "mean": 0.0817492158333696,
+                "se": 0.01364859151786893
+              },
+              "256": {
+                "mean": 0.19191006786656922,
+                "se": 0.017999483113849225
+              },
+              "512": {
+                "mean": 0.2623081910748412,
+                "se": 0.021278563756771177
+              },
+              "1024": {
+                "mean": 0.4569587546613291,
+                "se": 0.023571624661376668
+              }
+            }
+          },
+          "cumulative": {
+            "first_positive": {
+              "time": 3,
+              "status": "upward_crossing_after_nonpositive_values",
+              "bootstrap_percentiles": {
+                "lower": 3,
+                "median": 3,
+                "upper": 14
+              },
+              "bootstrap_censored_count": 0,
+              "bootstrap_positive_from_start_count": 0
+            },
+            "final_positive_run": {
+              "time": 3,
+              "status": "upward_crossing_after_nonpositive_values",
+              "bootstrap_percentiles": {
+                "lower": 3,
+                "median": 9,
+                "upper": 30
+              },
+              "bootstrap_censored_count": 0,
+              "bootstrap_positive_from_start_count": 0
+            },
+            "at_times": {
+              "1": {
+                "mean": 0.0,
+                "se": 0.0
+              },
+              "4": {
+                "mean": 0.007654251323641916,
+                "se": 0.007595598951224064
+              },
+              "16": {
+                "mean": 0.02932839894555495,
+                "se": 0.027605369262150993
+              },
+              "64": {
+                "mean": 0.7815365502592894,
+                "se": 0.1023560912382598
+              },
+              "128": {
+                "mean": 4.327966293542796,
+                "se": 0.19383358283824145
+              },
+              "256": {
+                "mean": 20.338662031075778,
+                "se": 0.4007222764207873
+              },
+              "512": {
+                "mean": 78.57400563367577,
+                "se": 0.9729192966071231
+              },
+              "1024": {
+                "mean": 271.58713871803843,
+                "se": 2.295866999291829
+              }
+            }
+          }
+        },
+        "control": {
+          "instantaneous": {
+            "first_positive": {
+              "time": 1,
+              "status": "positive_from_start",
+              "bootstrap_percentiles": {
+                "lower": 1,
+                "median": 1,
+                "upper": 1
+              },
+              "bootstrap_censored_count": 0,
+              "bootstrap_positive_from_start_count": 1996
+            },
+            "final_positive_run": {
+              "time": 261,
+              "status": "upward_crossing_after_nonpositive_values",
+              "bootstrap_percentiles": {
+                "lower": 261,
+                "median": 343,
+                "upper": 468
+              },
+              "bootstrap_censored_count": 0,
+              "bootstrap_positive_from_start_count": 0
+            },
+            "at_times": {
+              "1": {
+                "mean": 0.0008154226676927419,
+                "se": 0.00029677842009147456
+              },
+              "4": {
+                "mean": 0.01853563573661467,
+                "se": 0.00933368875175593
+              },
+              "16": {
+                "mean": 0.012589642450639727,
+                "se": 0.006416787890013148
+              },
+              "64": {
+                "mean": -0.004956647145195177,
+                "se": 0.0038910472257333243
+              },
+              "128": {
+                "mean": -0.010122188998695573,
+                "se": 0.006352901919405575
+              },
+              "256": {
+                "mean": 0.023611424648384168,
+                "se": 0.008331975364796384
+              },
+              "512": {
+                "mean": 0.02773685207626875,
+                "se": 0.009366304544197047
+              },
+              "1024": {
+                "mean": 0.048685012913095904,
+                "se": 0.006318364085262525
+              }
+            }
+          },
+          "cumulative": {
+            "first_positive": {
+              "time": 1,
+              "status": "positive_from_start",
+              "bootstrap_percentiles": {
+                "lower": 1,
+                "median": 1,
+                "upper": 1
+              },
+              "bootstrap_censored_count": 0,
+              "bootstrap_positive_from_start_count": 1996
+            },
+            "final_positive_run": {
+              "time": 271,
+              "status": "upward_crossing_after_nonpositive_values",
+              "bootstrap_percentiles": {
+                "lower": 207,
+                "median": 268,
+                "upper": 332
+              },
+              "bootstrap_censored_count": 0,
+              "bootstrap_positive_from_start_count": 3
+            },
+            "at_times": {
+              "1": {
+                "mean": 0.0008154226676927419,
+                "se": 0.00029677842009147456
+              },
+              "4": {
+                "mean": 0.02633722167291111,
+                "se": 0.009751351069062216
+              },
+              "16": {
+                "mean": 0.12478395182911524,
+                "se": 0.021229634507560765
+              },
+              "64": {
+                "mean": 0.15840080722661232,
+                "se": 0.057244682726909024
+              },
+              "128": {
+                "mean": -0.31655158248300264,
+                "se": 0.13388996436254058
+              },
+              "256": {
+                "mean": -0.11603827922765231,
+                "se": 0.3838979435108532
+              },
+              "512": {
+                "mean": 6.697063150659476,
+                "se": 0.9502323979387529
+              },
+              "1024": {
+                "mean": 27.46620648217679,
+                "se": 2.0753968127116718
+              }
+            }
+          }
+        },
+        "transformer_vs_uniform": {
+          "instantaneous": {
+            "first_positive": {
+              "time": 2,
+              "status": "upward_crossing_after_nonpositive_values",
+              "bootstrap_percentiles": {
+                "lower": 2,
+                "median": 2,
+                "upper": 3
+              },
+              "bootstrap_censored_count": 0,
+              "bootstrap_positive_from_start_count": 34
+            },
+            "final_positive_run": {
+              "time": 65,
+              "status": "upward_crossing_after_nonpositive_values",
+              "bootstrap_percentiles": {
+                "lower": 65,
+                "median": 81,
+                "upper": 125
+              },
+              "bootstrap_censored_count": 0,
+              "bootstrap_positive_from_start_count": 0
+            },
+            "at_times": {
+              "1": {
+                "mean": -0.0037626350767197177,
+                "se": 0.001802218954554168
+              },
+              "4": {
+                "mean": 0.002640272805119163,
+                "se": 0.005071384100800837
+              },
+              "16": {
+                "mean": 0.0008268960439926843,
+                "se": 0.007914682367851365
+              },
+              "64": {
+                "mean": -0.009883750187513559,
+                "se": 0.011313363098739142
+              },
+              "128": {
+                "mean": 0.06840356173029218,
+                "se": 0.01825884638350533
+              },
+              "256": {
+                "mean": 0.16055474790268137,
+                "se": 0.019431856335343025
+              },
+              "512": {
+                "mean": 0.2258776408998754,
+                "se": 0.02199962716931659
+              },
+              "1024": {
+                "mean": 0.4036977925503392,
+                "se": 0.02305865340977853
+              }
+            }
+          },
+          "cumulative": {
+            "first_positive": {
+              "time": 3,
+              "status": "upward_crossing_after_nonpositive_values",
+              "bootstrap_percentiles": {
+                "lower": 2,
+                "median": 3,
+                "upper": 15
+              },
+              "bootstrap_censored_count": 0,
+              "bootstrap_positive_from_start_count": 34
+            },
+            "final_positive_run": {
+              "time": 3,
+              "status": "upward_crossing_after_nonpositive_values",
+              "bootstrap_percentiles": {
+                "lower": 2,
+                "median": 9,
+                "upper": 41
+              },
+              "bootstrap_censored_count": 0,
+              "bootstrap_positive_from_start_count": 18
+            },
+            "at_times": {
+              "1": {
+                "mean": -0.0037626350767197177,
+                "se": 0.001802218954554168
+              },
+              "4": {
+                "mean": 0.004372809633864714,
+                "se": 0.008559252989273104
+              },
+              "16": {
+                "mean": 0.04615776167368981,
+                "se": 0.02793313796314001
+              },
+              "64": {
+                "mean": 0.35458974338159766,
+                "se": 0.09693604704459624
+              },
+              "128": {
+                "mean": 2.99263853209316,
+                "se": 0.23619426533412843
+              },
+              "256": {
+                "mean": 16.127000937449367,
+                "se": 0.5821648706679757
+              },
+              "512": {
+                "mean": 66.43510494575858,
+                "se": 1.2754244670393917
+              },
+              "1024": {
+                "mean": 240.4962682394894,
+                "se": 2.8632915790864617
+              }
+            }
+          }
+        },
+        "disabled_vs_uniform": {
+          "instantaneous": {
+            "first_positive": {
+              "time": 1,
+              "status": "positive_from_start",
+              "bootstrap_percentiles": {
+                "lower": 1,
+                "median": 1,
+                "upper": 2
+              },
+              "bootstrap_censored_count": 0,
+              "bootstrap_positive_from_start_count": 1940
+            },
+            "final_positive_run": {
+              "time": null,
+              "status": "not_positive_at_horizon",
+              "bootstrap_percentiles": {
+                "lower": null,
+                "median": null,
+                "upper": null
+              },
+              "bootstrap_censored_count": 1962,
+              "bootstrap_positive_from_start_count": 0
+            },
+            "at_times": {
+              "1": {
+                "mean": 0.0029647768352296464,
+                "se": 0.001629662733486939
+              },
+              "4": {
+                "mean": 0.00143745830690128,
+                "se": 0.0007232135000381924
+              },
+              "16": {
+                "mean": 0.0003089927425182167,
+                "se": 0.0005488544040837385
+              },
+              "64": {
+                "mean": 0.00010766953244599989,
+                "se": 0.0004920654409371027
+              },
+              "128": {
+                "mean": 0.00031660177285440505,
+                "se": 0.0005930171454537966
+              },
+              "256": {
+                "mean": 6.590605674565638e-05,
+                "se": 0.00037368101603453704
+              },
+              "512": {
+                "mean": -1.3786734236552456e-05,
+                "se": 0.00035750956056863903
+              },
+              "1024": {
+                "mean": -0.0013976734227273632,
+                "se": 0.000661176757668151
+              }
+            }
+          },
+          "cumulative": {
+            "first_positive": {
+              "time": 1,
+              "status": "positive_from_start",
+              "bootstrap_percentiles": {
+                "lower": 1,
+                "median": 1,
+                "upper": 4
+              },
+              "bootstrap_censored_count": 15,
+              "bootstrap_positive_from_start_count": 1940
+            },
+            "final_positive_run": {
+              "time": null,
+              "status": "not_positive_at_horizon",
+              "bootstrap_percentiles": {
+                "lower": null,
+                "median": null,
+                "upper": null
+              },
+              "bootstrap_censored_count": 2000,
+              "bootstrap_positive_from_start_count": 0
+            },
+            "at_times": {
+              "1": {
+                "mean": 0.0029647768352296464,
+                "se": 0.001629662733486939
+              },
+              "4": {
+                "mean": 0.0034686432173280236,
+                "se": 0.0024105519129912056
+              },
+              "16": {
+                "mean": 0.0005268283921289056,
+                "se": 0.0036479912772700756
+              },
+              "64": {
+                "mean": -0.0003068819933395352,
+                "se": 0.007689856511245493
+              },
+              "128": {
+                "mean": -0.01140549124201947,
+                "se": 0.010760989603205453
+              },
+              "256": {
+                "mean": -0.026963200772312124,
+                "se": 0.017572740289949332
+              },
+              "512": {
+                "mean": -0.05361345215372843,
+                "se": 0.024803732811109713
+              },
+              "1024": {
+                "mean": -0.216486263165688,
+                "se": 0.044079799377787984
+              }
+            }
+          }
+        }
+      }
+    },
+    {
+      "depth": 3,
+      "n_sequences": 111,
+      "ci95_multiplier": 1.981765282132372,
+      "curves": {
+        "transformer": {
+          "instantaneous": {
+            "first_positive": {
+              "time": 2,
+              "status": "upward_crossing_after_nonpositive_values",
+              "bootstrap_percentiles": {
+                "lower": 1,
+                "median": 2,
+                "upper": 4
+              },
+              "bootstrap_censored_count": 0,
+              "bootstrap_positive_from_start_count": 409
+            },
+            "final_positive_run": {
+              "time": 2,
+              "status": "upward_crossing_after_nonpositive_values",
+              "bootstrap_percentiles": {
+                "lower": 2,
+                "median": 15,
+                "upper": 48
+              },
+              "bootstrap_censored_count": 0,
+              "bootstrap_positive_from_start_count": 28
+            },
+            "at_times": {
+              "1": {
+                "mean": -0.00047920501763804176,
+                "se": 0.0005794431903618586
+              },
+              "4": {
+                "mean": 0.014476899254504298,
+                "se": 0.010407606391349111
+              },
+              "16": {
+                "mean": 0.028167229484876547,
+                "se": 0.014557568521375292
+              },
+              "64": {
+                "mean": 0.14098225313848256,
+                "se": 0.03187141227498597
+              },
+              "128": {
+                "mean": 0.24510960753182595,
+                "se": 0.0429918507239652
+              },
+              "256": {
+                "mean": 0.3690768778902513,
+                "se": 0.03664357985899515
+              },
+              "512": {
+                "mean": 0.6143539553830788,
+                "se": 0.040881808905634406
+              },
+              "1024": {
+                "mean": 0.8580807526695385,
+                "se": 0.047145792826133605
+              }
+            }
+          },
+          "cumulative": {
+            "first_positive": {
+              "time": 2,
+              "status": "upward_crossing_after_nonpositive_values",
+              "bootstrap_percentiles": {
+                "lower": 1,
+                "median": 2,
+                "upper": 5
+              },
+              "bootstrap_censored_count": 0,
+              "bootstrap_positive_from_start_count": 409
+            },
+            "final_positive_run": {
+              "time": 2,
+              "status": "upward_crossing_after_nonpositive_values",
+              "bootstrap_percentiles": {
+                "lower": 1,
+                "median": 2,
+                "upper": 5
+              },
+              "bootstrap_censored_count": 0,
+              "bootstrap_positive_from_start_count": 329
+            },
+            "at_times": {
+              "1": {
+                "mean": -0.00047920501763804176,
+                "se": 0.0005794431903618586
+              },
+              "4": {
+                "mean": 0.019366475337814118,
+                "se": 0.012760849646907484
+              },
+              "16": {
+                "mean": 0.2251517303540324,
+                "se": 0.04363931636141379
+              },
+              "64": {
+                "mean": 4.003157554606811,
+                "se": 0.2022485399082872
+              },
+              "128": {
+                "mean": 14.382431186780428,
+                "se": 0.39615633726762955
+              },
+              "256": {
+                "mean": 52.738446273012244,
+                "se": 1.0182111676577628
+              },
+              "512": {
+                "mean": 180.3993961099498,
+                "se": 2.456144923116499
+              },
+              "1024": {
+                "mean": 562.0466501989026,
+                "se": 5.2921909047263
+              }
+            }
+          }
+        },
+        "bayes": {
+          "instantaneous": {
+            "first_positive": {
+              "time": 2,
+              "status": "upward_crossing_after_nonpositive_values",
+              "bootstrap_percentiles": {
+                "lower": 2,
+                "median": 2,
+                "upper": 4
+              },
+              "bootstrap_censored_count": 0,
+              "bootstrap_positive_from_start_count": 0
+            },
+            "final_positive_run": {
+              "time": 4,
+              "status": "upward_crossing_after_nonpositive_values",
+              "bootstrap_percentiles": {
+                "lower": 4,
+                "median": 25,
+                "upper": 48
+              },
+              "bootstrap_censored_count": 0,
+              "bootstrap_positive_from_start_count": 0
+            },
+            "at_times": {
+              "1": {
+                "mean": 0.0,
+                "se": 0.0
+              },
+              "4": {
+                "mean": 0.015943276154396144,
+                "se": 0.012295355523007638
+              },
+              "16": {
+                "mean": 0.024578911349545263,
+                "se": 0.014796282688145063
+              },
+              "64": {
+                "mean": 0.13573229211613091,
+                "se": 0.03184296261600201
+              },
+              "128": {
+                "mean": 0.251799751014168,
+                "se": 0.043592833235117485
+              },
+              "256": {
+                "mean": 0.41050795107672616,
+                "se": 0.040568596150042394
+              },
+              "512": {
+                "mean": 0.654070547730649,
+                "se": 0.04113263564631742
+              },
+              "1024": {
+                "mean": 0.917125169162392,
+                "se": 0.04873596043255031
+              }
+            }
+          },
+          "cumulative": {
+            "first_positive": {
+              "time": 2,
+              "status": "upward_crossing_after_nonpositive_values",
+              "bootstrap_percentiles": {
+                "lower": 2,
+                "median": 2,
+                "upper": 5
+              },
+              "bootstrap_censored_count": 0,
+              "bootstrap_positive_from_start_count": 0
+            },
+            "final_positive_run": {
+              "time": 2,
+              "status": "upward_crossing_after_nonpositive_values",
+              "bootstrap_percentiles": {
+                "lower": 2,
+                "median": 2,
+                "upper": 6
+              },
+              "bootstrap_censored_count": 0,
+              "bootstrap_positive_from_start_count": 0
+            },
+            "at_times": {
+              "1": {
+                "mean": 0.0,
+                "se": 0.0
+              },
+              "4": {
+                "mean": 0.02211889336318498,
+                "se": 0.014450703143502523
+              },
+              "16": {
+                "mean": 0.20371414115807868,
+                "se": 0.04476018715469627
+              },
+              "64": {
+                "mean": 3.632213364305734,
+                "se": 0.20658119532836267
+              },
+              "128": {
+                "mean": 13.993583167112954,
+                "se": 0.3995378723738584
+              },
+              "256": {
+                "mean": 55.874159639943365,
+                "se": 0.9680816269673271
+              },
+              "512": {
+                "mean": 194.01322840977872,
+                "se": 2.191969468756066
+              },
+              "1024": {
+                "mean": 593.4853951115654,
+                "se": 4.927575184059948
+              }
+            }
+          }
+        },
+        "control": {
+          "instantaneous": {
+            "first_positive": {
+              "time": 1,
+              "status": "positive_from_start",
+              "bootstrap_percentiles": {
+                "lower": 1,
+                "median": 1,
+                "upper": 3
+              },
+              "bootstrap_censored_count": 0,
+              "bootstrap_positive_from_start_count": 1853
+            },
+            "final_positive_run": {
+              "time": 138,
+              "status": "upward_crossing_after_nonpositive_values",
+              "bootstrap_percentiles": {
+                "lower": 110,
+                "median": 139,
+                "upper": 193
+              },
+              "bootstrap_censored_count": 0,
+              "bootstrap_positive_from_start_count": 0
+            },
+            "at_times": {
+              "1": {
+                "mean": 0.0006143299752366828,
+                "se": 0.0004095302409755851
+              },
+              "4": {
+                "mean": 0.0010451515698073704,
+                "se": 0.004808842725543883
+              },
+              "16": {
+                "mean": 0.005932916660047707,
+                "se": 0.004080760380741988
+              },
+              "64": {
+                "mean": -0.003453204013613375,
+                "se": 0.0039913676531526015
+              },
+              "128": {
+                "mean": 0.018437958866383185,
+                "se": 0.010096329215432888
+              },
+              "256": {
+                "mean": 0.07694714086262135,
+                "se": 0.013220796774715372
+              },
+              "512": {
+                "mean": 0.09676042635743491,
+                "se": 0.013314446879841124
+              },
+              "1024": {
+                "mean": 0.04705684509946237,
+                "se": 0.00947612924428365
+              }
+            }
+          },
+          "cumulative": {
+            "first_positive": {
+              "time": 1,
+              "status": "positive_from_start",
+              "bootstrap_percentiles": {
+                "lower": 1,
+                "median": 1,
+                "upper": 3
+              },
+              "bootstrap_censored_count": 0,
+              "bootstrap_positive_from_start_count": 1853
+            },
+            "final_positive_run": {
+              "time": 3,
+              "status": "upward_crossing_after_nonpositive_values",
+              "bootstrap_percentiles": {
+                "lower": 1,
+                "median": 3,
+                "upper": 6
+              },
+              "bootstrap_censored_count": 0,
+              "bootstrap_positive_from_start_count": 938
+            },
+            "at_times": {
+              "1": {
+                "mean": 0.0006143299752366828,
+                "se": 0.0004095302409755851
+              },
+              "4": {
+                "mean": 0.009230102304523416,
+                "se": 0.006965920155789427
+              },
+              "16": {
+                "mean": 0.08778121527092438,
+                "se": 0.018795449879876542
+              },
+              "64": {
+                "mean": 0.3083618883533195,
+                "se": 0.04469825634203254
+              },
+              "128": {
+                "mean": 0.9503432801483399,
+                "se": 0.11193455962806143
+              },
+              "256": {
+                "mean": 6.405746451454586,
+                "se": 0.4658454747156052
+              },
+              "512": {
+                "mean": 27.957396424026694,
+                "se": 1.5182120608332546
+              },
+              "1024": {
+                "mean": 62.414378549718116,
+                "se": 3.7302470351923707
+              }
+            }
+          }
+        },
+        "transformer_vs_uniform": {
+          "instantaneous": {
+            "first_positive": {
+              "time": 2,
+              "status": "upward_crossing_after_nonpositive_values",
+              "bootstrap_percentiles": {
+                "lower": 1,
+                "median": 1,
+                "upper": 4
+              },
+              "bootstrap_censored_count": 0,
+              "bootstrap_positive_from_start_count": 1008
+            },
+            "final_positive_run": {
+              "time": 4,
+              "status": "upward_crossing_after_nonpositive_values",
+              "bootstrap_percentiles": {
+                "lower": 3,
+                "median": 15,
+                "upper": 48
+              },
+              "bootstrap_censored_count": 0,
+              "bootstrap_positive_from_start_count": 15
+            },
+            "at_times": {
+              "1": {
+                "mean": -8.948476362773166e-05,
+                "se": 0.002997604124048659
+              },
+              "4": {
+                "mean": 0.013201486734401411,
+                "se": 0.010336289038202258
+              },
+              "16": {
+                "mean": 0.02770577106025596,
+                "se": 0.014530817484769299
+              },
+              "64": {
+                "mean": 0.14025432777284394,
+                "se": 0.0319312822739016
+              },
+              "128": {
+                "mean": 0.24512505817590535,
+                "se": 0.04310273307875598
+              },
+              "256": {
+                "mean": 0.36967118520617126,
+                "se": 0.03670713049814464
+              },
+              "512": {
+                "mean": 0.6148182973008205,
+                "se": 0.04088538831611415
+              },
+              "1024": {
+                "mean": 0.8644908499703788,
+                "se": 0.04774655883269919
+              }
+            }
+          },
+          "cumulative": {
+            "first_positive": {
+              "time": 2,
+              "status": "upward_crossing_after_nonpositive_values",
+              "bootstrap_percentiles": {
+                "lower": 1,
+                "median": 1,
+                "upper": 6
+              },
+              "bootstrap_censored_count": 0,
+              "bootstrap_positive_from_start_count": 1008
+            },
+            "final_positive_run": {
+              "time": 2,
+              "status": "upward_crossing_after_nonpositive_values",
+              "bootstrap_percentiles": {
+                "lower": 1,
+                "median": 2,
+                "upper": 7
+              },
+              "bootstrap_censored_count": 0,
+              "bootstrap_positive_from_start_count": 747
+            },
+            "at_times": {
+              "1": {
+                "mean": -8.948476362773166e-05,
+                "se": 0.002997604124048659
+              },
+              "4": {
+                "mean": 0.015941811799082963,
+                "se": 0.01336093991653108
+              },
+              "16": {
+                "mean": 0.21723076453542908,
+                "se": 0.044553301334058014
+              },
+              "64": {
+                "mean": 4.0092620208172045,
+                "se": 0.20544951189168725
+              },
+              "128": {
+                "mean": 14.419932232470831,
+                "se": 0.3993035651033479
+              },
+              "256": {
+                "mean": 52.845545677245305,
+                "se": 1.0229398302865338
+              },
+              "512": {
+                "mean": 180.60403339980346,
+                "se": 2.464253116638553
+              },
+              "1024": {
+                "mean": 563.119936408659,
+                "se": 5.322738369624811
+              }
+            }
+          }
+        },
+        "disabled_vs_uniform": {
+          "instantaneous": {
+            "first_positive": {
+              "time": 3,
+              "status": "upward_crossing_after_nonpositive_values",
+              "bootstrap_percentiles": {
+                "lower": 1,
+                "median": 2,
+                "upper": 3
+              },
+              "bootstrap_censored_count": 0,
+              "bootstrap_positive_from_start_count": 854
+            },
+            "final_positive_run": {
+              "time": null,
+              "status": "not_positive_at_horizon",
+              "bootstrap_percentiles": {
+                "lower": null,
+                "median": null,
+                "upper": null
+              },
+              "bootstrap_censored_count": 1989,
+              "bootstrap_positive_from_start_count": 0
+            },
+            "at_times": {
+              "1": {
+                "mean": -0.0003897202540103101,
+                "se": 0.0026243452885703037
+              },
+              "4": {
+                "mean": 0.001275412520102887,
+                "se": 0.001012208369289017
+              },
+              "16": {
+                "mean": 0.0004614584246205871,
+                "se": 0.0009698938708928258
+              },
+              "64": {
+                "mean": 0.0007279253656385041,
+                "se": 0.00100120954821266
+              },
+              "128": {
+                "mean": -1.5450644079610402e-05,
+                "se": 0.0009669611080168802
+              },
+              "256": {
+                "mean": -0.0005943073159201105,
+                "se": 0.000614992662377831
+              },
+              "512": {
+                "mean": -0.00046434191774133915,
+                "se": 0.000585050274620351
+              },
+              "1024": {
+                "mean": -0.006410097300839694,
+                "se": 0.002629355179692622
+              }
+            }
+          },
+          "cumulative": {
+            "first_positive": {
+              "time": 3,
+              "status": "upward_crossing_after_nonpositive_values",
+              "bootstrap_percentiles": {
+                "lower": 1,
+                "median": 2,
+                "upper": 10
+              },
+              "bootstrap_censored_count": 15,
+              "bootstrap_positive_from_start_count": 854
+            },
+            "final_positive_run": {
+              "time": null,
+              "status": "not_positive_at_horizon",
+              "bootstrap_percentiles": {
+                "lower": null,
+                "median": null,
+                "upper": null
+              },
+              "bootstrap_censored_count": 2000,
+              "bootstrap_positive_from_start_count": 0
+            },
+            "at_times": {
+              "1": {
+                "mean": -0.0003897202540103101,
+                "se": 0.0026243452885703037
+              },
+              "4": {
+                "mean": 0.0034246635387311553,
+                "se": 0.0037053683182760575
+              },
+              "16": {
+                "mean": 0.007920965818603347,
+                "se": 0.0052181696110671074
+              },
+              "64": {
+                "mean": -0.006104466210393823,
+                "se": 0.01288118414057976
+              },
+              "128": {
+                "mean": -0.03750104569039895,
+                "se": 0.017338619738489675
+              },
+              "256": {
+                "mean": -0.10709940423304819,
+                "se": 0.026337451932470737
+              },
+              "512": {
+                "mean": -0.20463728985368845,
+                "se": 0.03840043711655673
+              },
+              "1024": {
+                "mean": -1.0732862097564229,
+                "se": 0.10798548191366263
+              }
+            }
+          }
+        }
+      }
+    },
+    {
+      "depth": 4,
+      "n_sequences": 115,
+      "ci95_multiplier": 1.980992297975857,
+      "curves": {
+        "transformer": {
+          "instantaneous": {
+            "first_positive": {
+              "time": 2,
+              "status": "upward_crossing_after_nonpositive_values",
+              "bootstrap_percentiles": {
+                "lower": 1,
+                "median": 2,
+                "upper": 3
+              },
+              "bootstrap_censored_count": 0,
+              "bootstrap_positive_from_start_count": 375
+            },
+            "final_positive_run": {
+              "time": 2,
+              "status": "upward_crossing_after_nonpositive_values",
+              "bootstrap_percentiles": {
+                "lower": 1,
+                "median": 4,
+                "upper": 20
+              },
+              "bootstrap_censored_count": 0,
+              "bootstrap_positive_from_start_count": 194
+            },
+            "at_times": {
+              "1": {
+                "mean": -0.00048130224355307036,
+                "se": 0.0005234103695340812
+              },
+              "4": {
+                "mean": 0.011878683961400011,
+                "se": 0.007528051982809284
+              },
+              "16": {
+                "mean": 0.08647060422117916,
+                "se": 0.02778753795160422
+              },
+              "64": {
+                "mean": 0.1944400436727228,
+                "se": 0.038885722108400037
+              },
+              "128": {
+                "mean": 0.4258067858001094,
+                "se": 0.05740642647048373
+              },
+              "256": {
+                "mean": 0.7305683579117227,
+                "se": 0.06213810761721673
+              },
+              "512": {
+                "mean": 1.157405147400332,
+                "se": 0.0653515280931364
+              },
+              "1024": {
+                "mean": 1.392620567175995,
+                "se": 0.059051625857287876
+              }
+            }
+          },
+          "cumulative": {
+            "first_positive": {
+              "time": 2,
+              "status": "upward_crossing_after_nonpositive_values",
+              "bootstrap_percentiles": {
+                "lower": 1,
+                "median": 2,
+                "upper": 4
+              },
+              "bootstrap_censored_count": 0,
+              "bootstrap_positive_from_start_count": 375
+            },
+            "final_positive_run": {
+              "time": 2,
+              "status": "upward_crossing_after_nonpositive_values",
+              "bootstrap_percentiles": {
+                "lower": 1,
+                "median": 2,
+                "upper": 4
+              },
+              "bootstrap_censored_count": 0,
+              "bootstrap_positive_from_start_count": 347
+            },
+            "at_times": {
+              "1": {
+                "mean": -0.00048130224355307036,
+                "se": 0.0005234103695340812
+              },
+              "4": {
+                "mean": 0.02198594199676186,
+                "se": 0.0135156365874164
+              },
+              "16": {
+                "mean": 0.6628439501385752,
+                "se": 0.11765589462592885
+              },
+              "64": {
+                "mean": 8.125630881255077,
+                "se": 0.3620120878301662
+              },
+              "128": {
+                "mean": 28.692857882656014,
+                "se": 0.7779139823008767
+              },
+              "256": {
+                "mean": 99.75230305075257,
+                "se": 1.8067438639429507
+              },
+              "512": {
+                "mean": 320.13266246386667,
+                "se": 3.8894500886662664
+              },
+              "1024": {
+                "mean": 933.5422037220204,
+                "se": 7.718685874533023
+              }
+            }
+          }
+        },
+        "bayes": {
+          "instantaneous": {
+            "first_positive": {
+              "time": 2,
+              "status": "upward_crossing_after_nonpositive_values",
+              "bootstrap_percentiles": {
+                "lower": 2,
+                "median": 2,
+                "upper": 4
+              },
+              "bootstrap_censored_count": 0,
+              "bootstrap_positive_from_start_count": 0
+            },
+            "final_positive_run": {
+              "time": 2,
+              "status": "upward_crossing_after_nonpositive_values",
+              "bootstrap_percentiles": {
+                "lower": 2,
+                "median": 4,
+                "upper": 23
+              },
+              "bootstrap_censored_count": 0,
+              "bootstrap_positive_from_start_count": 0
+            },
+            "at_times": {
+              "1": {
+                "mean": 0.0,
+                "se": 0.0
+              },
+              "4": {
+                "mean": 0.012952933316312532,
+                "se": 0.007327019190871023
+              },
+              "16": {
+                "mean": 0.0916203669142531,
+                "se": 0.030705411713259013
+              },
+              "64": {
+                "mean": 0.1918683208376931,
+                "se": 0.04355021679669624
+              },
+              "128": {
+                "mean": 0.4259876376765672,
+                "se": 0.05935372303901374
+              },
+              "256": {
+                "mean": 0.7723237653921761,
+                "se": 0.06256324983376656
+              },
+              "512": {
+                "mean": 1.175553956041009,
+                "se": 0.06655673972050183
+              },
+              "1024": {
+                "mean": 1.481882194700877,
+                "se": 0.058861885150090686
+              }
+            }
+          },
+          "cumulative": {
+            "first_positive": {
+              "time": 2,
+              "status": "upward_crossing_after_nonpositive_values",
+              "bootstrap_percentiles": {
+                "lower": 2,
+                "median": 2,
+                "upper": 4
+              },
+              "bootstrap_censored_count": 0,
+              "bootstrap_positive_from_start_count": 0
+            },
+            "final_positive_run": {
+              "time": 2,
+              "status": "upward_crossing_after_nonpositive_values",
+              "bootstrap_percentiles": {
+                "lower": 2,
+                "median": 2,
+                "upper": 4
+              },
+              "bootstrap_censored_count": 0,
+              "bootstrap_positive_from_start_count": 0
+            },
+            "at_times": {
+              "1": {
+                "mean": 0.0,
+                "se": 0.0
+              },
+              "4": {
+                "mean": 0.02475109343214039,
+                "se": 0.013680039523741772
+              },
+              "16": {
+                "mean": 0.6729429428619566,
+                "se": 0.12337589229089203
+              },
+              "64": {
+                "mean": 7.829690663551042,
+                "se": 0.36841635715113985
+              },
+              "128": {
+                "mean": 28.764235923680133,
+                "se": 0.7869846773989259
+              },
+              "256": {
+                "mean": 105.03491327742363,
+                "se": 1.7647247254309522
+              },
+              "512": {
+                "mean": 336.4566578377359,
+                "se": 3.7229481463213405
+              },
+              "1024": {
+                "mean": 968.6152447217955,
+                "se": 7.762111314690891
+              }
+            }
+          }
+        },
+        "control": {
+          "instantaneous": {
+            "first_positive": {
+              "time": 1,
+              "status": "positive_from_start",
+              "bootstrap_percentiles": {
+                "lower": 1,
+                "median": 1,
+                "upper": 1
+              },
+              "bootstrap_censored_count": 0,
+              "bootstrap_positive_from_start_count": 1959
+            },
+            "final_positive_run": {
+              "time": 32,
+              "status": "upward_crossing_after_nonpositive_values",
+              "bootstrap_percentiles": {
+                "lower": 49,
+                "median": 88,
+                "upper": 142
+              },
+              "bootstrap_censored_count": 0,
+              "bootstrap_positive_from_start_count": 0
+            },
+            "at_times": {
+              "1": {
+                "mean": 0.0009691239026519737,
+                "se": 0.0005022337262679511
+              },
+              "4": {
+                "mean": 0.013256073195762953,
+                "se": 0.006166298791280668
+              },
+              "16": {
+                "mean": 0.001046687214736647,
+                "se": 0.00784080167945282
+              },
+              "64": {
+                "mean": 0.0024788026259672537,
+                "se": 0.005166949495011
+              },
+              "128": {
+                "mean": 0.054218035349365624,
+                "se": 0.01404108093804429
+              },
+              "256": {
+                "mean": 0.11262912235938333,
+                "se": 0.019773519914918984
+              },
+              "512": {
+                "mean": 0.09864340157813987,
+                "se": 0.016221661711980008
+              },
+              "1024": {
+                "mean": 0.041796269486283955,
+                "se": 0.006896812462334868
+              }
+            }
+          },
+          "cumulative": {
+            "first_positive": {
+              "time": 1,
+              "status": "positive_from_start",
+              "bootstrap_percentiles": {
+                "lower": 1,
+                "median": 1,
+                "upper": 1
+              },
+              "bootstrap_censored_count": 0,
+              "bootstrap_positive_from_start_count": 1959
+            },
+            "final_positive_run": {
+              "time": 1,
+              "status": "positive_from_start",
+              "bootstrap_percentiles": {
+                "lower": 1,
+                "median": 1,
+                "upper": 4
+              },
+              "bootstrap_censored_count": 0,
+              "bootstrap_positive_from_start_count": 1602
+            },
+            "at_times": {
+              "1": {
+                "mean": 0.0009691239026519737,
+                "se": 0.0005022337262679511
+              },
+              "4": {
+                "mean": 0.02424454035236444,
+                "se": 0.009257882296370786
+              },
+              "16": {
+                "mean": 0.07175081179265756,
+                "se": 0.02263994494822904
+              },
+              "64": {
+                "mean": 0.5082996968144552,
+                "se": 0.06817741176608925
+              },
+              "128": {
+                "mean": 2.513479204411113,
+                "se": 0.20556650839045776
+              },
+              "256": {
+                "mean": 12.83761824178493,
+                "se": 0.8654464661169222
+              },
+              "512": {
+                "mean": 39.56322858124023,
+                "se": 2.5203174360953766
+              },
+              "1024": {
+                "mean": 69.29075336561664,
+                "se": 4.693114961397605
+              }
+            }
+          }
+        },
+        "transformer_vs_uniform": {
+          "instantaneous": {
+            "first_positive": {
+              "time": 2,
+              "status": "upward_crossing_after_nonpositive_values",
+              "bootstrap_percentiles": {
+                "lower": 1,
+                "median": 2,
+                "upper": 4
+              },
+              "bootstrap_censored_count": 0,
+              "bootstrap_positive_from_start_count": 731
+            },
+            "final_positive_run": {
+              "time": 2,
+              "status": "upward_crossing_after_nonpositive_values",
+              "bootstrap_percentiles": {
+                "lower": 1,
+                "median": 4,
+                "upper": 20
+              },
+              "bootstrap_censored_count": 0,
+              "bootstrap_positive_from_start_count": 247
+            },
+            "at_times": {
+              "1": {
+                "mean": -0.001265115219853803,
+                "se": 0.003731467876482199
+              },
+              "4": {
+                "mean": 0.011870428284914934,
+                "se": 0.007540989195549931
+              },
+              "16": {
+                "mean": 0.08511613003988355,
+                "se": 0.028066490437741294
+              },
+              "64": {
+                "mean": 0.19552666940855545,
+                "se": 0.03917098412960315
+              },
+              "128": {
+                "mean": 0.4261616225804144,
+                "se": 0.05716930788474938
+              },
+              "256": {
+                "mean": 0.731821549760578,
+                "se": 0.06216188144613279
+              },
+              "512": {
+                "mean": 1.1592115038989221,
+                "se": 0.06561169340972624
+              },
+              "1024": {
+                "mean": 1.4138837800440032,
+                "se": 0.06003538425970737
+              }
+            }
+          },
+          "cumulative": {
+            "first_positive": {
+              "time": 2,
+              "status": "upward_crossing_after_nonpositive_values",
+              "bootstrap_percentiles": {
+                "lower": 1,
+                "median": 2,
+                "upper": 5
+              },
+              "bootstrap_censored_count": 0,
+              "bootstrap_positive_from_start_count": 731
+            },
+            "final_positive_run": {
+              "time": 2,
+              "status": "upward_crossing_after_nonpositive_values",
+              "bootstrap_percentiles": {
+                "lower": 1,
+                "median": 2,
+                "upper": 5
+              },
+              "bootstrap_censored_count": 0,
+              "bootstrap_positive_from_start_count": 591
+            },
+            "at_times": {
+              "1": {
+                "mean": -0.001265115219853803,
+                "se": 0.003731467876482199
+              },
+              "4": {
+                "mean": 0.017437547739220412,
+                "se": 0.01486664556333844
+              },
+              "16": {
+                "mean": 0.6447591183699471,
+                "se": 0.11845191611923282
+              },
+              "64": {
+                "mean": 8.136589510250795,
+                "se": 0.3631121699403988
+              },
+              "128": {
+                "mean": 28.763735846416093,
+                "se": 0.7823965937109969
+              },
+              "256": {
+                "mean": 99.99349657582441,
+                "se": 1.8222587780787072
+              },
+              "512": {
+                "mean": 320.80364252286785,
+                "se": 3.934325594190113
+              },
+              "1024": {
+                "mean": 937.7882669180809,
+                "se": 7.9129750331934545
+              }
+            }
+          }
+        },
+        "disabled_vs_uniform": {
+          "instantaneous": {
+            "first_positive": {
+              "time": 1,
+              "status": "positive_from_start",
+              "bootstrap_percentiles": {
+                "lower": 1,
+                "median": 1,
+                "upper": 2
+              },
+              "bootstrap_censored_count": 0,
+              "bootstrap_positive_from_start_count": 1182
+            },
+            "final_positive_run": {
+              "time": null,
+              "status": "not_positive_at_horizon",
+              "bootstrap_percentiles": {
+                "lower": null,
+                "median": null,
+                "upper": null
+              },
+              "bootstrap_censored_count": 2000,
+              "bootstrap_positive_from_start_count": 0
+            },
+            "at_times": {
+              "1": {
+                "mean": 0.0007838129763007327,
+                "se": 0.0034051123500448625
+              },
+              "4": {
+                "mean": 8.255676485075693e-06,
+                "se": 0.0013762389781656454
+              },
+              "16": {
+                "mean": 0.0013544741812956203,
+                "se": 0.0009832417964205098
+              },
+              "64": {
+                "mean": -0.0010866257358324684,
+                "se": 0.000832977603398845
+              },
+              "128": {
+                "mean": -0.00035483678030504126,
+                "se": 0.001216819719256982
+              },
+              "256": {
+                "mean": -0.0012531918488553574,
+                "se": 0.001418681442755718
+              },
+              "512": {
+                "mean": -0.0018063564985899253,
+                "se": 0.001704782057926857
+              },
+              "1024": {
+                "mean": -0.021263212868008065,
+                "se": 0.005056503759695094
+              }
+            }
+          },
+          "cumulative": {
+            "first_positive": {
+              "time": 1,
+              "status": "positive_from_start",
+              "bootstrap_percentiles": {
+                "lower": 1,
+                "median": 1,
+                "upper": 8
+              },
+              "bootstrap_censored_count": 2,
+              "bootstrap_positive_from_start_count": 1182
+            },
+            "final_positive_run": {
+              "time": null,
+              "status": "not_positive_at_horizon",
+              "bootstrap_percentiles": {
+                "lower": null,
+                "median": null,
+                "upper": null
+              },
+              "bootstrap_censored_count": 2000,
+              "bootstrap_positive_from_start_count": 0
+            },
+            "at_times": {
+              "1": {
+                "mean": 0.0007838129763007327,
+                "se": 0.0034051123500448625
+              },
+              "4": {
+                "mean": 0.004548394257541449,
+                "se": 0.004045132455017749
+              },
+              "16": {
+                "mean": 0.01808483176862814,
+                "se": 0.006449022633305808
+              },
+              "64": {
+                "mean": -0.010958628995722903,
+                "se": 0.013356055378840605
+              },
+              "128": {
+                "mean": -0.07087796376005898,
+                "se": 0.020682179863168833
+              },
+              "256": {
+                "mean": -0.24119352507182093,
+                "se": 0.03741276687382507
+              },
+              "512": {
+                "mean": -0.6709800590009496,
+                "se": 0.09152859523967008
+              },
+              "1024": {
+                "mean": -4.246063196060659,
+                "se": 0.40750604586092315
+              }
+            }
+          }
+        }
+      }
+    },
+    {
+      "depth": 5,
+      "n_sequences": 96,
+      "ci95_multiplier": 1.9852510035054978,
+      "curves": {
+        "transformer": {
+          "instantaneous": {
+            "first_positive": {
+              "time": 2,
+              "status": "upward_crossing_after_nonpositive_values",
+              "bootstrap_percentiles": {
+                "lower": 1,
+                "median": 2,
+                "upper": 3
+              },
+              "bootstrap_censored_count": 0,
+              "bootstrap_positive_from_start_count": 306
+            },
+            "final_positive_run": {
+              "time": 2,
+              "status": "upward_crossing_after_nonpositive_values",
+              "bootstrap_percentiles": {
+                "lower": 1,
+                "median": 3,
+                "upper": 10
+              },
+              "bootstrap_censored_count": 0,
+              "bootstrap_positive_from_start_count": 142
+            },
+            "at_times": {
+              "1": {
+                "mean": -0.0007069075594511587,
+                "se": 0.0006458893947011886
+              },
+              "4": {
+                "mean": 0.020230979978545754,
+                "se": 0.010972294865598984
+              },
+              "16": {
+                "mean": 0.20165181411054478,
+                "se": 0.05372700539816209
+              },
+              "64": {
+                "mean": 0.4515823472389224,
+                "se": 0.07268338550725993
+              },
+              "128": {
+                "mean": 0.8252090506692964,
+                "se": 0.10789904092775535
+              },
+              "256": {
+                "mean": 0.893777354369937,
+                "se": 0.09362133207927839
+              },
+              "512": {
+                "mean": 1.3778198591974495,
+                "se": 0.08837112584156175
+              },
+              "1024": {
+                "mean": 1.7229082848507309,
+                "se": 0.08804105668129578
+              }
+            }
+          },
+          "cumulative": {
+            "first_positive": {
+              "time": 2,
+              "status": "upward_crossing_after_nonpositive_values",
+              "bootstrap_percentiles": {
+                "lower": 1,
+                "median": 2,
+                "upper": 4
+              },
+              "bootstrap_censored_count": 0,
+              "bootstrap_positive_from_start_count": 306
+            },
+            "final_positive_run": {
+              "time": 2,
+              "status": "upward_crossing_after_nonpositive_values",
+              "bootstrap_percentiles": {
+                "lower": 1,
+                "median": 3,
+                "upper": 4
+              },
+              "bootstrap_censored_count": 0,
+              "bootstrap_positive_from_start_count": 220
+            },
+            "at_times": {
+              "1": {
+                "mean": -0.0007069075594511587,
+                "se": 0.0006458893947011886
+              },
+              "4": {
+                "mean": 0.05003102664046056,
+                "se": 0.025223726246554657
+              },
+              "16": {
+                "mean": 1.3643464047961806,
+                "se": 0.2407075625241015
+              },
+              "64": {
+                "mean": 15.758215680163815,
+                "se": 1.0047775595493669
+              },
+              "128": {
+                "mean": 51.020581811489905,
+                "se": 2.119094429267025
+              },
+              "256": {
+                "mean": 158.63766839888817,
+                "se": 3.842268043020035
+              },
+              "512": {
+                "mean": 472.4104046500219,
+                "se": 7.293423887843134
+              },
+              "1024": {
+                "mean": 1284.587050068137,
+                "se": 13.891245204568245
+              }
+            }
+          }
+        },
+        "bayes": {
+          "instantaneous": {
+            "first_positive": {
+              "time": 3,
+              "status": "upward_crossing_after_nonpositive_values",
+              "bootstrap_percentiles": {
+                "lower": 3,
+                "median": 3,
+                "upper": 4
+              },
+              "bootstrap_censored_count": 0,
+              "bootstrap_positive_from_start_count": 0
+            },
+            "final_positive_run": {
+              "time": 3,
+              "status": "upward_crossing_after_nonpositive_values",
+              "bootstrap_percentiles": {
+                "lower": 3,
+                "median": 3,
+                "upper": 20
+              },
+              "bootstrap_censored_count": 0,
+              "bootstrap_positive_from_start_count": 0
+            },
+            "at_times": {
+              "1": {
+                "mean": 0.0,
+                "se": 0.0
+              },
+              "4": {
+                "mean": 0.021539476479181762,
+                "se": 0.010741179214539865
+              },
+              "16": {
+                "mean": 0.2086643081107741,
+                "se": 0.056062246330414185
+              },
+              "64": {
+                "mean": 0.4809515453867168,
+                "se": 0.08212116821879131
+              },
+              "128": {
+                "mean": 0.8704447366500013,
+                "se": 0.11397404010452537
+              },
+              "256": {
+                "mean": 0.9442307374798874,
+                "se": 0.09596405148103927
+              },
+              "512": {
+                "mean": 1.4207866024985656,
+                "se": 0.08915888856449418
+              },
+              "1024": {
+                "mean": 1.82664286718549,
+                "se": 0.09343468712115884
+              }
+            }
+          },
+          "cumulative": {
+            "first_positive": {
+              "time": 3,
+              "status": "upward_crossing_after_nonpositive_values",
+              "bootstrap_percentiles": {
+                "lower": 3,
+                "median": 3,
+                "upper": 4
+              },
+              "bootstrap_censored_count": 0,
+              "bootstrap_positive_from_start_count": 0
+            },
+            "final_positive_run": {
+              "time": 3,
+              "status": "upward_crossing_after_nonpositive_values",
+              "bootstrap_percentiles": {
+                "lower": 3,
+                "median": 3,
+                "upper": 4
+              },
+              "bootstrap_censored_count": 0,
+              "bootstrap_positive_from_start_count": 0
+            },
+            "at_times": {
+              "1": {
+                "mean": 0.0,
+                "se": 0.0
+              },
+              "4": {
+                "mean": 0.053090046116766175,
+                "se": 0.02508479956661195
+              },
+              "16": {
+                "mean": 1.4038211383566221,
+                "se": 0.2529691756004992
+              },
+              "64": {
+                "mean": 15.944821950101451,
+                "se": 1.0663863613181728
+              },
+              "128": {
+                "mean": 52.60326199836675,
+                "se": 2.236536945402739
+              },
+              "256": {
+                "mean": 165.64884524389927,
+                "se": 3.830611436670681
+              },
+              "512": {
+                "mean": 489.3780965387461,
+                "se": 7.138090775322771
+              },
+              "1024": {
+                "mean": 1326.1770326953538,
+                "se": 14.470285078087121
+              }
+            }
+          }
+        },
+        "control": {
+          "instantaneous": {
+            "first_positive": {
+              "time": 1,
+              "status": "positive_from_start",
+              "bootstrap_percentiles": {
+                "lower": 1,
+                "median": 2,
+                "upper": 4
+              },
+              "bootstrap_censored_count": 0,
+              "bootstrap_positive_from_start_count": 977
+            },
+            "final_positive_run": {
+              "time": 51,
+              "status": "upward_crossing_after_nonpositive_values",
+              "bootstrap_percentiles": {
+                "lower": 36,
+                "median": 70,
+                "upper": 1014
+              },
+              "bootstrap_censored_count": 0,
+              "bootstrap_positive_from_start_count": 0
+            },
+            "at_times": {
+              "1": {
+                "mean": 1.2455019878417536e-07,
+                "se": 0.0006515573699432774
+              },
+              "4": {
+                "mean": 0.00853691262657777,
+                "se": 0.006269868180846663
+              },
+              "16": {
+                "mean": 0.020464021634625226,
+                "se": 0.008719081973511197
+              },
+              "64": {
+                "mean": 0.03586493957678604,
+                "se": 0.009723922341523635
+              },
+              "128": {
+                "mean": 0.07221075344545667,
+                "se": 0.020431155662272313
+              },
+              "256": {
+                "mean": 0.07793149689581734,
+                "se": 0.020948692556455453
+              },
+              "512": {
+                "mean": 0.07812105610869921,
+                "se": 0.015625257246257296
+              },
+              "1024": {
+                "mean": 0.028148650982318085,
+                "se": 0.008867923833205858
+              }
+            }
+          },
+          "cumulative": {
+            "first_positive": {
+              "time": 1,
+              "status": "positive_from_start",
+              "bootstrap_percentiles": {
+                "lower": 1,
+                "median": 2,
+                "upper": 5
+              },
+              "bootstrap_censored_count": 0,
+              "bootstrap_positive_from_start_count": 977
+            },
+            "final_positive_run": {
+              "time": 1,
+              "status": "positive_from_start",
+              "bootstrap_percentiles": {
+                "lower": 1,
+                "median": 4,
+                "upper": 12
+              },
+              "bootstrap_censored_count": 0,
+              "bootstrap_positive_from_start_count": 350
+            },
+            "at_times": {
+              "1": {
+                "mean": 1.2455019878417536e-07,
+                "se": 0.0006515573699432774
+              },
+              "4": {
+                "mean": 0.010255240523293139,
+                "se": 0.012213317344647943
+              },
+              "16": {
+                "mean": 0.11216398950294282,
+                "se": 0.03541044019049119
+              },
+              "64": {
+                "mean": 0.7231526628594418,
+                "se": 0.09583527508866158
+              },
+              "128": {
+                "mean": 3.7027597908828014,
+                "se": 0.3030850823892175
+              },
+              "256": {
+                "mean": 15.502863894795146,
+                "se": 1.1653635191395846
+              },
+              "512": {
+                "mean": 39.58906400518317,
+                "se": 3.1776923800552495
+              },
+              "1024": {
+                "mean": 61.19879993297247,
+                "se": 5.14293959470535
+              }
+            }
+          }
+        },
+        "transformer_vs_uniform": {
+          "instantaneous": {
+            "first_positive": {
+              "time": 2,
+              "status": "upward_crossing_after_nonpositive_values",
+              "bootstrap_percentiles": {
+                "lower": 1,
+                "median": 2,
+                "upper": 3
+              },
+              "bootstrap_censored_count": 0,
+              "bootstrap_positive_from_start_count": 266
+            },
+            "final_positive_run": {
+              "time": 2,
+              "status": "upward_crossing_after_nonpositive_values",
+              "bootstrap_percentiles": {
+                "lower": 1,
+                "median": 3,
+                "upper": 10
+              },
+              "bootstrap_censored_count": 0,
+              "bootstrap_positive_from_start_count": 59
+            },
+            "at_times": {
+              "1": {
+                "mean": -0.005256498275307654,
+                "se": 0.0045086647133639815
+              },
+              "4": {
+                "mean": 0.020113703465763844,
+                "se": 0.011038016518687301
+              },
+              "16": {
+                "mean": 0.20280932985406416,
+                "se": 0.05472683569693826
+              },
+              "64": {
+                "mean": 0.4528468236221482,
+                "se": 0.07299533000429845
+              },
+              "128": {
+                "mean": 0.827293945658012,
+                "se": 0.10907919458873387
+              },
+              "256": {
+                "mean": 0.9017632825997263,
+                "se": 0.09402526694397123
+              },
+              "512": {
+                "mean": 1.3873687038194007,
+                "se": 0.08911092950062266
+              },
+              "1024": {
+                "mean": 1.76033974597301,
+                "se": 0.09322537983840025
+              }
+            }
+          },
+          "cumulative": {
+            "first_positive": {
+              "time": 3,
+              "status": "upward_crossing_after_nonpositive_values",
+              "bootstrap_percentiles": {
+                "lower": 1,
+                "median": 3,
+                "upper": 4
+              },
+              "bootstrap_censored_count": 0,
+              "bootstrap_positive_from_start_count": 266
+            },
+            "final_positive_run": {
+              "time": 3,
+              "status": "upward_crossing_after_nonpositive_values",
+              "bootstrap_percentiles": {
+                "lower": 1,
+                "median": 3,
+                "upper": 5
+              },
+              "bootstrap_censored_count": 0,
+              "bootstrap_positive_from_start_count": 166
+            },
+            "at_times": {
+              "1": {
+                "mean": -0.005256498275307654,
+                "se": 0.0045086647133639815
+              },
+              "4": {
+                "mean": 0.04529324069092605,
+                "se": 0.025457383164212168
+              },
+              "16": {
+                "mean": 1.36773110522753,
+                "se": 0.2413907870170394
+              },
+              "64": {
+                "mean": 15.87016350809904,
+                "se": 1.0203319982772785
+              },
+              "128": {
+                "mean": 51.308897174597234,
+                "se": 2.160504913843838
+              },
+              "256": {
+                "mean": 159.34792331042834,
+                "se": 3.9061768135608554
+              },
+              "512": {
+                "mean": 474.19251689747625,
+                "se": 7.4176824280806
+              },
+              "1024": {
+                "mean": 1296.2621799303122,
+                "se": 14.742330049539406
+              }
+            }
+          }
+        },
+        "disabled_vs_uniform": {
+          "instantaneous": {
+            "first_positive": {
+              "time": 1,
+              "status": "positive_from_start",
+              "bootstrap_percentiles": {
+                "lower": 1,
+                "median": 1,
+                "upper": 4
+              },
+              "bootstrap_censored_count": 0,
+              "bootstrap_positive_from_start_count": 1704
+            },
+            "final_positive_run": {
+              "time": null,
+              "status": "not_positive_at_horizon",
+              "bootstrap_percentiles": {
+                "lower": null,
+                "median": null,
+                "upper": null
+              },
+              "bootstrap_censored_count": 1993,
+              "bootstrap_positive_from_start_count": 0
+            },
+            "at_times": {
+              "1": {
+                "mean": 0.004549590715856496,
+                "se": 0.004114611756693924
+              },
+              "4": {
+                "mean": 0.00011727651278190902,
+                "se": 0.0013746300124650181
+              },
+              "16": {
+                "mean": -0.001157515743519429,
+                "se": 0.0020122288806785605
+              },
+              "64": {
+                "mean": -0.0012644763832258266,
+                "se": 0.0013016920793978222
+              },
+              "128": {
+                "mean": -0.0020848949887154558,
+                "se": 0.0029015411759126335
+              },
+              "256": {
+                "mean": -0.007985928229789052,
+                "se": 0.002842074808691996
+              },
+              "512": {
+                "mean": -0.009548844621951344,
+                "se": 0.0041522259782302675
+              },
+              "1024": {
+                "mean": -0.037431461122279686,
+                "se": 0.018409282414727595
+              }
+            }
+          },
+          "cumulative": {
+            "first_positive": {
+              "time": 1,
+              "status": "positive_from_start",
+              "bootstrap_percentiles": {
+                "lower": 1,
+                "median": 1,
+                "upper": null
+              },
+              "bootstrap_censored_count": 63,
+              "bootstrap_positive_from_start_count": 1704
+            },
+            "final_positive_run": {
+              "time": null,
+              "status": "not_positive_at_horizon",
+              "bootstrap_percentiles": {
+                "lower": null,
+                "median": null,
+                "upper": null
+              },
+              "bootstrap_censored_count": 2000,
+              "bootstrap_positive_from_start_count": 0
+            },
+            "at_times": {
+              "1": {
+                "mean": 0.004549590715856496,
+                "se": 0.004114611756693924
+              },
+              "4": {
+                "mean": 0.0047377859495345105,
+                "se": 0.005208887869564379
+              },
+              "16": {
+                "mean": -0.003384700431349863,
+                "se": 0.009451833403371636
+              },
+              "64": {
+                "mean": -0.11194782793524187,
+                "se": 0.027478488595529173
+              },
+              "128": {
+                "mean": -0.2883153631072976,
+                "se": 0.058345364046190645
+              },
+              "256": {
+                "mean": -0.7102549115402578,
+                "se": 0.10466084724973539
+              },
+              "512": {
+                "mean": -1.7821122474544877,
+                "se": 0.21801643415975822
+              },
+              "1024": {
+                "mean": -11.675129862175078,
+                "se": 1.7248144978135582
+              }
+            }
+          }
+        }
+      }
+    },
+    {
+      "depth": 6,
+      "n_sequences": 118,
+      "ci95_multiplier": 1.9804475986834023,
+      "curves": {
+        "transformer": {
+          "instantaneous": {
+            "first_positive": {
+              "time": 2,
+              "status": "upward_crossing_after_nonpositive_values",
+              "bootstrap_percentiles": {
+                "lower": 1,
+                "median": 2,
+                "upper": 3
+              },
+              "bootstrap_censored_count": 0,
+              "bootstrap_positive_from_start_count": 208
+            },
+            "final_positive_run": {
+              "time": 2,
+              "status": "upward_crossing_after_nonpositive_values",
+              "bootstrap_percentiles": {
+                "lower": 1,
+                "median": 2,
+                "upper": 9
+              },
+              "bootstrap_censored_count": 0,
+              "bootstrap_positive_from_start_count": 147
+            },
+            "at_times": {
+              "1": {
+                "mean": -0.0010598386627647567,
+                "se": 0.0008182175097782516
+              },
+              "4": {
+                "mean": 0.017762206904144588,
+                "se": 0.009789775923834433
+              },
+              "16": {
+                "mean": 0.1629221984454221,
+                "se": 0.04302726247858196
+              },
+              "64": {
+                "mean": 0.6227312127813707,
+                "se": 0.08212552879705243
+              },
+              "128": {
+                "mean": 0.8932222759516129,
+                "se": 0.07947215250575218
+              },
+              "256": {
+                "mean": 1.3015132145864807,
+                "se": 0.09748459776167064
+              },
+              "512": {
+                "mean": 1.735516594111607,
+                "se": 0.08074949710600221
+              },
+              "1024": {
+                "mean": 1.9040674073596546,
+                "se": 0.07874895425011114
+              }
+            }
+          },
+          "cumulative": {
+            "first_positive": {
+              "time": 2,
+              "status": "upward_crossing_after_nonpositive_values",
+              "bootstrap_percentiles": {
+                "lower": 1,
+                "median": 2,
+                "upper": 3
+              },
+              "bootstrap_censored_count": 0,
+              "bootstrap_positive_from_start_count": 208
+            },
+            "final_positive_run": {
+              "time": 2,
+              "status": "upward_crossing_after_nonpositive_values",
+              "bootstrap_percentiles": {
+                "lower": 1,
+                "median": 2,
+                "upper": 3
+              },
+              "bootstrap_censored_count": 0,
+              "bootstrap_positive_from_start_count": 187
+            },
+            "at_times": {
+              "1": {
+                "mean": -0.0010598386627647567,
+                "se": 0.0008182175097782516
+              },
+              "4": {
+                "mean": 0.04035688006158327,
+                "se": 0.017853090398968395
+              },
+              "16": {
+                "mean": 1.0507440373755996,
+                "se": 0.1317047906124063
+              },
+              "64": {
+                "mean": 17.943033376269153,
+                "se": 0.5909451158632794
+              },
+              "128": {
+                "mean": 63.880331109239854,
+                "se": 1.330934785803761
+              },
+              "256": {
+                "mean": 202.87709286109,
+                "se": 2.846786199465882
+              },
+              "512": {
+                "mean": 596.7015426019065,
+                "se": 5.282385666446064
+              },
+              "1024": {
+                "mean": 1560.8090477378257,
+                "se": 9.946713889475536
+              }
+            }
+          }
+        },
+        "bayes": {
+          "instantaneous": {
+            "first_positive": {
+              "time": 2,
+              "status": "upward_crossing_after_nonpositive_values",
+              "bootstrap_percentiles": {
+                "lower": 2,
+                "median": 2,
+                "upper": 3
+              },
+              "bootstrap_censored_count": 0,
+              "bootstrap_positive_from_start_count": 0
+            },
+            "final_positive_run": {
+              "time": 2,
+              "status": "upward_crossing_after_nonpositive_values",
+              "bootstrap_percentiles": {
+                "lower": 2,
+                "median": 3,
+                "upper": 9
+              },
+              "bootstrap_censored_count": 0,
+              "bootstrap_positive_from_start_count": 0
+            },
+            "at_times": {
+              "1": {
+                "mean": 0.0,
+                "se": 0.0
+              },
+              "4": {
+                "mean": 0.016685445860261567,
+                "se": 0.009996580864296964
+              },
+              "16": {
+                "mean": 0.17422490756727033,
+                "se": 0.048646206493530464
+              },
+              "64": {
+                "mean": 0.6560833211284021,
+                "se": 0.08986674505062081
+              },
+              "128": {
+                "mean": 0.9435913147360353,
+                "se": 0.08902049229030691
+              },
+              "256": {
+                "mean": 1.3287980593139108,
+                "se": 0.10107504153340267
+              },
+              "512": {
+                "mean": 1.7697935663999103,
+                "se": 0.08372844996809557
+              },
+              "1024": {
+                "mean": 2.0095906074680507,
+                "se": 0.08155537705596866
+              }
+            }
+          },
+          "cumulative": {
+            "first_positive": {
+              "time": 2,
+              "status": "upward_crossing_after_nonpositive_values",
+              "bootstrap_percentiles": {
+                "lower": 2,
+                "median": 2,
+                "upper": 3
+              },
+              "bootstrap_censored_count": 0,
+              "bootstrap_positive_from_start_count": 0
+            },
+            "final_positive_run": {
+              "time": 2,
+              "status": "upward_crossing_after_nonpositive_values",
+              "bootstrap_percentiles": {
+                "lower": 2,
+                "median": 2,
+                "upper": 3
+              },
+              "bootstrap_censored_count": 0,
+              "bootstrap_positive_from_start_count": 0
+            },
+            "at_times": {
+              "1": {
+                "mean": 0.0,
+                "se": 0.0
+              },
+              "4": {
+                "mean": 0.040394547521820194,
+                "se": 0.01739141305572231
+              },
+              "16": {
+                "mean": 1.095026598682131,
+                "se": 0.14089755478041877
+              },
+              "64": {
+                "mean": 18.711718285635563,
+                "se": 0.6636066775841339
+              },
+              "128": {
+                "mean": 68.01349812379726,
+                "se": 1.4008962674395846
+              },
+              "256": {
+                "mean": 214.40680408653057,
+                "se": 2.891087591901847
+              },
+              "512": {
+                "mean": 617.9649212920422,
+                "se": 5.4380951864066205
+              },
+              "1024": {
+                "mean": 1612.4697101102047,
+                "se": 10.435839354734945
+              }
+            }
+          }
+        },
+        "control": {
+          "instantaneous": {
+            "first_positive": {
+              "time": 1,
+              "status": "positive_from_start",
+              "bootstrap_percentiles": {
+                "lower": 1,
+                "median": 1,
+                "upper": 3
+              },
+              "bootstrap_censored_count": 0,
+              "bootstrap_positive_from_start_count": 1765
+            },
+            "final_positive_run": {
+              "time": 47,
+              "status": "upward_crossing_after_nonpositive_values",
+              "bootstrap_percentiles": {
+                "lower": 28,
+                "median": 47,
+                "upper": 71
+              },
+              "bootstrap_censored_count": 0,
+              "bootstrap_positive_from_start_count": 0
+            },
+            "at_times": {
+              "1": {
+                "mean": 0.0008190496641218029,
+                "se": 0.000696127881579787
+              },
+              "4": {
+                "mean": 0.012600376477737013,
+                "se": 0.008609742278585979
+              },
+              "16": {
+                "mean": 0.004981510992259083,
+                "se": 0.0075543209490739486
+              },
+              "64": {
+                "mean": 0.06258319462837439,
+                "se": 0.015013488269428865
+              },
+              "128": {
+                "mean": 0.12573876187707153,
+                "se": 0.019268916328563795
+              },
+              "256": {
+                "mean": 0.14069973709423628,
+                "se": 0.021943755279199468
+              },
+              "512": {
+                "mean": 0.07949015337615639,
+                "se": 0.013185830903270773
+              },
+              "1024": {
+                "mean": 0.028279259925133342,
+                "se": 0.00634566638942496
+              }
+            }
+          },
+          "cumulative": {
+            "first_positive": {
+              "time": 1,
+              "status": "positive_from_start",
+              "bootstrap_percentiles": {
+                "lower": 1,
+                "median": 1,
+                "upper": 3
+              },
+              "bootstrap_censored_count": 0,
+              "bootstrap_positive_from_start_count": 1765
+            },
+            "final_positive_run": {
+              "time": 8,
+              "status": "upward_crossing_after_nonpositive_values",
+              "bootstrap_percentiles": {
+                "lower": 1,
+                "median": 8,
+                "upper": 17
+              },
+              "bootstrap_censored_count": 0,
+              "bootstrap_positive_from_start_count": 616
+            },
+            "at_times": {
+              "1": {
+                "mean": 0.0008190496641218029,
+                "se": 0.000696127881579787
+              },
+              "4": {
+                "mean": 0.018980911708324267,
+                "se": 0.008987518447264736
+              },
+              "16": {
+                "mean": 0.056672412326842496,
+                "se": 0.03279949922828533
+              },
+              "64": {
+                "mean": 0.925464967587486,
+                "se": 0.08965856976599591
+              },
+              "128": {
+                "mean": 5.930596550472163,
+                "se": 0.36899918817964733
+              },
+              "256": {
+                "mean": 23.258620159885833,
+                "se": 1.3193482455059813
+              },
+              "512": {
+                "mean": 51.59782563530774,
+                "se": 3.153328350297445
+              },
+              "1024": {
+                "mean": 74.16567102489623,
+                "se": 4.2474542137579245
+              }
+            }
+          }
+        },
+        "transformer_vs_uniform": {
+          "instantaneous": {
+            "first_positive": {
+              "time": 2,
+              "status": "upward_crossing_after_nonpositive_values",
+              "bootstrap_percentiles": {
+                "lower": 2,
+                "median": 2,
+                "upper": 3
+              },
+              "bootstrap_censored_count": 0,
+              "bootstrap_positive_from_start_count": 2
+            },
+            "final_positive_run": {
+              "time": 2,
+              "status": "upward_crossing_after_nonpositive_values",
+              "bootstrap_percentiles": {
+                "lower": 2,
+                "median": 3,
+                "upper": 9
+              },
+              "bootstrap_censored_count": 0,
+              "bootstrap_positive_from_start_count": 2
+            },
+            "at_times": {
+              "1": {
+                "mean": -0.01374689385626545,
+                "se": 0.004369728124457967
+              },
+              "4": {
+                "mean": 0.017213024724118585,
+                "se": 0.009872656410825204
+              },
+              "16": {
+                "mean": 0.16396239313876718,
+                "se": 0.04325532877564061
+              },
+              "64": {
+                "mean": 0.6210598376513812,
+                "se": 0.08233192422804757
+              },
+              "128": {
+                "mean": 0.8959226959857093,
+                "se": 0.08006255504625986
+              },
+              "256": {
+                "mean": 1.3063955724424097,
+                "se": 0.09776746170099139
+              },
+              "512": {
+                "mean": 1.7521352109452542,
+                "se": 0.0811831616212532
+              },
+              "1024": {
+                "mean": 1.9677251321681306,
+                "se": 0.08120557103096727
+              }
+            }
+          },
+          "cumulative": {
+            "first_positive": {
+              "time": 3,
+              "status": "upward_crossing_after_nonpositive_values",
+              "bootstrap_percentiles": {
+                "lower": 3,
+                "median": 3,
+                "upper": 5
+              },
+              "bootstrap_censored_count": 0,
+              "bootstrap_positive_from_start_count": 2
+            },
+            "final_positive_run": {
+              "time": 3,
+              "status": "upward_crossing_after_nonpositive_values",
+              "bootstrap_percentiles": {
+                "lower": 3,
+                "median": 3,
+                "upper": 5
+              },
+              "bootstrap_censored_count": 0,
+              "bootstrap_positive_from_start_count": 2
+            },
+            "at_times": {
+              "1": {
+                "mean": -0.01374689385626545,
+                "se": 0.004369728124457967
+              },
+              "4": {
+                "mean": 0.025719970707678022,
+                "se": 0.019225562419962285
+              },
+              "16": {
+                "mean": 1.0410161364146764,
+                "se": 0.132745073625199
+              },
+              "64": {
+                "mean": 17.998238093418138,
+                "se": 0.5905150470589341
+              },
+              "128": {
+                "mean": 64.08018748943843,
+                "se": 1.3332329250760584
+              },
+              "256": {
+                "mean": 203.53750150237568,
+                "se": 2.8698477033963763
+              },
+              "512": {
+                "mean": 599.3585024385392,
+                "se": 5.421234813148648
+              },
+              "1024": {
+                "mean": 1579.1581270451416,
+                "se": 10.433152991983297
+              }
+            }
+          }
+        },
+        "disabled_vs_uniform": {
+          "instantaneous": {
+            "first_positive": {
+              "time": 1,
+              "status": "positive_from_start",
+              "bootstrap_percentiles": {
+                "lower": 1,
+                "median": 1,
+                "upper": 1
+              },
+              "bootstrap_censored_count": 0,
+              "bootstrap_positive_from_start_count": 1998
+            },
+            "final_positive_run": {
+              "time": null,
+              "status": "not_positive_at_horizon",
+              "bootstrap_percentiles": {
+                "lower": null,
+                "median": null,
+                "upper": null
+              },
+              "bootstrap_censored_count": 2000,
+              "bootstrap_positive_from_start_count": 0
+            },
+            "at_times": {
+              "1": {
+                "mean": 0.012687055193500694,
+                "se": 0.003843129748500034
+              },
+              "4": {
+                "mean": 0.0005491821800260037,
+                "se": 0.0014380562455091604
+              },
+              "16": {
+                "mean": -0.0010401946933452362,
+                "se": 0.0021310266507491467
+              },
+              "64": {
+                "mean": 0.0016713751299894679,
+                "se": 0.0014329822776846784
+              },
+              "128": {
+                "mean": -0.0027004200340960396,
+                "se": 0.0014791710231046966
+              },
+              "256": {
+                "mean": -0.004882357855929134,
+                "se": 0.0031138523783609995
+              },
+              "512": {
+                "mean": -0.0166186168336465,
+                "se": 0.005990871313649755
+              },
+              "1024": {
+                "mean": -0.06365772480847638,
+                "se": 0.012040823138653293
+              }
+            }
+          },
+          "cumulative": {
+            "first_positive": {
+              "time": 1,
+              "status": "positive_from_start",
+              "bootstrap_percentiles": {
+                "lower": 1,
+                "median": 1,
+                "upper": 1
+              },
+              "bootstrap_censored_count": 0,
+              "bootstrap_positive_from_start_count": 1998
+            },
+            "final_positive_run": {
+              "time": null,
+              "status": "not_positive_at_horizon",
+              "bootstrap_percentiles": {
+                "lower": null,
+                "median": null,
+                "upper": null
+              },
+              "bootstrap_censored_count": 2000,
+              "bootstrap_positive_from_start_count": 0
+            },
+            "at_times": {
+              "1": {
+                "mean": 0.012687055193500694,
+                "se": 0.003843129748500034
+              },
+              "4": {
+                "mean": 0.014636909353905245,
+                "se": 0.0049554595406023985
+              },
+              "16": {
+                "mean": 0.009727900960923486,
+                "se": 0.008188757108453846
+              },
+              "64": {
+                "mean": -0.05520471714898295,
+                "se": 0.01881795786928525
+              },
+              "128": {
+                "mean": -0.19985638019856503,
+                "se": 0.03072234111836787
+              },
+              "256": {
+                "mean": -0.660408641285549,
+                "se": 0.06631900267280183
+              },
+              "512": {
+                "mean": -2.6569598366325238,
+                "se": 0.2704950239945406
+              },
+              "1024": {
+                "mean": -18.349079307315648,
+                "se": 1.1962044991520489
+              }
+            }
+          }
+        }
+      }
+    },
+    {
+      "depth": 7,
+      "n_sequences": 125,
+      "ci95_multiplier": 1.979280116604855,
+      "curves": {
+        "transformer": {
+          "instantaneous": {
+            "first_positive": {
+              "time": 3,
+              "status": "upward_crossing_after_nonpositive_values",
+              "bootstrap_percentiles": {
+                "lower": 2,
+                "median": 3,
+                "upper": 4
+              },
+              "bootstrap_censored_count": 0,
+              "bootstrap_positive_from_start_count": 23
+            },
+            "final_positive_run": {
+              "time": 3,
+              "status": "upward_crossing_after_nonpositive_values",
+              "bootstrap_percentiles": {
+                "lower": 2,
+                "median": 3,
+                "upper": 8
+              },
+              "bootstrap_censored_count": 0,
+              "bootstrap_positive_from_start_count": 2
+            },
+            "at_times": {
+              "1": {
+                "mean": -0.0016298980583543496,
+                "se": 0.0006938309190584541
+              },
+              "4": {
+                "mean": 0.06439678767238126,
+                "se": 0.02709076403954207
+              },
+              "16": {
+                "mean": 0.12245316284921182,
+                "se": 0.037717285248759835
+              },
+              "64": {
+                "mean": 0.7351996648113627,
+                "se": 0.08719038595343363
+              },
+              "128": {
+                "mean": 1.141353577768259,
+                "se": 0.10299810466405526
+              },
+              "256": {
+                "mean": 1.4355016196491523,
+                "se": 0.09777191996226864
+              },
+              "512": {
+                "mean": 2.021312518507458,
+                "se": 0.09788053252227498
+              },
+              "1024": {
+                "mean": 2.4546547877448295,
+                "se": 0.0838793719545067
+              }
+            }
+          },
+          "cumulative": {
+            "first_positive": {
+              "time": 4,
+              "status": "upward_crossing_after_nonpositive_values",
+              "bootstrap_percentiles": {
+                "lower": 3,
+                "median": 4,
+                "upper": 4
+              },
+              "bootstrap_censored_count": 0,
+              "bootstrap_positive_from_start_count": 23
+            },
+            "final_positive_run": {
+              "time": 4,
+              "status": "upward_crossing_after_nonpositive_values",
+              "bootstrap_percentiles": {
+                "lower": 3,
+                "median": 4,
+                "upper": 4
+              },
+              "bootstrap_censored_count": 0,
+              "bootstrap_positive_from_start_count": 3
+            },
+            "at_times": {
+              "1": {
+                "mean": -0.0016298980583543496,
+                "se": 0.0006938309190584541
+              },
+              "4": {
+                "mean": 0.06116540478935879,
+                "se": 0.02732377218594932
+              },
+              "16": {
+                "mean": 1.4292738526431077,
+                "se": 0.20067107758422148
+              },
+              "64": {
+                "mean": 23.767753469082738,
+                "se": 0.8812330115136998
+              },
+              "128": {
+                "mean": 79.48587927008252,
+                "se": 2.0391585124586946
+              },
+              "256": {
+                "mean": 254.47160263183878,
+                "se": 4.358801235405275
+              },
+              "512": {
+                "mean": 725.4258178337219,
+                "se": 7.640965456405356
+              },
+              "1024": {
+                "mean": 1849.773678989113,
+                "se": 12.684434185264932
+              }
+            }
+          }
+        },
+        "bayes": {
+          "instantaneous": {
+            "first_positive": {
+              "time": 3,
+              "status": "upward_crossing_after_nonpositive_values",
+              "bootstrap_percentiles": {
+                "lower": 3,
+                "median": 3,
+                "upper": 4
+              },
+              "bootstrap_censored_count": 0,
+              "bootstrap_positive_from_start_count": 0
+            },
+            "final_positive_run": {
+              "time": 3,
+              "status": "upward_crossing_after_nonpositive_values",
+              "bootstrap_percentiles": {
+                "lower": 3,
+                "median": 3,
+                "upper": 8
+              },
+              "bootstrap_censored_count": 0,
+              "bootstrap_positive_from_start_count": 0
+            },
+            "at_times": {
+              "1": {
+                "mean": 0.0,
+                "se": 0.0
+              },
+              "4": {
+                "mean": 0.06940065237009597,
+                "se": 0.02912265435243552
+              },
+              "16": {
+                "mean": 0.12076442681664844,
+                "se": 0.0396089218692855
+              },
+              "64": {
+                "mean": 0.8065241206624518,
+                "se": 0.09876122749856935
+              },
+              "128": {
+                "mean": 1.2254855021785267,
+                "se": 0.1113666922417725
+              },
+              "256": {
+                "mean": 1.4637267434921406,
+                "se": 0.10259597783015596
+              },
+              "512": {
+                "mean": 2.09043919598081,
+                "se": 0.10315975131397123
+              },
+              "1024": {
+                "mean": 2.613633403021834,
+                "se": 0.08828551360103795
+              }
+            }
+          },
+          "cumulative": {
+            "first_positive": {
+              "time": 3,
+              "status": "upward_crossing_after_nonpositive_values",
+              "bootstrap_percentiles": {
+                "lower": 3,
+                "median": 3,
+                "upper": 4
+              },
+              "bootstrap_censored_count": 0,
+              "bootstrap_positive_from_start_count": 0
+            },
+            "final_positive_run": {
+              "time": 3,
+              "status": "upward_crossing_after_nonpositive_values",
+              "bootstrap_percentiles": {
+                "lower": 3,
+                "median": 3,
+                "upper": 4
+              },
+              "bootstrap_censored_count": 0,
+              "bootstrap_positive_from_start_count": 0
+            },
+            "at_times": {
+              "1": {
+                "mean": 0.0,
+                "se": 0.0
+              },
+              "4": {
+                "mean": 0.07010246355316184,
+                "se": 0.029139356749062133
+              },
+              "16": {
+                "mean": 1.4994129929632574,
+                "se": 0.2123324105022128
+              },
+              "64": {
+                "mean": 25.229541037984472,
+                "se": 0.9644559123111585
+              },
+              "128": {
+                "mean": 84.7150396924167,
+                "se": 2.119994189066094
+              },
+              "256": {
+                "mean": 268.9350528215747,
+                "se": 4.3549345311148615
+              },
+              "512": {
+                "mean": 755.2992997036504,
+                "se": 8.626036871351705
+              },
+              "1024": {
+                "mean": 1920.7186523633745,
+                "se": 14.251550111531957
+              }
+            }
+          }
+        },
+        "control": {
+          "instantaneous": {
+            "first_positive": {
+              "time": 1,
+              "status": "positive_from_start",
+              "bootstrap_percentiles": {
+                "lower": 1,
+                "median": 1,
+                "upper": 3
+              },
+              "bootstrap_censored_count": 0,
+              "bootstrap_positive_from_start_count": 1775
+            },
+            "final_positive_run": {
+              "time": 19,
+              "status": "upward_crossing_after_nonpositive_values",
+              "bootstrap_percentiles": {
+                "lower": 19,
+                "median": 35,
+                "upper": 60
+              },
+              "bootstrap_censored_count": 0,
+              "bootstrap_positive_from_start_count": 0
+            },
+            "at_times": {
+              "1": {
+                "mean": 0.0007889641924306474,
+                "se": 0.0006506284891181408
+              },
+              "4": {
+                "mean": -0.0017525296239108955,
+                "se": 0.0038734546241308196
+              },
+              "16": {
+                "mean": 0.00013129161361047893,
+                "se": 0.0064195649537532075
+              },
+              "64": {
+                "mean": 0.050911984290022076,
+                "se": 0.013033760128423836
+              },
+              "128": {
+                "mean": 0.13917687821762798,
+                "se": 0.02038913348201413
+              },
+              "256": {
+                "mean": 0.11080370806819381,
+                "se": 0.020090276788570016
+              },
+              "512": {
+                "mean": 0.06949444758654351,
+                "se": 0.01174997255124864
+              },
+              "1024": {
+                "mean": 0.04844723994447912,
+                "se": 0.0064087133479859395
+              }
+            }
+          },
+          "cumulative": {
+            "first_positive": {
+              "time": 1,
+              "status": "positive_from_start",
+              "bootstrap_percentiles": {
+                "lower": 1,
+                "median": 1,
+                "upper": 3
+              },
+              "bootstrap_censored_count": 0,
+              "bootstrap_positive_from_start_count": 1775
+            },
+            "final_positive_run": {
+              "time": 17,
+              "status": "upward_crossing_after_nonpositive_values",
+              "bootstrap_percentiles": {
+                "lower": 1,
+                "median": 17,
+                "upper": 29
+              },
+              "bootstrap_censored_count": 0,
+              "bootstrap_positive_from_start_count": 454
+            },
+            "at_times": {
+              "1": {
+                "mean": 0.0007889641924306474,
+                "se": 0.0006506284891181408
+              },
+              "4": {
+                "mean": 0.010289836314751518,
+                "se": 0.006931058863426595
+              },
+              "16": {
+                "mean": -0.011586391641349756,
+                "se": 0.03265229561202975
+              },
+              "64": {
+                "mean": 1.1372414115111706,
+                "se": 0.12491151495240933
+              },
+              "128": {
+                "mean": 6.997514957049248,
+                "se": 0.46510341157498786
+              },
+              "256": {
+                "mean": 25.85897348371618,
+                "se": 1.5123297045852393
+              },
+              "512": {
+                "mean": 53.347114670579714,
+                "se": 3.3293514111497475
+              },
+              "1024": {
+                "mean": 79.31013747855702,
+                "se": 4.6945429697050844
+              }
+            }
+          }
+        },
+        "transformer_vs_uniform": {
+          "instantaneous": {
+            "first_positive": {
+              "time": 3,
+              "status": "upward_crossing_after_nonpositive_values",
+              "bootstrap_percentiles": {
+                "lower": 2,
+                "median": 3,
+                "upper": 4
+              },
+              "bootstrap_censored_count": 0,
+              "bootstrap_positive_from_start_count": 8
+            },
+            "final_positive_run": {
+              "time": 3,
+              "status": "upward_crossing_after_nonpositive_values",
+              "bootstrap_percentiles": {
+                "lower": 2,
+                "median": 3,
+                "upper": 8
+              },
+              "bootstrap_censored_count": 0,
+              "bootstrap_positive_from_start_count": 3
+            },
+            "at_times": {
+              "1": {
+                "mean": -0.013603731974677345,
+                "se": 0.004811256670391142
+              },
+              "4": {
+                "mean": 0.06483881080862111,
+                "se": 0.027159540787516086
+              },
+              "16": {
+                "mean": 0.12579510973302163,
+                "se": 0.03817475403816206
+              },
+              "64": {
+                "mean": 0.7386547689175238,
+                "se": 0.08720798604747196
+              },
+              "128": {
+                "mean": 1.1472164801611797,
+                "se": 0.10355922520984322
+              },
+              "256": {
+                "mean": 1.4413706589085966,
+                "se": 0.09873552451665085
+              },
+              "512": {
+                "mean": 2.0540498846725277,
+                "se": 0.10023156526885812
+              },
+              "1024": {
+                "mean": 2.548767796910516,
+                "se": 0.08880516125156926
+              }
+            }
+          },
+          "cumulative": {
+            "first_positive": {
+              "time": 4,
+              "status": "upward_crossing_after_nonpositive_values",
+              "bootstrap_percentiles": {
+                "lower": 4,
+                "median": 4,
+                "upper": 4
+              },
+              "bootstrap_censored_count": 0,
+              "bootstrap_positive_from_start_count": 8
+            },
+            "final_positive_run": {
+              "time": 4,
+              "status": "upward_crossing_after_nonpositive_values",
+              "bootstrap_percentiles": {
+                "lower": 4,
+                "median": 4,
+                "upper": 4
+              },
+              "bootstrap_censored_count": 0,
+              "bootstrap_positive_from_start_count": 6
+            },
+            "at_times": {
+              "1": {
+                "mean": -0.013603731974677345,
+                "se": 0.004811256670391142
+              },
+              "4": {
+                "mean": 0.05003886974682624,
+                "se": 0.028644652286904975
+              },
+              "16": {
+                "mean": 1.414958110399597,
+                "se": 0.20297596021687775
+              },
+              "64": {
+                "mean": 23.844448759200585,
+                "se": 0.8925710290222832
+              },
+              "128": {
+                "mean": 79.81767079695422,
+                "se": 2.0810431888862504
+              },
+              "256": {
+                "mean": 255.72310737520172,
+                "se": 4.502773377709072
+              },
+              "512": {
+                "mean": 732.7263800967577,
+                "se": 8.835442681286139
+              },
+              "1024": {
+                "mean": 1881.807037090374,
+                "se": 14.36918425538908
+              }
+            }
+          }
+        },
+        "disabled_vs_uniform": {
+          "instantaneous": {
+            "first_positive": {
+              "time": 1,
+              "status": "positive_from_start",
+              "bootstrap_percentiles": {
+                "lower": 1,
+                "median": 1,
+                "upper": 1
+              },
+              "bootstrap_censored_count": 0,
+              "bootstrap_positive_from_start_count": 1993
+            },
+            "final_positive_run": {
+              "time": null,
+              "status": "not_positive_at_horizon",
+              "bootstrap_percentiles": {
+                "lower": null,
+                "median": null,
+                "upper": null
+              },
+              "bootstrap_censored_count": 2000,
+              "bootstrap_positive_from_start_count": 0
+            },
+            "at_times": {
+              "1": {
+                "mean": 0.011973833916322995,
+                "se": 0.00440198669940722
+              },
+              "4": {
+                "mean": -0.00044202313623982546,
+                "se": 0.0014302297855653557
+              },
+              "16": {
+                "mean": -0.0033419468838097686,
+                "se": 0.0015034288110903845
+              },
+              "64": {
+                "mean": -0.0034551041061608033,
+                "se": 0.0016310070220694223
+              },
+              "128": {
+                "mean": -0.005862902392920723,
+                "se": 0.0029000895130992512
+              },
+              "256": {
+                "mean": -0.0058690392594436605,
+                "se": 0.0029503377229865655
+              },
+              "512": {
+                "mean": -0.03273736616507075,
+                "se": 0.008335881598196999
+              },
+              "1024": {
+                "mean": -0.09411300916568706,
+                "se": 0.025330124265944266
+              }
+            }
+          },
+          "cumulative": {
+            "first_positive": {
+              "time": 1,
+              "status": "positive_from_start",
+              "bootstrap_percentiles": {
+                "lower": 1,
+                "median": 1,
+                "upper": 1
+              },
+              "bootstrap_censored_count": 2,
+              "bootstrap_positive_from_start_count": 1993
+            },
+            "final_positive_run": {
+              "time": null,
+              "status": "not_positive_at_horizon",
+              "bootstrap_percentiles": {
+                "lower": null,
+                "median": null,
+                "upper": null
+              },
+              "bootstrap_censored_count": 2000,
+              "bootstrap_positive_from_start_count": 0
+            },
+            "at_times": {
+              "1": {
+                "mean": 0.011973833916322995,
+                "se": 0.00440198669940722
+              },
+              "4": {
+                "mean": 0.011126535042532552,
+                "se": 0.006035910190834916
+              },
+              "16": {
+                "mean": 0.014315742243511181,
+                "se": 0.00844506985918404
+              },
+              "64": {
+                "mean": -0.07669529011784672,
+                "se": 0.024717161786143783
+              },
+              "128": {
+                "mean": -0.3317915268716754,
+                "se": 0.06511054019382043
+              },
+              "256": {
+                "mean": -1.251504743362876,
+                "se": 0.24899587746444946
+              },
+              "512": {
+                "mean": -7.300562263035828,
+                "se": 1.858813905769829
+              },
+              "1024": {
+                "mean": -32.03335810126064,
+                "se": 2.7604945528906484
+              }
+            }
+          }
+        }
+      }
+    },
+    {
+      "depth": 8,
+      "n_sequences": 119,
+      "ci95_multiplier": 1.980272249272974,
+      "curves": {
+        "transformer": {
+          "instantaneous": {
+            "first_positive": {
+              "time": 3,
+              "status": "upward_crossing_after_nonpositive_values",
+              "bootstrap_percentiles": {
+                "lower": 2,
+                "median": 3,
+                "upper": 3
+              },
+              "bootstrap_censored_count": 0,
+              "bootstrap_positive_from_start_count": 1
+            },
+            "final_positive_run": {
+              "time": 3,
+              "status": "upward_crossing_after_nonpositive_values",
+              "bootstrap_percentiles": {
+                "lower": 2,
+                "median": 3,
+                "upper": 3
+              },
+              "bootstrap_censored_count": 0,
+              "bootstrap_positive_from_start_count": 1
+            },
+            "at_times": {
+              "1": {
+                "mean": -0.0026883530532633764,
+                "se": 0.0007137980128570602
+              },
+              "4": {
+                "mean": 0.08811511643053586,
+                "se": 0.034994936985782675
+              },
+              "16": {
+                "mean": 0.31159630415083023,
+                "se": 0.06352677719009002
+              },
+              "64": {
+                "mean": 0.8624145971250669,
+                "se": 0.10226986517521082
+              },
+              "128": {
+                "mean": 1.2228773093126004,
+                "se": 0.10701236842166797
+              },
+              "256": {
+                "mean": 1.8142209579425375,
+                "se": 0.12716605271456072
+              },
+              "512": {
+                "mean": 2.3862366320814634,
+                "se": 0.10984349874499652
+              },
+              "1024": {
+                "mean": 2.408459992047369,
+                "se": 0.08887744366698175
+              }
+            }
+          },
+          "cumulative": {
+            "first_positive": {
+              "time": 3,
+              "status": "upward_crossing_after_nonpositive_values",
+              "bootstrap_percentiles": {
+                "lower": 3,
+                "median": 3,
+                "upper": 4
+              },
+              "bootstrap_censored_count": 0,
+              "bootstrap_positive_from_start_count": 1
+            },
+            "final_positive_run": {
+              "time": 3,
+              "status": "upward_crossing_after_nonpositive_values",
+              "bootstrap_percentiles": {
+                "lower": 3,
+                "median": 3,
+                "upper": 4
+              },
+              "bootstrap_censored_count": 0,
+              "bootstrap_positive_from_start_count": 1
+            },
+            "at_times": {
+              "1": {
+                "mean": -0.0026883530532633764,
+                "se": 0.0007137980128570602
+              },
+              "4": {
+                "mean": 0.12608685834045297,
+                "se": 0.0486345938138963
+              },
+              "16": {
+                "mean": 2.651570881246692,
+                "se": 0.30065002110404093
+              },
+              "64": {
+                "mean": 31.02905058591134,
+                "se": 1.4297254036725031
+              },
+              "128": {
+                "mean": 99.11156355087905,
+                "se": 2.6510988639164985
+              },
+              "256": {
+                "mean": 300.96495116158263,
+                "se": 5.002208339298389
+              },
+              "512": {
+                "mean": 826.6458369505934,
+                "se": 8.821865642219702
+              },
+              "1024": {
+                "mean": 2059.009540510747,
+                "se": 16.070687885002204
+              }
+            }
+          }
+        },
+        "bayes": {
+          "instantaneous": {
+            "first_positive": {
+              "time": 3,
+              "status": "upward_crossing_after_nonpositive_values",
+              "bootstrap_percentiles": {
+                "lower": 3,
+                "median": 3,
+                "upper": 3
+              },
+              "bootstrap_censored_count": 0,
+              "bootstrap_positive_from_start_count": 0
+            },
+            "final_positive_run": {
+              "time": 3,
+              "status": "upward_crossing_after_nonpositive_values",
+              "bootstrap_percentiles": {
+                "lower": 3,
+                "median": 3,
+                "upper": 3
+              },
+              "bootstrap_censored_count": 0,
+              "bootstrap_positive_from_start_count": 0
+            },
+            "at_times": {
+              "1": {
+                "mean": 0.0,
+                "se": 0.0
+              },
+              "4": {
+                "mean": 0.09670821016398673,
+                "se": 0.038305430909787136
+              },
+              "16": {
+                "mean": 0.33088039729572205,
+                "se": 0.06930265957093366
+              },
+              "64": {
+                "mean": 0.9427957434001466,
+                "se": 0.11442402908473223
+              },
+              "128": {
+                "mean": 1.2854383325962218,
+                "se": 0.11496848759212144
+              },
+              "256": {
+                "mean": 1.8913858370561367,
+                "se": 0.12914924607813602
+              },
+              "512": {
+                "mean": 2.4816494239213225,
+                "se": 0.11524800516439535
+              },
+              "1024": {
+                "mean": 2.5835058708333904,
+                "se": 0.09921126449943865
+              }
+            }
+          },
+          "cumulative": {
+            "first_positive": {
+              "time": 3,
+              "status": "upward_crossing_after_nonpositive_values",
+              "bootstrap_percentiles": {
+                "lower": 3,
+                "median": 3,
+                "upper": 3
+              },
+              "bootstrap_censored_count": 0,
+              "bootstrap_positive_from_start_count": 0
+            },
+            "final_positive_run": {
+              "time": 3,
+              "status": "upward_crossing_after_nonpositive_values",
+              "bootstrap_percentiles": {
+                "lower": 3,
+                "median": 3,
+                "upper": 3
+              },
+              "bootstrap_censored_count": 0,
+              "bootstrap_positive_from_start_count": 0
+            },
+            "at_times": {
+              "1": {
+                "mean": 0.0,
+                "se": 0.0
+              },
+              "4": {
+                "mean": 0.14259100871578032,
+                "se": 0.05180735584135755
+              },
+              "16": {
+                "mean": 2.80157522170462,
+                "se": 0.3195702493680649
+              },
+              "64": {
+                "mean": 33.40965422230529,
+                "se": 1.5697703347879022
+              },
+              "128": {
+                "mean": 106.6328247527904,
+                "se": 2.7891993399096187
+              },
+              "256": {
+                "mean": 316.7194191758443,
+                "se": 5.011977732189853
+              },
+              "512": {
+                "mean": 858.605047107328,
+                "se": 9.254776121333512
+              },
+              "1024": {
+                "mean": 2145.156872547812,
+                "se": 17.977339853765194
+              }
+            }
+          }
+        },
+        "control": {
+          "instantaneous": {
+            "first_positive": {
+              "time": 1,
+              "status": "positive_from_start",
+              "bootstrap_percentiles": {
+                "lower": 1,
+                "median": 1,
+                "upper": 5
+              },
+              "bootstrap_censored_count": 0,
+              "bootstrap_positive_from_start_count": 1686
+            },
+            "final_positive_run": {
+              "time": 19,
+              "status": "upward_crossing_after_nonpositive_values",
+              "bootstrap_percentiles": {
+                "lower": 17,
+                "median": 46,
+                "upper": 80
+              },
+              "bootstrap_censored_count": 0,
+              "bootstrap_positive_from_start_count": 0
+            },
+            "at_times": {
+              "1": {
+                "mean": 0.0007822979476701146,
+                "se": 0.0007809715902046443
+              },
+              "4": {
+                "mean": -0.0036078709067238544,
+                "se": 0.010349309723908162
+              },
+              "16": {
+                "mean": -0.0020118159514456923,
+                "se": 0.005538453236140354
+              },
+              "64": {
+                "mean": 0.05396650182385116,
+                "se": 0.013855176389147838
+              },
+              "128": {
+                "mean": 0.12445956270479812,
+                "se": 0.021124883571539004
+              },
+              "256": {
+                "mean": 0.09981176868848446,
+                "se": 0.020033182228813128
+              },
+              "512": {
+                "mean": 0.06462175083980207,
+                "se": 0.009014428883026154
+              },
+              "1024": {
+                "mean": 0.040916100539531076,
+                "se": 0.006319130007618138
+              }
+            }
+          },
+          "cumulative": {
+            "first_positive": {
+              "time": 1,
+              "status": "positive_from_start",
+              "bootstrap_percentiles": {
+                "lower": 1,
+                "median": 1,
+                "upper": 15
+              },
+              "bootstrap_censored_count": 0,
+              "bootstrap_positive_from_start_count": 1686
+            },
+            "final_positive_run": {
+              "time": 10,
+              "status": "upward_crossing_after_nonpositive_values",
+              "bootstrap_percentiles": {
+                "lower": 1,
+                "median": 11,
+                "upper": 22
+              },
+              "bootstrap_censored_count": 0,
+              "bootstrap_positive_from_start_count": 131
+            },
+            "at_times": {
+              "1": {
+                "mean": 0.0007822979476701146,
+                "se": 0.0007809715902046443
+              },
+              "4": {
+                "mean": -0.017351973596393427,
+                "se": 0.017524325916796982
+              },
+              "16": {
+                "mean": 0.024457222896914814,
+                "se": 0.034323346989686296
+              },
+              "64": {
+                "mean": 1.297954562705138,
+                "se": 0.16929915720668492
+              },
+              "128": {
+                "mean": 7.169377092873463,
+                "se": 0.506144956000447
+              },
+              "256": {
+                "mean": 23.358414178850424,
+                "se": 1.5043798450392025
+              },
+              "512": {
+                "mean": 44.66630888022697,
+                "se": 2.8801095580484395
+              },
+              "1024": {
+                "mean": 67.8523260442631,
+                "se": 4.038881777675815
+              }
+            }
+          }
+        },
+        "transformer_vs_uniform": {
+          "instantaneous": {
+            "first_positive": {
+              "time": 2,
+              "status": "upward_crossing_after_nonpositive_values",
+              "bootstrap_percentiles": {
+                "lower": 1,
+                "median": 2,
+                "upper": 3
+              },
+              "bootstrap_censored_count": 0,
+              "bootstrap_positive_from_start_count": 118
+            },
+            "final_positive_run": {
+              "time": 2,
+              "status": "upward_crossing_after_nonpositive_values",
+              "bootstrap_percentiles": {
+                "lower": 1,
+                "median": 2,
+                "upper": 3
+              },
+              "bootstrap_censored_count": 0,
+              "bootstrap_positive_from_start_count": 85
+            },
+            "at_times": {
+              "1": {
+                "mean": -0.008521668508034753,
+                "se": 0.0052698910072677945
+              },
+              "4": {
+                "mean": 0.09078710261215961,
+                "se": 0.035179964851276425
+              },
+              "16": {
+                "mean": 0.31376322474498236,
+                "se": 0.06442685588406873
+              },
+              "64": {
+                "mean": 0.8688410286810564,
+                "se": 0.10460879467228448
+              },
+              "128": {
+                "mean": 1.2241121889139068,
+                "se": 0.10690477163273987
+              },
+              "256": {
+                "mean": 1.8246722451668496,
+                "se": 0.12776850967971767
+              },
+              "512": {
+                "mean": 2.44517699334006,
+                "se": 0.11491886972120972
+              },
+              "1024": {
+                "mean": 2.5202185664991372,
+                "se": 0.09775686999103853
+              }
+            }
+          },
+          "cumulative": {
+            "first_positive": {
+              "time": 3,
+              "status": "upward_crossing_after_nonpositive_values",
+              "bootstrap_percentiles": {
+                "lower": 1,
+                "median": 3,
+                "upper": 4
+              },
+              "bootstrap_censored_count": 0,
+              "bootstrap_positive_from_start_count": 118
+            },
+            "final_positive_run": {
+              "time": 3,
+              "status": "upward_crossing_after_nonpositive_values",
+              "bootstrap_percentiles": {
+                "lower": 1,
+                "median": 3,
+                "upper": 4
+              },
+              "bootstrap_censored_count": 0,
+              "bootstrap_positive_from_start_count": 99
+            },
+            "at_times": {
+              "1": {
+                "mean": -0.008521668508034753,
+                "se": 0.0052698910072677945
+              },
+              "4": {
+                "mean": 0.13147799959004064,
+                "se": 0.05170419916199771
+              },
+              "16": {
+                "mean": 2.663874334963625,
+                "se": 0.3055978444241305
+              },
+              "64": {
+                "mean": 31.25501255519653,
+                "se": 1.4793634472978097
+              },
+              "128": {
+                "mean": 99.74410353069287,
+                "se": 2.7506777781752274
+              },
+              "256": {
+                "mean": 302.77543908778824,
+                "se": 5.1272258044383205
+              },
+              "512": {
+                "mean": 836.1327468991263,
+                "se": 9.392805624230371
+              },
+              "1024": {
+                "mean": 2104.4784081503153,
+                "se": 18.093584171539725
+              }
+            }
+          }
+        },
+        "disabled_vs_uniform": {
+          "instantaneous": {
+            "first_positive": {
+              "time": 1,
+              "status": "positive_from_start",
+              "bootstrap_percentiles": {
+                "lower": 1,
+                "median": 1,
+                "upper": 6
+              },
+              "bootstrap_censored_count": 0,
+              "bootstrap_positive_from_start_count": 1766
+            },
+            "final_positive_run": {
+              "time": null,
+              "status": "not_positive_at_horizon",
+              "bootstrap_percentiles": {
+                "lower": null,
+                "median": null,
+                "upper": null
+              },
+              "bootstrap_censored_count": 2000,
+              "bootstrap_positive_from_start_count": 0
+            },
+            "at_times": {
+              "1": {
+                "mean": 0.005833315454771376,
+                "se": 0.004838004900936526
+              },
+              "4": {
+                "mean": -0.002671986181623742,
+                "se": 0.0021094958099987836
+              },
+              "16": {
+                "mean": -0.0021669205941520454,
+                "se": 0.0024400474273682084
+              },
+              "64": {
+                "mean": -0.006426431555990222,
+                "se": 0.004895974470101819
+              },
+              "128": {
+                "mean": -0.0012348796013067868,
+                "se": 0.0015614958927733151
+              },
+              "256": {
+                "mean": -0.010451287224312291,
+                "se": 0.0038409349404333114
+              },
+              "512": {
+                "mean": -0.05894036125859601,
+                "se": 0.015052658888176522
+              },
+              "1024": {
+                "mean": -0.1117585744517671,
+                "se": 0.024971845828025033
+              }
+            }
+          },
+          "cumulative": {
+            "first_positive": {
+              "time": 1,
+              "status": "positive_from_start",
+              "bootstrap_percentiles": {
+                "lower": 1,
+                "median": 1,
+                "upper": null
+              },
+              "bootstrap_censored_count": 217,
+              "bootstrap_positive_from_start_count": 1766
+            },
+            "final_positive_run": {
+              "time": null,
+              "status": "not_positive_at_horizon",
+              "bootstrap_percentiles": {
+                "lower": null,
+                "median": null,
+                "upper": null
+              },
+              "bootstrap_censored_count": 2000,
+              "bootstrap_positive_from_start_count": 0
+            },
+            "at_times": {
+              "1": {
+                "mean": 0.005833315454771376,
+                "se": 0.004838004900936526
+              },
+              "4": {
+                "mean": -0.005391141249587707,
+                "se": 0.006860795631693754
+              },
+              "16": {
+                "mean": -0.012303453716932958,
+                "se": 0.012527858457539098
+              },
+              "64": {
+                "mean": -0.2259619692852068,
+                "se": 0.07056646815982345
+              },
+              "128": {
+                "mean": -0.6325399798138485,
+                "se": 0.17098121443238165
+              },
+              "256": {
+                "mean": -1.8104879262056068,
+                "se": 0.2581205355528404
+              },
+              "512": {
+                "mean": -9.486909948533059,
+                "se": 1.1608328761717799
+              },
+              "1024": {
+                "mean": -45.468867639569076,
+                "se": 3.6904330222624306
+              }
+            }
+          }
+        }
+      }
+    }
+  ]
+}

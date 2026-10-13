@@ -1,0 +1,114 @@
+{
+  "schema": "section4-copying-pilot-v1-validation",
+  "plan_id": "6e6f189bfb4db89a49cb2d5b856a915be914e3bc696c77aeb573dfa93ef790c9",
+  "passed": true,
+  "checks": [
+    {
+      "depth_max": 4,
+      "branch": "iid",
+      "index": 0,
+      "wide_gap_error_bits": 4.3019099393859506e-10,
+      "wide_probability_error": 4.733158309733199e-13,
+      "depth_one_probability_error": 1.8283985436795547e-13,
+      "depth_one_loss_error_bits": 8.572698106945609e-12,
+      "causality_error": 0.0,
+      "direct_count_code_error_bits": 7.521521183662117e-10,
+      "posterior_crossings_unchanged": true
+    },
+    {
+      "depth_max": 4,
+      "branch": "iid",
+      "index": 255,
+      "wide_gap_error_bits": 3.710738383233547e-10,
+      "wide_probability_error": 4.733158309733199e-13,
+      "depth_one_probability_error": 1.8283985436795547e-13,
+      "depth_one_loss_error_bits": 8.572698106945609e-12,
+      "causality_error": 0.0,
+      "direct_count_code_error_bits": 7.385096978396177e-10,
+      "posterior_crossings_unchanged": true
+    },
+    {
+      "depth_max": 4,
+      "branch": "copy",
+      "index": 0,
+      "wide_gap_error_bits": 5.402398528531194e-10,
+      "wide_probability_error": 4.733158309733199e-13,
+      "depth_one_probability_error": 1.8283985436795547e-13,
+      "depth_one_loss_error_bits": 8.572698106945609e-12,
+      "causality_error": 0.0,
+      "direct_count_code_error_bits": 8.685674401931465e-10,
+      "posterior_crossings_unchanged": true
+    },
+    {
+      "depth_max": 4,
+      "branch": "copy",
+      "index": 255,
+      "wide_gap_error_bits": 5.400124791776761e-10,
+      "wide_probability_error": 4.733158309733199e-13,
+      "depth_one_probability_error": 1.8283985436795547e-13,
+      "depth_one_loss_error_bits": 8.572698106945609e-12,
+      "causality_error": 0.0,
+      "direct_count_code_error_bits": 8.540155249647796e-10,
+      "posterior_crossings_unchanged": true
+    },
+    {
+      "depth_max": 8,
+      "branch": "iid",
+      "index": 0,
+      "wide_gap_error_bits": 4.1018211049959064e-10,
+      "wide_probability_error": 9.546530232995565e-13,
+      "depth_one_probability_error": 1.8283985436795547e-13,
+      "depth_one_loss_error_bits": 8.572698106945609e-12,
+      "causality_error": 0.0,
+      "direct_count_code_error_bits": 1.1732481652870774e-10,
+      "posterior_crossings_unchanged": true
+    },
+    {
+      "depth_max": 8,
+      "branch": "iid",
+      "index": 255,
+      "wide_gap_error_bits": 3.537934389896691e-10,
+      "wide_probability_error": 9.546530232995565e-13,
+      "depth_one_probability_error": 1.8283985436795547e-13,
+      "depth_one_loss_error_bits": 8.572698106945609e-12,
+      "causality_error": 0.0,
+      "direct_count_code_error_bits": 1.064108801074326e-10,
+      "posterior_crossings_unchanged": true
+    },
+    {
+      "depth_max": 8,
+      "branch": "copy",
+      "index": 0,
+      "wide_gap_error_bits": 5.384208634495735e-10,
+      "wide_probability_error": 9.546530232995565e-13,
+      "depth_one_probability_error": 1.8283985436795547e-13,
+      "depth_one_loss_error_bits": 8.572698106945609e-12,
+      "causality_error": 0.0,
+      "direct_count_code_error_bits": 1.3278622645884752e-10,
+      "posterior_crossings_unchanged": true
+    },
+    {
+      "depth_max": 8,
+      "branch": "copy",
+      "index": 255,
+      "wide_gap_error_bits": 5.406946002040058e-10,
+      "wide_probability_error": 9.546530232995565e-13,
+      "depth_one_probability_error": 1.8283985436795547e-13,
+      "depth_one_loss_error_bits": 8.572698106945609e-12,
+      "causality_error": 0.0,
+      "direct_count_code_error_bits": 1.4097167877480388e-10,
+      "posterior_crossings_unchanged": true
+    }
+  ],
+  "per_depth_singleton_log_evidence_errors": [
+    5.941913627793838e-12,
+    1.7460699552884762e-11,
+    3.5489833294377604e-11,
+    9.208633855450898e-12,
+    9.732659123073972e-12,
+    4.079403481682675e-12,
+    4.970246436641901e-12,
+    7.552181102710165e-12
+  ],
+  "utc": "2026-09-17T17:37:01.914083+00:00"
+}

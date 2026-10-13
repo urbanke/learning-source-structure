@@ -1,0 +1,46 @@
+{
+ "product_8x8_L2-2": {
+  "unigram predictor": {
+   "bits": 5.732126585575827,
+   "regret": 1627.9733509980142
+  },
+  "copier of the paper": {
+   "bits": 5.278014067228028,
+   "regret": 1162.9621322098683
+  },
+  "product copier (two copiers, depths 1 to 8)": {
+   "bits": 4.371916581516956,
+   "regret": 235.11830684173037
+  },
+  "transformer trained on product chains": {
+   "bits": 4.371241844387016,
+   "regret": 234.42737602067191
+  },
+  "transformer trained on independent contexts": {
+   "bits": 5.285620902443107,
+   "regret": 1170.7515314701086
+  },
+  "transformer trained on the paper's source": {
+   "bits": 5.26251954190103,
+   "regret": 1147.0957382750225
+  }
+ },
+ "product_16x16_L4-4": {
+  "unigram predictor": {
+   "bits": 7.704849197653857,
+   "regret": 3244.4039292250527
+  },
+  "copier of the paper": {
+   "bits": 7.249294772499507,
+   "regret": 2777.916197866998
+  },
+  "product copier (two copiers, depths 1 to 8)": {
+   "bits": 5.117880426655255,
+   "regret": 595.3479077224838
+  },
+  "transformer trained on product chains": {
+   "bits": 5.123972876327294,
+   "regret": 601.5865761866523
+  }
+ }
+}

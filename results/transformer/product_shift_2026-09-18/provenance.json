@@ -1,0 +1,48 @@
+{
+  "schema": "product-shift-paper-figures-v1",
+  "plan_id": "f32337eebf7923d039c6ad705c6453a049b838cc1e39aa4abb70259d7ce1138e",
+  "summary": "/Users/ruediger/Projects/layered_architectures/output/product_shift_2026-09-18/summary.json",
+  "summary_sha256": "06137d560f092e8b7bfa8604a795111128240f73e5893e805788c699a3627821",
+  "script_sha256": "bcfcb12c860f4c48a2cec036074ad27fd50becfb81067222fc1b199dba4183c1",
+  "complete": true,
+  "plan_sha256": "7c68cee5738f10e91bd99d86b43a63220dca1e4e7f4078991fcf78e94702dd5f",
+  "benchmark_sha256": "cd2a463e1cc9b7c71744339da7e68170b50b02ed34500912f2cc08f40224185c",
+  "stationary_projection_sha256": "61277a1eb84ec21ae0fcbacf271a42c1e2837ba734b8d61aa20ade1d40ff45d0",
+  "checkpoint_sha256": "29cac698253475a539a0b1bb76a47436a6eee0b0ab3d8c651a61bfe239b9b271",
+  "numerical_validation": {
+    "passed": true,
+    "maximum_errors": {
+      "wide_probability": 0.0,
+      "wide_risk_bits": 0.0,
+      "dirichlet_probability": 9.414691248821327e-14
+    },
+    "source_indices": [
+      0,
+      3
+    ],
+    "conditions": [
+      "stationary",
+      "relabeled",
+      "switch_one",
+      "switch_both"
+    ],
+    "scope": "Selected histories at every new condition; raw normalization and common-prefix causality checked for every record"
+  },
+  "n_sequences_per_depth": 1024,
+  "raw_records_sha256": "3fbd671378b5b61428fb944d909a62365c088b2a3ff463ac4e475cfe52841618",
+  "raw_normalization_max_error": {
+    "true_probs": 6.661338147750939e-16,
+    "bayes_probs": 3.0597678835064812e-09,
+    "transformer_probs": 3.384293807418004e-07
+  },
+  "figure_sha256": {
+    "depth1.pdf": "fb70aaf221d481ba8ade2de0c637cd54071828b6560a02a26b76a624e6d67bef",
+    "depth1.png": "248ab0ce99ae09a759b1b0e7f092d0a81ef5bd614fb87b1b32c6ecadc2dcae2d",
+    "depth4.pdf": "59db394e5173035283336bf2533b60d179b88a9a294a7eba18423172c25f0d3a",
+    "depth4.png": "cbe9bbd0fdd7b59a19a9bcac2398cb3f59f545d3b08a08f0650912ebf4f176aa",
+    "agreement.pdf": "ba3af8a93f2adaa5013c03a89881d986a7136421e4ea73ce7b98d74301cc97d7",
+    "agreement.png": "a4e2e78de7a09aa9fde49d978f76b709253f2cf66a0e96d5fcc7d5422c78db1e",
+    "endpoint_rows.tex": "c287185801249f96080cb0501e2d58915f5ee746955f0daf906362a34b44ede7",
+    "endpoint_table.tex": "86f5d3f78c6427a3948df6a1388e96ca65d3e451be80e62c38ddd8bf31d93461"
+  }
+}

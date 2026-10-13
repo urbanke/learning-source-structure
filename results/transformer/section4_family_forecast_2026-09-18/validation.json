@@ -1,0 +1,61 @@
+{
+  "schema": "section4-family-forecast-validation-v1",
+  "passed": true,
+  "summary_sha256": "490af10322304a6857ed074f7100f969b1ffe1aeb7a2e022467b5c6c8a43a103",
+  "script_sha256": "ffc81105779bfded8ea70e5d1711611594bffc30d66962f683ef2a7cfe64820f",
+  "raw_path": "/Users/ruediger/Projects/layered_architectures/output/section4_family_forecast_2026-09-18/orbits.npz",
+  "raw_sha256": "d519590b7c57ade86a16d321ccbc6506b9bdbd1e7ab2367cfc034d253ede10bc",
+  "checks": {
+    "coordinate_relabelling": {
+      "checked": 123,
+      "maximum_absolute_error_bits": 5.125482406103868e-15
+    },
+    "saved_endpoint_replay": {
+      "component_log_likelihoods_checked": 18432,
+      "maximum_absolute_error_bits": 0.0
+    },
+    "maximum_mass_error": 1.4588996677389332e-11,
+    "maximum_entropy_identity_error_bits": 2.6367796834847468e-15,
+    "maximum_posterior_identity_error_bits": 2.6645352591003757e-15
+  },
+  "refinements": {
+    "lsa_expanded_bounds": {
+      "family_cost_bits": 2.220446049250313e-16,
+      "equal_family_cost_bits": 8.326672684688674e-17,
+      "posterior_entropy_bits": 0.0,
+      "posterior_weight_mean_by_generating_family": 1.6653345369377348e-16,
+      "optimal_family_classification_accuracy": 0.0
+    },
+    "lsa_halved_step": {
+      "family_cost_bits": 2.498001805406602e-16,
+      "equal_family_cost_bits": 1.1102230246251565e-16,
+      "posterior_entropy_bits": 4.440892098500626e-16,
+      "posterior_weight_mean_by_generating_family": 1.1102230246251565e-16,
+      "optimal_family_classification_accuracy": 1.1102230246251565e-16
+    },
+    "alpha16_step32_bounds-32_32.json": {
+      "family_cost_bits": 2.7533531010703882e-14,
+      "equal_family_cost_bits": 2.4234086959395995e-15,
+      "posterior_entropy_bits": 1.6653345369377348e-14,
+      "posterior_weight_mean_by_generating_family": 1.637578961322106e-14,
+      "optimal_family_classification_accuracy": 8.548717289613705e-15
+    },
+    "alpha32_step32_bounds-32_32.json": {
+      "family_cost_bits": 2.78388423424758e-14,
+      "equal_family_cost_bits": 2.4234086959395995e-15,
+      "posterior_entropy_bits": 1.6653345369377348e-14,
+      "posterior_weight_mean_by_generating_family": 1.6542323066914832e-14,
+      "optimal_family_classification_accuracy": 8.826273045769994e-15
+    },
+    "alpha32_step64_bounds-36_34.json": {
+      "family_cost_bits": 0.0,
+      "equal_family_cost_bits": 0.0,
+      "posterior_entropy_bits": 0.0,
+      "posterior_weight_mean_by_generating_family": 0.0,
+      "optimal_family_classification_accuracy": 0.0
+    }
+  },
+  "tolerance": 1e-08,
+  "inherited_source_audit": "section4_family_cost.audit: complete saved 3072-sequence comparison and all linked identities rechecked.",
+  "scientific_scope": "All labelled sequences through five tokens; no statement about longer contexts or transformer family representations."
+}

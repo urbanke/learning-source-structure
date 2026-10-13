@@ -1,0 +1,28 @@
+{
+  "inputs": {
+    "results/transformer/section4_unseen_context_refined_2026-09-20/summary.json": "e289b295ad61012641289ca42a5a32b423a5271184119ae2c0296f754fc5eeab",
+    "results/transformer/section4_unseen_context_refined_2026-09-20/validation.json": "04b74e26abae81818ecc8469daf0f6436635c5dc9098181271f034be3b0f29cf",
+    "code/scripts/section4_unseen_context_figures.py": "463416e00bece78dc803388ba183828a82d4580013e8acb3f68f9317ab63b6bd",
+    "results/transformer/product_context_confirmation_2026-09-17/summary.json": "00c0777fd8128679cdc9c1bf11c1e644c045c4681047222813c43371d5d6d4f9",
+    "results/transformer/product_context_confirmation_2026-09-17/validation.json": "217d6d28712962e889b2ff794f81170cdb5f5982284a33b709afb8a48c6d8a8f",
+    "results/transformer/section4_unseen_uniform_control_2026-09-17/summary.json": "e6b5b601358ce379f3d9e36809afbfe4346cad44dd8764779a7b263344e01828",
+    "results/transformer/section4_unseen_uniform_control_2026-09-17/validation.json": "98e2d5536095f855519f86d89dc1b7a93005d778518426200b2b0cf693256992",
+    "code/scripts/product_context_figures.py": "628d1fcb39cb279338cb8dd923a623abad37bf342d22b1ef7756f8d970bad9c1"
+  },
+  "outputs": {
+    "gains.pdf": "622349a5de8bc2bb63c070c3e50bb135c09eb6d673d50056dd087f6cfd0ec8ca",
+    "gains.png": "98f2cb98ca5dca87486448522b44c7473ad6189194a74a1c0b45341ec675cc80",
+    "paired_runs.pdf": "36115cf6d9a96344115fbae882b83c995bf8e03019c3741391b62ce641267373",
+    "paired_runs.png": "94b7cad112f0fd45e76de693715d3bdc979066a5019b9627ed1ec4421127234c",
+    "context_forecast.pdf": "75f15174f0534d483ea668d25187a6b37a297624cc42050dfc7dd41e3934e031",
+    "context_forecast.png": "394c2bc233b4b9ea0b861348d06ce8aa1a36110abb504eea087f83557900b9a7",
+    "uniform_control.pdf": "788c8df7221b372bf106c09628b3b094fdba0887dc42e68b31b6fa393311fa9e",
+    "uniform_control.png": "f1c9f217f0db1894169a921a8692495c7a96ed967f9a94ae7868fe1f4649ed2f",
+    "uniform_all_depths.pdf": "eda7e6d9bf61fda76275e2526bd9b8a430d51762a45e2a8e0f686116d560753a",
+    "uniform_all_depths.png": "ff32aca21edbaefa36a644a7b21a78d4bd163280d1d10db51faff8bd5e148963",
+    "paired_table.tex": "b88b8cc35a70625cf21bb28dd6cbb87cf9ffbdb8467d19e821ab6b6dfa39ff8d"
+  },
+  "bayes_withheld": [],
+  "uncertainty": "One standard error across independent selected sequences; paired differences use the same histories.",
+  "main_training_run": "larger_seed0; fixed run 1, no performance selection"
+}

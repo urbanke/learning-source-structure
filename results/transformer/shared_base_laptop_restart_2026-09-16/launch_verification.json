@@ -1,0 +1,73 @@
+{
+  "recorded_at": "2026-09-16T21:38:54.343744+02:00",
+  "hardware": {
+    "cpu_cores": 15,
+    "ram_gib": 24
+  },
+  "original_plan_id": "c677a2c947b3576cbdfaa65c8c5a9fe8c256087777a020e74d271aa32ed122b5",
+  "continuation_plan_id": "638bee7659b6720d0c7288ee9900e63ae64a1467db1f534ef8d7c5bdd680c574",
+  "pending_launch": {
+    "pid": 78964,
+    "caffeinate_pid": 78965,
+    "command": [
+      "/private/tmp/layered-shared-depth-env/bin/python",
+      "/Users/ruediger/Projects/layered_architectures/code/scripts/run_shared_base_curve_campaign.py",
+      "--times",
+      "64",
+      "--max-workers",
+      "10",
+      "--max-hours",
+      "12"
+    ],
+    "max_pending_workers": 10,
+    "reserved_continuation_workers": 2,
+    "global_planned_worker_cap": 12,
+    "dispatch_hours": 12,
+    "started": "2026-09-16T21:30:44.793233+02:00",
+    "log": "/Users/ruediger/Projects/layered_architectures/output/shared_base_curve_campaign_2026-09-15/dispatcher_t64_10workers_20260916_213044.log",
+    "plan_id": "c677a2c947b3576cbdfaa65c8c5a9fe8c256087777a020e74d271aa32ed122b5",
+    "previous_t64": {
+      "ready": 1150,
+      "unresolved": 36,
+      "pending": 862
+    },
+    "meaning": "Resumes original declared t64 population with unchanged numerical settings. Prevent idle system sleep only while the dispatcher is alive."
+  },
+  "continuation_launch": {
+    "started": "2026-09-16T21:36:06.775784+02:00",
+    "pid": 79632,
+    "caffeinate_pid": 79633,
+    "command": [
+      "/private/tmp/layered-shared-depth-env/bin/python",
+      "/Users/ruediger/Projects/layered_architectures/code/scripts/continue_shared_base_curve_failures.py",
+      "--run",
+      "--max-hours",
+      "12"
+    ],
+    "log": "/Users/ruediger/Projects/layered_architectures/output/shared_base_curve_continuation_2026-09-16/dispatcher_20260916_213606.log",
+    "plan_id": "638bee7659b6720d0c7288ee9900e63ae64a1467db1f534ef8d7c5bdd680c574",
+    "cases": 36,
+    "continuation_workers": 2,
+    "global_planned_worker_cap": 12,
+    "dispatch_hours": 12
+  },
+  "t64_snapshot": {
+    "ready": 1168,
+    "unresolved": 36,
+    "running": 10,
+    "pending": 834
+  },
+  "continuation_snapshot": {
+    "running": 2,
+    "pending": 34
+  },
+  "validation": {
+    "tests_passed": 43,
+    "original_files_verified": 108,
+    "pending_copies_hash_verified": true,
+    "first_two_workers_resumed_at_draws": 65536,
+    "unchanged_original_numerical_code": true
+  },
+  "scope": "Operational restart only; no new complete-cohort Bayesian result. All original failures retained. Time256/1024 not dispatched.",
+  "resume_requirement": "Before any future continuation restart, reverify copied checkpoints exist, initial pending copies match original hashes, and completed reports/checkpoints/moments agree. The frozen minimal continuation dispatcher does not itself revalidate every completed continuation artifact."
+}

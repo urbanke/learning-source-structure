@@ -1,0 +1,342 @@
+{
+  "schema": "hidden-factor-sizing-v1",
+  "device": "cuda",
+  "torch_version": "2.14.0+cu126",
+  "numpy_version": "2.4.6",
+  "gpu": "NVIDIA H100",
+  "source_length": 1025,
+  "projected_n_sequences": 4096,
+  "production_workload": true,
+  "precision": "float64",
+  "chunk_size": 65536,
+  "repeats": 2,
+  "budget_gpu_hours": 24.0,
+  "validation": {
+    "passed": true,
+    "tolerance": 1e-09,
+    "cases": [
+      {
+        "dimensions": [
+          2,
+          3
+        ],
+        "seed": 2026091700,
+        "probability_max_error": 2.3314683517128287e-15,
+        "evidence_max_error_bits": 1.4210854715202004e-14,
+        "cache_chunk_max_error": 0.0,
+        "passed": true
+      },
+      {
+        "dimensions": [
+          2,
+          3
+        ],
+        "seed": 2026091701,
+        "probability_max_error": 8.43769498715119e-15,
+        "evidence_max_error_bits": 2.842170943040401e-14,
+        "cache_chunk_max_error": 0.0,
+        "passed": true
+      },
+      {
+        "dimensions": [
+          3,
+          3
+        ],
+        "seed": 2026091700,
+        "probability_max_error": 4.98212582300539e-15,
+        "evidence_max_error_bits": 5.684341886080802e-14,
+        "cache_chunk_max_error": 7.105427357601002e-15,
+        "passed": true
+      },
+      {
+        "dimensions": [
+          3,
+          3
+        ],
+        "seed": 2026091701,
+        "probability_max_error": 1.354472090042691e-14,
+        "evidence_max_error_bits": 2.842170943040401e-14,
+        "cache_chunk_max_error": 5.684341886080802e-14,
+        "passed": true
+      }
+    ]
+  },
+  "note": "Each completed timing uses an independent full sequence and all requested prediction times. Cumulative losses use exact evidence at those times. Encoding-cache build is measured once; reference timing includes source generation and bounded host-to-device cache transfers. Warmup is excluded. Cohort projection includes cache build and uses the slowest completed repeat.",
+  "code_sha256": "f78f1bcbb091db36e617f6a46dc954af22a35c48da90df69ba6613faed1d6c4c",
+  "source_sha256": "f35bd787af99d19d2bcf4c2a69f9a7e85a089e7ad7676031c07de400544bef65",
+  "cache_code_sha256": "ed148b790f3e299f4aea6497ddf0b4748faab66b963a4fc7c1307aedda392a8e",
+  "candidates": [
+    {
+      "dimensions": [
+        2,
+        5
+      ],
+      "alphabet": 10,
+      "encoding_count": 15120,
+      "memory_estimate_bytes": 46206720,
+      "status": "complete",
+      "measured_seconds": [
+        0.016901236027479172,
+        0.015054654330015182
+      ],
+      "peak_allocated_bytes": [
+        49171456,
+        48764416
+      ],
+      "cache_reused": false,
+      "cache_build_and_open_seconds": 0.024349160492420197,
+      "cache_receipt": {
+        "contract": "hidden-factor-canonical-encodings-v1",
+        "dimensions": [
+          2,
+          5
+        ],
+        "encoding_count": 15120,
+        "shape": [
+          15120,
+          10
+        ],
+        "dtype": "uint8",
+        "order": "C",
+        "direction": "pair-index-to-token",
+        "prior": "uniform-over-all-canonical-encodings",
+        "source_sha256": "f35bd787af99d19d2bcf4c2a69f9a7e85a089e7ad7676031c07de400544bef65",
+        "complete": true,
+        "written_rows": 15120,
+        "sha256_payload": "ef39177ec6d84f35c95f7d70191095150535de7e20534f4ff68681a9d1dccd50",
+        "payload_bytes": 151200,
+        "file_bytes": 151328,
+        "mtime_ns": 1789552464707065287,
+        "generation_seconds": 0.018577665090560913
+      },
+      "projected_reference_hours": 0.01923661442473531,
+      "projected_reference_hours_mean": 0.01818611461462246,
+      "within_budget": true
+    },
+    {
+      "dimensions": [
+        2,
+        6
+      ],
+      "alphabet": 12,
+      "encoding_count": 332640,
+      "memory_estimate_bytes": 260046848,
+      "status": "complete",
+      "measured_seconds": [
+        0.04831857047975063,
+        0.04215146228671074
+      ],
+      "peak_allocated_bytes": [
+        304104448,
+        304104448
+      ],
+      "cache_reused": false,
+      "cache_build_and_open_seconds": 0.24482071213424206,
+      "cache_receipt": {
+        "contract": "hidden-factor-canonical-encodings-v1",
+        "dimensions": [
+          2,
+          6
+        ],
+        "encoding_count": 332640,
+        "shape": [
+          332640,
+          12
+        ],
+        "dtype": "uint8",
+        "order": "C",
+        "direction": "pair-index-to-token",
+        "prior": "uniform-over-all-canonical-encodings",
+        "source_sha256": "f35bd787af99d19d2bcf4c2a69f9a7e85a089e7ad7676031c07de400544bef65",
+        "complete": true,
+        "written_rows": 332640,
+        "sha256_payload": "4c8f915b74ce626cf0aac7e2362f6e9293fa09c9b9022492bc73d6dbbf892001",
+        "payload_bytes": 3991680,
+        "file_bytes": 3991808,
+        "mtime_ns": 1789552464935619362,
+        "generation_seconds": 0.2384213674813509
+      },
+      "projected_reference_hours": 0.05504380149922023,
+      "projected_reference_hours_mean": 0.0515354021716242,
+      "within_budget": true
+    },
+    {
+      "dimensions": [
+        3,
+        4
+      ],
+      "alphabet": 12,
+      "encoding_count": 3326400,
+      "memory_estimate_bytes": 226492416,
+      "status": "complete",
+      "measured_seconds": [
+        0.29232247918844223,
+        0.27688357047736645
+      ],
+      "peak_allocated_bytes": [
+        296240128,
+        297288704
+      ],
+      "cache_reused": false,
+      "cache_build_and_open_seconds": 1.7732376009225845,
+      "cache_receipt": {
+        "contract": "hidden-factor-canonical-encodings-v1",
+        "dimensions": [
+          3,
+          4
+        ],
+        "encoding_count": 3326400,
+        "shape": [
+          3326400,
+          12
+        ],
+        "dtype": "uint8",
+        "order": "C",
+        "direction": "pair-index-to-token",
+        "prior": "uniform-over-all-canonical-encodings",
+        "source_sha256": "f35bd787af99d19d2bcf4c2a69f9a7e85a089e7ad7676031c07de400544bef65",
+        "complete": true,
+        "written_rows": 3326400,
+        "sha256_payload": "6947bd9fa7e44a8c58ce084a8d72a97fe4e734c2faf9d06bd80de84c1af295e4",
+        "payload_bytes": 39916800,
+        "file_bytes": 39916928,
+        "mtime_ns": 1789552466843081737,
+        "generation_seconds": 1.7637973353266716
+      },
+      "projected_reference_hours": 0.33309058676577274,
+      "projected_reference_hours_mean": 0.32430756314347187,
+      "within_budget": true
+    },
+    {
+      "dimensions": [
+        2,
+        7
+      ],
+      "alphabet": 14,
+      "encoding_count": 8648640,
+      "memory_estimate_bytes": 328204288,
+      "status": "complete",
+      "measured_seconds": [
+        0.8965189065784216,
+        0.8526325672864914
+      ],
+      "peak_allocated_bytes": [
+        404243456,
+        404243456
+      ],
+      "cache_reused": false,
+      "cache_build_and_open_seconds": 5.131682366132736,
+      "cache_receipt": {
+        "contract": "hidden-factor-canonical-encodings-v1",
+        "dimensions": [
+          2,
+          7
+        ],
+        "encoding_count": 8648640,
+        "shape": [
+          8648640,
+          14
+        ],
+        "dtype": "uint8",
+        "order": "C",
+        "direction": "pair-index-to-token",
+        "prior": "uniform-over-all-canonical-encodings",
+        "source_sha256": "f35bd787af99d19d2bcf4c2a69f9a7e85a089e7ad7676031c07de400544bef65",
+        "complete": true,
+        "written_rows": 8648640,
+        "sha256_payload": "6ab29f2b928fa5d6eff291aae335b57ffd97d1dd4722c1997186bdb4f409b509",
+        "payload_bytes": 121080960,
+        "file_bytes": 121081088,
+        "mtime_ns": 1789552472517997978,
+        "generation_seconds": 5.1205792259424925
+      },
+      "projected_reference_hours": 1.0214647565864854,
+      "projected_reference_hours_mean": 0.9964983057892984,
+      "within_budget": true
+    },
+    {
+      "dimensions": [
+        3,
+        5
+      ],
+      "alphabet": 15,
+      "encoding_count": 1816214400,
+      "memory_estimate_bytes": 307232768,
+      "status": "incomplete",
+      "measured_seconds": [],
+      "peak_allocated_bytes": [],
+      "cache_reused": false,
+      "reason": "complete encoding cache needs approximately 27243220096 bytes, exceeds limit 8589934592",
+      "elapsed_incomplete_repeat_seconds": 0.00032103992998600006,
+      "within_budget": false
+    },
+    {
+      "dimensions": [
+        2,
+        8
+      ],
+      "alphabet": 16,
+      "encoding_count": 259459200,
+      "memory_estimate_bytes": 404750336,
+      "status": "complete",
+      "measured_seconds": [
+        31.496925875544548,
+        30.21444152481854
+      ],
+      "peak_allocated_bytes": [
+        511722496,
+        511722496
+      ],
+      "cache_reused": false,
+      "cache_build_and_open_seconds": 168.90728368982673,
+      "cache_receipt": {
+        "contract": "hidden-factor-canonical-encodings-v1",
+        "dimensions": [
+          2,
+          8
+        ],
+        "encoding_count": 259459200,
+        "shape": [
+          259459200,
+          16
+        ],
+        "dtype": "uint8",
+        "order": "C",
+        "direction": "pair-index-to-token",
+        "prior": "uniform-over-all-canonical-encodings",
+        "source_sha256": "f35bd787af99d19d2bcf4c2a69f9a7e85a089e7ad7676031c07de400544bef65",
+        "complete": true,
+        "written_rows": 259459200,
+        "sha256_payload": "5f83befd40ac693eb2197b81a9dd471dbf8a2bd4f57ff3dd3764928fcce10746",
+        "payload_bytes": 4151347200,
+        "file_bytes": 4151347328,
+        "mtime_ns": 1789552643012025172,
+        "generation_seconds": 168.86782553978264
+      },
+      "projected_reference_hours": 35.88342101942231,
+      "projected_reference_hours_mean": 35.153829922120394,
+      "within_budget": false
+    },
+    {
+      "dimensions": [
+        2,
+        9
+      ],
+      "alphabet": 18,
+      "encoding_count": 8821612800,
+      "memory_estimate_bytes": 489684992,
+      "status": "incomplete",
+      "measured_seconds": [],
+      "peak_allocated_bytes": [],
+      "cache_reused": false,
+      "reason": "complete encoding cache needs approximately 158789034496 bytes, exceeds limit 8589934592",
+      "elapsed_incomplete_repeat_seconds": 0.0003693830221891403,
+      "within_budget": false
+    }
+  ],
+  "recommended_dimensions": [
+    2,
+    7
+  ],
+  "selection_rule": "Largest measured alphabet among declared candidates within reference-time budget; encoding count breaks alphabet-size ties. Not a proof that no other dimension pair is tractable."
+}

@@ -1,0 +1,116 @@
+{
+  "schema": "mixture-family-evidence-validation-v1",
+  "passed": true,
+  "refinement": {
+    "bounds": {
+      "bits": 4.1003859248830946e-14,
+      "truth": "product",
+      "reference": "product",
+      "sequence": 2
+    },
+    "grid": {
+      "bits": 6.560617479812951e-13,
+      "truth": "product",
+      "reference": "product",
+      "sequence": 1
+    }
+  },
+  "normalization": [
+    {
+      "truth": "product",
+      "reference": "product",
+      "length": 16,
+      "sum_error": 1.176836406102666e-14
+    },
+    {
+      "truth": "product",
+      "reference": "uniform_base",
+      "length": 16,
+      "sum_error": 5.24913446042774e-13
+    },
+    {
+      "truth": "shared_base",
+      "reference": "product",
+      "length": 16,
+      "sum_error": 4.04121180963557e-14
+    },
+    {
+      "truth": "shared_base",
+      "reference": "uniform_base",
+      "length": 16,
+      "sum_error": 3.3306690738754696e-15
+    },
+    {
+      "truth": "uniform_base",
+      "reference": "product",
+      "length": 16,
+      "sum_error": 1.41886502547095e-13
+    },
+    {
+      "truth": "uniform_base",
+      "reference": "uniform_base",
+      "length": 16,
+      "sum_error": 1.7541523789077473e-14
+    }
+  ],
+  "batch_vs_sequential": [
+    {
+      "truth": "product",
+      "reference": "product",
+      "length": 65,
+      "abs_error_bits": 4.1003859248830946e-14
+    },
+    {
+      "truth": "product",
+      "reference": "uniform_base",
+      "length": 65,
+      "abs_error_bits": 2.0501929624415474e-13
+    },
+    {
+      "truth": "shared_base",
+      "reference": "product",
+      "length": 65,
+      "abs_error_bits": 0.0
+    },
+    {
+      "truth": "shared_base",
+      "reference": "uniform_base",
+      "length": 65,
+      "abs_error_bits": 0.0
+    },
+    {
+      "truth": "uniform_base",
+      "reference": "product",
+      "length": 65,
+      "abs_error_bits": 0.0
+    },
+    {
+      "truth": "uniform_base",
+      "reference": "uniform_base",
+      "length": 65,
+      "abs_error_bits": 1.6401543699532378e-13
+    }
+  ],
+  "n_prior_sequences_per_cohort": 4,
+  "prefixes": [
+    1,
+    4,
+    16,
+    64,
+    256,
+    1024
+  ],
+  "elapsed_seconds": 25.481595541001298,
+  "code_sha256": {
+    "mixture_family_evidence.py": "86e79efcc8b98aa5a66aa3dd1548ddf88f53c39dd5ab3ec972160358775caf57",
+    "validate_shared_depth.py": "0e1901d4d09ffa768c59c034eb3a7474418e3e656817d3b0f6cd64197517ec7f",
+    "phi_source.py": "456eb407fd7f280786a441681a704a6fff172af9fc9aea3c6f9456fb55174831",
+    "shared_depth.py": "616f536153458499078d17d7939e6a800c7b52e3eb4f1dd6503db95030d7a395",
+    "lsa_seq.py": "7e39960e91f3bb27eea82e201afd8a86ce717ea50a304daa86534b4fdbadfc51"
+  },
+  "source_sha256": {
+    "product": "6a66459c00f6b3850e3f8bad4002869c41e0d83c1494cd8f51ac2241dd017f96",
+    "shared_base": "68a12be7e92bbd4f7130265c9cb953108edbb21cc13adc16d24a14a91e7f03fa",
+    "uniform_base": "57a5261e6cbca7283247d9a491b82689be0ac10042152851ac6e7a7bff2a5ded"
+  }
+}

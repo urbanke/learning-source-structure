@@ -1,0 +1,905 @@
+{
+  "schema": "shared-base-shuffle-early-reference-v1",
+  "complete": true,
+  "times": [
+    1,
+    2,
+    3,
+    4
+  ],
+  "manifest_sha256": "552083ec6eb9b2e5d0403d418c2d1fb5be6e2db43f1cea6b6e5557568b44110e",
+  "script_sha256": "836b0b0ad874ac2fd3f510d916cbcfe130822370cdf4a45b1024fd92e514820d",
+  "bayes": {
+    "prior": {
+      "alpha": [
+        0.5,
+        1.5
+      ],
+      "depths": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "ranks": "uniform permutation"
+    },
+    "method": "Unchanged validated full-prior catalog lookup; no posterior sampling.",
+    "validation": {
+      "schema": "shared-base-short-evidence-validation-v1",
+      "passed": true,
+      "available_token_lengths": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "available_prediction_times": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "prior": {
+        "alpha": [
+          0.5,
+          1.5
+        ],
+        "depths": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8
+        ],
+        "ranks": "uniform permutation"
+      },
+      "pattern_counts": [
+        1,
+        1,
+        2,
+        5,
+        15,
+        52
+      ],
+      "normalization_errors": {
+        "0": 0.0,
+        "1": 1.4587886454364707e-11,
+        "2": 1.4587886454364707e-11,
+        "3": 1.4587886454364707e-11,
+        "4": 1.4588108498969632e-11,
+        "5": 1.4587886454364707e-11
+      },
+      "maximum_child_parent_relative_error": 1.4587886454364707e-11,
+      "maximum_independent_first_step_error": 5.496159083406837e-13,
+      "tolerance": 1e-09,
+      "renormalized": false,
+      "verified_file_sha256": {
+        "/Users/ruediger/Projects/layered_architectures/results/transformer/shared_base_conditional_curves/shortprefix_reference.json": "a1659aa766a6c15ffb849d71f67352f88fe385658297a920c2baf376dbbb0c1c",
+        "/Users/ruediger/Projects/layered_architectures/results/transformer/conditional_shared_base/first_step.json": "b856ef15840ba31c8c42a1a50a3fa933372c15d61ca1be45fef1bcf9c375ced4",
+        "/Users/ruediger/Projects/layered_architectures/results/transformer/shared_base_conditional_curves/time4_summary.json": "e4997691be5bf98016e9e3b67f03e37f08556068b4777af229a2a6f164259482",
+        "/Users/ruediger/Projects/layered_architectures/code/scripts/shortprefix_shared_base_exact.py": "b6e229cb48f9b1a58e570521df9eb92ebec65da6b0db8386c3a23a71183791a6",
+        "/Users/ruediger/Projects/layered_architectures/code/scripts/shortprefix_shared_base_summary.py": "71bb461091932c015b3e816ec68f6320f0ccb8eae75795e31c57b5e840afadfc",
+        "/Users/ruediger/Projects/layered_architectures/code/scripts/conditional_shared_base_first_step.py": "8abba4e59ddbbe6ac4484d029f88d4244db50237d5726eabadd0f6325209f5cd",
+        "/Users/ruediger/Projects/layered_architectures/output/shortprefix_shared_base_exact_2026-09-15/alpha16_step32_bounds-32_32.json": "978fb8e733763910ac61b1b3fb2912df824d4aeafa0cd1779d74a8e14a89cdfa",
+        "/Users/ruediger/Projects/layered_architectures/output/shortprefix_shared_base_exact_2026-09-15/alpha32_step32_bounds-32_32.json": "c0d94195d4048a3e013337bc52588b3b547f8a4957601dd882b7d3a804bed130",
+        "/Users/ruediger/Projects/layered_architectures/output/shortprefix_shared_base_exact_2026-09-15/alpha32_step64_bounds-36_34.json": "2e2dd8fdd501a19c9a628bb8e883329a3bb37ca0fab7fedc335f2f772b419a64"
+      },
+      "unavailable_optional_numerical_reports": []
+    }
+  },
+  "first_prediction_repeat_probabilities": {
+    "bayes": 0.06491112601821125,
+    "unigram": 0.33497714921567695
+  },
+  "unigram": {
+    "prior": "Normalized iid product-exponential weights; uniform coding-depth mixture 1..20.",
+    "method": "Existing SeqLSA pooled count table.",
+    "depths": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20
+    ],
+    "u_bounds": [
+      -30.0,
+      30.0
+    ],
+    "u_step": 0.015625,
+    "sealed_store_receipts_sha256": {
+      "manifest.json": "cf0449a4b704174890f0a1fb95f20954839dd7266ae307e799d1dc6d0234ffb5",
+      "anchors.json": "5c409244487deeba8d597ad66fa13479a8d15476d55d4509c33b2ec797b07c68"
+    },
+    "code_sha256": {
+      "lsa_seq.py": "7e39960e91f3bb27eea82e201afd8a86ce717ea50a304daa86534b4fdbadfc51",
+      "phi_source.py": "456eb407fd7f280786a441681a704a6fff172af9fc9aea3c6f9456fb55174831",
+      "eval_conditional_crossing.py": "eb948526f5b90fd7d5437c1ae56a1a39be0825a0080f0dc680815ad477e27d45"
+    }
+  },
+  "scoring": "At t=1..4, X1..Xt have been observed; score expected loss for X(t+1) using T[Xt,:]. X1 is supplied and updates unigram.",
+  "sign": "Positive gap is unigram expected loss minus full informed shared-base Bayes expected loss; positive favors informed Bayes.",
+  "uncertainty": "Paired standard errors across the same 256 independent source sequences per condition; cumulative losses summed per sequence before standard error.",
+  "limitation": "Diagnostic reuse; not independent confirmation. No Bayesian values beyond t=4. No conversion of archived row-copier crossings.",
+  "groups": [
+    {
+      "id": "a1_L0",
+      "depth": 0,
+      "n_sequences": 256,
+      "metrics": {
+        "bayes_expected_loss_bits": {
+          "mean": [
+            5.9221282807093685,
+            5.876209675164735,
+            5.83385935345904,
+            5.7827410445938385
+          ],
+          "se": [
+            0.010161772121032784,
+            0.011920062750120666,
+            0.01329149925471503,
+            0.014456726182966761
+          ]
+        },
+        "unigram_expected_loss_bits": {
+          "mean": [
+            6.20969794725836,
+            6.12351399780778,
+            6.006019551753427,
+            5.9136969478262635
+          ],
+          "se": [
+            0.02381075779484387,
+            0.024705264110722464,
+            0.025432750420682423,
+            0.02331281633125555
+          ]
+        },
+        "gap_bits": {
+          "mean": [
+            0.2875696665489942,
+            0.24730432264305102,
+            0.17216019829438708,
+            0.13095590323242084
+          ],
+          "se": [
+            0.013648985673811067,
+            0.014028421194065843,
+            0.014236484440678194,
+            0.013292571351274284
+          ]
+        },
+        "cumulative_gap_bits": {
+          "mean": [
+            0.2875696665489942,
+            0.5348739891920448,
+            0.7070341874864312,
+            0.8379900907188529
+          ],
+          "se": [
+            0.013648985673811067,
+            0.023273858178047314,
+            0.03282413592680823,
+            0.040889387380413846
+          ]
+        },
+        "bayes_regret_bits": {
+          "mean": [
+            1.0582947877575444,
+            1.0123761822129096,
+            0.9700258605072184,
+            0.9189075516420177
+          ],
+          "se": [
+            0.01016177212103278,
+            0.011920062750120664,
+            0.01329149925471503,
+            0.014456726182966763
+          ]
+        },
+        "unigram_regret_bits": {
+          "mean": [
+            1.3458644543065366,
+            1.2596805048559616,
+            1.1421860588016064,
+            1.0498634548744394
+          ],
+          "se": [
+            0.02381075779484387,
+            0.024705264110722464,
+            0.02543275042068242,
+            0.023312816331255554
+          ]
+        }
+      },
+      "paired_transformer_comparisons": [
+        {
+          "seed": 0,
+          "metrics": {
+            "unigram_minus_shuffled_seed0": {
+              "mean": [
+                0.2863929154743799,
+                0.25998989080582396,
+                0.19960109157037048,
+                0.1566075444068827
+              ],
+              "se": [
+                0.01361863506348899,
+                0.014016052851192376,
+                0.014443923847312225,
+                0.013138559870805979
+              ]
+            },
+            "shuffled_expected_loss_bits": {
+              "mean": [
+                5.9233050317839835,
+                5.863524107001961,
+                5.806418460183059,
+                5.7570894034193785
+              ],
+              "se": [
+                0.010251241422691765,
+                0.012859121085550162,
+                0.014424280803190307,
+                0.014325048085873569
+              ]
+            },
+            "bayes_minus_ordered_seed0": {
+              "mean": [
+                -0.004117863529412551,
+                -0.004171325988057948,
+                -0.0020603867972283085,
+                -0.0008155177173776937
+              ],
+              "se": [
+                0.0016893755384294544,
+                0.0011234603788756313,
+                0.0011508599909230048,
+                0.001207263124197211
+              ]
+            },
+            "ordered_expected_loss_bits": {
+              "mean": [
+                5.9262461442387755,
+                5.880381001152794,
+                5.835919740256268,
+                5.783556562311219
+              ],
+              "se": [
+                0.00942839051561214,
+                0.011987226321056952,
+                0.01331255615603194,
+                0.01438038329743613
+              ]
+            }
+          },
+          "model_files": {
+            "shuffled": {
+              "path": "/Users/ruediger/Projects/layered_architectures/output/shared_base_shuffle_download_2026-09-18/eval/shuffled_seed0/a1_L0.npz",
+              "sha256": "c8d5b5243eda53ed3626885a41c0f5d2ae12be770a720d436ac38207bb57a936",
+              "protocol_sha256": "d2183be7f6fd61f40188b8bdb817b2ec6a4c46f49232f634e3b895b1bf2ca2ea"
+            },
+            "ordered": {
+              "path": "/Users/ruediger/Projects/layered_architectures/output/shared_base_shuffle_download_2026-09-18/eval/ordered_seed0/a1_L0.npz",
+              "sha256": "0f51ff2e7247e657bb0a2a2ee00efc8f3c8cea08e4c8d22945f6da927024e7ee",
+              "protocol_sha256": "e29acf029fbda9c73bf9a7566a63a31bf58f6f3fab22a3b4e73f8209822ac114"
+            }
+          }
+        },
+        {
+          "seed": 1,
+          "metrics": {
+            "unigram_minus_shuffled_seed1": {
+              "mean": [
+                0.28667069016471325,
+                0.26010553088058824,
+                0.20137541116874957,
+                0.15817115332996545
+              ],
+              "se": [
+                0.013457594564995817,
+                0.013902795464029958,
+                0.014223675138718382,
+                0.012955212576744476
+              ]
+            },
+            "shuffled_expected_loss_bits": {
+              "mean": [
+                5.9230272570936435,
+                5.863408466927197,
+                5.804644140584678,
+                5.755525794496294
+              ],
+              "se": [
+                0.010396252116615401,
+                0.01302871242759782,
+                0.014590726250190386,
+                0.014403883334026035
+              ]
+            },
+            "bayes_minus_ordered_seed1": {
+              "mean": [
+                -0.04946523271329013,
+                -0.003146580663687202,
+                -0.0026778663904871956,
+                -0.003909966265501677
+              ],
+              "se": [
+                0.007562624420922468,
+                0.0011989167320485845,
+                0.0014639778160484645,
+                0.0012640228566531185
+              ]
+            },
+            "ordered_expected_loss_bits": {
+              "mean": [
+                5.971593513422654,
+                5.87935625582842,
+                5.8365372198495304,
+                5.786651010859344
+              ],
+              "se": [
+                0.0026847997874169076,
+                0.012171595427003022,
+                0.013359109242589167,
+                0.01445992922724735
+              ]
+            }
+          },
+          "model_files": {
+            "shuffled": {
+              "path": "/Users/ruediger/Projects/layered_architectures/output/shared_base_shuffle_download_2026-09-18/eval/shuffled_seed1/a1_L0.npz",
+              "sha256": "d4be258f66b66f9a52a04e1e675f0d1624e3f1d9e1d5b94d024b1317c1fdadc7",
+              "protocol_sha256": "bc96d3818190bd06a1172ad63dbbfbecd14a11ca95c1ed353c102fb715ceae86"
+            },
+            "ordered": {
+              "path": "/Users/ruediger/Projects/layered_architectures/output/shared_base_shuffle_download_2026-09-18/eval/ordered_seed1/a1_L0.npz",
+              "sha256": "12c03dff19a7de7a3ccbda2cce1f5ccdae87a33d9d9e2faac3bc5f577319707b",
+              "protocol_sha256": "5cbb9f8984db7967c93f4b750196fe75297b719740d5583b1bac45e0f93b48ec"
+            }
+          }
+        }
+      ],
+      "source_sha256": "1952ed045cfe6b86c6b34e2fa1b95cd7f6a61d3a7f68f022e3acddc8bbf41692",
+      "arrays_sha256": {
+        "tokens": "6ecc9388540c078468783e62165567e828d4c9449c57835605ee151064a54978",
+        "base": "d8fbc0b7b013665512ba8b5b9bb9001504bcb2c434880e5c3aeeb771275d756a",
+        "transition": "139fae8ed0294ec0d1400fd70dea519f522fc825a12e7d77d516be6468d2984b"
+      },
+      "maximum_normalization_errors": {
+        "bayes_probs": 4.440892098500626e-16,
+        "unigram_probs": 6.27387031215676e-12,
+        "oracle_probs": 2.220446049250313e-16
+      },
+      "maximum_unigram_realized_loss_error": 8.881784197001252e-16
+    },
+    {
+      "id": "a1_L2",
+      "depth": 2,
+      "n_sequences": 256,
+      "metrics": {
+        "bayes_expected_loss_bits": {
+          "mean": [
+            5.953036609642374,
+            5.8795954422236845,
+            5.828047656993693,
+            5.793373337436781
+          ],
+          "se": [
+            0.014783976469500706,
+            0.027356257354910634,
+            0.03222728958549878,
+            0.0330244033172153
+          ]
+        },
+        "unigram_expected_loss_bits": {
+          "mean": [
+            6.282121410931978,
+            6.171636892629704,
+            6.067721751872533,
+            5.9970817482072745
+          ],
+          "se": [
+            0.03464136754566141,
+            0.04329120191472456,
+            0.044670909232058166,
+            0.04528343439393378
+          ]
+        },
+        "gap_bits": {
+          "mean": [
+            0.32908480128960366,
+            0.2920414504060203,
+            0.23967409487883493,
+            0.20370841077049845
+          ],
+          "se": [
+            0.019857391076160708,
+            0.01963029340271109,
+            0.018398380513132178,
+            0.019726883957021497
+          ]
+        },
+        "cumulative_gap_bits": {
+          "mean": [
+            0.32908480128960366,
+            0.621126251695624,
+            0.8608003465744586,
+            1.0645087573449568
+          ],
+          "se": [
+            0.019857391076160708,
+            0.030194748128422964,
+            0.03794081663660652,
+            0.04452176745450466
+          ]
+        },
+        "bayes_regret_bits": {
+          "mean": [
+            1.9470073923789653,
+            1.8875143667155925,
+            1.7499642793384458,
+            1.836789750448287
+          ],
+          "se": [
+            0.04111197369381614,
+            0.04004326324454308,
+            0.03563165012058031,
+            0.039424379160432454
+          ]
+        },
+        "unigram_regret_bits": {
+          "mean": [
+            2.27609219366857,
+            2.179555817121612,
+            1.9896383742172805,
+            2.040498161218785
+          ],
+          "se": [
+            0.047697644166177396,
+            0.04785588603516298,
+            0.04181778108108445,
+            0.04731330986612088
+          ]
+        }
+      },
+      "paired_transformer_comparisons": [
+        {
+          "seed": 0,
+          "metrics": {
+            "unigram_minus_shuffled_seed0": {
+              "mean": [
+                0.327833478734104,
+                0.2907985452890343,
+                0.23712852789718558,
+                0.1906338220169439
+              ],
+              "se": [
+                0.019554489573536237,
+                0.01972207795276038,
+                0.01852452843117485,
+                0.018276871066894223
+              ]
+            },
+            "shuffled_expected_loss_bits": {
+              "mean": [
+                5.954287932197875,
+                5.880838347340664,
+                5.830593223975339,
+                5.806447926190333
+              ],
+              "se": [
+                0.015162925671327541,
+                0.025411328840212202,
+                0.0298190457094158,
+                0.031013011127846504
+              ]
+            },
+            "bayes_minus_ordered_seed0": {
+              "mean": [
+                -0.002780133656680308,
+                -0.001724946132261873,
+                -0.0008324715309162012,
+                0.00027672373705027974
+              ],
+              "se": [
+                0.0023008174367075878,
+                0.001887869923100672,
+                0.00172979162806894,
+                0.0017402721834640414
+              ]
+            },
+            "ordered_expected_loss_bits": {
+              "mean": [
+                5.955816743299056,
+                5.8813203883559435,
+                5.828880128524606,
+                5.793096613699728
+              ],
+              "se": [
+                0.014033808087289004,
+                0.02761319494328894,
+                0.0322509952336088,
+                0.032851936561460446
+              ]
+            }
+          },
+          "model_files": {
+            "shuffled": {
+              "path": "/Users/ruediger/Projects/layered_architectures/output/shared_base_shuffle_download_2026-09-18/eval/shuffled_seed0/a1_L2.npz",
+              "sha256": "e6441d442e90064fbb3daa3318d623dd7151c5653e1fc060485a24c012c48e19",
+              "protocol_sha256": "d2183be7f6fd61f40188b8bdb817b2ec6a4c46f49232f634e3b895b1bf2ca2ea"
+            },
+            "ordered": {
+              "path": "/Users/ruediger/Projects/layered_architectures/output/shared_base_shuffle_download_2026-09-18/eval/ordered_seed0/a1_L2.npz",
+              "sha256": "af019904403d792dd9f8e734605644e51d886694bde81bd219412a4ede4bb407",
+              "protocol_sha256": "e29acf029fbda9c73bf9a7566a63a31bf58f6f3fab22a3b4e73f8209822ac114"
+            }
+          }
+        },
+        {
+          "seed": 1,
+          "metrics": {
+            "unigram_minus_shuffled_seed1": {
+              "mean": [
+                0.32800696555625086,
+                0.2899913868825717,
+                0.23484772533638648,
+                0.18948217443996987
+              ],
+              "se": [
+                0.019297080556718305,
+                0.019566203669224482,
+                0.0182709700512373,
+                0.017854770144896226
+              ]
+            },
+            "shuffled_expected_loss_bits": {
+              "mean": [
+                5.954114445375725,
+                5.881645505747131,
+                5.832874026536145,
+                5.807599573767312
+              ],
+              "se": [
+                0.01541078414444831,
+                0.02541063301279787,
+                0.029989826886628025,
+                0.03123507367910877
+              ]
+            },
+            "bayes_minus_ordered_seed1": {
+              "mean": [
+                -0.027049111290677254,
+                -0.00502789508032671,
+                -0.003520712933274897,
+                -0.004486969181063959
+              ],
+              "se": [
+                0.010939178669497828,
+                0.0017631206547421721,
+                0.0017905408627854951,
+                0.0019138796156390268
+              ]
+            },
+            "ordered_expected_loss_bits": {
+              "mean": [
+                5.980085720933052,
+                5.884623337304005,
+                5.831568369926964,
+                5.797860306617841
+              ],
+              "se": [
+                0.003988082349694104,
+                0.027744491090047712,
+                0.031909694687048296,
+                0.03309041388964498
+              ]
+            }
+          },
+          "model_files": {
+            "shuffled": {
+              "path": "/Users/ruediger/Projects/layered_architectures/output/shared_base_shuffle_download_2026-09-18/eval/shuffled_seed1/a1_L2.npz",
+              "sha256": "f8015482f76899cb50ac5ff6ca3e8d0e3b80b6f68d8ce525c8c425c443279924",
+              "protocol_sha256": "bc96d3818190bd06a1172ad63dbbfbecd14a11ca95c1ed353c102fb715ceae86"
+            },
+            "ordered": {
+              "path": "/Users/ruediger/Projects/layered_architectures/output/shared_base_shuffle_download_2026-09-18/eval/ordered_seed1/a1_L2.npz",
+              "sha256": "98668d94fbf623dbf0ac2332e97eaac88802aa826d0a4f6a9459665b873a9840",
+              "protocol_sha256": "5cbb9f8984db7967c93f4b750196fe75297b719740d5583b1bac45e0f93b48ec"
+            }
+          }
+        }
+      ],
+      "source_sha256": "f9f7178863614bc90c347b1b23a1a50eab4543ceb662ce24dbf097b853f3a8a9",
+      "arrays_sha256": {
+        "tokens": "7122b1ae15abd0855def865e6ce206f1fec30e49c0960f1cb5c7186bfad946f5",
+        "base": "e03d0472fbdefeec51000cd6c1347416cca661c9ec1d8c677737d327e66d8fdf",
+        "transition": "c08ceb05b757787974f524604135806002262c3ee6f4299707654b7835eb2713"
+      },
+      "maximum_normalization_errors": {
+        "bayes_probs": 3.3306690738754696e-16,
+        "unigram_probs": 6.27387031215676e-12,
+        "oracle_probs": 4.440892098500626e-16
+      },
+      "maximum_unigram_realized_loss_error": 8.881784197001252e-16
+    },
+    {
+      "id": "a1_L3",
+      "depth": 3,
+      "n_sequences": 256,
+      "metrics": {
+        "bayes_expected_loss_bits": {
+          "mean": [
+            5.973002562675562,
+            5.892177300880529,
+            5.858369131608186,
+            5.80929505839172
+          ],
+          "se": [
+            0.01416372736114969,
+            0.027336435312058222,
+            0.029809549968576106,
+            0.032712480082251194
+          ]
+        },
+        "unigram_expected_loss_bits": {
+          "mean": [
+            6.328905029591606,
+            6.179824921355267,
+            6.099766585230018,
+            5.99447036728276
+          ],
+          "se": [
+            0.0331880185514593,
+            0.045914272177699576,
+            0.04675907258526554,
+            0.046747747655224554
+          ]
+        },
+        "gap_bits": {
+          "mean": [
+            0.35590246691604593,
+            0.28764762047473147,
+            0.24139745362183082,
+            0.18517530889103945
+          ],
+          "se": [
+            0.01902429119030962,
+            0.021871285962343213,
+            0.021461145701704844,
+            0.020260859081132336
+          ]
+        },
+        "cumulative_gap_bits": {
+          "mean": [
+            0.35590246691604593,
+            0.6435500873907776,
+            0.8849475410126076,
+            1.070122849903648
+          ],
+          "se": [
+            0.01902429119030962,
+            0.031783810037107126,
+            0.03864178843489373,
+            0.04379412313572215
+          ]
+        },
+        "bayes_regret_bits": {
+          "mean": [
+            2.3252377338329584,
+            2.2493018287144646,
+            2.235109077849898,
+            2.075706175625452
+          ],
+          "se": [
+            0.046179894780294294,
+            0.04908145949019105,
+            0.04578975183655154,
+            0.042094267684293904
+          ]
+        },
+        "unigram_regret_bits": {
+          "mean": [
+            2.6811402007490033,
+            2.5369494491891964,
+            2.476506531471728,
+            2.2608814845164904
+          ],
+          "se": [
+            0.05269019557903035,
+            0.057281021522395205,
+            0.05310408321502472,
+            0.04641831764002983
+          ]
+        }
+      },
+      "paired_transformer_comparisons": [
+        {
+          "seed": 0,
+          "metrics": {
+            "unigram_minus_shuffled_seed0": {
+              "mean": [
+                0.35242439275701254,
+                0.2841794546125384,
+                0.23507730568227028,
+                0.1792599474890395
+              ],
+              "se": [
+                0.018898110138317513,
+                0.02186867131700189,
+                0.02075917775679557,
+                0.018621431131854382
+              ]
+            },
+            "shuffled_expected_loss_bits": {
+              "mean": [
+                5.9764806368345935,
+                5.895645466742725,
+                5.864689279547745,
+                5.81521041979372
+              ],
+              "se": [
+                0.014417665328638512,
+                0.025448462116084192,
+                0.02819430723826423,
+                0.03162745830898549
+              ]
+            },
+            "bayes_minus_ordered_seed0": {
+              "mean": [
+                -0.001979121538678446,
+                0.0004948616561488931,
+                -0.004815758285756798,
+                0.0009515083926093792
+              ],
+              "se": [
+                0.002658464107925047,
+                0.0018635764738693633,
+                0.0021120484187741448,
+                0.001795302525133653
+              ]
+            },
+            "ordered_expected_loss_bits": {
+              "mean": [
+                5.974981684214244,
+                5.891682439224387,
+                5.863184889893941,
+                5.808343549999112
+              ],
+              "se": [
+                0.013369587536355525,
+                0.027328384497315648,
+                0.029575851638671356,
+                0.0323578105239219
+              ]
+            }
+          },
+          "model_files": {
+            "shuffled": {
+              "path": "/Users/ruediger/Projects/layered_architectures/output/shared_base_shuffle_download_2026-09-18/eval/shuffled_seed0/a1_L3.npz",
+              "sha256": "ff340efcd7e5341340ae1f68469bd4394cff114d42884b3178922dbd7034669f",
+              "protocol_sha256": "d2183be7f6fd61f40188b8bdb817b2ec6a4c46f49232f634e3b895b1bf2ca2ea"
+            },
+            "ordered": {
+              "path": "/Users/ruediger/Projects/layered_architectures/output/shared_base_shuffle_download_2026-09-18/eval/ordered_seed0/a1_L3.npz",
+              "sha256": "00f8765c4580c8b1842517312771c4adb4828083607b23c819b1849c7a2adc9d",
+              "protocol_sha256": "e29acf029fbda9c73bf9a7566a63a31bf58f6f3fab22a3b4e73f8209822ac114"
+            }
+          }
+        },
+        {
+          "seed": 1,
+          "metrics": {
+            "unigram_minus_shuffled_seed1": {
+              "mean": [
+                0.35459218609684345,
+                0.28584933818302205,
+                0.23090861216745523,
+                0.1812274617894623
+              ],
+              "se": [
+                0.018909317983655166,
+                0.021132441861049026,
+                0.020124645258033837,
+                0.017924395722925514
+              ]
+            },
+            "shuffled_expected_loss_bits": {
+              "mean": [
+                5.974312843494764,
+                5.893975583172242,
+                5.86885797306256,
+                5.813242905493295
+              ],
+              "se": [
+                0.01437733889621201,
+                0.026053049253656733,
+                0.028886570148965153,
+                0.03215135626323418
+              ]
+            },
+            "bayes_minus_ordered_seed1": {
+              "mean": [
+                -0.012021632138265192,
+                0.0007253549457979045,
+                -0.0033818749755928686,
+                -0.003843014305018483
+              ],
+              "se": [
+                0.010720564806457035,
+                0.0019190029675051742,
+                0.002186717100607332,
+                0.002083038528568467
+              ]
+            },
+            "ordered_expected_loss_bits": {
+              "mean": [
+                5.9850241948138265,
+                5.891451945934737,
+                5.861751006583776,
+                5.813138072696742
+              ],
+              "se": [
+                0.0036791151384531397,
+                0.027526618058700807,
+                0.0296349229403944,
+                0.03272624988454415
+              ]
+            }
+          },
+          "model_files": {
+            "shuffled": {
+              "path": "/Users/ruediger/Projects/layered_architectures/output/shared_base_shuffle_download_2026-09-18/eval/shuffled_seed1/a1_L3.npz",
+              "sha256": "e5d0f597a2d04bf9966c9890b1ec89b8584aa36589dbb281097ba1be06ffdca9",
+              "protocol_sha256": "bc96d3818190bd06a1172ad63dbbfbecd14a11ca95c1ed353c102fb715ceae86"
+            },
+            "ordered": {
+              "path": "/Users/ruediger/Projects/layered_architectures/output/shared_base_shuffle_download_2026-09-18/eval/ordered_seed1/a1_L3.npz",
+              "sha256": "e6fae21460034a436c3b8ab2678c63cda167805d713f6f6c96580d01cdcf2d42",
+              "protocol_sha256": "5cbb9f8984db7967c93f4b750196fe75297b719740d5583b1bac45e0f93b48ec"
+            }
+          }
+        }
+      ],
+      "source_sha256": "78c14b52014b6542544bd80fa1d8f305a227f8182cd71781615dcba966846228",
+      "arrays_sha256": {
+        "tokens": "9fcd8f73293f9e83433a09be9b794f09738dd265a9600390101a0236fd81faa6",
+        "base": "199a75ba4fe666c62bc047f6cf0ab93d88d64469bbab015e043b38c0bff32c22",
+        "transition": "7131881f525eb4acd8bb8cdfcf504afed17d6c9d0f23b93746dd1889b952da9c"
+      },
+      "maximum_normalization_errors": {
+        "bayes_probs": 4.440892098500626e-16,
+        "unigram_probs": 6.27387031215676e-12,
+        "oracle_probs": 4.440892098500626e-16
+      },
+      "maximum_unigram_realized_loss_error": 8.881784197001252e-16
+    }
+  ]
+}

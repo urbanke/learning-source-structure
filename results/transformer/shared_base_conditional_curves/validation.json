@@ -1,0 +1,23 @@
+{
+  "schema": "shared-base-conditional-cohort-v1",
+  "checks": [
+    {
+      "check": "Existing benchmark sources and overlapping model predictions",
+      "n_sources": 8,
+      "n_models": 2,
+      "max_probability_difference": 0.0,
+      "passed": true
+    },
+    {
+      "check": "Cohort extension preserves identities; changed frozen time grid is rejected",
+      "passed": true
+    },
+    {
+      "check": "Distinct source seeds; ranked q matches alpha; L=0 rows equal q",
+      "n_sources": 1024,
+      "passed": true
+    }
+  ],
+  "passed": true,
+  "script_sha256": "a180a4687fd1f8b105f159d0b7e4e6b15517ec7c61259339a6fac5215b5d43f6"
+}

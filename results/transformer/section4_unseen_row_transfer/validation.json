@@ -1,0 +1,24 @@
+{
+  "passed": true,
+  "scientific_scope": "exploratory conditional subgroups",
+  "groups": 8,
+  "selected_records": 1453,
+  "source_sequences_declared": 1024,
+  "exact_selection_replayed": true,
+  "all_subset_numerical_gates_passed": true,
+  "script_sha256": "a3a8909a83d7e25dc9653ce121e7a66f963434ae8199e67891aa2d1835dabd59",
+  "independent_csv_replay": {
+    "passed": true,
+    "statistic_pairs_recomputed": 216,
+    "records": 1453,
+    "method": "Python statistics.mean/stdev over compact whole-sequence loss records; independent of NumPy aggregation."
+  },
+  "files": {
+    "summary.json": "b41b1d7b37ebf3170885014a162eb703c400840878300c235e15f18a4fbea086",
+    "records.csv": "30d8aed126c468763b9f4efb2530fcd35d3f583aeccda302c3def1d1398fe002",
+    "unseen_row_t16.pdf": "b69ca445653e4ee6ded3d556dad8669a1ed530fcc4ea51b750ec857e9ff4660a",
+    "unseen_row_t16.png": "cb10f9b17139df4741101711fd6ea02b2b0a30258b62e20ca39f2980d17c9b1c",
+    "unseen_row_t4_t16.pdf": "46eecbfcbe9c64ad16cdd694a5c5bd4a41aee2ab76d25a7aa689bdf524bd8377",
+    "unseen_row_t4_t16.png": "428b932c6fe5623b14eb0b68c2d1b9b8a91c6d411571a63e7244d858348757d4"
+  }
+}

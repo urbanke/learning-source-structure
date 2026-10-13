@@ -1,0 +1,245 @@
+[
+ {
+  "d": 32,
+  "alpha": 0.75,
+  "ls": 2,
+  "n_star_paper": 75,
+  "n_star_product": 79,
+  "transformer_switch": 10,
+  "learner_informed_switch": 57
+ },
+ {
+  "d": 32,
+  "alpha": 0.75,
+  "ls": 3,
+  "n_star_paper": 1,
+  "n_star_product": 1,
+  "transformer_switch": 3,
+  "learner_informed_switch": 3
+ },
+ {
+  "d": 32,
+  "alpha": 0.75,
+  "ls": 4,
+  "n_star_paper": 1,
+  "n_star_product": 1,
+  "transformer_switch": 3,
+  "learner_informed_switch": 3
+ },
+ {
+  "d": 32,
+  "alpha": 1.0,
+  "ls": 2,
+  "n_star_paper": 62,
+  "n_star_product": 1,
+  "transformer_switch": 3,
+  "learner_informed_switch": 3
+ },
+ {
+  "d": 32,
+  "alpha": 1.0,
+  "ls": 3,
+  "n_star_paper": 1,
+  "n_star_product": 1,
+  "transformer_switch": 3,
+  "learner_informed_switch": 3
+ },
+ {
+  "d": 32,
+  "alpha": 1.0,
+  "ls": 4,
+  "n_star_paper": 1,
+  "n_star_product": 1,
+  "transformer_switch": 3,
+  "learner_informed_switch": 3
+ },
+ {
+  "d": 32,
+  "alpha": 1.25,
+  "ls": 2,
+  "n_star_paper": 114,
+  "n_star_product": 1,
+  "transformer_switch": 3,
+  "learner_informed_switch": 3
+ },
+ {
+  "d": 32,
+  "alpha": 1.25,
+  "ls": 3,
+  "n_star_paper": 23,
+  "n_star_product": 1,
+  "transformer_switch": 3,
+  "learner_informed_switch": 3
+ },
+ {
+  "d": 32,
+  "alpha": 1.25,
+  "ls": 4,
+  "n_star_paper": 1,
+  "n_star_product": 1,
+  "transformer_switch": 3,
+  "learner_informed_switch": 3
+ },
+ {
+  "d": 64,
+  "alpha": 0.75,
+  "ls": 2,
+  "n_star_paper": 412,
+  "n_star_product": 177,
+  "transformer_switch": 32,
+  "learner_informed_switch": 181
+ },
+ {
+  "d": 64,
+  "alpha": 0.75,
+  "ls": 3,
+  "n_star_paper": 110,
+  "n_star_product": 97,
+  "transformer_switch": 32,
+  "learner_informed_switch": 102
+ },
+ {
+  "d": 64,
+  "alpha": 0.75,
+  "ls": 4,
+  "n_star_paper": 1,
+  "n_star_product": 1,
+  "transformer_switch": 32,
+  "learner_informed_switch": 3
+ },
+ {
+  "d": 64,
+  "alpha": 1.0,
+  "ls": 2,
+  "n_star_paper": 508,
+  "n_star_product": 58,
+  "transformer_switch": 3,
+  "learner_informed_switch": 57
+ },
+ {
+  "d": 64,
+  "alpha": 1.0,
+  "ls": 3,
+  "n_star_paper": 110,
+  "n_star_product": 1,
+  "transformer_switch": 3,
+  "learner_informed_switch": 3
+ },
+ {
+  "d": 64,
+  "alpha": 1.0,
+  "ls": 4,
+  "n_star_paper": 1,
+  "n_star_product": 1,
+  "transformer_switch": 18,
+  "learner_informed_switch": 3
+ },
+ {
+  "d": 64,
+  "alpha": 1.25,
+  "ls": 2,
+  "n_star_paper": 530,
+  "n_star_product": 1,
+  "transformer_switch": 3,
+  "learner_informed_switch": 3
+ },
+ {
+  "d": 64,
+  "alpha": 1.25,
+  "ls": 3,
+  "n_star_paper": 127,
+  "n_star_product": 1,
+  "transformer_switch": 3,
+  "learner_informed_switch": 3
+ },
+ {
+  "d": 64,
+  "alpha": 1.25,
+  "ls": 4,
+  "n_star_paper": 76,
+  "n_star_product": 1,
+  "transformer_switch": 10,
+  "learner_informed_switch": 3
+ },
+ {
+  "d": 128,
+  "alpha": 0.75,
+  "ls": 2,
+  "n_star_paper": null,
+  "n_star_product": 534,
+  "transformer_switch": 102,
+  "learner_informed_switch": 575
+ },
+ {
+  "d": 128,
+  "alpha": 0.75,
+  "ls": 3,
+  "n_star_paper": 432,
+  "n_star_product": 135,
+  "transformer_switch": 57,
+  "learner_informed_switch": 181
+ },
+ {
+  "d": 128,
+  "alpha": 0.75,
+  "ls": 4,
+  "n_star_paper": 1,
+  "n_star_product": 71,
+  "transformer_switch": 102,
+  "learner_informed_switch": 102
+ },
+ {
+  "d": 128,
+  "alpha": 1.0,
+  "ls": 2,
+  "n_star_paper": null,
+  "n_star_product": 174,
+  "transformer_switch": 57,
+  "learner_informed_switch": 181
+ },
+ {
+  "d": 128,
+  "alpha": 1.0,
+  "ls": 3,
+  "n_star_paper": 506,
+  "n_star_product": 51,
+  "transformer_switch": 57,
+  "learner_informed_switch": 57
+ },
+ {
+  "d": 128,
+  "alpha": 1.0,
+  "ls": 4,
+  "n_star_paper": 164,
+  "n_star_product": 1,
+  "transformer_switch": 57,
+  "learner_informed_switch": 3
+ },
+ {
+  "d": 128,
+  "alpha": 1.25,
+  "ls": 2,
+  "n_star_paper": null,
+  "n_star_product": 49,
+  "transformer_switch": 3,
+  "learner_informed_switch": 32
+ },
+ {
+  "d": 128,
+  "alpha": 1.25,
+  "ls": 3,
+  "n_star_paper": 592,
+  "n_star_product": 1,
+  "transformer_switch": 32,
+  "learner_informed_switch": 3
+ },
+ {
+  "d": 128,
+  "alpha": 1.25,
+  "ls": 4,
+  "n_star_paper": 171,
+  "n_star_product": 1,
+  "transformer_switch": 3,
+  "learner_informed_switch": 3
+ }
+]

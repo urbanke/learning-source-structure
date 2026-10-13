@@ -1,0 +1,381 @@
+{
+  "schema": "natural-copier-bayes-grid-validation-v1",
+  "passed": true,
+  "source_schema": "natural-copier-sequence-v1",
+  "master_seed": 20261004,
+  "seed_rule": "seed_of(source_schema,master_seed,index)",
+  "declared_cohort_size": 1024,
+  "d": 64,
+  "n_ctx": 1024,
+  "alpha": [
+    0.0,
+    0.0
+  ],
+  "source_depth_prior": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8
+  ],
+  "bayes_depth_prior": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8
+  ],
+  "shared_global_depth": true,
+  "source_parameters_withheld": true,
+  "selection": "First depth-eight draw, plus index zero if different and nonzero; selection uses source depth only, before predictions.",
+  "selection_trace": [
+    {
+      "index": 0,
+      "sequence_seed": 1019552973,
+      "source_depth": 1
+    },
+    {
+      "index": 1,
+      "sequence_seed": 1019553664,
+      "source_depth": 4
+    },
+    {
+      "index": 2,
+      "sequence_seed": 1019551591,
+      "source_depth": 5
+    },
+    {
+      "index": 3,
+      "sequence_seed": 1019552282,
+      "source_depth": 2
+    },
+    {
+      "index": 4,
+      "sequence_seed": 1019550209,
+      "source_depth": 3
+    },
+    {
+      "index": 5,
+      "sequence_seed": 1019550900,
+      "source_depth": 5
+    },
+    {
+      "index": 6,
+      "sequence_seed": 1019548827,
+      "source_depth": 7
+    },
+    {
+      "index": 7,
+      "sequence_seed": 1019549518,
+      "source_depth": 8
+    }
+  ],
+  "grids": {
+    "production": {
+      "lower": -30.0,
+      "upper": 30.0,
+      "step": 0.015625,
+      "rmax": 1025
+    },
+    "wide": {
+      "lower": -36.0,
+      "upper": 36.0,
+      "step": 0.015625,
+      "rmax": 1025
+    },
+    "offset": {
+      "lower": -36.0078125,
+      "upper": 35.9921875,
+      "step": 0.015625,
+      "rmax": 1025
+    }
+  },
+  "sources": [
+    {
+      "index": 0,
+      "sequence_seed": 1019552973,
+      "source_depth": 1,
+      "checks": {
+        "passed": true,
+        "source_checks": {
+          "initial_normalization_error": 0.0,
+          "transition_normalization_error": 6.661338147750939e-16,
+          "initial_uniform_error": 0.0,
+          "depth_zero_uniform_error": null,
+          "minimum_transition_probability": 9.387247833319932e-06,
+          "probability_tolerance": 1e-12
+        },
+        "raw_grid_checks": {
+          "production": {
+            "passed": true,
+            "raw_probability_sum_error": 2.5118351842934317e-11,
+            "raw_posterior_sum_error": 1.1102230246251565e-15,
+            "first_uniform_error": 0.0,
+            "first_depth_prior_error": 1.3877787807814457e-17,
+            "observed_loss_error_bits": 1.0658141036401503e-14,
+            "evidence_telescope_error_bits": 6.366462912410498e-12
+          },
+          "wide": {
+            "passed": true,
+            "raw_probability_sum_error": 2.5118351842934317e-11,
+            "raw_posterior_sum_error": 1.1102230246251565e-15,
+            "first_uniform_error": 0.0,
+            "first_depth_prior_error": 1.3877787807814457e-17,
+            "observed_loss_error_bits": 1.0658141036401503e-14,
+            "evidence_telescope_error_bits": 6.366462912410498e-12
+          },
+          "offset": {
+            "passed": true,
+            "raw_probability_sum_error": 2.511768570911954e-11,
+            "raw_posterior_sum_error": 1.1102230246251565e-15,
+            "first_uniform_error": 0.0,
+            "first_depth_prior_error": 1.3877787807814457e-17,
+            "observed_loss_error_bits": 1.0658141036401503e-14,
+            "evidence_telescope_error_bits": 6.366462912410498e-12
+          }
+        },
+        "comparisons": {
+          "wide": {
+            "passed": true,
+            "maximum_absolute_differences": {
+              "probs": 0.0,
+              "loss_bits": 0.0,
+              "cumulative_loss_bits": 0.0,
+              "depth_posterior": 0.0,
+              "oracle_regret_bits": 0.0
+            }
+          },
+          "offset": {
+            "passed": true,
+            "maximum_absolute_differences": {
+              "probs": 6.938893903907228e-16,
+              "loss_bits": 7.105427357601002e-15,
+              "cumulative_loss_bits": 2.2737367544323206e-13,
+              "depth_posterior": 9.603429163007604e-15,
+              "oracle_regret_bits": 7.271960811294775e-15
+            }
+          }
+        },
+        "max_current_row_visits": 25
+      },
+      "raw_path": "/Users/ruediger/Projects/layered_architectures/output/copier_time/numerical_validation/seq_000000.npz",
+      "raw_sha256": "90460b7575801188c28d6361e0560a58dc6439bb0a1a2c94d42bd6abd8bd7215",
+      "array_hashes": {
+        "tokens": "de9c8fb15fe346f6f46e30e6a8ebec0f5b533a80d7305aeaecf78ca804114f5b",
+        "initial_probs": "f68ff0f71b7864fb80450fe13395d8ab5585fc3bab7c31df92fb4a013e07376b",
+        "transition_probs": "e180b5c3b6282c3077621392b5ddd910b47ad6577b8f53f4991c4282e6085337",
+        "permutation": "af8913f1262e5fc86e269b5f70a009be6d443e2a6cabd3adcde08b129856ca0c",
+        "source_depth": "968554d9904c2b3979e166f769d4b10abfa08194a91f091f3efe3b16946357ce",
+        "production_probs": "8f4671f0357febd7649888c74732d4a63d39159211f1e42b5a4629ecb82b5101",
+        "production_loss": "98a4f55e5f8a8ee0a26fd835b39738d2761276bc0092515bd49cc44e47dc3512",
+        "production_log_evidence": "d0e9f4abe4302e2f99b6223d0d8d7ea249d00d6fa2189331aaf08cfd2ec920e0",
+        "production_depth_posterior": "809b8ca6df740732494a352b07e9028d4dfe47b140365e46068774e9838a4b39",
+        "wide_probs": "8f4671f0357febd7649888c74732d4a63d39159211f1e42b5a4629ecb82b5101",
+        "wide_loss": "98a4f55e5f8a8ee0a26fd835b39738d2761276bc0092515bd49cc44e47dc3512",
+        "wide_log_evidence": "d0e9f4abe4302e2f99b6223d0d8d7ea249d00d6fa2189331aaf08cfd2ec920e0",
+        "wide_depth_posterior": "809b8ca6df740732494a352b07e9028d4dfe47b140365e46068774e9838a4b39",
+        "offset_probs": "0f0466c82633bd4db4f4777de74cbcadba26579cda170f70da765350a43d96df",
+        "offset_loss": "de66ad66555fdb0d2567977aef1fe5cd76a0e3f1dfc885637c20955db2f7e192",
+        "offset_log_evidence": "7a0abf23bc9f7d07cc0acd948e771f0fd57cb5eb1aca7a127082c9b736bacdcf",
+        "offset_depth_posterior": "9bc6de4e8f44320c73bbf3b25908789f816fbff83049e1ceed964a019a653aa0"
+      }
+    },
+    {
+      "index": 7,
+      "sequence_seed": 1019549518,
+      "source_depth": 8,
+      "checks": {
+        "passed": true,
+        "source_checks": {
+          "initial_normalization_error": 0.0,
+          "transition_normalization_error": 6.661338147750939e-16,
+          "initial_uniform_error": 0.0,
+          "depth_zero_uniform_error": null,
+          "minimum_transition_probability": 4.2360261473956854e-11,
+          "probability_tolerance": 1e-12
+        },
+        "raw_grid_checks": {
+          "production": {
+            "passed": true,
+            "raw_probability_sum_error": 7.335909657513184e-12,
+            "raw_posterior_sum_error": 1.1102230246251565e-15,
+            "first_uniform_error": 0.0,
+            "first_depth_prior_error": 1.3877787807814457e-17,
+            "observed_loss_error_bits": 1.6431300764452317e-14,
+            "evidence_telescope_error_bits": 7.73070496506989e-12
+          },
+          "wide": {
+            "passed": true,
+            "raw_probability_sum_error": 7.335909657513184e-12,
+            "raw_posterior_sum_error": 1.1102230246251565e-15,
+            "first_uniform_error": 0.0,
+            "first_depth_prior_error": 1.3877787807814457e-17,
+            "observed_loss_error_bits": 1.6431300764452317e-14,
+            "evidence_telescope_error_bits": 7.73070496506989e-12
+          },
+          "offset": {
+            "passed": true,
+            "raw_probability_sum_error": 7.335021479093484e-12,
+            "raw_posterior_sum_error": 1.1102230246251565e-15,
+            "first_uniform_error": 0.0,
+            "first_depth_prior_error": 1.3877787807814457e-17,
+            "observed_loss_error_bits": 1.6708856520608606e-14,
+            "evidence_telescope_error_bits": 7.275957614183426e-12
+          }
+        },
+        "comparisons": {
+          "wide": {
+            "passed": true,
+            "maximum_absolute_differences": {
+              "probs": 0.0,
+              "loss_bits": 0.0,
+              "cumulative_loss_bits": 0.0,
+              "depth_posterior": 0.0,
+              "oracle_regret_bits": 0.0
+            }
+          },
+          "offset": {
+            "passed": true,
+            "maximum_absolute_differences": {
+              "probs": 6.961098364399732e-14,
+              "loss_bits": 1.3672396548258803e-13,
+              "cumulative_loss_bits": 9.094947017729282e-13,
+              "depth_posterior": 3.6637359812630166e-14,
+              "oracle_regret_bits": 9.842127113302013e-14
+            }
+          }
+        },
+        "max_current_row_visits": 145
+      },
+      "raw_path": "/Users/ruediger/Projects/layered_architectures/output/copier_time/numerical_validation/seq_000007.npz",
+      "raw_sha256": "702fda9d5a668ae31baf322053409101b336fb8076bd99364b5184be85ab94fe",
+      "array_hashes": {
+        "tokens": "d92969201fef39cdac3bdebff52e17d70cb8383e997a63da777fb688cce85cda",
+        "initial_probs": "f68ff0f71b7864fb80450fe13395d8ab5585fc3bab7c31df92fb4a013e07376b",
+        "transition_probs": "85145a5e7fb7a77d306a1c91b0d818a0688633a5a2e5c86ad20a173fac9ccf9f",
+        "permutation": "83d2d9ea051a9cf54b23dd33039ae866a3c208c9a6dcaa0147e9030597df300a",
+        "source_depth": "1671945587956fd05ce91a2a5a17147f457102f1feb5843b28dbaac70af0b9bb",
+        "production_probs": "6f0809335a21765609a3819972ab4738682f897eaa07f0dd8c39ec1a4331e0dc",
+        "production_loss": "4654856c8645b92759968ac18114b65603f13fcd9129961ec1dda3405461a227",
+        "production_log_evidence": "a7f1c0e10b452f89f87892aee418e3c9c27499c509a9b54e154a4830496cb726",
+        "production_depth_posterior": "3fa46ba6b7b9e279cfccb2ee2aec3da5d67c033447fb3744574750ce470d6e1f",
+        "wide_probs": "6f0809335a21765609a3819972ab4738682f897eaa07f0dd8c39ec1a4331e0dc",
+        "wide_loss": "4654856c8645b92759968ac18114b65603f13fcd9129961ec1dda3405461a227",
+        "wide_log_evidence": "a7f1c0e10b452f89f87892aee418e3c9c27499c509a9b54e154a4830496cb726",
+        "wide_depth_posterior": "3fa46ba6b7b9e279cfccb2ee2aec3da5d67c033447fb3744574750ce470d6e1f",
+        "offset_probs": "4c31f002cdfea1c785fd657d3a922e2d08e5d1d814d5378ae0c9227c957c186a",
+        "offset_loss": "35a325a3027317ab683ceab48d664d90b21b0d61471c6adadad6b3fcba40661b",
+        "offset_log_evidence": "15df56fe204f1221032d288e09d00eeae983a2ff0a9ade40dd82c9b94fc92d99",
+        "offset_depth_posterior": "27e6828d6e891740d9f5f8399ea201cf311c8d539e77759b55d2aa7103f561d5"
+      }
+    }
+  ],
+  "provenance": {
+    "local/copier_time_source.py": {
+      "path": "/Users/ruediger/Projects/layered_architectures/code/transformer/copier_time_source.py",
+      "sha256": "29b540f0e975db738d101229e31417dfc05b6f8ad3343e9c1fa77455fb261b90"
+    },
+    "local/source.py": {
+      "path": "/Users/ruediger/Projects/layered_architectures/code/transformer/source.py",
+      "sha256": "d1bb83004e3654cb3f84f6083437cae2b6d71fa19a33b06d26d2455ac440dab4"
+    },
+    "local/shared_depth.py": {
+      "path": "/Users/ruediger/Projects/layered_architectures/code/transformer/shared_depth.py",
+      "sha256": "616f536153458499078d17d7939e6a800c7b52e3eb4f1dd6503db95030d7a395"
+    },
+    "local/lsa_seq.py": {
+      "path": "/Users/ruediger/Projects/layered_architectures/code/transformer/lsa_seq.py",
+      "sha256": "7e39960e91f3bb27eea82e201afd8a86ce717ea50a304daa86534b4fdbadfc51"
+    },
+    "local/phi_source.py": {
+      "path": "/Users/ruediger/Projects/layered_architectures/code/transformer/phi_source.py",
+      "sha256": "456eb407fd7f280786a441681a704a6fff172af9fc9aea3c6f9456fb55174831"
+    },
+    "local/eval_conditional_crossing.py": {
+      "path": "/Users/ruediger/Projects/layered_architectures/code/transformer/eval_conditional_crossing.py",
+      "sha256": "eb948526f5b90fd7d5437c1ae56a1a39be0825a0080f0dc680815ad477e27d45"
+    },
+    "local/validate_copier_time_bayes.py": {
+      "path": "/Users/ruediger/Projects/layered_architectures/code/scripts/validate_copier_time_bayes.py",
+      "sha256": "c0eab48f2568f0d62bbd694675cc28b01e214259fcc3297d39dc6205497b6335"
+    },
+    "local/validate_conditional_crossing.py": {
+      "path": "/Users/ruediger/Projects/layered_architectures/code/scripts/validate_conditional_crossing.py",
+      "sha256": "5edb01e51010bb1498c2aebaa68bc99f9da0a03e7c19fb48e5a53a2b4240097f"
+    },
+    "pmm/production_coding.py": {
+      "path": "/Users/ruediger/Projects/product_model_with_memory/src/product_model_with_memory/production_coding.py",
+      "sha256": "6f709444496865ff124fc5bf1849fa6dce442a594f3cc7fe7c53ccfb504560f6"
+    },
+    "pmm/universal_tables.py": {
+      "path": "/Users/ruediger/Projects/product_model_with_memory/src/product_model_with_memory/universal_tables.py",
+      "sha256": "aef2f63c0ccdb4de58bb8c617dd99aaadc73b803bee67a029f5d89230878d5c2"
+    },
+    "pmm/mellin.py": {
+      "path": "/Users/ruediger/Projects/product_model_with_memory/src/product_model_with_memory/mellin.py",
+      "sha256": "201e2161b98a5b3dcf464930447c02dc22092fe78dec9e49b44bd8b2b931f969"
+    },
+    "pmm/kernel.py": {
+      "path": "/Users/ruediger/Projects/product_model_with_memory/src/product_model_with_memory/kernel.py",
+      "sha256": "5dd1b42d05ffcb0b51383c1eaa9e88a0e494192a26215e71809d02b8d06a52d0"
+    },
+    "store/anchors.json": {
+      "path": "/Users/ruediger/Projects/product_model_with_memory/tables/anchors_prod/anchors.json",
+      "sha256": "5c409244487deeba8d597ad66fa13479a8d15476d55d4509c33b2ec797b07c68"
+    },
+    "store/manifest.json": {
+      "path": "/Users/ruediger/Projects/product_model_with_memory/tables/anchors_prod/manifest.json",
+      "sha256": "cf0449a4b704174890f0a1fb95f20954839dd7266ae307e799d1dc6d0234ffb5"
+    },
+    "checkpoint_config": {
+      "path": "/Users/ruediger/Projects/layered_architectures/results/transformer/runs/lsa_a0_d64/config.json",
+      "sha256": "d39ad1d48077a593fbd2e125ed460fa026267dd2a400b6774888406b90640b05"
+    }
+  },
+  "timings": {
+    "production": {
+      "setup_seconds": 0.9437735830433667,
+      "per_sequence_seconds": {
+        "0": 0.2979000840568915,
+        "7": 0.3848330000182614
+      }
+    },
+    "wide": {
+      "setup_seconds": 10.071684291935526,
+      "per_sequence_seconds": {
+        "0": 0.2793302909703925,
+        "7": 0.35678625002037734
+      }
+    },
+    "offset": {
+      "setup_seconds": 9.958254542085342,
+      "per_sequence_seconds": {
+        "0": 0.2817336249863729,
+        "7": 0.37467962491791695
+      }
+    }
+  },
+  "elapsed_seconds": 22.979608791996725,
+  "thresholds": {
+    "probabilities_and_depth_posterior": 1e-07,
+    "losses_and_cumulative_bits": 1e-06
+  },
+  "runtime": {
+    "python": "3.14.6 (v3.14.6:c63aec69bd5, Jun 10 2026, 08:07:54) [Clang 21.0.0 (clang-2100.1.1.101)]",
+    "numpy": "2.4.6",
+    "scipy": "1.18.1"
+  },
+  "limitations": [
+    "Two source-selected finite paths, not all possible count profiles.",
+    "Wider bounds and a half-cell phase shift test the quadrature; all grids share the same sealed table approximation.",
+    "This validates the Bayes/source numerics, not transformer behavior or a causal timing conclusion."
+  ]
+}

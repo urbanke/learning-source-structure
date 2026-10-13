@@ -1,0 +1,16 @@
+{
+  "passed": true,
+  "summary_sha256": "2f64c7af4f32c2418fd93d6c2cbcffb42da35b67736d4c195dc4a7ad8320d030",
+  "script_sha256": "29162c7a8bbd6eb5e9179c9fca2cd17e848aab11c4ede689c02a778a90544fbe",
+  "checks": "All paired means, sequence SEs, bootstrap bands and crossing records independently replayed from saved scores.",
+  "artifacts": {
+    "payoff.pdf": "3015cddb1e5227296d808e15db8bd9d07de0c6372e3883017f3a92539b4e8082",
+    "payoff.png": "a76e78b8b95ccded55b29516a50ffc5cfa6ec4b67192d39170c8e691e5f18d20",
+    "payoff_early.pdf": "0516308341e48c1bff6c8549e6cee4596f8e8c310e1eef7ec637fb5bdafad434",
+    "payoff_early.png": "427a75c10094b8bc27945e45a876d11f3a98c85d6e455fbf9205a239f81cc99f",
+    "payoff_run1.pdf": "f7ec958c230f9e28e02bd65816ff8e055c7e87aa6db4ac1153e20b75ce5d8e84",
+    "payoff_run1.png": "599768815c88f56fca57dd02b4a1f7b97180d99dbc97e15329f18007885b7724",
+    "payoff_run2.pdf": "66a17e847fb4b13f8cedccc0537a040804ca563ff514ff21673f1bd922c1ce51",
+    "payoff_run2.png": "989410c20c44a64033b7847a15f2204a46a7371ac4333a56803a32c02475edf0"
+  }
+}

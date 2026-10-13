@@ -1,0 +1,74 @@
+{
+  "schema": "shared-base-abaca-preparation-v1",
+  "date": "2026-09-16",
+  "passed": true,
+  "scope": "Local configuration, launcher, review and bounded CLI validation only. No cluster submission, production sampling, new accuracy result or gate promotion.",
+  "fixed_followup": {
+    "case": "cal_abaca",
+    "particles": 16384,
+    "repetitions": 128,
+    "master_seed": 2026091650,
+    "tasks": 32,
+    "repetitions_per_task": 4,
+    "concurrency": 32,
+    "criterion_bits": 0.01
+  },
+  "tests": {
+    "name": "pytest",
+    "errors": "0",
+    "failures": "0",
+    "skipped": "0",
+    "tests": "74",
+    "time": "2.091",
+    "timestamp": "2026-09-16T21:25:39.581700+02:00",
+    "hostname": "LTHC-B118364M.local",
+    "command": "OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1 MKL_NUM_THREADS=1 python -m pytest -q code/tests/test_shared_base_abaca_launch.py code/tests/test_review_shared_base_abaca.py code/tests/test_shared_base_cluster.py code/transformer/scitas/test_launchers.py"
+  },
+  "bounded_actual_cli_smoke": {
+    "path": "output/shared_base_abaca_preparation_2026-09-16/smoke",
+    "source": "Same fixed ABACA tokens, original numerical code and verified sealed store. Reduced to 16 particles, four temperatures, one move and two repetitions only for software validation.",
+    "complete_records": 2,
+    "shard_sha256": "d96b4bfefb8fba8377894d5fbd6e48cd564a770c92039e535ec32870d9ba13d4",
+    "merge_sha256": "b6fc06bc572cafb09568c5f784eb08f8766f1d43f92dbe481e8b86b4ddace0ce",
+    "merge_complete": true,
+    "accuracy_gate_correctly_failed": true,
+    "numerical_identity_matches_previous_local_preflight": true
+  },
+  "checks": [
+    "Exact original plan/prior/tokens/reference/threshold retained",
+    "128 unique seeds disjoint from every original CPU stage; distinct GPU master seed",
+    "Dry run does not write or contact scheduler",
+    "Original failed calibration still blocks original confirmation stage",
+    "Review reconstructs both full receipts and checks all six controls without pooling old/new particle counts",
+    "Incomplete, altered or reused-seed records are rejected",
+    "CLI input bytes preserved and output cannot overwrite an input"
+  ],
+  "files_sha256": {
+    "code/transformer/configs/shared_base_abaca_plan_2026-09-16.json": "7fafdd18c41b4b61c2c4044b59debb2a8631dbee872f9ba34e94f60bfd85f8a6",
+    "code/transformer/scitas/submit_shared_base_abaca.sh": "be1f90cf4ef19464d3d661db2e62d6ec74fffac861be607b7ec4640c292051c7",
+    "code/transformer/scitas/README_abaca.md": "758ed4da512d4ece2e9f9824a72dca3d92daede8bb78bf7880c75dd9a192f781",
+    "code/scripts/review_shared_base_abaca.py": "80c88d58f1809fe804cce60303352fbb7d30bea6827e6886fa86b1b106cf4697",
+    "code/tests/test_shared_base_abaca_launch.py": "0128e35571c25530e9caeef1be34d3d6bf5db488406f5f58a0902c1d8fd0141f",
+    "code/tests/test_review_shared_base_abaca.py": "324e6802845056ea778f7fbf6988f7576e2306fe1577e116043345a4608e97a7"
+  },
+  "unchanged_original_files_sha256": {
+    "code/scripts/calibrate_shared_base_evidence.py": "686eae195eb15ef261f630656dc4709bfdbdffdd4d4abbc370635e1fbfed8e9a",
+    "code/scripts/shared_base_cluster.py": "d045bbde603aa07c34d18c0ca3e74721c53ced89f9cd9181636d6fe443bfe92d",
+    "code/transformer/configs/shared_base_cluster_plan_2026-09-16.json": "4cb87e20efb79acc22df99c88631fbab39e089cc82e19591bef647730baf8331",
+    "code/transformer/lsa_seq.py": "7e39960e91f3bb27eea82e201afd8a86ce717ea50a304daa86534b4fdbadfc51",
+    "code/transformer/phi_source.py": "456eb407fd7f280786a441681a704a6fff172af9fc9aea3c6f9456fb55174831",
+    "code/transformer/ranked_lsa.py": "3fa7952048ab3f25d508dda8c2a7c232064aa5db56008de8b4ed9623709aac8d",
+    "code/transformer/scitas/dispatch_shared_base.py": "3af82c0292454249b8b9963bfd3d2ec541acd1343686f8740d3ebc54ee7966f9",
+    "code/transformer/scitas/launch_shared_base.py": "c8ea756d0f2079c26c376d342174e70c0f7105003d07e83d0ff9b28271282017",
+    "code/transformer/scitas/shared_base_cpu.sbatch": "79a8ad60f50b1af26f2542f9f1b9fcf2010fa4a347c20e4a0a9a2bcc1eb0086d",
+    "code/transformer/shared_base_cluster.py": "d83ba8aacf859225fc06544e7980f31888cfa3d017af12855fdfb57a14cc3827",
+    "code/transformer/shared_base_efficiency.py": "fed842e1b5c1f68d60ef9f706b7ab927595277649ee1364e07d892836287a0e9",
+    "code/transformer/shared_base_evidence_smc.py": "f3f7fe00cd9c05cae6cfe23310416cb50e9566cdea319113412f9efabb2f4709",
+    "code/transformer/shared_base_mcmc.py": "26469e21c04fc2fe91a40bcb418aff3ae866fe707b2ee198d644091580b1f7a8",
+    "code/transformer/shared_base_short_evidence.py": "085d517efe914902390e1499d67fa27423d430fc7e1b742b82c98ebc971f4171",
+    "code/transformer/shared_base_surrogate.py": "f0026481a1dc1b672ca2804189a6da6b709866f56b11bb2ed8eaa3f6f0c604ce",
+    "code/transformer/weighted_lsa.py": "847f0ffaa622d86e88633447327dce8e7f518e4c86c1e44e76a794e470d2dec9"
+  },
+  "latex": "latexmk -pdf -interaction=nonstopmode -halt-on-error mechanisms.tex passed; manuscript unchanged.",
+  "next_user_action": "Update the existing layered_architectures_mixture_bayes checkout on Jed; then submit the ABACA-only array, one command at a time."
+}

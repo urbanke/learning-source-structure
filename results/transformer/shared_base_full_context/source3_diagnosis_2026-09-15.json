@@ -1,0 +1,381 @@
+{
+  "schema": "shared-base-source3-diagnosis-v1",
+  "source_index": 3,
+  "prefix_length": 1024,
+  "summary_spec": {
+    "id": "shared-base-stable-chain-statistics-v1",
+    "reduction": "explicit pairwise sums with numpy.longdouble accumulator",
+    "accumulator_mantissa_bits": 53,
+    "output_dtype": "float64",
+    "overall_mean": "equal-weight mean of independently reduced chain means",
+    "diagnostics": "unchanged classic split Rhat and max(batch, between-chain) MCSE"
+  },
+  "scope": "Read-only arithmetic, mixing and conditional-depth0 quadrature diagnosis; not a family Bayesian reference.",
+  "inputs": {
+    "output/shared_base_full_context/data/seq_000003.json": "d8573014d7315345c9c30a3c75ebabf538477c089ba8547060d564a491b75c65",
+    "output/shared_base_full_context/chains/alpha16/seq_000003.npz": "dc1386cbd9292f7b31f6ff0b10a7b927480790950f960c212636a23552b987c9",
+    "output/shared_base_full_context/refs/alpha16/seq_000003.json": "50b53bc158656bd62fabdd0d2abc49234a48b3d10f58a07336393ca9a00bf670",
+    "output/shared_base_full_context/refs/alpha16/seq_000003.npz": "a04ddb23ad01ab4aea4827edf549e46e4bcbfa9769eb0adaf2651911bfcebad7",
+    "output/shared_base_full_context/chains/alpha32/seq_000003.npz": "0c893dace24679ba61c3a4028e6640828dcd48c1c14d96ea12ddfdc641c3b27d",
+    "output/shared_base_full_context/refs/alpha32/seq_000003.json": "7ffb8260e8c9d9c2c8e012eeaf2188d11cd74ee4b28f18588e5f79682ef72507",
+    "output/shared_base_full_context/refs/alpha32/seq_000003.npz": "569fd2dd078b3042b1f25f67b7b3d0ad0ad7759dbf0966f5109b7eb1b2a22e4a"
+  },
+  "rules": {
+    "16": {
+      "draws_per_chain": 65536,
+      "old_min_probability_ess": 199.5554706169931,
+      "old_min_ess_token": 49,
+      "stable_min_probability_ess": 199.55547061554685,
+      "old_chain_mean_readback_error": 6.453171330633722e-13,
+      "raw_vs_saved_chain_mean_error": 0.0,
+      "stable_chain_mean_readback_error": 1.3877787807814457e-17,
+      "stable_vs_old_prediction_change": 5.88862292261183e-13,
+      "posterior_depth": [
+        1.0,
+        2.7350674230030943e-25,
+        2.2804252769697202e-49,
+        2.7834063535809236e-70,
+        1.8329918200854387e-88,
+        2.0433628646649313e-104,
+        1.5078472251740585e-118,
+        3.516165325612153e-131,
+        1.4479809104079106e-142
+      ],
+      "mean_alpha": 1.2178631635240231,
+      "token41_probability": 0.30025763688227225,
+      "token41_ess": 31647.099633825695,
+      "token41_mcse": 7.02297433878635e-05,
+      "token41_chain_means": [
+        0.300237072429049,
+        0.30018508421555623,
+        0.30045362408943393,
+        0.3001547667976309
+      ],
+      "token41_vs_rank_one_formula_error": 2.4202861936828413e-14,
+      "final_state_conditional_depth0": [
+        {
+          "chain": 0,
+          "quadratures": [
+            {
+              "order": 16,
+              "conditional_log_integral": -3066.6373183998694,
+              "mean_alpha": 1.2180947052847229,
+              "rank_one_probability": 0.3003563355092327
+            },
+            {
+              "order": 32,
+              "conditional_log_integral": -3066.2932377149773,
+              "mean_alpha": 1.198709152811423,
+              "rank_one_probability": 0.29200684944393285
+            },
+            {
+              "order": 64,
+              "conditional_log_integral": -3066.289184532622,
+              "mean_alpha": 1.1982648053990954,
+              "rank_one_probability": 0.29181468655928466
+            },
+            {
+              "order": 128,
+              "conditional_log_integral": -3066.2891845318622,
+              "mean_alpha": 1.1982648055059362,
+              "rank_one_probability": 0.2918146866037964
+            },
+            {
+              "order": 256,
+              "conditional_log_integral": -3066.2891845318622,
+              "mean_alpha": 1.1982648055059553,
+              "rank_one_probability": 0.29181468660380117
+            }
+          ]
+        },
+        {
+          "chain": 1,
+          "quadratures": [
+            {
+              "order": 16,
+              "conditional_log_integral": -3062.778140440161,
+              "mean_alpha": 1.2204991795230424,
+              "rank_one_probability": 0.3013811165363604
+            },
+            {
+              "order": 32,
+              "conditional_log_integral": -3062.496357562505,
+              "mean_alpha": 1.20059963885641,
+              "rank_one_probability": 0.2928160101645397
+            },
+            {
+              "order": 64,
+              "conditional_log_integral": -3062.493793000881,
+              "mean_alpha": 1.2001087711510852,
+              "rank_one_probability": 0.29260450082419465
+            },
+            {
+              "order": 128,
+              "conditional_log_integral": -3062.4937929998964,
+              "mean_alpha": 1.2001087711849556,
+              "rank_one_probability": 0.2926045008370517
+            },
+            {
+              "order": 256,
+              "conditional_log_integral": -3062.4937929998964,
+              "mean_alpha": 1.2001087711848402,
+              "rank_one_probability": 0.2926045008370236
+            }
+          ]
+        },
+        {
+          "chain": 2,
+          "quadratures": [
+            {
+              "order": 16,
+              "conditional_log_integral": -3064.6541149237637,
+              "mean_alpha": 1.2193961898404184,
+              "rank_one_probability": 0.3009110241941036
+            },
+            {
+              "order": 32,
+              "conditional_log_integral": -3064.3418623335347,
+              "mean_alpha": 1.1996849965690648,
+              "rank_one_probability": 0.29242447425044693
+            },
+            {
+              "order": 64,
+              "conditional_log_integral": -3064.3385561653567,
+              "mean_alpha": 1.1992126298564303,
+              "rank_one_probability": 0.29222060346309187
+            },
+            {
+              "order": 128,
+              "conditional_log_integral": -3064.3385561644523,
+              "mean_alpha": 1.1992126299263592,
+              "rank_one_probability": 0.2922206034915734
+            },
+            {
+              "order": 256,
+              "conditional_log_integral": -3064.3385561644523,
+              "mean_alpha": 1.1992126299264105,
+              "rank_one_probability": 0.2922206034915855
+            }
+          ]
+        },
+        {
+          "chain": 3,
+          "quadratures": [
+            {
+              "order": 16,
+              "conditional_log_integral": -3058.6084490134995,
+              "mean_alpha": 1.2225530710088246,
+              "rank_one_probability": 0.3022564879282363
+            },
+            {
+              "order": 32,
+              "conditional_log_integral": -3058.394812084391,
+              "mean_alpha": 1.2026032598596925,
+              "rank_one_probability": 0.2936740832011228
+            },
+            {
+              "order": 64,
+              "conditional_log_integral": -3058.393956044939,
+              "mean_alpha": 1.2020995394891065,
+              "rank_one_probability": 0.2934577189588442
+            },
+            {
+              "order": 128,
+              "conditional_log_integral": -3058.393956043972,
+              "mean_alpha": 1.2020995394471194,
+              "rank_one_probability": 0.29345771893918854
+            },
+            {
+              "order": 256,
+              "conditional_log_integral": -3058.3939560439717,
+              "mean_alpha": 1.2020995394467022,
+              "rank_one_probability": 0.2934577189390867
+            }
+          ]
+        }
+      ]
+    },
+    "32": {
+      "draws_per_chain": 65536,
+      "old_min_probability_ess": 146.73580020174515,
+      "old_min_ess_token": 49,
+      "stable_min_probability_ess": 146.73580020192017,
+      "old_chain_mean_readback_error": 5.909717160079708e-13,
+      "raw_vs_saved_chain_mean_error": 0.0,
+      "stable_chain_mean_readback_error": 1.734723475976807e-18,
+      "stable_vs_old_prediction_change": 4.222733274161783e-13,
+      "posterior_depth": [
+        1.0,
+        8.3543391666605e-26,
+        2.7265645151443823e-50,
+        2.0431135235798107e-71,
+        9.921277080577468e-90,
+        9.15882645799083e-106,
+        6.028446275418069e-120,
+        1.31411348106045e-132,
+        5.211650487750237e-144
+      ],
+      "mean_alpha": 1.1985795705916091,
+      "token41_probability": 0.29195243884371574,
+      "token41_ess": 14158.43605523394,
+      "token41_mcse": 8.937455844776671e-05,
+      "token41_chain_means": [
+        0.29206153394344714,
+        0.2917270974546782,
+        0.2921254894836732,
+        0.2918956344954285
+      ],
+      "token41_vs_rank_one_formula_error": 2.886579864025407e-14,
+      "final_state_conditional_depth0": [
+        {
+          "chain": 0,
+          "quadratures": [
+            {
+              "order": 16,
+              "conditional_log_integral": -3063.3474859866915,
+              "mean_alpha": 1.2201770122066684,
+              "rank_one_probability": 0.3012438091884028
+            },
+            {
+              "order": 32,
+              "conditional_log_integral": -3063.056429252888,
+              "mean_alpha": 1.2003229222449288,
+              "rank_one_probability": 0.2926975437688964
+            },
+            {
+              "order": 64,
+              "conditional_log_integral": -3063.0536367658556,
+              "mean_alpha": 1.1998368373829624,
+              "rank_one_probability": 0.2924879955959613
+            },
+            {
+              "order": 128,
+              "conditional_log_integral": -3063.0536367648897,
+              "mean_alpha": 1.199836837427973,
+              "rank_one_probability": 0.2924879956136034
+            },
+            {
+              "order": 256,
+              "conditional_log_integral": -3063.0536367648897,
+              "mean_alpha": 1.199836837428122,
+              "rank_one_probability": 0.2924879956136396
+            }
+          ]
+        },
+        {
+          "chain": 1,
+          "quadratures": [
+            {
+              "order": 16,
+              "conditional_log_integral": -3073.4197765109357,
+              "mean_alpha": 1.2124525691333123,
+              "rank_one_probability": 0.29795168666908456
+            },
+            {
+              "order": 32,
+              "conditional_log_integral": -3072.972913780906,
+              "mean_alpha": 1.1953060556959585,
+              "rank_one_probability": 0.29055126791522157
+            },
+            {
+              "order": 64,
+              "conditional_log_integral": -3072.96677670267,
+              "mean_alpha": 1.195018085240151,
+              "rank_one_probability": 0.29042519450220317
+            },
+            {
+              "order": 128,
+              "conditional_log_integral": -3072.9667767027795,
+              "mean_alpha": 1.195018085429742,
+              "rank_one_probability": 0.29042519458352123
+            },
+            {
+              "order": 256,
+              "conditional_log_integral": -3072.9667767027795,
+              "mean_alpha": 1.195018085429525,
+              "rank_one_probability": 0.29042519458346816
+            }
+          ]
+        },
+        {
+          "chain": 2,
+          "quadratures": [
+            {
+              "order": 16,
+              "conditional_log_integral": -3063.221522508574,
+              "mean_alpha": 1.2202492147366575,
+              "rank_one_probability": 0.3012745818112806
+            },
+            {
+              "order": 32,
+              "conditional_log_integral": -3062.932515894341,
+              "mean_alpha": 1.2003842091639692,
+              "rank_one_probability": 0.2927237807702208
+            },
+            {
+              "order": 64,
+              "conditional_log_integral": -3062.9297736443546,
+              "mean_alpha": 1.1998970034624286,
+              "rank_one_probability": 0.2925137718146239
+            },
+            {
+              "order": 128,
+              "conditional_log_integral": -3062.929773643384,
+              "mean_alpha": 1.1998970035049763,
+              "rank_one_probability": 0.2925137718312075
+            },
+            {
+              "order": 256,
+              "conditional_log_integral": -3062.929773643384,
+              "mean_alpha": 1.1998970035050944,
+              "rank_one_probability": 0.29251377183123584
+            }
+          ]
+        },
+        {
+          "chain": 3,
+          "quadratures": [
+            {
+              "order": 16,
+              "conditional_log_integral": -3067.7219910856206,
+              "mean_alpha": 1.217320154659477,
+              "rank_one_probability": 0.3000262251285614
+            },
+            {
+              "order": 32,
+              "conditional_log_integral": -3067.360745151332,
+              "mean_alpha": 1.1981716113428624,
+              "rank_one_probability": 0.29177684829441974
+            },
+            {
+              "order": 64,
+              "conditional_log_integral": -3067.3563044050375,
+              "mean_alpha": 1.1977461717015276,
+              "rank_one_probability": 0.29159262854792733
+            },
+            {
+              "order": 128,
+              "conditional_log_integral": -3067.3563044043813,
+              "mean_alpha": 1.1977461718266964,
+              "rank_one_probability": 0.29159262860051255
+            },
+            {
+              "order": 256,
+              "conditional_log_integral": -3067.3563044043813,
+              "mean_alpha": 1.1977461718267635,
+              "rank_one_probability": 0.29159262860052865
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "largest_conditional_rank_one_change": {
+    "16_to_32": 0.008582404727113468,
+    "32_to_64": 0.0002163642422786105,
+    "64_to_128": 8.131806339406467e-11,
+    "128_to_256": 1.0186296250935811e-13
+  },
+  "producer_sha256": "836c96e5c15ed9cf82f3fb45aba81511d526bf66d6436aab73566f1b3f9df5ee",
+  "summary_code_sha256": "742125b255a76a5bd39e9570d917f48b967ad0e6d9497d33d615b04406755600"
+}

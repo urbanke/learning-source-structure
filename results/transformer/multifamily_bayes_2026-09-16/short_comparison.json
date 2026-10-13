@@ -1,0 +1,535 @@
+{
+  "schema": "multifamily-short-mixture-comparison-v1",
+  "source_plan_id": "64a6796ebe5598ac29cedf214e5259649d97e49a06fe36c3f1d0cea28f9eff51",
+  "family_order": [
+    "product",
+    "shared_base",
+    "uniform_base"
+  ],
+  "family_prior_weights": [
+    0.3333333333333333,
+    0.3333333333333333,
+    0.3333333333333333
+  ],
+  "prediction_times": [
+    1,
+    4
+  ],
+  "scored_tokens": "At time t, score tokens 2,...,t+1; token 1 is given.",
+  "direct_mixture_evidence_available_through_tokens": 5,
+  "long_context_mixture_comparison": "not computed",
+  "uncertainty": "Sequence-paired SE within each family; equal-family-average SE is sqrt(sum(SE_f^2))/3. Training seeds are reported separately.",
+  "interpretation": "The target is the equal-prior Bayesian mixture, not specialist transformers. Conditional-family sample gaps may be negative; the balanced-prior expectation is nonnegative. The mixture-minus-known-family penalty is bounded above by log2(3) per sequence, but need not equal that bound.",
+  "cohorts": {
+    "product": {
+      "cohort": "product_prior",
+      "n_seq": 1024,
+      "mixture_cumulative_loss_bits": {
+        "mean": [
+          6.004596052780181,
+          23.303379580866554
+        ],
+        "se": [
+          0.004476134272549833,
+          0.05331249295466918
+        ],
+        "n_seq": 1024
+      },
+      "generating_family_cumulative_loss_bits": {
+        "mean": [
+          6.0,
+          23.06338082161889
+        ],
+        "se": [
+          0.0,
+          0.06872831012090104
+        ],
+        "n_seq": 1024
+      },
+      "mixture_minus_generating_family_bits": {
+        "mean": [
+          0.004596052780286037,
+          0.23999875924762668
+        ],
+        "se": [
+          0.0044761342725498695,
+          0.024564767506441265
+        ],
+        "n_seq": 1024
+      },
+      "posterior_family_weights_before_prediction": {
+        "mean": [
+          [
+            0.33333333333171844,
+            0.3333333333365717,
+            0.33333333333171844
+          ],
+          [
+            0.40387948852747724,
+            0.28718880228092564,
+            0.3089317091916043
+          ]
+        ],
+        "se": [
+          [
+            1.8570611089018612e-16,
+            1.0239869665907459e-16,
+            1.8570611089018612e-16
+          ],
+          [
+            0.005724850612575341,
+            0.00352783629902771,
+            0.003495250676348153
+          ]
+        ],
+        "n_seq": 1024
+      },
+      "models": {
+        "pooled_seed0": {
+          "transformer_cumulative_loss_bits": {
+            "mean": [
+              5.999555391066104,
+              23.3263050975064
+            ],
+            "se": [
+              0.0023045463462037304,
+              0.05069525868823734
+            ],
+            "n_seq": 1024
+          },
+          "transformer_minus_mixture_bits": {
+            "mean": [
+              -0.005040661714181903,
+              0.022925516639827906
+            ],
+            "se": [
+              0.0038213124027846133,
+              0.01069795826001047
+            ],
+            "n_seq": 1024
+          },
+          "run_id": "0d5b1fe3894b7eaca0e2ea8f5b4c5bf74f0f7724421ac33a6eec6e35bcec757a",
+          "checkpoint_sha256": "1c9407dae3aca153b60ce49b3c0b790ffc9dd3b684aaf4f9c6ee3fd49ff6691f"
+        },
+        "pooled_seed1": {
+          "transformer_cumulative_loss_bits": {
+            "mean": [
+              6.004032286103882,
+              23.285110879580685
+            ],
+            "se": [
+              0.0023976303947591364,
+              0.052571540599647304
+            ],
+            "n_seq": 1024
+          },
+          "transformer_minus_mixture_bits": {
+            "mean": [
+              -0.0005637666764040693,
+              -0.01826870128588629
+            ],
+            "se": [
+              0.003920504948809871,
+              0.010777265020886485
+            ],
+            "n_seq": 1024
+          },
+          "run_id": "314184249f76fec763e5f3f864d15b1567ff9783942c184a4201d1daf27f2104",
+          "checkpoint_sha256": "2e22fd6f4b5c8faec6568b8088908a808f1ac9e381e2ce0e63e8db5e2ba8dd7f"
+        }
+      }
+    },
+    "shared_base": {
+      "cohort": "shared_base_prior",
+      "n_seq": 1024,
+      "mixture_cumulative_loss_bits": {
+        "mean": [
+          5.9548656097007004,
+          23.513477226544122
+        ],
+        "se": [
+          0.00820231879298111,
+          0.06542845743848158
+        ],
+        "n_seq": 1024
+      },
+      "generating_family_cumulative_loss_bits": {
+        "mean": [
+          5.9348234285320585,
+          23.35236404296197
+        ],
+        "se": [
+          0.016457843867309033,
+          0.07596092037709977
+        ],
+        "n_seq": 1024
+      },
+      "mixture_minus_generating_family_bits": {
+        "mean": [
+          0.02004218116879434,
+          0.16111318358213883
+        ],
+        "se": [
+          0.00825552507432792,
+          0.019329680711336842
+        ],
+        "n_seq": 1024
+      },
+      "posterior_family_weights_before_prediction": {
+        "mean": [
+          [
+            0.33333333333171844,
+            0.3333333333365717,
+            0.33333333333171844
+          ],
+          [
+            0.28717929228578004,
+            0.38260553654675705,
+            0.3302151711674691
+          ]
+        ],
+        "se": [
+          [
+            1.8570611089018612e-16,
+            1.0239869665907459e-16,
+            1.8570611089018612e-16
+          ],
+          [
+            0.003588675290118858,
+            0.00482266026565434,
+            0.0031300139029989175
+          ]
+        ],
+        "n_seq": 1024
+      },
+      "models": {
+        "pooled_seed0": {
+          "transformer_cumulative_loss_bits": {
+            "mean": [
+              5.9859429891434734,
+              23.61821535318759
+            ],
+            "se": [
+              0.0029528239891970453,
+              0.06126010974698508
+            ],
+            "n_seq": 1024
+          },
+          "transformer_minus_mixture_bits": {
+            "mean": [
+              0.0310773794426786,
+              0.10473812664342061
+            ],
+            "se": [
+              0.006403851776129426,
+              0.01410731522701435
+            ],
+            "n_seq": 1024
+          },
+          "run_id": "0d5b1fe3894b7eaca0e2ea8f5b4c5bf74f0f7724421ac33a6eec6e35bcec757a",
+          "checkpoint_sha256": "1c9407dae3aca153b60ce49b3c0b790ffc9dd3b684aaf4f9c6ee3fd49ff6691f"
+        },
+        "pooled_seed1": {
+          "transformer_cumulative_loss_bits": {
+            "mean": [
+              5.98836900604037,
+              23.64448532505918
+            ],
+            "se": [
+              0.0031057344427184367,
+              0.0604768519288652
+            ],
+            "n_seq": 1024
+          },
+          "transformer_minus_mixture_bits": {
+            "mean": [
+              0.03350339633957449,
+              0.13100809851500922
+            ],
+            "se": [
+              0.0063859492547046984,
+              0.014979548853980073
+            ],
+            "n_seq": 1024
+          },
+          "run_id": "314184249f76fec763e5f3f864d15b1567ff9783942c184a4201d1daf27f2104",
+          "checkpoint_sha256": "2e22fd6f4b5c8faec6568b8088908a808f1ac9e381e2ce0e63e8db5e2ba8dd7f"
+        }
+      }
+    },
+    "uniform_base": {
+      "cohort": "uniform_base_prior",
+      "n_seq": 1024,
+      "mixture_cumulative_loss_bits": {
+        "mean": [
+          6.013920510857584,
+          24.093314087714937
+        ],
+        "se": [
+          0.003261836978705743,
+          0.023730083802893667
+        ],
+        "n_seq": 1024
+      },
+      "generating_family_cumulative_loss_bits": {
+        "mean": [
+          6.0,
+          23.963956634080155
+        ],
+        "se": [
+          0.0,
+          0.0136799012372386
+        ],
+        "n_seq": 1024
+      },
+      "mixture_minus_generating_family_bits": {
+        "mean": [
+          0.01392051085769122,
+          0.12935745363480658
+        ],
+        "se": [
+          0.0032618369787057525,
+          0.015833808717354257
+        ],
+        "n_seq": 1024
+      },
+      "posterior_family_weights_before_prediction": {
+        "mean": [
+          [
+            0.33333333333171844,
+            0.3333333333365717,
+            0.33333333333171844
+          ],
+          [
+            0.315587468380194,
+            0.3205558636212746,
+            0.3638566679985398
+          ]
+        ],
+        "se": [
+          [
+            1.8570611089018612e-16,
+            1.0239869665907459e-16,
+            1.8570611089018612e-16
+          ],
+          [
+            0.00307569463969465,
+            0.002636526865423169,
+            0.0021835462902448617
+          ]
+        ],
+        "n_seq": 1024
+      },
+      "models": {
+        "pooled_seed0": {
+          "transformer_cumulative_loss_bits": {
+            "mean": [
+              6.002389042608602,
+              24.06676064435472
+            ],
+            "se": [
+              0.002174446219801263,
+              0.023123214231783946
+            ],
+            "n_seq": 1024
+          },
+          "transformer_minus_mixture_bits": {
+            "mean": [
+              -0.011531468249088435,
+              -0.02655344336026333
+            ],
+            "se": [
+              0.0030952021601676075,
+              0.00897485532453213
+            ],
+            "n_seq": 1024
+          },
+          "run_id": "0d5b1fe3894b7eaca0e2ea8f5b4c5bf74f0f7724421ac33a6eec6e35bcec757a",
+          "checkpoint_sha256": "1c9407dae3aca153b60ce49b3c0b790ffc9dd3b684aaf4f9c6ee3fd49ff6691f"
+        },
+        "pooled_seed1": {
+          "transformer_cumulative_loss_bits": {
+            "mean": [
+              6.003515142253743,
+              24.08865354251545
+            ],
+            "se": [
+              0.0023142659232042993,
+              0.022649718518700672
+            ],
+            "n_seq": 1024
+          },
+          "transformer_minus_mixture_bits": {
+            "mean": [
+              -0.010405368603947106,
+              -0.004660545199536738
+            ],
+            "se": [
+              0.003269130682228675,
+              0.009074554838466559
+            ],
+            "n_seq": 1024
+          },
+          "run_id": "314184249f76fec763e5f3f864d15b1567ff9783942c184a4201d1daf27f2104",
+          "checkpoint_sha256": "2e22fd6f4b5c8faec6568b8088908a808f1ac9e381e2ce0e63e8db5e2ba8dd7f"
+        }
+      }
+    }
+  },
+  "equal_family_average": {
+    "mixture_cumulative_loss_bits": {
+      "mean": [
+        5.991127391112822,
+        23.636723631708538
+      ],
+      "se": [
+        0.0032990468671225247,
+        0.029223700094868212
+      ],
+      "n_seq": 3072,
+      "family_weights": [
+        0.3333333333333333,
+        0.3333333333333333,
+        0.3333333333333333
+      ]
+    },
+    "generating_family_cumulative_loss_bits": {
+      "mean": [
+        5.978274476177353,
+        23.45990049955367
+      ],
+      "se": [
+        0.0054859479557696775,
+        0.034449289195168924
+      ],
+      "n_seq": 3072,
+      "family_weights": [
+        0.3333333333333333,
+        0.3333333333333333,
+        0.3333333333333333
+      ]
+    },
+    "mixture_minus_generating_family_bits": {
+      "mean": [
+        0.012852914935590534,
+        0.17682313215485734
+      ],
+      "se": [
+        0.0033137600790643456,
+        0.011679868043135417
+      ],
+      "n_seq": 3072,
+      "family_weights": [
+        0.3333333333333333,
+        0.3333333333333333,
+        0.3333333333333333
+      ]
+    },
+    "posterior_family_weights_before_prediction": {
+      "mean": [
+        [
+          0.33333333333171844,
+          0.3333333333365717,
+          0.33333333333171844
+        ],
+        [
+          0.33554874973115045,
+          0.3301167341496524,
+          0.3343345161192044
+        ]
+      ],
+      "se": [
+        [
+          1.0721747311260746e-16,
+          5.911991508078355e-17,
+          1.0721747311260746e-16
+        ],
+        [
+          0.0024745909289519245,
+          0.0021770253635728844,
+          0.0017250326478430887
+        ]
+      ],
+      "n_seq": 3072,
+      "family_weights": [
+        0.3333333333333333,
+        0.3333333333333333,
+        0.3333333333333333
+      ]
+    },
+    "models": {
+      "pooled_seed0": {
+        "transformer_cumulative_loss_bits": {
+          "mean": [
+            5.995962474272726,
+            23.6704270316829
+          ],
+          "se": [
+            0.0014436958642389762,
+            0.027603327770576534
+          ],
+          "n_seq": 3072,
+          "family_weights": [
+            0.3333333333333333,
+            0.3333333333333333,
+            0.3333333333333333
+          ]
+        },
+        "transformer_minus_mixture_bits": {
+          "mean": [
+            0.004835083159802754,
+            0.0337033999743284
+          ],
+          "se": [
+            0.0026913858978975815,
+            0.0066165674379088405
+          ],
+          "n_seq": 3072,
+          "family_weights": [
+            0.3333333333333333,
+            0.3333333333333333,
+            0.3333333333333333
+          ]
+        }
+      },
+      "pooled_seed1": {
+        "transformer_cumulative_loss_bits": {
+          "mean": [
+            5.998638811465998,
+            23.672749915718438
+          ],
+          "se": [
+            0.001518407232078883,
+            0.02775733386416927
+          ],
+          "n_seq": 3072,
+          "family_weights": [
+            0.3333333333333333,
+            0.3333333333333333,
+            0.3333333333333333
+          ]
+        },
+        "transformer_minus_mixture_bits": {
+          "mean": [
+            0.007511420353074438,
+            0.03602628400986207
+          ],
+          "se": [
+            0.002725148769737068,
+            0.006854713469297652
+          ],
+          "n_seq": 3072,
+          "family_weights": [
+            0.3333333333333333,
+            0.3333333333333333,
+            0.3333333333333333
+          ]
+        }
+      }
+    }
+  },
+  "validation_receipt": {
+    "path": "/Users/ruediger/Projects/layered_architectures/results/transformer/multifamily_bayes_2026-09-16/short_validation.json",
+    "sha256": "8df1c30f3c4c9169e747f8bb049f1315ee0dbc9505343e78cbe8e7834d495dc5"
+  }
+}

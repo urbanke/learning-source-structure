@@ -1,0 +1,11 @@
+{
+  "schema": "shared-base-scaling-status-v1",
+  "step": 100000,
+  "production_steps": 100000,
+  "complete": true,
+  "reason": "completed",
+  "completed_sequences": 6400000,
+  "config_hash": "6e754d781f0027f6c0a367de05a59bc8896941aa06f10ad803c6274ea1d56a69",
+  "plan_sha256": "28d3af403a7972ed30877ce2afb2201509c052cac4202c0b4485dea677d37202",
+  "training_elapsed_seconds": 6722.1428173473105
+}

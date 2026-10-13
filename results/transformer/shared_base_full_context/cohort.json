@@ -1,0 +1,36 @@
+{
+  "schema": "shared-base-full-context-cohort-v1",
+  "n_sequences": 4,
+  "master_seed": 20260922,
+  "prefixes": [
+    1024
+  ],
+  "n_tokens_per_sequence": 1025,
+  "selection": "The first n_seq independent full-prior draws; retain every draw regardless of parameters or inference difficulty.",
+  "records": [
+    {
+      "index": 0,
+      "source_id": "5a068ee299060aef32a78214f94a10c0d9c0969626baa129cebb85e478296b56",
+      "path": "/Users/ruediger/Projects/layered_architectures/output/shared_base_full_context/data/seq_000000.json",
+      "file_sha256": "2ab30785495996dfecc81937e9d0d0acdc30c94da98fcd04b17350a5ab5cd88a"
+    },
+    {
+      "index": 1,
+      "source_id": "e085951fde50ef1bdc985d9e920158f1d451d927935ae2eb8e2605480da492e3",
+      "path": "/Users/ruediger/Projects/layered_architectures/output/shared_base_full_context/data/seq_000001.json",
+      "file_sha256": "6fa514ba0067686e948b61206f199a535edf3c372109a37f70b384e99f43de5c"
+    },
+    {
+      "index": 2,
+      "source_id": "a1ea975549bf5a5faad4f3d91ef1849499a0971dafae507b6d4a742367e533cf",
+      "path": "/Users/ruediger/Projects/layered_architectures/output/shared_base_full_context/data/seq_000002.json",
+      "file_sha256": "836be7cdd9571cb46813e082d17267311ce1407b9757ceff2eb6e6c91a3b0503"
+    },
+    {
+      "index": 3,
+      "source_id": "7ed145b5ce6b1a650b8c735bb945fb1d943d93161161ea735cd0a00d0eef5f1d",
+      "path": "/Users/ruediger/Projects/layered_architectures/output/shared_base_full_context/data/seq_000003.json",
+      "file_sha256": "d8573014d7315345c9c30a3c75ebabf538477c089ba8547060d564a491b75c65"
+    }
+  ]
+}

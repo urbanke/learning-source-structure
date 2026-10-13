@@ -1,0 +1,457 @@
+{
+  "schema": "scitas-shared-base-preparation-v1",
+  "date": "2026-09-16",
+  "cluster_submitted": false,
+  "production_reference_validated": false,
+  "dependency_bundle": {
+    "archive_bytes": 103536150,
+    "archive_sha256": "a55f54cb14599451d855a9742f53c89377ac1f4e06ac094ca8f49bae35cab0ae",
+    "manifest_sha256": "c1a2d96e3c6ce081ee58de77c7e25b578de5af1cc08665504022d1745c53166d",
+    "verified_files": 43,
+    "fresh_extract_and_existing_c_kernel_build": true
+  },
+  "cpu_local_preflight": {
+    "scope": "Runtime and integration smoke only; two repetitions per control do not assess scientific precision.",
+    "plan_sha256": "4cb87e20efb79acc22df99c88631fbab39e089cc82e19591bef647730baf8331",
+    "merged_sha256": "449b2d01d461785c31cbf33d23c6befec3be340667553b272b9622fb4a91e03c",
+    "complete": true,
+    "gate": {
+      "purpose": "preflight",
+      "production_approved": false,
+      "scope": "only the fixed cases and numerical settings in this stage",
+      "status": "preflight_only",
+      "accuracy_approved": false,
+      "runtime_ready": true
+    },
+    "numerical_identity": {
+      "code_sha256": {
+        "code/transformer/shared_base_evidence_smc.py": "f3f7fe00cd9c05cae6cfe23310416cb50e9566cdea319113412f9efabb2f4709",
+        "code/transformer/shared_base_mcmc.py": "26469e21c04fc2fe91a40bcb418aff3ae866fe707b2ee198d644091580b1f7a8",
+        "code/transformer/shared_base_surrogate.py": "f0026481a1dc1b672ca2804189a6da6b709866f56b11bb2ed8eaa3f6f0c604ce",
+        "code/transformer/shared_base_efficiency.py": "fed842e1b5c1f68d60ef9f706b7ab927595277649ee1364e07d892836287a0e9",
+        "code/transformer/ranked_lsa.py": "3fa7952048ab3f25d508dda8c2a7c232064aa5db56008de8b4ed9623709aac8d",
+        "code/transformer/weighted_lsa.py": "847f0ffaa622d86e88633447327dce8e7f518e4c86c1e44e76a794e470d2dec9",
+        "code/transformer/phi_source.py": "456eb407fd7f280786a441681a704a6fff172af9fc9aea3c6f9456fb55174831",
+        "code/transformer/lsa_seq.py": "7e39960e91f3bb27eea82e201afd8a86ce717ea50a304daa86534b4fdbadfc51",
+        "code/transformer/shared_base_short_evidence.py": "085d517efe914902390e1499d67fa27423d430fc7e1b742b82c98ebc971f4171",
+        "code/transformer/shared_base_cluster.py": "d83ba8aacf859225fc06544e7980f31888cfa3d017af12855fdfb57a14cc3827",
+        "code/scripts/shared_base_cluster.py": "d045bbde603aa07c34d18c0ca3e74721c53ced89f9cd9181636d6fe443bfe92d",
+        "code/scripts/calibrate_shared_base_evidence.py": "686eae195eb15ef261f630656dc4709bfdbdffdd4d4abbc370635e1fbfed8e9a"
+      },
+      "backend_sha256": {
+        "universal_tables.py": "aef2f63c0ccdb4de58bb8c617dd99aaadc73b803bee67a029f5d89230878d5c2",
+        "production_coding.py": "6f709444496865ff124fc5bf1849fa6dce442a594f3cc7fe7c53ccfb504560f6",
+        "kernel.py": "5dd1b42d05ffcb0b51383c1eaa9e88a0e494192a26215e71809d02b8d06a52d0",
+        "_kernel.c": "85e23df27867ee61deaecd200587acd8faf5d57dfb15ce9f7559d315c0577103",
+        "mellin.py": "201e2161b98a5b3dcf464930447c02dc22092fe78dec9e49b44bd8b2b931f969"
+      },
+      "dependency_manifest_sha256": "c1a2d96e3c6ce081ee58de77c7e25b578de5af1cc08665504022d1745c53166d",
+      "dependency_sha256": {
+        "src/product_model_with_memory/__init__.py": "518a5ce5ec411a0ca9337a66559bd992d978430eddcb70ad7d21eb9196d6a916",
+        "src/product_model_with_memory/_graphical_margin_c.c": "67d302eac5a42fb55550e2b6e5fceb13831fe579bd1f84944af949316dda3096",
+        "src/product_model_with_memory/_kernel.c": "85e23df27867ee61deaecd200587acd8faf5d57dfb15ce9f7559d315c0577103",
+        "src/product_model_with_memory/analytic_schedule.py": "69bda1d029998f3595fd46a531af8ad3232a1c7ca5b169909308630e44d663c5",
+        "src/product_model_with_memory/anchored_pair_graph.py": "265c8a47a7abd9dca0a656fb047c30c8e39f5104033797fa71e0618a368c3eaa",
+        "src/product_model_with_memory/anchored_state_maps.py": "5aaa4313f060c117ef635c4417d2b5f85638da552fae98a6c93c4295320d73fb",
+        "src/product_model_with_memory/checkpoint_scheduler.py": "e8e75772813e81c68252a9e4fdd25fc28775dad712face853083093cab124ed8",
+        "src/product_model_with_memory/codelength.py": "f13c3472d2f68d85eaecc2d521d70a8a2e6d6972bc2980911c15046ca054ca9e",
+        "src/product_model_with_memory/context_tree.py": "b141a3d30dc6acdc7934323cb78f16d772d32b618868e3b8f207f15f71a419c4",
+        "src/product_model_with_memory/corpus.py": "4d5a36502b37fb74a9dc14ea970a42630d6d527325d107f0002ff0e300529096",
+        "src/product_model_with_memory/counting.py": "f530b00cbd2ad7b61ed5400b4046e2cad5cd0166aefc8b6e0681c7d948c19df4",
+        "src/product_model_with_memory/fast_tables.py": "dd422e92e9be1864c2f21bfbe95b6eedc37fb920974d742f830110061c59ca58",
+        "src/product_model_with_memory/graphical_calibration.py": "8b663934f9ed6e2d367378a86a9e5c8458571e7d92bcbb731b041a066b53a726",
+        "src/product_model_with_memory/kernel.py": "5dd1b42d05ffcb0b51383c1eaa9e88a0e494192a26215e71809d02b8d06a52d0",
+        "src/product_model_with_memory/lag_family.py": "2878f136736c9a480a345b945dc2324b6f33b76e9c1a1db6c42331ec5e667199",
+        "src/product_model_with_memory/layered.py": "c0fd561c85aacd74077b429fbc7b1385516954b4f3f49d696474c1d8c8c6950d",
+        "src/product_model_with_memory/mellin.py": "201e2161b98a5b3dcf464930447c02dc22092fe78dec9e49b44bd8b2b931f969",
+        "src/product_model_with_memory/memory2_frontier.py": "bc7e0a266eb6eaa27f37e7f2d7eb6b7c87e4a3746e3571bba5e4f1b9b4c63ecc",
+        "src/product_model_with_memory/pairs.py": "9f2f7be44ebb3b5b5d41963ccb48ee667221ba39a12db19eb6b5a7c60255cfe8",
+        "src/product_model_with_memory/pooled_lags.py": "5d5fabf9757a03ad22acbfd7775509e5adddffd5e01f6883323c1eda560be3a7",
+        "src/product_model_with_memory/potential_sampling.py": "d39adb03704ed053a9f41c6fd2ed20f2cdfc04bcf9f505a1eac7f2c95de4b9ab",
+        "src/product_model_with_memory/product_family.py": "d1d18d99cb856ec2ba83be15696a125a6974972546c3709099f329d9c39d7c25",
+        "src/product_model_with_memory/production_coding.py": "6f709444496865ff124fc5bf1849fa6dce442a594f3cc7fe7c53ccfb504560f6",
+        "src/product_model_with_memory/state_family.py": "d912bb1c92ea91e117e7685aa26d8b3ad25108e54e83dc2b22c020eb346569c2",
+        "src/product_model_with_memory/streams.py": "66ba08c3a3422dd7eb645638e766cf3f83cbf8b54dc6270816e9d2a93977b09e",
+        "src/product_model_with_memory/tokenizer.py": "9ec96d5d1df0c49bbfbee2e9ed7c213970f511f06424da07ee0284211132cd50",
+        "src/product_model_with_memory/universal_tables.py": "aef2f63c0ccdb4de58bb8c617dd99aaadc73b803bee67a029f5d89230878d5c2",
+        "tables/anchors_prod/anchors.json": "5c409244487deeba8d597ad66fa13479a8d15476d55d4509c33b2ec797b07c68",
+        "tables/anchors_prod/level_02.bin": "3cad37b6e74664ec034e92c0b6974a09fa49c4767068189ed20b1e10ae67f7f0",
+        "tables/anchors_prod/level_02.index.json": "151f2fc796b6ee184eb229529ffd069a88b684f4755d74a1f6f857894cca0035",
+        "tables/anchors_prod/level_03.bin": "fe32b3f202b7b0789df241630c0d516a134756ab7be6d4ab99f1078f5ebf8881",
+        "tables/anchors_prod/level_03.index.json": "cc528c25e8a420d41f81ec161402ce6b18e24df33c4c8fdcc1fc324015dcde14",
+        "tables/anchors_prod/level_04.bin": "1915e09a2b12bf2987fec45a8dad945e649ff39b4fab4e9b70fd8828227a126e",
+        "tables/anchors_prod/level_04.index.json": "1341c568b7b9a7ccc2e927384db4d52cefe1b61eeb381c2b855f1469f1a7b188",
+        "tables/anchors_prod/level_05.bin": "3c2e1f12514e6b5be8b69422234e2a4406ebabfeec6d963f9906a2a0df74b28a",
+        "tables/anchors_prod/level_05.index.json": "217c2b7364de81972a490dce9d46bc16b892676dd2ca44dc2e0ea70e50c9c2dd",
+        "tables/anchors_prod/level_06.bin": "83facd5ceeaddf103780c540ff6c5646425ef944181d96d199aa0ab68d8cd4ce",
+        "tables/anchors_prod/level_06.index.json": "09449b24a444b8345d9ce1b374c75bf468dcb8c62078205be690770d341a76f5",
+        "tables/anchors_prod/level_07.bin": "42c177fb2fc1905c28a158456f6e391da2c99289a684323140b701ec151622f2",
+        "tables/anchors_prod/level_07.index.json": "668da24fb77f15f718f3138b27719259e73400a50735d32f7fc6e9160714e7e2",
+        "tables/anchors_prod/level_08.bin": "97aad78bfcac5af2d727fd09b55ccbcf5c23847825ee469ea9c48453c3b6b275",
+        "tables/anchors_prod/level_08.index.json": "736c7f134f9fb6f416c3c57953287fbced8c52ed2c364068d98671c0a7c9602a",
+        "tables/anchors_prod/manifest.json": "cf0449a4b704174890f0a1fb95f20954839dd7266ae307e799d1dc6d0234ffb5"
+      },
+      "store_file_sha256": {
+        "manifest.json": "cf0449a4b704174890f0a1fb95f20954839dd7266ae307e799d1dc6d0234ffb5",
+        "anchors.json": "5c409244487deeba8d597ad66fa13479a8d15476d55d4509c33b2ec797b07c68",
+        "level_02.bin": "3cad37b6e74664ec034e92c0b6974a09fa49c4767068189ed20b1e10ae67f7f0",
+        "level_02.index.json": "151f2fc796b6ee184eb229529ffd069a88b684f4755d74a1f6f857894cca0035",
+        "level_03.bin": "fe32b3f202b7b0789df241630c0d516a134756ab7be6d4ab99f1078f5ebf8881",
+        "level_03.index.json": "cc528c25e8a420d41f81ec161402ce6b18e24df33c4c8fdcc1fc324015dcde14",
+        "level_04.bin": "1915e09a2b12bf2987fec45a8dad945e649ff39b4fab4e9b70fd8828227a126e",
+        "level_04.index.json": "1341c568b7b9a7ccc2e927384db4d52cefe1b61eeb381c2b855f1469f1a7b188",
+        "level_05.bin": "3c2e1f12514e6b5be8b69422234e2a4406ebabfeec6d963f9906a2a0df74b28a",
+        "level_05.index.json": "217c2b7364de81972a490dce9d46bc16b892676dd2ca44dc2e0ea70e50c9c2dd",
+        "level_06.bin": "83facd5ceeaddf103780c540ff6c5646425ef944181d96d199aa0ab68d8cd4ce",
+        "level_06.index.json": "09449b24a444b8345d9ce1b374c75bf468dcb8c62078205be690770d341a76f5",
+        "level_07.bin": "42c177fb2fc1905c28a158456f6e391da2c99289a684323140b701ec151622f2",
+        "level_07.index.json": "668da24fb77f15f718f3138b27719259e73400a50735d32f7fc6e9160714e7e2",
+        "level_08.bin": "97aad78bfcac5af2d727fd09b55ccbcf5c23847825ee469ea9c48453c3b6b275",
+        "level_08.index.json": "736c7f134f9fb6f416c3c57953287fbced8c52ed2c364068d98671c0a7c9602a"
+      },
+      "effective_numerical_environment": {
+        "PMM_PHI_BIAS": null,
+        "PMM_PHI_WAVE": null,
+        "PMM_PHI_WAVE_SCALE": null,
+        "PMM_PHI_LADDER": null,
+        "PMM_PHI_LADDER_EVERY": "1",
+        "PMM_PHI_LADDER_DEGREE": "11",
+        "PMM_PHI_SADDLE_MIN_L": "54",
+        "PMM_SERIES_TAIL": null,
+        "PMM_KERNEL": null,
+        "PMM_INTERP_KERNEL": null,
+        "PMM_BUILD_EXACT": null
+      },
+      "alpha_nodes": [
+        0.505299532504175,
+        0.5277124884633837,
+        0.5671843988060842,
+        0.6222977958224984,
+        0.6910618777986781,
+        0.7709916111713864,
+        0.8591982246103705,
+        0.9524937450811812,
+        1.0475062549188188,
+        1.1408017753896296,
+        1.2290083888286136,
+        1.3089381222013219,
+        1.3777022041775016,
+        1.4328156011939157,
+        1.4722875115366163,
+        1.494700467495825
+      ],
+      "alpha_weights": [
+        0.01357622970587703,
+        0.031126761969323805,
+        0.04757925584124649,
+        0.06231448562776698,
+        0.07479799440828833,
+        0.0845782596975013,
+        0.09130170752246179,
+        0.09472530522753428,
+        0.09472530522753428,
+        0.09130170752246179,
+        0.0845782596975013,
+        0.07479799440828833,
+        0.06231448562776698,
+        0.04757925584124649,
+        0.031126761969323805,
+        0.01357622970587703
+      ],
+      "depth_prior": [
+        0.11111111111111109,
+        0.11111111111111109,
+        0.11111111111111109,
+        0.11111111111111109,
+        0.11111111111111109,
+        0.11111111111111109,
+        0.11111111111111109,
+        0.11111111111111109,
+        0.11111111111111109
+      ],
+      "numpy_version": "2.4.6",
+      "scipy_version": "1.18.1",
+      "python_version": "3.14.6",
+      "compiled_kernel_available": true
+    },
+    "records": [
+      {
+        "case_id": "cal_product_0",
+        "replica": 0,
+        "seed": 15523532962718507497,
+        "log_evidence": -19.848573465578472,
+        "elapsed_seconds": 7.78709229209926
+      },
+      {
+        "case_id": "cal_product_0",
+        "replica": 1,
+        "seed": 13474647301361331792,
+        "log_evidence": -19.815075752120638,
+        "elapsed_seconds": 3.9602962909266353
+      },
+      {
+        "case_id": "cal_shared_base_0",
+        "replica": 0,
+        "seed": 712049469312450090,
+        "log_evidence": -21.037275013006017,
+        "elapsed_seconds": 8.232510291971266
+      },
+      {
+        "case_id": "cal_shared_base_0",
+        "replica": 1,
+        "seed": 14391314370254268013,
+        "log_evidence": -21.07401656583935,
+        "elapsed_seconds": 5.407996084075421
+      },
+      {
+        "case_id": "cal_uniform_base_0",
+        "replica": 0,
+        "seed": 237817170880742199,
+        "log_evidence": -21.206924043385595,
+        "elapsed_seconds": 7.760348167037591
+      },
+      {
+        "case_id": "cal_uniform_base_0",
+        "replica": 1,
+        "seed": 9100394436861557654,
+        "log_evidence": -21.10823363815743,
+        "elapsed_seconds": 3.913859749911353
+      },
+      {
+        "case_id": "cal_aaaaa",
+        "replica": 0,
+        "seed": 12216122365341731226,
+        "log_evidence": -8.886272492255864,
+        "elapsed_seconds": 7.434927333961241
+      },
+      {
+        "case_id": "cal_aaaaa",
+        "replica": 1,
+        "seed": 7030055904814489980,
+        "log_evidence": -8.879359825471766,
+        "elapsed_seconds": 3.445182624971494
+      },
+      {
+        "case_id": "cal_ababa",
+        "replica": 0,
+        "seed": 14949696099745589789,
+        "log_evidence": -13.643958909149891,
+        "elapsed_seconds": 7.327302708057687
+      },
+      {
+        "case_id": "cal_ababa",
+        "replica": 1,
+        "seed": 6496262959966074911,
+        "log_evidence": -13.773738536769136,
+        "elapsed_seconds": 3.567378249950707
+      },
+      {
+        "case_id": "cal_abaca",
+        "replica": 0,
+        "seed": 3514828424264110893,
+        "log_evidence": -17.696366991869397,
+        "elapsed_seconds": 28.09462462493684
+      },
+      {
+        "case_id": "cal_abaca",
+        "replica": 1,
+        "seed": 7264009974898938839,
+        "log_evidence": -17.653816590733108,
+        "elapsed_seconds": 14.235748250037432
+      }
+    ],
+    "tasks": [
+      {
+        "case_id": "cal_product_0",
+        "elapsed_seconds": 12.385649291914888,
+        "peak_rss_bytes": 268009472,
+        "exit_code": 0
+      },
+      {
+        "case_id": "cal_shared_base_0",
+        "elapsed_seconds": 14.272215000004508,
+        "peak_rss_bytes": 269025280,
+        "exit_code": 0
+      },
+      {
+        "case_id": "cal_uniform_base_0",
+        "elapsed_seconds": 12.458236415986903,
+        "peak_rss_bytes": 277807104,
+        "exit_code": 0
+      },
+      {
+        "case_id": "cal_aaaaa",
+        "elapsed_seconds": 11.507367458078079,
+        "peak_rss_bytes": 279429120,
+        "exit_code": 0
+      },
+      {
+        "case_id": "cal_ababa",
+        "elapsed_seconds": 11.479188875062391,
+        "peak_rss_bytes": 268042240,
+        "exit_code": 0
+      },
+      {
+        "case_id": "cal_abaca",
+        "elapsed_seconds": 42.89869637496304,
+        "peak_rss_bytes": 292683776,
+        "exit_code": 0
+      }
+    ]
+  },
+  "limitations": [
+    "Local execution does not measure SCITAS performance.",
+    "GPU CUDA and all longer-context Bayesian evidence remain unvalidated.",
+    "No transformer retraining or manuscript changes."
+  ],
+  "batched_sampler_cpu_mode_smoke": {
+    "device": "cpu",
+    "device_name": "CPU",
+    "torch_version": "2.14.0",
+    "configuration": {
+      "particles": 32,
+      "temperatures": 4,
+      "moves": 1,
+      "replicates": 1,
+      "cpu_replicates": 1,
+      "torch_cpu_replicates": 1,
+      "alpha_order": 16,
+      "seed": 2026091603,
+      "sampling_seconds_limit": 60
+    },
+    "row_moment_preparation_seconds": 7.107804290950298,
+    "total_setup_seconds": 8.1572326249443,
+    "sampling_elapsed_seconds": 1.9425315420376137,
+    "status": "completed experimental benchmark; accuracy requires independent review",
+    "target_parity": {
+      "cal_product_0": {
+        "cpu": {
+          "max_absolute_log_error": 3.552713678800501e-15,
+          "transfer_and_target_setup_seconds": 0.009130791993811727
+        },
+        "requested_device": {
+          "max_absolute_log_error": 3.552713678800501e-15,
+          "transfer_and_target_setup_seconds": 0.00023516698274761438
+        },
+        "states": 24,
+        "passed": true,
+        "comparison": "original weighted-LSA kernel on identical states"
+      },
+      "cal_shared_base_0": {
+        "cpu": {
+          "max_absolute_log_error": 3.552713678800501e-15,
+          "transfer_and_target_setup_seconds": 0.0003618330229073763
+        },
+        "requested_device": {
+          "max_absolute_log_error": 3.552713678800501e-15,
+          "transfer_and_target_setup_seconds": 0.00017704092897474766
+        },
+        "states": 24,
+        "passed": true,
+        "comparison": "original weighted-LSA kernel on identical states"
+      },
+      "cal_uniform_base_0": {
+        "cpu": {
+          "max_absolute_log_error": 3.552713678800501e-15,
+          "transfer_and_target_setup_seconds": 0.00024970807135105133
+        },
+        "requested_device": {
+          "max_absolute_log_error": 3.552713678800501e-15,
+          "transfer_and_target_setup_seconds": 0.00012704101391136646
+        },
+        "states": 24,
+        "passed": true,
+        "comparison": "original weighted-LSA kernel on identical states"
+      },
+      "cal_aaaaa": {
+        "cpu": {
+          "max_absolute_log_error": 5.329070518200751e-15,
+          "transfer_and_target_setup_seconds": 0.00024037493858486414
+        },
+        "requested_device": {
+          "max_absolute_log_error": 5.329070518200751e-15,
+          "transfer_and_target_setup_seconds": 0.00013166596181690693
+        },
+        "states": 24,
+        "passed": true,
+        "comparison": "original weighted-LSA kernel on identical states"
+      },
+      "cal_ababa": {
+        "cpu": {
+          "max_absolute_log_error": 3.552713678800501e-15,
+          "transfer_and_target_setup_seconds": 0.00023945793509483337
+        },
+        "requested_device": {
+          "max_absolute_log_error": 3.552713678800501e-15,
+          "transfer_and_target_setup_seconds": 0.00013087503612041473
+        },
+        "states": 24,
+        "passed": true,
+        "comparison": "original weighted-LSA kernel on identical states"
+      },
+      "cal_abaca": {
+        "cpu": {
+          "max_absolute_log_error": 7.105427357601002e-15,
+          "transfer_and_target_setup_seconds": 0.002277916995808482
+        },
+        "requested_device": {
+          "max_absolute_log_error": 7.105427357601002e-15,
+          "transfer_and_target_setup_seconds": 0.0024395420914515853
+        },
+        "states": 24,
+        "passed": true,
+        "comparison": "original weighted-LSA kernel on identical states"
+      }
+    },
+    "code_sha256": {
+      "/Users/ruediger/Projects/layered_architectures/code/scripts/benchmark_shared_base_evidence_gpu.py": "6c2ebb2f0f12126d2aaa5dc95972781838158845b985b575d07fe5e54624233a",
+      "/Users/ruediger/Projects/layered_architectures/code/transformer/shared_base_evidence_gpu.py": "895d9354de127dc85afa1c45bfeadad29c2d5c9194596ad1f0a767c0ba8b07ba",
+      "/Users/ruediger/Projects/layered_architectures/code/scripts/shortprefix_shared_base_exact.py": "b6e229cb48f9b1a58e570521df9eb92ebec65da6b0db8386c3a23a71183791a6",
+      "/Users/ruediger/Projects/layered_architectures/code/scripts/calibrate_shared_base_evidence.py": "686eae195eb15ef261f630656dc4709bfdbdffdd4d4abbc370635e1fbfed8e9a",
+      "/Users/ruediger/Projects/layered_architectures/code/scripts/prepare_shared_base_cluster.py": "bb6051fbf31dcbf084d921913fa3505cfd71f4b2ad02b1a96c5833fa0da4e4a0",
+      "/Users/ruediger/Projects/layered_architectures/code/transformer/ranked_lsa.py": "3fa7952048ab3f25d508dda8c2a7c232064aa5db56008de8b4ed9623709aac8d",
+      "/Users/ruediger/Projects/layered_architectures/code/transformer/weighted_lsa.py": "847f0ffaa622d86e88633447327dce8e7f518e4c86c1e44e76a794e470d2dec9",
+      "/Users/ruediger/Projects/layered_architectures/code/transformer/shared_base_mcmc.py": "26469e21c04fc2fe91a40bcb418aff3ae866fe707b2ee198d644091580b1f7a8",
+      "/Users/ruediger/Projects/layered_architectures/code/transformer/shared_base_evidence_smc.py": "f3f7fe00cd9c05cae6cfe23310416cb50e9566cdea319113412f9efabb2f4709"
+    },
+    "dependency_manifest_sha256": "c1a2d96e3c6ce081ee58de77c7e25b578de5af1cc08665504022d1745c53166d",
+    "raw_sha256": "a57eb76f14f02fe32bc1c22bb57aa371994aae80317872d8d64e900a45e0cf23",
+    "complete_sampler_executions": 18,
+    "cuda_tested": false,
+    "scientific_reference_validated": false
+  },
+  "comparison_local_smoke": {
+    "times_included": [
+      1,
+      4
+    ],
+    "times_pending": [
+      16,
+      64,
+      256,
+      1024
+    ],
+    "uses_existing_exact_short_catalog": true,
+    "plot_visually_checked": true,
+    "scientific_reference_validated": false
+  },
+  "tests": {
+    "passed": 108,
+    "seconds": 7.94,
+    "command": "OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1 MKL_NUM_THREADS=1 python -m pytest -q code/tests/test_shared_base_cluster.py code/tests/test_shared_base_evidence_gpu.py code/tests/test_prepare_shared_base_cluster.py code/tests/test_compare_shared_base_cluster.py code/transformer/scitas/test_launchers.py code/tests/test_shared_base_evidence_smc.py code/tests/test_shared_base_evidence_calibration.py",
+    "files_sha256": {
+      "code/tests/test_shared_base_cluster.py": "d458e81c03c5b8edc7eb0fd2f7dce737cdffc75112c40dd4734170ac02a87679",
+      "code/tests/test_shared_base_evidence_gpu.py": "c799073a740acb81e365740fcf5b3d690e2dafb0778da9c9b4ee4303f88cd430",
+      "code/tests/test_prepare_shared_base_cluster.py": "3785aeb5a38f93cfd426fa702780b61da866f1a83ebed1937cfff374115d2571",
+      "code/tests/test_compare_shared_base_cluster.py": "7b3e0baa90112a28177703b6d1a81e4d5b9b46d15b9a1be0fab5a7df8c87ad1c",
+      "code/transformer/scitas/test_launchers.py": "b5cc5c2ab909813d83414daa0d9865e8719e6508eb7e2b14ed103a47c8adae08",
+      "code/tests/test_shared_base_evidence_smc.py": "640def02bf6350f80ec72aa3432184f45672c601625eba3b51d50839a76874d7",
+      "code/tests/test_shared_base_evidence_calibration.py": "c71552eb85b72da70b6e5485d82609f326201c1ef507b262d728b2f5936024ba"
+    }
+  },
+  "latex_compile": {
+    "command": "latexmk -pdf -interaction=nonstopmode -halt-on-error mechanisms.tex",
+    "exit_code": 0,
+    "manuscript_changed": false
+  }
+}

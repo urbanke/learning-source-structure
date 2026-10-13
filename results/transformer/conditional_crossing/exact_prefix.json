@@ -1,0 +1,1797 @@
+{
+  "schema": "conditional_crossing_exact_prefix_v1",
+  "passed": true,
+  "parameters": {
+    "d": 64,
+    "alpha": 0.0,
+    "source_depth": 2,
+    "bayes_depths": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8
+    ],
+    "bayes_depth_prior": "uniform, one shared depth across all rows",
+    "unigram_depths": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20
+    ],
+    "unigram_depth_prior": "uniform",
+    "initial_token": "X1 fixed to label 0 by simultaneous label symmetry; supplied free",
+    "requested_max_prefix": 10,
+    "computed_max_prefix": 10
+  },
+  "method": "Complete restricted-growth equality patterns; multiplicity falling factorial (d-1)_(k-1); all positive orbit probabilities retained without normalization",
+  "quantities": {
+    "A": "KL from fixed-depth marginal sequence law P2 to unigram conditional code U",
+    "D": "KL from fixed-depth marginal sequence law P2 to family conditional code B",
+    "G": "A-D, equal to expected cumulative U-minus-B loss and regret",
+    "g": "G(t+1)-G(t), expected next-token U-minus-B loss after t observed tokens",
+    "regret_caveat": "A and D omit the common information cost of learning the realized transition matrix; they are not matrix-oracle regrets"
+  },
+  "numerical_grids": {
+    "production_bounds": [
+      -36,
+      36
+    ],
+    "production_step": 0.015625,
+    "expanded_bounds": [
+      -42,
+      42
+    ],
+    "expanded_step": 0.015625,
+    "refined_step": 0.0078125
+  },
+  "horizons": [
+    {
+      "observed_tokens": 1,
+      "scored_predictions": 0,
+      "equality_patterns": 1,
+      "source_probability_mass": 1.0,
+      "bayes_probability_mass": 0.9999999999999996,
+      "unigram_probability_mass": 0.9999999999999996,
+      "smallest_source_orbit_probability": 1.0,
+      "A_marginal_divergence_bits": 6.406853007629835e-16,
+      "D_marginal_divergence_bits": 6.406853007629835e-16,
+      "cumulative_gap_bits": 0.0,
+      "direct_cumulative_gap_bits": 0.0,
+      "refined": {
+        "observed_tokens": 1,
+        "scored_predictions": 0,
+        "equality_patterns": 1,
+        "source_probability_mass": 1.0,
+        "bayes_probability_mass": 0.9999999999999996,
+        "unigram_probability_mass": 0.9999999999999996,
+        "smallest_source_orbit_probability": 1.0,
+        "A_marginal_divergence_bits": 6.406853007629835e-16,
+        "D_marginal_divergence_bits": 6.406853007629835e-16,
+        "cumulative_gap_bits": 0.0,
+        "direct_cumulative_gap_bits": 0.0
+      }
+    },
+    {
+      "observed_tokens": 2,
+      "scored_predictions": 1,
+      "equality_patterns": 2,
+      "source_probability_mass": 1.0000000000000004,
+      "bayes_probability_mass": 0.9999999999999994,
+      "unigram_probability_mass": 1.0000000000032028,
+      "smallest_source_orbit_probability": 0.015625000000000007,
+      "A_marginal_divergence_bits": 0.48786756251998087,
+      "D_marginal_divergence_bits": 1.2813706015259676e-15,
+      "cumulative_gap_bits": 0.4878675625199796,
+      "direct_cumulative_gap_bits": 0.4878675625199795,
+      "refined": {
+        "observed_tokens": 2,
+        "scored_predictions": 1,
+        "equality_patterns": 2,
+        "source_probability_mass": 1.0000000000000004,
+        "bayes_probability_mass": 0.9999999999999994,
+        "unigram_probability_mass": 1.0000000000032028,
+        "smallest_source_orbit_probability": 0.015625000000000007,
+        "A_marginal_divergence_bits": 0.48786756251998087,
+        "D_marginal_divergence_bits": 1.2813706015259676e-15,
+        "cumulative_gap_bits": 0.4878675625199796,
+        "direct_cumulative_gap_bits": 0.48786756251997954
+      }
+    },
+    {
+      "observed_tokens": 3,
+      "scored_predictions": 2,
+      "equality_patterns": 5,
+      "source_probability_mass": 1.0000000000008258,
+      "bayes_probability_mass": 1.0000000000001152,
+      "unigram_probability_mass": 1.0000000000031082,
+      "smallest_source_orbit_probability": 0.000889477239910825,
+      "A_marginal_divergence_bits": 1.0031331586252614,
+      "D_marginal_divergence_bits": 0.0008772004549590336,
+      "cumulative_gap_bits": 1.0022559581703023,
+      "direct_cumulative_gap_bits": 1.0022559581703023,
+      "refined": {
+        "observed_tokens": 3,
+        "scored_predictions": 2,
+        "equality_patterns": 5,
+        "source_probability_mass": 1.0000000000008258,
+        "bayes_probability_mass": 1.0000000000001152,
+        "unigram_probability_mass": 1.0000000000031082,
+        "smallest_source_orbit_probability": 0.0008894772399108258,
+        "A_marginal_divergence_bits": 1.0031331586252614,
+        "D_marginal_divergence_bits": 0.0008772004549590349,
+        "cumulative_gap_bits": 1.0022559581703023,
+        "direct_cumulative_gap_bits": 1.0022559581703023
+      }
+    },
+    {
+      "observed_tokens": 4,
+      "scored_predictions": 3,
+      "equality_patterns": 15,
+      "source_probability_mass": 1.000000000002461,
+      "bayes_probability_mass": 1.000000000000341,
+      "unigram_probability_mass": 1.0000000000024474,
+      "smallest_source_orbit_probability": 9.898490911872082e-05,
+      "A_marginal_divergence_bits": 1.47663429333605,
+      "D_marginal_divergence_bits": 0.0028703018725009214,
+      "cumulative_gap_bits": 1.473763991463549,
+      "direct_cumulative_gap_bits": 1.473763991463549,
+      "refined": {
+        "observed_tokens": 4,
+        "scored_predictions": 3,
+        "equality_patterns": 15,
+        "source_probability_mass": 1.000000000002461,
+        "bayes_probability_mass": 1.000000000000341,
+        "unigram_probability_mass": 1.0000000000024483,
+        "smallest_source_orbit_probability": 9.898490911872099e-05,
+        "A_marginal_divergence_bits": 1.4766342933360452,
+        "D_marginal_divergence_bits": 0.0028703018725009205,
+        "cumulative_gap_bits": 1.4737639914635443,
+        "direct_cumulative_gap_bits": 1.4737639914635443
+      }
+    },
+    {
+      "observed_tokens": 5,
+      "scored_predictions": 4,
+      "equality_patterns": 52,
+      "source_probability_mass": 1.0000000000049043,
+      "bayes_probability_mass": 1.0000000000006781,
+      "unigram_probability_mass": 1.0000000000015474,
+      "smallest_source_orbit_probability": 3.446597318054354e-06,
+      "A_marginal_divergence_bits": 1.8909457208051044,
+      "D_marginal_divergence_bits": 0.005850058699462456,
+      "cumulative_gap_bits": 1.8850956621056418,
+      "direct_cumulative_gap_bits": 1.8850956621056418,
+      "refined": {
+        "observed_tokens": 5,
+        "scored_predictions": 4,
+        "equality_patterns": 52,
+        "source_probability_mass": 1.0000000000049043,
+        "bayes_probability_mass": 1.0000000000006781,
+        "unigram_probability_mass": 1.0000000000015474,
+        "smallest_source_orbit_probability": 3.446597318054354e-06,
+        "A_marginal_divergence_bits": 1.8909457208051044,
+        "D_marginal_divergence_bits": 0.0058500586994624576,
+        "cumulative_gap_bits": 1.8850956621056418,
+        "direct_cumulative_gap_bits": 1.8850956621056418
+      }
+    },
+    {
+      "observed_tokens": 6,
+      "scored_predictions": 5,
+      "equality_patterns": 203,
+      "source_probability_mass": 1.0000000000081322,
+      "bayes_probability_mass": 1.0000000000011204,
+      "unigram_probability_mass": 1.000000000000814,
+      "smallest_source_orbit_probability": 1.8489393226752157e-07,
+      "A_marginal_divergence_bits": 2.248900307371731,
+      "D_marginal_divergence_bits": 0.009771053540812761,
+      "cumulative_gap_bits": 2.239129253830918,
+      "direct_cumulative_gap_bits": 2.2391292538309187,
+      "refined": {
+        "observed_tokens": 6,
+        "scored_predictions": 5,
+        "equality_patterns": 203,
+        "source_probability_mass": 1.0000000000081322,
+        "bayes_probability_mass": 1.0000000000011204,
+        "unigram_probability_mass": 1.0000000000008138,
+        "smallest_source_orbit_probability": 1.8489393226752157e-07,
+        "A_marginal_divergence_bits": 2.248900307371731,
+        "D_marginal_divergence_bits": 0.009771053540812777,
+        "cumulative_gap_bits": 2.239129253830918,
+        "direct_cumulative_gap_bits": 2.2391292538309187
+      }
+    },
+    {
+      "observed_tokens": 7,
+      "scored_predictions": 6,
+      "equality_patterns": 877,
+      "source_probability_mass": 1.0000000000121216,
+      "bayes_probability_mass": 1.0000000000016713,
+      "unigram_probability_mass": 1.0000000000003575,
+      "smallest_source_orbit_probability": 9.240423188426151e-09,
+      "A_marginal_divergence_bits": 2.559954533980162,
+      "D_marginal_divergence_bits": 0.01459064253573962,
+      "cumulative_gap_bits": 2.5453638914444223,
+      "direct_cumulative_gap_bits": 2.545363891444422,
+      "refined": {
+        "observed_tokens": 7,
+        "scored_predictions": 6,
+        "equality_patterns": 877,
+        "source_probability_mass": 1.0000000000121216,
+        "bayes_probability_mass": 1.0000000000016713,
+        "unigram_probability_mass": 1.0000000000003584,
+        "smallest_source_orbit_probability": 9.240423188426151e-09,
+        "A_marginal_divergence_bits": 2.5599545339801604,
+        "D_marginal_divergence_bits": 0.014590642535739648,
+        "cumulative_gap_bits": 2.5453638914444205,
+        "direct_cumulative_gap_bits": 2.5453638914444205
+      }
+    },
+    {
+      "observed_tokens": 8,
+      "scored_predictions": 7,
+      "equality_patterns": 4140,
+      "source_probability_mass": 1.0000000000168472,
+      "bayes_probability_mass": 1.0000000000023235,
+      "unigram_probability_mass": 1.000000000000106,
+      "smallest_source_orbit_probability": 4.957057704926691e-10,
+      "A_marginal_divergence_bits": 2.8338250564697787,
+      "D_marginal_divergence_bits": 0.020273592183551622,
+      "cumulative_gap_bits": 2.813551464286227,
+      "direct_cumulative_gap_bits": 2.813551464286227,
+      "refined": {
+        "observed_tokens": 8,
+        "scored_predictions": 7,
+        "equality_patterns": 4140,
+        "source_probability_mass": 1.0000000000168474,
+        "bayes_probability_mass": 1.0000000000023235,
+        "unigram_probability_mass": 1.0000000000001072,
+        "smallest_source_orbit_probability": 4.95705770492671e-10,
+        "A_marginal_divergence_bits": 2.833825056469777,
+        "D_marginal_divergence_bits": 0.020273592183551674,
+        "cumulative_gap_bits": 2.8135514642862254,
+        "direct_cumulative_gap_bits": 2.8135514642862254
+      }
+    },
+    {
+      "observed_tokens": 9,
+      "scored_predictions": 8,
+      "equality_patterns": 21147,
+      "source_probability_mass": 1.0000000000222884,
+      "bayes_probability_mass": 1.0000000000030778,
+      "unigram_probability_mass": 0.9999999999999727,
+      "smallest_source_orbit_probability": 1.036200900703575e-11,
+      "A_marginal_divergence_bits": 3.078646832127494,
+      "D_marginal_divergence_bits": 0.02678257347139188,
+      "cumulative_gap_bits": 3.051864258656102,
+      "direct_cumulative_gap_bits": 3.051864258656102,
+      "refined": {
+        "observed_tokens": 9,
+        "scored_predictions": 8,
+        "equality_patterns": 21147,
+        "source_probability_mass": 1.0000000000222884,
+        "bayes_probability_mass": 1.0000000000030778,
+        "unigram_probability_mass": 0.9999999999999735,
+        "smallest_source_orbit_probability": 1.036200900703575e-11,
+        "A_marginal_divergence_bits": 3.078646832127494,
+        "D_marginal_divergence_bits": 0.0267825734713919,
+        "cumulative_gap_bits": 3.051864258656102,
+        "direct_cumulative_gap_bits": 3.051864258656102
+      }
+    },
+    {
+      "observed_tokens": 10,
+      "scored_predictions": 9,
+      "equality_patterns": 115975,
+      "source_probability_mass": 1.0000000000284195,
+      "bayes_probability_mass": 1.000000000003919,
+      "unigram_probability_mass": 0.9999999999998913,
+      "smallest_source_orbit_probability": 1.4919776984204212e-13,
+      "A_marginal_divergence_bits": 3.3008421101769523,
+      "D_marginal_divergence_bits": 0.03407815573967116,
+      "cumulative_gap_bits": 3.2667639544372813,
+      "direct_cumulative_gap_bits": 3.2667639544372817,
+      "refined": {
+        "observed_tokens": 10,
+        "scored_predictions": 9,
+        "equality_patterns": 115975,
+        "source_probability_mass": 1.0000000000284195,
+        "bayes_probability_mass": 1.000000000003919,
+        "unigram_probability_mass": 0.9999999999998913,
+        "smallest_source_orbit_probability": 1.4919776984204318e-13,
+        "A_marginal_divergence_bits": 3.3008421101769523,
+        "D_marginal_divergence_bits": 0.03407815573967126,
+        "cumulative_gap_bits": 3.266763954437281,
+        "direct_cumulative_gap_bits": 3.2667639544372817
+      }
+    }
+  ],
+  "instantaneous": [
+    {
+      "observed_prefix": 1,
+      "next_token": 2,
+      "gap_bits": 0.4878675625199796,
+      "refined_gap_bits": 0.4878675625199796
+    },
+    {
+      "observed_prefix": 2,
+      "next_token": 3,
+      "gap_bits": 0.5143883956503228,
+      "refined_gap_bits": 0.5143883956503228
+    },
+    {
+      "observed_prefix": 3,
+      "next_token": 4,
+      "gap_bits": 0.47150803329324664,
+      "refined_gap_bits": 0.471508033293242
+    },
+    {
+      "observed_prefix": 4,
+      "next_token": 5,
+      "gap_bits": 0.41133167064209286,
+      "refined_gap_bits": 0.4113316706420975
+    },
+    {
+      "observed_prefix": 5,
+      "next_token": 6,
+      "gap_bits": 0.3540335917252764,
+      "refined_gap_bits": 0.3540335917252764
+    },
+    {
+      "observed_prefix": 6,
+      "next_token": 7,
+      "gap_bits": 0.3062346376135041,
+      "refined_gap_bits": 0.30623463761350234
+    },
+    {
+      "observed_prefix": 7,
+      "next_token": 8,
+      "gap_bits": 0.26818757284180483,
+      "refined_gap_bits": 0.26818757284180483
+    },
+    {
+      "observed_prefix": 8,
+      "next_token": 9,
+      "gap_bits": 0.23831279436987485,
+      "refined_gap_bits": 0.23831279436987662
+    },
+    {
+      "observed_prefix": 9,
+      "next_token": 10,
+      "gap_bits": 0.2148996957811793,
+      "refined_gap_bits": 0.21489969578117885
+    }
+  ],
+  "first_step": {
+    "unigram_repeat_probability": 0.33497714921464855,
+    "unigram_other_probability": 0.010555918266434152,
+    "analytic_gap_bits": 0.4878675625268194,
+    "enumeration_gap_bits": 0.4878675625199796
+  },
+  "cumulative_bound": {
+    "depth_mismatch_bound_bits": 3.169925001442312,
+    "first_numerically_passing_prefix": 10,
+    "condition": "A_n > log2(9) implies G_m > 0 for all m>=n",
+    "qualification": "The inequality is mathematical; integral accuracy is supported by finite grid checks, not a rigorous interval bound"
+  },
+  "validation": {
+    "checks": 291,
+    "probability_tolerance": 1e-08,
+    "bit_tolerance": 1e-07,
+    "profiles_checked": 139,
+    "maximum_wider_bounds_error_bits": 1.0250964812207736e-14,
+    "maximum_finer_grid_error_bits": 1.0250964812207736e-14,
+    "profile_checks": [
+      {
+        "profile": [],
+        "wider_bounds_error_bits": 0.0,
+        "finer_grid_error_bits": 0.0
+      },
+      {
+        "profile": [
+          1
+        ],
+        "wider_bounds_error_bits": 0.0,
+        "finer_grid_error_bits": 0.0
+      },
+      {
+        "profile": [
+          2
+        ],
+        "wider_bounds_error_bits": 1.281370601525967e-15,
+        "finer_grid_error_bits": 1.281370601525967e-15
+      },
+      {
+        "profile": [
+          1,
+          1
+        ],
+        "wider_bounds_error_bits": 0.0,
+        "finer_grid_error_bits": 2.562741203051934e-15
+      },
+      {
+        "profile": [
+          3
+        ],
+        "wider_bounds_error_bits": 2.562741203051934e-15,
+        "finer_grid_error_bits": 5.125482406103868e-15
+      },
+      {
+        "profile": [
+          2,
+          1
+        ],
+        "wider_bounds_error_bits": 2.562741203051934e-15,
+        "finer_grid_error_bits": 2.562741203051934e-15
+      },
+      {
+        "profile": [
+          1,
+          1,
+          1
+        ],
+        "wider_bounds_error_bits": 2.562741203051934e-15,
+        "finer_grid_error_bits": 5.125482406103868e-15
+      },
+      {
+        "profile": [
+          4
+        ],
+        "wider_bounds_error_bits": 0.0,
+        "finer_grid_error_bits": 0.0
+      },
+      {
+        "profile": [
+          3,
+          1
+        ],
+        "wider_bounds_error_bits": 2.562741203051934e-15,
+        "finer_grid_error_bits": 2.562741203051934e-15
+      },
+      {
+        "profile": [
+          2,
+          2
+        ],
+        "wider_bounds_error_bits": 0.0,
+        "finer_grid_error_bits": 2.562741203051934e-15
+      },
+      {
+        "profile": [
+          2,
+          1,
+          1
+        ],
+        "wider_bounds_error_bits": 0.0,
+        "finer_grid_error_bits": 5.125482406103868e-15
+      },
+      {
+        "profile": [
+          1,
+          1,
+          1,
+          1
+        ],
+        "wider_bounds_error_bits": 5.125482406103868e-15,
+        "finer_grid_error_bits": 5.125482406103868e-15
+      },
+      {
+        "profile": [
+          5
+        ],
+        "wider_bounds_error_bits": 2.562741203051934e-15,
+        "finer_grid_error_bits": 2.562741203051934e-15
+      },
+      {
+        "profile": [
+          4,
+          1
+        ],
+        "wider_bounds_error_bits": 2.562741203051934e-15,
+        "finer_grid_error_bits": 2.562741203051934e-15
+      },
+      {
+        "profile": [
+          3,
+          2
+        ],
+        "wider_bounds_error_bits": 0.0,
+        "finer_grid_error_bits": 2.562741203051934e-15
+      },
+      {
+        "profile": [
+          3,
+          1,
+          1
+        ],
+        "wider_bounds_error_bits": 0.0,
+        "finer_grid_error_bits": 5.125482406103868e-15
+      },
+      {
+        "profile": [
+          2,
+          2,
+          1
+        ],
+        "wider_bounds_error_bits": 0.0,
+        "finer_grid_error_bits": 5.125482406103868e-15
+      },
+      {
+        "profile": [
+          2,
+          1,
+          1,
+          1
+        ],
+        "wider_bounds_error_bits": 0.0,
+        "finer_grid_error_bits": 5.125482406103868e-15
+      },
+      {
+        "profile": [
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "wider_bounds_error_bits": 5.125482406103868e-15,
+        "finer_grid_error_bits": 5.125482406103868e-15
+      },
+      {
+        "profile": [
+          6
+        ],
+        "wider_bounds_error_bits": 1.281370601525967e-15,
+        "finer_grid_error_bits": 2.562741203051934e-15
+      },
+      {
+        "profile": [
+          5,
+          1
+        ],
+        "wider_bounds_error_bits": 5.125482406103868e-15,
+        "finer_grid_error_bits": 5.125482406103868e-15
+      },
+      {
+        "profile": [
+          4,
+          2
+        ],
+        "wider_bounds_error_bits": 5.125482406103868e-15,
+        "finer_grid_error_bits": 5.125482406103868e-15
+      },
+      {
+        "profile": [
+          4,
+          1,
+          1
+        ],
+        "wider_bounds_error_bits": 5.125482406103868e-15,
+        "finer_grid_error_bits": 5.125482406103868e-15
+      },
+      {
+        "profile": [
+          3,
+          3
+        ],
+        "wider_bounds_error_bits": 0.0,
+        "finer_grid_error_bits": 5.125482406103868e-15
+      },
+      {
+        "profile": [
+          3,
+          2,
+          1
+        ],
+        "wider_bounds_error_bits": 0.0,
+        "finer_grid_error_bits": 0.0
+      },
+      {
+        "profile": [
+          3,
+          1,
+          1,
+          1
+        ],
+        "wider_bounds_error_bits": 5.125482406103868e-15,
+        "finer_grid_error_bits": 5.125482406103868e-15
+      },
+      {
+        "profile": [
+          2,
+          2,
+          2
+        ],
+        "wider_bounds_error_bits": 5.125482406103868e-15,
+        "finer_grid_error_bits": 5.125482406103868e-15
+      },
+      {
+        "profile": [
+          2,
+          2,
+          1,
+          1
+        ],
+        "wider_bounds_error_bits": 5.125482406103868e-15,
+        "finer_grid_error_bits": 5.125482406103868e-15
+      },
+      {
+        "profile": [
+          2,
+          1,
+          1,
+          1,
+          1
+        ],
+        "wider_bounds_error_bits": 5.125482406103868e-15,
+        "finer_grid_error_bits": 5.125482406103868e-15
+      },
+      {
+        "profile": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "wider_bounds_error_bits": 5.125482406103868e-15,
+        "finer_grid_error_bits": 5.125482406103868e-15
+      },
+      {
+        "profile": [
+          7
+        ],
+        "wider_bounds_error_bits": 1.281370601525967e-15,
+        "finer_grid_error_bits": 2.562741203051934e-15
+      },
+      {
+        "profile": [
+          6,
+          1
+        ],
+        "wider_bounds_error_bits": 0.0,
+        "finer_grid_error_bits": 2.562741203051934e-15
+      },
+      {
+        "profile": [
+          5,
+          2
+        ],
+        "wider_bounds_error_bits": 2.562741203051934e-15,
+        "finer_grid_error_bits": 2.562741203051934e-15
+      },
+      {
+        "profile": [
+          5,
+          1,
+          1
+        ],
+        "wider_bounds_error_bits": 0.0,
+        "finer_grid_error_bits": 5.125482406103868e-15
+      },
+      {
+        "profile": [
+          4,
+          3
+        ],
+        "wider_bounds_error_bits": 1.0250964812207736e-14,
+        "finer_grid_error_bits": 2.562741203051934e-15
+      },
+      {
+        "profile": [
+          4,
+          2,
+          1
+        ],
+        "wider_bounds_error_bits": 0.0,
+        "finer_grid_error_bits": 1.0250964812207736e-14
+      },
+      {
+        "profile": [
+          4,
+          1,
+          1,
+          1
+        ],
+        "wider_bounds_error_bits": 1.0250964812207736e-14,
+        "finer_grid_error_bits": 1.0250964812207736e-14
+      },
+      {
+        "profile": [
+          3,
+          3,
+          1
+        ],
+        "wider_bounds_error_bits": 0.0,
+        "finer_grid_error_bits": 0.0
+      },
+      {
+        "profile": [
+          3,
+          2,
+          2
+        ],
+        "wider_bounds_error_bits": 0.0,
+        "finer_grid_error_bits": 1.0250964812207736e-14
+      },
+      {
+        "profile": [
+          3,
+          2,
+          1,
+          1
+        ],
+        "wider_bounds_error_bits": 1.0250964812207736e-14,
+        "finer_grid_error_bits": 1.0250964812207736e-14
+      },
+      {
+        "profile": [
+          3,
+          1,
+          1,
+          1,
+          1
+        ],
+        "wider_bounds_error_bits": 1.0250964812207736e-14,
+        "finer_grid_error_bits": 1.0250964812207736e-14
+      },
+      {
+        "profile": [
+          2,
+          2,
+          2,
+          1
+        ],
+        "wider_bounds_error_bits": 1.0250964812207736e-14,
+        "finer_grid_error_bits": 0.0
+      },
+      {
+        "profile": [
+          2,
+          2,
+          1,
+          1,
+          1
+        ],
+        "wider_bounds_error_bits": 0.0,
+        "finer_grid_error_bits": 1.0250964812207736e-14
+      },
+      {
+        "profile": [
+          2,
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "wider_bounds_error_bits": 0.0,
+        "finer_grid_error_bits": 1.0250964812207736e-14
+      },
+      {
+        "profile": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "wider_bounds_error_bits": 0.0,
+        "finer_grid_error_bits": 1.0250964812207736e-14
+      },
+      {
+        "profile": [
+          8
+        ],
+        "wider_bounds_error_bits": 0.0,
+        "finer_grid_error_bits": 2.562741203051934e-15
+      },
+      {
+        "profile": [
+          7,
+          1
+        ],
+        "wider_bounds_error_bits": 0.0,
+        "finer_grid_error_bits": 2.562741203051934e-15
+      },
+      {
+        "profile": [
+          6,
+          2
+        ],
+        "wider_bounds_error_bits": 2.562741203051934e-15,
+        "finer_grid_error_bits": 0.0
+      },
+      {
+        "profile": [
+          6,
+          1,
+          1
+        ],
+        "wider_bounds_error_bits": 0.0,
+        "finer_grid_error_bits": 5.125482406103868e-15
+      },
+      {
+        "profile": [
+          5,
+          3
+        ],
+        "wider_bounds_error_bits": 2.562741203051934e-15,
+        "finer_grid_error_bits": 5.125482406103868e-15
+      },
+      {
+        "profile": [
+          5,
+          2,
+          1
+        ],
+        "wider_bounds_error_bits": 5.125482406103868e-15,
+        "finer_grid_error_bits": 5.125482406103868e-15
+      },
+      {
+        "profile": [
+          5,
+          1,
+          1,
+          1
+        ],
+        "wider_bounds_error_bits": 0.0,
+        "finer_grid_error_bits": 5.125482406103868e-15
+      },
+      {
+        "profile": [
+          4,
+          4
+        ],
+        "wider_bounds_error_bits": 0.0,
+        "finer_grid_error_bits": 5.125482406103868e-15
+      },
+      {
+        "profile": [
+          4,
+          3,
+          1
+        ],
+        "wider_bounds_error_bits": 0.0,
+        "finer_grid_error_bits": 5.125482406103868e-15
+      },
+      {
+        "profile": [
+          4,
+          2,
+          2
+        ],
+        "wider_bounds_error_bits": 5.125482406103868e-15,
+        "finer_grid_error_bits": 5.125482406103868e-15
+      },
+      {
+        "profile": [
+          4,
+          2,
+          1,
+          1
+        ],
+        "wider_bounds_error_bits": 5.125482406103868e-15,
+        "finer_grid_error_bits": 5.125482406103868e-15
+      },
+      {
+        "profile": [
+          4,
+          1,
+          1,
+          1,
+          1
+        ],
+        "wider_bounds_error_bits": 5.125482406103868e-15,
+        "finer_grid_error_bits": 5.125482406103868e-15
+      },
+      {
+        "profile": [
+          3,
+          3,
+          2
+        ],
+        "wider_bounds_error_bits": 5.125482406103868e-15,
+        "finer_grid_error_bits": 5.125482406103868e-15
+      },
+      {
+        "profile": [
+          3,
+          3,
+          1,
+          1
+        ],
+        "wider_bounds_error_bits": 0.0,
+        "finer_grid_error_bits": 0.0
+      },
+      {
+        "profile": [
+          3,
+          2,
+          2,
+          1
+        ],
+        "wider_bounds_error_bits": 5.125482406103868e-15,
+        "finer_grid_error_bits": 5.125482406103868e-15
+      },
+      {
+        "profile": [
+          3,
+          2,
+          1,
+          1,
+          1
+        ],
+        "wider_bounds_error_bits": 5.125482406103868e-15,
+        "finer_grid_error_bits": 5.125482406103868e-15
+      },
+      {
+        "profile": [
+          3,
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "wider_bounds_error_bits": 5.125482406103868e-15,
+        "finer_grid_error_bits": 1.0250964812207736e-14
+      },
+      {
+        "profile": [
+          2,
+          2,
+          2,
+          2
+        ],
+        "wider_bounds_error_bits": 5.125482406103868e-15,
+        "finer_grid_error_bits": 5.125482406103868e-15
+      },
+      {
+        "profile": [
+          2,
+          2,
+          2,
+          1,
+          1
+        ],
+        "wider_bounds_error_bits": 5.125482406103868e-15,
+        "finer_grid_error_bits": 5.125482406103868e-15
+      },
+      {
+        "profile": [
+          2,
+          2,
+          1,
+          1,
+          1,
+          1
+        ],
+        "wider_bounds_error_bits": 1.0250964812207736e-14,
+        "finer_grid_error_bits": 1.0250964812207736e-14
+      },
+      {
+        "profile": [
+          2,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "wider_bounds_error_bits": 0.0,
+        "finer_grid_error_bits": 1.0250964812207736e-14
+      },
+      {
+        "profile": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "wider_bounds_error_bits": 1.0250964812207736e-14,
+        "finer_grid_error_bits": 1.0250964812207736e-14
+      },
+      {
+        "profile": [
+          9
+        ],
+        "wider_bounds_error_bits": 2.562741203051934e-15,
+        "finer_grid_error_bits": 2.562741203051934e-15
+      },
+      {
+        "profile": [
+          8,
+          1
+        ],
+        "wider_bounds_error_bits": 2.562741203051934e-15,
+        "finer_grid_error_bits": 2.562741203051934e-15
+      },
+      {
+        "profile": [
+          7,
+          2
+        ],
+        "wider_bounds_error_bits": 0.0,
+        "finer_grid_error_bits": 2.562741203051934e-15
+      },
+      {
+        "profile": [
+          7,
+          1,
+          1
+        ],
+        "wider_bounds_error_bits": 0.0,
+        "finer_grid_error_bits": 5.125482406103868e-15
+      },
+      {
+        "profile": [
+          6,
+          3
+        ],
+        "wider_bounds_error_bits": 0.0,
+        "finer_grid_error_bits": 5.125482406103868e-15
+      },
+      {
+        "profile": [
+          6,
+          2,
+          1
+        ],
+        "wider_bounds_error_bits": 0.0,
+        "finer_grid_error_bits": 5.125482406103868e-15
+      },
+      {
+        "profile": [
+          6,
+          1,
+          1,
+          1
+        ],
+        "wider_bounds_error_bits": 0.0,
+        "finer_grid_error_bits": 1.0250964812207736e-14
+      },
+      {
+        "profile": [
+          5,
+          4
+        ],
+        "wider_bounds_error_bits": 5.125482406103868e-15,
+        "finer_grid_error_bits": 1.0250964812207736e-14
+      },
+      {
+        "profile": [
+          5,
+          3,
+          1
+        ],
+        "wider_bounds_error_bits": 5.125482406103868e-15,
+        "finer_grid_error_bits": 5.125482406103868e-15
+      },
+      {
+        "profile": [
+          5,
+          2,
+          2
+        ],
+        "wider_bounds_error_bits": 1.0250964812207736e-14,
+        "finer_grid_error_bits": 0.0
+      },
+      {
+        "profile": [
+          5,
+          2,
+          1,
+          1
+        ],
+        "wider_bounds_error_bits": 1.0250964812207736e-14,
+        "finer_grid_error_bits": 1.0250964812207736e-14
+      },
+      {
+        "profile": [
+          5,
+          1,
+          1,
+          1,
+          1
+        ],
+        "wider_bounds_error_bits": 1.0250964812207736e-14,
+        "finer_grid_error_bits": 0.0
+      },
+      {
+        "profile": [
+          4,
+          4,
+          1
+        ],
+        "wider_bounds_error_bits": 0.0,
+        "finer_grid_error_bits": 5.125482406103868e-15
+      },
+      {
+        "profile": [
+          4,
+          3,
+          2
+        ],
+        "wider_bounds_error_bits": 1.0250964812207736e-14,
+        "finer_grid_error_bits": 1.0250964812207736e-14
+      },
+      {
+        "profile": [
+          4,
+          3,
+          1,
+          1
+        ],
+        "wider_bounds_error_bits": 1.0250964812207736e-14,
+        "finer_grid_error_bits": 1.0250964812207736e-14
+      },
+      {
+        "profile": [
+          4,
+          2,
+          2,
+          1
+        ],
+        "wider_bounds_error_bits": 1.0250964812207736e-14,
+        "finer_grid_error_bits": 1.0250964812207736e-14
+      },
+      {
+        "profile": [
+          4,
+          2,
+          1,
+          1,
+          1
+        ],
+        "wider_bounds_error_bits": 0.0,
+        "finer_grid_error_bits": 1.0250964812207736e-14
+      },
+      {
+        "profile": [
+          4,
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "wider_bounds_error_bits": 1.0250964812207736e-14,
+        "finer_grid_error_bits": 1.0250964812207736e-14
+      },
+      {
+        "profile": [
+          3,
+          3,
+          3
+        ],
+        "wider_bounds_error_bits": 0.0,
+        "finer_grid_error_bits": 0.0
+      },
+      {
+        "profile": [
+          3,
+          3,
+          2,
+          1
+        ],
+        "wider_bounds_error_bits": 0.0,
+        "finer_grid_error_bits": 1.0250964812207736e-14
+      },
+      {
+        "profile": [
+          3,
+          3,
+          1,
+          1,
+          1
+        ],
+        "wider_bounds_error_bits": 0.0,
+        "finer_grid_error_bits": 1.0250964812207736e-14
+      },
+      {
+        "profile": [
+          3,
+          2,
+          2,
+          2
+        ],
+        "wider_bounds_error_bits": 0.0,
+        "finer_grid_error_bits": 0.0
+      },
+      {
+        "profile": [
+          3,
+          2,
+          2,
+          1,
+          1
+        ],
+        "wider_bounds_error_bits": 0.0,
+        "finer_grid_error_bits": 1.0250964812207736e-14
+      },
+      {
+        "profile": [
+          3,
+          2,
+          1,
+          1,
+          1,
+          1
+        ],
+        "wider_bounds_error_bits": 1.0250964812207736e-14,
+        "finer_grid_error_bits": 1.0250964812207736e-14
+      },
+      {
+        "profile": [
+          3,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "wider_bounds_error_bits": 1.0250964812207736e-14,
+        "finer_grid_error_bits": 1.0250964812207736e-14
+      },
+      {
+        "profile": [
+          2,
+          2,
+          2,
+          2,
+          1
+        ],
+        "wider_bounds_error_bits": 1.0250964812207736e-14,
+        "finer_grid_error_bits": 1.0250964812207736e-14
+      },
+      {
+        "profile": [
+          2,
+          2,
+          2,
+          1,
+          1,
+          1
+        ],
+        "wider_bounds_error_bits": 0.0,
+        "finer_grid_error_bits": 1.0250964812207736e-14
+      },
+      {
+        "profile": [
+          2,
+          2,
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "wider_bounds_error_bits": 0.0,
+        "finer_grid_error_bits": 1.0250964812207736e-14
+      },
+      {
+        "profile": [
+          2,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "wider_bounds_error_bits": 1.0250964812207736e-14,
+        "finer_grid_error_bits": 1.0250964812207736e-14
+      },
+      {
+        "profile": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "wider_bounds_error_bits": 0.0,
+        "finer_grid_error_bits": 1.0250964812207736e-14
+      },
+      {
+        "profile": [
+          10
+        ],
+        "wider_bounds_error_bits": 2.562741203051934e-15,
+        "finer_grid_error_bits": 2.562741203051934e-15
+      },
+      {
+        "profile": [
+          9,
+          1
+        ],
+        "wider_bounds_error_bits": 2.562741203051934e-15,
+        "finer_grid_error_bits": 2.562741203051934e-15
+      },
+      {
+        "profile": [
+          8,
+          2
+        ],
+        "wider_bounds_error_bits": 2.562741203051934e-15,
+        "finer_grid_error_bits": 5.125482406103868e-15
+      },
+      {
+        "profile": [
+          8,
+          1,
+          1
+        ],
+        "wider_bounds_error_bits": 5.125482406103868e-15,
+        "finer_grid_error_bits": 5.125482406103868e-15
+      },
+      {
+        "profile": [
+          7,
+          3
+        ],
+        "wider_bounds_error_bits": 5.125482406103868e-15,
+        "finer_grid_error_bits": 5.125482406103868e-15
+      },
+      {
+        "profile": [
+          7,
+          2,
+          1
+        ],
+        "wider_bounds_error_bits": 5.125482406103868e-15,
+        "finer_grid_error_bits": 5.125482406103868e-15
+      },
+      {
+        "profile": [
+          7,
+          1,
+          1,
+          1
+        ],
+        "wider_bounds_error_bits": 1.0250964812207736e-14,
+        "finer_grid_error_bits": 5.125482406103868e-15
+      },
+      {
+        "profile": [
+          6,
+          4
+        ],
+        "wider_bounds_error_bits": 0.0,
+        "finer_grid_error_bits": 1.0250964812207736e-14
+      },
+      {
+        "profile": [
+          6,
+          3,
+          1
+        ],
+        "wider_bounds_error_bits": 5.125482406103868e-15,
+        "finer_grid_error_bits": 5.125482406103868e-15
+      },
+      {
+        "profile": [
+          6,
+          2,
+          2
+        ],
+        "wider_bounds_error_bits": 0.0,
+        "finer_grid_error_bits": 5.125482406103868e-15
+      },
+      {
+        "profile": [
+          6,
+          2,
+          1,
+          1
+        ],
+        "wider_bounds_error_bits": 0.0,
+        "finer_grid_error_bits": 1.0250964812207736e-14
+      },
+      {
+        "profile": [
+          6,
+          1,
+          1,
+          1,
+          1
+        ],
+        "wider_bounds_error_bits": 0.0,
+        "finer_grid_error_bits": 1.0250964812207736e-14
+      },
+      {
+        "profile": [
+          5,
+          5
+        ],
+        "wider_bounds_error_bits": 0.0,
+        "finer_grid_error_bits": 0.0
+      },
+      {
+        "profile": [
+          5,
+          4,
+          1
+        ],
+        "wider_bounds_error_bits": 5.125482406103868e-15,
+        "finer_grid_error_bits": 5.125482406103868e-15
+      },
+      {
+        "profile": [
+          5,
+          3,
+          2
+        ],
+        "wider_bounds_error_bits": 0.0,
+        "finer_grid_error_bits": 1.0250964812207736e-14
+      },
+      {
+        "profile": [
+          5,
+          3,
+          1,
+          1
+        ],
+        "wider_bounds_error_bits": 0.0,
+        "finer_grid_error_bits": 0.0
+      },
+      {
+        "profile": [
+          5,
+          2,
+          2,
+          1
+        ],
+        "wider_bounds_error_bits": 0.0,
+        "finer_grid_error_bits": 1.0250964812207736e-14
+      },
+      {
+        "profile": [
+          5,
+          2,
+          1,
+          1,
+          1
+        ],
+        "wider_bounds_error_bits": 1.0250964812207736e-14,
+        "finer_grid_error_bits": 1.0250964812207736e-14
+      },
+      {
+        "profile": [
+          5,
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "wider_bounds_error_bits": 1.0250964812207736e-14,
+        "finer_grid_error_bits": 1.0250964812207736e-14
+      },
+      {
+        "profile": [
+          4,
+          4,
+          2
+        ],
+        "wider_bounds_error_bits": 1.0250964812207736e-14,
+        "finer_grid_error_bits": 5.125482406103868e-15
+      },
+      {
+        "profile": [
+          4,
+          4,
+          1,
+          1
+        ],
+        "wider_bounds_error_bits": 0.0,
+        "finer_grid_error_bits": 0.0
+      },
+      {
+        "profile": [
+          4,
+          3,
+          3
+        ],
+        "wider_bounds_error_bits": 1.0250964812207736e-14,
+        "finer_grid_error_bits": 1.0250964812207736e-14
+      },
+      {
+        "profile": [
+          4,
+          3,
+          2,
+          1
+        ],
+        "wider_bounds_error_bits": 0.0,
+        "finer_grid_error_bits": 1.0250964812207736e-14
+      },
+      {
+        "profile": [
+          4,
+          3,
+          1,
+          1,
+          1
+        ],
+        "wider_bounds_error_bits": 1.0250964812207736e-14,
+        "finer_grid_error_bits": 0.0
+      },
+      {
+        "profile": [
+          4,
+          2,
+          2,
+          2
+        ],
+        "wider_bounds_error_bits": 0.0,
+        "finer_grid_error_bits": 1.0250964812207736e-14
+      },
+      {
+        "profile": [
+          4,
+          2,
+          2,
+          1,
+          1
+        ],
+        "wider_bounds_error_bits": 0.0,
+        "finer_grid_error_bits": 1.0250964812207736e-14
+      },
+      {
+        "profile": [
+          4,
+          2,
+          1,
+          1,
+          1,
+          1
+        ],
+        "wider_bounds_error_bits": 0.0,
+        "finer_grid_error_bits": 1.0250964812207736e-14
+      },
+      {
+        "profile": [
+          4,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "wider_bounds_error_bits": 1.0250964812207736e-14,
+        "finer_grid_error_bits": 1.0250964812207736e-14
+      },
+      {
+        "profile": [
+          3,
+          3,
+          3,
+          1
+        ],
+        "wider_bounds_error_bits": 0.0,
+        "finer_grid_error_bits": 0.0
+      },
+      {
+        "profile": [
+          3,
+          3,
+          2,
+          2
+        ],
+        "wider_bounds_error_bits": 1.0250964812207736e-14,
+        "finer_grid_error_bits": 1.0250964812207736e-14
+      },
+      {
+        "profile": [
+          3,
+          3,
+          2,
+          1,
+          1
+        ],
+        "wider_bounds_error_bits": 1.0250964812207736e-14,
+        "finer_grid_error_bits": 1.0250964812207736e-14
+      },
+      {
+        "profile": [
+          3,
+          3,
+          1,
+          1,
+          1,
+          1
+        ],
+        "wider_bounds_error_bits": 1.0250964812207736e-14,
+        "finer_grid_error_bits": 1.0250964812207736e-14
+      },
+      {
+        "profile": [
+          3,
+          2,
+          2,
+          2,
+          1
+        ],
+        "wider_bounds_error_bits": 0.0,
+        "finer_grid_error_bits": 1.0250964812207736e-14
+      },
+      {
+        "profile": [
+          3,
+          2,
+          2,
+          1,
+          1,
+          1
+        ],
+        "wider_bounds_error_bits": 0.0,
+        "finer_grid_error_bits": 1.0250964812207736e-14
+      },
+      {
+        "profile": [
+          3,
+          2,
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "wider_bounds_error_bits": 0.0,
+        "finer_grid_error_bits": 0.0
+      },
+      {
+        "profile": [
+          3,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "wider_bounds_error_bits": 0.0,
+        "finer_grid_error_bits": 1.0250964812207736e-14
+      },
+      {
+        "profile": [
+          2,
+          2,
+          2,
+          2,
+          2
+        ],
+        "wider_bounds_error_bits": 1.0250964812207736e-14,
+        "finer_grid_error_bits": 1.0250964812207736e-14
+      },
+      {
+        "profile": [
+          2,
+          2,
+          2,
+          2,
+          1,
+          1
+        ],
+        "wider_bounds_error_bits": 1.0250964812207736e-14,
+        "finer_grid_error_bits": 1.0250964812207736e-14
+      },
+      {
+        "profile": [
+          2,
+          2,
+          2,
+          1,
+          1,
+          1,
+          1
+        ],
+        "wider_bounds_error_bits": 1.0250964812207736e-14,
+        "finer_grid_error_bits": 1.0250964812207736e-14
+      },
+      {
+        "profile": [
+          2,
+          2,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "wider_bounds_error_bits": 1.0250964812207736e-14,
+        "finer_grid_error_bits": 0.0
+      },
+      {
+        "profile": [
+          2,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "wider_bounds_error_bits": 1.0250964812207736e-14,
+        "finer_grid_error_bits": 1.0250964812207736e-14
+      },
+      {
+        "profile": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "wider_bounds_error_bits": 1.0250964812207736e-14,
+        "finer_grid_error_bits": 1.0250964812207736e-14
+      }
+    ]
+  },
+  "provenance": {
+    "code_sha256": {
+      "/Users/ruediger/Projects/layered_architectures/code/scripts/conditional_crossing_exact.py": "442b3fb997e2dd5b68c87089df55e533fdf06389ab188202dc5264a20b8075ba",
+      "/Users/ruediger/Projects/layered_architectures/code/transformer/lsa_seq.py": "7e39960e91f3bb27eea82e201afd8a86ce717ea50a304daa86534b4fdbadfc51",
+      "/Users/ruediger/Projects/layered_architectures/code/transformer/shared_depth.py": "616f536153458499078d17d7939e6a800c7b52e3eb4f1dd6503db95030d7a395",
+      "/Users/ruediger/Projects/layered_architectures/code/transformer/phi_source.py": "456eb407fd7f280786a441681a704a6fff172af9fc9aea3c6f9456fb55174831",
+      "/Users/ruediger/Projects/layered_architectures/code/transformer/ranked_lsa.py": "3fa7952048ab3f25d508dda8c2a7c232064aa5db56008de8b4ed9623709aac8d",
+      "/Users/ruediger/Projects/layered_architectures/code/transformer/weighted_lsa.py": "847f0ffaa622d86e88633447327dce8e7f518e4c86c1e44e76a794e470d2dec9",
+      "/Users/ruediger/Projects/layered_architectures/code/transformer/validate_shared_depth.py": "0e1901d4d09ffa768c59c034eb3a7474418e3e656817d3b0f6cd64197517ec7f",
+      "/Users/ruediger/Projects/product_model_with_memory/src/product_model_with_memory/universal_tables.py": "aef2f63c0ccdb4de58bb8c617dd99aaadc73b803bee67a029f5d89230878d5c2",
+      "/Users/ruediger/Projects/product_model_with_memory/src/product_model_with_memory/production_coding.py": "6f709444496865ff124fc5bf1849fa6dce442a594f3cc7fe7c53ccfb504560f6"
+    },
+    "store": "/Users/ruediger/Projects/product_model_with_memory/tables/anchors_prod",
+    "store_manifest_sha256": "cf0449a4b704174890f0a1fb95f20954839dd7266ae307e799d1dc6d0234ffb5",
+    "store_anchors_sha256": "5c409244487deeba8d597ad66fa13479a8d15476d55d4509c33b2ec797b07c68",
+    "python": "3.14.6",
+    "numpy": "2.4.6"
+  },
+  "elapsed_seconds": 49.62176487501711
+}

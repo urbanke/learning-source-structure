@@ -1,0 +1,46 @@
+{
+  "schema": "shared-base-shuffle-early-reference-receipt-v1",
+  "complete": true,
+  "report_sha256": "b29c9ea8163eda9254e456ea149e80f273597213ae5d04887413c2b3d24ee249",
+  "script_sha256": "836b0b0ad874ac2fd3f510d916cbcfe130822370cdf4a45b1024fd92e514820d",
+  "manifest_sha256": "552083ec6eb9b2e5d0403d418c2d1fb5be6e2db43f1cea6b6e5557568b44110e",
+  "retained_raw_outputs": {
+    "/Users/ruediger/Projects/layered_architectures/output/shared_base_shuffle_early_reference_2026-09-18/a1_L0.npz": "3f6f3c77685f789b8a92c6be3a6d876de5e94622124fb2522c04d30be016e2b5",
+    "/Users/ruediger/Projects/layered_architectures/output/shared_base_shuffle_early_reference_2026-09-18/a1_L2.npz": "7679cac7b4666fd517c89cea0fe0513aca1f9d24debc82067edea59535d5ee29",
+    "/Users/ruediger/Projects/layered_architectures/output/shared_base_shuffle_early_reference_2026-09-18/a1_L3.npz": "5c515e92b56f5c2a974243b9f63d3e67f8f6657a17a816f0206dbbb2a3514d38"
+  },
+  "checks": {
+    "frozen_source_arrays_match": true,
+    "model_history_protocol_and_time_match": true,
+    "validated_full_prior_catalog": true,
+    "pooled_unigram_depths": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20
+    ],
+    "normalization_tolerance": 1e-07,
+    "maximum_normalization_error": 6.27387031215676e-12,
+    "maximum_sequential_unigram_loss_error": 8.881784197001252e-16,
+    "clipped": false,
+    "renormalized": false,
+    "new_sampling": false
+  },
+  "scope": "768 frozen histories, 256 at each L=0,2,3, times1..4; diagnostic reuse, not independent confirmation; no copying onset inferred."
+}

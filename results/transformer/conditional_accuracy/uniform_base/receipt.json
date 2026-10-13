@@ -1,0 +1,12 @@
+{
+  "passed": true,
+  "script_sha256": "b5f09f973ddf38a63fd81d63f3fe673734846bcd305bf240021147ebc2aca712",
+  "outputs": {
+    "summary.json": "54216cd351f3961fdf397df4b04bac93f03edb5c285d552863368128ccebf88e",
+    "summary.tsv": "51630373b8819c7d82d969ed9d4151d235fee7513beb56f9e8db392feff6bb48",
+    "selected_depths.pdf": "1d25ec2e23cf5825ecf7ad7a1e2a97dbc8fae098791a7cf4747b4c39cd4dc1fd",
+    "selected_depths.png": "157a0cf8d43d3e2ab8b2f072ec77779cfaa1c4f7e8b89472748199cfe5e6fc16",
+    "all_depths.pdf": "2f5c4940cc6e3c34cb089c2375f9ffcdc53a27aab690ee8fd187775d47a58f89",
+    "all_depths.png": "46fb2ed8bf620dbf45b267397c6e482df5351ac8a7a182c1f51344dab36c3d99"
+  }
+}

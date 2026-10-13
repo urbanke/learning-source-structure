@@ -1,0 +1,205 @@
+{
+  "schema": "shared-base-evidence-smc-pilot-archive-v1",
+  "scientific_reference_validated": false,
+  "interpretation": "Bounded implementation/timing pilot only. Independent estimates disagree too much for use as long-context Bayesian reference; changes across pilot configurations do not isolate the cause.",
+  "reports": [
+    {
+      "schema": "shared-base-evidence-smc-experimental-benchmark-v1",
+      "scientific_reference_validated": false,
+      "sequence_index": 0,
+      "sequence_seed": [
+        3848314424,
+        1324096754,
+        2692026331,
+        2607568781
+      ],
+      "prefixes": [
+        5,
+        17
+      ],
+      "particles": 256,
+      "temperatures": 64,
+      "moves": 4,
+      "alpha_order": 16,
+      "replicates": 4,
+      "summaries": [
+        {
+          "n_tokens": 5,
+          "mean_loss_bits": 30.4375557450696,
+          "range_loss_bits": 0.11735516198179496,
+          "independent_replica_se_bits": 0.024186093290744063
+        }
+      ],
+      "stopped_by_time_limit": true,
+      "cohort_sha256": "68a12be7e92bbd4f7130265c9cb953108edbb21cc13adc16d24a14a91e7f03fa",
+      "script_sha256": "6d64339ae18f3227dccd445e9dbde6b79e8267c4ca05055ad41135909eb87f7c",
+      "smc_sha256": "f0db0281bc83d8aec5f863ea6646504f328eb480e36350eb0272b337f5de9e60",
+      "interrupted_calculation": {
+        "n_tokens": 17,
+        "replica": 2
+      },
+      "elapsed_seconds": 150.00759029202163,
+      "note": "Timing and limited calibration only. No long-context accuracy claim follows from agreement between a few replicas.",
+      "raw_report_path": "output/shared_base_evidence_smc_experimental_2026-09-16/alpha16_256particles_short.json",
+      "raw_report_sha256": "65028efdc924d4ee0459b25e17a7d5e695a6473b6543d6364379a61ad9196613",
+      "records": [
+        {
+          "n_tokens": 5,
+          "log_evidence": -21.1040751602441,
+          "seed": 2026096620,
+          "elapsed_seconds": 9.349048333009705,
+          "scientific_reference_validated": false
+        },
+        {
+          "n_tokens": 5,
+          "log_evidence": -21.134961136372837,
+          "seed": 2026096621,
+          "elapsed_seconds": 4.066011458984576,
+          "scientific_reference_validated": false
+        },
+        {
+          "n_tokens": 5,
+          "log_evidence": -21.098170757986694,
+          "seed": 2026096622,
+          "elapsed_seconds": 4.053254792001098,
+          "scientific_reference_validated": false
+        },
+        {
+          "n_tokens": 5,
+          "log_evidence": -21.053616736721,
+          "seed": 2026096623,
+          "elapsed_seconds": 4.355991916032508,
+          "scientific_reference_validated": false
+        },
+        {
+          "n_tokens": 17,
+          "log_evidence": -68.847490002854,
+          "seed": 2026108620,
+          "elapsed_seconds": 52.63310779200401,
+          "scientific_reference_validated": false
+        },
+        {
+          "n_tokens": 17,
+          "log_evidence": -68.43178440570911,
+          "seed": 2026108621,
+          "elapsed_seconds": 43.235565667040646,
+          "scientific_reference_validated": false
+        }
+      ]
+    },
+    {
+      "schema": "shared-base-evidence-smc-experimental-benchmark-v1",
+      "scientific_reference_validated": false,
+      "sequence_index": 0,
+      "sequence_seed": [
+        3848314424,
+        1324096754,
+        2692026331,
+        2607568781
+      ],
+      "prefixes": [
+        5,
+        17,
+        65,
+        1025
+      ],
+      "particles": 32,
+      "temperatures": 16,
+      "moves": 2,
+      "alpha_order": 8,
+      "replicates": 2,
+      "summaries": [
+        {
+          "n_tokens": 5,
+          "mean_loss_bits": 30.698931307392687,
+          "range_loss_bits": 0.30713714154906313,
+          "independent_replica_se_bits": 0.15356857077453157
+        },
+        {
+          "n_tokens": 17,
+          "mean_loss_bits": 99.48695479773124,
+          "range_loss_bits": 1.7743485662170144,
+          "independent_replica_se_bits": 0.8871742831085071
+        },
+        {
+          "n_tokens": 65,
+          "mean_loss_bits": 312.20329756846826,
+          "range_loss_bits": 7.36701868815976,
+          "independent_replica_se_bits": 3.68350934407988
+        },
+        {
+          "n_tokens": 1025,
+          "mean_loss_bits": 3465.3815077330855,
+          "range_loss_bits": 15.240488302395079,
+          "independent_replica_se_bits": 7.6202441511975385
+        }
+      ],
+      "stopped_by_time_limit": false,
+      "cohort_sha256": "68a12be7e92bbd4f7130265c9cb953108edbb21cc13adc16d24a14a91e7f03fa",
+      "script_sha256": "6d64339ae18f3227dccd445e9dbde6b79e8267c4ca05055ad41135909eb87f7c",
+      "smc_sha256": "f0db0281bc83d8aec5f863ea6646504f328eb480e36350eb0272b337f5de9e60",
+      "elapsed_seconds": 127.70782899996266,
+      "note": "Timing and limited calibration only. No long-context accuracy claim follows from agreement between a few replicas.",
+      "raw_report_path": "output/shared_base_evidence_smc_experimental_2026-09-16/alpha8_32particles.json",
+      "raw_report_sha256": "5fbf39f54498fd4672356a3b48305b572cabe6c396da17281173357e42618eaf",
+      "records": [
+        {
+          "n_tokens": 5,
+          "log_evidence": -21.17243206006769,
+          "seed": 2026096620,
+          "elapsed_seconds": 1.7977015000069514,
+          "scientific_reference_validated": false
+        },
+        {
+          "n_tokens": 5,
+          "log_evidence": -21.385323303777664,
+          "seed": 2026096621,
+          "elapsed_seconds": 0.18383412493858486,
+          "scientific_reference_validated": false
+        },
+        {
+          "n_tokens": 17,
+          "log_evidence": -68.34415986754018,
+          "seed": 2026108620,
+          "elapsed_seconds": 0.18928220798261464,
+          "scientific_reference_validated": false
+        },
+        {
+          "n_tokens": 17,
+          "log_evidence": -69.57404457354409,
+          "seed": 2026108621,
+          "elapsed_seconds": 0.1477460409514606,
+          "scientific_reference_validated": false
+        },
+        {
+          "n_tokens": 65,
+          "log_evidence": -218.9560495875166,
+          "seed": 2026156620,
+          "elapsed_seconds": 4.39175954204984,
+          "scientific_reference_validated": false
+        },
+        {
+          "n_tokens": 65,
+          "log_evidence": -213.8496213546862,
+          "seed": 2026156621,
+          "elapsed_seconds": 3.4907127500046045,
+          "scientific_reference_validated": false
+        },
+        {
+          "n_tokens": 1025,
+          "log_evidence": -2396.7374709011797,
+          "seed": 2027116620,
+          "elapsed_seconds": 51.53250962495804,
+          "scientific_reference_validated": false
+        },
+        {
+          "n_tokens": 1025,
+          "log_evidence": -2407.3013723983418,
+          "seed": 2027116621,
+          "elapsed_seconds": 65.93473104201257,
+          "scientific_reference_validated": false
+        }
+      ]
+    }
+  ]
+}

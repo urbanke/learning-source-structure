@@ -1,0 +1,1897 @@
+{
+  "schema": "shared-base-full-context-pair-audit-v1",
+  "sequence_index": 3,
+  "coarse_order": 16,
+  "refined_order": 32,
+  "source_id": "7ed145b5ce6b1a650b8c735bb945fb1d943d93161161ea735cd0a00d0eef5f1d",
+  "passed": false,
+  "checks": [
+    {
+      "name": "cohort:object",
+      "passed": true
+    },
+    {
+      "name": "source3:object",
+      "passed": true
+    },
+    {
+      "name": "source3:schema",
+      "passed": true
+    },
+    {
+      "name": "source3:identity",
+      "passed": true
+    },
+    {
+      "name": "source3:declaration",
+      "passed": true
+    },
+    {
+      "name": "source3:prior",
+      "passed": true
+    },
+    {
+      "name": "source3:stable_seed",
+      "passed": true
+    },
+    {
+      "name": "source3:source_code",
+      "passed": true
+    },
+    {
+      "name": "source3:construction_code",
+      "passed": true
+    },
+    {
+      "name": "source3:tokens",
+      "passed": true
+    },
+    {
+      "name": "source3:oracle",
+      "passed": true
+    },
+    {
+      "name": "model3:d64:object",
+      "passed": true
+    },
+    {
+      "name": "model3:d64:schema",
+      "passed": true
+    },
+    {
+      "name": "model3:d64:identity",
+      "passed": true
+    },
+    {
+      "name": "model3:d64:checkpoint",
+      "passed": true
+    },
+    {
+      "name": "model3:d64:config",
+      "passed": true
+    },
+    {
+      "name": "model3:d64:training_prior",
+      "passed": true
+    },
+    {
+      "name": "model3:d64:producer_code",
+      "passed": true
+    },
+    {
+      "name": "model3:d64:prefix",
+      "passed": true
+    },
+    {
+      "name": "model3:d64:array_name",
+      "passed": true
+    },
+    {
+      "name": "model3:d64:arrays_hash",
+      "passed": true
+    },
+    {
+      "name": "model3:d64:logits",
+      "passed": true
+    },
+    {
+      "name": "model3:d64:prediction_readback",
+      "passed": true
+    },
+    {
+      "name": "model3:d64:loss_alignment",
+      "passed": true
+    },
+    {
+      "name": "model3:d64:alignment_checks",
+      "passed": true
+    },
+    {
+      "name": "model3:d64_seed1:object",
+      "passed": true
+    },
+    {
+      "name": "model3:d64_seed1:schema",
+      "passed": true
+    },
+    {
+      "name": "model3:d64_seed1:identity",
+      "passed": true
+    },
+    {
+      "name": "model3:d64_seed1:checkpoint",
+      "passed": true
+    },
+    {
+      "name": "model3:d64_seed1:config",
+      "passed": true
+    },
+    {
+      "name": "model3:d64_seed1:training_prior",
+      "passed": true
+    },
+    {
+      "name": "model3:d64_seed1:producer_code",
+      "passed": true
+    },
+    {
+      "name": "model3:d64_seed1:prefix",
+      "passed": true
+    },
+    {
+      "name": "model3:d64_seed1:array_name",
+      "passed": true
+    },
+    {
+      "name": "model3:d64_seed1:arrays_hash",
+      "passed": true
+    },
+    {
+      "name": "model3:d64_seed1:logits",
+      "passed": true
+    },
+    {
+      "name": "model3:d64_seed1:prediction_readback",
+      "passed": true
+    },
+    {
+      "name": "model3:d64_seed1:loss_alignment",
+      "passed": true
+    },
+    {
+      "name": "model3:d64_seed1:alignment_checks",
+      "passed": true
+    },
+    {
+      "name": "prior_audit:reference3:alpha16:object",
+      "passed": true
+    },
+    {
+      "name": "prior_audit:reference3:alpha16:exporter",
+      "passed": true
+    },
+    {
+      "name": "prior_audit:reference3:alpha16:raw_passed",
+      "passed": true
+    },
+    {
+      "name": "prior_audit:reference3:alpha16:current_raw_hash",
+      "passed": true
+    },
+    {
+      "name": "reference3:alpha16:object",
+      "passed": true
+    },
+    {
+      "name": "reference3:alpha16:schema",
+      "passed": true
+    },
+    {
+      "name": "reference3:alpha16:identity",
+      "passed": true
+    },
+    {
+      "name": "reference3:alpha16:inputs",
+      "passed": true
+    },
+    {
+      "name": "reference3:alpha16:model_input:d64",
+      "passed": true
+    },
+    {
+      "name": "reference3:alpha16:model_input:d64_seed1",
+      "passed": true
+    },
+    {
+      "name": "reference3:alpha16:nonempty_code_hashes",
+      "passed": true
+    },
+    {
+      "name": "reference3:alpha16:complete_code_hashes",
+      "passed": true
+    },
+    {
+      "name": "reference3:alpha16:code_name",
+      "passed": true
+    },
+    {
+      "name": "reference3:alpha16:code:eval_shared_base_reference.py",
+      "passed": true
+    },
+    {
+      "name": "reference3:alpha16:code_name",
+      "passed": true
+    },
+    {
+      "name": "reference3:alpha16:code:full_context_statistics.py",
+      "passed": true
+    },
+    {
+      "name": "reference3:alpha16:code_name",
+      "passed": true
+    },
+    {
+      "name": "reference3:alpha16:code:eval_shared_base_models.py",
+      "passed": true
+    },
+    {
+      "name": "reference3:alpha16:problem_tokens",
+      "passed": true
+    },
+    {
+      "name": "reference3:alpha16:complete_numerical_hashes",
+      "passed": true
+    },
+    {
+      "name": "reference3:alpha16:numerical_runtime",
+      "passed": true
+    },
+    {
+      "name": "reference3:alpha16:numerical_code:shared_base_chain_runner.py",
+      "passed": true
+    },
+    {
+      "name": "reference3:alpha16:numerical_code:shared_base_mcmc.py",
+      "passed": true
+    },
+    {
+      "name": "reference3:alpha16:numerical_code:ranked_lsa.py",
+      "passed": true
+    },
+    {
+      "name": "reference3:alpha16:numerical_code:weighted_lsa.py",
+      "passed": true
+    },
+    {
+      "name": "reference3:alpha16:numerical_code:shared_depth.py",
+      "passed": true
+    },
+    {
+      "name": "reference3:alpha16:numerical_code:lsa_seq.py",
+      "passed": true
+    },
+    {
+      "name": "reference3:alpha16:numerical_code:phi_source.py",
+      "passed": true
+    },
+    {
+      "name": "reference3:alpha16:numerical_code:source.py",
+      "passed": true
+    },
+    {
+      "name": "reference3:alpha16:numerical_code:store/manifest.json",
+      "passed": true
+    },
+    {
+      "name": "reference3:alpha16:numerical_code:store/anchors.json",
+      "passed": true
+    },
+    {
+      "name": "reference3:alpha16:numerical_code:pmm/universal_tables.py",
+      "passed": true
+    },
+    {
+      "name": "reference3:alpha16:numerical_code:pmm/production_coding.py",
+      "passed": true
+    },
+    {
+      "name": "reference3:alpha16:numerical_code:pmm/mellin.py",
+      "passed": true
+    },
+    {
+      "name": "reference3:alpha16:numerical_code:pmm/kernel.py",
+      "passed": true
+    },
+    {
+      "name": "reference3:alpha16:prior",
+      "passed": true
+    },
+    {
+      "name": "reference3:alpha16:moment_name",
+      "passed": true
+    },
+    {
+      "name": "reference3:alpha16:moments_hash",
+      "passed": true
+    },
+    {
+      "name": "reference3:alpha16:sampling_configuration",
+      "passed": true
+    },
+    {
+      "name": "reference3:alpha16:batch_configuration",
+      "passed": true
+    },
+    {
+      "name": "reference3:alpha16:coordinate_mcse",
+      "passed": true
+    },
+    {
+      "name": "reference3:alpha16:chain_mean_readback",
+      "passed": false
+    },
+    {
+      "name": "reference3:alpha16:between_chain_covariance",
+      "passed": true
+    },
+    {
+      "name": "reference3:alpha16:prior_raw_receipt",
+      "passed": true
+    },
+    {
+      "name": "reference3:alpha16:diagnostic:split_rhat_below_1_05",
+      "passed": true
+    },
+    {
+      "name": "reference3:alpha16:diagnostic:probability_ess_at_least_200",
+      "passed": false
+    },
+    {
+      "name": "reference3:alpha16:diagnostic:maximum_probability_mcse_at_most_0_005",
+      "passed": true
+    },
+    {
+      "name": "reference3:alpha16:diagnostic:raw_normalization",
+      "passed": true
+    },
+    {
+      "name": "reference3:alpha16:stored_diagnostic_gates",
+      "passed": true
+    },
+    {
+      "name": "reference3:alpha16:grid_count",
+      "passed": true
+    },
+    {
+      "name": "reference3:alpha16:grid:0",
+      "passed": true
+    },
+    {
+      "name": "reference3:alpha16:stored_grid:0",
+      "passed": true
+    },
+    {
+      "name": "reference3:alpha16:grid:1",
+      "passed": true
+    },
+    {
+      "name": "reference3:alpha16:stored_grid:1",
+      "passed": true
+    },
+    {
+      "name": "reference3:alpha16:grid:2",
+      "passed": true
+    },
+    {
+      "name": "reference3:alpha16:stored_grid:2",
+      "passed": true
+    },
+    {
+      "name": "reference3:alpha16:grid:3",
+      "passed": true
+    },
+    {
+      "name": "reference3:alpha16:stored_grid:3",
+      "passed": true
+    },
+    {
+      "name": "prior_audit:reference3:alpha32:object",
+      "passed": true
+    },
+    {
+      "name": "prior_audit:reference3:alpha32:exporter",
+      "passed": true
+    },
+    {
+      "name": "prior_audit:reference3:alpha32:raw_passed",
+      "passed": true
+    },
+    {
+      "name": "prior_audit:reference3:alpha32:current_raw_hash",
+      "passed": true
+    },
+    {
+      "name": "reference3:alpha32:object",
+      "passed": true
+    },
+    {
+      "name": "reference3:alpha32:schema",
+      "passed": true
+    },
+    {
+      "name": "reference3:alpha32:identity",
+      "passed": true
+    },
+    {
+      "name": "reference3:alpha32:inputs",
+      "passed": true
+    },
+    {
+      "name": "reference3:alpha32:model_input:d64",
+      "passed": true
+    },
+    {
+      "name": "reference3:alpha32:model_input:d64_seed1",
+      "passed": true
+    },
+    {
+      "name": "reference3:alpha32:nonempty_code_hashes",
+      "passed": true
+    },
+    {
+      "name": "reference3:alpha32:complete_code_hashes",
+      "passed": true
+    },
+    {
+      "name": "reference3:alpha32:code_name",
+      "passed": true
+    },
+    {
+      "name": "reference3:alpha32:code:eval_shared_base_reference.py",
+      "passed": true
+    },
+    {
+      "name": "reference3:alpha32:code_name",
+      "passed": true
+    },
+    {
+      "name": "reference3:alpha32:code:full_context_statistics.py",
+      "passed": true
+    },
+    {
+      "name": "reference3:alpha32:code_name",
+      "passed": true
+    },
+    {
+      "name": "reference3:alpha32:code:eval_shared_base_models.py",
+      "passed": true
+    },
+    {
+      "name": "reference3:alpha32:problem_tokens",
+      "passed": true
+    },
+    {
+      "name": "reference3:alpha32:complete_numerical_hashes",
+      "passed": true
+    },
+    {
+      "name": "reference3:alpha32:numerical_runtime",
+      "passed": true
+    },
+    {
+      "name": "reference3:alpha32:numerical_code:shared_base_chain_runner.py",
+      "passed": true
+    },
+    {
+      "name": "reference3:alpha32:numerical_code:shared_base_mcmc.py",
+      "passed": true
+    },
+    {
+      "name": "reference3:alpha32:numerical_code:ranked_lsa.py",
+      "passed": true
+    },
+    {
+      "name": "reference3:alpha32:numerical_code:weighted_lsa.py",
+      "passed": true
+    },
+    {
+      "name": "reference3:alpha32:numerical_code:shared_depth.py",
+      "passed": true
+    },
+    {
+      "name": "reference3:alpha32:numerical_code:lsa_seq.py",
+      "passed": true
+    },
+    {
+      "name": "reference3:alpha32:numerical_code:phi_source.py",
+      "passed": true
+    },
+    {
+      "name": "reference3:alpha32:numerical_code:source.py",
+      "passed": true
+    },
+    {
+      "name": "reference3:alpha32:numerical_code:store/manifest.json",
+      "passed": true
+    },
+    {
+      "name": "reference3:alpha32:numerical_code:store/anchors.json",
+      "passed": true
+    },
+    {
+      "name": "reference3:alpha32:numerical_code:pmm/universal_tables.py",
+      "passed": true
+    },
+    {
+      "name": "reference3:alpha32:numerical_code:pmm/production_coding.py",
+      "passed": true
+    },
+    {
+      "name": "reference3:alpha32:numerical_code:pmm/mellin.py",
+      "passed": true
+    },
+    {
+      "name": "reference3:alpha32:numerical_code:pmm/kernel.py",
+      "passed": true
+    },
+    {
+      "name": "reference3:alpha32:prior",
+      "passed": true
+    },
+    {
+      "name": "reference3:alpha32:moment_name",
+      "passed": true
+    },
+    {
+      "name": "reference3:alpha32:moments_hash",
+      "passed": true
+    },
+    {
+      "name": "reference3:alpha32:sampling_configuration",
+      "passed": true
+    },
+    {
+      "name": "reference3:alpha32:batch_configuration",
+      "passed": true
+    },
+    {
+      "name": "reference3:alpha32:coordinate_mcse",
+      "passed": true
+    },
+    {
+      "name": "reference3:alpha32:chain_mean_readback",
+      "passed": false
+    },
+    {
+      "name": "reference3:alpha32:between_chain_covariance",
+      "passed": true
+    },
+    {
+      "name": "reference3:alpha32:prior_raw_receipt",
+      "passed": true
+    },
+    {
+      "name": "reference3:alpha32:diagnostic:split_rhat_below_1_05",
+      "passed": true
+    },
+    {
+      "name": "reference3:alpha32:diagnostic:probability_ess_at_least_200",
+      "passed": false
+    },
+    {
+      "name": "reference3:alpha32:diagnostic:maximum_probability_mcse_at_most_0_005",
+      "passed": true
+    },
+    {
+      "name": "reference3:alpha32:diagnostic:raw_normalization",
+      "passed": true
+    },
+    {
+      "name": "reference3:alpha32:stored_diagnostic_gates",
+      "passed": true
+    },
+    {
+      "name": "reference3:alpha32:grid_count",
+      "passed": true
+    },
+    {
+      "name": "reference3:alpha32:grid:0",
+      "passed": true
+    },
+    {
+      "name": "reference3:alpha32:stored_grid:0",
+      "passed": true
+    },
+    {
+      "name": "reference3:alpha32:grid:1",
+      "passed": true
+    },
+    {
+      "name": "reference3:alpha32:stored_grid:1",
+      "passed": true
+    },
+    {
+      "name": "reference3:alpha32:grid:2",
+      "passed": true
+    },
+    {
+      "name": "reference3:alpha32:stored_grid:2",
+      "passed": true
+    },
+    {
+      "name": "reference3:alpha32:grid:3",
+      "passed": true
+    },
+    {
+      "name": "reference3:alpha32:stored_grid:3",
+      "passed": true
+    },
+    {
+      "name": "source3:independent_seeds",
+      "passed": true
+    },
+    {
+      "name": "source3:probability_refinement:max_absolute_difference_below_0_01",
+      "passed": true
+    },
+    {
+      "name": "source3:probability_refinement:every_coordinate_within_five_mcse_plus_0_0002",
+      "passed": false
+    },
+    {
+      "name": "source3:16:d64:metric_readback:tv",
+      "passed": true
+    },
+    {
+      "name": "source3:16:d64:metric_readback:kl_bits",
+      "passed": true
+    },
+    {
+      "name": "source3:16:d64:metric_readback:true_loss_gap_bits",
+      "passed": true
+    },
+    {
+      "name": "source3:16:d64:metric_readback:kl_mcse_bits",
+      "passed": true
+    },
+    {
+      "name": "source3:16:d64:metric_readback:gap_mcse_bits",
+      "passed": true
+    },
+    {
+      "name": "source3:16:d64:metric_readback:kl_noise_scale_bits",
+      "passed": true
+    },
+    {
+      "name": "source3:32:d64:metric_readback:tv",
+      "passed": true
+    },
+    {
+      "name": "source3:32:d64:metric_readback:kl_bits",
+      "passed": true
+    },
+    {
+      "name": "source3:32:d64:metric_readback:true_loss_gap_bits",
+      "passed": true
+    },
+    {
+      "name": "source3:32:d64:metric_readback:kl_mcse_bits",
+      "passed": true
+    },
+    {
+      "name": "source3:32:d64:metric_readback:gap_mcse_bits",
+      "passed": true
+    },
+    {
+      "name": "source3:32:d64:metric_readback:kl_noise_scale_bits",
+      "passed": true
+    },
+    {
+      "name": "source3:d64:metric_refinement:kl_numerical_precision",
+      "passed": true
+    },
+    {
+      "name": "source3:d64:metric_refinement:kl_refinement_resolution",
+      "passed": true
+    },
+    {
+      "name": "source3:d64:metric_refinement:kl_refinement_mcse",
+      "passed": true
+    },
+    {
+      "name": "source3:d64:metric_refinement:gap_numerical_precision",
+      "passed": true
+    },
+    {
+      "name": "source3:d64:metric_refinement:gap_refinement_resolution",
+      "passed": true
+    },
+    {
+      "name": "source3:d64:metric_refinement:gap_refinement_mcse",
+      "passed": true
+    },
+    {
+      "name": "source3:16:d64_seed1:metric_readback:tv",
+      "passed": true
+    },
+    {
+      "name": "source3:16:d64_seed1:metric_readback:kl_bits",
+      "passed": true
+    },
+    {
+      "name": "source3:16:d64_seed1:metric_readback:true_loss_gap_bits",
+      "passed": true
+    },
+    {
+      "name": "source3:16:d64_seed1:metric_readback:kl_mcse_bits",
+      "passed": true
+    },
+    {
+      "name": "source3:16:d64_seed1:metric_readback:gap_mcse_bits",
+      "passed": true
+    },
+    {
+      "name": "source3:16:d64_seed1:metric_readback:kl_noise_scale_bits",
+      "passed": true
+    },
+    {
+      "name": "source3:32:d64_seed1:metric_readback:tv",
+      "passed": true
+    },
+    {
+      "name": "source3:32:d64_seed1:metric_readback:kl_bits",
+      "passed": true
+    },
+    {
+      "name": "source3:32:d64_seed1:metric_readback:true_loss_gap_bits",
+      "passed": true
+    },
+    {
+      "name": "source3:32:d64_seed1:metric_readback:kl_mcse_bits",
+      "passed": true
+    },
+    {
+      "name": "source3:32:d64_seed1:metric_readback:gap_mcse_bits",
+      "passed": true
+    },
+    {
+      "name": "source3:32:d64_seed1:metric_readback:kl_noise_scale_bits",
+      "passed": true
+    },
+    {
+      "name": "source3:d64_seed1:metric_refinement:kl_numerical_precision",
+      "passed": true
+    },
+    {
+      "name": "source3:d64_seed1:metric_refinement:kl_refinement_resolution",
+      "passed": true
+    },
+    {
+      "name": "source3:d64_seed1:metric_refinement:kl_refinement_mcse",
+      "passed": true
+    },
+    {
+      "name": "source3:d64_seed1:metric_refinement:gap_numerical_precision",
+      "passed": true
+    },
+    {
+      "name": "source3:d64_seed1:metric_refinement:gap_refinement_resolution",
+      "passed": true
+    },
+    {
+      "name": "source3:d64_seed1:metric_refinement:gap_refinement_mcse",
+      "passed": true
+    },
+    {
+      "name": "cohort:unchanged_during_audit",
+      "passed": true
+    },
+    {
+      "name": "source3:unchanged_during_audit",
+      "passed": true
+    },
+    {
+      "name": "model3:d64:unchanged_during_audit",
+      "passed": true
+    },
+    {
+      "name": "model3:d64:arrays:unchanged_during_audit",
+      "passed": true
+    },
+    {
+      "name": "model3:d64_seed1:unchanged_during_audit",
+      "passed": true
+    },
+    {
+      "name": "model3:d64_seed1:arrays:unchanged_during_audit",
+      "passed": true
+    },
+    {
+      "name": "prior_audit:reference3:alpha16:unchanged_during_audit",
+      "passed": true
+    },
+    {
+      "name": "prior_raw_chain:reference3:alpha16:unchanged_during_audit",
+      "passed": true
+    },
+    {
+      "name": "reference3:alpha16:unchanged_during_audit",
+      "passed": true
+    },
+    {
+      "name": "reference3:alpha16:moments:unchanged_during_audit",
+      "passed": true
+    },
+    {
+      "name": "prior_audit:reference3:alpha32:unchanged_during_audit",
+      "passed": true
+    },
+    {
+      "name": "prior_raw_chain:reference3:alpha32:unchanged_during_audit",
+      "passed": true
+    },
+    {
+      "name": "reference3:alpha32:unchanged_during_audit",
+      "passed": true
+    },
+    {
+      "name": "reference3:alpha32:moments:unchanged_during_audit",
+      "passed": true
+    }
+  ],
+  "probability_refinement": {
+    "passed": false,
+    "checks": {
+      "max_absolute_difference_below_0_01": true,
+      "every_coordinate_within_five_mcse_plus_0_0002": false
+    },
+    "max_absolute_difference": 0.008305198038556505,
+    "total_variation": 0.011011685656223538,
+    "max_combined_mcse": 0.00036516830843294983,
+    "absolute_difference": [
+      0.00034969351089012,
+      0.0002025333442505911,
+      0.0001252572933883164,
+      0.0001308346069888687,
+      0.0001302597879546917,
+      7.956054536800358e-06,
+      6.636095426577893e-05,
+      0.00012946380571830698,
+      0.00014352155145937965,
+      0.00022882218445544403,
+      0.0005201478320719238,
+      8.73379549521042e-05,
+      0.00011478403090126044,
+      0.00018153620325763592,
+      0.00016566770916692265,
+      0.0001304460875461667,
+      9.515881338777784e-05,
+      0.00018862318484608436,
+      0.00017174412773000858,
+      0.00017273770344130484,
+      0.00014431370706472846,
+      0.00011645103334491152,
+      0.00013013791926088725,
+      0.00015638999751820632,
+      0.000137563602945397,
+      0.00013588751989578388,
+      0.0005716773657967605,
+      0.0001226330548510339,
+      0.00019536727446816445,
+      0.00012490441732408144,
+      0.0018580536384842083,
+      0.00014151214065295965,
+      9.762548423505315e-05,
+      0.00022830966157530615,
+      0.00010689985000146519,
+      0.00016496466041242362,
+      0.00015046275896389702,
+      6.575094016566087e-05,
+      0.00018573662797284098,
+      0.00010893681622680274,
+      0.0009039468209478263,
+      0.008305198038556505,
+      1.6490155764846415e-05,
+      0.0004359997327384145,
+      0.00014205951663705555,
+      0.00013213905950671843,
+      0.00018148864743534193,
+      0.00016433947936294376,
+      0.00018753447335774628,
+      0.00022550738741907578,
+      0.00035065439396788235,
+      0.0002845256435124628,
+      0.0001394561180556404,
+      0.00011707038799800042,
+      0.00017012541423462157,
+      0.00014932630368533944,
+      0.00033359524157384156,
+      0.00015059920496808283,
+      0.00021906991008292884,
+      0.0002306600726716991,
+      0.00010375516755748923,
+      0.00015445763938092948,
+      0.0003260317741743471,
+      0.00031287551648727374
+    ],
+    "tolerance": [
+      0.0018848331055070072,
+      0.0008693050818746473,
+      0.00033710417139373294,
+      0.0003351111577076889,
+      0.0020258415421647493,
+      0.001213659113417984,
+      0.0015648752117326558,
+      0.0004051478093516754,
+      0.0004414648826166378,
+      0.0006052551563784073,
+      0.00024058837681389706,
+      0.0005345347193755723,
+      0.0005869870858835952,
+      0.0010291696932108686,
+      0.00032571498529749545,
+      0.00030980723894716956,
+      0.0005233209312426618,
+      0.0004858190547767291,
+      0.0004252318218129264,
+      0.00031055580216629125,
+      0.00037307561595739636,
+      0.00029428478021099587,
+      0.00042322320286694527,
+      0.00037068121462741836,
+      0.0003767266229407817,
+      0.00031167589359442873,
+      0.0012142453178179537,
+      0.00038866472952064836,
+      0.0005195220924376252,
+      0.00033048976760790974,
+      0.0003335906096695619,
+      0.00046638200461669667,
+      0.0003188892429859957,
+      0.0005942240953074302,
+      0.00030360193251825947,
+      0.00042935190962790524,
+      0.00037433799001419343,
+      0.00040337075317010366,
+      0.00029461535581327936,
+      0.0005766966196794784,
+      0.0017464505747393246,
+      0.0007683315175594791,
+      0.0012661389601631716,
+      0.0007923912564076046,
+      0.00038161947510660654,
+      0.00028644246363945515,
+      0.0005969960535608463,
+      0.00031641922074298343,
+      0.0004024818071680403,
+      0.0019633306947764734,
+      0.0005754622004937894,
+      0.0008600570331484292,
+      0.00028955903072382696,
+      0.0003513111109709632,
+      0.0004345630254797739,
+      0.00042055418022250273,
+      0.0007166056601781119,
+      0.00030955818342906787,
+      0.0006739256953044883,
+      0.0006003250266056456,
+      0.000432471385636834,
+      0.000370686790607262,
+      0.0005987893213482355,
+      0.0010415469238093315
+    ]
+  },
+  "metric_refinement": {
+    "d64": {
+      "passed": true,
+      "checks": {
+        "kl_numerical_precision": true,
+        "kl_refinement_resolution": true,
+        "kl_refinement_mcse": true,
+        "gap_numerical_precision": true,
+        "gap_refinement_resolution": true,
+        "gap_refinement_mcse": true
+      },
+      "differences": {
+        "kl": {
+          "absolute_difference_bits": 0.0007772074557598485,
+          "combined_mcse_bits": 0.0007137125618639356,
+          "five_mcse_allowance_bits": 0.003668562809319678,
+          "resolution_limit_bits": 0.0033333333333333335
+        },
+        "gap": {
+          "absolute_difference_bits": 0.0011976283360669027,
+          "combined_mcse_bits": 0.0002504170000777323,
+          "five_mcse_allowance_bits": 0.0013520850003886616,
+          "resolution_limit_bits": 0.0033333333333333335
+        }
+      }
+    },
+    "d64_seed1": {
+      "passed": true,
+      "checks": {
+        "kl_numerical_precision": true,
+        "kl_refinement_resolution": true,
+        "kl_refinement_mcse": true,
+        "gap_numerical_precision": true,
+        "gap_refinement_resolution": true,
+        "gap_refinement_mcse": true
+      },
+      "differences": {
+        "kl": {
+          "absolute_difference_bits": 0.002432570099407408,
+          "combined_mcse_bits": 0.0005585286702523715,
+          "five_mcse_allowance_bits": 0.002892643351261857,
+          "resolution_limit_bits": 0.0033333333333333335
+        },
+        "gap": {
+          "absolute_difference_bits": 0.0011976283360669998,
+          "combined_mcse_bits": 0.0002504170000777323,
+          "five_mcse_allowance_bits": 0.0013520850003886616,
+          "resolution_limit_bits": 0.0033333333333333335
+        }
+      }
+    }
+  },
+  "metrics": {
+    "d64": {
+      "16": {
+        "total_variation": 0.12044090343513333,
+        "kl_bits": 0.1046958036855089,
+        "true_expected_loss_gap_bits": 0.07964092677878945,
+        "kl_uncertainty": {
+          "batch_mcse_bits": 0.0003793441195259546,
+          "between_mcse_bits": 0.0005030361662888908,
+          "mcse_bits": 0.0005030361662888908
+        },
+        "gap_uncertainty": {
+          "batch_mcse_bits": 0.00015324037979005793,
+          "between_mcse_bits": 5.755861394627441e-05,
+          "mcse_bits": 0.00015324037979005793
+        },
+        "kl_second_order": {
+          "batch": {
+            "mean_scale_bits": 1.0741706446047264e-05,
+            "sd_scale_bits": 2.6375877481536407e-06
+          },
+          "between": {
+            "mean_scale_bits": 1.7040843346951382e-05,
+            "sd_scale_bits": 1.431761059685682e-05
+          },
+          "mean_scale_bits": 1.7040843346951382e-05,
+          "sd_scale_bits": 1.431761059685682e-05,
+          "noise_scale_bits": 1.9694871525614495e-05
+        },
+        "gap_second_order": {
+          "batch": {
+            "mean_scale_bits": 1.0286752381537805e-05,
+            "sd_scale_bits": 2.6038698383955612e-06
+          },
+          "between": {
+            "mean_scale_bits": 1.7420671839946986e-05,
+            "sd_scale_bits": 1.4612313080942619e-05
+          },
+          "mean_scale_bits": 1.7420671839946986e-05,
+          "sd_scale_bits": 1.4612313080942619e-05,
+          "noise_scale_bits": 1.9725977466852418e-05
+        },
+        "max_relative_probability_mcse": 0.013458411019774541,
+        "kl_numerical_scale_bits": 0.0005030361662888908,
+        "gap_numerical_scale_bits": 0.00015324037979005793,
+        "gradient_kl": [
+          1.026878239955438,
+          -0.3884067155584794,
+          0.3441673296605554,
+          -0.7204880219192414,
+          0.7300171519279763,
+          -0.3138507885069661,
+          0.4831638744600062,
+          -0.9483272906892297,
+          0.7258113160732844,
+          -0.21593260413455817,
+          -0.0442669277000205,
+          0.0453801240160685,
+          -0.29279000262845645,
+          0.7855877989929578,
+          -1.505973396832625,
+          -0.318251053913293,
+          -0.27848464410378937,
+          0.22240515838437758,
+          0.38400768707087907,
+          -0.755501229793216,
+          0.04054206980848707,
+          0.31546862955256616,
+          -0.8403778434872327,
+          0.7110663909637245,
+          -0.793991146393285,
+          0.2482393300668868,
+          -1.36298405961042,
+          0.18381125237872875,
+          -0.7567045691646006,
+          0.3569769846193982,
+          -0.15099970128765272,
+          0.537566525217055,
+          0.12052522249086217,
+          -0.6162241064191252,
+          0.40528465899694055,
+          0.17880937736848979,
+          0.30447589158728117,
+          0.19614260661639693,
+          -1.1300755993799732,
+          -0.5635042820515133,
+          -1.2980550940458897,
+          -0.11279123327259133,
+          -0.6106564503832039,
+          1.2703934704870934,
+          -0.976856361638685,
+          -0.15291812254942894,
+          0.8857642269496024,
+          0.09288523334391408,
+          0.047024446079948934,
+          -0.7555840762765405,
+          1.1775578224796261,
+          0.3472695331613267,
+          0.04811971218072442,
+          0.1445944098712988,
+          0.43630021215913484,
+          0.14317461199986403,
+          -0.5818568925139685,
+          0.13895477326900196,
+          1.1845368240125242,
+          0.2699390532517396,
+          0.8261423496933176,
+          -0.5020838612521463,
+          0.15580924170567378,
+          1.47314253465298
+        ],
+        "gradient_gap": [
+          -0.12579510961832585,
+          -0.1245270591365577,
+          0.6363377061125275,
+          -0.021370337967534514,
+          -0.4681401623954393,
+          -0.11903867848763539,
+          0.08000044133392747,
+          -0.4366876767994041,
+          0.43033588869895434,
+          0.833544794004365,
+          0.07405808216394383,
+          0.21326750809311434,
+          0.00844702593571589,
+          0.08058018208734596,
+          -0.31404352373576017,
+          -0.39903963549409915,
+          0.2955892113498111,
+          0.6503848629218683,
+          -0.6847327307071175,
+          0.41666376513601633,
+          -0.6635044396209754,
+          -0.14384882894704454,
+          -0.2889409933886091,
+          0.21648758284002456,
+          -0.4691021217813981,
+          0.3382625169229361,
+          -0.03957199849521853,
+          -0.14242462662644972,
+          -0.7423155433290942,
+          0.30150139050437863,
+          0.08628449825423945,
+          0.1343420565564608,
+          -0.056989718109646814,
+          0.18411755780719408,
+          -0.26725773930115215,
+          0.3435065036473035,
+          -0.2225301234028405,
+          0.09184271013196055,
+          0.9681263762560837,
+          -0.8105201952042829,
+          0.27575422739359823,
+          0.10696606051282709,
+          0.24073680922894836,
+          -0.43553699927906486,
+          -0.4832878588544006,
+          0.003383507012685305,
+          -0.12715242030193363,
+          -0.2728673025855797,
+          0.033818663133533544,
+          0.624557451708551,
+          -0.38687920336085435,
+          0.3694988603366125,
+          0.18443121985869038,
+          0.3944430481855923,
+          -0.0799594456805881,
+          -0.4520761408229048,
+          0.7408557920933798,
+          0.24342088715878263,
+          0.1358628318225985,
+          0.08614127886916889,
+          -0.6876927394556277,
+          -0.37567592983605747,
+          0.0011571517158379674,
+          0.016800832936612498
+        ],
+        "note": "Metrics of the posterior mean. MCSE uses covariance projections; KL quadratic scales are local estimates, not bounds or bias corrections."
+      },
+      "32": {
+        "total_variation": 0.125835030722562,
+        "kl_bits": 0.10547301114126875,
+        "true_expected_loss_gap_bits": 0.07844329844272255,
+        "kl_uncertainty": {
+          "batch_mcse_bits": 0.0003985984119410776,
+          "between_mcse_bits": 0.0005063005395688984,
+          "mcse_bits": 0.0005063005395688984
+        },
+        "gap_uncertainty": {
+          "batch_mcse_bits": 0.00015576114657797787,
+          "between_mcse_bits": 0.00019805569905895107,
+          "mcse_bits": 0.00019805569905895107
+        },
+        "kl_second_order": {
+          "batch": {
+            "mean_scale_bits": 1.084525853474569e-05,
+            "sd_scale_bits": 2.6727145463177097e-06
+          },
+          "between": {
+            "mean_scale_bits": 2.348526493254366e-05,
+            "sd_scale_bits": 2.0251556102123063e-05
+          },
+          "mean_scale_bits": 2.348526493254366e-05,
+          "sd_scale_bits": 2.0251556102123063e-05,
+          "noise_scale_bits": 2.48015768515701e-05
+        },
+        "gap_second_order": {
+          "batch": {
+            "mean_scale_bits": 1.0142446721824615e-05,
+            "sd_scale_bits": 2.5900644394340746e-06
+          },
+          "between": {
+            "mean_scale_bits": 2.2292369749725174e-05,
+            "sd_scale_bits": 1.9598872692893334e-05
+          },
+          "mean_scale_bits": 2.2292369749725174e-05,
+          "sd_scale_bits": 1.9598872692893334e-05,
+          "noise_scale_bits": 2.354121146937465e-05
+        },
+        "max_relative_probability_mcse": 0.015682992688076394,
+        "kl_numerical_scale_bits": 0.0005063005395688984,
+        "gap_numerical_scale_bits": 0.00019805569905895107,
+        "gradient_kl": [
+          1.0014196055798172,
+          -0.40999010621764675,
+          0.3648932893471062,
+          -0.7028396719050884,
+          0.6764854247882783,
+          -0.3597853986924624,
+          0.4385986279737786,
+          -0.9310393059076011,
+          0.7257444672955562,
+          -0.20903514469617335,
+          -0.10069516095770892,
+          0.01907958823084921,
+          -0.3080251460262873,
+          0.7339432658100251,
+          -1.4715460444520727,
+          -0.3005797636290035,
+          -0.30311840500879805,
+          0.2376761965790557,
+          0.39379763418500024,
+          -0.7169779000191646,
+          0.04923652561291347,
+          0.3309164794280244,
+          -0.8368526674399438,
+          0.7243425613063916,
+          -0.787718678108977,
+          0.26820523766582816,
+          -1.3570137273681593,
+          0.19809178755407575,
+          -0.7394501841954703,
+          0.3722937703319742,
+          -0.21879356052552135,
+          0.5367961801265357,
+          0.12207330173012876,
+          -0.6222242909760458,
+          0.41128872906842595,
+          0.19525694205320976,
+          0.31587334974872205,
+          0.17465719993242823,
+          -1.077195688763958,
+          -0.5800218487797588,
+          -1.2919953772883148,
+          -0.20012198641829526,
+          -0.6583150515349523,
+          1.2935856563750496,
+          -0.9607684855260122,
+          -0.12821357902581787,
+          0.8818650870298734,
+          0.1279112936103286,
+          0.08306708124318396,
+          -0.7833627801108701,
+          1.201874948604222,
+          0.3421152989012146,
+          0.07593100195662394,
+          0.1650280618146185,
+          0.44480502820413426,
+          0.15358976977281102,
+          -0.5748638416301275,
+          0.1664616013917739,
+          1.188971063471115,
+          0.26444631797088647,
+          0.8188533007006873,
+          -0.4895045612961231,
+          0.16729914451453665,
+          1.4535735365911613
+        ],
+        "gradient_gap": [
+          -0.10027689249089722,
+          -0.10234410268551919,
+          0.588060549097889,
+          -0.036777711802557844,
+          -0.4199386354487403,
+          -0.07586985742368046,
+          0.12165754119981753,
+          -0.4337076225011449,
+          0.41655613911007716,
+          0.7965795290396815,
+          0.12770614886252596,
+          0.23470834590423362,
+          0.022332663324790003,
+          0.12940654910461724,
+          -0.3284317682037008,
+          -0.3979460753115398,
+          0.3139584048279278,
+          0.6088020632647364,
+          -0.6675024538049975,
+          0.357428379862333,
+          -0.6465687624285609,
+          -0.1520966162629298,
+          -0.28238913629605555,
+          0.19531035286446374,
+          -0.4580388115568814,
+          0.30449159773493273,
+          -0.043770377509124936,
+          -0.14977368834550808,
+          -0.7260289096389493,
+          0.27457433504829143,
+          0.15168320133397395,
+          0.13072408626467347,
+          -0.05664804748049401,
+          0.18443394405960012,
+          -0.2632938511682634,
+          0.31351457221751855,
+          -0.22433699271677643,
+          0.11016914465759675,
+          0.8552906347186091,
+          -0.7783808890308094,
+          0.26011819393613944,
+          0.193228085137771,
+          0.28561006057650795,
+          -0.4362941103025494,
+          -0.4775677721899454,
+          -0.01955790730774143,
+          -0.11991473408733433,
+          -0.28994546680920874,
+          -0.0011230743599592863,
+          0.642202971051032,
+          -0.3906795573276427,
+          0.36364160146114033,
+          0.14952656750781457,
+          0.35758008731158775,
+          -0.0849043023074203,
+          -0.4441912868556347,
+          0.7071455892256162,
+          0.20586581090892908,
+          0.1269121545867944,
+          0.0886928244627816,
+          -0.6624286202670601,
+          -0.3722108534306745,
+          -0.00958791786638269,
+          0.03461467655428141
+        ],
+        "note": "Metrics of the posterior mean. MCSE uses covariance projections; KL quadratic scales are local estimates, not bounds or bias corrections."
+      }
+    },
+    "d64_seed1": {
+      "16": {
+        "total_variation": 0.13526730424293537,
+        "kl_bits": 0.10389274014334407,
+        "true_expected_loss_gap_bits": 0.09276335365575657,
+        "kl_uncertainty": {
+          "batch_mcse_bits": 0.0003708687859435902,
+          "between_mcse_bits": 0.0003341433084583947,
+          "mcse_bits": 0.0003708687859435902
+        },
+        "gap_uncertainty": {
+          "batch_mcse_bits": 0.00015324037979005793,
+          "between_mcse_bits": 5.755861394627441e-05,
+          "mcse_bits": 0.00015324037979005793
+        },
+        "kl_second_order": {
+          "batch": {
+            "mean_scale_bits": 1.0741706446047264e-05,
+            "sd_scale_bits": 2.6375877481536407e-06
+          },
+          "between": {
+            "mean_scale_bits": 1.7040843346951382e-05,
+            "sd_scale_bits": 1.431761059685682e-05
+          },
+          "mean_scale_bits": 1.7040843346951382e-05,
+          "sd_scale_bits": 1.431761059685682e-05,
+          "noise_scale_bits": 1.9694871525614495e-05
+        },
+        "gap_second_order": {
+          "batch": {
+            "mean_scale_bits": 1.0286752381537805e-05,
+            "sd_scale_bits": 2.6038698383955612e-06
+          },
+          "between": {
+            "mean_scale_bits": 1.7420671839946986e-05,
+            "sd_scale_bits": 1.4612313080942619e-05
+          },
+          "mean_scale_bits": 1.7420671839946986e-05,
+          "sd_scale_bits": 1.4612313080942619e-05,
+          "noise_scale_bits": 1.9725977466852418e-05
+        },
+        "max_relative_probability_mcse": 0.013458411019774541,
+        "kl_numerical_scale_bits": 0.0003708687859435902,
+        "gap_numerical_scale_bits": 0.00015324037979005793,
+        "gradient_kl": [
+          1.2168689326051507,
+          -0.5710579698132245,
+          -0.15703977855506945,
+          -1.0979691772689788,
+          1.4283425229222986,
+          0.6645375267571831,
+          1.1704648028198057,
+          -0.8478509450781826,
+          0.6359129281642775,
+          -0.2440312192348133,
+          0.24945918540555367,
+          0.3768497216626454,
+          0.5379033097017061,
+          1.1464942911265146,
+          0.16989690086589504,
+          -0.17607201115573057,
+          -0.3637611702535092,
+          0.6246551618981233,
+          -0.7026269028292141,
+          -0.9643776455257407,
+          -0.3199054938431707,
+          -0.02878453174589657,
+          -0.9634700868913175,
+          0.2219261014805869,
+          -0.7574350766804655,
+          0.053860965810771155,
+          -0.20881997312302025,
+          0.03966231311625612,
+          -0.66322047919402,
+          -0.07636852128817617,
+          -0.01705854151509323,
+          -0.18560001634090373,
+          -0.3192357522418474,
+          -0.39076611423812047,
+          -0.31464241734936627,
+          0.2392657900803885,
+          -0.16399251321877384,
+          -0.15436865938166178,
+          -0.9239908132581811,
+          -0.3349130723158853,
+          -0.7091926494823649,
+          0.3029754887117404,
+          -0.28194751824827646,
+          1.0349407476993897,
+          -1.0659299637498163,
+          -0.10961388357337976,
+          -0.29934001860223436,
+          -0.3019674596128481,
+          -0.24948478349514058,
+          0.22489365621294044,
+          1.1088076251992662,
+          0.49770698933283875,
+          -0.010976582958753367,
+          -0.08454973130878063,
+          0.15417010805738318,
+          -0.847458531262343,
+          0.14665619547642272,
+          0.146958885224856,
+          0.6976808080981465,
+          0.08183577698199263,
+          0.1961376062291862,
+          -1.1382555156152536,
+          1.1672493977909508,
+          1.509961780817282
+        ],
+        "gradient_gap": [
+          -0.12579510961832585,
+          -0.1245270591365577,
+          0.6363377061125275,
+          -0.021370337967534514,
+          -0.4681401623954393,
+          -0.11903867848763539,
+          0.08000044133392747,
+          -0.4366876767994041,
+          0.43033588869895434,
+          0.833544794004365,
+          0.07405808216394383,
+          0.21326750809311434,
+          0.00844702593571589,
+          0.08058018208734596,
+          -0.31404352373576017,
+          -0.39903963549409915,
+          0.2955892113498111,
+          0.6503848629218683,
+          -0.6847327307071175,
+          0.41666376513601633,
+          -0.6635044396209754,
+          -0.14384882894704454,
+          -0.2889409933886091,
+          0.21648758284002456,
+          -0.4691021217813981,
+          0.3382625169229361,
+          -0.03957199849521853,
+          -0.14242462662644972,
+          -0.7423155433290942,
+          0.30150139050437863,
+          0.08628449825423945,
+          0.1343420565564608,
+          -0.056989718109646814,
+          0.18411755780719408,
+          -0.26725773930115215,
+          0.3435065036473035,
+          -0.2225301234028405,
+          0.09184271013196055,
+          0.9681263762560837,
+          -0.8105201952042829,
+          0.27575422739359823,
+          0.10696606051282709,
+          0.24073680922894836,
+          -0.43553699927906486,
+          -0.4832878588544006,
+          0.003383507012685305,
+          -0.12715242030193363,
+          -0.2728673025855797,
+          0.033818663133533544,
+          0.624557451708551,
+          -0.38687920336085435,
+          0.3694988603366125,
+          0.18443121985869038,
+          0.3944430481855923,
+          -0.0799594456805881,
+          -0.4520761408229048,
+          0.7408557920933798,
+          0.24342088715878263,
+          0.1358628318225985,
+          0.08614127886916889,
+          -0.6876927394556277,
+          -0.37567592983605747,
+          0.0011571517158379674,
+          0.016800832936612498
+        ],
+        "note": "Metrics of the posterior mean. MCSE uses covariance projections; KL quadratic scales are local estimates, not bounds or bias corrections."
+      },
+      "32": {
+        "total_variation": 0.13003958235733798,
+        "kl_bits": 0.10146017004393666,
+        "true_expected_loss_gap_bits": 0.09156572531968957,
+        "kl_uncertainty": {
+          "batch_mcse_bits": 0.0003685773465139628,
+          "between_mcse_bits": 0.0004176249742371854,
+          "mcse_bits": 0.0004176249742371854
+        },
+        "gap_uncertainty": {
+          "batch_mcse_bits": 0.00015576114657797787,
+          "between_mcse_bits": 0.00019805569905895107,
+          "mcse_bits": 0.00019805569905895107
+        },
+        "kl_second_order": {
+          "batch": {
+            "mean_scale_bits": 1.084525853474569e-05,
+            "sd_scale_bits": 2.6727145463177097e-06
+          },
+          "between": {
+            "mean_scale_bits": 2.348526493254366e-05,
+            "sd_scale_bits": 2.0251556102123063e-05
+          },
+          "mean_scale_bits": 2.348526493254366e-05,
+          "sd_scale_bits": 2.0251556102123063e-05,
+          "noise_scale_bits": 2.48015768515701e-05
+        },
+        "gap_second_order": {
+          "batch": {
+            "mean_scale_bits": 1.0142446721824615e-05,
+            "sd_scale_bits": 2.5900644394340746e-06
+          },
+          "between": {
+            "mean_scale_bits": 2.2292369749725174e-05,
+            "sd_scale_bits": 1.9598872692893334e-05
+          },
+          "mean_scale_bits": 2.2292369749725174e-05,
+          "sd_scale_bits": 1.9598872692893334e-05,
+          "noise_scale_bits": 2.354121146937465e-05
+        },
+        "max_relative_probability_mcse": 0.015682992688076394,
+        "kl_numerical_scale_bits": 0.0004176249742371854,
+        "gap_numerical_scale_bits": 0.00019805569905895107,
+        "gradient_kl": [
+          1.1914102982295303,
+          -0.5926413604723916,
+          -0.13631381886851845,
+          -1.0803208272548255,
+          1.3748107957826012,
+          0.6186029165716869,
+          1.1258995563335779,
+          -0.8305629602965537,
+          0.6358460793865497,
+          -0.23713375979642803,
+          0.19303095214786525,
+          0.35054918587742634,
+          0.5226681663038752,
+          1.0948497579435825,
+          0.20432425324644754,
+          -0.15840072087144064,
+          -0.38839493115851775,
+          0.6399262000928017,
+          -0.6928369557150929,
+          -0.9258543157516892,
+          -0.31121103803874384,
+          -0.013336681870438127,
+          -0.9599449108440286,
+          0.23520227182325426,
+          -0.7511626083961573,
+          0.07382687340971295,
+          -0.20284964088075919,
+          0.05394284829160312,
+          -0.6459660942248897,
+          -0.06105173557559995,
+          -0.08485240075296163,
+          -0.18637036143142316,
+          -0.3176876730025807,
+          -0.396766298795041,
+          -0.3086383472778804,
+          0.2557133547651087,
+          -0.15259505505733273,
+          -0.17585406606563048,
+          -0.8711109026421655,
+          -0.35143063904413085,
+          -0.7031329327247899,
+          0.2156447355660367,
+          -0.3296061194000248,
+          1.0581329335873462,
+          -1.0498420876371435,
+          -0.08490934004976869,
+          -0.3032391585219627,
+          -0.26694139934643357,
+          -0.2134421483319051,
+          0.19711495237861132,
+          1.1331247513238627,
+          0.4925527550727269,
+          0.016834706817146383,
+          -0.06411607936546071,
+          0.16267492410238282,
+          -0.837043373489396,
+          0.1536492463602641,
+          0.17446571334762817,
+          0.7021150475567368,
+          0.07634304170113948,
+          0.18884855723655636,
+          -1.1256762156592302,
+          1.1787393005998141,
+          1.4903927827554635
+        ],
+        "gradient_gap": [
+          -0.10027689249089722,
+          -0.10234410268551919,
+          0.588060549097889,
+          -0.036777711802557844,
+          -0.4199386354487403,
+          -0.07586985742368046,
+          0.12165754119981753,
+          -0.4337076225011449,
+          0.41655613911007716,
+          0.7965795290396815,
+          0.12770614886252596,
+          0.23470834590423362,
+          0.022332663324790003,
+          0.12940654910461724,
+          -0.3284317682037008,
+          -0.3979460753115398,
+          0.3139584048279278,
+          0.6088020632647364,
+          -0.6675024538049975,
+          0.357428379862333,
+          -0.6465687624285609,
+          -0.1520966162629298,
+          -0.28238913629605555,
+          0.19531035286446374,
+          -0.4580388115568814,
+          0.30449159773493273,
+          -0.043770377509124936,
+          -0.14977368834550808,
+          -0.7260289096389493,
+          0.27457433504829143,
+          0.15168320133397395,
+          0.13072408626467347,
+          -0.05664804748049401,
+          0.18443394405960012,
+          -0.2632938511682634,
+          0.31351457221751855,
+          -0.22433699271677643,
+          0.11016914465759675,
+          0.8552906347186091,
+          -0.7783808890308094,
+          0.26011819393613944,
+          0.193228085137771,
+          0.28561006057650795,
+          -0.4362941103025494,
+          -0.4775677721899454,
+          -0.01955790730774143,
+          -0.11991473408733433,
+          -0.28994546680920874,
+          -0.0011230743599592863,
+          0.642202971051032,
+          -0.3906795573276427,
+          0.36364160146114033,
+          0.14952656750781457,
+          0.35758008731158775,
+          -0.0849043023074203,
+          -0.4441912868556347,
+          0.7071455892256162,
+          0.20586581090892908,
+          0.1269121545867944,
+          0.0886928244627816,
+          -0.6624286202670601,
+          -0.3722108534306745,
+          -0.00958791786638269,
+          0.03461467655428141
+        ],
+        "note": "Metrics of the posterior mean. MCSE uses covariance projections; KL quadratic scales are local estimates, not bounds or bias corrections."
+      }
+    }
+  },
+  "raw_validation": {
+    "reference3:alpha16": {
+      "passed": true,
+      "binding": {
+        "reference_json_sha256": "50b53bc158656bd62fabdd0d2abc49234a48b3d10f58a07336393ca9a00bf670",
+        "moments_sha256": "a04ddb23ad01ab4aea4827edf549e46e4bcbfa9769eb0adaf2651911bfcebad7",
+        "reference_id": "5794ed9037e2d98df04ade194baa1a703ff8ca80c026d21c70bef0cc366b63d0"
+      },
+      "chain_sha256": "dc1386cbd9292f7b31f6ff0b10a7b927480790950f960c212636a23552b987c9",
+      "chain_metadata_sha256": "1b6740ca5fbde792825d6bac46efd211ff1e27e35324be8121db3399e385d132",
+      "independent_errors": {
+        "mean": 0.0,
+        "covariance_batch": 2.5849394142282115e-26,
+        "covariance_between": 6.617444900424222e-24
+      },
+      "chains": 4,
+      "draws_per_chain": 65536
+    },
+    "reference3:alpha32": {
+      "passed": true,
+      "binding": {
+        "reference_json_sha256": "7ffb8260e8c9d9c2c8e012eeaf2188d11cd74ee4b28f18588e5f79682ef72507",
+        "moments_sha256": "569fd2dd078b3042b1f25f67b7b3d0ad0ad7759dbf0966f5109b7eb1b2a22e4a",
+        "reference_id": "8240ad94440efc3c9f3fdadeb5f6ffa26d3687158550c6d79369314537f82385"
+      },
+      "chain_sha256": "0c893dace24679ba61c3a4028e6640828dcd48c1c14d96ea12ddfdc641c3b27d",
+      "chain_metadata_sha256": "f339dc4e4d47e90ef6ef75b8702b964009ef127a815f0544fd7b926a834d1370",
+      "independent_errors": {
+        "mean": 0.0,
+        "covariance_batch": 2.5849394142282115e-26,
+        "covariance_between": 1.3234889800848443e-23
+      },
+      "chains": 4,
+      "draws_per_chain": 65536
+    }
+  },
+  "references": {
+    "16": {
+      "diagnostics": {
+        "gates": {
+          "split_rhat_below_1_05": true,
+          "probability_ess_at_least_200": false,
+          "maximum_probability_mcse_at_most_0_005": true,
+          "raw_normalization": true
+        },
+        "max_rhat": 1.025313976800971,
+        "min_probability_ess": 199.5554706169931,
+        "max_probability_mcse": 0.00026347272534610024,
+        "raw_normalization_error": 3.75921516138078e-13
+      },
+      "sampling": {
+        "chains": 4,
+        "draws_per_chain": 65536,
+        "seed": 1043410748,
+        "elapsed_seconds": 3409.03177541506
+      },
+      "local_pass": false
+    },
+    "32": {
+      "diagnostics": {
+        "gates": {
+          "split_rhat_below_1_05": true,
+          "probability_ess_at_least_200": false,
+          "maximum_probability_mcse_at_most_0_005": true,
+          "raw_normalization": true
+        },
+        "max_rhat": 1.0135926477687918,
+        "min_probability_ess": 146.73580020174515,
+        "max_probability_mcse": 0.0003351273851946503,
+        "raw_normalization_error": 3.5016434196677437e-13
+      },
+      "sampling": {
+        "chains": 4,
+        "draws_per_chain": 65536,
+        "seed": 1044273334,
+        "elapsed_seconds": 3594.219015791081
+      },
+      "local_pass": false
+    }
+  },
+  "provenance": {
+    "script_sha256": "7a0537b230921a48c1a3c60e4831f02b1a6544f71ef2187543866bef27349c97",
+    "inputs": {
+      "cohort": {
+        "path": "/Users/ruediger/Projects/layered_architectures/output/shared_base_full_context/cohort.json",
+        "sha256": "d9327e71a746018a7f1d0a453dcc06f08aa66d9ce2d17677d4304f1d6053ad47"
+      },
+      "source3": {
+        "path": "/Users/ruediger/Projects/layered_architectures/output/shared_base_full_context/data/seq_000003.json",
+        "sha256": "d8573014d7315345c9c30a3c75ebabf538477c089ba8547060d564a491b75c65"
+      },
+      "model3:d64": {
+        "path": "/Users/ruediger/Projects/layered_architectures/output/shared_base_full_context/models/d64/seq_000003.json",
+        "sha256": "b34a4ddd1bd8ab8d83b2afae45a803158bfd7e92d207afe2db0ec8cb496f2607"
+      },
+      "model3:d64:arrays": {
+        "path": "/Users/ruediger/Projects/layered_architectures/output/shared_base_full_context/models/d64/seq_000003.npz",
+        "sha256": "633e056518c237c2406f3fd0fa8954182a102ff6775f461ecc4b4bddee1945c3"
+      },
+      "model3:d64_seed1": {
+        "path": "/Users/ruediger/Projects/layered_architectures/output/shared_base_full_context/models/d64_seed1/seq_000003.json",
+        "sha256": "d7b7009a79a16c225597dcd913bc0d369c4d3e666447dd8965265e947273f48d"
+      },
+      "model3:d64_seed1:arrays": {
+        "path": "/Users/ruediger/Projects/layered_architectures/output/shared_base_full_context/models/d64_seed1/seq_000003.npz",
+        "sha256": "1dcc73f13228a34cbba6229668aaa5ca994385408cf3123d9ebfa20e55870dee"
+      },
+      "prior_audit:reference3:alpha16": {
+        "path": "/Users/ruediger/Projects/layered_architectures/output/shared_base_full_context/audits/snapshot_20260914T215004Z_continued/seq_000003_alpha16_vs32.json",
+        "sha256": "1dca4023c3524e06e9be64823f8bfee6404f338b4e77cd0f704b2d4de7b65528"
+      },
+      "prior_raw_chain:reference3:alpha16": {
+        "path": "/Users/ruediger/Projects/layered_architectures/output/shared_base_full_context/chains/alpha16/seq_000003.npz",
+        "sha256": "dc1386cbd9292f7b31f6ff0b10a7b927480790950f960c212636a23552b987c9"
+      },
+      "reference3:alpha16": {
+        "path": "/Users/ruediger/Projects/layered_architectures/output/shared_base_full_context/refs/alpha16/seq_000003.json",
+        "sha256": "50b53bc158656bd62fabdd0d2abc49234a48b3d10f58a07336393ca9a00bf670"
+      },
+      "reference3:alpha16:moments": {
+        "path": "/Users/ruediger/Projects/layered_architectures/output/shared_base_full_context/refs/alpha16/seq_000003.npz",
+        "sha256": "a04ddb23ad01ab4aea4827edf549e46e4bcbfa9769eb0adaf2651911bfcebad7"
+      },
+      "prior_audit:reference3:alpha32": {
+        "path": "/Users/ruediger/Projects/layered_architectures/output/shared_base_full_context/audits/snapshot_20260914T215004Z_continued/seq_000003_alpha16_vs32.json",
+        "sha256": "1dca4023c3524e06e9be64823f8bfee6404f338b4e77cd0f704b2d4de7b65528"
+      },
+      "prior_raw_chain:reference3:alpha32": {
+        "path": "/Users/ruediger/Projects/layered_architectures/output/shared_base_full_context/chains/alpha32/seq_000003.npz",
+        "sha256": "0c893dace24679ba61c3a4028e6640828dcd48c1c14d96ea12ddfdc641c3b27d"
+      },
+      "reference3:alpha32": {
+        "path": "/Users/ruediger/Projects/layered_architectures/output/shared_base_full_context/refs/alpha32/seq_000003.json",
+        "sha256": "7ffb8260e8c9d9c2c8e012eeaf2188d11cd74ee4b28f18588e5f79682ef72507"
+      },
+      "reference3:alpha32:moments": {
+        "path": "/Users/ruediger/Projects/layered_architectures/output/shared_base_full_context/refs/alpha32/seq_000003.npz",
+        "sha256": "569fd2dd078b3042b1f25f67b7b3d0ad0ad7759dbf0966f5109b7eb1b2a22e4a"
+      }
+    },
+    "driver_sha256": "eb68d5347602ff3e4328a5aa5748c1c121c69b8229f8d41fe361a6fdb539aa98",
+    "raw_receipt_modes": {
+      "reference3:alpha16": "reused bound raw receipt",
+      "reference3:alpha32": "reused bound raw receipt"
+    }
+  },
+  "limitation": "Selected-prefix comparison only; unresolved source draws cannot be dropped."
+}

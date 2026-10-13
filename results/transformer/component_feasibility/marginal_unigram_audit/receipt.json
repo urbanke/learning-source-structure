@@ -1,0 +1,19 @@
+{
+  "schema": "disabled-marginal-audit-receipt-v1",
+  "passed": true,
+  "spec_id": "74b73007cac6a28764cbdc0348e4692c1c250bf5040fa624a13b061a6dda1d24",
+  "script": {
+    "path": "code/scripts/copier_deleted_marginal_audit.py",
+    "sha256": "9b3024b08b60d0c359506ca8c2712e06cbd54df40db304320a352e4b7ba916ff"
+  },
+  "n_sequences": 1024,
+  "positions": [
+    64,
+    256,
+    1024
+  ],
+  "artifacts": {
+    "summary.json": "b7106b9842fd2692e44890b324dc541f1109f62335f68a5feb9f7f10d1758670",
+    "summary.tsv": "3d6b8de20d3f2b895679c6e5b83f97795ec2e0c602da75bc5f833789892120cc"
+  }
+}

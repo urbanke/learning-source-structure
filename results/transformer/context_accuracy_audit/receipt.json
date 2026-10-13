@@ -1,0 +1,64 @@
+{
+  "schema": "context-accuracy-audit-receipt-v1",
+  "passed": true,
+  "script_sha256": "4cc4ee9d7d6bfcfac7f886ee80c489226929807a75116a9bf10bc7cc1f96ef3e",
+  "inputs": {
+    "results/transformer/coins_rechecked/summary.json": "3db4b9ec5763d4657ab2436ba6bf43af625db31e06bd66e8fcafe82935d25941",
+    "results/transformer/refs_fam/binary_twopoint.npz": "2a9f0f2b5d15c582739d3f02519b205f4ba0e809312436194dd0bf80ddaba8fb",
+    "results/transformer/eval/bin_twopoint/binary_twopoint_step20000.npz": "84d9229a5e91f7bcaf700c3ebff0530146bb3217fe070f17841d77467a0bf867",
+    "results/transformer/refs_fam/binary_uniform.npz": "32e3dcc7cc45b4a777971b24bfe897465f946b242cb2a18063e80c113cb4e5b4",
+    "results/transformer/eval/bin_uniform/binary_uniform_step20000.npz": "ca20f1ae1e0f1ff72e9137121c473bf018652a2983bbbf598a949fa11db34bcd",
+    "output/shared_depth/full_prior_final_2026-09-14/product_8x8/summary.json": "cbd6f5b58ac74f888d4cbc61404b7d8cd7779e685a844c0941a24209ab93fc4c",
+    "results/transformer/shared_depth/summary.json": "ac9ecad3eaa1ca92e0b8eb588a283f54e1a6782e061136f39008e4de4fedfbcd",
+    "code/transformer/source.py": "d1bb83004e3654cb3f84f6083437cae2b6d71fa19a33b06d26d2455ac440dab4",
+    "code/transformer/families.py": "24d7ab304d9de7133e38ec8ffe2422d2de38b9e3374670117807eab61d606e00",
+    "results/transformer/runs/prod_8x8/model_100000.pt": "29cac698253475a539a0b1bb76a47436a6eee0b0ab3d8c651a61bfe239b9b271",
+    "output/copier_time/run_2026-09-15/protocol.json": "5a5b82a2830ccf7de372a6fbde0bc6f780ac297b1143c6c46837d216a75f597d",
+    "results/transformer/runs/lsa_a0_d64/model_100000.pt": "6b8752b882d1be1eb51278ca0f5b58eccc8048b3fcf552467f9da6438153d53c",
+    "results/transformer/runs/lsa_a0_d64/config.json": "d39ad1d48077a593fbd2e125ed460fa026267dd2a400b6774888406b90640b05",
+    "results/transformer/copier_time/numerical_validation.json": "e318c59421331ccd44daeeec90db18ea00ed7676528f5c66287a13d33d44f633",
+    "results/transformer/shared_base_full_context/pilot_2026-09-15.json": "58c6194224c41823e84219c80d87208f1f03a81ad9049c8ad05fc7ec6e738018",
+    "results/transformer/shared_base_full_context/pilot_status_2026-09-15.json": "419b54a792d7ec599765f811fb475f0d3b80f718a0c052cc81f16a9e4c954123"
+  },
+  "source_cohorts": {
+    "product_8x8": {
+      "directory": "output/shared_depth/full_prior_final_2026-09-14/product_8x8",
+      "n_sequences": 128,
+      "raw_record_files_sha256": "237f8dffe6fff986e2c1079a27bcf1b39a5d3744259d64ba2df0b73fe8b4cc05",
+      "cohort_digest_rule": "concatenated part/filename:raw-file-SHA256, data/references/model per sequence in order",
+      "full_tokens_depths_and_permutations_replayed": 128,
+      "separate_component_cohort_not_used": {
+        "directory": "output/product_component_evidence/run_2026-09-15",
+        "requested_sequences": 1024,
+        "saved_files_present": 341
+      }
+    },
+    "uniform_base_64": {
+      "directory": "output/copier_time/run_2026-09-15",
+      "n_sequences": 1024,
+      "consumed_arrays_sha256": "20d9690b254b0c7a943da95a072cfd0fe6d34f5689c100f04ce7c39f7df22d60",
+      "array_hash_rule": "dtype.str, JSON shape, contiguous bytes",
+      "cohort_digest_rule": "concatenated canonical JSON(index,spec_id,consumed array hashes) in sequence order"
+    }
+  },
+  "maximum_check_errors": {
+    "source_normalization": 8.881784197001252e-16,
+    "predictor_normalization": 3.0123893290934234e-07,
+    "paired_regret_difference_identity_bits": 3.778227730677486e-15,
+    "product_relabelled_source_law_identity": 0.0,
+    "product_prior_validated_predictive_kl_mean_bits": 2.2551405187698492e-17,
+    "saved_uniform_oracle_regret_identity_bits": 3.552713678800501e-15
+  },
+  "checkpoint_inference": false,
+  "training": false,
+  "new_source_draws": false,
+  "source_seed_replay": "Original saved coin and product draws are reconstructed and all tokens checked exactly.",
+  "reference_computation": "Closed-form coin posterior only; saved LSA Bayesian predictions reused.",
+  "reference_validation_scope": "Existing numerical grid checks are inherited; this consumer checks hashes, normalization and metric identities, not a new posterior convergence study.",
+  "outputs": {
+    "summary.json": "2acbf7de7a8927c149e1fcaa7095e190c7c224fbfe20535c4f72a7a77866f78c",
+    "next_token_regret.pdf": "fb8d7c200f084df18a548ae15d67bd390322d631e37f14e1ec8f2e2648042cdd",
+    "next_token_regret.png": "13863a82ed35eb3a35887aa2abfe6f0d842084e1f26c55fafd5d632fe9ed4c69",
+    "summary.tsv": "70c58333a1caf84e411ec59ace7165b734c92d44328853ab030663f80c516376"
+  }
+}

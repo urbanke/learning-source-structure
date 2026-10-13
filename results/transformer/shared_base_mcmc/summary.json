@@ -1,0 +1,1561 @@
+{
+  "schema": "shared_base_mcmc_summary_v1",
+  "passed": true,
+  "validation": {
+    "validation.json": {
+      "cases": 4,
+      "checks": 36,
+      "elapsed_seconds": 12.705365374917164
+    },
+    "d64_control.json": {
+      "cases": 2,
+      "checks": 25,
+      "elapsed_seconds": 49.19096741708927
+    }
+  },
+  "prefixes": [
+    {
+      "prefix_length": 32,
+      "alpha16": {
+        "prefix_length": 32,
+        "alpha_order": 16,
+        "max_rhat": 1.0072791800276377,
+        "min_probability_ess": 867.4603214321367,
+        "max_probability_mcse": 0.0007086742774688419,
+        "elapsed_seconds": 23.138377790921368,
+        "max_raw_probability_sum_error": 1.1073253425308849e-11,
+        "max_between_chain_se": 0.0005240325638837323,
+        "mean_reconstruction_error": 1.1102230246251565e-15,
+        "max_grid_error_bits": 3.89536662863894e-13,
+        "max_grid_probability_error": 7.771561172376096e-15,
+        "max_grid_normalization_error": 3.767652856367931e-12,
+        "budget": {
+          "chains": 4,
+          "burn": 8192,
+          "draws": 8192,
+          "thin": 4,
+          "seed": 20260919
+        },
+        "observed_labels": 23
+      },
+      "alpha32": {
+        "prefix_length": 32,
+        "alpha_order": 32,
+        "max_rhat": 1.0063437571388405,
+        "min_probability_ess": 778.6773407372561,
+        "max_probability_mcse": 0.0006972249666094693,
+        "elapsed_seconds": 29.81349783297628,
+        "max_raw_probability_sum_error": 1.1096012997313665e-11,
+        "max_between_chain_se": 0.0005221811649686078,
+        "mean_reconstruction_error": 2.6645352591003757e-15,
+        "max_grid_error_bits": 3.690347332394785e-13,
+        "max_grid_probability_error": 8.881784197001252e-15,
+        "max_grid_normalization_error": 9.5732310967378e-12,
+        "budget": {
+          "chains": 4,
+          "burn": 8192,
+          "draws": 8192,
+          "thin": 4,
+          "seed": 20260920
+        },
+        "observed_labels": 23
+      },
+      "max_absolute_probability_difference": 0.0015576128839702719,
+      "max_combined_mcse": 0.000994153854093802,
+      "max_comparison_tolerance": 0.00517076927046901,
+      "probability_total_variation": 0.001661692454876812,
+      "kl_alpha16_to_alpha32_bits": 1.8870274053665002e-05,
+      "generated_source": {
+        "seed": 20260914,
+        "parameters": {
+          "alpha": 0.7076683413817162,
+          "ls": 8,
+          "perm": [
+            55,
+            11,
+            31,
+            37,
+            12,
+            42,
+            49,
+            38,
+            47,
+            56,
+            17,
+            50,
+            44,
+            60,
+            34,
+            24,
+            4,
+            29,
+            39,
+            53,
+            33,
+            30,
+            14,
+            46,
+            43,
+            21,
+            15,
+            18,
+            57,
+            7,
+            59,
+            32,
+            26,
+            35,
+            13,
+            58,
+            16,
+            1,
+            6,
+            0,
+            10,
+            25,
+            40,
+            62,
+            22,
+            9,
+            41,
+            23,
+            36,
+            8,
+            27,
+            54,
+            52,
+            5,
+            19,
+            3,
+            20,
+            51,
+            63,
+            48,
+            2,
+            28,
+            45,
+            61
+          ]
+        },
+        "note": "Recorded only for reproducibility; never passed to the predictor."
+      }
+    },
+    {
+      "prefix_length": 128,
+      "alpha16": {
+        "prefix_length": 128,
+        "alpha_order": 16,
+        "max_rhat": 1.0055599142193605,
+        "min_probability_ess": 504.2168232687983,
+        "max_probability_mcse": 0.000268560519681979,
+        "elapsed_seconds": 253.60368604201358,
+        "max_raw_probability_sum_error": 5.526024082769254e-12,
+        "max_between_chain_se": 0.000268560519681979,
+        "mean_reconstruction_error": 1.1657341758564144e-15,
+        "max_grid_error_bits": 4.100385924883095e-13,
+        "max_grid_probability_error": 1.504352198367087e-14,
+        "max_grid_normalization_error": 4.393707619954057e-12,
+        "budget": {
+          "chains": 4,
+          "burn": 8192,
+          "draws": 16384,
+          "thin": 4,
+          "seed": 20260921
+        },
+        "observed_labels": 41
+      },
+      "alpha32": {
+        "prefix_length": 128,
+        "alpha_order": 32,
+        "max_rhat": 1.0169029504496712,
+        "min_probability_ess": 254.6615977858619,
+        "max_probability_mcse": 0.00041871149757234546,
+        "elapsed_seconds": 286.39562212501187,
+        "max_raw_probability_sum_error": 5.478062448105447e-12,
+        "max_between_chain_se": 0.00041871149757234546,
+        "mean_reconstruction_error": 7.771561172376096e-16,
+        "max_grid_error_bits": 4.100385924883095e-13,
+        "max_grid_probability_error": 1.8207657603852567e-14,
+        "max_grid_normalization_error": 3.8139491564948e-12,
+        "budget": {
+          "chains": 4,
+          "burn": 8192,
+          "draws": 8192,
+          "thin": 4,
+          "seed": 20260920
+        },
+        "observed_labels": 41
+      },
+      "max_absolute_probability_difference": 0.0004048553742977759,
+      "max_combined_mcse": 0.0004499053339303397,
+      "max_comparison_tolerance": 0.0024495266696516987,
+      "probability_total_variation": 0.0016868562919059031,
+      "kl_alpha16_to_alpha32_bits": 1.8482843184475803e-05,
+      "generated_source": {
+        "seed": 20260914,
+        "parameters": {
+          "alpha": 0.7076683413817162,
+          "ls": 8,
+          "perm": [
+            3,
+            1,
+            9,
+            10,
+            55,
+            58,
+            11,
+            4,
+            52,
+            36,
+            17,
+            21,
+            7,
+            25,
+            35,
+            32,
+            46,
+            30,
+            39,
+            16,
+            19,
+            27,
+            60,
+            54,
+            37,
+            0,
+            31,
+            48,
+            33,
+            28,
+            63,
+            5,
+            62,
+            12,
+            56,
+            18,
+            13,
+            42,
+            38,
+            51,
+            15,
+            23,
+            53,
+            41,
+            43,
+            22,
+            26,
+            57,
+            14,
+            44,
+            20,
+            45,
+            29,
+            2,
+            49,
+            40,
+            59,
+            8,
+            50,
+            6,
+            47,
+            24,
+            34,
+            61
+          ]
+        },
+        "note": "Recorded only for reproducibility; never passed to the predictor."
+      }
+    }
+  ],
+  "checks": [
+    {
+      "name": "validation.json:read",
+      "passed": true
+    },
+    {
+      "name": "validation.json:schema",
+      "passed": true
+    },
+    {
+      "name": "validation.json:required_code_hashes",
+      "passed": true
+    },
+    {
+      "name": "validation.json:code:ranked_lsa.py",
+      "passed": true
+    },
+    {
+      "name": "validation.json:code:shared_base_mcmc.py",
+      "passed": true
+    },
+    {
+      "name": "validation.json:code:shared_base.py",
+      "passed": true
+    },
+    {
+      "name": "validation.json:code:weighted_lsa.py",
+      "passed": true
+    },
+    {
+      "name": "validation.json:code:lsa_seq.py",
+      "passed": true
+    },
+    {
+      "name": "validation.json:code:phi_source.py",
+      "passed": true
+    },
+    {
+      "name": "validation.json:code:source.py",
+      "passed": true
+    },
+    {
+      "name": "validation.json:code:validate_shared_base_mcmc.py",
+      "passed": true
+    },
+    {
+      "name": "validation.json:store:manifest.json",
+      "passed": true
+    },
+    {
+      "name": "validation.json:store:anchors.json",
+      "passed": true
+    },
+    {
+      "name": "validation.json:backend:universal_tables.py",
+      "passed": true
+    },
+    {
+      "name": "validation.json:backend:production_coding.py",
+      "passed": true
+    },
+    {
+      "name": "validation.json:case_count",
+      "passed": true
+    },
+    {
+      "name": "validation.json:reported_pass",
+      "passed": true
+    },
+    {
+      "name": "validation.json:case:0:pass",
+      "passed": true
+    },
+    {
+      "name": "validation.json:case:0:nonempty_checks",
+      "passed": true
+    },
+    {
+      "name": "validation.json:case:0:all_checks",
+      "passed": true
+    },
+    {
+      "name": "validation.json:case:1:pass",
+      "passed": true
+    },
+    {
+      "name": "validation.json:case:1:nonempty_checks",
+      "passed": true
+    },
+    {
+      "name": "validation.json:case:1:all_checks",
+      "passed": true
+    },
+    {
+      "name": "validation.json:case:2:pass",
+      "passed": true
+    },
+    {
+      "name": "validation.json:case:2:nonempty_checks",
+      "passed": true
+    },
+    {
+      "name": "validation.json:case:2:all_checks",
+      "passed": true
+    },
+    {
+      "name": "validation.json:case:3:pass",
+      "passed": true
+    },
+    {
+      "name": "validation.json:case:3:nonempty_checks",
+      "passed": true
+    },
+    {
+      "name": "validation.json:case:3:all_checks",
+      "passed": true
+    },
+    {
+      "name": "d64_control.json:read",
+      "passed": true
+    },
+    {
+      "name": "d64_control.json:schema",
+      "passed": true
+    },
+    {
+      "name": "d64_control.json:required_code_hashes",
+      "passed": true
+    },
+    {
+      "name": "d64_control.json:code:ranked_lsa.py",
+      "passed": true
+    },
+    {
+      "name": "d64_control.json:code:shared_base_mcmc.py",
+      "passed": true
+    },
+    {
+      "name": "d64_control.json:code:weighted_lsa.py",
+      "passed": true
+    },
+    {
+      "name": "d64_control.json:code:lsa_seq.py",
+      "passed": true
+    },
+    {
+      "name": "d64_control.json:code:phi_source.py",
+      "passed": true
+    },
+    {
+      "name": "d64_control.json:code:validate_shared_base_mcmc.py",
+      "passed": true
+    },
+    {
+      "name": "d64_control.json:code:validate_shared_base_mcmc_control.py",
+      "passed": true
+    },
+    {
+      "name": "d64_control.json:store:manifest.json",
+      "passed": true
+    },
+    {
+      "name": "d64_control.json:store:anchors.json",
+      "passed": true
+    },
+    {
+      "name": "d64_control.json:backend:universal_tables.py",
+      "passed": true
+    },
+    {
+      "name": "d64_control.json:backend:production_coding.py",
+      "passed": true
+    },
+    {
+      "name": "d64_control.json:case_count",
+      "passed": true
+    },
+    {
+      "name": "d64_control.json:reported_pass",
+      "passed": true
+    },
+    {
+      "name": "d64_control.json:case:0:pass",
+      "passed": true
+    },
+    {
+      "name": "d64_control.json:case:0:nonempty_checks",
+      "passed": true
+    },
+    {
+      "name": "d64_control.json:case:0:all_checks",
+      "passed": true
+    },
+    {
+      "name": "d64_control.json:case:1:pass",
+      "passed": true
+    },
+    {
+      "name": "d64_control.json:case:1:nonempty_checks",
+      "passed": true
+    },
+    {
+      "name": "d64_control.json:case:1:all_checks",
+      "passed": true
+    },
+    {
+      "name": "d64_n32_alpha16:read",
+      "passed": true
+    },
+    {
+      "name": "d64_n32_alpha16:schema",
+      "passed": true
+    },
+    {
+      "name": "d64_n32_alpha16:alphabet",
+      "passed": true
+    },
+    {
+      "name": "d64_n32_alpha16:prefix_length",
+      "passed": true
+    },
+    {
+      "name": "d64_n32_alpha16:tokens",
+      "passed": true
+    },
+    {
+      "name": "d64_n32_alpha16:source_prior",
+      "passed": true
+    },
+    {
+      "name": "d64_n32_alpha16:alpha_order",
+      "passed": true
+    },
+    {
+      "name": "d64_n32_alpha16:alpha_rule",
+      "passed": true
+    },
+    {
+      "name": "d64_n32_alpha16:row_grid",
+      "passed": true
+    },
+    {
+      "name": "d64_n32_alpha16:required_code_hashes",
+      "passed": true
+    },
+    {
+      "name": "d64_n32_alpha16:code:ranked_lsa.py",
+      "passed": true
+    },
+    {
+      "name": "d64_n32_alpha16:code:weighted_lsa.py",
+      "passed": true
+    },
+    {
+      "name": "d64_n32_alpha16:code:phi_source.py",
+      "passed": true
+    },
+    {
+      "name": "d64_n32_alpha16:code:lsa_seq.py",
+      "passed": true
+    },
+    {
+      "name": "d64_n32_alpha16:code:shared_base_mcmc.py",
+      "passed": true
+    },
+    {
+      "name": "d64_n32_alpha16:code:refs_shared_base_mcmc.py",
+      "passed": true
+    },
+    {
+      "name": "d64_n32_alpha16:code:source.py",
+      "passed": true
+    },
+    {
+      "name": "d64_n32_alpha16:code:validate_shared_base_mcmc.py",
+      "passed": true
+    },
+    {
+      "name": "d64_n32_alpha16:store:manifest.json",
+      "passed": true
+    },
+    {
+      "name": "d64_n32_alpha16:store:anchors.json",
+      "passed": true
+    },
+    {
+      "name": "d64_n32_alpha16:backend:universal_tables.py",
+      "passed": true
+    },
+    {
+      "name": "d64_n32_alpha16:backend:production_coding.py",
+      "passed": true
+    },
+    {
+      "name": "d64_n32_alpha16:probability_sum",
+      "passed": true,
+      "absolute_error": 3.241851231905457e-14,
+      "tolerance": 1e-07
+    },
+    {
+      "name": "d64_n32_alpha16:mcse_nonnegative",
+      "passed": true
+    },
+    {
+      "name": "d64_n32_alpha16:posterior_depth",
+      "passed": true
+    },
+    {
+      "name": "d64_n32_alpha16:posterior_alpha",
+      "passed": true
+    },
+    {
+      "name": "d64_n32_alpha16:split_rhat_below_1_05",
+      "passed": true
+    },
+    {
+      "name": "d64_n32_alpha16:probability_ess_at_least_200",
+      "passed": true
+    },
+    {
+      "name": "d64_n32_alpha16:maximum_probability_mcse_at_most_0_005",
+      "passed": true
+    },
+    {
+      "name": "d64_n32_alpha16:stored_threshold_flags",
+      "passed": true
+    },
+    {
+      "name": "d64_n32_alpha16:raw_conditional_probabilities",
+      "passed": true,
+      "absolute_error": 1.1073253425308849e-11,
+      "tolerance": 1e-07
+    },
+    {
+      "name": "d64_n32_alpha16:reported_probability_sum",
+      "passed": true
+    },
+    {
+      "name": "d64_n32_alpha16:mean_from_chain_means",
+      "passed": true,
+      "max_absolute_error": 1.1102230246251565e-15,
+      "tolerance": 1e-12
+    },
+    {
+      "name": "d64_n32_alpha16:mcse_covers_between_chain_se",
+      "passed": true,
+      "max_between_chain_se": 0.0005240325638837323,
+      "numerical_allowance": 1e-12
+    },
+    {
+      "name": "d64_n32_alpha16:grid_checks_present",
+      "passed": true
+    },
+    {
+      "name": "d64_n32_alpha16:grid_check:0",
+      "passed": true
+    },
+    {
+      "name": "d64_n32_alpha16:stored_grid_flag:0",
+      "passed": true
+    },
+    {
+      "name": "d64_n32_alpha16:grid_check:1",
+      "passed": true
+    },
+    {
+      "name": "d64_n32_alpha16:stored_grid_flag:1",
+      "passed": true
+    },
+    {
+      "name": "d64_n32_alpha16:grid_check:2",
+      "passed": true
+    },
+    {
+      "name": "d64_n32_alpha16:stored_grid_flag:2",
+      "passed": true
+    },
+    {
+      "name": "d64_n32_alpha16:grid_check:3",
+      "passed": true
+    },
+    {
+      "name": "d64_n32_alpha16:stored_grid_flag:3",
+      "passed": true
+    },
+    {
+      "name": "d64_n32_alpha32:read",
+      "passed": true
+    },
+    {
+      "name": "d64_n32_alpha32:schema",
+      "passed": true
+    },
+    {
+      "name": "d64_n32_alpha32:alphabet",
+      "passed": true
+    },
+    {
+      "name": "d64_n32_alpha32:prefix_length",
+      "passed": true
+    },
+    {
+      "name": "d64_n32_alpha32:tokens",
+      "passed": true
+    },
+    {
+      "name": "d64_n32_alpha32:source_prior",
+      "passed": true
+    },
+    {
+      "name": "d64_n32_alpha32:alpha_order",
+      "passed": true
+    },
+    {
+      "name": "d64_n32_alpha32:alpha_rule",
+      "passed": true
+    },
+    {
+      "name": "d64_n32_alpha32:row_grid",
+      "passed": true
+    },
+    {
+      "name": "d64_n32_alpha32:required_code_hashes",
+      "passed": true
+    },
+    {
+      "name": "d64_n32_alpha32:code:ranked_lsa.py",
+      "passed": true
+    },
+    {
+      "name": "d64_n32_alpha32:code:weighted_lsa.py",
+      "passed": true
+    },
+    {
+      "name": "d64_n32_alpha32:code:phi_source.py",
+      "passed": true
+    },
+    {
+      "name": "d64_n32_alpha32:code:lsa_seq.py",
+      "passed": true
+    },
+    {
+      "name": "d64_n32_alpha32:code:shared_base_mcmc.py",
+      "passed": true
+    },
+    {
+      "name": "d64_n32_alpha32:code:refs_shared_base_mcmc.py",
+      "passed": true
+    },
+    {
+      "name": "d64_n32_alpha32:code:source.py",
+      "passed": true
+    },
+    {
+      "name": "d64_n32_alpha32:code:validate_shared_base_mcmc.py",
+      "passed": true
+    },
+    {
+      "name": "d64_n32_alpha32:store:manifest.json",
+      "passed": true
+    },
+    {
+      "name": "d64_n32_alpha32:store:anchors.json",
+      "passed": true
+    },
+    {
+      "name": "d64_n32_alpha32:backend:universal_tables.py",
+      "passed": true
+    },
+    {
+      "name": "d64_n32_alpha32:backend:production_coding.py",
+      "passed": true
+    },
+    {
+      "name": "d64_n32_alpha32:probability_sum",
+      "passed": true,
+      "absolute_error": 2.3203661214665772e-14,
+      "tolerance": 1e-07
+    },
+    {
+      "name": "d64_n32_alpha32:mcse_nonnegative",
+      "passed": true
+    },
+    {
+      "name": "d64_n32_alpha32:posterior_depth",
+      "passed": true
+    },
+    {
+      "name": "d64_n32_alpha32:posterior_alpha",
+      "passed": true
+    },
+    {
+      "name": "d64_n32_alpha32:split_rhat_below_1_05",
+      "passed": true
+    },
+    {
+      "name": "d64_n32_alpha32:probability_ess_at_least_200",
+      "passed": true
+    },
+    {
+      "name": "d64_n32_alpha32:maximum_probability_mcse_at_most_0_005",
+      "passed": true
+    },
+    {
+      "name": "d64_n32_alpha32:stored_threshold_flags",
+      "passed": true
+    },
+    {
+      "name": "d64_n32_alpha32:raw_conditional_probabilities",
+      "passed": true,
+      "absolute_error": 1.1096012997313665e-11,
+      "tolerance": 1e-07
+    },
+    {
+      "name": "d64_n32_alpha32:reported_probability_sum",
+      "passed": true
+    },
+    {
+      "name": "d64_n32_alpha32:mean_from_chain_means",
+      "passed": true,
+      "max_absolute_error": 2.6645352591003757e-15,
+      "tolerance": 1e-12
+    },
+    {
+      "name": "d64_n32_alpha32:mcse_covers_between_chain_se",
+      "passed": true,
+      "max_between_chain_se": 0.0005221811649686078,
+      "numerical_allowance": 1e-12
+    },
+    {
+      "name": "d64_n32_alpha32:grid_checks_present",
+      "passed": true
+    },
+    {
+      "name": "d64_n32_alpha32:grid_check:0",
+      "passed": true
+    },
+    {
+      "name": "d64_n32_alpha32:stored_grid_flag:0",
+      "passed": true
+    },
+    {
+      "name": "d64_n32_alpha32:grid_check:1",
+      "passed": true
+    },
+    {
+      "name": "d64_n32_alpha32:stored_grid_flag:1",
+      "passed": true
+    },
+    {
+      "name": "d64_n32_alpha32:grid_check:2",
+      "passed": true
+    },
+    {
+      "name": "d64_n32_alpha32:stored_grid_flag:2",
+      "passed": true
+    },
+    {
+      "name": "d64_n32_alpha32:grid_check:3",
+      "passed": true
+    },
+    {
+      "name": "d64_n32_alpha32:stored_grid_flag:3",
+      "passed": true
+    },
+    {
+      "name": "d64_n32_pair:identical_tokens",
+      "passed": true
+    },
+    {
+      "name": "d64_n32_pair:identical_source_prior",
+      "passed": true
+    },
+    {
+      "name": "d64_n32_pair:identical_generated_source",
+      "passed": true
+    },
+    {
+      "name": "d64_n32_pair:identical_backend",
+      "passed": true
+    },
+    {
+      "name": "d64_n32_pair:independent_sampling_seeds",
+      "passed": true
+    },
+    {
+      "name": "d64_n32_pair:refinement_absolute_cap",
+      "passed": true,
+      "max_absolute_error": 0.0015576128839702719,
+      "tolerance": 0.01
+    },
+    {
+      "name": "d64_n32_pair:refinement_mcse",
+      "passed": true,
+      "absolute_error": [
+        9.552499266198824e-05,
+        2.1491966453684227e-05,
+        6.944084993322714e-05,
+        2.1491966453684227e-05,
+        2.1491966453684227e-05,
+        2.1491966453684227e-05,
+        2.1491966453684227e-05,
+        2.1491966453684227e-05,
+        4.9109096873051986e-05,
+        2.1491966453684227e-05,
+        2.1491966453684227e-05,
+        6.860743173750083e-05,
+        1.105447086684544e-05,
+        2.1491966453684227e-05,
+        1.9951930845878065e-05,
+        2.1491966453684227e-05,
+        4.847568522627641e-05,
+        2.1491966453684227e-05,
+        2.1491966453684227e-05,
+        2.1491966453684227e-05,
+        2.1491966453684227e-05,
+        2.1491966453684227e-05,
+        2.1491966453684227e-05,
+        2.1491966453684227e-05,
+        6.852797081395925e-05,
+        1.0914257987817196e-05,
+        2.1491966453684227e-05,
+        2.1491966453684227e-05,
+        2.4499980416565082e-05,
+        2.1491966453684227e-05,
+        2.1491966453684227e-05,
+        2.1491966453684227e-05,
+        2.1491966453684227e-05,
+        2.1491966453684227e-05,
+        4.115455302755849e-06,
+        2.1491966453684227e-05,
+        2.1491966453684227e-05,
+        1.8034748525008575e-05,
+        7.938168975441537e-05,
+        2.1491966453684227e-05,
+        2.1491966453684227e-05,
+        2.1491966453684227e-05,
+        2.1491966453684227e-05,
+        2.1491966453684227e-05,
+        2.1491966453684227e-05,
+        2.1491966453684227e-05,
+        2.1491966453684227e-05,
+        2.1491966453684227e-05,
+        2.1491966453684227e-05,
+        2.4566953460538558e-05,
+        3.307705550386914e-05,
+        5.64855058419818e-05,
+        7.42235338319487e-05,
+        1.7553372354236e-05,
+        2.1491966453684227e-05,
+        4.492081646746693e-06,
+        6.391325945926188e-07,
+        2.1491966453684227e-05,
+        3.3734925823825264e-05,
+        7.21902791792706e-05,
+        2.1491966453684227e-05,
+        0.0015576128839702719,
+        2.1491966453684227e-05,
+        2.1491966453684227e-05
+      ],
+      "tolerance": [
+        0.0005276543260139749,
+        0.00028923376351405267,
+        0.0005003998350022894,
+        0.00028923376351405267,
+        0.00028923376351405267,
+        0.00028923376351405267,
+        0.00028923376351405267,
+        0.00028923376351405267,
+        0.0004432172446956989,
+        0.00028923376351405267,
+        0.00028923376351405267,
+        0.0004703381736070191,
+        0.0007262654830762884,
+        0.00028923376351405267,
+        0.0004503380901558411,
+        0.00028923376351405267,
+        0.0004474139298675093,
+        0.00028923376351405267,
+        0.00028923376351405267,
+        0.00028923376351405267,
+        0.00028923376351405267,
+        0.00028923376351405267,
+        0.00028923376351405267,
+        0.00028923376351405267,
+        0.0004537128877287653,
+        0.0004853517490134789,
+        0.00028923376351405267,
+        0.00028923376351405267,
+        0.0004389663145919911,
+        0.00028923376351405267,
+        0.00028923376351405267,
+        0.00028923376351405267,
+        0.00028923376351405267,
+        0.00028923376351405267,
+        0.0004378792403915857,
+        0.00028923376351405267,
+        0.00028923376351405267,
+        0.0004992053607116455,
+        0.0004589458268422545,
+        0.00028923376351405267,
+        0.00028923376351405267,
+        0.00028923376351405267,
+        0.00028923376351405267,
+        0.00028923376351405267,
+        0.00028923376351405267,
+        0.00028923376351405267,
+        0.00028923376351405267,
+        0.00028923376351405267,
+        0.00028923376351405267,
+        0.0004841055456609864,
+        0.0004553608690228535,
+        0.0006814079899922697,
+        0.0005729461597832752,
+        0.0004773208795290987,
+        0.00028923376351405267,
+        0.0007659476054357871,
+        0.00045435943782816727,
+        0.00028923376351405267,
+        0.00044627875739103415,
+        0.0005929757039968565,
+        0.00028923376351405267,
+        0.00517076927046901,
+        0.00028923376351405267,
+        0.00028923376351405267
+      ]
+    },
+    {
+      "name": "d64_n128_alpha16:read",
+      "passed": true
+    },
+    {
+      "name": "d64_n128_alpha16:schema",
+      "passed": true
+    },
+    {
+      "name": "d64_n128_alpha16:alphabet",
+      "passed": true
+    },
+    {
+      "name": "d64_n128_alpha16:prefix_length",
+      "passed": true
+    },
+    {
+      "name": "d64_n128_alpha16:tokens",
+      "passed": true
+    },
+    {
+      "name": "d64_n128_alpha16:source_prior",
+      "passed": true
+    },
+    {
+      "name": "d64_n128_alpha16:alpha_order",
+      "passed": true
+    },
+    {
+      "name": "d64_n128_alpha16:alpha_rule",
+      "passed": true
+    },
+    {
+      "name": "d64_n128_alpha16:row_grid",
+      "passed": true
+    },
+    {
+      "name": "d64_n128_alpha16:required_code_hashes",
+      "passed": true
+    },
+    {
+      "name": "d64_n128_alpha16:code:ranked_lsa.py",
+      "passed": true
+    },
+    {
+      "name": "d64_n128_alpha16:code:weighted_lsa.py",
+      "passed": true
+    },
+    {
+      "name": "d64_n128_alpha16:code:phi_source.py",
+      "passed": true
+    },
+    {
+      "name": "d64_n128_alpha16:code:lsa_seq.py",
+      "passed": true
+    },
+    {
+      "name": "d64_n128_alpha16:code:shared_base_mcmc.py",
+      "passed": true
+    },
+    {
+      "name": "d64_n128_alpha16:code:refs_shared_base_mcmc.py",
+      "passed": true
+    },
+    {
+      "name": "d64_n128_alpha16:code:source.py",
+      "passed": true
+    },
+    {
+      "name": "d64_n128_alpha16:code:validate_shared_base_mcmc.py",
+      "passed": true
+    },
+    {
+      "name": "d64_n128_alpha16:store:manifest.json",
+      "passed": true
+    },
+    {
+      "name": "d64_n128_alpha16:store:anchors.json",
+      "passed": true
+    },
+    {
+      "name": "d64_n128_alpha16:backend:universal_tables.py",
+      "passed": true
+    },
+    {
+      "name": "d64_n128_alpha16:backend:production_coding.py",
+      "passed": true
+    },
+    {
+      "name": "d64_n128_alpha16:probability_sum",
+      "passed": true,
+      "absolute_error": 6.439293542825908e-15,
+      "tolerance": 1e-07
+    },
+    {
+      "name": "d64_n128_alpha16:mcse_nonnegative",
+      "passed": true
+    },
+    {
+      "name": "d64_n128_alpha16:posterior_depth",
+      "passed": true
+    },
+    {
+      "name": "d64_n128_alpha16:posterior_alpha",
+      "passed": true
+    },
+    {
+      "name": "d64_n128_alpha16:split_rhat_below_1_05",
+      "passed": true
+    },
+    {
+      "name": "d64_n128_alpha16:probability_ess_at_least_200",
+      "passed": true
+    },
+    {
+      "name": "d64_n128_alpha16:maximum_probability_mcse_at_most_0_005",
+      "passed": true
+    },
+    {
+      "name": "d64_n128_alpha16:stored_threshold_flags",
+      "passed": true
+    },
+    {
+      "name": "d64_n128_alpha16:raw_conditional_probabilities",
+      "passed": true,
+      "absolute_error": 5.526024082769254e-12,
+      "tolerance": 1e-07
+    },
+    {
+      "name": "d64_n128_alpha16:reported_probability_sum",
+      "passed": true
+    },
+    {
+      "name": "d64_n128_alpha16:mean_from_chain_means",
+      "passed": true,
+      "max_absolute_error": 1.1657341758564144e-15,
+      "tolerance": 1e-12
+    },
+    {
+      "name": "d64_n128_alpha16:mcse_covers_between_chain_se",
+      "passed": true,
+      "max_between_chain_se": 0.000268560519681979,
+      "numerical_allowance": 1e-12
+    },
+    {
+      "name": "d64_n128_alpha16:grid_checks_present",
+      "passed": true
+    },
+    {
+      "name": "d64_n128_alpha16:grid_check:0",
+      "passed": true
+    },
+    {
+      "name": "d64_n128_alpha16:stored_grid_flag:0",
+      "passed": true
+    },
+    {
+      "name": "d64_n128_alpha16:grid_check:1",
+      "passed": true
+    },
+    {
+      "name": "d64_n128_alpha16:stored_grid_flag:1",
+      "passed": true
+    },
+    {
+      "name": "d64_n128_alpha16:grid_check:2",
+      "passed": true
+    },
+    {
+      "name": "d64_n128_alpha16:stored_grid_flag:2",
+      "passed": true
+    },
+    {
+      "name": "d64_n128_alpha16:grid_check:3",
+      "passed": true
+    },
+    {
+      "name": "d64_n128_alpha16:stored_grid_flag:3",
+      "passed": true
+    },
+    {
+      "name": "d64_n128_alpha32:read",
+      "passed": true
+    },
+    {
+      "name": "d64_n128_alpha32:schema",
+      "passed": true
+    },
+    {
+      "name": "d64_n128_alpha32:alphabet",
+      "passed": true
+    },
+    {
+      "name": "d64_n128_alpha32:prefix_length",
+      "passed": true
+    },
+    {
+      "name": "d64_n128_alpha32:tokens",
+      "passed": true
+    },
+    {
+      "name": "d64_n128_alpha32:source_prior",
+      "passed": true
+    },
+    {
+      "name": "d64_n128_alpha32:alpha_order",
+      "passed": true
+    },
+    {
+      "name": "d64_n128_alpha32:alpha_rule",
+      "passed": true
+    },
+    {
+      "name": "d64_n128_alpha32:row_grid",
+      "passed": true
+    },
+    {
+      "name": "d64_n128_alpha32:required_code_hashes",
+      "passed": true
+    },
+    {
+      "name": "d64_n128_alpha32:code:ranked_lsa.py",
+      "passed": true
+    },
+    {
+      "name": "d64_n128_alpha32:code:weighted_lsa.py",
+      "passed": true
+    },
+    {
+      "name": "d64_n128_alpha32:code:phi_source.py",
+      "passed": true
+    },
+    {
+      "name": "d64_n128_alpha32:code:lsa_seq.py",
+      "passed": true
+    },
+    {
+      "name": "d64_n128_alpha32:code:shared_base_mcmc.py",
+      "passed": true
+    },
+    {
+      "name": "d64_n128_alpha32:code:refs_shared_base_mcmc.py",
+      "passed": true
+    },
+    {
+      "name": "d64_n128_alpha32:code:source.py",
+      "passed": true
+    },
+    {
+      "name": "d64_n128_alpha32:code:validate_shared_base_mcmc.py",
+      "passed": true
+    },
+    {
+      "name": "d64_n128_alpha32:store:manifest.json",
+      "passed": true
+    },
+    {
+      "name": "d64_n128_alpha32:store:anchors.json",
+      "passed": true
+    },
+    {
+      "name": "d64_n128_alpha32:backend:universal_tables.py",
+      "passed": true
+    },
+    {
+      "name": "d64_n128_alpha32:backend:production_coding.py",
+      "passed": true
+    },
+    {
+      "name": "d64_n128_alpha32:probability_sum",
+      "passed": true,
+      "absolute_error": 5.551115123125783e-15,
+      "tolerance": 1e-07
+    },
+    {
+      "name": "d64_n128_alpha32:mcse_nonnegative",
+      "passed": true
+    },
+    {
+      "name": "d64_n128_alpha32:posterior_depth",
+      "passed": true
+    },
+    {
+      "name": "d64_n128_alpha32:posterior_alpha",
+      "passed": true
+    },
+    {
+      "name": "d64_n128_alpha32:split_rhat_below_1_05",
+      "passed": true
+    },
+    {
+      "name": "d64_n128_alpha32:probability_ess_at_least_200",
+      "passed": true
+    },
+    {
+      "name": "d64_n128_alpha32:maximum_probability_mcse_at_most_0_005",
+      "passed": true
+    },
+    {
+      "name": "d64_n128_alpha32:stored_threshold_flags",
+      "passed": true
+    },
+    {
+      "name": "d64_n128_alpha32:raw_conditional_probabilities",
+      "passed": true,
+      "absolute_error": 5.478062448105447e-12,
+      "tolerance": 1e-07
+    },
+    {
+      "name": "d64_n128_alpha32:reported_probability_sum",
+      "passed": true
+    },
+    {
+      "name": "d64_n128_alpha32:mean_from_chain_means",
+      "passed": true,
+      "max_absolute_error": 7.771561172376096e-16,
+      "tolerance": 1e-12
+    },
+    {
+      "name": "d64_n128_alpha32:mcse_covers_between_chain_se",
+      "passed": true,
+      "max_between_chain_se": 0.00041871149757234546,
+      "numerical_allowance": 1e-12
+    },
+    {
+      "name": "d64_n128_alpha32:grid_checks_present",
+      "passed": true
+    },
+    {
+      "name": "d64_n128_alpha32:grid_check:0",
+      "passed": true
+    },
+    {
+      "name": "d64_n128_alpha32:stored_grid_flag:0",
+      "passed": true
+    },
+    {
+      "name": "d64_n128_alpha32:grid_check:1",
+      "passed": true
+    },
+    {
+      "name": "d64_n128_alpha32:stored_grid_flag:1",
+      "passed": true
+    },
+    {
+      "name": "d64_n128_alpha32:grid_check:2",
+      "passed": true
+    },
+    {
+      "name": "d64_n128_alpha32:stored_grid_flag:2",
+      "passed": true
+    },
+    {
+      "name": "d64_n128_alpha32:grid_check:3",
+      "passed": true
+    },
+    {
+      "name": "d64_n128_alpha32:stored_grid_flag:3",
+      "passed": true
+    },
+    {
+      "name": "d64_n128_pair:identical_tokens",
+      "passed": true
+    },
+    {
+      "name": "d64_n128_pair:identical_source_prior",
+      "passed": true
+    },
+    {
+      "name": "d64_n128_pair:identical_generated_source",
+      "passed": true
+    },
+    {
+      "name": "d64_n128_pair:identical_backend",
+      "passed": true
+    },
+    {
+      "name": "d64_n128_pair:independent_sampling_seeds",
+      "passed": true
+    },
+    {
+      "name": "d64_n128_pair:refinement_absolute_cap",
+      "passed": true,
+      "max_absolute_error": 0.0004048553742977759,
+      "tolerance": 0.01
+    },
+    {
+      "name": "d64_n128_pair:refinement_mcse",
+      "passed": true,
+      "absolute_error": [
+        1.4890927133648542e-05,
+        1.3168485919222428e-05,
+        4.7760273962105596e-05,
+        0.00010780656228837754,
+        4.651729555550481e-05,
+        1.397224291205517e-05,
+        2.9853640597030974e-05,
+        1.397224291205517e-05,
+        0.00010790080115653192,
+        0.0004048553742977759,
+        1.5875266229468422e-05,
+        5.61396316120363e-05,
+        6.632213386100361e-05,
+        4.801407649394473e-05,
+        1.397224291205517e-05,
+        1.397224291205517e-05,
+        2.1770786557017384e-05,
+        3.678366518404443e-05,
+        2.246572522321324e-05,
+        1.397224291205517e-05,
+        1.397224291205517e-05,
+        6.256081866893963e-06,
+        5.905322040492683e-05,
+        5.168786381737952e-05,
+        7.930304473741882e-05,
+        1.397224291205517e-05,
+        1.397224291205517e-05,
+        1.397224291205517e-05,
+        1.397224291205517e-05,
+        0.0003120890387161568,
+        0.0003493006127231815,
+        2.4512908324648974e-05,
+        1.3592975914395941e-06,
+        0.0001372830991423074,
+        1.397224291205517e-05,
+        6.567111492325039e-05,
+        0.0003704333574078636,
+        1.397224291205517e-05,
+        7.986612205318488e-05,
+        1.2496222132166689e-05,
+        1.397224291205517e-05,
+        1.408533029346841e-06,
+        1.397224291205517e-05,
+        1.397224291205517e-05,
+        2.7735142328168434e-05,
+        1.397224291205517e-05,
+        3.943039311376205e-05,
+        4.1697599613517086e-05,
+        5.052795553966635e-07,
+        1.397224291205517e-05,
+        1.397224291205517e-05,
+        5.5124842999755216e-05,
+        1.397224291205517e-05,
+        1.397224291205517e-05,
+        3.248232363980974e-05,
+        6.339366994435793e-05,
+        1.397224291205517e-05,
+        1.397224291205517e-05,
+        3.7237082430299426e-05,
+        1.397224291205517e-05,
+        3.147385077811003e-05,
+        2.0783123582777605e-05,
+        4.1710392347246196e-05,
+        6.993213356024531e-05
+      ],
+      "tolerance": [
+        0.0004022554107678436,
+        0.0009413361518066068,
+        0.0004341684006699944,
+        0.0006418094622172063,
+        0.0005960838857014921,
+        0.00026245794285301383,
+        0.0006023597961273637,
+        0.00026245794285301383,
+        0.0004818208842898811,
+        0.0018662649227129198,
+        0.0003865847190375477,
+        0.0003977493873730763,
+        0.00042757825605367226,
+        0.0005421470349701848,
+        0.00026245794285301383,
+        0.00026245794285301383,
+        0.0004325630139278157,
+        0.00046083791860928854,
+        0.0004767088688065963,
+        0.00026245794285301383,
+        0.00026245794285301383,
+        0.00039841366831142353,
+        0.0010196335442048683,
+        0.0004652791022001575,
+        0.0004782698473404072,
+        0.00026245794285301383,
+        0.00026245794285301383,
+        0.00026245794285301383,
+        0.00026245794285301383,
+        0.001598171483141923,
+        0.00182108918937208,
+        0.000386880762420336,
+        0.000728083695892738,
+        0.0012960214598737902,
+        0.00026245794285301383,
+        0.0005294132862223848,
+        0.0024495266696516987,
+        0.00026245794285301383,
+        0.0012151486784951794,
+        0.0004461513332706155,
+        0.00026245794285301383,
+        0.0003987160065558918,
+        0.00026245794285301383,
+        0.00026245794285301383,
+        0.00039312322628972936,
+        0.00026245794285301383,
+        0.0004332339099302555,
+        0.0004605468094674433,
+        0.0004719117167478052,
+        0.00026245794285301383,
+        0.00026245794285301383,
+        0.0003868871242270469,
+        0.00026245794285301383,
+        0.00026245794285301383,
+        0.0004996525112212878,
+        0.0009958904530020286,
+        0.00026245794285301383,
+        0.00026245794285301383,
+        0.0003818471937873483,
+        0.00026245794285301383,
+        0.0006073487137260099,
+        0.000612628727928103,
+        0.00041747627375191584,
+        0.0004385357054705305
+      ]
+    },
+    {
+      "name": "both_prefix_pairs_available",
+      "passed": true
+    }
+  ],
+  "provenance": {
+    "inputs": {
+      "validation.json": {
+        "path": "/Users/ruediger/Projects/layered_architectures/results/transformer/shared_base_mcmc/validation.json",
+        "sha256": "0797157c9ccefa4c10c281220e391df20fae0e8b5cca68ea307a81937a5c8421"
+      },
+      "d64_control.json": {
+        "path": "/Users/ruediger/Projects/layered_architectures/results/transformer/shared_base_mcmc/d64_control.json",
+        "sha256": "e5b62fa7da7c778f1210db1c421825860ba1aeaf3408c7af2dc39f26d2e2a9c7"
+      },
+      "d64_n32_alpha16": {
+        "path": "/Users/ruediger/Projects/layered_architectures/results/transformer/shared_base_mcmc/d64_n32.json",
+        "sha256": "a25289caf859f6882dfa9b20e5441c7f3ace0280b36681fd1c3d04ce0c652f9a"
+      },
+      "d64_n32_alpha32": {
+        "path": "/Users/ruediger/Projects/layered_architectures/results/transformer/shared_base_mcmc/refined/d64_n32.json",
+        "sha256": "21c01da7b687a8461ab559b83a10703d43f5a9d2af83dbcb709dc50086bd3914"
+      },
+      "d64_n128_alpha16": {
+        "path": "/Users/ruediger/Projects/layered_architectures/results/transformer/shared_base_mcmc/d64_n128.json",
+        "sha256": "92a1f2531019da0310756e5ef2dd8d4f84609eb1a0d1bdc38998e73e2766c558"
+      },
+      "d64_n128_alpha32": {
+        "path": "/Users/ruediger/Projects/layered_architectures/results/transformer/shared_base_mcmc/refined/d64_n128.json",
+        "sha256": "f50abbe71262496f987b45d52115502adcb2acc9dc7e4dc50d1fe514bec12d79"
+      }
+    },
+    "script": "/Users/ruediger/Projects/layered_architectures/code/scripts/shared_base_mcmc_summary.py",
+    "script_sha256": "8a42192380fbb5de2b8e6faf3c45bd25d4977dc821fc593357d53ff96adb6cd6"
+  },
+  "limitations": [
+    "These are two selected d=64 prefixes; they do not establish accuracy across the source prior.",
+    "Passing split-Rhat, ESS and MCSE thresholds is not a convergence certificate or a bound on undiscovered-mode bias.",
+    "The paired 16/32-node difference includes independent sampling variability; it does not isolate pure exponent-quadrature error.",
+    "Row-grid refinements assess final chain states only, not every visited or unvisited posterior state.",
+    "This export recomputes prediction, diagnostic and refinement comparisons; separate validation artifacts retain their own recorded checks."
+  ]
+}

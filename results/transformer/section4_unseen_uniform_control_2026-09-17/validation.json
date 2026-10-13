@@ -1,0 +1,17 @@
+{
+  "schema": "unseen-uniform-control-validation-v1",
+  "passed": true,
+  "checks": {
+    "passed": true,
+    "selected_records": 918,
+    "independent_aggregation_max_error_bits": 5.551115123125783e-17,
+    "independent_scalar_loss_max_error_bits": 5.412337245047638e-16,
+    "all_original_files_hash_checked": 1024,
+    "all_declared_selected_histories_retained": true
+  },
+  "outputs": {
+    "summary.json": "e6b5b601358ce379f3d9e36809afbfe4346cad44dd8764779a7b263344e01828",
+    "records.csv": "23e4047abcf6183e7a4305034f17874bf5c5d33c204ebd7ff9ffcbb38f98d539"
+  },
+  "script_sha256": "0762f3db081eddc7f373291dea61c33aad40ce16c3c8f040f76fc669ce4c390e"
+}

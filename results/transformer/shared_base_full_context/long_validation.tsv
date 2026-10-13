@@ -1,0 +1,3 @@
+case	prefix_tokens	max_probability_error	max_mcse	alpha_refinement_error	max_grid_error_bits	sampler_seconds	accuracy_passed	diagnostics_passed
+d3_long_control	1024	2.0595381980403893e-07	5.420364991130004e-07	1.915134717478395e-15	5.740540294836333e-13	6.985213709063828	True	True
+d64_long_control	1024	2.9994181566239675e-06	5.261045597514515e-06	2.625677453238495e-13	2.6242469919251805e-12	27.381060291081667	True	True

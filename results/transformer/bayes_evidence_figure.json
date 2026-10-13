@@ -1,0 +1,125 @@
+{
+  "schema": "bayes_evidence_figure_v1",
+  "input_schema": "shared_depth_curated_v1",
+  "input": "results/transformer/shared_depth/summary.json",
+  "input_sha256": "ac9ecad3eaa1ca92e0b8eb588a283f54e1a6782e061136f39008e4de4fedfbcd",
+  "script": "code/scripts/bayes_evidence_figure.py",
+  "script_sha256": "934b7bf2076fe6bf385ff84d5213abf85cfcbf83ba9f7f33bf9001fa70af68d2",
+  "metric": "kl_bayes_to_transformer",
+  "units": "bits",
+  "panels": [
+    {
+      "case": "product_8x8",
+      "title": "(a) Product, $8\\times8$",
+      "n_sequences": 128,
+      "observed_prefix": [
+        1,
+        2,
+        4,
+        8,
+        16,
+        32,
+        64,
+        128,
+        256,
+        512,
+        1024
+      ],
+      "mean_bits": [
+        0.0006109210325156841,
+        0.00181257483354201,
+        0.001734523980811677,
+        0.005717138439469351,
+        0.01811939952674527,
+        0.02429884496966342,
+        0.01883623246667165,
+        0.010068847808819838,
+        0.004958995582435655,
+        0.003911436439625652,
+        0.004541200844493717
+      ],
+      "standard_error_bits": [
+        1.5363061844161298e-05,
+        9.528792439822016e-05,
+        0.00016274705223652135,
+        0.0004983316851582172,
+        0.0017184720051100788,
+        0.00230457640889835,
+        0.0021866585544029786,
+        0.0008991991688420197,
+        0.00039124094824970256,
+        0.0002454858347857188,
+        0.0002383699876462114
+      ],
+      "checkpoint_sha256": "29cac698253475a539a0b1bb76a47436a6eee0b0ab3d8c651a61bfe239b9b271",
+      "training_seed": 0
+    },
+    {
+      "case": "uniform_d64",
+      "title": "(b) Uniform-base LSA, $d=64$",
+      "n_sequences": 128,
+      "observed_prefix": [
+        1,
+        2,
+        4,
+        8,
+        16,
+        32,
+        64,
+        128,
+        256,
+        512,
+        1024
+      ],
+      "mean_bits": [
+        0.0041966367821616845,
+        0.0018825016769534859,
+        0.0010092643720628857,
+        0.0012164696283987015,
+        0.004630160470963599,
+        0.014739108871917882,
+        0.02378144500660365,
+        0.04053796878392385,
+        0.03970471379995487,
+        0.025285731140694635,
+        0.050973452492287616
+      ],
+      "standard_error_bits": [
+        2.5470823986689984e-05,
+        0.0008238548371049731,
+        0.0003301834525873606,
+        0.000368923318562492,
+        0.0009134527082411586,
+        0.0021874934951786403,
+        0.0028735138809867222,
+        0.004740482055066123,
+        0.006347500074050974,
+        0.0027193063812507036,
+        0.004419902923911988
+      ],
+      "checkpoint_sha256": "6b8752b882d1be1eb51278ca0f5b58eccc8048b3fcf552467f9da6438153d53c",
+      "training_seed": 0
+    }
+  ],
+  "uncertainty": "One standard error across 128 independent sequence/source draws per family; training-seed uncertainty is not measured.",
+  "scoring": "Prefix t predicts X(t+1); X1 is supplied free. Each source draw contains 1025 tokens.",
+  "plot": {
+    "width_inches": 6.4,
+    "height_inches": 2.65,
+    "x_scale": "log2",
+    "y_scale": "linear",
+    "shared_y_limits": [
+      0.0,
+      0.06
+    ],
+    "error_bar_standard_errors": 1,
+    "all_selected_prefixes": true,
+    "connecting_lines": "guide to the eye; no smoothing or cumulative KL inference"
+  },
+  "output_pdf": "figures/bayes_evidence.pdf",
+  "output_pdf_sha256": "a2bc4660c2e1d97557444a5e4a076d56fe709ad255dbf001dcf868588853d0e9",
+  "runtime": {
+    "matplotlib": "3.11.0",
+    "numpy": "2.4.6"
+  }
+}

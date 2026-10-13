@@ -27,25 +27,3 @@ results/transformer/refs2048/
 results/transformer/refs2/
 results/transformer/refs_famprior/
 
-# Generated numerical reports stay on the research machines, not in Overleaf.
-# Existing copies are deliberately retained locally when removed from tracking.
-# Final figures, TeX tables, source code and frozen plans remain versioned.
-/results/**/*.json
-/results/**/*.jsonl
-/results/**/*.csv
-/results/**/*.tsv
-
-# The complete-cohort paired score array is retained locally with its audit reports.
-/results/transformer/shared_base_full_cohort_2026-09-19/paired_scores.npz
-
-# Preserve small immutable inputs used by cluster jobs and their continuations.
-!/results/transformer/runs/**/config.json
-!/results/transformer/runs/**/log.jsonl
-!/results/transformer/runs/**/status.json
-!/results/transformer/conditional_shared_base/first_step.json
-!/results/transformer/shared_base_conditional_curves/shortprefix_reference.json
-!/results/transformer/shared_base_conditional_curves/summary.json
-!/results/transformer/shared_base_conditional_curves/time4_summary.json
-!/results/transformer/shared_base_conditional_curves/time16_summary.json
-!/results/transformer/shared_base_long_context_2026-09-17/summary.json
-!/results/transformer/shared_base_morning_audit_2026-09-17/summary.json

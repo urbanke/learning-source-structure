@@ -1,0 +1,16 @@
+{
+  "purpose": "Exploratory Section 4 applications; no new inference or samples.",
+  "inputs": {
+    "results/transformer/section4_product_accuracy/summary.json": "e483bb3097dd827da6311f72eacfbce0609bc942bcd759e50439a20ac6b0c513",
+    "results/transformer/section4_unseen_row_transfer/summary.json": "b41b1d7b37ebf3170885014a162eb703c400840878300c235e15f18a4fbea086",
+    "results/transformer/section4_product_accuracy/receipt.json": "fbe656abeddc569245f282f8a4e438bc4dc37f2d5deaed19ac1ba25665b36fa2",
+    "results/transformer/section4_unseen_row_transfer/validation.json": "9c4f0a62fda9e016e608b2073cefce5e0846f94154fcc0a7e2bbcbbcf55b23a5",
+    "code/scripts/section4_partial_figure.py": "e40d1b1ec8f3990eb6c8e768d360173f1e147f5eab77db4fe26ec27ddc41a232",
+    "code/scripts/section4_product_accuracy.py": "50195f7365a597d61d2a53d8c2ebd9889d45678663e03a634370d1e80612e481",
+    "code/scripts/section4_unseen_row_transfer.py": "a3a8909a83d7e25dc9653ce121e7a66f963434ae8199e67891aa2d1835dabd59"
+  },
+  "outputs": {
+    "overview.pdf": "7f94f69fe42a7d9575fc1342a96ea5fc982d17ec4ab7204374f4f5fd6076cdef",
+    "overview.png": "720cc629ed38c1a217f9ee4bc646cfe647140a7097ab5001c24e6b0a053d1b85"
+  }
+}

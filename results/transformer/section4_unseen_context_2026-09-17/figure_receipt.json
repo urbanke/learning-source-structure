@@ -1,0 +1,37 @@
+{
+  "inputs": {
+    "results/transformer/section4_unseen_context_2026-09-17/summary.json": "37f63ae49ea2fec7c1fae0798580139c10b270dc5ed6e03d109156a8ef27a644",
+    "results/transformer/section4_unseen_context_2026-09-17/validation.json": "90b38ba41e8d647f35379d4be03fb2704b17d588405e420d1070ba76e952ddea",
+    "code/scripts/section4_unseen_context_figures.py": "463416e00bece78dc803388ba183828a82d4580013e8acb3f68f9317ab63b6bd",
+    "results/transformer/product_context_confirmation_2026-09-17/summary.json": "00c0777fd8128679cdc9c1bf11c1e644c045c4681047222813c43371d5d6d4f9",
+    "results/transformer/product_context_confirmation_2026-09-17/validation.json": "217d6d28712962e889b2ff794f81170cdb5f5982284a33b709afb8a48c6d8a8f",
+    "results/transformer/section4_unseen_uniform_control_2026-09-17/summary.json": "e6b5b601358ce379f3d9e36809afbfe4346cad44dd8764779a7b263344e01828",
+    "results/transformer/section4_unseen_uniform_control_2026-09-17/validation.json": "98e2d5536095f855519f86d89dc1b7a93005d778518426200b2b0cf693256992",
+    "code/scripts/product_context_figures.py": "628d1fcb39cb279338cb8dd923a623abad37bf342d22b1ef7756f8d970bad9c1"
+  },
+  "outputs": {
+    "gains.pdf": "94dc4e7697a013a418c6c3e32bb4bcffe75b2aee21da9ce7b28f3623aee414bd",
+    "gains.png": "cb1f06352f9353be9a6d1a945f312baa47b12b5af871f27ba04b3fdf4936a3b8",
+    "paired_runs.pdf": "fd78876f982deacad9195c3128d9812777d9d00e78b256be8a93fa0dc4f06b4e",
+    "paired_runs.png": "b73c327d8382f5403bcc95a96bd20a20298d1141677db5bae9a2adc4ed2213a0",
+    "context_forecast.pdf": "b19b8e5411f16070475a12b6a8d07cdce43bc6ed8e908a65d260307b7ad7d683",
+    "context_forecast.png": "72373f16fc439cc67ae2ee82cbe736d05bf46f983551299ed4fc42ede9c0fb8d",
+    "uniform_control.pdf": "2088f95057cce603eaeb908a3e4fa25ffa09480873c9509be18af48c154c88f1",
+    "uniform_control.png": "edd2ec36ccc0ebcd0d5098577f8bb54d098a59601a8ceeb8fce42a40e3d79f1c",
+    "uniform_all_depths.pdf": "63ca40ce88e8f67766dc8d38a75e377fdabce4a5bb26795c08e1aa11ce2636f6",
+    "uniform_all_depths.png": "1f2729ac7d4a929be5263e3ba625e6b9ce4405e2007de8f548f7d18d090b939a",
+    "paired_table.tex": "decb1ae02b6f5bad864897817f655ee34ce387c13efad6482346ef40efdafb45"
+  },
+  "bayes_withheld": [
+    {
+      "depth": 4,
+      "time": 64
+    },
+    {
+      "depth": 8,
+      "time": 64
+    }
+  ],
+  "uncertainty": "One standard error across independent selected sequences; paired differences use the same histories.",
+  "main_training_run": "larger_seed0; fixed run 1, no performance selection"
+}

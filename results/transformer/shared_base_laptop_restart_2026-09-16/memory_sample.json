@@ -1,0 +1,15 @@
+{
+  "start": "2026-09-16T21:37:37.911933+02:00",
+  "end": "2026-09-16T21:37:57.922292+02:00",
+  "start_swap": "vm.swapusage: total = 6144.00M  used = 4869.31M  free = 1274.69M  (encrypted)",
+  "end_swap": "vm.swapusage: total = 6144.00M  used = 4837.31M  free = 1306.69M  (encrypted)",
+  "deltas_20_seconds": {
+    "Pageins": 1521,
+    "Pageouts": 112,
+    "Swapins": 2338,
+    "Swapouts": 0,
+    "Pages stored in compressor": 8824,
+    "Pages occupied by compressor": 20841
+  },
+  "pagesize_bytes": 16384
+}

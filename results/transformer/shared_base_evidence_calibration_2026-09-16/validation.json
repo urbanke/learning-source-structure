@@ -1,0 +1,119 @@
+{
+  "schema": "shared-base-calibration-report-independent-validation-v1",
+  "status": "passed",
+  "scope": "Arithmetic, saved replica identities, catalog anchors and declared gates reproduced; this is not a successful-pilot or production-reference claim.",
+  "summary_sha256": "8e52140968c55b268cd5003f8497859cb45151506e1d9cb827c5da124dc33fad",
+  "protocol_sha256": "b2a5a67fe2a54e7643917825a8cd7355158db7586a99cf05575dbba1deacdee8",
+  "validator_sha256": "fc2682602a13c538db80615b04f21a9af9bff136fdabf3d16537507dd1a93684",
+  "catalog_sha256": "a1659aa766a6c15ffb849d71f67352f88fe385658297a920c2baf376dbbb0c1c",
+  "catalog_joints_checked": 14,
+  "rows_recomputed": 14,
+  "configurations_checked": 4,
+  "repetition_estimates_checked": 224,
+  "controls_passing": 0,
+  "rows": [
+    {
+      "case": "pattern_0_0_0_0_0",
+      "sampler": "original",
+      "particles": 1024,
+      "repetitions": 16,
+      "short_control_passed": false
+    },
+    {
+      "case": "pattern_0_0_0_0_0",
+      "sampler": "original",
+      "particles": 2048,
+      "repetitions": 16,
+      "short_control_passed": false
+    },
+    {
+      "case": "pattern_0_0_0_0_0",
+      "sampler": "original",
+      "particles": 256,
+      "repetitions": 16,
+      "short_control_passed": false
+    },
+    {
+      "case": "pattern_0_1_0_1_0",
+      "sampler": "original",
+      "particles": 256,
+      "repetitions": 16,
+      "short_control_passed": false
+    },
+    {
+      "case": "pattern_0_1_0_2_0",
+      "sampler": "original",
+      "particles": 256,
+      "repetitions": 16,
+      "short_control_passed": false
+    },
+    {
+      "case": "product_prior_0",
+      "sampler": "original",
+      "particles": 256,
+      "repetitions": 16,
+      "short_control_passed": false
+    },
+    {
+      "case": "shared_base_prior_0",
+      "sampler": "original",
+      "particles": 256,
+      "repetitions": 16,
+      "short_control_passed": false
+    },
+    {
+      "case": "uniform_base_prior_0",
+      "sampler": "original",
+      "particles": 256,
+      "repetitions": 16,
+      "short_control_passed": false
+    },
+    {
+      "case": "pattern_0_0_0_0_0",
+      "sampler": "row-block",
+      "particles": 256,
+      "repetitions": 16,
+      "short_control_passed": false
+    },
+    {
+      "case": "pattern_0_1_0_1_0",
+      "sampler": "row-block",
+      "particles": 256,
+      "repetitions": 16,
+      "short_control_passed": false
+    },
+    {
+      "case": "pattern_0_1_0_2_0",
+      "sampler": "row-block",
+      "particles": 256,
+      "repetitions": 16,
+      "short_control_passed": false
+    },
+    {
+      "case": "product_prior_0",
+      "sampler": "row-block",
+      "particles": 256,
+      "repetitions": 16,
+      "short_control_passed": false
+    },
+    {
+      "case": "shared_base_prior_0",
+      "sampler": "row-block",
+      "particles": 256,
+      "repetitions": 16,
+      "short_control_passed": false
+    },
+    {
+      "case": "uniform_base_prior_0",
+      "sampler": "row-block",
+      "particles": 256,
+      "repetitions": 16,
+      "short_control_passed": false
+    }
+  ],
+  "production_reference_validated": false,
+  "limitations": [
+    "Intervals are approximate Monte Carlo diagnostics; missed-mode and quadrature errors are not bounded.",
+    "Source input identity/hash references are retained; raw files are not required or rehashed by this compact check."
+  ]
+}

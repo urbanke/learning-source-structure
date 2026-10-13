@@ -1,0 +1,20 @@
+{
+  "schema": "copying-frequency-calibration-readback-v1",
+  "passed": true,
+  "summary_sha256": "f0fafa1c810f5dcdd9ed2bce9b7cebfddf27309031528be0fc36b556b46d552e",
+  "script_sha256": "39c28be6eef536c04e3b393c722f53869fd1d135b1334546222ecbc50bc1b330",
+  "input_sha256": {
+    "output/copying_frequency_calibration_2026-09-19/stratified/a1_L0.npz": "4cabe1a0d46e23a3fb0c304e21ead7bd8900cd6ba0052939c745b0cc0035741d",
+    "output/copying_frequency_calibration_2026-09-19/stratified/a1_L2.npz": "e106e8e75cbf707a60d63124df14cf561052957b3516b751d749498bfe9f7c71",
+    "output/copying_frequency_calibration_2026-09-19/stratified/a1_L3.npz": "d69f5a91bc637bf26714684abc33f359efe5c3368630558f9ad2c74dcf6f97f8",
+    "output/copying_frequency_calibration_2026-09-19/stratified/summary.json": "9db3f40aaa919b7eb0ad8bf3990b631df115a6627d5acfea068bea5e4620176b",
+    "output/copying_frequency_calibration_2026-09-19/refined/a1_L0.npz": "5d17bd0d218c73f58fe0ae2a04748c7344b391f03890ebe074f2321e9dbfe154",
+    "output/copying_frequency_calibration_2026-09-19/refined/a1_L2.npz": "a0503d73331b3a654564a2509fd7cf810ef90c7a2106ee16461d96d24d6b0708",
+    "output/copying_frequency_calibration_2026-09-19/refined/a1_L3.npz": "36c5277fc65ec6a4ac7efa42eb00c58251a7f95d80b8ba752f6e2fc86b2c2629",
+    "output/copying_frequency_calibration_2026-09-19/refined/summary.json": "d25e06338d47c4dd42fa7d05c1e27104a0769f55905be6cbf80765a1932a914c"
+  },
+  "maximum_statistic_error": 2.574980159653073e-17,
+  "maximum_first_probability_error": 2.7755575615628914e-17,
+  "scientific_timing_validated": false,
+  "raw_arrays_committed": false
+}

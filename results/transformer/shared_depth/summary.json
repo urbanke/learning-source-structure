@@ -1,0 +1,858 @@
+{
+  "schema": "shared_depth_curated_v1",
+  "notes": [
+    "Independent fresh source draws from each full training prior; one existing checkpoint per family.",
+    "All means are in bits. Standard errors describe paired sequence/source sampling; training-seed uncertainty is not measured.",
+    "The first token is supplied free. Cumulative losses use every subsequent token through the stated horizon.",
+    "Predictive KL is measured only at the listed prefixes. No cumulative KL is inferred from sparse measurements."
+  ],
+  "cases": [
+    {
+      "schema": "shared-depth-evaluation-v1",
+      "source": {
+        "schema": "shared-depth-evaluation-v1",
+        "family": "lsa",
+        "d": 64,
+        "coordinate_sizes": null,
+        "alpha": 0.0,
+        "depth_range": [
+          0,
+          8
+        ],
+        "depth_scope": "sequence",
+        "relabeling": "whole alphabet",
+        "initial_distribution": "uniform",
+        "n_ctx": 1024,
+        "seed": 20260914,
+        "seed_rule": "seed_of(schema, case, master_seed, sequence_index)",
+        "driver_sha256": "48953f31eb65791ba90d2169ec46d5c8d04055bfc28279050f8b1a39ae0c6f59",
+        "source_numpy_version": "2.4.6",
+        "token_hash_encoding": "little-endian int16",
+        "source_sha256": "d1bb83004e3654cb3f84f6083437cae2b6d71fa19a33b06d26d2455ac440dab4",
+        "families_sha256": "24d7ab304d9de7133e38ec8ffe2422d2de38b9e3374670117807eab61d606e00"
+      },
+      "n_sequences": 128,
+      "prior_draw_depth_counts": {
+        "8": 12,
+        "7": 18,
+        "1": 20,
+        "5": 21,
+        "2": 10,
+        "3": 14,
+        "0": 12,
+        "6": 11,
+        "4": 10
+      },
+      "tokens_sha256": "913189615bf1c5f4753e1aa66b5831fcb161dd75c265df88e8cee578ef93a1c1",
+      "first_token_scored": false,
+      "scored_tokens": "X2 through X1025",
+      "units": "bits",
+      "prefixes": [
+        1,
+        2,
+        4,
+        8,
+        16,
+        32,
+        64,
+        128,
+        256,
+        512,
+        1024
+      ],
+      "comparison": "fresh full training-prior draws; one existing trained checkpoint",
+      "uncertainty": "paired means; standard errors across independent sequence/source draws; no training-seed uncertainty",
+      "reference": {
+        "schema": "shared-depth-evaluation-v1",
+        "depths": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8
+        ],
+        "global_prior": "uniform",
+        "local_prior": "same depth prior mixed separately in each row",
+        "u_lo": -30.0,
+        "u_hi": 30.0,
+        "rmax": 1025,
+        "prefixes": [
+          1,
+          2,
+          4,
+          8,
+          16,
+          32,
+          64,
+          128,
+          256,
+          512,
+          1024
+        ],
+        "probability_tolerance": 2e-06,
+        "table_dir": "/Users/ruediger/Projects/layered_architectures/code/transformer",
+        "lsa_store": "/Users/ruediger/Projects/product_model_with_memory/tables/anchors_prod",
+        "pmm_src": "/Users/ruediger/Projects/product_model_with_memory/src",
+        "store_manifest_sha256": "cf0449a4b704174890f0a1fb95f20954839dd7266ae307e799d1dc6d0234ffb5",
+        "backend_sha256": "aef2f63c0ccdb4de58bb8c617dd99aaadc73b803bee67a029f5d89230878d5c2",
+        "driver_sha256": "48953f31eb65791ba90d2169ec46d5c8d04055bfc28279050f8b1a39ae0c6f59",
+        "core_sha256": "616f536153458499078d17d7939e6a800c7b52e3eb4f1dd6503db95030d7a395",
+        "kernel_sha256": "7e39960e91f3bb27eea82e201afd8a86ce717ea50a304daa86534b4fdbadfc51",
+        "tables_sha256": "456eb407fd7f280786a441681a704a6fff172af9fc9aea3c6f9456fb55174831"
+      },
+      "model": {
+        "checkpoint": "/Users/ruediger/Projects/layered_architectures/results/transformer/runs/lsa_a0_d64/model_100000.pt",
+        "checkpoint_sha256": "6b8752b882d1be1eb51278ca0f5b58eccc8048b3fcf552467f9da6438153d53c",
+        "driver_sha256": "48953f31eb65791ba90d2169ec46d5c8d04055bfc28279050f8b1a39ae0c6f59",
+        "config": {
+          "d": 64,
+          "n_ctx": 1024,
+          "alpha": [
+            0.0,
+            0.0
+          ],
+          "ls": [
+            0,
+            8
+          ],
+          "no_permute": false,
+          "family": "lsa",
+          "n_layer": 2,
+          "n_head": 4,
+          "d_model": 128,
+          "no_mlp": false,
+          "batch": 64,
+          "steps": 100000,
+          "lr": 0.0003,
+          "warmup": 1000,
+          "wd": 0.1,
+          "clip": 1.0,
+          "seed": 0,
+          "workers": 6,
+          "device": "cuda",
+          "log_every": 50,
+          "val_every": 1000,
+          "ckpt_every": 5000,
+          "val_settings": "1,2;1,4;0.75,2;1.25,3",
+          "val_n": 64,
+          "out": "results/transformer/runs/lsa_a0_d64",
+          "resume": true,
+          "n_params": 544256,
+          "model": {
+            "vocab": 64,
+            "n_ctx": 1024,
+            "n_layer": 2,
+            "n_head": 4,
+            "d_model": 128,
+            "mlp": true,
+            "dropout": 0.0
+          }
+        },
+        "config_sha256": "d39ad1d48077a593fbd2e125ed460fa026267dd2a400b6774888406b90640b05",
+        "model_sha256": "742fe0e5c8ffaecee8072a3b270b23beaa2e0bd2a94d1a27a9af67c31eff9c28",
+        "prefixes": [
+          1,
+          2,
+          4,
+          8,
+          16,
+          32,
+          64,
+          128,
+          256,
+          512,
+          1024
+        ],
+        "log_probability_dtype": "float32"
+      },
+      "runtime_by_stage": {
+        "source": [
+          {
+            "numpy": "2.4.6",
+            "platform": "macOS-26.6.2-arm64-arm-64bit-Mach-O",
+            "python": "3.14.6",
+            "scipy": "1.18.1"
+          }
+        ],
+        "references": [
+          {
+            "numpy": "2.4.6",
+            "platform": "macOS-26.6.2-arm64-arm-64bit-Mach-O",
+            "python": "3.14.6",
+            "scipy": "1.18.1"
+          }
+        ],
+        "model": [
+          {
+            "device": "cpu",
+            "numpy": "2.4.6",
+            "platform": "macOS-26.6.2-arm64-arm-64bit-Mach-O",
+            "python": "3.14.6",
+            "scipy": "1.18.1",
+            "torch": "2.14.0"
+          }
+        ]
+      },
+      "summary_runtime": {
+        "python": "3.14.6",
+        "numpy": "2.4.6",
+        "scipy": "1.18.1",
+        "platform": "macOS-26.6.2-arm64-arm-64bit-Mach-O"
+      },
+      "driver_sha256": "48953f31eb65791ba90d2169ec46d5c8d04055bfc28279050f8b1a39ae0c6f59",
+      "maximum_probability_sum_error": [
+        4.923794705291584e-11,
+        6.722178369500398e-12,
+        3.1396860866728105e-07
+      ],
+      "probability_error_order": [
+        "bayes",
+        "local",
+        "transformer"
+      ],
+      "terminal": {
+        "tf_minus_bayes": {
+          "mean": 31.682159357238646,
+          "se": 1.573903757811873
+        },
+        "local_minus_bayes": {
+          "mean": 46.04415062092859,
+          "se": 2.708384163406885
+        },
+        "tf_minus_local": {
+          "mean": -14.361991263689939,
+          "se": 2.823762723810471
+        },
+        "bayes_total_loss": {
+          "mean": 5136.2974987397865,
+          "se": 71.51305044387065
+        },
+        "local_total_loss": {
+          "mean": 5182.341649360715,
+          "se": 72.9001989875035
+        },
+        "transformer_total_loss": {
+          "mean": 5167.979658097025,
+          "se": 71.19666043571463
+        }
+      },
+      "by_prefix": {
+        "tf_minus_bayes": {
+          "mean": [
+            -0.006716107571347801,
+            -0.0014165551545101199,
+            -0.009341196710030662,
+            -0.020480976156342992,
+            0.024933694218238076,
+            0.20174964813188892,
+            0.8037431037946442,
+            3.5049282380267153,
+            9.397004528960782,
+            16.952004756924694,
+            31.682159357238646
+          ],
+          "se": [
+            0.009727369470599294,
+            0.010788761959286724,
+            0.012693901390085234,
+            0.01702238259159839,
+            0.03240337694090979,
+            0.07811050958608884,
+            0.17882037731169778,
+            0.37823087932072375,
+            0.8062056621096917,
+            1.1347165225307363,
+            1.573903757811873
+          ]
+        },
+        "local_minus_bayes": {
+          "mean": [
+            1.7763568394002505e-15,
+            1.469657728847551e-14,
+            6.389333506717776e-14,
+            -0.002147129318319698,
+            0.013060077199037037,
+            0.11330386071754697,
+            0.7325455637062845,
+            3.7715654297731733,
+            11.609962185270287,
+            26.13923724847404,
+            46.04415062092859
+          ],
+          "se": [
+            0.0,
+            9.725495512793453e-15,
+            2.0042908260032204e-14,
+            0.0029600058630315563,
+            0.015693055447402564,
+            0.060119452438273276,
+            0.16302286878008013,
+            0.42284931117392843,
+            0.9484595444964755,
+            1.7725577928540202,
+            2.708384163406885
+          ]
+        },
+        "tf_minus_local": {
+          "mean": [
+            -0.006716107571349578,
+            -0.0014165551545248165,
+            -0.009341196710094556,
+            -0.01833384683802329,
+            0.01187361701920104,
+            0.08844578741434195,
+            0.0711975400883596,
+            -0.2666371917464577,
+            -2.2129576563095035,
+            -9.187232491549342,
+            -14.361991263689939
+          ],
+          "se": [
+            0.009727369470599294,
+            0.010788761959286165,
+            0.012693901390090852,
+            0.017099291238616695,
+            0.0258067369909304,
+            0.03900308522821027,
+            0.0707479739484281,
+            0.24108033720980607,
+            0.8386219015681635,
+            1.7119465769192508,
+            2.823762723810471
+          ]
+        },
+        "kl_bayes_to_transformer": {
+          "mean": [
+            0.0041966367821616845,
+            0.0018825016769534859,
+            0.0010092643720628857,
+            0.0012164696283987015,
+            0.004630160470963599,
+            0.014739108871917882,
+            0.02378144500660365,
+            0.04053796878392385,
+            0.03970471379995487,
+            0.025285731140694635,
+            0.050973452492287616
+          ],
+          "se": [
+            2.5470823986689984e-05,
+            0.0008238548371049731,
+            0.0003301834525873606,
+            0.000368923318562492,
+            0.0009134527082411586,
+            0.0021874934951786403,
+            0.0028735138809867222,
+            0.004740482055066123,
+            0.006347500074050974,
+            0.0027193063812507036,
+            0.004419902923911988
+          ]
+        },
+        "kl_bayes_to_local": {
+          "mean": [
+            0.0,
+            1.3831904219873216e-14,
+            2.7663808439746433e-14,
+            0.000367179261380286,
+            0.002479773866706069,
+            0.011948692291280576,
+            0.026077454841284545,
+            0.05228164219932075,
+            0.05503296809887186,
+            0.04653417685895039,
+            0.02738290402234007
+          ],
+          "se": [
+            0.0,
+            9.742050740434323e-15,
+            1.3667558929073242e-14,
+            0.0002475763464616481,
+            0.0006447271127999211,
+            0.0017291774152220366,
+            0.003247153556492454,
+            0.00464848330763676,
+            0.0066837370737899676,
+            0.008233053267067891,
+            0.00461250593872214
+          ]
+        }
+      },
+      "case": "uniform_d64",
+      "independent_validation": {
+        "passed": true,
+        "sequences_checked": 128,
+        "scored_positions_per_sequence": 1024,
+        "selected_predictive_distributions_per_sequence": 11,
+        "raw_cache_files_checked": 384,
+        "raw_cache_digest_sha256": "19f7c1505dbd889f33c2ca645881fe8fa3a010cb08ef53f10c51888e93d9e9eb",
+        "driver_summary_sha256": "10f8ec1a58cde0ba52e36c5397079d58cad6131e9cc5e1097f1cb510a0a3c669",
+        "exporter_sha256": "b441575a3bb7774e73c475baefa9cd6ef9d8d15957ae90f747ed296ec73f3e34",
+        "maximum_aggregate_discrepancy": 1.4210854715202004e-14,
+        "maximum_prefix_target_loss_discrepancy": 1.0658141036401503e-14,
+        "comparison_absolute_tolerance": 2e-08,
+        "checks": [
+          "immutable source and predictor cache identities",
+          "paired token hashes and depth counts",
+          "all-token evidence/loss increments",
+          "prefix/target probability alignment",
+          "raw probability normalization",
+          "independent paired means and standard errors",
+          "independent selected-prefix predictive KL"
+        ]
+      }
+    },
+    {
+      "schema": "shared-depth-evaluation-v1",
+      "source": {
+        "schema": "shared-depth-evaluation-v1",
+        "family": "product:8x8",
+        "d": 64,
+        "coordinate_sizes": [
+          8,
+          8
+        ],
+        "alpha": 0.0,
+        "depth_range": [
+          1,
+          8
+        ],
+        "depth_scope": "one independent depth per coordinate chain",
+        "relabeling": "independent coordinate permutations",
+        "initial_distribution": "uniform",
+        "n_ctx": 1024,
+        "seed": 20260914,
+        "seed_rule": "seed_of(schema, case, master_seed, sequence_index)",
+        "driver_sha256": "48953f31eb65791ba90d2169ec46d5c8d04055bfc28279050f8b1a39ae0c6f59",
+        "source_numpy_version": "2.4.6",
+        "token_hash_encoding": "little-endian int16",
+        "source_sha256": "d1bb83004e3654cb3f84f6083437cae2b6d71fa19a33b06d26d2455ac440dab4",
+        "families_sha256": "24d7ab304d9de7133e38ec8ffe2422d2de38b9e3374670117807eab61d606e00"
+      },
+      "n_sequences": 128,
+      "prior_draw_depth_counts": {
+        "1,3": 2,
+        "2,4": 4,
+        "1,8": 3,
+        "1,2": 2,
+        "3,6": 2,
+        "4,7": 2,
+        "6,6": 1,
+        "5,2": 4,
+        "7,2": 3,
+        "5,6": 2,
+        "3,4": 1,
+        "8,7": 5,
+        "5,5": 1,
+        "7,6": 3,
+        "1,7": 5,
+        "3,3": 4,
+        "2,3": 2,
+        "2,6": 5,
+        "6,1": 3,
+        "8,8": 3,
+        "6,8": 2,
+        "8,3": 1,
+        "8,5": 1,
+        "7,3": 2,
+        "3,8": 4,
+        "2,8": 2,
+        "2,5": 3,
+        "5,1": 2,
+        "3,7": 3,
+        "4,5": 2,
+        "7,1": 3,
+        "5,7": 1,
+        "1,4": 2,
+        "6,2": 1,
+        "7,8": 1,
+        "3,1": 3,
+        "5,3": 4,
+        "6,4": 3,
+        "3,5": 4,
+        "5,8": 1,
+        "6,7": 2,
+        "2,2": 1,
+        "7,5": 2,
+        "4,2": 4,
+        "8,4": 2,
+        "2,1": 2,
+        "8,6": 1,
+        "8,2": 2,
+        "6,5": 1,
+        "2,7": 1,
+        "7,7": 1,
+        "8,1": 1,
+        "1,1": 2,
+        "4,8": 1,
+        "4,3": 1,
+        "6,3": 2
+      },
+      "tokens_sha256": "334b017f7855421cc4123255b08d7d72f7d6bbe5e09cb4a91821b0d575518893",
+      "first_token_scored": false,
+      "scored_tokens": "X2 through X1025",
+      "units": "bits",
+      "prefixes": [
+        1,
+        2,
+        4,
+        8,
+        16,
+        32,
+        64,
+        128,
+        256,
+        512,
+        1024
+      ],
+      "comparison": "fresh full training-prior draws; one existing trained checkpoint",
+      "uncertainty": "paired means; standard errors across independent sequence/source draws; no training-seed uncertainty",
+      "reference": {
+        "schema": "shared-depth-evaluation-v1",
+        "depths": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8
+        ],
+        "global_prior": "uniform",
+        "local_prior": "same depth prior mixed separately in each row",
+        "u_lo": -30.0,
+        "u_hi": 30.0,
+        "rmax": 1025,
+        "prefixes": [
+          1,
+          2,
+          4,
+          8,
+          16,
+          32,
+          64,
+          128,
+          256,
+          512,
+          1024
+        ],
+        "probability_tolerance": 2e-06,
+        "table_dir": "/Users/ruediger/Projects/layered_architectures/code/transformer",
+        "lsa_store": "/Users/ruediger/Projects/product_model_with_memory/tables/anchors_prod",
+        "pmm_src": "/Users/ruediger/Projects/product_model_with_memory/src",
+        "store_manifest_sha256": "cf0449a4b704174890f0a1fb95f20954839dd7266ae307e799d1dc6d0234ffb5",
+        "backend_sha256": "aef2f63c0ccdb4de58bb8c617dd99aaadc73b803bee67a029f5d89230878d5c2",
+        "driver_sha256": "48953f31eb65791ba90d2169ec46d5c8d04055bfc28279050f8b1a39ae0c6f59",
+        "core_sha256": "616f536153458499078d17d7939e6a800c7b52e3eb4f1dd6503db95030d7a395",
+        "kernel_sha256": "7e39960e91f3bb27eea82e201afd8a86ce717ea50a304daa86534b4fdbadfc51",
+        "tables_sha256": "456eb407fd7f280786a441681a704a6fff172af9fc9aea3c6f9456fb55174831"
+      },
+      "model": {
+        "checkpoint": "/Users/ruediger/Projects/layered_architectures/results/transformer/runs/prod_8x8/model_100000.pt",
+        "checkpoint_sha256": "29cac698253475a539a0b1bb76a47436a6eee0b0ab3d8c651a61bfe239b9b271",
+        "driver_sha256": "48953f31eb65791ba90d2169ec46d5c8d04055bfc28279050f8b1a39ae0c6f59",
+        "config": {
+          "d": 64,
+          "n_ctx": 1024,
+          "alpha": [
+            0.5,
+            1.5
+          ],
+          "ls": [
+            1,
+            8
+          ],
+          "no_permute": false,
+          "family": "product:8x8",
+          "n_layer": 2,
+          "n_head": 4,
+          "d_model": 128,
+          "no_mlp": false,
+          "batch": 64,
+          "steps": 100000,
+          "lr": 0.0003,
+          "warmup": 1000,
+          "wd": 0.1,
+          "clip": 1.0,
+          "seed": 0,
+          "workers": 6,
+          "device": "cuda",
+          "log_every": 50,
+          "val_every": 1000,
+          "ckpt_every": 5000,
+          "val_settings": "1,2;1,4;0.75,2;1.25,3",
+          "val_n": 64,
+          "out": "results/transformer/runs/prod_8x8",
+          "resume": true,
+          "n_params": 544256,
+          "model": {
+            "vocab": 64,
+            "n_ctx": 1024,
+            "n_layer": 2,
+            "n_head": 4,
+            "d_model": 128,
+            "mlp": true,
+            "dropout": 0.0
+          }
+        },
+        "config_sha256": "7369b744e526a007d45e8b3e9e5333a1021ca9f7582da971dd4bb6430a3f2a06",
+        "model_sha256": "742fe0e5c8ffaecee8072a3b270b23beaa2e0bd2a94d1a27a9af67c31eff9c28",
+        "prefixes": [
+          1,
+          2,
+          4,
+          8,
+          16,
+          32,
+          64,
+          128,
+          256,
+          512,
+          1024
+        ],
+        "log_probability_dtype": "float32"
+      },
+      "runtime_by_stage": {
+        "source": [
+          {
+            "numpy": "2.4.6",
+            "platform": "macOS-26.6.2-arm64-arm-64bit-Mach-O",
+            "python": "3.14.6",
+            "scipy": "1.18.1"
+          }
+        ],
+        "references": [
+          {
+            "numpy": "2.4.6",
+            "platform": "macOS-26.6.2-arm64-arm-64bit-Mach-O",
+            "python": "3.14.6",
+            "scipy": "1.18.1"
+          }
+        ],
+        "model": [
+          {
+            "device": "cpu",
+            "numpy": "2.4.6",
+            "platform": "macOS-26.6.2-arm64-arm-64bit-Mach-O",
+            "python": "3.14.6",
+            "scipy": "1.18.1",
+            "torch": "2.14.0"
+          }
+        ]
+      },
+      "summary_runtime": {
+        "python": "3.14.6",
+        "numpy": "2.4.6",
+        "scipy": "1.18.1",
+        "platform": "macOS-26.6.2-arm64-arm-64bit-Mach-O"
+      },
+      "driver_sha256": "48953f31eb65791ba90d2169ec46d5c8d04055bfc28279050f8b1a39ae0c6f59",
+      "maximum_probability_sum_error": [
+        1.063183430183301e-09,
+        1.1535886690339225e-09,
+        3.0123893290934234e-07
+      ],
+      "probability_error_order": [
+        "bayes",
+        "local",
+        "transformer"
+      ],
+      "terminal": {
+        "tf_minus_bayes": {
+          "mean": 7.225496113647188,
+          "se": 0.4987821417782944
+        },
+        "local_minus_bayes": {
+          "mean": 5.178931177049344,
+          "se": 0.498964199475955
+        },
+        "tf_minus_local": {
+          "mean": 2.0465649365978473,
+          "se": 0.3846231610416552
+        },
+        "bayes_total_loss": {
+          "mean": 3536.423171389446,
+          "se": 69.41720116286413
+        },
+        "local_total_loss": {
+          "mean": 3541.602102566495,
+          "se": 69.63372338542305
+        },
+        "transformer_total_loss": {
+          "mean": 3543.648667503093,
+          "se": 69.45704694532152
+        }
+      },
+      "by_prefix": {
+        "tf_minus_bayes": {
+          "mean": [
+            0.007141757297825409,
+            0.01959032291082954,
+            0.02466434570709811,
+            0.06033143625673805,
+            0.2329932015718017,
+            0.7011782454462485,
+            1.5605062865534456,
+            2.4420904621941695,
+            3.617874536467313,
+            5.051653689017151,
+            7.225496113647188
+          ],
+          "se": [
+            0.003577851339191731,
+            0.007136079925615418,
+            0.01214778642037248,
+            0.02206896681590466,
+            0.06368301184523989,
+            0.13423117918514985,
+            0.21424113723443483,
+            0.2763778508634347,
+            0.3485105930921567,
+            0.43287898888163556,
+            0.4987821417782944
+          ]
+        },
+        "local_minus_bayes": {
+          "mean": [
+            0.0,
+            -1.227837276296384e-13,
+            0.0005781116291958197,
+            0.018914227637167297,
+            0.16277113415512712,
+            0.6940661388484191,
+            1.6842894900585819,
+            2.6039528243459964,
+            3.7362671848298916,
+            4.607620222226501,
+            5.178931177049344
+          ],
+          "se": [
+            0.0,
+            2.4206040689053913e-14,
+            0.0017790677712867704,
+            0.015050613268819568,
+            0.05903584340861534,
+            0.1449247224443695,
+            0.25548223189867836,
+            0.3520528847872222,
+            0.42365055012410313,
+            0.48020069131196985,
+            0.498964199475955
+          ]
+        },
+        "tf_minus_local": {
+          "mean": [
+            0.007141757297825409,
+            0.019590322910952324,
+            0.02408623407790229,
+            0.04141720861957075,
+            0.07022206741667458,
+            0.0071121065978295185,
+            -0.12378320350513619,
+            -0.16186236215182648,
+            -0.11839264836257701,
+            0.4440334667906514,
+            2.0465649365978473
+          ],
+          "se": [
+            0.003577851339191731,
+            0.007136079925603857,
+            0.012082937799873213,
+            0.019729274292321644,
+            0.03755042685754385,
+            0.07254115334657309,
+            0.13692852364466354,
+            0.1946872490597744,
+            0.2503564285898197,
+            0.2880725520941797,
+            0.3846231610416552
+          ]
+        },
+        "kl_bayes_to_transformer": {
+          "mean": [
+            0.0006109210325156841,
+            0.00181257483354201,
+            0.001734523980811677,
+            0.005717138439469351,
+            0.01811939952674527,
+            0.02429884496966342,
+            0.01883623246667165,
+            0.010068847808819838,
+            0.004958995582435655,
+            0.003911436439625652,
+            0.004541200844493717
+          ],
+          "se": [
+            1.5363061844161298e-05,
+            9.528792439822016e-05,
+            0.00016274705223652135,
+            0.0004983316851582172,
+            0.0017184720051100788,
+            0.00230457640889835,
+            0.0021866585544029786,
+            0.0008991991688420197,
+            0.00039124094824970256,
+            0.0002454858347857188,
+            0.0002383699876462114
+          ]
+        },
+        "kl_bayes_to_local": {
+          "mean": [
+            0.0,
+            -1.228611246128346e-13,
+            0.0001490459395250338,
+            0.004526325023678067,
+            0.019816361424038212,
+            0.029550880781956796,
+            0.021429884123326907,
+            0.011758059942659528,
+            0.004794902548687887,
+            0.0021563267510199932,
+            0.0007904006458853291
+          ],
+          "se": [
+            0.0,
+            2.4220364876945017e-14,
+            5.585582385623444e-05,
+            0.0005106578385218704,
+            0.001918955335660722,
+            0.003740347106878155,
+            0.0029740465671268946,
+            0.00148185051524754,
+            0.0006806123816184476,
+            0.0003615098180073361,
+            0.0001516534811112982
+          ]
+        }
+      },
+      "case": "product_8x8",
+      "independent_validation": {
+        "passed": true,
+        "sequences_checked": 128,
+        "scored_positions_per_sequence": 1024,
+        "selected_predictive_distributions_per_sequence": 11,
+        "raw_cache_files_checked": 384,
+        "raw_cache_digest_sha256": "5ef1d091a430bbf5ed8c9720ac070fed4f59625290a554d635882b2ed3e936e9",
+        "driver_summary_sha256": "cbd6f5b58ac74f888d4cbc61404b7d8cd7779e685a844c0941a24209ab93fc4c",
+        "exporter_sha256": "b441575a3bb7774e73c475baefa9cd6ef9d8d15957ae90f747ed296ec73f3e34",
+        "maximum_aggregate_discrepancy": 1.4210854715202004e-14,
+        "maximum_prefix_target_loss_discrepancy": 5.3290705182007514e-14,
+        "comparison_absolute_tolerance": 2e-08,
+        "checks": [
+          "immutable source and predictor cache identities",
+          "paired token hashes and depth counts",
+          "all-token evidence/loss increments",
+          "prefix/target probability alignment",
+          "raw probability normalization",
+          "independent paired means and standard errors",
+          "independent selected-prefix predictive KL"
+        ]
+      }
+    }
+  ]
+}

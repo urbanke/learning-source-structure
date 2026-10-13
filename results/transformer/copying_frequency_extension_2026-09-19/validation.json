@@ -1,0 +1,22 @@
+{
+  "passed": true,
+  "input_sha256": {
+    "output/copying_frequency_extension_2026-09-19/stratified/a1_L0.npz": "a10f8c3e51390614c2979738f94404376695b58a497ed186ab0902f2f4472e68",
+    "output/copying_frequency_extension_2026-09-19/stratified/a1_L2.npz": "8c2848ab0599f8ff643e7f53c656b9314463de8e16557f54df73cf2a920f1f50",
+    "output/copying_frequency_extension_2026-09-19/stratified/a1_L3.npz": "c0a6ad750c683464aa8d6c58dcbb0fe69f6be5d937bbb13c2bcc52be14c3cf43",
+    "output/copying_frequency_extension_2026-09-19/stratified/plan.json": "77c661ae7069f64d41245443d70a58c15d2b5a59b957afffb43325f799a52c56",
+    "output/copying_frequency_extension_2026-09-19/stratified/summary.json": "972e1edf5a7a5a272c68eb55b2ee7e6991a211b175b85cad2727b7ac2f0a0bd5",
+    "output/copying_frequency_extension_2026-09-19/stratified/moments.json": "3c8492ded994cb4ed0862e7707f55e5fa2460facd22e28f2bddb668d2e1bccfe",
+    "output/copying_frequency_extension_2026-09-19/refined/a1_L0.npz": "6d897973a5a01afb16b06440d76239f8861bf12e05c3841d5b5548a0cdd487e7",
+    "output/copying_frequency_extension_2026-09-19/refined/a1_L2.npz": "171773f73bfe20183a7d20fea142554f7c5b0dbdd53e2d85fd32825444bd8583",
+    "output/copying_frequency_extension_2026-09-19/refined/a1_L3.npz": "cff2afd3590331f2f63baeb2da9dcd938eefb5186695279ba875d6a818d15da5",
+    "output/copying_frequency_extension_2026-09-19/refined/plan.json": "e05b26de66fed7939ee106fd87738e48a331bde1e4d5b3cf156484a189d87f34",
+    "output/copying_frequency_extension_2026-09-19/refined/summary.json": "f30af88645c4684b888c347dd510f6d94264e7d43c4fec78465365f73b4b0cb0",
+    "output/copying_frequency_extension_2026-09-19/refined/moments.json": "268ed9837d6e89e3442f8831dabe35d37fc078cabc9eaa0267bec7641dbbf7e4"
+  },
+  "script_sha256": "95e73c3f188e0c8d1e9d32c0e5981142bfaef2f5d8a2c9c6b87f32db3b3bf2c6",
+  "summary_sha256": "1146efe9c1f4a4efe3f2a41b32f964e3e5100ac3d9676b00915dae30e77db5aa",
+  "maximum_readback_error": 3.552713678800501e-15,
+  "scientific_timing_validated": false,
+  "independent_confirmation": false
+}

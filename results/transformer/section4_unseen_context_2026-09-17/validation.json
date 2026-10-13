@@ -1,0 +1,46 @@
+{
+  "schema": "section4-unseen-context-export-validation-v1",
+  "passed": true,
+  "meaning_of_passed": "Provenance, saved-value arithmetic and withholding flags pass; not a declaration that all Bayesian subsets are scientifically released.",
+  "all_subset_numerical_gates_passed": false,
+  "withheld_bayes_groups": [
+    {
+      "depth": 4,
+      "time": 64,
+      "checks": [
+        "coarse:cohort_numerical_budget",
+        "refined:cohort_numerical_budget"
+      ]
+    },
+    {
+      "depth": 8,
+      "time": 64,
+      "checks": [
+        "coarse:cohort_numerical_budget",
+        "refined:cohort_numerical_budget"
+      ]
+    }
+  ],
+  "groups": 12,
+  "selected_records": 1699,
+  "independent_csv_replay": {
+    "passed": true,
+    "statistics_recomputed": 432,
+    "records": 1699,
+    "method": "Independent Python statistics.mean/stdev aggregation of whole-sequence paired loss CSV."
+  },
+  "arithmetic_checks": {
+    "selected_larger_model_records_reconstructed": 1968,
+    "maximum_softmax_probability_difference": 7.771561172376096e-16,
+    "maximum_larger_kl_difference_bits": 3.552713678800501e-15,
+    "maximum_original_loss_difference_bits": 3.552713678800501e-15
+  },
+  "training": false,
+  "sampling": false,
+  "model_inference": false,
+  "script_sha256": "14a30773da27064df170e7815b771b1c0f36a27632ba291ae92f6638069c302d",
+  "files": {
+    "summary.json": "37f63ae49ea2fec7c1fae0798580139c10b270dc5ed6e03d109156a8ef27a644",
+    "records.csv": "c4754055393708fff039da413c423f9e54f8f1d1091c584d397cf522459abdc6"
+  }
+}

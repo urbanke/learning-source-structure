@@ -1,0 +1,825 @@
+{
+  "schema": "section4-family-forecast-v1",
+  "families": [
+    "product",
+    "shared_base",
+    "uniform_base"
+  ],
+  "family_prior_weights": [
+    0.3333333333333333,
+    0.3333333333333333,
+    0.3333333333333333
+  ],
+  "coordinate_sizes": [
+    8,
+    8
+  ],
+  "scored_predictions": [
+    0,
+    1,
+    2,
+    3,
+    4
+  ],
+  "records": [
+    {
+      "family_probability_mass": [
+        1.0000000000000004,
+        1.0000000000145879,
+        1.0000000000000004
+      ],
+      "family_cost_bits": [
+        -7.014222672753147e-12,
+        1.4031008086914021e-11,
+        -7.014222672753147e-12
+      ],
+      "equal_family_cost_bits": 8.542471359090449e-16,
+      "posterior_entropy_bits": 1.584962500728863,
+      "posterior_weight_mean_by_generating_family": [
+        [
+          0.3333333333317128,
+          0.3333333333365752,
+          0.3333333333317128
+        ],
+        [
+          0.3333333333365752,
+          0.33333333334143767,
+          0.3333333333365752
+        ],
+        [
+          0.3333333333317128,
+          0.3333333333365752,
+          0.3333333333317128
+        ]
+      ],
+      "mean_true_family_posterior_weight": 0.3333333333349544,
+      "optimal_family_classification_accuracy": 0.3333333333381958,
+      "maximum_sequence_cost_bits": 1.403100808670934e-11,
+      "entropy_identity_error_bits": 1.0762917408340761e-15,
+      "posterior_cost_identity_error_bits": 6.661338147750939e-16,
+      "total_mixture_probability_mass": 1.0000000000048623,
+      "scored_predictions": 0,
+      "observed_tokens": 1,
+      "n_orbits": 1,
+      "labelled_sequences": 64
+    },
+    {
+      "family_probability_mass": [
+        1.0000000000000007,
+        1.0000000000145879,
+        1.0000000000000007
+      ],
+      "family_cost_bits": [
+        0.007704205472754896,
+        0.019488462254689504,
+        0.007704205472754896
+      ],
+      "equal_family_cost_bits": 0.0116322910667331,
+      "posterior_entropy_bits": 1.573330209662131,
+      "posterior_weight_mean_by_generating_family": [
+        [
+          0.3362330532817997,
+          0.32753389343640094,
+          0.3362330532817997
+        ],
+        [
+          0.327533893436401,
+          0.3449322131417856,
+          0.327533893436401
+        ],
+        [
+          0.3362330532817997,
+          0.32753389343640094,
+          0.3362330532817997
+        ]
+      ],
+      "mean_true_family_posterior_weight": 0.33913277323512836,
+      "optimal_family_classification_accuracy": 0.3497620420063865,
+      "maximum_sequence_cost_bits": 1.0179744939826332,
+      "entropy_identity_error_bits": 1.0356299151581538e-15,
+      "posterior_cost_identity_error_bits": 6.661338147750939e-16,
+      "total_mixture_probability_mass": 1.0000000000048639,
+      "scored_predictions": 1,
+      "observed_tokens": 2,
+      "n_orbits": 4,
+      "labelled_sequences": 4096
+    },
+    {
+      "family_probability_mass": [
+        1.0000000000000184,
+        1.0000000000145883,
+        1.0000000000001148
+      ],
+      "family_cost_bits": [
+        0.04804079022267905,
+        0.05097063558998364,
+        0.03343091906341652
+      ],
+      "equal_family_cost_bits": 0.0441474482920264,
+      "posterior_entropy_bits": 1.5408150524369075,
+      "posterior_weight_mean_by_generating_family": [
+        [
+          0.35595248746444824,
+          0.31438982036347035,
+          0.3296576921721
+        ],
+        [
+          0.3143898203634703,
+          0.3614103666765445,
+          0.32419981297457356
+        ],
+        [
+          0.3296576921721,
+          0.32419981297457356,
+          0.3461424948534414
+        ]
+      ],
+      "mean_true_family_posterior_weight": 0.3545017829981447,
+      "optimal_family_classification_accuracy": 0.39054032263098315,
+      "maximum_sequence_cost_bits": 1.2934665704586206,
+      "entropy_identity_error_bits": 5.898059818321144e-16,
+      "posterior_cost_identity_error_bits": 1.3322676295501878e-15,
+      "total_mixture_probability_mass": 1.0000000000049076,
+      "scored_predictions": 2,
+      "observed_tokens": 3,
+      "n_orbits": 25,
+      "labelled_sequences": 262144
+    },
+    {
+      "family_probability_mass": [
+        1.0000000000000377,
+        1.0000000000145868,
+        1.0000000000003442
+      ],
+      "family_cost_bits": [
+        0.12722564753687282,
+        0.1003041966948151,
+        0.07929379223867279
+      ],
+      "equal_family_cost_bits": 0.10227454549012023,
+      "posterior_entropy_bits": 1.4826879552389443,
+      "posterior_weight_mean_by_generating_family": [
+        [
+          0.39753451076780993,
+          0.2902582015097729,
+          0.31220728772245493
+        ],
+        [
+          0.29025820150977283,
+          0.3847215524707679,
+          0.32502024603404606
+        ],
+        [
+          0.312207287722455,
+          0.3250202460340461,
+          0.3627724662438432
+        ]
+      ],
+      "mean_true_family_posterior_weight": 0.3816761764941403,
+      "optimal_family_classification_accuracy": 0.4500995659968107,
+      "maximum_sequence_cost_bits": 1.5104547584217822,
+      "entropy_identity_error_bits": 5.967448757360216e-16,
+      "posterior_cost_identity_error_bits": 2.220446049250313e-15,
+      "total_mixture_probability_mass": 1.00000000000499,
+      "scored_predictions": 3,
+      "observed_tokens": 4,
+      "n_orbits": 225,
+      "labelled_sequences": 16777216
+    },
+    {
+      "family_probability_mass": [
+        1.0000000000000626,
+        1.000000000014589,
+        1.0000000000006808
+      ],
+      "family_cost_bits": [
+        0.2277943292359496,
+        0.16037248196973708,
+        0.13868765578207246
+      ],
+      "equal_family_cost_bits": 0.1756181556625864,
+      "posterior_entropy_bits": 1.4093443450666703,
+      "posterior_weight_mean_by_generating_family": [
+        [
+          0.44995716260880436,
+          0.2614722491123465,
+          0.288570588278912
+        ],
+        [
+          0.2614722491123465,
+          0.41099888264300616,
+          0.32752886825923655
+        ],
+        [
+          0.288570588278912,
+          0.32752886825923655,
+          0.38390054346253283
+        ]
+      ],
+      "mean_true_family_posterior_weight": 0.41495219623811447,
+      "optimal_family_classification_accuracy": 0.5080487659535348,
+      "maximum_sequence_cost_bits": 1.562005595207151,
+      "entropy_identity_error_bits": 2.6367796834847468e-15,
+      "posterior_cost_identity_error_bits": 2.6645352591003757e-15,
+      "total_mixture_probability_mass": 1.0000000000051092,
+      "scored_predictions": 4,
+      "observed_tokens": 5,
+      "n_orbits": 2704,
+      "labelled_sequences": 1073741824
+    }
+  ],
+  "convention": "n predictions score X2 through X(n+1); X1 is supplied. Every family has exact initial probability 1/64.",
+  "method": "Exhaustive S8 x S8 orbit sum of full-prior family likelihoods. Quadrature-backed finite population calculation, not an analytic zero-error result.",
+  "symmetry": "Independent permutations of the eight row and eight column labels preserve all three priors. A pair of coordinate equality patterns with ku,kv distinct labels represents (8)_ku (8)_kv labelled sequences.",
+  "numerical_masses_rescaled": false,
+  "numerical_uncertainty": "No sampling uncertainty for the finite sums. Normalization residuals and quadrature refinement differences are reported separately; refinement is not a rigorous error bound.",
+  "empirical_times": [
+    1,
+    4
+  ],
+  "empirical": {
+    "equal_family_average": {
+      "bayes_forecast_bits": [
+        0.0116322910667331,
+        0.1756181556625864
+      ],
+      "empirical_bayes_cost": {
+        "mean": [
+          0.012852914935592687,
+          0.1768231321548572
+        ],
+        "se": [
+          0.0033137600790643425,
+          0.011679868043135441
+        ],
+        "n_seq": 3072,
+        "family_weights": [
+          0.3333333333333333,
+          0.3333333333333333,
+          0.3333333333333333
+        ]
+      },
+      "empirical_minus_forecast_bits": [
+        0.0012206238688595872,
+        0.001204976492270804
+      ],
+      "empirical_minus_forecast_in_SE": [
+        0.36835010372997096,
+        0.10316696111810952
+      ],
+      "models": {
+        "pooled_seed0": {
+          "raw_transformer_cost": {
+            "mean": [
+              0.01768799809539293,
+              0.21052653212918573
+            ],
+            "se": [
+              0.0049375681852417835,
+              0.014445053689637827
+            ],
+            "n_seq": 3072,
+            "family_weights": [
+              0.3333333333333333,
+              0.3333333333333333,
+              0.3333333333333333
+            ]
+          },
+          "paired_transformer_minus_mixture": {
+            "mean": [
+              0.004835083159800162,
+              0.03370339997432883
+            ],
+            "se": [
+              0.0026913858978975893,
+              0.006616567437908832
+            ],
+            "n_seq": 3072,
+            "family_weights": [
+              0.3333333333333333,
+              0.3333333333333333,
+              0.3333333333333333
+            ]
+          },
+          "control_variate_transformer_cost": {
+            "mean": [
+              0.01646737422653326,
+              0.20932155563691524
+            ],
+            "se": [
+              0.0026913858978975893,
+              0.006616567437908832
+            ],
+            "n_seq": 3072,
+            "coefficient": 1
+          }
+        },
+        "pooled_seed1": {
+          "raw_transformer_cost": {
+            "mean": [
+              0.020364335288664624,
+              0.21284941616471972
+            ],
+            "se": [
+              0.004933892685899685,
+              0.01428266179078763
+            ],
+            "n_seq": 3072,
+            "family_weights": [
+              0.3333333333333333,
+              0.3333333333333333,
+              0.3333333333333333
+            ]
+          },
+          "paired_transformer_minus_mixture": {
+            "mean": [
+              0.007511420353071871,
+              0.036026284009862596
+            ],
+            "se": [
+              0.002725148769737076,
+              0.006854713469297647
+            ],
+            "n_seq": 3072,
+            "family_weights": [
+              0.3333333333333333,
+              0.3333333333333333,
+              0.3333333333333333
+            ]
+          },
+          "control_variate_transformer_cost": {
+            "mean": [
+              0.01914371141980497,
+              0.211644439672449
+            ],
+            "se": [
+              0.002725148769737076,
+              0.006854713469297647
+            ],
+            "n_seq": 3072,
+            "coefficient": 1
+          }
+        }
+      }
+    },
+    "product": {
+      "bayes_forecast_bits": [
+        0.007704205472754896,
+        0.2277943292359496
+      ],
+      "empirical_bayes_cost": {
+        "mean": [
+          0.004596052780288652,
+          0.239998759247627
+        ],
+        "se": [
+          0.00447613427254988,
+          0.024564767506441387
+        ],
+        "n_seq": 1024
+      },
+      "empirical_minus_forecast_bits": [
+        -0.0031081526924662444,
+        0.012204430011677397
+      ],
+      "empirical_minus_forecast_in_SE": [
+        -0.6943832564467844,
+        0.49682660373142734
+      ],
+      "models": {
+        "pooled_seed0": {
+          "raw_transformer_cost": {
+            "mean": [
+              -0.000444608933895866,
+              0.2629242758874541
+            ],
+            "se": [
+              0.002304546346203731,
+              0.027857361178783267
+            ],
+            "n_seq": 1024
+          },
+          "paired_transformer_minus_mixture": {
+            "mean": [
+              -0.005040661714184518,
+              0.022925516639827854
+            ],
+            "se": [
+              0.003821312402784622,
+              0.010697958260010458
+            ],
+            "n_seq": 1024
+          },
+          "control_variate_transformer_cost": {
+            "mean": [
+              0.0026635437585703784,
+              0.25071984587577745
+            ],
+            "se": [
+              0.003821312402784622,
+              0.010697958260010458
+            ],
+            "n_seq": 1024,
+            "coefficient": 1
+          }
+        },
+        "pooled_seed1": {
+          "raw_transformer_cost": {
+            "mean": [
+              0.004032286103881968,
+              0.2217300579617406
+            ],
+            "se": [
+              0.0023976303947591364,
+              0.02495094253033838
+            ],
+            "n_seq": 1024
+          },
+          "paired_transformer_minus_mixture": {
+            "mean": [
+              -0.0005637666764066844,
+              -0.018268701285886344
+            ],
+            "se": [
+              0.0039205049488098805,
+              0.010777265020886476
+            ],
+            "n_seq": 1024
+          },
+          "control_variate_transformer_cost": {
+            "mean": [
+              0.007140438796348212,
+              0.20952562795006327
+            ],
+            "se": [
+              0.0039205049488098805,
+              0.010777265020886476
+            ],
+            "n_seq": 1024,
+            "coefficient": 1
+          }
+        }
+      }
+    },
+    "shared_base": {
+      "bayes_forecast_bits": [
+        0.019488462254689504,
+        0.16037248196973708
+      ],
+      "empirical_bayes_cost": {
+        "mean": [
+          0.020042181168796115,
+          0.16111318358213889
+        ],
+        "se": [
+          0.008255525074327901,
+          0.019329680711336842
+        ],
+        "n_seq": 1024
+      },
+      "empirical_minus_forecast_bits": [
+        0.0005537189141066115,
+        0.0007407016124018062
+      ],
+      "empirical_minus_forecast_in_SE": [
+        0.06707252526293016,
+        0.03831939199944391
+      ],
+      "models": {
+        "pooled_seed0": {
+          "raw_transformer_cost": {
+            "mean": [
+              0.05111956061147243,
+              0.2658513102255597
+            ],
+            "se": [
+              0.01446986751945565,
+              0.02938391737483986
+            ],
+            "n_seq": 1024
+          },
+          "paired_transformer_minus_mixture": {
+            "mean": [
+              0.03107737944267607,
+              0.10473812664342114
+            ],
+            "se": [
+              0.006403851776129447,
+              0.014107315227014337
+            ],
+            "n_seq": 1024
+          },
+          "control_variate_transformer_cost": {
+            "mean": [
+              0.050565841697365575,
+              0.2651106086131582
+            ],
+            "se": [
+              0.006403851776129447,
+              0.014107315227014337
+            ],
+            "n_seq": 1024,
+            "coefficient": 1
+          }
+        },
+        "pooled_seed1": {
+          "raw_transformer_cost": {
+            "mean": [
+              0.05354557750836836,
+              0.2921212820971483
+            ],
+            "se": [
+              0.014421692516850862,
+              0.030758904863487438
+            ],
+            "n_seq": 1024
+          },
+          "paired_transformer_minus_mixture": {
+            "mean": [
+              0.03350339633957204,
+              0.13100809851501005
+            ],
+            "se": [
+              0.006385949254704718,
+              0.014979548853980063
+            ],
+            "n_seq": 1024
+          },
+          "control_variate_transformer_cost": {
+            "mean": [
+              0.052991858594261546,
+              0.29138058048474713
+            ],
+            "se": [
+              0.006385949254704718,
+              0.014979548853980063
+            ],
+            "n_seq": 1024,
+            "coefficient": 1
+          }
+        }
+      }
+    },
+    "uniform_base": {
+      "bayes_forecast_bits": [
+        0.007704205472754896,
+        0.13868765578207246
+      ],
+      "empirical_bayes_cost": {
+        "mean": [
+          0.013920510857693294,
+          0.12935745363480564
+        ],
+        "se": [
+          0.0032618369787057585,
+          0.015833808717354226
+        ],
+        "n_seq": 1024
+      },
+      "empirical_minus_forecast_bits": [
+        0.006216305384938397,
+        -0.00933020214726682
+      ],
+      "empirical_minus_forecast_in_SE": [
+        1.9057682604986965,
+        -0.589258233051704
+      ],
+      "models": {
+        "pooled_seed0": {
+          "raw_transformer_cost": {
+            "mean": [
+              0.0023890426086022303,
+              0.10280401027454347
+            ],
+            "se": [
+              0.0021744462198012623,
+              0.015443089481450215
+            ],
+            "n_seq": 1024
+          },
+          "paired_transformer_minus_mixture": {
+            "mean": [
+              -0.011531468249091067,
+              -0.02655344336026251
+            ],
+            "se": [
+              0.003095202160167614,
+              0.008974855324532119
+            ],
+            "n_seq": 1024
+          },
+          "control_variate_transformer_cost": {
+            "mean": [
+              -0.0038272627763361704,
+              0.11213421242180995
+            ],
+            "se": [
+              0.003095202160167614,
+              0.008974855324532119
+            ],
+            "n_seq": 1024,
+            "coefficient": 1
+          }
+        },
+        "pooled_seed1": {
+          "raw_transformer_cost": {
+            "mean": [
+              0.0035151422537435476,
+              0.12469690843527025
+            ],
+            "se": [
+              0.0023142659232042993,
+              0.016349008805334474
+            ],
+            "n_seq": 1024
+          },
+          "paired_transformer_minus_mixture": {
+            "mean": [
+              -0.010405368603949743,
+              -0.004660545199535916
+            ],
+            "se": [
+              0.0032691306822286805,
+              0.009074554838466548
+            ],
+            "n_seq": 1024
+          },
+          "control_variate_transformer_cost": {
+            "mean": [
+              -0.002701163131194846,
+              0.13402711058253655
+            ],
+            "se": [
+              0.0032691306822286805,
+              0.009074554838466548
+            ],
+            "n_seq": 1024,
+            "coefficient": 1
+          }
+        }
+      }
+    }
+  },
+  "control_variate": "C_TF estimate = deterministic population C_B + paired sample mean(loss_TF - loss_mix), with fixed coefficient one. Its SE is the paired gap SE; it is unbiased conditional on reference numerical accuracy. Raw estimates are retained. No agreement between transformer and Bayes is assumed.",
+  "empirical_scope": "Existing 1024 independent sequences per full-prior family (3072 total), both pooled training seeds; no new transformer evaluation. Standard errors exclude variation across training runs and numerical reference error.",
+  "empirical_deviation_policy": "Report deviations in SE units without treating a collection of two-SE comparisons as a pass/fail rule.",
+  "checks": {
+    "coordinate_relabelling": {
+      "checked": 123,
+      "maximum_absolute_error_bits": 5.125482406103868e-15
+    },
+    "saved_endpoint_replay": {
+      "component_log_likelihoods_checked": 18432,
+      "maximum_absolute_error_bits": 0.0
+    },
+    "maximum_mass_error": 1.4588996677389332e-11,
+    "maximum_entropy_identity_error_bits": 2.6367796834847468e-15,
+    "maximum_posterior_identity_error_bits": 2.6645352591003757e-15
+  },
+  "refinements": {
+    "lsa_expanded_bounds": {
+      "family_cost_bits": 2.220446049250313e-16,
+      "equal_family_cost_bits": 8.326672684688674e-17,
+      "posterior_entropy_bits": 0.0,
+      "posterior_weight_mean_by_generating_family": 1.6653345369377348e-16,
+      "optimal_family_classification_accuracy": 0.0
+    },
+    "lsa_halved_step": {
+      "family_cost_bits": 2.498001805406602e-16,
+      "equal_family_cost_bits": 1.1102230246251565e-16,
+      "posterior_entropy_bits": 4.440892098500626e-16,
+      "posterior_weight_mean_by_generating_family": 1.1102230246251565e-16,
+      "optimal_family_classification_accuracy": 1.1102230246251565e-16
+    },
+    "alpha16_step32_bounds-32_32.json": {
+      "family_cost_bits": 2.7533531010703882e-14,
+      "equal_family_cost_bits": 2.4234086959395995e-15,
+      "posterior_entropy_bits": 1.6653345369377348e-14,
+      "posterior_weight_mean_by_generating_family": 1.637578961322106e-14,
+      "optimal_family_classification_accuracy": 8.548717289613705e-15
+    },
+    "alpha32_step32_bounds-32_32.json": {
+      "family_cost_bits": 2.78388423424758e-14,
+      "equal_family_cost_bits": 2.4234086959395995e-15,
+      "posterior_entropy_bits": 1.6653345369377348e-14,
+      "posterior_weight_mean_by_generating_family": 1.6542323066914832e-14,
+      "optimal_family_classification_accuracy": 8.826273045769994e-15
+    },
+    "alpha32_step64_bounds-36_34.json": {
+      "family_cost_bits": 0.0,
+      "equal_family_cost_bits": 0.0,
+      "posterior_entropy_bits": 0.0,
+      "posterior_weight_mean_by_generating_family": 0.0,
+      "optimal_family_classification_accuracy": 0.0
+    }
+  },
+  "quadrature": {
+    "production_lsa_bounds": [
+      -30,
+      30
+    ],
+    "production_lsa_step": 0.015625,
+    "expanded_lsa_bounds": [
+      -36,
+      36
+    ],
+    "refined_lsa_step": 0.0078125,
+    "shared_reports": [
+      {
+        "path": "/Users/ruediger/Projects/layered_architectures/output/shortprefix_shared_base_exact_2026-09-15/alpha16_step32_bounds-32_32.json",
+        "alpha_order": 16,
+        "bounds": [
+          -32.0,
+          32.0
+        ],
+        "step": 0.03125
+      },
+      {
+        "path": "/Users/ruediger/Projects/layered_architectures/output/shortprefix_shared_base_exact_2026-09-15/alpha32_step32_bounds-32_32.json",
+        "alpha_order": 32,
+        "bounds": [
+          -32.0,
+          32.0
+        ],
+        "step": 0.03125
+      },
+      {
+        "path": "/Users/ruediger/Projects/layered_architectures/output/shortprefix_shared_base_exact_2026-09-15/alpha32_step64_bounds-36_34.json",
+        "alpha_order": 32,
+        "bounds": [
+          -36.0,
+          34.0
+        ],
+        "step": 0.015625
+      }
+    ]
+  },
+  "verified_file_sha256": {
+    "/Users/ruediger/Projects/layered_architectures/results/transformer/multifamily_bayes_2026-09-16/short_comparison.json": "7e243e123479cd1af96caf299055788a7220c68dcc8259b7f9940059dc4b7529",
+    "/Users/ruediger/Projects/layered_architectures/results/transformer/multifamily_bayes_2026-09-16/short_validation.json": "8df1c30f3c4c9169e747f8bb049f1315ee0dbc9505343e78cbe8e7834d495dc5",
+    "/Users/ruediger/Projects/layered_architectures/results/transformer/multifamily_bayes_2026-09-16/family_evidence_validation.json": "4c369694bb175ed48f0b0bc846863c1469a8beb767291112dadcc9fa2aa2d235",
+    "/Users/ruediger/Projects/layered_architectures/results/transformer/multifamily_bayes_2026-09-16/shared_base_evidence_validation.json": "cf4682278108f9be3989994fce183b7900c21f6a8f2f5e068a15c01e91841184",
+    "/Users/ruediger/Projects/layered_architectures/output/multifamily_bayes_2026-09-16/family_evidence/validation.json": "4c369694bb175ed48f0b0bc846863c1469a8beb767291112dadcc9fa2aa2d235",
+    "/Users/ruediger/Projects/layered_architectures/results/transformer/multifamily_2026-09-16/validation.json": "4e0ed9af42b2a3d65b9bdfdc5aab4e87087f3ced4063b331272e5922e487d88b",
+    "/Users/ruediger/Projects/layered_architectures/output/multifamily_results_2026-09-16/heldout/manifest.json": "4069cfc5ae0be1d7851eb73b4b912eedf280ecc069c59635f9bf7b84da975dc0",
+    "/Users/ruediger/Projects/layered_architectures/output/multifamily_results_2026-09-16/heldout/product_prior.npz": "6a66459c00f6b3850e3f8bad4002869c41e0d83c1494cd8f51ac2241dd017f96",
+    "/Users/ruediger/Projects/layered_architectures/output/multifamily_results_2026-09-16/heldout/product_prior.json": "b7eaa029d56c2087847a9359a078ab49ed378099b3538b43caa17c5bfc26710c",
+    "/Users/ruediger/Projects/layered_architectures/output/multifamily_bayes_2026-09-16/family_evidence/product_on_product_prior.npz": "ce81f2efd228ef05c9fe040a224201ad3a1f4c4764bca54200348c288ea43541",
+    "/Users/ruediger/Projects/layered_architectures/output/multifamily_bayes_2026-09-16/family_evidence/product_on_product_prior.json": "bb500bccc28417a536be484f3d7d16664f6dadf2c147350ee61e95dabe3b93d9",
+    "/Users/ruediger/Projects/layered_architectures/output/multifamily_bayes_2026-09-16/family_evidence/uniform_base_on_product_prior.npz": "fd36944e898ba6ef4019bc7939b7c2237ccc2191711e75125fe332f7834c8ae4",
+    "/Users/ruediger/Projects/layered_architectures/output/multifamily_bayes_2026-09-16/family_evidence/uniform_base_on_product_prior.json": "dce21d1c012c37b76e532eded48e1008301f32f9ef70c057d85705277bffd3ad",
+    "/Users/ruediger/Projects/layered_architectures/output/multifamily_results_2026-09-16/eval/pooled_seed0/manifest.json": "bc73b777e458c2238a9e0791f37e7e0110c068f9f44bceee191bc7e749e14b7f",
+    "/Users/ruediger/Projects/layered_architectures/output/multifamily_results_2026-09-16/eval/pooled_seed0/product_prior.json": "1626d1e480c4e2badcc5068726fe7ac774e8d10c091d4eeaa5d7bac88130ab00",
+    "/Users/ruediger/Projects/layered_architectures/output/multifamily_results_2026-09-16/eval/pooled_seed0/product_prior.npz": "e471d1e93896caf109c000a7255d7efdac63da0b33c309f62eea4301d1641aa5",
+    "/Users/ruediger/Projects/layered_architectures/output/multifamily_results_2026-09-16/eval/pooled_seed1/manifest.json": "f47840fcbb3f964c94f25f2d8502ff1c3e9fcb52ff0859245a42034d18330873",
+    "/Users/ruediger/Projects/layered_architectures/output/multifamily_results_2026-09-16/eval/pooled_seed1/product_prior.json": "97708ea4f287bd3608272224dc4c429f541d7b2cfc58225b711edecb4e48e230",
+    "/Users/ruediger/Projects/layered_architectures/output/multifamily_results_2026-09-16/eval/pooled_seed1/product_prior.npz": "094bd25c7b08b9783ff223239dcdea4684f841c95b8b7cca1cf8c34271c7d31a",
+    "/Users/ruediger/Projects/layered_architectures/output/multifamily_results_2026-09-16/heldout/shared_base_prior.npz": "68a12be7e92bbd4f7130265c9cb953108edbb21cc13adc16d24a14a91e7f03fa",
+    "/Users/ruediger/Projects/layered_architectures/output/multifamily_results_2026-09-16/heldout/shared_base_prior.json": "412981a812c2b31736449d4eef1bee89ae88baeac819f492045de8981441971d",
+    "/Users/ruediger/Projects/layered_architectures/output/multifamily_bayes_2026-09-16/family_evidence/product_on_shared_base_prior.npz": "96a1ab6adde158f7feb4817927dc731e2d7b20f14aebf5dfce256e7407bea6d7",
+    "/Users/ruediger/Projects/layered_architectures/output/multifamily_bayes_2026-09-16/family_evidence/product_on_shared_base_prior.json": "646d82f3daf82ac624fce1227eecee8a77cf6c77a188249452cb0e84643bd547",
+    "/Users/ruediger/Projects/layered_architectures/output/multifamily_bayes_2026-09-16/family_evidence/uniform_base_on_shared_base_prior.npz": "bcbeaa05d4686e644cbae53f3676fe3e7f78a87b07e7914d334a5e480f46e84b",
+    "/Users/ruediger/Projects/layered_architectures/output/multifamily_bayes_2026-09-16/family_evidence/uniform_base_on_shared_base_prior.json": "ec29fae1c510b30e9530106d67b6558af9a6303b3320e86c19f26386bd7f9a60",
+    "/Users/ruediger/Projects/layered_architectures/output/multifamily_results_2026-09-16/eval/pooled_seed0/shared_base_prior.json": "f64f3b0473353e08f96c5c7ac86ab1b59ff12ab63093529d9b908333e11990a8",
+    "/Users/ruediger/Projects/layered_architectures/output/multifamily_results_2026-09-16/eval/pooled_seed0/shared_base_prior.npz": "320a332a430b29483e365f1ee17bcc7d88e5ad879171d555c7a7a0dd12d704db",
+    "/Users/ruediger/Projects/layered_architectures/output/multifamily_results_2026-09-16/eval/pooled_seed1/shared_base_prior.json": "c684ae17cb5444dfc7b803e581a35e20338eb97e4bbfefaf73a3bc614d720541",
+    "/Users/ruediger/Projects/layered_architectures/output/multifamily_results_2026-09-16/eval/pooled_seed1/shared_base_prior.npz": "d23851517930587b4f5113b7e19e90abed924b1875de04902bd15d3cc763008e",
+    "/Users/ruediger/Projects/layered_architectures/output/multifamily_results_2026-09-16/heldout/uniform_base_prior.npz": "57a5261e6cbca7283247d9a491b82689be0ac10042152851ac6e7a7bff2a5ded",
+    "/Users/ruediger/Projects/layered_architectures/output/multifamily_results_2026-09-16/heldout/uniform_base_prior.json": "32b753cd26e124678cf85c2e4e6c3c9b985d7e1fde4769b80431918e2d4c7a95",
+    "/Users/ruediger/Projects/layered_architectures/output/multifamily_bayes_2026-09-16/family_evidence/product_on_uniform_base_prior.npz": "d373062d00ccb651c8c25dd034d3a0e35b9c4c6f692b7f422cc4e6f858eff3ae",
+    "/Users/ruediger/Projects/layered_architectures/output/multifamily_bayes_2026-09-16/family_evidence/product_on_uniform_base_prior.json": "51d804684d61c756f514485d1cc3ff99f3045349eb7863b4d649cdec8e60ea53",
+    "/Users/ruediger/Projects/layered_architectures/output/multifamily_bayes_2026-09-16/family_evidence/uniform_base_on_uniform_base_prior.npz": "06b883f55661b8fe853b2b67ed33755e0bd0a8ed93aaeb86a60b72e6db37e0ee",
+    "/Users/ruediger/Projects/layered_architectures/output/multifamily_bayes_2026-09-16/family_evidence/uniform_base_on_uniform_base_prior.json": "52c4af901f24121f3ce53360036acf74f39d40cee3c588c16ca08ab98eac36ae",
+    "/Users/ruediger/Projects/layered_architectures/output/multifamily_results_2026-09-16/eval/pooled_seed0/uniform_base_prior.json": "d2788e172914890d5c7e02b16a99a1db356c0724537373225d40de276731dc5b",
+    "/Users/ruediger/Projects/layered_architectures/output/multifamily_results_2026-09-16/eval/pooled_seed0/uniform_base_prior.npz": "5f1b89e02c813048c67bd6f8140f59ea37b924d14fe06fcba5fc94e3fbb5c441",
+    "/Users/ruediger/Projects/layered_architectures/output/multifamily_results_2026-09-16/eval/pooled_seed1/uniform_base_prior.json": "baf65065d5c6a4525423e240daf264e8f96ce4ff26892f9314a2d39e1c94035a",
+    "/Users/ruediger/Projects/layered_architectures/output/multifamily_results_2026-09-16/eval/pooled_seed1/uniform_base_prior.npz": "8b4eaa84482ca088865c633c31a3c215ccb52c8a8c92aaa9cf87becf531e0f05",
+    "/Users/ruediger/Projects/layered_architectures/results/transformer/shared_base_conditional_curves/shortprefix_reference.json": "a1659aa766a6c15ffb849d71f67352f88fe385658297a920c2baf376dbbb0c1c",
+    "/Users/ruediger/Projects/layered_architectures/results/transformer/conditional_shared_base/first_step.json": "b856ef15840ba31c8c42a1a50a3fa933372c15d61ca1be45fef1bcf9c375ced4",
+    "/Users/ruediger/Projects/layered_architectures/results/transformer/shared_base_conditional_curves/time4_summary.json": "e4997691be5bf98016e9e3b67f03e37f08556068b4777af229a2a6f164259482",
+    "/Users/ruediger/Projects/layered_architectures/code/scripts/shortprefix_shared_base_exact.py": "b6e229cb48f9b1a58e570521df9eb92ebec65da6b0db8386c3a23a71183791a6",
+    "/Users/ruediger/Projects/layered_architectures/code/scripts/shortprefix_shared_base_summary.py": "71bb461091932c015b3e816ec68f6320f0ccb8eae75795e31c57b5e840afadfc",
+    "/Users/ruediger/Projects/layered_architectures/code/scripts/conditional_shared_base_first_step.py": "8abba4e59ddbbe6ac4484d029f88d4244db50237d5726eabadd0f6325209f5cd",
+    "/Users/ruediger/Projects/layered_architectures/output/shortprefix_shared_base_exact_2026-09-15/alpha16_step32_bounds-32_32.json": "978fb8e733763910ac61b1b3fb2912df824d4aeafa0cd1779d74a8e14a89cdfa",
+    "/Users/ruediger/Projects/layered_architectures/output/shortprefix_shared_base_exact_2026-09-15/alpha32_step32_bounds-32_32.json": "c0d94195d4048a3e013337bc52588b3b547f8a4957601dd882b7d3a804bed130",
+    "/Users/ruediger/Projects/layered_architectures/output/shortprefix_shared_base_exact_2026-09-15/alpha32_step64_bounds-36_34.json": "2e2dd8fdd501a19c9a628bb8e883329a3bb37ca0fab7fedc335f2f772b419a64",
+    "/Users/ruediger/Projects/layered_architectures/code/scripts/multifamily_short_mixture.py": "1275e8cb9d4873f58ac31143a2365963788171e28c7a8ad4141ed66fde1e0469",
+    "/Users/ruediger/Projects/layered_architectures/code/transformer/mixture_bayes.py": "5a4496006b4379ab7700b9a1648bb77f08f5fee042318edb5ddf9221d4cab9a4",
+    "/Users/ruediger/Projects/layered_architectures/code/transformer/mixture_family_evidence.py": "86e79efcc8b98aa5a66aa3dd1548ddf88f53c39dd5ab3ec972160358775caf57",
+    "/Users/ruediger/Projects/layered_architectures/code/transformer/shared_base_short_evidence.py": "085d517efe914902390e1499d67fa27423d430fc7e1b742b82c98ebc971f4171",
+    "/Users/ruediger/Projects/layered_architectures/output/multifamily_bayes_2026-09-16/short_comparison/product_prior.npz": "89d47cac3eaff2000fb74384461c3ae126706c0c8f7f9ec809434dee84fff3c2",
+    "/Users/ruediger/Projects/layered_architectures/output/multifamily_bayes_2026-09-16/short_comparison/shared_base_prior.npz": "82a601c7989c849cfba1d8c436e0b48351f9f901358f85149640be093ac9b053",
+    "/Users/ruediger/Projects/layered_architectures/output/multifamily_bayes_2026-09-16/short_comparison/uniform_base_prior.npz": "e13d1e092a70095763906596255fb6961a5e8e95d0643d66f1d083be6fd12499",
+    "/Users/ruediger/Projects/layered_architectures/code/scripts/section4_family_cost.py": "0c8bea2ad105276fba9a3c1269703ab3281ee1b8e621a4a7ef29f3ca24297a3e",
+    "/Users/ruediger/Projects/layered_architectures/code/transformer/validate_shared_depth.py": "0e1901d4d09ffa768c59c034eb3a7474418e3e656817d3b0f6cd64197517ec7f",
+    "/Users/ruediger/Projects/layered_architectures/code/transformer/phi_source.py": "456eb407fd7f280786a441681a704a6fff172af9fc9aea3c6f9456fb55174831",
+    "/Users/ruediger/Projects/layered_architectures/code/transformer/shared_depth.py": "616f536153458499078d17d7939e6a800c7b52e3eb4f1dd6503db95030d7a395",
+    "/Users/ruediger/Projects/layered_architectures/code/transformer/lsa_seq.py": "7e39960e91f3bb27eea82e201afd8a86ce717ea50a304daa86534b4fdbadfc51",
+    "/Users/ruediger/Projects/product_model_with_memory/tables/anchors_prod/manifest.json": "cf0449a4b704174890f0a1fb95f20954839dd7266ae307e799d1dc6d0234ffb5",
+    "/Users/ruediger/Projects/product_model_with_memory/src/product_model_with_memory/universal_tables.py": "aef2f63c0ccdb4de58bb8c617dd99aaadc73b803bee67a029f5d89230878d5c2",
+    "/Users/ruediger/Projects/layered_architectures/code/scripts/section4_family_forecast.py": "ffc81105779bfded8ea70e5d1711611594bffc30d66962f683ef2a7cfe64820f"
+  },
+  "no_new_sampling": true,
+  "no_new_transformer_inference": true,
+  "maximum_token_length": 5
+}

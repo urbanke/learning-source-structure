@@ -1,0 +1,1067 @@
+{
+  "schema": "copying-frequency-calibration-publication-v1",
+  "times": [
+    1,
+    2,
+    3,
+    4
+  ],
+  "first_repeat_probability": 0.06790256083275098,
+  "groups": [
+    {
+      "id": "a1_L0",
+      "depth": 0,
+      "n_sequences": 256,
+      "maximum_predictive_normalization_error": 3.4416913763379853e-15,
+      "comparisons": {
+        "stationary_minus_bayes": {
+          "mean": [
+            -0.0003479084875671265,
+            -0.014265724057605626,
+            -0.027328815968511083,
+            -0.025970580676292737
+          ],
+          "paired_sequence_se": [
+            0.00033235659445110896,
+            0.0033876852789031455,
+            0.0041029989796239185,
+            0.004860313813110069
+          ],
+          "descriptive_crossing": {
+            "status": "no_positive_mean_crossing_by_t4",
+            "upcrossings": [],
+            "last_mean": -0.025970580676292737,
+            "horizon": 4,
+            "equality_tolerance_bits": 1e-12
+          },
+          "prior_bank_mcse": [
+            9.553584704085948e-06,
+            2.502286077310997e-05,
+            0.00018575909248444105,
+            0.0001289267267400785
+          ]
+        },
+        "stationary_minus_bayes_cumulative": {
+          "mean": [
+            -0.0003479084875671265,
+            -0.014613632545172752,
+            -0.041942448513683825,
+            -0.0679130291899766
+          ],
+          "paired_sequence_se": [
+            0.00033235659445110896,
+            0.003418758927863506,
+            0.005827205546549665,
+            0.007668246141492832
+          ],
+          "descriptive_crossing": {
+            "status": "no_positive_mean_crossing_by_t4",
+            "upcrossings": [],
+            "last_mean": -0.0679130291899766,
+            "horizon": 4,
+            "equality_tolerance_bits": 1e-12
+          },
+          "prior_bank_mcse": [
+            9.553584704085948e-06,
+            1.9673962674774826e-05,
+            0.00020347103509686193,
+            0.00032927527876356607
+          ]
+        },
+        "count_only_minus_bayes": {
+          "mean": [
+            -3.8163916471489756e-17,
+            -5.863365348801608e-16,
+            -0.0014956470897383826,
+            -0.010335671517645865
+          ],
+          "paired_sequence_se": [
+            1.127897271444636e-17,
+            3.9853212542661133e-17,
+            0.002000324813871042,
+            0.004546454034966625
+          ],
+          "descriptive_crossing": {
+            "status": "no_positive_mean_crossing_by_t4",
+            "upcrossings": [],
+            "last_mean": -0.010335671517645865,
+            "horizon": 4,
+            "equality_tolerance_bits": 1e-12
+          }
+        },
+        "count_only_minus_bayes_cumulative": {
+          "mean": [
+            -3.8163916471489756e-17,
+            -6.245004513516506e-16,
+            -0.0014956470897390071,
+            -0.011831318607384872
+          ],
+          "paired_sequence_se": [
+            1.127897271444636e-17,
+            4.015587487244269e-17,
+            0.0020003248138710412,
+            0.005077079902837376
+          ],
+          "descriptive_crossing": {
+            "status": "no_positive_mean_crossing_by_t4",
+            "upcrossings": [],
+            "last_mean": -0.011831318607384872,
+            "horizon": 4,
+            "equality_tolerance_bits": 1e-12
+          }
+        },
+        "stationary_minus_shuffled_seed0": {
+          "mean": [
+            -0.0015246595621810771,
+            -0.0015801558948327007,
+            0.000112077307472494,
+            -0.0003189395018308415
+          ],
+          "paired_sequence_se": [
+            0.0008758608504847916,
+            0.0008011138104328566,
+            0.0010267786989044156,
+            0.0011672526663177142
+          ],
+          "descriptive_crossing": {
+            "status": "delayed_mean_crossing",
+            "upcrossings": [
+              3
+            ],
+            "last_mean": -0.0003189395018308415,
+            "horizon": 4,
+            "equality_tolerance_bits": 1e-12
+          },
+          "prior_bank_mcse": [
+            9.553584704085948e-06,
+            2.5022860773109974e-05,
+            0.00018575909248444108,
+            0.0001289267267400785
+          ]
+        },
+        "count_only_minus_shuffled_seed0": {
+          "mean": [
+            -0.0011767510746139888,
+            0.012685568162772339,
+            0.025945246186245195,
+            0.01531596965681603
+          ],
+          "paired_sequence_se": [
+            0.000832895857517316,
+            0.0034026341697513266,
+            0.0044419111216623995,
+            0.003496844459048129
+          ],
+          "descriptive_crossing": {
+            "status": "delayed_mean_crossing",
+            "upcrossings": [
+              2
+            ],
+            "last_mean": 0.01531596965681603,
+            "horizon": 4,
+            "equality_tolerance_bits": 1e-12
+          }
+        },
+        "bayes_minus_shuffled_seed0": {
+          "mean": [
+            -0.0011767510746139506,
+            0.012685568162772925,
+            0.027440893275983577,
+            0.025651641174461896
+          ],
+          "paired_sequence_se": [
+            0.0008328958575173173,
+            0.003402634169751316,
+            0.004514557619296426,
+            0.005165592318787043
+          ],
+          "descriptive_crossing": {
+            "status": "delayed_mean_crossing",
+            "upcrossings": [
+              2
+            ],
+            "last_mean": 0.025651641174461896,
+            "horizon": 4,
+            "equality_tolerance_bits": 1e-12
+          }
+        },
+        "neural_gain_seed0": {
+          "mean": [
+            -0.0029411124547986008,
+            -0.016856894150830873,
+            -0.029501280073211886,
+            -0.02646715889183959
+          ],
+          "paired_sequence_se": [
+            0.001825801407907554,
+            0.003555916602759697,
+            0.004564035663796376,
+            0.005185262411906506
+          ],
+          "descriptive_crossing": {
+            "status": "no_positive_mean_crossing_by_t4",
+            "upcrossings": [],
+            "last_mean": -0.02646715889183959,
+            "horizon": 4,
+            "equality_tolerance_bits": 1e-12
+          }
+        },
+        "neural_cumulative_gain_seed0": {
+          "mean": [
+            -0.0029411124547986008,
+            -0.019798006605629474,
+            -0.04929928667884134,
+            -0.07576644557068098
+          ],
+          "paired_sequence_se": [
+            0.001825801407907554,
+            0.004196247551181145,
+            0.006875603375144397,
+            0.009057587102572219
+          ],
+          "descriptive_crossing": {
+            "status": "no_positive_mean_crossing_by_t4",
+            "upcrossings": [],
+            "last_mean": -0.07576644557068098,
+            "horizon": 4,
+            "equality_tolerance_bits": 1e-12
+          }
+        },
+        "stationary_minus_shuffled_seed1": {
+          "mean": [
+            -0.0012468848718478164,
+            -0.0014645158200682212,
+            0.001886396905851493,
+            0.0012446694212517734
+          ],
+          "paired_sequence_se": [
+            0.0007210387298316806,
+            0.0008435057309141261,
+            0.0011953047463101531,
+            0.0011485314123018363
+          ],
+          "descriptive_crossing": {
+            "status": "delayed_mean_crossing",
+            "upcrossings": [
+              3
+            ],
+            "last_mean": 0.0012446694212517734,
+            "horizon": 4,
+            "equality_tolerance_bits": 1e-12
+          },
+          "prior_bank_mcse": [
+            9.553584704085948e-06,
+            2.5022860773109974e-05,
+            0.00018575909248444108,
+            0.0001289267267400785
+          ]
+        },
+        "count_only_minus_shuffled_seed1": {
+          "mean": [
+            -0.000898976384280728,
+            0.012801208237536818,
+            0.027719565784624194,
+            0.016879578579898646
+          ],
+          "paired_sequence_se": [
+            0.0007410369646712548,
+            0.0035395220656754944,
+            0.004442341335411902,
+            0.0033184801404278945
+          ],
+          "descriptive_crossing": {
+            "status": "delayed_mean_crossing",
+            "upcrossings": [
+              2
+            ],
+            "last_mean": 0.016879578579898646,
+            "horizon": 4,
+            "equality_tolerance_bits": 1e-12
+          }
+        },
+        "bayes_minus_shuffled_seed1": {
+          "mean": [
+            -0.0008989763842806898,
+            0.012801208237537404,
+            0.029215212874362576,
+            0.02721525009754451
+          ],
+          "paired_sequence_se": [
+            0.0007410369646712554,
+            0.0035395220656754844,
+            0.004597214247247714,
+            0.005081887618640841
+          ],
+          "descriptive_crossing": {
+            "status": "delayed_mean_crossing",
+            "upcrossings": [
+              2
+            ],
+            "last_mean": 0.02721525009754451,
+            "horizon": 4,
+            "equality_tolerance_bits": 1e-12
+          }
+        },
+        "neural_gain_seed1": {
+          "mean": [
+            -0.048566256329009454,
+            -0.015947788901224606,
+            -0.03189307926484977,
+            -0.031125216363046188
+          ],
+          "paired_sequence_se": [
+            0.007795484130082527,
+            0.003878684759476736,
+            0.0045303036569085235,
+            0.005385116803837071
+          ],
+          "descriptive_crossing": {
+            "status": "no_positive_mean_crossing_by_t4",
+            "upcrossings": [],
+            "last_mean": -0.031125216363046188,
+            "horizon": 4,
+            "equality_tolerance_bits": 1e-12
+          }
+        },
+        "neural_cumulative_gain_seed1": {
+          "mean": [
+            -0.048566256329009454,
+            -0.06451404523023406,
+            -0.0964071244950838,
+            -0.12753234085813
+          ],
+          "paired_sequence_se": [
+            0.007795484130082527,
+            0.008864821735549916,
+            0.010856623371529131,
+            0.012039001848956309
+          ],
+          "descriptive_crossing": {
+            "status": "no_positive_mean_crossing_by_t4",
+            "upcrossings": [],
+            "last_mean": -0.12753234085813,
+            "horizon": 4,
+            "equality_tolerance_bits": 1e-12
+          }
+        }
+      }
+    },
+    {
+      "id": "a1_L2",
+      "depth": 2,
+      "n_sequences": 256,
+      "maximum_predictive_normalization_error": 3.4416913763379853e-15,
+      "comparisons": {
+        "stationary_minus_bayes": {
+          "mean": [
+            0.0006629965811547692,
+            0.0008748392101471051,
+            0.0018606526058040033,
+            0.011953530471089168
+          ],
+          "paired_sequence_se": [
+            0.00048353299142367266,
+            0.005742875803827189,
+            0.006524900510365228,
+            0.008364288793542837
+          ],
+          "descriptive_crossing": {
+            "status": "positive_initially",
+            "upcrossings": [],
+            "last_mean": 0.011953530471089168,
+            "horizon": 4,
+            "equality_tolerance_bits": 1e-12
+          },
+          "prior_bank_mcse": [
+            3.0128601963148893e-05,
+            3.981282036785583e-05,
+            8.291076318161233e-05,
+            7.967325007597503e-05
+          ]
+        },
+        "stationary_minus_bayes_cumulative": {
+          "mean": [
+            0.0006629965811547692,
+            0.0015378357913018743,
+            0.0033984883971058776,
+            0.015352018868195046
+          ],
+          "paired_sequence_se": [
+            0.00048353299142367266,
+            0.005515405352820884,
+            0.009838921131366841,
+            0.013339134277928264
+          ],
+          "descriptive_crossing": {
+            "status": "positive_initially",
+            "upcrossings": [],
+            "last_mean": 0.015352018868195046,
+            "horizon": 4,
+            "equality_tolerance_bits": 1e-12
+          },
+          "prior_bank_mcse": [
+            3.0128601963148893e-05,
+            6.47949955054617e-05,
+            0.0001185426485920685,
+            0.0001950494962518225
+          ]
+        },
+        "count_only_minus_bayes": {
+          "mean": [
+            -1.734723475976807e-17,
+            -6.869504964868156e-16,
+            -0.0016842175808734934,
+            0.017161934369989196
+          ],
+          "paired_sequence_se": [
+            7.696832300110803e-18,
+            4.408931307247378e-17,
+            0.004155894779193886,
+            0.007519558567053908
+          ],
+          "descriptive_crossing": {
+            "status": "delayed_mean_crossing",
+            "upcrossings": [
+              4
+            ],
+            "last_mean": 0.017161934369989196,
+            "horizon": 4,
+            "equality_tolerance_bits": 1e-12
+          }
+        },
+        "count_only_minus_bayes_cumulative": {
+          "mean": [
+            -1.734723475976807e-17,
+            -7.042977312465837e-16,
+            -0.0016842175808741977,
+            0.015477716789114998
+          ],
+          "paired_sequence_se": [
+            7.696832300110803e-18,
+            4.479194836016046e-17,
+            0.004155894779193882,
+            0.0074459994291156874
+          ],
+          "descriptive_crossing": {
+            "status": "delayed_mean_crossing",
+            "upcrossings": [
+              4
+            ],
+            "last_mean": 0.015477716789114998,
+            "horizon": 4,
+            "equality_tolerance_bits": 1e-12
+          }
+        },
+        "stationary_minus_shuffled_seed0": {
+          "mean": [
+            -0.0005883259743448346,
+            -0.0003680659068387281,
+            -0.0006849143758452438,
+            -0.0011210582824652936
+          ],
+          "paired_sequence_se": [
+            0.001148558569197757,
+            0.0010953245718569626,
+            0.0014864768966533052,
+            0.0015798576358421867
+          ],
+          "descriptive_crossing": {
+            "status": "no_positive_mean_crossing_by_t4",
+            "upcrossings": [],
+            "last_mean": -0.0011210582824652936,
+            "horizon": 4,
+            "equality_tolerance_bits": 1e-12
+          },
+          "prior_bank_mcse": [
+            3.0128601963148893e-05,
+            3.981282036785583e-05,
+            8.291076318161233e-05,
+            7.967325007597503e-05
+          ]
+        },
+        "count_only_minus_shuffled_seed0": {
+          "mean": [
+            -0.0012513225554996212,
+            -0.0012429051169865202,
+            -0.0042297845625227405,
+            0.004087345616434734
+          ],
+          "paired_sequence_se": [
+            0.0011876103440413572,
+            0.005576909674470704,
+            0.00689182491784385,
+            0.004993129605749691
+          ],
+          "descriptive_crossing": {
+            "status": "delayed_mean_crossing",
+            "upcrossings": [
+              4
+            ],
+            "last_mean": 0.004087345616434734,
+            "horizon": 4,
+            "equality_tolerance_bits": 1e-12
+          }
+        },
+        "bayes_minus_shuffled_seed0": {
+          "mean": [
+            -0.0012513225554996038,
+            -0.0012429051169858332,
+            -0.002545566981649247,
+            -0.013074588753554463
+          ],
+          "paired_sequence_se": [
+            0.001187610344041358,
+            0.005576909674470703,
+            0.006751397788427519,
+            0.008692675193821052
+          ],
+          "descriptive_crossing": {
+            "status": "no_positive_mean_crossing_by_t4",
+            "upcrossings": [],
+            "last_mean": -0.013074588753554463,
+            "horizon": 4,
+            "equality_tolerance_bits": 1e-12
+          }
+        },
+        "neural_gain_seed0": {
+          "mean": [
+            -0.0015288111011807042,
+            -0.0004820410152760399,
+            0.001713095450733046,
+            0.013351312490604741
+          ],
+          "paired_sequence_se": [
+            0.00255237477650548,
+            0.006071214629599288,
+            0.007085967437846034,
+            0.008286410385876556
+          ],
+          "descriptive_crossing": {
+            "status": "delayed_mean_crossing",
+            "upcrossings": [
+              3
+            ],
+            "last_mean": 0.013351312490604741,
+            "horizon": 4,
+            "equality_tolerance_bits": 1e-12
+          }
+        },
+        "neural_cumulative_gain_seed0": {
+          "mean": [
+            -0.0015288111011807042,
+            -0.002010852116456744,
+            -0.0002977566657236981,
+            0.013053555824881043
+          ],
+          "paired_sequence_se": [
+            0.00255237477650548,
+            0.006263147919366033,
+            0.01063100787027672,
+            0.013590355824255535
+          ],
+          "descriptive_crossing": {
+            "status": "delayed_mean_crossing",
+            "upcrossings": [
+              4
+            ],
+            "last_mean": 0.013053555824881043,
+            "horizon": 4,
+            "equality_tolerance_bits": 1e-12
+          }
+        },
+        "stationary_minus_shuffled_seed1": {
+          "mean": [
+            -0.0004148391521977268,
+            -0.0011752243133016978,
+            -0.002965716936644212,
+            -0.0022727058594390493
+          ],
+          "paired_sequence_se": [
+            0.0010722269128960603,
+            0.0011076283730598099,
+            0.0015427324437329415,
+            0.0019283376144538199
+          ],
+          "descriptive_crossing": {
+            "status": "no_positive_mean_crossing_by_t4",
+            "upcrossings": [],
+            "last_mean": -0.0022727058594390493,
+            "horizon": 4,
+            "equality_tolerance_bits": 1e-12
+          },
+          "prior_bank_mcse": [
+            3.0128601963148893e-05,
+            3.981282036785583e-05,
+            8.291076318161233e-05,
+            7.967325007597503e-05
+          ]
+        },
+        "count_only_minus_shuffled_seed1": {
+          "mean": [
+            -0.0010778357333525133,
+            -0.00205006352344949,
+            -0.006510587123321709,
+            0.0029356980394609784
+          ],
+          "paired_sequence_se": [
+            0.0012191267415212442,
+            0.005916573717617738,
+            0.0067408251860004015,
+            0.005093359419788677
+          ],
+          "descriptive_crossing": {
+            "status": "delayed_mean_crossing",
+            "upcrossings": [
+              4
+            ],
+            "last_mean": 0.0029356980394609784,
+            "horizon": 4,
+            "equality_tolerance_bits": 1e-12
+          }
+        },
+        "bayes_minus_shuffled_seed1": {
+          "mean": [
+            -0.001077835733352496,
+            -0.002050063523448803,
+            -0.004826369542448215,
+            -0.014226236330528216
+          ],
+          "paired_sequence_se": [
+            0.0012191267415212466,
+            0.0059165737176177366,
+            0.006646261598092115,
+            0.008761843481629304
+          ],
+          "descriptive_crossing": {
+            "status": "no_positive_mean_crossing_by_t4",
+            "upcrossings": [],
+            "last_mean": -0.014226236330528216,
+            "horizon": 4,
+            "equality_tolerance_bits": 1e-12
+          }
+        },
+        "neural_gain_seed1": {
+          "mean": [
+            -0.025971275557324758,
+            -0.002977831556877907,
+            0.0013056566091733182,
+            0.009739267149464258
+          ],
+          "paired_sequence_se": [
+            0.011561848918443696,
+            0.006241026796979759,
+            0.006506094367550581,
+            0.008753522749329579
+          ],
+          "descriptive_crossing": {
+            "status": "delayed_mean_crossing",
+            "upcrossings": [
+              3
+            ],
+            "last_mean": 0.009739267149464258,
+            "horizon": 4,
+            "equality_tolerance_bits": 1e-12
+          }
+        },
+        "neural_cumulative_gain_seed1": {
+          "mean": [
+            -0.025971275557324758,
+            -0.028949107114202666,
+            -0.027643450505029345,
+            -0.01790418335556509
+          ],
+          "paired_sequence_se": [
+            0.011561848918443696,
+            0.010260822662675143,
+            0.011995990480512331,
+            0.01426121081841551
+          ],
+          "descriptive_crossing": {
+            "status": "no_positive_mean_crossing_by_t4",
+            "upcrossings": [],
+            "last_mean": -0.01790418335556509,
+            "horizon": 4,
+            "equality_tolerance_bits": 1e-12
+          }
+        }
+      }
+    },
+    {
+      "id": "a1_L3",
+      "depth": 3,
+      "n_sequences": 256,
+      "maximum_predictive_normalization_error": 3.4416913763379853e-15,
+      "comparisons": {
+        "stationary_minus_bayes": {
+          "mean": [
+            0.001316014192260774,
+            0.0016425266610194614,
+            0.006243974100545535,
+            0.0035615169368440995
+          ],
+          "paired_sequence_se": [
+            0.0004632467776700545,
+            0.0054695041761237215,
+            0.006330344931313347,
+            0.006056693223515792
+          ],
+          "descriptive_crossing": {
+            "status": "positive_initially",
+            "upcrossings": [],
+            "last_mean": 0.0035615169368440995,
+            "horizon": 4,
+            "equality_tolerance_bits": 1e-12
+          },
+          "prior_bank_mcse": [
+            5.57621134096506e-05,
+            3.1471753686458916e-05,
+            7.545750974024615e-05,
+            5.646530073288672e-05
+          ]
+        },
+        "stationary_minus_bayes_cumulative": {
+          "mean": [
+            0.001316014192260774,
+            0.0029585408532802355,
+            0.00920251495382577,
+            0.01276403189066987
+          ],
+          "paired_sequence_se": [
+            0.0004632467776700545,
+            0.0052556778875241985,
+            0.00830205230679642,
+            0.010496724665657799
+          ],
+          "descriptive_crossing": {
+            "status": "positive_initially",
+            "upcrossings": [],
+            "last_mean": 0.01276403189066987,
+            "horizon": 4,
+            "equality_tolerance_bits": 1e-12
+          },
+          "prior_bank_mcse": [
+            5.57621134096506e-05,
+            8.129903713903902e-05,
+            0.00014361189059079935,
+            0.00019034244703001972
+          ]
+        },
+        "count_only_minus_bayes": {
+          "mean": [
+            -1.0408340855860843e-17,
+            -7.667477763817487e-16,
+            0.0040216747120737,
+            0.012453276406124663
+          ],
+          "paired_sequence_se": [
+            5.985646286361985e-18,
+            4.508606182035976e-17,
+            0.0019552054372351502,
+            0.004577692558283804
+          ],
+          "descriptive_crossing": {
+            "status": "delayed_mean_crossing",
+            "upcrossings": [
+              3
+            ],
+            "last_mean": 0.012453276406124663,
+            "horizon": 4,
+            "equality_tolerance_bits": 1e-12
+          }
+        },
+        "count_only_minus_bayes_cumulative": {
+          "mean": [
+            -1.0408340855860843e-17,
+            -7.771561172376096e-16,
+            0.004021674712072923,
+            0.016474951118197585
+          ],
+          "paired_sequence_se": [
+            5.985646286361985e-18,
+            4.505726069544845e-17,
+            0.0019552054372351563,
+            0.005171217639657471
+          ],
+          "descriptive_crossing": {
+            "status": "delayed_mean_crossing",
+            "upcrossings": [
+              3
+            ],
+            "last_mean": 0.016474951118197585,
+            "horizon": 4,
+            "equality_tolerance_bits": 1e-12
+          }
+        },
+        "stationary_minus_shuffled_seed0": {
+          "mean": [
+            -0.002162059966772791,
+            -0.001825639201173665,
+            -7.617383901509407e-05,
+            -0.002353844465155656
+          ],
+          "paired_sequence_se": [
+            0.001471320799008725,
+            0.0012952068081852884,
+            0.0018714186901045138,
+            0.0018341890654744919
+          ],
+          "descriptive_crossing": {
+            "status": "no_positive_mean_crossing_by_t4",
+            "upcrossings": [],
+            "last_mean": -0.002353844465155656,
+            "horizon": 4,
+            "equality_tolerance_bits": 1e-12
+          },
+          "prior_bank_mcse": [
+            5.576211340965059e-05,
+            3.1471753686458916e-05,
+            7.545750974024615e-05,
+            5.646530073288672e-05
+          ]
+        },
+        "count_only_minus_shuffled_seed0": {
+          "mean": [
+            -0.0034780741590335756,
+            -0.003468165862193893,
+            -0.002298473227486929,
+            0.006537915004124907
+          ],
+          "paired_sequence_se": [
+            0.0014554334111013326,
+            0.00534743100053813,
+            0.006495114298409266,
+            0.004965255491455174
+          ],
+          "descriptive_crossing": {
+            "status": "delayed_mean_crossing",
+            "upcrossings": [
+              4
+            ],
+            "last_mean": 0.006537915004124907,
+            "horizon": 4,
+            "equality_tolerance_bits": 1e-12
+          }
+        },
+        "bayes_minus_shuffled_seed0": {
+          "mean": [
+            -0.0034780741590335652,
+            -0.0034681658621931264,
+            -0.006320147939560629,
+            -0.005915361401999756
+          ],
+          "paired_sequence_se": [
+            0.0014554334111013334,
+            0.005347431000538133,
+            0.007157536274196252,
+            0.0066580865892429284
+          ],
+          "descriptive_crossing": {
+            "status": "no_positive_mean_crossing_by_t4",
+            "upcrossings": [],
+            "last_mean": -0.005915361401999756,
+            "horizon": 4,
+            "equality_tolerance_bits": 1e-12
+          }
+        },
+        "neural_gain_seed0": {
+          "mean": [
+            0.0014989526203551193,
+            0.0039630275183420195,
+            0.0015043896538038306,
+            0.006866869794609135
+          ],
+          "paired_sequence_se": [
+            0.0027870693360466676,
+            0.00580817027132317,
+            0.0072746587745089715,
+            0.006940076655487103
+          ],
+          "descriptive_crossing": {
+            "status": "positive_initially",
+            "upcrossings": [],
+            "last_mean": 0.006866869794609135,
+            "horizon": 4,
+            "equality_tolerance_bits": 1e-12
+          }
+        },
+        "neural_cumulative_gain_seed0": {
+          "mean": [
+            0.0014989526203551193,
+            0.005461980138697139,
+            0.006966369792500968,
+            0.013833239587110103
+          ],
+          "paired_sequence_se": [
+            0.0027870693360466676,
+            0.005926457952741085,
+            0.009685726286014901,
+            0.01278005407532758
+          ],
+          "descriptive_crossing": {
+            "status": "positive_initially",
+            "upcrossings": [],
+            "last_mean": 0.013833239587110103,
+            "horizon": 4,
+            "equality_tolerance_bits": 1e-12
+          }
+        },
+        "stationary_minus_shuffled_seed1": {
+          "mean": [
+            5.733373058668112e-06,
+            -0.00015575563069014468,
+            -0.004244867353830048,
+            -0.0003863301647328999
+          ],
+          "paired_sequence_se": [
+            0.0013046518405835938,
+            0.001486187724570616,
+            0.002119102564692511,
+            0.002123710577948044
+          ],
+          "descriptive_crossing": {
+            "status": "positive_initially",
+            "upcrossings": [],
+            "last_mean": -0.0003863301647328999,
+            "horizon": 4,
+            "equality_tolerance_bits": 1e-12
+          },
+          "prior_bank_mcse": [
+            5.57621134096506e-05,
+            3.1471753686458916e-05,
+            7.545750974024615e-05,
+            5.646530073288672e-05
+          ]
+        },
+        "count_only_minus_shuffled_seed1": {
+          "mean": [
+            -0.0013102808192021163,
+            -0.0017982822917103729,
+            -0.006467166742301883,
+            0.008505429304547663
+          ],
+          "paired_sequence_se": [
+            0.0012780825313379967,
+            0.005737388229092835,
+            0.006234942121785477,
+            0.005288635024462193
+          ],
+          "descriptive_crossing": {
+            "status": "delayed_mean_crossing",
+            "upcrossings": [
+              4
+            ],
+            "last_mean": 0.008505429304547663,
+            "horizon": 4,
+            "equality_tolerance_bits": 1e-12
+          }
+        },
+        "bayes_minus_shuffled_seed1": {
+          "mean": [
+            -0.001310280819202106,
+            -0.0017982822917096061,
+            -0.010488841454375583,
+            -0.003947847101576999
+          ],
+          "paired_sequence_se": [
+            0.0012780825313379964,
+            0.005737388229092836,
+            0.006781138040019025,
+            0.007032444643127465
+          ],
+          "descriptive_crossing": {
+            "status": "no_positive_mean_crossing_by_t4",
+            "upcrossings": [],
+            "last_mean": -0.003947847101576999,
+            "horizon": 4,
+            "equality_tolerance_bits": 1e-12
+          }
+        },
+        "neural_gain_seed1": {
+          "mean": [
+            -0.010711351319063086,
+            0.0025236372375075106,
+            0.007106966478782714,
+            0.00010483279655851621
+          ],
+          "paired_sequence_se": [
+            0.010957431984320582,
+            0.006094631681143376,
+            0.006855897850172428,
+            0.006909300336739471
+          ],
+          "descriptive_crossing": {
+            "status": "delayed_mean_crossing",
+            "upcrossings": [
+              2
+            ],
+            "last_mean": 0.00010483279655851621,
+            "horizon": 4,
+            "equality_tolerance_bits": 1e-12
+          }
+        },
+        "neural_cumulative_gain_seed1": {
+          "mean": [
+            -0.010711351319063086,
+            -0.008187714081555575,
+            -0.001080747602772861,
+            -0.0009759148062143449
+          ],
+          "paired_sequence_se": [
+            0.010957431984320582,
+            0.010136863044283146,
+            0.012370173724817036,
+            0.014437443840146712
+          ],
+          "descriptive_crossing": {
+            "status": "no_positive_mean_crossing_by_t4",
+            "upcrossings": [],
+            "last_mean": -0.0009759148062143449,
+            "horizon": 4,
+            "equality_tolerance_bits": 1e-12
+          }
+        }
+      }
+    }
+  ],
+  "maximum_absolute_surrogate_minus_shuffled_mean_bits": 0.004244867353830048,
+  "maximum_sampling_mcse_of_mean_bits": 0.00018575909248444105,
+  "maximum_coarse_fine_change_bits": 0.00045745861457149525,
+  "prior": {
+    "alpha": [
+      0.5,
+      1.5
+    ],
+    "depths": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8
+    ],
+    "ranks": "uniform permutation"
+  },
+  "numerical_method": {
+    "banks": 16,
+    "alpha_order": 16,
+    "matrices": 33024,
+    "maximum_stationary_residual_l1": 3.4856015643236482e-15,
+    "bank_sha256": "d5dc6fc71fc4f44ef8f8734c5c9d2ab7c57824874de07645580f34d512503f0a",
+    "source_sampling": "Independent source matrices, stratified by depth and Gaussian alpha quadrature"
+  },
+  "coarse_numerical_method": {
+    "banks": 8,
+    "alpha_order": 8,
+    "matrices": 8256,
+    "maximum_stationary_residual_l1": 3.139849491518021e-15,
+    "bank_sha256": "29b99e07340dd0dcb3c94f05fb81a34804d7c770d2a7ce77ea18fa634e08e7ae",
+    "source_sampling": "Independent source matrices, stratified by depth and Gaussian alpha quadrature"
+  },
+  "scope": "Stationary-iid comparator with original q first-token law, not exact finite shuffled-training Bayes. Count-only companion conditions the original ordered source on first token and remaining prefix counts.",
+  "limitations": "Paired whole-sequence SE and separate leave-one-prior-bank-out Monte Carlo SE. Alpha quadrature needs an independent refinement. Mean crossings are descriptive only; dense Bayes after t4 and confirmation remain missing.",
+  "scientific_timing_validated": false,
+  "independent_confirmation": false
+}

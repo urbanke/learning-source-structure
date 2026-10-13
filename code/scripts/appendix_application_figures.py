@@ -196,10 +196,10 @@ def main():
     parser.add_argument("--out", type=Path, default=ROOT / "results/transformer/appendix_style_2026-09-24")
     args = parser.parse_args()
     args.out.mkdir(parents=True, exist_ok=True)
-    product = ROOT / "output/product_shift_2026-09-18"
+    product = ROOT / "results/transformer/product_shift_2026-09-18"
     paths = [product / "summary.json", product / "additivity/summary.json",
              product / "mismatch_limit/projection_summary.json",
-             ROOT / "output/coin_shift_2026-09-18/summary.json"]
+             ROOT / "results/transformer/coin_shift_2026-09-18/summary.json"]
     before = {str(p.relative_to(ROOT)): sha(p) for p in paths}
     summary, groups, times = load_summary(paths[0])
     projection = json.loads(paths[2].read_text())

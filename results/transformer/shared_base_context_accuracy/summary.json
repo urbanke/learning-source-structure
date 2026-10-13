@@ -1,0 +1,85 @@
+{
+  "schema": "shared-base-context-model-summary-v1",
+  "n_sequences": 1024,
+  "n_tokens_per_sequence": 1025,
+  "observed_lengths": [
+    16,
+    64,
+    256,
+    1024
+  ],
+  "master_seed": 20260922,
+  "quantity": "Expected next-token regret in bits: KL(true current transition row || transformer prediction).",
+  "uncertainty": "One standard error across independent source sequences; each trained checkpoint is reported separately.",
+  "selection": "The first n_seq independent full-prior draws; retain every draw regardless of parameters or inference difficulty.",
+  "depth_counts": [
+    119,
+    120,
+    118,
+    112,
+    105,
+    117,
+    116,
+    100,
+    117
+  ],
+  "mean_alpha": 0.9991721758259487,
+  "results": [
+    {
+      "run": "d64",
+      "observed_length": 16,
+      "n_sequences": 1024,
+      "mean_expected_regret_bits": 1.910496574030231,
+      "se_expected_regret_bits": 0.03343612084390455
+    },
+    {
+      "run": "d64",
+      "observed_length": 64,
+      "n_sequences": 1024,
+      "mean_expected_regret_bits": 1.4385988293238112,
+      "se_expected_regret_bits": 0.030580271353705783
+    },
+    {
+      "run": "d64",
+      "observed_length": 256,
+      "n_sequences": 1024,
+      "mean_expected_regret_bits": 0.9297404024768203,
+      "se_expected_regret_bits": 0.022335905387569334
+    },
+    {
+      "run": "d64",
+      "observed_length": 1024,
+      "n_sequences": 1024,
+      "mean_expected_regret_bits": 0.5940833217655441,
+      "se_expected_regret_bits": 0.016156312718897902
+    },
+    {
+      "run": "d64_seed1",
+      "observed_length": 16,
+      "n_sequences": 1024,
+      "mean_expected_regret_bits": 1.9120504853046878,
+      "se_expected_regret_bits": 0.03359364687679214
+    },
+    {
+      "run": "d64_seed1",
+      "observed_length": 64,
+      "n_sequences": 1024,
+      "mean_expected_regret_bits": 1.4407274690151395,
+      "se_expected_regret_bits": 0.030365959861382553
+    },
+    {
+      "run": "d64_seed1",
+      "observed_length": 256,
+      "n_sequences": 1024,
+      "mean_expected_regret_bits": 0.9291576125054276,
+      "se_expected_regret_bits": 0.022127057354526233
+    },
+    {
+      "run": "d64_seed1",
+      "observed_length": 1024,
+      "n_sequences": 1024,
+      "mean_expected_regret_bits": 0.641329961684729,
+      "se_expected_regret_bits": 0.0168003117968262
+    }
+  ]
+}

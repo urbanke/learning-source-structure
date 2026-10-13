@@ -1,0 +1,1101 @@
+{
+  "schema": "conditional-coin-accuracy-v1",
+  "passed": true,
+  "metric": "E KL(Bernoulli(theta) || next-token predictor), bits",
+  "conditioning": "Fixed displayed theta; Bayes retains the checkpoint's full training prior.",
+  "timing": "Sequences have length 257. At t=1,...,256 observe first t tokens and predict token t+1.",
+  "uncertainty": "One standard error over independent sequences; differences use paired predictions.",
+  "two_point_cohort": "All 4096 existing sequences, separated into theta=0.2 and theta=0.8 groups.",
+  "uniform_protocol": {
+    "schema": "conditional-coin-accuracy-v1",
+    "training_prior": "uniform on [0,1]",
+    "test_biases": [
+      0.1,
+      0.3,
+      0.5,
+      0.7,
+      0.9
+    ],
+    "n_sequences_per_bias": 4096,
+    "n_tokens": 257,
+    "master_seed": 20260930,
+    "checkpoint": {
+      "path": "/Users/ruediger/Projects/layered_architectures/results/transformer/runs/bin_uniform/model_20000.pt",
+      "sha256": "0f1a71b66ce138230f07e7759dd501ba489de7efe53c306f880b4e34c68d654b"
+    },
+    "config": {
+      "path": "/Users/ruediger/Projects/layered_architectures/results/transformer/runs/bin_uniform/config.json",
+      "sha256": "3994cab6f4c1cd6a1178f3577b0ec9ea674ad5760b2a30df0134b11aad100626"
+    },
+    "evaluator": {
+      "path": "/Users/ruediger/Projects/layered_architectures/code/transformer/eval_model.py",
+      "sha256": "83bc9dd7b703acbe2f93ba87227d878444e44cb3e15bdc40a66433d9aae7a19c"
+    },
+    "model_code": {
+      "path": "/Users/ruediger/Projects/layered_architectures/code/transformer/model.py",
+      "sha256": "742fe0e5c8ffaecee8072a3b270b23beaa2e0bd2a94d1a27a9af67c31eff9c28"
+    },
+    "seed_code": {
+      "path": "/Users/ruediger/Projects/layered_architectures/code/transformer/source.py",
+      "sha256": "d1bb83004e3654cb3f84f6083437cae2b6d71fa19a33b06d26d2455ac440dab4"
+    }
+  },
+  "code": {
+    "path": "/Users/ruediger/Projects/layered_architectures/code/scripts/conditional_coin_accuracy.py",
+    "sha256": "255e27dfe4f1bb77492161f00863ec46a7fb25236963856197a40523789c150a"
+  },
+  "cases": [
+    {
+      "prior": "twopoint",
+      "theta": 0.2,
+      "n_sequences": 2076,
+      "n_tokens": 257,
+      "times": [
+        1,
+        2,
+        4,
+        8,
+        16,
+        32,
+        64,
+        128,
+        256
+      ],
+      "transformer": {
+        "mean": [
+          0.18680854951680637,
+          0.13464966046417423,
+          0.06633376952441804,
+          0.023814376682481226,
+          0.0027233262948493007,
+          1.539662424518358e-05,
+          5.08335175810677e-06,
+          5.207993948768128e-06,
+          4.701793802563698e-06
+        ],
+        "se": [
+          0.0059425477379060464,
+          0.004933641059418491,
+          0.0038228922700019353,
+          0.002597938879950799,
+          0.000880139166546047,
+          4.460021751712443e-06,
+          3.2623892912762e-08,
+          1.3837536534393357e-08,
+          9.763372888113326e-09
+        ]
+      },
+      "informed_bayes": {
+        "mean": [
+          0.18584775552080332,
+          0.13233611593339414,
+          0.06559907064775118,
+          0.023487124640603634,
+          0.002620768138050917,
+          2.53220189930814e-06,
+          6.912939501233763e-18,
+          0.0,
+          0.0
+        ],
+        "se": [
+          0.00578463616367047,
+          0.004860306636852047,
+          0.0037865412232571164,
+          0.002548784478195081,
+          0.0008750871921851149,
+          2.4966805493983717e-06,
+          8.39624271571957e-19,
+          0.0,
+          0.0
+        ]
+      },
+      "transformer_minus_bayes": {
+        "mean": [
+          0.0009607939960030356,
+          0.002313544530780133,
+          0.0007346988766668822,
+          0.0003272520418775928,
+          0.00010255815679838407,
+          1.2864422345875438e-05,
+          5.083351758099856e-06,
+          5.207993948768128e-06,
+          4.701793802563698e-06
+        ],
+        "se": [
+          0.00015791157423598618,
+          9.106617854741959e-05,
+          0.00011296101606120542,
+          9.55254965174564e-05,
+          5.481528589431318e-05,
+          1.9639097785978194e-06,
+          3.262389291217383e-08,
+          1.3837536534393357e-08,
+          9.763372888113326e-09
+        ]
+      },
+      "exact_bayes": {
+        "mean": [
+          0.1824533628371317,
+          0.13331798372950063,
+          0.07299615286882744,
+          0.02439636088254736,
+          0.0031942878934787576,
+          6.766555151382472e-05,
+          3.931569633899088e-08,
+          1.7804545864522586e-14,
+          5.01352180784906e-27
+        ],
+        "variance": [
+          0.06811634483137496,
+          0.04904882848221648,
+          0.03573503731216273,
+          0.01434258200102162,
+          0.0020594282856495364,
+          4.5390568337253017e-05,
+          2.6909611399547637e-08,
+          1.2320210109469125e-14,
+          3.489195110181072e-27
+        ],
+        "posterior_formula_max_error": 8.215650382226158e-15
+      },
+      "validation": {
+        "passed": true,
+        "paired_gap_identity_max_error_bits": 3.991354772733824e-16,
+        "exact_bayes_sample_max_z": 1.7829000645347934,
+        "exact_bayes_sample_rule": "absolute error <= 6 population SE + 2e-14 bits"
+      },
+      "provenance": {
+        "mode": "group existing validated evaluation by recovered true bias",
+        "reference": {
+          "path": "/Users/ruediger/Projects/layered_architectures/results/transformer/refs_fam/binary_twopoint.npz",
+          "sha256": "2a9f0f2b5d15c582739d3f02519b205f4ba0e809312436194dd0bf80ddaba8fb"
+        },
+        "evaluation": {
+          "path": "/Users/ruediger/Projects/layered_architectures/results/transformer/eval/bin_twopoint/binary_twopoint_step20000.npz",
+          "sha256": "84d9229a5e91f7bcaf700c3ebff0530146bb3217fe070f17841d77467a0bf867"
+        },
+        "previous_validation": {
+          "path": "/Users/ruediger/Projects/layered_architectures/results/transformer/coins_rechecked/summary.json",
+          "sha256": "3db4b9ec5763d4657ab2436ba6bf43af625db31e06bd66e8fcafe82935d25941"
+        },
+        "full_sequence_replay_passed": true
+      }
+    },
+    {
+      "prior": "twopoint",
+      "theta": 0.8,
+      "n_sequences": 2020,
+      "n_tokens": 257,
+      "times": [
+        1,
+        2,
+        4,
+        8,
+        16,
+        32,
+        64,
+        128,
+        256
+      ],
+      "transformer": {
+        "mean": [
+          0.190285072379742,
+          0.1291250681281426,
+          0.07437344781920134,
+          0.026702523320740513,
+          0.0024979880914384627,
+          9.88835312061389e-06,
+          6.2170128224758945e-06,
+          6.116963826326925e-06,
+          6.665344555583106e-06
+        ],
+        "se": [
+          0.006077543595745811,
+          0.004807147645393912,
+          0.004052640737915172,
+          0.002947917144460073,
+          0.0007982073456452545,
+          7.458491254311038e-07,
+          6.204098378728184e-08,
+          3.265610396979325e-08,
+          2.6271136028513555e-08
+        ]
+      },
+      "informed_bayes": {
+        "mean": [
+          0.1908515907200552,
+          0.1314505171828816,
+          0.075051827432208,
+          0.026873697918747063,
+          0.002661843939334021,
+          5.1927073597709046e-06,
+          3.1082747090563162e-18,
+          0.0,
+          0.0
+        ],
+        "se": [
+          0.005944001870171038,
+          0.004796368952800749,
+          0.004060134693977967,
+          0.0029349536470823323,
+          0.0008491448659980463,
+          3.6277873582442385e-06,
+          4.3872916684294065e-19,
+          0.0,
+          0.0
+        ]
+      },
+      "transformer_minus_bayes": {
+        "mean": [
+          -0.0005665183403131626,
+          -0.002325449054739014,
+          -0.0006783796130066483,
+          -0.00017117459800655005,
+          -0.00016385584789555712,
+          4.695645760842985e-06,
+          6.217012822472787e-06,
+          6.116963826326925e-06,
+          6.665344555583106e-06
+        ],
+        "se": [
+          0.0001335417255750619,
+          9.676826750026369e-05,
+          0.00011653262427664943,
+          9.328562404423095e-05,
+          6.29811624853945e-05,
+          2.9165356797913646e-06,
+          6.204098378698118e-08,
+          3.265610396979325e-08,
+          2.6271136028513555e-08
+        ]
+      },
+      "exact_bayes": {
+        "mean": [
+          0.1824533628371317,
+          0.1333179837295005,
+          0.07299615286882738,
+          0.024396360882547298,
+          0.0031942878934787073,
+          6.766555151371433e-05,
+          3.9315696334891246e-08,
+          1.78045458462585e-14,
+          5.013521791244158e-27
+        ],
+        "variance": [
+          0.068116344831375,
+          0.049048828482216505,
+          0.03573503731216274,
+          0.014342582001021615,
+          0.0020594282856495343,
+          4.539056833725281e-05,
+          2.69096113995475e-08,
+          1.2320210109468966e-14,
+          3.489195110180947e-27
+        ],
+        "posterior_formula_max_error": 8.215650382226158e-15
+      },
+      "validation": {
+        "passed": true,
+        "paired_gap_identity_max_error_bits": 3.8014161046415196e-16,
+        "exact_bayes_sample_max_z": 1.4462310183424645,
+        "exact_bayes_sample_rule": "absolute error <= 6 population SE + 2e-14 bits"
+      },
+      "provenance": {
+        "mode": "group existing validated evaluation by recovered true bias",
+        "reference": {
+          "path": "/Users/ruediger/Projects/layered_architectures/results/transformer/refs_fam/binary_twopoint.npz",
+          "sha256": "2a9f0f2b5d15c582739d3f02519b205f4ba0e809312436194dd0bf80ddaba8fb"
+        },
+        "evaluation": {
+          "path": "/Users/ruediger/Projects/layered_architectures/results/transformer/eval/bin_twopoint/binary_twopoint_step20000.npz",
+          "sha256": "84d9229a5e91f7bcaf700c3ebff0530146bb3217fe070f17841d77467a0bf867"
+        },
+        "previous_validation": {
+          "path": "/Users/ruediger/Projects/layered_architectures/results/transformer/coins_rechecked/summary.json",
+          "sha256": "3db4b9ec5763d4657ab2436ba6bf43af625db31e06bd66e8fcafe82935d25941"
+        },
+        "full_sequence_replay_passed": true
+      }
+    },
+    {
+      "prior": "uniform",
+      "theta": 0.1,
+      "n_sequences": 4096,
+      "n_tokens": 257,
+      "times": [
+        1,
+        2,
+        4,
+        8,
+        16,
+        32,
+        64,
+        128,
+        256
+      ],
+      "transformer": {
+        "mean": [
+          0.2996304900508022,
+          0.19261507683366383,
+          0.10677629790642096,
+          0.05794501595110335,
+          0.03278864151442944,
+          0.01919980697427932,
+          0.010636332742683899,
+          0.005343446256331614,
+          0.0027173422408079987
+        ],
+        "se": [
+          0.0035990534359824846,
+          0.0030149161491304192,
+          0.0021185925944228715,
+          0.0012727723922522846,
+          0.0006565942396003568,
+          0.00039912647815906565,
+          0.00023476009919777606,
+          0.00012270324943847201,
+          6.24043002971706e-05
+        ]
+      },
+      "informed_bayes": {
+        "mean": [
+          0.2872559696318749,
+          0.18711556157713757,
+          0.10705728347936527,
+          0.05740145852838388,
+          0.032674412947009915,
+          0.01864391200958227,
+          0.010395673353657391,
+          0.00528689372063923,
+          0.0027121996241187525
+        ],
+        "se": [
+          0.0035617394183827954,
+          0.0030056477733122365,
+          0.002136270892732404,
+          0.0012680991362679877,
+          0.0006667139034533397,
+          0.0003840619061511609,
+          0.00022841229873053705,
+          0.00011990848365225616,
+          6.190860919234939e-05
+        ]
+      },
+      "transformer_minus_bayes": {
+        "mean": [
+          0.012374520418927266,
+          0.0054995152565262264,
+          -0.0002809855729442952,
+          0.000543557422719461,
+          0.00011422856741952778,
+          0.0005558949646970515,
+          0.00024065938902650876,
+          5.655253569238423e-05,
+          5.142616689246509e-06
+        ],
+        "se": [
+          3.7314017600145356e-05,
+          7.586535456712214e-05,
+          5.682486987532049e-05,
+          3.484489930529759e-05,
+          3.2103758551630594e-05,
+          3.096389121800915e-05,
+          1.159956179627856e-05,
+          7.175503949412942e-06,
+          3.94886854689628e-06
+        ]
+      },
+      "exact_bayes": {
+        "mean": [
+          0.29596690713187473,
+          0.19398178088427476,
+          0.10983918956583932,
+          0.05881135643938983,
+          0.03334444034484636,
+          0.019425503194889546,
+          0.010577528352557491,
+          0.0054697043655145584,
+          0.002776813833797642
+        ],
+        "variance": [
+          0.05760000000000005,
+          0.04081454047823595,
+          0.0197618067284047,
+          0.0069127671762862115,
+          0.0019338427668573921,
+          0.0006575257594480644,
+          0.00022635731922114846,
+          6.116062318297364e-05,
+          1.560609598967949e-05
+        ],
+        "posterior_formula_max_error": 4.156675004196586e-13
+      },
+      "validation": {
+        "passed": true,
+        "paired_gap_identity_max_error_bits": 4.192067699915203e-16,
+        "exact_bayes_sample_max_z": 2.322916666666625,
+        "exact_bayes_sample_rule": "absolute error <= 6 population SE + 2e-14 bits"
+      },
+      "provenance": {
+        "mode": "new fixed-bias evaluation of frozen uniform-prior checkpoint",
+        "raw": {
+          "path": "/Users/ruediger/Projects/layered_architectures/output/conditional_coin_accuracy_2026-09-15/theta_0.1.npz",
+          "sha256": "db53171c6094e5c662379c1ed35dee1dc6dc9488666d3387fbceed37073f2016"
+        },
+        "protocol": {
+          "path": "/Users/ruediger/Projects/layered_architectures/output/conditional_coin_accuracy_2026-09-15/protocol.json",
+          "sha256": "b42e1155212c8d8a9902c9686a9650ad5fda03a23c0ef8d40957e7af2a91ca48"
+        },
+        "validation": {
+          "alignment": {
+            "batch_vs_single_logits": 0.0,
+            "full_vs_truncated_prefix_logits": 0.0,
+            "future_tokens_causality_logits": 0.0,
+            "passed": true,
+            "probe_prefix_length": 128,
+            "tolerance": 2e-05
+          },
+          "identity": {
+            "protocol_id": "11928842602a2c9782dafddd989727a4ac57b462a65adff77d7c696424631a91",
+            "sequence_seed": 903522887,
+            "theta": 0.1
+          },
+          "logp_sha256": "3f47acac02de08069567c4c02182b4710a946624ace41c0a65e84bdc1c174129",
+          "reconstructed_probability_max_error": 6.807074581782757e-08,
+          "runtime": {
+            "device": "cpu",
+            "numpy_version": "2.4.6",
+            "torch_threads": 1,
+            "torch_version": "2.14.0"
+          },
+          "selected_logp_max_error": 0.0,
+          "tokens_sha256": "1f0424d0ee2887382c2cfc0ba5c0e861f33a29353d61ee21894d2b86c4dbc09d"
+        }
+      }
+    },
+    {
+      "prior": "uniform",
+      "theta": 0.3,
+      "n_sequences": 4096,
+      "n_tokens": 257,
+      "times": [
+        1,
+        2,
+        4,
+        8,
+        16,
+        32,
+        64,
+        128,
+        256
+      ],
+      "transformer": {
+        "mean": [
+          0.1270532176273247,
+          0.11340936434673436,
+          0.08981435788016269,
+          0.06324704893053334,
+          0.03757251479100135,
+          0.020842816576775627,
+          0.010595174760137046,
+          0.0053637952672554185,
+          0.0028857249234091166
+        ],
+        "se": [
+          0.0029320328846143815,
+          0.0027772144421701252,
+          0.0020772768847032498,
+          0.001434314260570177,
+          0.0008923255504065011,
+          0.00049376088125091,
+          0.00023843275390141329,
+          0.00012091086923477783,
+          6.413233613329618e-05
+        ]
+      },
+      "informed_bayes": {
+        "mean": [
+          0.12193332024046341,
+          0.11234569595835106,
+          0.09120784741575688,
+          0.06319036526677352,
+          0.03790369760364565,
+          0.020985420820353186,
+          0.010595338138380702,
+          0.005366134637639547,
+          0.0028682561250677908
+        ],
+        "se": [
+          0.0028524501978916283,
+          0.002752252328804932,
+          0.0021191586484739654,
+          0.0014327410967629325,
+          0.0008921809148935773,
+          0.0004944793805684366,
+          0.00023853102536867553,
+          0.00012107395593579581,
+          6.382131460986809e-05
+        ]
+      },
+      "transformer_minus_bayes": {
+        "mean": [
+          0.005119897386861269,
+          0.0010636683883833192,
+          -0.0013934895355941824,
+          5.6683663759830634e-05,
+          -0.0003311828126442897,
+          -0.00014260424357755884,
+          -1.633782436548117e-07,
+          -2.3393703841273066e-06,
+          1.7468798341325356e-05
+        ],
+        "se": [
+          7.958268672311431e-05,
+          7.242910786360111e-05,
+          8.241168376269469e-05,
+          5.52396959832335e-05,
+          3.889221861427401e-05,
+          1.679065352657379e-05,
+          7.930463384782482e-06,
+          2.733165571882419e-06,
+          1.862624409384592e-06
+        ]
+      },
+      "exact_bayes": {
+        "mean": [
+          0.12367160149046338,
+          0.1122729755024795,
+          0.09040178362135025,
+          0.06328559276034224,
+          0.03811545241758899,
+          0.020760496003388796,
+          0.0108176137968107,
+          0.005521049103482794,
+          0.0027889983968814626
+        ],
+        "variance": [
+          0.0336,
+          0.030591066899313304,
+          0.017569015917565482,
+          0.00800349143038612,
+          0.0031318769543139564,
+          0.0009163384138147355,
+          0.00024171204645914794,
+          6.197145681094944e-05,
+          1.568596400367504e-05
+        ],
+        "posterior_formula_max_error": 4.156675004196586e-13
+      },
+      "validation": {
+        "passed": true,
+        "paired_gap_identity_max_error_bits": 3.885780586188048e-16,
+        "exact_bayes_sample_max_z": 1.280754783737062,
+        "exact_bayes_sample_rule": "absolute error <= 6 population SE + 2e-14 bits"
+      },
+      "provenance": {
+        "mode": "new fixed-bias evaluation of frozen uniform-prior checkpoint",
+        "raw": {
+          "path": "/Users/ruediger/Projects/layered_architectures/output/conditional_coin_accuracy_2026-09-15/theta_0.3.npz",
+          "sha256": "103173a91fb0e030ac3cae5b08d76828d864ce1928949bb06489e1c1b0c80281"
+        },
+        "protocol": {
+          "path": "/Users/ruediger/Projects/layered_architectures/output/conditional_coin_accuracy_2026-09-15/protocol.json",
+          "sha256": "b42e1155212c8d8a9902c9686a9650ad5fda03a23c0ef8d40957e7af2a91ca48"
+        },
+        "validation": {
+          "alignment": {
+            "batch_vs_single_logits": 0.0,
+            "full_vs_truncated_prefix_logits": 0.0,
+            "future_tokens_causality_logits": 0.0,
+            "passed": true,
+            "probe_prefix_length": 128,
+            "tolerance": 2e-05
+          },
+          "identity": {
+            "protocol_id": "11928842602a2c9782dafddd989727a4ac57b462a65adff77d7c696424631a91",
+            "sequence_seed": 903524269,
+            "theta": 0.3
+          },
+          "logp_sha256": "16484194fe6006170797b6449cd96434dcfafcb52cb0dde11510df5ee4ad774e",
+          "reconstructed_probability_max_error": 8.25017893446578e-08,
+          "runtime": {
+            "device": "cpu",
+            "numpy_version": "2.4.6",
+            "torch_threads": 1,
+            "torch_version": "2.14.0"
+          },
+          "selected_logp_max_error": 0.0,
+          "tokens_sha256": "8d1b13749f5c48122f3c3d982b363261955d5874b314c3f1a7bcf7d849851cb5"
+        }
+      }
+    },
+    {
+      "prior": "uniform",
+      "theta": 0.5,
+      "n_sequences": 4096,
+      "n_tokens": 257,
+      "times": [
+        1,
+        2,
+        4,
+        8,
+        16,
+        32,
+        64,
+        128,
+        256
+      ],
+      "transformer": {
+        "mean": [
+          0.08399948868243845,
+          0.10408159262710652,
+          0.09685510640823172,
+          0.06718780139693525,
+          0.039163208611185024,
+          0.021352935326817216,
+          0.010749710998992336,
+          0.005530461169508736,
+          0.002888546553954154
+        ],
+        "se": [
+          0.00010890613264788033,
+          0.0015976590533201924,
+          0.002034342506852563,
+          0.0016139100606295525,
+          0.0009000766894339744,
+          0.0004794044829489235,
+          0.0002419088761504774,
+          0.00012412100025016782,
+          6.597276679787476e-05
+        ]
+      },
+      "informed_bayes": {
+        "mean": [
+          0.08496250072115609,
+          0.10558327008021368,
+          0.09860904592455935,
+          0.06771719286492005,
+          0.03908738401268994,
+          0.021278836747897843,
+          0.010791016368027876,
+          0.00553814989219138,
+          0.0028757167249758167
+        ],
+        "se": [
+          0.0,
+          0.0016211876492722439,
+          0.002058970090827102,
+          0.0016298223326287413,
+          0.0009007037570607164,
+          0.0004787965612766459,
+          0.00024297686618718507,
+          0.00012428710303961934,
+          6.557707835585857e-05
+        ]
+      },
+      "transformer_minus_bayes": {
+        "mean": [
+          -0.000963012038717639,
+          -0.0015016774531071376,
+          -0.0017539395163276338,
+          -0.000529391467984781,
+          7.582459849508075e-05,
+          7.409857891936891e-05,
+          -4.13053690355419e-05,
+          -7.688722682643574e-06,
+          1.2829828978337501e-05
+        ],
+        "se": [
+          0.00010890613264788033,
+          6.356264039577453e-05,
+          5.307634223512586e-05,
+          5.8633448764865864e-05,
+          4.1392700941872103e-05,
+          1.368253743524446e-05,
+          4.929593369220311e-06,
+          2.0419844018872744e-06,
+          2.7582857783339756e-06
+        ]
+      },
+      "exact_bayes": {
+        "mean": [
+          0.08496250072115608,
+          0.10375937481971093,
+          0.09548105702026242,
+          0.06627309675553536,
+          0.03866295907287212,
+          0.020863904873636645,
+          0.010841458965542781,
+          0.0055268138319519615,
+          0.00279041721465145
+        ],
+        "variance": [
+          1.9259299443872356e-34,
+          0.010766007862977264,
+          0.016964517062401027,
+          0.010167881840688404,
+          0.0033488553955707766,
+          0.000924555043889643,
+          0.00024239885986996007,
+          6.20447384397002e-05,
+          1.5694453073674453e-05
+        ],
+        "posterior_formula_max_error": 4.156675004196586e-13
+      },
+      "validation": {
+        "passed": true,
+        "paired_gap_identity_max_error_bits": 2.992397996059992e-16,
+        "exact_bayes_sample_max_z": 1.537001981508974,
+        "exact_bayes_sample_rule": "absolute error <= 6 population SE + 2e-14 bits"
+      },
+      "provenance": {
+        "mode": "new fixed-bias evaluation of frozen uniform-prior checkpoint",
+        "raw": {
+          "path": "/Users/ruediger/Projects/layered_architectures/output/conditional_coin_accuracy_2026-09-15/theta_0.5.npz",
+          "sha256": "274443b788a157d83fa027b575302bad5c338d9adb32013162bc61e31779e27a"
+        },
+        "protocol": {
+          "path": "/Users/ruediger/Projects/layered_architectures/output/conditional_coin_accuracy_2026-09-15/protocol.json",
+          "sha256": "b42e1155212c8d8a9902c9686a9650ad5fda03a23c0ef8d40957e7af2a91ca48"
+        },
+        "validation": {
+          "alignment": {
+            "batch_vs_single_logits": 0.0,
+            "full_vs_truncated_prefix_logits": 0.0,
+            "future_tokens_causality_logits": 0.0,
+            "passed": true,
+            "probe_prefix_length": 128,
+            "tolerance": 2e-05
+          },
+          "identity": {
+            "protocol_id": "11928842602a2c9782dafddd989727a4ac57b462a65adff77d7c696424631a91",
+            "sequence_seed": 903520123,
+            "theta": 0.5
+          },
+          "logp_sha256": "cd0d047ee9ee24e7a362caf7239cbc9da71612438a2e6878b7e6daac2900d850",
+          "reconstructed_probability_max_error": 8.477494362058025e-08,
+          "runtime": {
+            "device": "cpu",
+            "numpy_version": "2.4.6",
+            "torch_threads": 1,
+            "torch_version": "2.14.0"
+          },
+          "selected_logp_max_error": 0.0,
+          "tokens_sha256": "b8cc71407b24f579859129a89fe13f6928d9f6ffec3433bd89c70f216265da39"
+        }
+      }
+    },
+    {
+      "prior": "uniform",
+      "theta": 0.7,
+      "n_sequences": 4096,
+      "n_tokens": 257,
+      "times": [
+        1,
+        2,
+        4,
+        8,
+        16,
+        32,
+        64,
+        128,
+        256
+      ],
+      "transformer": {
+        "mean": [
+          0.1154462948555687,
+          0.10729215703383686,
+          0.09151096585588837,
+          0.0615550759366018,
+          0.03698343225230573,
+          0.020509088756019134,
+          0.010535930306538465,
+          0.0054289507795596305,
+          0.002769308026600078
+        ],
+        "se": [
+          0.002729949914800507,
+          0.002597617187399076,
+          0.0021158409437838093,
+          0.0014404258941600428,
+          0.0008751510198052716,
+          0.0004645632562258092,
+          0.00023199062928546763,
+          0.00012093903616799814,
+          5.9557709301199074e-05
+        ]
+      },
+      "informed_bayes": {
+        "mean": [
+          0.12144503899046354,
+          0.10998403092576778,
+          0.09151962169873243,
+          0.06234416479244388,
+          0.0368773906725361,
+          0.020447628556504432,
+          0.010650664023802884,
+          0.00541381052794128,
+          0.002782785041140241
+        ],
+        "se": [
+          0.0028490210995615493,
+          0.002663464543142535,
+          0.0021145316683569876,
+          0.0014505925896589407,
+          0.0008758548784861296,
+          0.00046257626514364497,
+          0.00023416272150855077,
+          0.00012035051015145348,
+          5.973358174882054e-05
+        ]
+      },
+      "transformer_minus_bayes": {
+        "mean": [
+          -0.0059987441348948786,
+          -0.0026918738919309206,
+          -8.655842844032388e-06,
+          -0.0007890888558420817,
+          0.0001060415797696302,
+          6.146019951470387e-05,
+          -0.00011473371726441934,
+          1.5140251618349787e-05,
+          -1.3477014540163212e-05
+        ],
+        "se": [
+          0.00011907118476118211,
+          8.922113839769664e-05,
+          6.74995992953663e-05,
+          5.334565335092634e-05,
+          4.326547441122384e-05,
+          9.816337963377492e-06,
+          4.6869560700259026e-06,
+          3.025281677390719e-06,
+          3.634959777673224e-06
+        ]
+      },
+      "exact_bayes": {
+        "mean": [
+          0.12367160149046352,
+          0.11227297550247964,
+          0.09040178362135044,
+          0.0632855927603424,
+          0.03811545241758912,
+          0.02076049600338891,
+          0.010817613796810798,
+          0.005521049103482871,
+          0.0027889983968815255
+        ],
+        "variance": [
+          0.03359999999999996,
+          0.03059106689931333,
+          0.017569015917565475,
+          0.008003491430386134,
+          0.003131876954313947,
+          0.0009163384138147359,
+          0.00024171204645914745,
+          6.19714568109495e-05,
+          1.5685964003675188e-05
+        ],
+        "posterior_formula_max_error": 4.156675004196586e-13
+      },
+      "validation": {
+        "passed": true,
+        "paired_gap_identity_max_error_bits": 4.34114549863196e-16,
+        "exact_bayes_sample_max_z": 1.4158587625834573,
+        "exact_bayes_sample_rule": "absolute error <= 6 population SE + 2e-14 bits"
+      },
+      "provenance": {
+        "mode": "new fixed-bias evaluation of frozen uniform-prior checkpoint",
+        "raw": {
+          "path": "/Users/ruediger/Projects/layered_architectures/output/conditional_coin_accuracy_2026-09-15/theta_0.7.npz",
+          "sha256": "df87baff3e64d667c38c0274884837881ee903394324135d00dd1e2808420304"
+        },
+        "protocol": {
+          "path": "/Users/ruediger/Projects/layered_architectures/output/conditional_coin_accuracy_2026-09-15/protocol.json",
+          "sha256": "b42e1155212c8d8a9902c9686a9650ad5fda03a23c0ef8d40957e7af2a91ca48"
+        },
+        "validation": {
+          "alignment": {
+            "batch_vs_single_logits": 0.0,
+            "full_vs_truncated_prefix_logits": 0.0,
+            "future_tokens_causality_logits": 0.0,
+            "passed": true,
+            "probe_prefix_length": 128,
+            "tolerance": 2e-05
+          },
+          "identity": {
+            "protocol_id": "11928842602a2c9782dafddd989727a4ac57b462a65adff77d7c696424631a91",
+            "sequence_seed": 903521505,
+            "theta": 0.7
+          },
+          "logp_sha256": "962a04c09a14962f11fa8aafeec8f7dfbd4f38e0976277b43af21019327c3a10",
+          "reconstructed_probability_max_error": 7.516017641595596e-08,
+          "runtime": {
+            "device": "cpu",
+            "numpy_version": "2.4.6",
+            "torch_threads": 1,
+            "torch_version": "2.14.0"
+          },
+          "selected_logp_max_error": 0.0,
+          "tokens_sha256": "c23f893bd65adac2258073646684576f3da747a1e53df65844ce087b7b67baf6"
+        }
+      }
+    },
+    {
+      "prior": "uniform",
+      "theta": 0.9,
+      "n_sequences": 4096,
+      "n_tokens": 257,
+      "times": [
+        1,
+        2,
+        4,
+        8,
+        16,
+        32,
+        64,
+        128,
+        256
+      ],
+      "transformer": {
+        "mean": [
+          0.2875129099876656,
+          0.19279663214513185,
+          0.1139252321184546,
+          0.061059549647182174,
+          0.033797012524487746,
+          0.018968983864431535,
+          0.01053166093827793,
+          0.005479837056524653,
+          0.002698511200542055
+        ],
+        "se": [
+          0.0036921734941934526,
+          0.003064015079987169,
+          0.0021726724711099658,
+          0.001321942128618757,
+          0.0006748208988318155,
+          0.0003823917507549525,
+          0.00023065181778963602,
+          0.00012067468355442475,
+          5.975838876679675e-05
+        ]
+      },
+      "informed_bayes": {
+        "mean": [
+          0.297607532131875,
+          0.1953352823531468,
+          0.11050011370630394,
+          0.06017152493944054,
+          0.033437465175452694,
+          0.018961955736432987,
+          0.010439238403724162,
+          0.005485943284780472,
+          0.002737942517089348
+        ],
+        "se": [
+          0.0037844004836514898,
+          0.0031095283278067066,
+          0.002147930412858958,
+          0.0013208809619174799,
+          0.0006649688382611921,
+          0.00038239574499510185,
+          0.0002301420907566274,
+          0.0001198402093964579,
+          6.031647846121139e-05
+        ]
+      },
+      "transformer_minus_bayes": {
+        "mean": [
+          -0.01009462214420938,
+          -0.002538650208014969,
+          0.0034251184121506686,
+          0.0008880247077416271,
+          0.00035954734903504446,
+          7.028127998549866e-06,
+          9.242253455376816e-05,
+          -6.1062282558191094e-06,
+          -3.943131654729261e-05
+        ],
+        "se": [
+          9.222698945825355e-05,
+          9.075366109029994e-05,
+          6.988403118095723e-05,
+          5.416875437409064e-05,
+          3.339636254685666e-05,
+          9.245301520912293e-06,
+          1.030029478909536e-05,
+          8.576144035634811e-06,
+          3.5930335369209123e-06
+        ]
+      },
+      "exact_bayes": {
+        "mean": [
+          0.295966907131875,
+          0.19398178088427473,
+          0.10983918956583938,
+          0.058811356439389825,
+          0.03334444034484631,
+          0.019425503194889497,
+          0.01057752835255744,
+          0.005469704365514508,
+          0.002776813833797627
+        ],
+        "variance": [
+          0.0576,
+          0.04081454047823595,
+          0.01976180672840472,
+          0.006912767176286208,
+          0.0019338427668573964,
+          0.0006575257594480654,
+          0.0002263573192211486,
+          6.116062318297387e-05,
+          1.560609598967932e-05
+        ],
+        "posterior_formula_max_error": 4.156675004196586e-13
+      },
+      "validation": {
+        "passed": true,
+        "paired_gap_identity_max_error_bits": 5.689893001203927e-16,
+        "exact_bayes_sample_max_z": 1.1569585302140915,
+        "exact_bayes_sample_rule": "absolute error <= 6 population SE + 2e-14 bits"
+      },
+      "provenance": {
+        "mode": "new fixed-bias evaluation of frozen uniform-prior checkpoint",
+        "raw": {
+          "path": "/Users/ruediger/Projects/layered_architectures/output/conditional_coin_accuracy_2026-09-15/theta_0.9.npz",
+          "sha256": "4a5922b92877a63f52d97753e900bf1c08f248159bc5b2366597afaa236f46f0"
+        },
+        "protocol": {
+          "path": "/Users/ruediger/Projects/layered_architectures/output/conditional_coin_accuracy_2026-09-15/protocol.json",
+          "sha256": "b42e1155212c8d8a9902c9686a9650ad5fda03a23c0ef8d40957e7af2a91ca48"
+        },
+        "validation": {
+          "alignment": {
+            "batch_vs_single_logits": 0.0,
+            "full_vs_truncated_prefix_logits": 0.0,
+            "future_tokens_causality_logits": 0.0,
+            "passed": true,
+            "probe_prefix_length": 128,
+            "tolerance": 2e-05
+          },
+          "identity": {
+            "protocol_id": "11928842602a2c9782dafddd989727a4ac57b462a65adff77d7c696424631a91",
+            "sequence_seed": 903528415,
+            "theta": 0.9
+          },
+          "logp_sha256": "c825dff3efb6319d2086aaa6c608eeac1d545da6d2117b635824de34821b7afc",
+          "reconstructed_probability_max_error": 5.974313377343776e-08,
+          "runtime": {
+            "device": "cpu",
+            "numpy_version": "2.4.6",
+            "torch_threads": 1,
+            "torch_version": "2.14.0"
+          },
+          "selected_logp_max_error": 0.0,
+          "tokens_sha256": "b588bbd3d0a198fbfc4135b5a12039a4b2aa5f926d9da4f488f3d7aae26c2175"
+        }
+      }
+    }
+  ]
+}

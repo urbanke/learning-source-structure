@@ -1,0 +1,97 @@
+{
+  "schema": "hidden-factor-scaling-preparation-v1",
+  "date": "2026-09-16",
+  "passed": true,
+  "scope": "Preparation and CPU pipeline validation only; no new scientific result, H100 benchmark or cluster training launched.",
+  "tests": {
+    "name": "pytest",
+    "errors": "0",
+    "failures": "0",
+    "skipped": "0",
+    "tests": "82",
+    "time": "11.137",
+    "timestamp": "2026-09-16T20:46:01.697841+02:00",
+    "hostname": "LTHC-B118364M.local",
+    "command": "OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1 MKL_NUM_THREADS=1 MPLCONFIGDIR=/tmp/layered-mixture-mpl python -m pytest -q code/tests/test_hidden_factor_scaling_training.py code/tests/test_hidden_factor_scaling_eval.py code/tests/test_hidden_factor_scaling_launchers.py",
+    "coverage": [
+      "Exact resumed versus uninterrupted continuation including model, Adam and RNG",
+      "Training source indexing and parent preservation",
+      "Frozen pilot reference reuse and paired statistics",
+      "Strict checkpoint, provenance, corruption and incomplete-run rejection",
+      "Slurm command routing, no mutation on dry run and larger-model benchmark gate"
+    ]
+  },
+  "tiny_cpu_integration": {
+    "passed": true,
+    "scope": "Tiny CPU pipeline wiring, not scientific evidence or GPU validation.",
+    "root": "/private/tmp/hidden-factor-scaling-integration-6itkwki0",
+    "baseline_training_runs": 2,
+    "scaling_training_runs": 4,
+    "source_dimensions": [
+      2,
+      2
+    ],
+    "sequence_length": 9,
+    "pilot_sequences": 4,
+    "planned_sequences": 8,
+    "evaluated_models": 4,
+    "pairwise_metric_checks": 12,
+    "frozen_baseline_files_unchanged": 33,
+    "trainer_sha256": "53e6425e1e08c21c1c369f2a0023f34ee70bdc3d8d078f5f487eedc867d2fbe1",
+    "evaluator_sha256": "80bafca73f289ce81b222a21983f58507e663d045a3f251b296a32f0b6a60fd3",
+    "comparison_sha256": "52a839cea3d503b9fefb0095eed94a3231d48d58ce913f1bedf39c2b3a0a88f5",
+    "figure_receipt_sha256": "71d9c0f99f3da8edfd29a9943267990081323f886fb9c525992709d5dccdf9f4"
+  },
+  "frozen_production_baseline_read_check": {
+    "status": "passed",
+    "plan_sha256": "0d63d4554dc62c9d96b0ee5ce8febf548ddc3d6713a52e96f04775d545dae91f",
+    "cohort_id": "47b562f94e235d3eb63b8da89a9cc7f60d14c175af85c9db0cdcc3cf0edd0be1",
+    "n_evaluate": 256,
+    "n_planned": 4096,
+    "references_sha256": "f622dafbcdb6464965e5b617657c8f0bd426551a32c85c9f820c64199ffc88d0",
+    "baseline_names": [
+      "seed0",
+      "seed1"
+    ],
+    "reference_metrics": [
+      "bayes_encoding_given_cumulative_loss_bits",
+      "bayes_encoding_given_next_kl_bits",
+      "bayes_encoding_given_next_loss_bits",
+      "bayes_encoding_given_predictive",
+      "bayes_hidden_cumulative_loss_bits",
+      "bayes_hidden_next_kl_bits",
+      "bayes_hidden_next_loss_bits",
+      "bayes_hidden_predictive",
+      "encoding_uncertainty_cost_bits",
+      "flat_dirichlet_cumulative_loss_bits",
+      "flat_dirichlet_next_kl_bits",
+      "flat_dirichlet_next_loss_bits",
+      "flat_dirichlet_predictive",
+      "hidden_evidence_times",
+      "hidden_log_evidence_bits",
+      "oracle_cumulative_loss_bits",
+      "oracle_next_kl_bits",
+      "oracle_next_loss_bits",
+      "oracle_predictive",
+      "oracle_probs",
+      "times"
+    ],
+    "no_inference_performed": true
+  },
+  "original_training_source_model_and_evaluation_unchanged": true,
+  "platform_roundoff_handling": "Only the new evaluator permits <=1e-12 absolute error when recomputing source entropy audits. Frozen cohort bytes and identity hashes, observation times, stratum assignments and counts remain exact.",
+  "files_sha256": {
+    "code/transformer/train_hidden_factor_scaling.py": "53e6425e1e08c21c1c369f2a0023f34ee70bdc3d8d078f5f487eedc867d2fbe1",
+    "code/transformer/hidden_factor_scaling_eval.py": "80bafca73f289ce81b222a21983f58507e663d045a3f251b296a32f0b6a60fd3",
+    "code/scripts/hidden_factor_scaling_benchmark.py": "ea28eec440c61d5bf506f7fd3663f39694d018ca5d64f77237a2d88acd5ad2df",
+    "code/transformer/kuma/submit_hidden_factor_scaling.sh": "c65d5a724b117277de637b13bfc13abaf6f9c59ef9247cebd48edb09e78f4853",
+    "code/transformer/kuma/hidden_factor_scaling_train.sbatch": "b43ff46450e8750ce18dc91b068aca57e6a930b9faa82af639eb72e4313658a4",
+    "code/transformer/kuma/README_hidden_factor_scaling.md": "9cd45e759f399b17d4185f3c2ac4fb7f62d014b7e68c2072af76b1ab7ea2c0e6",
+    "code/tests/test_hidden_factor_scaling_training.py": "c686c066d4a7d65cf5c9ade04677709e80ed3db935cfa96af428270805827d4d",
+    "code/tests/test_hidden_factor_scaling_eval.py": "7bf58f91bdae1e9e91cfc9cf918165dd3fc9ead3e08d05401b913ac5f7024032",
+    "code/tests/test_hidden_factor_scaling_launchers.py": "5df6ee28ee5d5862bad620c263723dfbef81a87de370e624aca21bd512e2d099",
+    "code/transformer/configs/hidden_factor_scaling_plan_2026-09-16.json": "0d63d4554dc62c9d96b0ee5ce8febf548ddc3d6713a52e96f04775d545dae91f"
+  },
+  "latex": "latexmk -pdf -interaction=nonstopmode -halt-on-error mechanisms.tex succeeded; manuscript unchanged.",
+  "cluster_next": "User updates existing hidden-factor checkout, then launches the separate 1000-update larger-model benchmark. Inspect memory and throughput before production."
+}

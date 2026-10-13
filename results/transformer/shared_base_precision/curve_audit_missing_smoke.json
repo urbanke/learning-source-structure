@@ -1,0 +1,6207 @@
+{
+  "schema": "shared-base-curve-audit-v1",
+  "setting": "a1_L4",
+  "alpha": 1.0,
+  "depth": 4,
+  "n_sequences": 256,
+  "n_tokens_per_sequence": 1025,
+  "times": [
+    64
+  ],
+  "orders": [
+    16,
+    32
+  ],
+  "rows": [
+    {
+      "time": 64,
+      "cohort_validation": {
+        "complete": false,
+        "passed": false,
+        "reported_mean_bayes_regret_bits": null,
+        "missing_or_invalid": [
+          {
+            "index": 0,
+            "order": 16
+          },
+          {
+            "index": 0,
+            "order": 32
+          },
+          {
+            "index": 1,
+            "order": 16
+          },
+          {
+            "index": 1,
+            "order": 32
+          },
+          {
+            "index": 2,
+            "order": 16
+          },
+          {
+            "index": 2,
+            "order": 32
+          },
+          {
+            "index": 3,
+            "order": 16
+          },
+          {
+            "index": 3,
+            "order": 32
+          },
+          {
+            "index": 4,
+            "order": 16
+          },
+          {
+            "index": 4,
+            "order": 32
+          },
+          {
+            "index": 5,
+            "order": 16
+          },
+          {
+            "index": 5,
+            "order": 32
+          },
+          {
+            "index": 6,
+            "order": 16
+          },
+          {
+            "index": 6,
+            "order": 32
+          },
+          {
+            "index": 7,
+            "order": 16
+          },
+          {
+            "index": 7,
+            "order": 32
+          },
+          {
+            "index": 8,
+            "order": 16
+          },
+          {
+            "index": 8,
+            "order": 32
+          },
+          {
+            "index": 9,
+            "order": 16
+          },
+          {
+            "index": 9,
+            "order": 32
+          },
+          {
+            "index": 10,
+            "order": 16
+          },
+          {
+            "index": 10,
+            "order": 32
+          },
+          {
+            "index": 11,
+            "order": 16
+          },
+          {
+            "index": 11,
+            "order": 32
+          },
+          {
+            "index": 12,
+            "order": 16
+          },
+          {
+            "index": 12,
+            "order": 32
+          },
+          {
+            "index": 13,
+            "order": 16
+          },
+          {
+            "index": 13,
+            "order": 32
+          },
+          {
+            "index": 14,
+            "order": 16
+          },
+          {
+            "index": 14,
+            "order": 32
+          },
+          {
+            "index": 15,
+            "order": 16
+          },
+          {
+            "index": 15,
+            "order": 32
+          },
+          {
+            "index": 16,
+            "order": 16
+          },
+          {
+            "index": 16,
+            "order": 32
+          },
+          {
+            "index": 17,
+            "order": 16
+          },
+          {
+            "index": 17,
+            "order": 32
+          },
+          {
+            "index": 18,
+            "order": 16
+          },
+          {
+            "index": 18,
+            "order": 32
+          },
+          {
+            "index": 19,
+            "order": 16
+          },
+          {
+            "index": 19,
+            "order": 32
+          },
+          {
+            "index": 20,
+            "order": 16
+          },
+          {
+            "index": 20,
+            "order": 32
+          },
+          {
+            "index": 21,
+            "order": 16
+          },
+          {
+            "index": 21,
+            "order": 32
+          },
+          {
+            "index": 22,
+            "order": 16
+          },
+          {
+            "index": 22,
+            "order": 32
+          },
+          {
+            "index": 23,
+            "order": 16
+          },
+          {
+            "index": 23,
+            "order": 32
+          },
+          {
+            "index": 24,
+            "order": 16
+          },
+          {
+            "index": 24,
+            "order": 32
+          },
+          {
+            "index": 25,
+            "order": 16
+          },
+          {
+            "index": 25,
+            "order": 32
+          },
+          {
+            "index": 26,
+            "order": 16
+          },
+          {
+            "index": 26,
+            "order": 32
+          },
+          {
+            "index": 27,
+            "order": 16
+          },
+          {
+            "index": 27,
+            "order": 32
+          },
+          {
+            "index": 28,
+            "order": 16
+          },
+          {
+            "index": 28,
+            "order": 32
+          },
+          {
+            "index": 29,
+            "order": 16
+          },
+          {
+            "index": 29,
+            "order": 32
+          },
+          {
+            "index": 30,
+            "order": 16
+          },
+          {
+            "index": 30,
+            "order": 32
+          },
+          {
+            "index": 31,
+            "order": 16
+          },
+          {
+            "index": 31,
+            "order": 32
+          },
+          {
+            "index": 32,
+            "order": 16
+          },
+          {
+            "index": 32,
+            "order": 32
+          },
+          {
+            "index": 33,
+            "order": 16
+          },
+          {
+            "index": 33,
+            "order": 32
+          },
+          {
+            "index": 34,
+            "order": 16
+          },
+          {
+            "index": 34,
+            "order": 32
+          },
+          {
+            "index": 35,
+            "order": 16
+          },
+          {
+            "index": 35,
+            "order": 32
+          },
+          {
+            "index": 36,
+            "order": 16
+          },
+          {
+            "index": 36,
+            "order": 32
+          },
+          {
+            "index": 37,
+            "order": 16
+          },
+          {
+            "index": 37,
+            "order": 32
+          },
+          {
+            "index": 38,
+            "order": 16
+          },
+          {
+            "index": 38,
+            "order": 32
+          },
+          {
+            "index": 39,
+            "order": 16
+          },
+          {
+            "index": 39,
+            "order": 32
+          },
+          {
+            "index": 40,
+            "order": 16
+          },
+          {
+            "index": 40,
+            "order": 32
+          },
+          {
+            "index": 41,
+            "order": 16
+          },
+          {
+            "index": 41,
+            "order": 32
+          },
+          {
+            "index": 42,
+            "order": 16
+          },
+          {
+            "index": 42,
+            "order": 32
+          },
+          {
+            "index": 43,
+            "order": 16
+          },
+          {
+            "index": 43,
+            "order": 32
+          },
+          {
+            "index": 44,
+            "order": 16
+          },
+          {
+            "index": 44,
+            "order": 32
+          },
+          {
+            "index": 45,
+            "order": 16
+          },
+          {
+            "index": 45,
+            "order": 32
+          },
+          {
+            "index": 46,
+            "order": 16
+          },
+          {
+            "index": 46,
+            "order": 32
+          },
+          {
+            "index": 47,
+            "order": 16
+          },
+          {
+            "index": 47,
+            "order": 32
+          },
+          {
+            "index": 48,
+            "order": 16
+          },
+          {
+            "index": 48,
+            "order": 32
+          },
+          {
+            "index": 49,
+            "order": 16
+          },
+          {
+            "index": 49,
+            "order": 32
+          },
+          {
+            "index": 50,
+            "order": 16
+          },
+          {
+            "index": 50,
+            "order": 32
+          },
+          {
+            "index": 51,
+            "order": 16
+          },
+          {
+            "index": 51,
+            "order": 32
+          },
+          {
+            "index": 52,
+            "order": 16
+          },
+          {
+            "index": 52,
+            "order": 32
+          },
+          {
+            "index": 53,
+            "order": 16
+          },
+          {
+            "index": 53,
+            "order": 32
+          },
+          {
+            "index": 54,
+            "order": 16
+          },
+          {
+            "index": 54,
+            "order": 32
+          },
+          {
+            "index": 55,
+            "order": 16
+          },
+          {
+            "index": 55,
+            "order": 32
+          },
+          {
+            "index": 56,
+            "order": 16
+          },
+          {
+            "index": 56,
+            "order": 32
+          },
+          {
+            "index": 57,
+            "order": 16
+          },
+          {
+            "index": 57,
+            "order": 32
+          },
+          {
+            "index": 58,
+            "order": 16
+          },
+          {
+            "index": 58,
+            "order": 32
+          },
+          {
+            "index": 59,
+            "order": 16
+          },
+          {
+            "index": 59,
+            "order": 32
+          },
+          {
+            "index": 60,
+            "order": 16
+          },
+          {
+            "index": 60,
+            "order": 32
+          },
+          {
+            "index": 61,
+            "order": 16
+          },
+          {
+            "index": 61,
+            "order": 32
+          },
+          {
+            "index": 62,
+            "order": 16
+          },
+          {
+            "index": 62,
+            "order": 32
+          },
+          {
+            "index": 63,
+            "order": 16
+          },
+          {
+            "index": 63,
+            "order": 32
+          },
+          {
+            "index": 64,
+            "order": 16
+          },
+          {
+            "index": 64,
+            "order": 32
+          },
+          {
+            "index": 65,
+            "order": 16
+          },
+          {
+            "index": 65,
+            "order": 32
+          },
+          {
+            "index": 66,
+            "order": 16
+          },
+          {
+            "index": 66,
+            "order": 32
+          },
+          {
+            "index": 67,
+            "order": 16
+          },
+          {
+            "index": 67,
+            "order": 32
+          },
+          {
+            "index": 68,
+            "order": 16
+          },
+          {
+            "index": 68,
+            "order": 32
+          },
+          {
+            "index": 69,
+            "order": 16
+          },
+          {
+            "index": 69,
+            "order": 32
+          },
+          {
+            "index": 70,
+            "order": 16
+          },
+          {
+            "index": 70,
+            "order": 32
+          },
+          {
+            "index": 71,
+            "order": 16
+          },
+          {
+            "index": 71,
+            "order": 32
+          },
+          {
+            "index": 72,
+            "order": 16
+          },
+          {
+            "index": 72,
+            "order": 32
+          },
+          {
+            "index": 73,
+            "order": 16
+          },
+          {
+            "index": 73,
+            "order": 32
+          },
+          {
+            "index": 74,
+            "order": 16
+          },
+          {
+            "index": 74,
+            "order": 32
+          },
+          {
+            "index": 75,
+            "order": 16
+          },
+          {
+            "index": 75,
+            "order": 32
+          },
+          {
+            "index": 76,
+            "order": 16
+          },
+          {
+            "index": 76,
+            "order": 32
+          },
+          {
+            "index": 77,
+            "order": 16
+          },
+          {
+            "index": 77,
+            "order": 32
+          },
+          {
+            "index": 78,
+            "order": 16
+          },
+          {
+            "index": 78,
+            "order": 32
+          },
+          {
+            "index": 79,
+            "order": 16
+          },
+          {
+            "index": 79,
+            "order": 32
+          },
+          {
+            "index": 80,
+            "order": 16
+          },
+          {
+            "index": 80,
+            "order": 32
+          },
+          {
+            "index": 81,
+            "order": 16
+          },
+          {
+            "index": 81,
+            "order": 32
+          },
+          {
+            "index": 82,
+            "order": 16
+          },
+          {
+            "index": 82,
+            "order": 32
+          },
+          {
+            "index": 83,
+            "order": 16
+          },
+          {
+            "index": 83,
+            "order": 32
+          },
+          {
+            "index": 84,
+            "order": 16
+          },
+          {
+            "index": 84,
+            "order": 32
+          },
+          {
+            "index": 85,
+            "order": 16
+          },
+          {
+            "index": 85,
+            "order": 32
+          },
+          {
+            "index": 86,
+            "order": 16
+          },
+          {
+            "index": 86,
+            "order": 32
+          },
+          {
+            "index": 87,
+            "order": 16
+          },
+          {
+            "index": 87,
+            "order": 32
+          },
+          {
+            "index": 88,
+            "order": 16
+          },
+          {
+            "index": 88,
+            "order": 32
+          },
+          {
+            "index": 89,
+            "order": 16
+          },
+          {
+            "index": 89,
+            "order": 32
+          },
+          {
+            "index": 90,
+            "order": 16
+          },
+          {
+            "index": 90,
+            "order": 32
+          },
+          {
+            "index": 91,
+            "order": 16
+          },
+          {
+            "index": 91,
+            "order": 32
+          },
+          {
+            "index": 92,
+            "order": 16
+          },
+          {
+            "index": 92,
+            "order": 32
+          },
+          {
+            "index": 93,
+            "order": 16
+          },
+          {
+            "index": 93,
+            "order": 32
+          },
+          {
+            "index": 94,
+            "order": 16
+          },
+          {
+            "index": 94,
+            "order": 32
+          },
+          {
+            "index": 95,
+            "order": 16
+          },
+          {
+            "index": 95,
+            "order": 32
+          },
+          {
+            "index": 96,
+            "order": 16
+          },
+          {
+            "index": 96,
+            "order": 32
+          },
+          {
+            "index": 97,
+            "order": 16
+          },
+          {
+            "index": 97,
+            "order": 32
+          },
+          {
+            "index": 98,
+            "order": 16
+          },
+          {
+            "index": 98,
+            "order": 32
+          },
+          {
+            "index": 99,
+            "order": 16
+          },
+          {
+            "index": 99,
+            "order": 32
+          },
+          {
+            "index": 100,
+            "order": 16
+          },
+          {
+            "index": 100,
+            "order": 32
+          },
+          {
+            "index": 101,
+            "order": 16
+          },
+          {
+            "index": 101,
+            "order": 32
+          },
+          {
+            "index": 102,
+            "order": 16
+          },
+          {
+            "index": 102,
+            "order": 32
+          },
+          {
+            "index": 103,
+            "order": 16
+          },
+          {
+            "index": 103,
+            "order": 32
+          },
+          {
+            "index": 104,
+            "order": 16
+          },
+          {
+            "index": 104,
+            "order": 32
+          },
+          {
+            "index": 105,
+            "order": 16
+          },
+          {
+            "index": 105,
+            "order": 32
+          },
+          {
+            "index": 106,
+            "order": 16
+          },
+          {
+            "index": 106,
+            "order": 32
+          },
+          {
+            "index": 107,
+            "order": 16
+          },
+          {
+            "index": 107,
+            "order": 32
+          },
+          {
+            "index": 108,
+            "order": 16
+          },
+          {
+            "index": 108,
+            "order": 32
+          },
+          {
+            "index": 109,
+            "order": 16
+          },
+          {
+            "index": 109,
+            "order": 32
+          },
+          {
+            "index": 110,
+            "order": 16
+          },
+          {
+            "index": 110,
+            "order": 32
+          },
+          {
+            "index": 111,
+            "order": 16
+          },
+          {
+            "index": 111,
+            "order": 32
+          },
+          {
+            "index": 112,
+            "order": 16
+          },
+          {
+            "index": 112,
+            "order": 32
+          },
+          {
+            "index": 113,
+            "order": 16
+          },
+          {
+            "index": 113,
+            "order": 32
+          },
+          {
+            "index": 114,
+            "order": 16
+          },
+          {
+            "index": 114,
+            "order": 32
+          },
+          {
+            "index": 115,
+            "order": 16
+          },
+          {
+            "index": 115,
+            "order": 32
+          },
+          {
+            "index": 116,
+            "order": 16
+          },
+          {
+            "index": 116,
+            "order": 32
+          },
+          {
+            "index": 117,
+            "order": 16
+          },
+          {
+            "index": 117,
+            "order": 32
+          },
+          {
+            "index": 118,
+            "order": 16
+          },
+          {
+            "index": 118,
+            "order": 32
+          },
+          {
+            "index": 119,
+            "order": 16
+          },
+          {
+            "index": 119,
+            "order": 32
+          },
+          {
+            "index": 120,
+            "order": 16
+          },
+          {
+            "index": 120,
+            "order": 32
+          },
+          {
+            "index": 121,
+            "order": 16
+          },
+          {
+            "index": 121,
+            "order": 32
+          },
+          {
+            "index": 122,
+            "order": 16
+          },
+          {
+            "index": 122,
+            "order": 32
+          },
+          {
+            "index": 123,
+            "order": 16
+          },
+          {
+            "index": 123,
+            "order": 32
+          },
+          {
+            "index": 124,
+            "order": 16
+          },
+          {
+            "index": 124,
+            "order": 32
+          },
+          {
+            "index": 125,
+            "order": 16
+          },
+          {
+            "index": 125,
+            "order": 32
+          },
+          {
+            "index": 126,
+            "order": 16
+          },
+          {
+            "index": 126,
+            "order": 32
+          },
+          {
+            "index": 127,
+            "order": 16
+          },
+          {
+            "index": 127,
+            "order": 32
+          },
+          {
+            "index": 128,
+            "order": 16
+          },
+          {
+            "index": 128,
+            "order": 32
+          },
+          {
+            "index": 129,
+            "order": 16
+          },
+          {
+            "index": 129,
+            "order": 32
+          },
+          {
+            "index": 130,
+            "order": 16
+          },
+          {
+            "index": 130,
+            "order": 32
+          },
+          {
+            "index": 131,
+            "order": 16
+          },
+          {
+            "index": 131,
+            "order": 32
+          },
+          {
+            "index": 132,
+            "order": 16
+          },
+          {
+            "index": 132,
+            "order": 32
+          },
+          {
+            "index": 133,
+            "order": 16
+          },
+          {
+            "index": 133,
+            "order": 32
+          },
+          {
+            "index": 134,
+            "order": 16
+          },
+          {
+            "index": 134,
+            "order": 32
+          },
+          {
+            "index": 135,
+            "order": 16
+          },
+          {
+            "index": 135,
+            "order": 32
+          },
+          {
+            "index": 136,
+            "order": 16
+          },
+          {
+            "index": 136,
+            "order": 32
+          },
+          {
+            "index": 137,
+            "order": 16
+          },
+          {
+            "index": 137,
+            "order": 32
+          },
+          {
+            "index": 138,
+            "order": 16
+          },
+          {
+            "index": 138,
+            "order": 32
+          },
+          {
+            "index": 139,
+            "order": 16
+          },
+          {
+            "index": 139,
+            "order": 32
+          },
+          {
+            "index": 140,
+            "order": 16
+          },
+          {
+            "index": 140,
+            "order": 32
+          },
+          {
+            "index": 141,
+            "order": 16
+          },
+          {
+            "index": 141,
+            "order": 32
+          },
+          {
+            "index": 142,
+            "order": 16
+          },
+          {
+            "index": 142,
+            "order": 32
+          },
+          {
+            "index": 143,
+            "order": 16
+          },
+          {
+            "index": 143,
+            "order": 32
+          },
+          {
+            "index": 144,
+            "order": 16
+          },
+          {
+            "index": 144,
+            "order": 32
+          },
+          {
+            "index": 145,
+            "order": 16
+          },
+          {
+            "index": 145,
+            "order": 32
+          },
+          {
+            "index": 146,
+            "order": 16
+          },
+          {
+            "index": 146,
+            "order": 32
+          },
+          {
+            "index": 147,
+            "order": 16
+          },
+          {
+            "index": 147,
+            "order": 32
+          },
+          {
+            "index": 148,
+            "order": 16
+          },
+          {
+            "index": 148,
+            "order": 32
+          },
+          {
+            "index": 149,
+            "order": 16
+          },
+          {
+            "index": 149,
+            "order": 32
+          },
+          {
+            "index": 150,
+            "order": 16
+          },
+          {
+            "index": 150,
+            "order": 32
+          },
+          {
+            "index": 151,
+            "order": 16
+          },
+          {
+            "index": 151,
+            "order": 32
+          },
+          {
+            "index": 152,
+            "order": 16
+          },
+          {
+            "index": 152,
+            "order": 32
+          },
+          {
+            "index": 153,
+            "order": 16
+          },
+          {
+            "index": 153,
+            "order": 32
+          },
+          {
+            "index": 154,
+            "order": 16
+          },
+          {
+            "index": 154,
+            "order": 32
+          },
+          {
+            "index": 155,
+            "order": 16
+          },
+          {
+            "index": 155,
+            "order": 32
+          },
+          {
+            "index": 156,
+            "order": 16
+          },
+          {
+            "index": 156,
+            "order": 32
+          },
+          {
+            "index": 157,
+            "order": 16
+          },
+          {
+            "index": 157,
+            "order": 32
+          },
+          {
+            "index": 158,
+            "order": 16
+          },
+          {
+            "index": 158,
+            "order": 32
+          },
+          {
+            "index": 159,
+            "order": 16
+          },
+          {
+            "index": 159,
+            "order": 32
+          },
+          {
+            "index": 160,
+            "order": 16
+          },
+          {
+            "index": 160,
+            "order": 32
+          },
+          {
+            "index": 161,
+            "order": 16
+          },
+          {
+            "index": 161,
+            "order": 32
+          },
+          {
+            "index": 162,
+            "order": 16
+          },
+          {
+            "index": 162,
+            "order": 32
+          },
+          {
+            "index": 163,
+            "order": 16
+          },
+          {
+            "index": 163,
+            "order": 32
+          },
+          {
+            "index": 164,
+            "order": 16
+          },
+          {
+            "index": 164,
+            "order": 32
+          },
+          {
+            "index": 165,
+            "order": 16
+          },
+          {
+            "index": 165,
+            "order": 32
+          },
+          {
+            "index": 166,
+            "order": 16
+          },
+          {
+            "index": 166,
+            "order": 32
+          },
+          {
+            "index": 167,
+            "order": 16
+          },
+          {
+            "index": 167,
+            "order": 32
+          },
+          {
+            "index": 168,
+            "order": 16
+          },
+          {
+            "index": 168,
+            "order": 32
+          },
+          {
+            "index": 169,
+            "order": 16
+          },
+          {
+            "index": 169,
+            "order": 32
+          },
+          {
+            "index": 170,
+            "order": 16
+          },
+          {
+            "index": 170,
+            "order": 32
+          },
+          {
+            "index": 171,
+            "order": 16
+          },
+          {
+            "index": 171,
+            "order": 32
+          },
+          {
+            "index": 172,
+            "order": 16
+          },
+          {
+            "index": 172,
+            "order": 32
+          },
+          {
+            "index": 173,
+            "order": 16
+          },
+          {
+            "index": 173,
+            "order": 32
+          },
+          {
+            "index": 174,
+            "order": 16
+          },
+          {
+            "index": 174,
+            "order": 32
+          },
+          {
+            "index": 175,
+            "order": 16
+          },
+          {
+            "index": 175,
+            "order": 32
+          },
+          {
+            "index": 176,
+            "order": 16
+          },
+          {
+            "index": 176,
+            "order": 32
+          },
+          {
+            "index": 177,
+            "order": 16
+          },
+          {
+            "index": 177,
+            "order": 32
+          },
+          {
+            "index": 178,
+            "order": 16
+          },
+          {
+            "index": 178,
+            "order": 32
+          },
+          {
+            "index": 179,
+            "order": 16
+          },
+          {
+            "index": 179,
+            "order": 32
+          },
+          {
+            "index": 180,
+            "order": 16
+          },
+          {
+            "index": 180,
+            "order": 32
+          },
+          {
+            "index": 181,
+            "order": 16
+          },
+          {
+            "index": 181,
+            "order": 32
+          },
+          {
+            "index": 182,
+            "order": 16
+          },
+          {
+            "index": 182,
+            "order": 32
+          },
+          {
+            "index": 183,
+            "order": 16
+          },
+          {
+            "index": 183,
+            "order": 32
+          },
+          {
+            "index": 184,
+            "order": 16
+          },
+          {
+            "index": 184,
+            "order": 32
+          },
+          {
+            "index": 185,
+            "order": 16
+          },
+          {
+            "index": 185,
+            "order": 32
+          },
+          {
+            "index": 186,
+            "order": 16
+          },
+          {
+            "index": 186,
+            "order": 32
+          },
+          {
+            "index": 187,
+            "order": 16
+          },
+          {
+            "index": 187,
+            "order": 32
+          },
+          {
+            "index": 188,
+            "order": 16
+          },
+          {
+            "index": 188,
+            "order": 32
+          },
+          {
+            "index": 189,
+            "order": 16
+          },
+          {
+            "index": 189,
+            "order": 32
+          },
+          {
+            "index": 190,
+            "order": 16
+          },
+          {
+            "index": 190,
+            "order": 32
+          },
+          {
+            "index": 191,
+            "order": 16
+          },
+          {
+            "index": 191,
+            "order": 32
+          },
+          {
+            "index": 192,
+            "order": 16
+          },
+          {
+            "index": 192,
+            "order": 32
+          },
+          {
+            "index": 193,
+            "order": 16
+          },
+          {
+            "index": 193,
+            "order": 32
+          },
+          {
+            "index": 194,
+            "order": 16
+          },
+          {
+            "index": 194,
+            "order": 32
+          },
+          {
+            "index": 195,
+            "order": 16
+          },
+          {
+            "index": 195,
+            "order": 32
+          },
+          {
+            "index": 196,
+            "order": 16
+          },
+          {
+            "index": 196,
+            "order": 32
+          },
+          {
+            "index": 197,
+            "order": 16
+          },
+          {
+            "index": 197,
+            "order": 32
+          },
+          {
+            "index": 198,
+            "order": 16
+          },
+          {
+            "index": 198,
+            "order": 32
+          },
+          {
+            "index": 199,
+            "order": 16
+          },
+          {
+            "index": 199,
+            "order": 32
+          },
+          {
+            "index": 200,
+            "order": 16
+          },
+          {
+            "index": 200,
+            "order": 32
+          },
+          {
+            "index": 201,
+            "order": 16
+          },
+          {
+            "index": 201,
+            "order": 32
+          },
+          {
+            "index": 202,
+            "order": 16
+          },
+          {
+            "index": 202,
+            "order": 32
+          },
+          {
+            "index": 203,
+            "order": 16
+          },
+          {
+            "index": 203,
+            "order": 32
+          },
+          {
+            "index": 204,
+            "order": 16
+          },
+          {
+            "index": 204,
+            "order": 32
+          },
+          {
+            "index": 205,
+            "order": 16
+          },
+          {
+            "index": 205,
+            "order": 32
+          },
+          {
+            "index": 206,
+            "order": 16
+          },
+          {
+            "index": 206,
+            "order": 32
+          },
+          {
+            "index": 207,
+            "order": 16
+          },
+          {
+            "index": 207,
+            "order": 32
+          },
+          {
+            "index": 208,
+            "order": 16
+          },
+          {
+            "index": 208,
+            "order": 32
+          },
+          {
+            "index": 209,
+            "order": 16
+          },
+          {
+            "index": 209,
+            "order": 32
+          },
+          {
+            "index": 210,
+            "order": 16
+          },
+          {
+            "index": 210,
+            "order": 32
+          },
+          {
+            "index": 211,
+            "order": 16
+          },
+          {
+            "index": 211,
+            "order": 32
+          },
+          {
+            "index": 212,
+            "order": 16
+          },
+          {
+            "index": 212,
+            "order": 32
+          },
+          {
+            "index": 213,
+            "order": 16
+          },
+          {
+            "index": 213,
+            "order": 32
+          },
+          {
+            "index": 214,
+            "order": 16
+          },
+          {
+            "index": 214,
+            "order": 32
+          },
+          {
+            "index": 215,
+            "order": 16
+          },
+          {
+            "index": 215,
+            "order": 32
+          },
+          {
+            "index": 216,
+            "order": 16
+          },
+          {
+            "index": 216,
+            "order": 32
+          },
+          {
+            "index": 217,
+            "order": 16
+          },
+          {
+            "index": 217,
+            "order": 32
+          },
+          {
+            "index": 218,
+            "order": 16
+          },
+          {
+            "index": 218,
+            "order": 32
+          },
+          {
+            "index": 219,
+            "order": 16
+          },
+          {
+            "index": 219,
+            "order": 32
+          },
+          {
+            "index": 220,
+            "order": 16
+          },
+          {
+            "index": 220,
+            "order": 32
+          },
+          {
+            "index": 221,
+            "order": 16
+          },
+          {
+            "index": 221,
+            "order": 32
+          },
+          {
+            "index": 222,
+            "order": 16
+          },
+          {
+            "index": 222,
+            "order": 32
+          },
+          {
+            "index": 223,
+            "order": 16
+          },
+          {
+            "index": 223,
+            "order": 32
+          },
+          {
+            "index": 224,
+            "order": 16
+          },
+          {
+            "index": 224,
+            "order": 32
+          },
+          {
+            "index": 225,
+            "order": 16
+          },
+          {
+            "index": 225,
+            "order": 32
+          },
+          {
+            "index": 226,
+            "order": 16
+          },
+          {
+            "index": 226,
+            "order": 32
+          },
+          {
+            "index": 227,
+            "order": 16
+          },
+          {
+            "index": 227,
+            "order": 32
+          },
+          {
+            "index": 228,
+            "order": 16
+          },
+          {
+            "index": 228,
+            "order": 32
+          },
+          {
+            "index": 229,
+            "order": 16
+          },
+          {
+            "index": 229,
+            "order": 32
+          },
+          {
+            "index": 230,
+            "order": 16
+          },
+          {
+            "index": 230,
+            "order": 32
+          },
+          {
+            "index": 231,
+            "order": 16
+          },
+          {
+            "index": 231,
+            "order": 32
+          },
+          {
+            "index": 232,
+            "order": 16
+          },
+          {
+            "index": 232,
+            "order": 32
+          },
+          {
+            "index": 233,
+            "order": 16
+          },
+          {
+            "index": 233,
+            "order": 32
+          },
+          {
+            "index": 234,
+            "order": 16
+          },
+          {
+            "index": 234,
+            "order": 32
+          },
+          {
+            "index": 235,
+            "order": 16
+          },
+          {
+            "index": 235,
+            "order": 32
+          },
+          {
+            "index": 236,
+            "order": 16
+          },
+          {
+            "index": 236,
+            "order": 32
+          },
+          {
+            "index": 237,
+            "order": 16
+          },
+          {
+            "index": 237,
+            "order": 32
+          },
+          {
+            "index": 238,
+            "order": 16
+          },
+          {
+            "index": 238,
+            "order": 32
+          },
+          {
+            "index": 239,
+            "order": 16
+          },
+          {
+            "index": 239,
+            "order": 32
+          },
+          {
+            "index": 240,
+            "order": 16
+          },
+          {
+            "index": 240,
+            "order": 32
+          },
+          {
+            "index": 241,
+            "order": 16
+          },
+          {
+            "index": 241,
+            "order": 32
+          },
+          {
+            "index": 242,
+            "order": 16
+          },
+          {
+            "index": 242,
+            "order": 32
+          },
+          {
+            "index": 243,
+            "order": 16
+          },
+          {
+            "index": 243,
+            "order": 32
+          },
+          {
+            "index": 244,
+            "order": 16
+          },
+          {
+            "index": 244,
+            "order": 32
+          },
+          {
+            "index": 245,
+            "order": 16
+          },
+          {
+            "index": 245,
+            "order": 32
+          },
+          {
+            "index": 246,
+            "order": 16
+          },
+          {
+            "index": 246,
+            "order": 32
+          },
+          {
+            "index": 247,
+            "order": 16
+          },
+          {
+            "index": 247,
+            "order": 32
+          },
+          {
+            "index": 248,
+            "order": 16
+          },
+          {
+            "index": 248,
+            "order": 32
+          },
+          {
+            "index": 249,
+            "order": 16
+          },
+          {
+            "index": 249,
+            "order": 32
+          },
+          {
+            "index": 250,
+            "order": 16
+          },
+          {
+            "index": 250,
+            "order": 32
+          },
+          {
+            "index": 251,
+            "order": 16
+          },
+          {
+            "index": 251,
+            "order": 32
+          },
+          {
+            "index": 252,
+            "order": 16
+          },
+          {
+            "index": 252,
+            "order": 32
+          },
+          {
+            "index": 253,
+            "order": 16
+          },
+          {
+            "index": 253,
+            "order": 32
+          },
+          {
+            "index": 254,
+            "order": 16
+          },
+          {
+            "index": 254,
+            "order": 32
+          },
+          {
+            "index": 255,
+            "order": 16
+          },
+          {
+            "index": 255,
+            "order": 32
+          }
+        ],
+        "explanation": "Every declared case and both exponent rules are required; no partial-cohort Bayesian mean is computed."
+      },
+      "matched_comparisons": null,
+      "full_cohort_transformer_only": {
+        "d64": {
+          "n": 256,
+          "mean": 1.659559613807323,
+          "standard_error": 0.0436556853956907
+        },
+        "d64_seed1": {
+          "n": 256,
+          "mean": 1.6700306794742534,
+          "standard_error": 0.04466068596771019
+        }
+      },
+      "full_cohort_oracle_entropy": {
+        "n": 256,
+        "mean": 3.3093692678501556,
+        "standard_error": 0.05408709253268217
+      },
+      "case_audits": [
+        {
+          "index": 0,
+          "time": 64,
+          "order": 16,
+          "status": "missing",
+          "ready": false,
+          "todo": "Compute this declared reference."
+        },
+        {
+          "index": 0,
+          "time": 64,
+          "order": 32,
+          "status": "missing",
+          "ready": false,
+          "todo": "Compute this declared reference."
+        },
+        {
+          "index": 1,
+          "time": 64,
+          "order": 16,
+          "status": "missing",
+          "ready": false,
+          "todo": "Compute this declared reference."
+        },
+        {
+          "index": 1,
+          "time": 64,
+          "order": 32,
+          "status": "missing",
+          "ready": false,
+          "todo": "Compute this declared reference."
+        },
+        {
+          "index": 2,
+          "time": 64,
+          "order": 16,
+          "status": "missing",
+          "ready": false,
+          "todo": "Compute this declared reference."
+        },
+        {
+          "index": 2,
+          "time": 64,
+          "order": 32,
+          "status": "missing",
+          "ready": false,
+          "todo": "Compute this declared reference."
+        },
+        {
+          "index": 3,
+          "time": 64,
+          "order": 16,
+          "status": "missing",
+          "ready": false,
+          "todo": "Compute this declared reference."
+        },
+        {
+          "index": 3,
+          "time": 64,
+          "order": 32,
+          "status": "missing",
+          "ready": false,
+          "todo": "Compute this declared reference."
+        },
+        {
+          "index": 4,
+          "time": 64,
+          "order": 16,
+          "status": "missing",
+          "ready": false,
+          "todo": "Compute this declared reference."
+        },
+        {
+          "index": 4,
+          "time": 64,
+          "order": 32,
+          "status": "missing",
+          "ready": false,
+          "todo": "Compute this declared reference."
+        },
+        {
+          "index": 5,
+          "time": 64,
+          "order": 16,
+          "status": "missing",
+          "ready": false,
+          "todo": "Compute this declared reference."
+        },
+        {
+          "index": 5,
+          "time": 64,
+          "order": 32,
+          "status": "missing",
+          "ready": false,
+          "todo": "Compute this declared reference."
+        },
+        {
+          "index": 6,
+          "time": 64,
+          "order": 16,
+          "status": "missing",
+          "ready": false,
+          "todo": "Compute this declared reference."
+        },
+        {
+          "index": 6,
+          "time": 64,
+          "order": 32,
+          "status": "missing",
+          "ready": false,
+          "todo": "Compute this declared reference."
+        },
+        {
+          "index": 7,
+          "time": 64,
+          "order": 16,
+          "status": "missing",
+          "ready": false,
+          "todo": "Compute this declared reference."
+        },
+        {
+          "index": 7,
+          "time": 64,
+          "order": 32,
+          "status": "missing",
+          "ready": false,
+          "todo": "Compute this declared reference."
+        },
+        {
+          "index": 8,
+          "time": 64,
+          "order": 16,
+          "status": "missing",
+          "ready": false,
+          "todo": "Compute this declared reference."
+        },
+        {
+          "index": 8,
+          "time": 64,
+          "order": 32,
+          "status": "missing",
+          "ready": false,
+          "todo": "Compute this declared reference."
+        },
+        {
+          "index": 9,
+          "time": 64,
+          "order": 16,
+          "status": "missing",
+          "ready": false,
+          "todo": "Compute this declared reference."
+        },
+        {
+          "index": 9,
+          "time": 64,
+          "order": 32,
+          "status": "missing",
+          "ready": false,
+          "todo": "Compute this declared reference."
+        },
+        {
+          "index": 10,
+          "time": 64,
+          "order": 16,
+          "status": "missing",
+          "ready": false,
+          "todo": "Compute this declared reference."
+        },
+        {
+          "index": 10,
+          "time": 64,
+          "order": 32,
+          "status": "missing",
+          "ready": false,
+          "todo": "Compute this declared reference."
+        },
+        {
+          "index": 11,
+          "time": 64,
+          "order": 16,
+          "status": "missing",
+          "ready": false,
+          "todo": "Compute this declared reference."
+        },
+        {
+          "index": 11,
+          "time": 64,
+          "order": 32,
+          "status": "missing",
+          "ready": false,
+          "todo": "Compute this declared reference."
+        },
+        {
+          "index": 12,
+          "time": 64,
+          "order": 16,
+          "status": "missing",
+          "ready": false,
+          "todo": "Compute this declared reference."
+        },
+        {
+          "index": 12,
+          "time": 64,
+          "order": 32,
+          "status": "missing",
+          "ready": false,
+          "todo": "Compute this declared reference."
+        },
+        {
+          "index": 13,
+          "time": 64,
+          "order": 16,
+          "status": "missing",
+          "ready": false,
+          "todo": "Compute this declared reference."
+        },
+        {
+          "index": 13,
+          "time": 64,
+          "order": 32,
+          "status": "missing",
+          "ready": false,
+          "todo": "Compute this declared reference."
+        },
+        {
+          "index": 14,
+          "time": 64,
+          "order": 16,
+          "status": "missing",
+          "ready": false,
+          "todo": "Compute this declared reference."
+        },
+        {
+          "index": 14,
+          "time": 64,
+          "order": 32,
+          "status": "missing",
+          "ready": false,
+          "todo": "Compute this declared reference."
+        },
+        {
+          "index": 15,
+          "time": 64,
+          "order": 16,
+          "status": "missing",
+          "ready": false,
+          "todo": "Compute this declared reference."
+        },
+        {
+          "index": 15,
+          "time": 64,
+          "order": 32,
+          "status": "missing",
+          "ready": false,
+          "todo": "Compute this declared reference."
+        },
+        {
+          "index": 16,
+          "time": 64,
+          "order": 16,
+          "status": "missing",
+          "ready": false,
+          "todo": "Compute this declared reference."
+        },
+        {
+          "index": 16,
+          "time": 64,
+          "order": 32,
+          "status": "missing",
+          "ready": false,
+          "todo": "Compute this declared reference."
+        },
+        {
+          "index": 17,
+          "time": 64,
+          "order": 16,
+          "status": "missing",
+          "ready": false,
+          "todo": "Compute this declared reference."
+        },
+        {
+          "index": 17,
+          "time": 64,
+          "order": 32,
+          "status": "missing",
+          "ready": false,
+          "todo": "Compute this declared reference."
+        },
+        {
+          "index": 18,
+          "time": 64,
+          "order": 16,
+          "status": "missing",
+          "ready": false,
+          "todo": "Compute this declared reference."
+        },
+        {
+          "index": 18,
+          "time": 64,
+          "order": 32,
+          "status": "missing",
+          "ready": false,
+          "todo": "Compute this declared reference."
+        },
+        {
+          "index": 19,
+          "time": 64,
+          "order": 16,
+          "status": "missing",
+          "ready": false,
+          "todo": "Compute this declared reference."
+        },
+        {
+          "index": 19,
+          "time": 64,
+          "order": 32,
+          "status": "missing",
+          "ready": false,
+          "todo": "Compute this declared reference."
+        },
+        {
+          "index": 20,
+          "time": 64,
+          "order": 16,
+          "status": "missing",
+          "ready": false,
+          "todo": "Compute this declared reference."
+        },
+        {
+          "index": 20,
+          "time": 64,
+          "order": 32,
+          "status": "missing",
+          "ready": false,
+          "todo": "Compute this declared reference."
+        },
+        {
+          "index": 21,
+          "time": 64,
+          "order": 16,
+          "status": "missing",
+          "ready": false,
+          "todo": "Compute this declared reference."
+        },
+        {
+          "index": 21,
+          "time": 64,
+          "order": 32,
+          "status": "missing",
+          "ready": false,
+          "todo": "Compute this declared reference."
+        },
+        {
+          "index": 22,
+          "time": 64,
+          "order": 16,
+          "status": "missing",
+          "ready": false,
+          "todo": "Compute this declared reference."
+        },
+        {
+          "index": 22,
+          "time": 64,
+          "order": 32,
+          "status": "missing",
+          "ready": false,
+          "todo": "Compute this declared reference."
+        },
+        {
+          "index": 23,
+          "time": 64,
+          "order": 16,
+          "status": "missing",
+          "ready": false,
+          "todo": "Compute this declared reference."
+        },
+        {
+          "index": 23,
+          "time": 64,
+          "order": 32,
+          "status": "missing",
+          "ready": false,
+          "todo": "Compute this declared reference."
+        },
+        {
+          "index": 24,
+          "time": 64,
+          "order": 16,
+          "status": "missing",
+          "ready": false,
+          "todo": "Compute this declared reference."
+        },
+        {
+          "index": 24,
+          "time": 64,
+          "order": 32,
+          "status": "missing",
+          "ready": false,
+          "todo": "Compute this declared reference."
+        },
+        {
+          "index": 25,
+          "time": 64,
+          "order": 16,
+          "status": "missing",
+          "ready": false,
+          "todo": "Compute this declared reference."
+        },
+        {
+          "index": 25,
+          "time": 64,
+          "order": 32,
+          "status": "missing",
+          "ready": false,
+          "todo": "Compute this declared reference."
+        },
+        {
+          "index": 26,
+          "time": 64,
+          "order": 16,
+          "status": "missing",
+          "ready": false,
+          "todo": "Compute this declared reference."
+        },
+        {
+          "index": 26,
+          "time": 64,
+          "order": 32,
+          "status": "missing",
+          "ready": false,
+          "todo": "Compute this declared reference."
+        },
+        {
+          "index": 27,
+          "time": 64,
+          "order": 16,
+          "status": "missing",
+          "ready": false,
+          "todo": "Compute this declared reference."
+        },
+        {
+          "index": 27,
+          "time": 64,
+          "order": 32,
+          "status": "missing",
+          "ready": false,
+          "todo": "Compute this declared reference."
+        },
+        {
+          "index": 28,
+          "time": 64,
+          "order": 16,
+          "status": "missing",
+          "ready": false,
+          "todo": "Compute this declared reference."
+        },
+        {
+          "index": 28,
+          "time": 64,
+          "order": 32,
+          "status": "missing",
+          "ready": false,
+          "todo": "Compute this declared reference."
+        },
+        {
+          "index": 29,
+          "time": 64,
+          "order": 16,
+          "status": "missing",
+          "ready": false,
+          "todo": "Compute this declared reference."
+        },
+        {
+          "index": 29,
+          "time": 64,
+          "order": 32,
+          "status": "missing",
+          "ready": false,
+          "todo": "Compute this declared reference."
+        },
+        {
+          "index": 30,
+          "time": 64,
+          "order": 16,
+          "status": "missing",
+          "ready": false,
+          "todo": "Compute this declared reference."
+        },
+        {
+          "index": 30,
+          "time": 64,
+          "order": 32,
+          "status": "missing",
+          "ready": false,
+          "todo": "Compute this declared reference."
+        },
+        {
+          "index": 31,
+          "time": 64,
+          "order": 16,
+          "status": "missing",
+          "ready": false,
+          "todo": "Compute this declared reference."
+        },
+        {
+          "index": 31,
+          "time": 64,
+          "order": 32,
+          "status": "missing",
+          "ready": false,
+          "todo": "Compute this declared reference."
+        },
+        {
+          "index": 32,
+          "time": 64,
+          "order": 16,
+          "status": "missing",
+          "ready": false,
+          "todo": "Compute this declared reference."
+        },
+        {
+          "index": 32,
+          "time": 64,
+          "order": 32,
+          "status": "missing",
+          "ready": false,
+          "todo": "Compute this declared reference."
+        },
+        {
+          "index": 33,
+          "time": 64,
+          "order": 16,
+          "status": "missing",
+          "ready": false,
+          "todo": "Compute this declared reference."
+        },
+        {
+          "index": 33,
+          "time": 64,
+          "order": 32,
+          "status": "missing",
+          "ready": false,
+          "todo": "Compute this declared reference."
+        },
+        {
+          "index": 34,
+          "time": 64,
+          "order": 16,
+          "status": "missing",
+          "ready": false,
+          "todo": "Compute this declared reference."
+        },
+        {
+          "index": 34,
+          "time": 64,
+          "order": 32,
+          "status": "missing",
+          "ready": false,
+          "todo": "Compute this declared reference."
+        },
+        {
+          "index": 35,
+          "time": 64,
+          "order": 16,
+          "status": "missing",
+          "ready": false,
+          "todo": "Compute this declared reference."
+        },
+        {
+          "index": 35,
+          "time": 64,
+          "order": 32,
+          "status": "missing",
+          "ready": false,
+          "todo": "Compute this declared reference."
+        },
+        {
+          "index": 36,
+          "time": 64,
+          "order": 16,
+          "status": "missing",
+          "ready": false,
+          "todo": "Compute this declared reference."
+        },
+        {
+          "index": 36,
+          "time": 64,
+          "order": 32,
+          "status": "missing",
+          "ready": false,
+          "todo": "Compute this declared reference."
+        },
+        {
+          "index": 37,
+          "time": 64,
+          "order": 16,
+          "status": "missing",
+          "ready": false,
+          "todo": "Compute this declared reference."
+        },
+        {
+          "index": 37,
+          "time": 64,
+          "order": 32,
+          "status": "missing",
+          "ready": false,
+          "todo": "Compute this declared reference."
+        },
+        {
+          "index": 38,
+          "time": 64,
+          "order": 16,
+          "status": "missing",
+          "ready": false,
+          "todo": "Compute this declared reference."
+        },
+        {
+          "index": 38,
+          "time": 64,
+          "order": 32,
+          "status": "missing",
+          "ready": false,
+          "todo": "Compute this declared reference."
+        },
+        {
+          "index": 39,
+          "time": 64,
+          "order": 16,
+          "status": "missing",
+          "ready": false,
+          "todo": "Compute this declared reference."
+        },
+        {
+          "index": 39,
+          "time": 64,
+          "order": 32,
+          "status": "missing",
+          "ready": false,
+          "todo": "Compute this declared reference."
+        },
+        {
+          "index": 40,
+          "time": 64,
+          "order": 16,
+          "status": "missing",
+          "ready": false,
+          "todo": "Compute this declared reference."
+        },
+        {
+          "index": 40,
+          "time": 64,
+          "order": 32,
+          "status": "missing",
+          "ready": false,
+          "todo": "Compute this declared reference."
+        },
+        {
+          "index": 41,
+          "time": 64,
+          "order": 16,
+          "status": "missing",
+          "ready": false,
+          "todo": "Compute this declared reference."
+        },
+        {
+          "index": 41,
+          "time": 64,
+          "order": 32,
+          "status": "missing",
+          "ready": false,
+          "todo": "Compute this declared reference."
+        },
+        {
+          "index": 42,
+          "time": 64,
+          "order": 16,
+          "status": "missing",
+          "ready": false,
+          "todo": "Compute this declared reference."
+        },
+        {
+          "index": 42,
+          "time": 64,
+          "order": 32,
+          "status": "missing",
+          "ready": false,
+          "todo": "Compute this declared reference."
+        },
+        {
+          "index": 43,
+          "time": 64,
+          "order": 16,
+          "status": "missing",
+          "ready": false,
+          "todo": "Compute this declared reference."
+        },
+        {
+          "index": 43,
+          "time": 64,
+          "order": 32,
+          "status": "missing",
+          "ready": false,
+          "todo": "Compute this declared reference."
+        },
+        {
+          "index": 44,
+          "time": 64,
+          "order": 16,
+          "status": "missing",
+          "ready": false,
+          "todo": "Compute this declared reference."
+        },
+        {
+          "index": 44,
+          "time": 64,
+          "order": 32,
+          "status": "missing",
+          "ready": false,
+          "todo": "Compute this declared reference."
+        },
+        {
+          "index": 45,
+          "time": 64,
+          "order": 16,
+          "status": "missing",
+          "ready": false,
+          "todo": "Compute this declared reference."
+        },
+        {
+          "index": 45,
+          "time": 64,
+          "order": 32,
+          "status": "missing",
+          "ready": false,
+          "todo": "Compute this declared reference."
+        },
+        {
+          "index": 46,
+          "time": 64,
+          "order": 16,
+          "status": "missing",
+          "ready": false,
+          "todo": "Compute this declared reference."
+        },
+        {
+          "index": 46,
+          "time": 64,
+          "order": 32,
+          "status": "missing",
+          "ready": false,
+          "todo": "Compute this declared reference."
+        },
+        {
+          "index": 47,
+          "time": 64,
+          "order": 16,
+          "status": "missing",
+          "ready": false,
+          "todo": "Compute this declared reference."
+        },
+        {
+          "index": 47,
+          "time": 64,
+          "order": 32,
+          "status": "missing",
+          "ready": false,
+          "todo": "Compute this declared reference."
+        },
+        {
+          "index": 48,
+          "time": 64,
+          "order": 16,
+          "status": "missing",
+          "ready": false,
+          "todo": "Compute this declared reference."
+        },
+        {
+          "index": 48,
+          "time": 64,
+          "order": 32,
+          "status": "missing",
+          "ready": false,
+          "todo": "Compute this declared reference."
+        },
+        {
+          "index": 49,
+          "time": 64,
+          "order": 16,
+          "status": "missing",
+          "ready": false,
+          "todo": "Compute this declared reference."
+        },
+        {
+          "index": 49,
+          "time": 64,
+          "order": 32,
+          "status": "missing",
+          "ready": false,
+          "todo": "Compute this declared reference."
+        },
+        {
+          "index": 50,
+          "time": 64,
+          "order": 16,
+          "status": "missing",
+          "ready": false,
+          "todo": "Compute this declared reference."
+        },
+        {
+          "index": 50,
+          "time": 64,
+          "order": 32,
+          "status": "missing",
+          "ready": false,
+          "todo": "Compute this declared reference."
+        },
+        {
+          "index": 51,
+          "time": 64,
+          "order": 16,
+          "status": "missing",
+          "ready": false,
+          "todo": "Compute this declared reference."
+        },
+        {
+          "index": 51,
+          "time": 64,
+          "order": 32,
+          "status": "missing",
+          "ready": false,
+          "todo": "Compute this declared reference."
+        },
+        {
+          "index": 52,
+          "time": 64,
+          "order": 16,
+          "status": "missing",
+          "ready": false,
+          "todo": "Compute this declared reference."
+        },
+        {
+          "index": 52,
+          "time": 64,
+          "order": 32,
+          "status": "missing",
+          "ready": false,
+          "todo": "Compute this declared reference."
+        },
+        {
+          "index": 53,
+          "time": 64,
+          "order": 16,
+          "status": "missing",
+          "ready": false,
+          "todo": "Compute this declared reference."
+        },
+        {
+          "index": 53,
+          "time": 64,
+          "order": 32,
+          "status": "missing",
+          "ready": false,
+          "todo": "Compute this declared reference."
+        },
+        {
+          "index": 54,
+          "time": 64,
+          "order": 16,
+          "status": "missing",
+          "ready": false,
+          "todo": "Compute this declared reference."
+        },
+        {
+          "index": 54,
+          "time": 64,
+          "order": 32,
+          "status": "missing",
+          "ready": false,
+          "todo": "Compute this declared reference."
+        },
+        {
+          "index": 55,
+          "time": 64,
+          "order": 16,
+          "status": "missing",
+          "ready": false,
+          "todo": "Compute this declared reference."
+        },
+        {
+          "index": 55,
+          "time": 64,
+          "order": 32,
+          "status": "missing",
+          "ready": false,
+          "todo": "Compute this declared reference."
+        },
+        {
+          "index": 56,
+          "time": 64,
+          "order": 16,
+          "status": "missing",
+          "ready": false,
+          "todo": "Compute this declared reference."
+        },
+        {
+          "index": 56,
+          "time": 64,
+          "order": 32,
+          "status": "missing",
+          "ready": false,
+          "todo": "Compute this declared reference."
+        },
+        {
+          "index": 57,
+          "time": 64,
+          "order": 16,
+          "status": "missing",
+          "ready": false,
+          "todo": "Compute this declared reference."
+        },
+        {
+          "index": 57,
+          "time": 64,
+          "order": 32,
+          "status": "missing",
+          "ready": false,
+          "todo": "Compute this declared reference."
+        },
+        {
+          "index": 58,
+          "time": 64,
+          "order": 16,
+          "status": "missing",
+          "ready": false,
+          "todo": "Compute this declared reference."
+        },
+        {
+          "index": 58,
+          "time": 64,
+          "order": 32,
+          "status": "missing",
+          "ready": false,
+          "todo": "Compute this declared reference."
+        },
+        {
+          "index": 59,
+          "time": 64,
+          "order": 16,
+          "status": "missing",
+          "ready": false,
+          "todo": "Compute this declared reference."
+        },
+        {
+          "index": 59,
+          "time": 64,
+          "order": 32,
+          "status": "missing",
+          "ready": false,
+          "todo": "Compute this declared reference."
+        },
+        {
+          "index": 60,
+          "time": 64,
+          "order": 16,
+          "status": "missing",
+          "ready": false,
+          "todo": "Compute this declared reference."
+        },
+        {
+          "index": 60,
+          "time": 64,
+          "order": 32,
+          "status": "missing",
+          "ready": false,
+          "todo": "Compute this declared reference."
+        },
+        {
+          "index": 61,
+          "time": 64,
+          "order": 16,
+          "status": "missing",
+          "ready": false,
+          "todo": "Compute this declared reference."
+        },
+        {
+          "index": 61,
+          "time": 64,
+          "order": 32,
+          "status": "missing",
+          "ready": false,
+          "todo": "Compute this declared reference."
+        },
+        {
+          "index": 62,
+          "time": 64,
+          "order": 16,
+          "status": "missing",
+          "ready": false,
+          "todo": "Compute this declared reference."
+        },
+        {
+          "index": 62,
+          "time": 64,
+          "order": 32,
+          "status": "missing",
+          "ready": false,
+          "todo": "Compute this declared reference."
+        },
+        {
+          "index": 63,
+          "time": 64,
+          "order": 16,
+          "status": "missing",
+          "ready": false,
+          "todo": "Compute this declared reference."
+        },
+        {
+          "index": 63,
+          "time": 64,
+          "order": 32,
+          "status": "missing",
+          "ready": false,
+          "todo": "Compute this declared reference."
+        },
+        {
+          "index": 64,
+          "time": 64,
+          "order": 16,
+          "status": "missing",
+          "ready": false,
+          "todo": "Compute this declared reference."
+        },
+        {
+          "index": 64,
+          "time": 64,
+          "order": 32,
+          "status": "missing",
+          "ready": false,
+          "todo": "Compute this declared reference."
+        },
+        {
+          "index": 65,
+          "time": 64,
+          "order": 16,
+          "status": "missing",
+          "ready": false,
+          "todo": "Compute this declared reference."
+        },
+        {
+          "index": 65,
+          "time": 64,
+          "order": 32,
+          "status": "missing",
+          "ready": false,
+          "todo": "Compute this declared reference."
+        },
+        {
+          "index": 66,
+          "time": 64,
+          "order": 16,
+          "status": "missing",
+          "ready": false,
+          "todo": "Compute this declared reference."
+        },
+        {
+          "index": 66,
+          "time": 64,
+          "order": 32,
+          "status": "missing",
+          "ready": false,
+          "todo": "Compute this declared reference."
+        },
+        {
+          "index": 67,
+          "time": 64,
+          "order": 16,
+          "status": "missing",
+          "ready": false,
+          "todo": "Compute this declared reference."
+        },
+        {
+          "index": 67,
+          "time": 64,
+          "order": 32,
+          "status": "missing",
+          "ready": false,
+          "todo": "Compute this declared reference."
+        },
+        {
+          "index": 68,
+          "time": 64,
+          "order": 16,
+          "status": "missing",
+          "ready": false,
+          "todo": "Compute this declared reference."
+        },
+        {
+          "index": 68,
+          "time": 64,
+          "order": 32,
+          "status": "missing",
+          "ready": false,
+          "todo": "Compute this declared reference."
+        },
+        {
+          "index": 69,
+          "time": 64,
+          "order": 16,
+          "status": "missing",
+          "ready": false,
+          "todo": "Compute this declared reference."
+        },
+        {
+          "index": 69,
+          "time": 64,
+          "order": 32,
+          "status": "missing",
+          "ready": false,
+          "todo": "Compute this declared reference."
+        },
+        {
+          "index": 70,
+          "time": 64,
+          "order": 16,
+          "status": "missing",
+          "ready": false,
+          "todo": "Compute this declared reference."
+        },
+        {
+          "index": 70,
+          "time": 64,
+          "order": 32,
+          "status": "missing",
+          "ready": false,
+          "todo": "Compute this declared reference."
+        },
+        {
+          "index": 71,
+          "time": 64,
+          "order": 16,
+          "status": "missing",
+          "ready": false,
+          "todo": "Compute this declared reference."
+        },
+        {
+          "index": 71,
+          "time": 64,
+          "order": 32,
+          "status": "missing",
+          "ready": false,
+          "todo": "Compute this declared reference."
+        },
+        {
+          "index": 72,
+          "time": 64,
+          "order": 16,
+          "status": "missing",
+          "ready": false,
+          "todo": "Compute this declared reference."
+        },
+        {
+          "index": 72,
+          "time": 64,
+          "order": 32,
+          "status": "missing",
+          "ready": false,
+          "todo": "Compute this declared reference."
+        },
+        {
+          "index": 73,
+          "time": 64,
+          "order": 16,
+          "status": "missing",
+          "ready": false,
+          "todo": "Compute this declared reference."
+        },
+        {
+          "index": 73,
+          "time": 64,
+          "order": 32,
+          "status": "missing",
+          "ready": false,
+          "todo": "Compute this declared reference."
+        },
+        {
+          "index": 74,
+          "time": 64,
+          "order": 16,
+          "status": "missing",
+          "ready": false,
+          "todo": "Compute this declared reference."
+        },
+        {
+          "index": 74,
+          "time": 64,
+          "order": 32,
+          "status": "missing",
+          "ready": false,
+          "todo": "Compute this declared reference."
+        },
+        {
+          "index": 75,
+          "time": 64,
+          "order": 16,
+          "status": "missing",
+          "ready": false,
+          "todo": "Compute this declared reference."
+        },
+        {
+          "index": 75,
+          "time": 64,
+          "order": 32,
+          "status": "missing",
+          "ready": false,
+          "todo": "Compute this declared reference."
+        },
+        {
+          "index": 76,
+          "time": 64,
+          "order": 16,
+          "status": "missing",
+          "ready": false,
+          "todo": "Compute this declared reference."
+        },
+        {
+          "index": 76,
+          "time": 64,
+          "order": 32,
+          "status": "missing",
+          "ready": false,
+          "todo": "Compute this declared reference."
+        },
+        {
+          "index": 77,
+          "time": 64,
+          "order": 16,
+          "status": "missing",
+          "ready": false,
+          "todo": "Compute this declared reference."
+        },
+        {
+          "index": 77,
+          "time": 64,
+          "order": 32,
+          "status": "missing",
+          "ready": false,
+          "todo": "Compute this declared reference."
+        },
+        {
+          "index": 78,
+          "time": 64,
+          "order": 16,
+          "status": "missing",
+          "ready": false,
+          "todo": "Compute this declared reference."
+        },
+        {
+          "index": 78,
+          "time": 64,
+          "order": 32,
+          "status": "missing",
+          "ready": false,
+          "todo": "Compute this declared reference."
+        },
+        {
+          "index": 79,
+          "time": 64,
+          "order": 16,
+          "status": "missing",
+          "ready": false,
+          "todo": "Compute this declared reference."
+        },
+        {
+          "index": 79,
+          "time": 64,
+          "order": 32,
+          "status": "missing",
+          "ready": false,
+          "todo": "Compute this declared reference."
+        },
+        {
+          "index": 80,
+          "time": 64,
+          "order": 16,
+          "status": "missing",
+          "ready": false,
+          "todo": "Compute this declared reference."
+        },
+        {
+          "index": 80,
+          "time": 64,
+          "order": 32,
+          "status": "missing",
+          "ready": false,
+          "todo": "Compute this declared reference."
+        },
+        {
+          "index": 81,
+          "time": 64,
+          "order": 16,
+          "status": "missing",
+          "ready": false,
+          "todo": "Compute this declared reference."
+        },
+        {
+          "index": 81,
+          "time": 64,
+          "order": 32,
+          "status": "missing",
+          "ready": false,
+          "todo": "Compute this declared reference."
+        },
+        {
+          "index": 82,
+          "time": 64,
+          "order": 16,
+          "status": "missing",
+          "ready": false,
+          "todo": "Compute this declared reference."
+        },
+        {
+          "index": 82,
+          "time": 64,
+          "order": 32,
+          "status": "missing",
+          "ready": false,
+          "todo": "Compute this declared reference."
+        },
+        {
+          "index": 83,
+          "time": 64,
+          "order": 16,
+          "status": "missing",
+          "ready": false,
+          "todo": "Compute this declared reference."
+        },
+        {
+          "index": 83,
+          "time": 64,
+          "order": 32,
+          "status": "missing",
+          "ready": false,
+          "todo": "Compute this declared reference."
+        },
+        {
+          "index": 84,
+          "time": 64,
+          "order": 16,
+          "status": "missing",
+          "ready": false,
+          "todo": "Compute this declared reference."
+        },
+        {
+          "index": 84,
+          "time": 64,
+          "order": 32,
+          "status": "missing",
+          "ready": false,
+          "todo": "Compute this declared reference."
+        },
+        {
+          "index": 85,
+          "time": 64,
+          "order": 16,
+          "status": "missing",
+          "ready": false,
+          "todo": "Compute this declared reference."
+        },
+        {
+          "index": 85,
+          "time": 64,
+          "order": 32,
+          "status": "missing",
+          "ready": false,
+          "todo": "Compute this declared reference."
+        },
+        {
+          "index": 86,
+          "time": 64,
+          "order": 16,
+          "status": "missing",
+          "ready": false,
+          "todo": "Compute this declared reference."
+        },
+        {
+          "index": 86,
+          "time": 64,
+          "order": 32,
+          "status": "missing",
+          "ready": false,
+          "todo": "Compute this declared reference."
+        },
+        {
+          "index": 87,
+          "time": 64,
+          "order": 16,
+          "status": "missing",
+          "ready": false,
+          "todo": "Compute this declared reference."
+        },
+        {
+          "index": 87,
+          "time": 64,
+          "order": 32,
+          "status": "missing",
+          "ready": false,
+          "todo": "Compute this declared reference."
+        },
+        {
+          "index": 88,
+          "time": 64,
+          "order": 16,
+          "status": "missing",
+          "ready": false,
+          "todo": "Compute this declared reference."
+        },
+        {
+          "index": 88,
+          "time": 64,
+          "order": 32,
+          "status": "missing",
+          "ready": false,
+          "todo": "Compute this declared reference."
+        },
+        {
+          "index": 89,
+          "time": 64,
+          "order": 16,
+          "status": "missing",
+          "ready": false,
+          "todo": "Compute this declared reference."
+        },
+        {
+          "index": 89,
+          "time": 64,
+          "order": 32,
+          "status": "missing",
+          "ready": false,
+          "todo": "Compute this declared reference."
+        },
+        {
+          "index": 90,
+          "time": 64,
+          "order": 16,
+          "status": "missing",
+          "ready": false,
+          "todo": "Compute this declared reference."
+        },
+        {
+          "index": 90,
+          "time": 64,
+          "order": 32,
+          "status": "missing",
+          "ready": false,
+          "todo": "Compute this declared reference."
+        },
+        {
+          "index": 91,
+          "time": 64,
+          "order": 16,
+          "status": "missing",
+          "ready": false,
+          "todo": "Compute this declared reference."
+        },
+        {
+          "index": 91,
+          "time": 64,
+          "order": 32,
+          "status": "missing",
+          "ready": false,
+          "todo": "Compute this declared reference."
+        },
+        {
+          "index": 92,
+          "time": 64,
+          "order": 16,
+          "status": "missing",
+          "ready": false,
+          "todo": "Compute this declared reference."
+        },
+        {
+          "index": 92,
+          "time": 64,
+          "order": 32,
+          "status": "missing",
+          "ready": false,
+          "todo": "Compute this declared reference."
+        },
+        {
+          "index": 93,
+          "time": 64,
+          "order": 16,
+          "status": "missing",
+          "ready": false,
+          "todo": "Compute this declared reference."
+        },
+        {
+          "index": 93,
+          "time": 64,
+          "order": 32,
+          "status": "missing",
+          "ready": false,
+          "todo": "Compute this declared reference."
+        },
+        {
+          "index": 94,
+          "time": 64,
+          "order": 16,
+          "status": "missing",
+          "ready": false,
+          "todo": "Compute this declared reference."
+        },
+        {
+          "index": 94,
+          "time": 64,
+          "order": 32,
+          "status": "missing",
+          "ready": false,
+          "todo": "Compute this declared reference."
+        },
+        {
+          "index": 95,
+          "time": 64,
+          "order": 16,
+          "status": "missing",
+          "ready": false,
+          "todo": "Compute this declared reference."
+        },
+        {
+          "index": 95,
+          "time": 64,
+          "order": 32,
+          "status": "missing",
+          "ready": false,
+          "todo": "Compute this declared reference."
+        },
+        {
+          "index": 96,
+          "time": 64,
+          "order": 16,
+          "status": "missing",
+          "ready": false,
+          "todo": "Compute this declared reference."
+        },
+        {
+          "index": 96,
+          "time": 64,
+          "order": 32,
+          "status": "missing",
+          "ready": false,
+          "todo": "Compute this declared reference."
+        },
+        {
+          "index": 97,
+          "time": 64,
+          "order": 16,
+          "status": "missing",
+          "ready": false,
+          "todo": "Compute this declared reference."
+        },
+        {
+          "index": 97,
+          "time": 64,
+          "order": 32,
+          "status": "missing",
+          "ready": false,
+          "todo": "Compute this declared reference."
+        },
+        {
+          "index": 98,
+          "time": 64,
+          "order": 16,
+          "status": "missing",
+          "ready": false,
+          "todo": "Compute this declared reference."
+        },
+        {
+          "index": 98,
+          "time": 64,
+          "order": 32,
+          "status": "missing",
+          "ready": false,
+          "todo": "Compute this declared reference."
+        },
+        {
+          "index": 99,
+          "time": 64,
+          "order": 16,
+          "status": "missing",
+          "ready": false,
+          "todo": "Compute this declared reference."
+        },
+        {
+          "index": 99,
+          "time": 64,
+          "order": 32,
+          "status": "missing",
+          "ready": false,
+          "todo": "Compute this declared reference."
+        },
+        {
+          "index": 100,
+          "time": 64,
+          "order": 16,
+          "status": "missing",
+          "ready": false,
+          "todo": "Compute this declared reference."
+        },
+        {
+          "index": 100,
+          "time": 64,
+          "order": 32,
+          "status": "missing",
+          "ready": false,
+          "todo": "Compute this declared reference."
+        },
+        {
+          "index": 101,
+          "time": 64,
+          "order": 16,
+          "status": "missing",
+          "ready": false,
+          "todo": "Compute this declared reference."
+        },
+        {
+          "index": 101,
+          "time": 64,
+          "order": 32,
+          "status": "missing",
+          "ready": false,
+          "todo": "Compute this declared reference."
+        },
+        {
+          "index": 102,
+          "time": 64,
+          "order": 16,
+          "status": "missing",
+          "ready": false,
+          "todo": "Compute this declared reference."
+        },
+        {
+          "index": 102,
+          "time": 64,
+          "order": 32,
+          "status": "missing",
+          "ready": false,
+          "todo": "Compute this declared reference."
+        },
+        {
+          "index": 103,
+          "time": 64,
+          "order": 16,
+          "status": "missing",
+          "ready": false,
+          "todo": "Compute this declared reference."
+        },
+        {
+          "index": 103,
+          "time": 64,
+          "order": 32,
+          "status": "missing",
+          "ready": false,
+          "todo": "Compute this declared reference."
+        },
+        {
+          "index": 104,
+          "time": 64,
+          "order": 16,
+          "status": "missing",
+          "ready": false,
+          "todo": "Compute this declared reference."
+        },
+        {
+          "index": 104,
+          "time": 64,
+          "order": 32,
+          "status": "missing",
+          "ready": false,
+          "todo": "Compute this declared reference."
+        },
+        {
+          "index": 105,
+          "time": 64,
+          "order": 16,
+          "status": "missing",
+          "ready": false,
+          "todo": "Compute this declared reference."
+        },
+        {
+          "index": 105,
+          "time": 64,
+          "order": 32,
+          "status": "missing",
+          "ready": false,
+          "todo": "Compute this declared reference."
+        },
+        {
+          "index": 106,
+          "time": 64,
+          "order": 16,
+          "status": "missing",
+          "ready": false,
+          "todo": "Compute this declared reference."
+        },
+        {
+          "index": 106,
+          "time": 64,
+          "order": 32,
+          "status": "missing",
+          "ready": false,
+          "todo": "Compute this declared reference."
+        },
+        {
+          "index": 107,
+          "time": 64,
+          "order": 16,
+          "status": "missing",
+          "ready": false,
+          "todo": "Compute this declared reference."
+        },
+        {
+          "index": 107,
+          "time": 64,
+          "order": 32,
+          "status": "missing",
+          "ready": false,
+          "todo": "Compute this declared reference."
+        },
+        {
+          "index": 108,
+          "time": 64,
+          "order": 16,
+          "status": "missing",
+          "ready": false,
+          "todo": "Compute this declared reference."
+        },
+        {
+          "index": 108,
+          "time": 64,
+          "order": 32,
+          "status": "missing",
+          "ready": false,
+          "todo": "Compute this declared reference."
+        },
+        {
+          "index": 109,
+          "time": 64,
+          "order": 16,
+          "status": "missing",
+          "ready": false,
+          "todo": "Compute this declared reference."
+        },
+        {
+          "index": 109,
+          "time": 64,
+          "order": 32,
+          "status": "missing",
+          "ready": false,
+          "todo": "Compute this declared reference."
+        },
+        {
+          "index": 110,
+          "time": 64,
+          "order": 16,
+          "status": "missing",
+          "ready": false,
+          "todo": "Compute this declared reference."
+        },
+        {
+          "index": 110,
+          "time": 64,
+          "order": 32,
+          "status": "missing",
+          "ready": false,
+          "todo": "Compute this declared reference."
+        },
+        {
+          "index": 111,
+          "time": 64,
+          "order": 16,
+          "status": "missing",
+          "ready": false,
+          "todo": "Compute this declared reference."
+        },
+        {
+          "index": 111,
+          "time": 64,
+          "order": 32,
+          "status": "missing",
+          "ready": false,
+          "todo": "Compute this declared reference."
+        },
+        {
+          "index": 112,
+          "time": 64,
+          "order": 16,
+          "status": "missing",
+          "ready": false,
+          "todo": "Compute this declared reference."
+        },
+        {
+          "index": 112,
+          "time": 64,
+          "order": 32,
+          "status": "missing",
+          "ready": false,
+          "todo": "Compute this declared reference."
+        },
+        {
+          "index": 113,
+          "time": 64,
+          "order": 16,
+          "status": "missing",
+          "ready": false,
+          "todo": "Compute this declared reference."
+        },
+        {
+          "index": 113,
+          "time": 64,
+          "order": 32,
+          "status": "missing",
+          "ready": false,
+          "todo": "Compute this declared reference."
+        },
+        {
+          "index": 114,
+          "time": 64,
+          "order": 16,
+          "status": "missing",
+          "ready": false,
+          "todo": "Compute this declared reference."
+        },
+        {
+          "index": 114,
+          "time": 64,
+          "order": 32,
+          "status": "missing",
+          "ready": false,
+          "todo": "Compute this declared reference."
+        },
+        {
+          "index": 115,
+          "time": 64,
+          "order": 16,
+          "status": "missing",
+          "ready": false,
+          "todo": "Compute this declared reference."
+        },
+        {
+          "index": 115,
+          "time": 64,
+          "order": 32,
+          "status": "missing",
+          "ready": false,
+          "todo": "Compute this declared reference."
+        },
+        {
+          "index": 116,
+          "time": 64,
+          "order": 16,
+          "status": "missing",
+          "ready": false,
+          "todo": "Compute this declared reference."
+        },
+        {
+          "index": 116,
+          "time": 64,
+          "order": 32,
+          "status": "missing",
+          "ready": false,
+          "todo": "Compute this declared reference."
+        },
+        {
+          "index": 117,
+          "time": 64,
+          "order": 16,
+          "status": "missing",
+          "ready": false,
+          "todo": "Compute this declared reference."
+        },
+        {
+          "index": 117,
+          "time": 64,
+          "order": 32,
+          "status": "missing",
+          "ready": false,
+          "todo": "Compute this declared reference."
+        },
+        {
+          "index": 118,
+          "time": 64,
+          "order": 16,
+          "status": "missing",
+          "ready": false,
+          "todo": "Compute this declared reference."
+        },
+        {
+          "index": 118,
+          "time": 64,
+          "order": 32,
+          "status": "missing",
+          "ready": false,
+          "todo": "Compute this declared reference."
+        },
+        {
+          "index": 119,
+          "time": 64,
+          "order": 16,
+          "status": "missing",
+          "ready": false,
+          "todo": "Compute this declared reference."
+        },
+        {
+          "index": 119,
+          "time": 64,
+          "order": 32,
+          "status": "missing",
+          "ready": false,
+          "todo": "Compute this declared reference."
+        },
+        {
+          "index": 120,
+          "time": 64,
+          "order": 16,
+          "status": "missing",
+          "ready": false,
+          "todo": "Compute this declared reference."
+        },
+        {
+          "index": 120,
+          "time": 64,
+          "order": 32,
+          "status": "missing",
+          "ready": false,
+          "todo": "Compute this declared reference."
+        },
+        {
+          "index": 121,
+          "time": 64,
+          "order": 16,
+          "status": "missing",
+          "ready": false,
+          "todo": "Compute this declared reference."
+        },
+        {
+          "index": 121,
+          "time": 64,
+          "order": 32,
+          "status": "missing",
+          "ready": false,
+          "todo": "Compute this declared reference."
+        },
+        {
+          "index": 122,
+          "time": 64,
+          "order": 16,
+          "status": "missing",
+          "ready": false,
+          "todo": "Compute this declared reference."
+        },
+        {
+          "index": 122,
+          "time": 64,
+          "order": 32,
+          "status": "missing",
+          "ready": false,
+          "todo": "Compute this declared reference."
+        },
+        {
+          "index": 123,
+          "time": 64,
+          "order": 16,
+          "status": "missing",
+          "ready": false,
+          "todo": "Compute this declared reference."
+        },
+        {
+          "index": 123,
+          "time": 64,
+          "order": 32,
+          "status": "missing",
+          "ready": false,
+          "todo": "Compute this declared reference."
+        },
+        {
+          "index": 124,
+          "time": 64,
+          "order": 16,
+          "status": "missing",
+          "ready": false,
+          "todo": "Compute this declared reference."
+        },
+        {
+          "index": 124,
+          "time": 64,
+          "order": 32,
+          "status": "missing",
+          "ready": false,
+          "todo": "Compute this declared reference."
+        },
+        {
+          "index": 125,
+          "time": 64,
+          "order": 16,
+          "status": "missing",
+          "ready": false,
+          "todo": "Compute this declared reference."
+        },
+        {
+          "index": 125,
+          "time": 64,
+          "order": 32,
+          "status": "missing",
+          "ready": false,
+          "todo": "Compute this declared reference."
+        },
+        {
+          "index": 126,
+          "time": 64,
+          "order": 16,
+          "status": "missing",
+          "ready": false,
+          "todo": "Compute this declared reference."
+        },
+        {
+          "index": 126,
+          "time": 64,
+          "order": 32,
+          "status": "missing",
+          "ready": false,
+          "todo": "Compute this declared reference."
+        },
+        {
+          "index": 127,
+          "time": 64,
+          "order": 16,
+          "status": "missing",
+          "ready": false,
+          "todo": "Compute this declared reference."
+        },
+        {
+          "index": 127,
+          "time": 64,
+          "order": 32,
+          "status": "missing",
+          "ready": false,
+          "todo": "Compute this declared reference."
+        },
+        {
+          "index": 128,
+          "time": 64,
+          "order": 16,
+          "status": "missing",
+          "ready": false,
+          "todo": "Compute this declared reference."
+        },
+        {
+          "index": 128,
+          "time": 64,
+          "order": 32,
+          "status": "missing",
+          "ready": false,
+          "todo": "Compute this declared reference."
+        },
+        {
+          "index": 129,
+          "time": 64,
+          "order": 16,
+          "status": "missing",
+          "ready": false,
+          "todo": "Compute this declared reference."
+        },
+        {
+          "index": 129,
+          "time": 64,
+          "order": 32,
+          "status": "missing",
+          "ready": false,
+          "todo": "Compute this declared reference."
+        },
+        {
+          "index": 130,
+          "time": 64,
+          "order": 16,
+          "status": "missing",
+          "ready": false,
+          "todo": "Compute this declared reference."
+        },
+        {
+          "index": 130,
+          "time": 64,
+          "order": 32,
+          "status": "missing",
+          "ready": false,
+          "todo": "Compute this declared reference."
+        },
+        {
+          "index": 131,
+          "time": 64,
+          "order": 16,
+          "status": "missing",
+          "ready": false,
+          "todo": "Compute this declared reference."
+        },
+        {
+          "index": 131,
+          "time": 64,
+          "order": 32,
+          "status": "missing",
+          "ready": false,
+          "todo": "Compute this declared reference."
+        },
+        {
+          "index": 132,
+          "time": 64,
+          "order": 16,
+          "status": "missing",
+          "ready": false,
+          "todo": "Compute this declared reference."
+        },
+        {
+          "index": 132,
+          "time": 64,
+          "order": 32,
+          "status": "missing",
+          "ready": false,
+          "todo": "Compute this declared reference."
+        },
+        {
+          "index": 133,
+          "time": 64,
+          "order": 16,
+          "status": "missing",
+          "ready": false,
+          "todo": "Compute this declared reference."
+        },
+        {
+          "index": 133,
+          "time": 64,
+          "order": 32,
+          "status": "missing",
+          "ready": false,
+          "todo": "Compute this declared reference."
+        },
+        {
+          "index": 134,
+          "time": 64,
+          "order": 16,
+          "status": "missing",
+          "ready": false,
+          "todo": "Compute this declared reference."
+        },
+        {
+          "index": 134,
+          "time": 64,
+          "order": 32,
+          "status": "missing",
+          "ready": false,
+          "todo": "Compute this declared reference."
+        },
+        {
+          "index": 135,
+          "time": 64,
+          "order": 16,
+          "status": "missing",
+          "ready": false,
+          "todo": "Compute this declared reference."
+        },
+        {
+          "index": 135,
+          "time": 64,
+          "order": 32,
+          "status": "missing",
+          "ready": false,
+          "todo": "Compute this declared reference."
+        },
+        {
+          "index": 136,
+          "time": 64,
+          "order": 16,
+          "status": "missing",
+          "ready": false,
+          "todo": "Compute this declared reference."
+        },
+        {
+          "index": 136,
+          "time": 64,
+          "order": 32,
+          "status": "missing",
+          "ready": false,
+          "todo": "Compute this declared reference."
+        },
+        {
+          "index": 137,
+          "time": 64,
+          "order": 16,
+          "status": "missing",
+          "ready": false,
+          "todo": "Compute this declared reference."
+        },
+        {
+          "index": 137,
+          "time": 64,
+          "order": 32,
+          "status": "missing",
+          "ready": false,
+          "todo": "Compute this declared reference."
+        },
+        {
+          "index": 138,
+          "time": 64,
+          "order": 16,
+          "status": "missing",
+          "ready": false,
+          "todo": "Compute this declared reference."
+        },
+        {
+          "index": 138,
+          "time": 64,
+          "order": 32,
+          "status": "missing",
+          "ready": false,
+          "todo": "Compute this declared reference."
+        },
+        {
+          "index": 139,
+          "time": 64,
+          "order": 16,
+          "status": "missing",
+          "ready": false,
+          "todo": "Compute this declared reference."
+        },
+        {
+          "index": 139,
+          "time": 64,
+          "order": 32,
+          "status": "missing",
+          "ready": false,
+          "todo": "Compute this declared reference."
+        },
+        {
+          "index": 140,
+          "time": 64,
+          "order": 16,
+          "status": "missing",
+          "ready": false,
+          "todo": "Compute this declared reference."
+        },
+        {
+          "index": 140,
+          "time": 64,
+          "order": 32,
+          "status": "missing",
+          "ready": false,
+          "todo": "Compute this declared reference."
+        },
+        {
+          "index": 141,
+          "time": 64,
+          "order": 16,
+          "status": "missing",
+          "ready": false,
+          "todo": "Compute this declared reference."
+        },
+        {
+          "index": 141,
+          "time": 64,
+          "order": 32,
+          "status": "missing",
+          "ready": false,
+          "todo": "Compute this declared reference."
+        },
+        {
+          "index": 142,
+          "time": 64,
+          "order": 16,
+          "status": "missing",
+          "ready": false,
+          "todo": "Compute this declared reference."
+        },
+        {
+          "index": 142,
+          "time": 64,
+          "order": 32,
+          "status": "missing",
+          "ready": false,
+          "todo": "Compute this declared reference."
+        },
+        {
+          "index": 143,
+          "time": 64,
+          "order": 16,
+          "status": "missing",
+          "ready": false,
+          "todo": "Compute this declared reference."
+        },
+        {
+          "index": 143,
+          "time": 64,
+          "order": 32,
+          "status": "missing",
+          "ready": false,
+          "todo": "Compute this declared reference."
+        },
+        {
+          "index": 144,
+          "time": 64,
+          "order": 16,
+          "status": "missing",
+          "ready": false,
+          "todo": "Compute this declared reference."
+        },
+        {
+          "index": 144,
+          "time": 64,
+          "order": 32,
+          "status": "missing",
+          "ready": false,
+          "todo": "Compute this declared reference."
+        },
+        {
+          "index": 145,
+          "time": 64,
+          "order": 16,
+          "status": "missing",
+          "ready": false,
+          "todo": "Compute this declared reference."
+        },
+        {
+          "index": 145,
+          "time": 64,
+          "order": 32,
+          "status": "missing",
+          "ready": false,
+          "todo": "Compute this declared reference."
+        },
+        {
+          "index": 146,
+          "time": 64,
+          "order": 16,
+          "status": "missing",
+          "ready": false,
+          "todo": "Compute this declared reference."
+        },
+        {
+          "index": 146,
+          "time": 64,
+          "order": 32,
+          "status": "missing",
+          "ready": false,
+          "todo": "Compute this declared reference."
+        },
+        {
+          "index": 147,
+          "time": 64,
+          "order": 16,
+          "status": "missing",
+          "ready": false,
+          "todo": "Compute this declared reference."
+        },
+        {
+          "index": 147,
+          "time": 64,
+          "order": 32,
+          "status": "missing",
+          "ready": false,
+          "todo": "Compute this declared reference."
+        },
+        {
+          "index": 148,
+          "time": 64,
+          "order": 16,
+          "status": "missing",
+          "ready": false,
+          "todo": "Compute this declared reference."
+        },
+        {
+          "index": 148,
+          "time": 64,
+          "order": 32,
+          "status": "missing",
+          "ready": false,
+          "todo": "Compute this declared reference."
+        },
+        {
+          "index": 149,
+          "time": 64,
+          "order": 16,
+          "status": "missing",
+          "ready": false,
+          "todo": "Compute this declared reference."
+        },
+        {
+          "index": 149,
+          "time": 64,
+          "order": 32,
+          "status": "missing",
+          "ready": false,
+          "todo": "Compute this declared reference."
+        },
+        {
+          "index": 150,
+          "time": 64,
+          "order": 16,
+          "status": "missing",
+          "ready": false,
+          "todo": "Compute this declared reference."
+        },
+        {
+          "index": 150,
+          "time": 64,
+          "order": 32,
+          "status": "missing",
+          "ready": false,
+          "todo": "Compute this declared reference."
+        },
+        {
+          "index": 151,
+          "time": 64,
+          "order": 16,
+          "status": "missing",
+          "ready": false,
+          "todo": "Compute this declared reference."
+        },
+        {
+          "index": 151,
+          "time": 64,
+          "order": 32,
+          "status": "missing",
+          "ready": false,
+          "todo": "Compute this declared reference."
+        },
+        {
+          "index": 152,
+          "time": 64,
+          "order": 16,
+          "status": "missing",
+          "ready": false,
+          "todo": "Compute this declared reference."
+        },
+        {
+          "index": 152,
+          "time": 64,
+          "order": 32,
+          "status": "missing",
+          "ready": false,
+          "todo": "Compute this declared reference."
+        },
+        {
+          "index": 153,
+          "time": 64,
+          "order": 16,
+          "status": "missing",
+          "ready": false,
+          "todo": "Compute this declared reference."
+        },
+        {
+          "index": 153,
+          "time": 64,
+          "order": 32,
+          "status": "missing",
+          "ready": false,
+          "todo": "Compute this declared reference."
+        },
+        {
+          "index": 154,
+          "time": 64,
+          "order": 16,
+          "status": "missing",
+          "ready": false,
+          "todo": "Compute this declared reference."
+        },
+        {
+          "index": 154,
+          "time": 64,
+          "order": 32,
+          "status": "missing",
+          "ready": false,
+          "todo": "Compute this declared reference."
+        },
+        {
+          "index": 155,
+          "time": 64,
+          "order": 16,
+          "status": "missing",
+          "ready": false,
+          "todo": "Compute this declared reference."
+        },
+        {
+          "index": 155,
+          "time": 64,
+          "order": 32,
+          "status": "missing",
+          "ready": false,
+          "todo": "Compute this declared reference."
+        },
+        {
+          "index": 156,
+          "time": 64,
+          "order": 16,
+          "status": "missing",
+          "ready": false,
+          "todo": "Compute this declared reference."
+        },
+        {
+          "index": 156,
+          "time": 64,
+          "order": 32,
+          "status": "missing",
+          "ready": false,
+          "todo": "Compute this declared reference."
+        },
+        {
+          "index": 157,
+          "time": 64,
+          "order": 16,
+          "status": "missing",
+          "ready": false,
+          "todo": "Compute this declared reference."
+        },
+        {
+          "index": 157,
+          "time": 64,
+          "order": 32,
+          "status": "missing",
+          "ready": false,
+          "todo": "Compute this declared reference."
+        },
+        {
+          "index": 158,
+          "time": 64,
+          "order": 16,
+          "status": "missing",
+          "ready": false,
+          "todo": "Compute this declared reference."
+        },
+        {
+          "index": 158,
+          "time": 64,
+          "order": 32,
+          "status": "missing",
+          "ready": false,
+          "todo": "Compute this declared reference."
+        },
+        {
+          "index": 159,
+          "time": 64,
+          "order": 16,
+          "status": "missing",
+          "ready": false,
+          "todo": "Compute this declared reference."
+        },
+        {
+          "index": 159,
+          "time": 64,
+          "order": 32,
+          "status": "missing",
+          "ready": false,
+          "todo": "Compute this declared reference."
+        },
+        {
+          "index": 160,
+          "time": 64,
+          "order": 16,
+          "status": "missing",
+          "ready": false,
+          "todo": "Compute this declared reference."
+        },
+        {
+          "index": 160,
+          "time": 64,
+          "order": 32,
+          "status": "missing",
+          "ready": false,
+          "todo": "Compute this declared reference."
+        },
+        {
+          "index": 161,
+          "time": 64,
+          "order": 16,
+          "status": "missing",
+          "ready": false,
+          "todo": "Compute this declared reference."
+        },
+        {
+          "index": 161,
+          "time": 64,
+          "order": 32,
+          "status": "missing",
+          "ready": false,
+          "todo": "Compute this declared reference."
+        },
+        {
+          "index": 162,
+          "time": 64,
+          "order": 16,
+          "status": "missing",
+          "ready": false,
+          "todo": "Compute this declared reference."
+        },
+        {
+          "index": 162,
+          "time": 64,
+          "order": 32,
+          "status": "missing",
+          "ready": false,
+          "todo": "Compute this declared reference."
+        },
+        {
+          "index": 163,
+          "time": 64,
+          "order": 16,
+          "status": "missing",
+          "ready": false,
+          "todo": "Compute this declared reference."
+        },
+        {
+          "index": 163,
+          "time": 64,
+          "order": 32,
+          "status": "missing",
+          "ready": false,
+          "todo": "Compute this declared reference."
+        },
+        {
+          "index": 164,
+          "time": 64,
+          "order": 16,
+          "status": "missing",
+          "ready": false,
+          "todo": "Compute this declared reference."
+        },
+        {
+          "index": 164,
+          "time": 64,
+          "order": 32,
+          "status": "missing",
+          "ready": false,
+          "todo": "Compute this declared reference."
+        },
+        {
+          "index": 165,
+          "time": 64,
+          "order": 16,
+          "status": "missing",
+          "ready": false,
+          "todo": "Compute this declared reference."
+        },
+        {
+          "index": 165,
+          "time": 64,
+          "order": 32,
+          "status": "missing",
+          "ready": false,
+          "todo": "Compute this declared reference."
+        },
+        {
+          "index": 166,
+          "time": 64,
+          "order": 16,
+          "status": "missing",
+          "ready": false,
+          "todo": "Compute this declared reference."
+        },
+        {
+          "index": 166,
+          "time": 64,
+          "order": 32,
+          "status": "missing",
+          "ready": false,
+          "todo": "Compute this declared reference."
+        },
+        {
+          "index": 167,
+          "time": 64,
+          "order": 16,
+          "status": "missing",
+          "ready": false,
+          "todo": "Compute this declared reference."
+        },
+        {
+          "index": 167,
+          "time": 64,
+          "order": 32,
+          "status": "missing",
+          "ready": false,
+          "todo": "Compute this declared reference."
+        },
+        {
+          "index": 168,
+          "time": 64,
+          "order": 16,
+          "status": "missing",
+          "ready": false,
+          "todo": "Compute this declared reference."
+        },
+        {
+          "index": 168,
+          "time": 64,
+          "order": 32,
+          "status": "missing",
+          "ready": false,
+          "todo": "Compute this declared reference."
+        },
+        {
+          "index": 169,
+          "time": 64,
+          "order": 16,
+          "status": "missing",
+          "ready": false,
+          "todo": "Compute this declared reference."
+        },
+        {
+          "index": 169,
+          "time": 64,
+          "order": 32,
+          "status": "missing",
+          "ready": false,
+          "todo": "Compute this declared reference."
+        },
+        {
+          "index": 170,
+          "time": 64,
+          "order": 16,
+          "status": "missing",
+          "ready": false,
+          "todo": "Compute this declared reference."
+        },
+        {
+          "index": 170,
+          "time": 64,
+          "order": 32,
+          "status": "missing",
+          "ready": false,
+          "todo": "Compute this declared reference."
+        },
+        {
+          "index": 171,
+          "time": 64,
+          "order": 16,
+          "status": "missing",
+          "ready": false,
+          "todo": "Compute this declared reference."
+        },
+        {
+          "index": 171,
+          "time": 64,
+          "order": 32,
+          "status": "missing",
+          "ready": false,
+          "todo": "Compute this declared reference."
+        },
+        {
+          "index": 172,
+          "time": 64,
+          "order": 16,
+          "status": "missing",
+          "ready": false,
+          "todo": "Compute this declared reference."
+        },
+        {
+          "index": 172,
+          "time": 64,
+          "order": 32,
+          "status": "missing",
+          "ready": false,
+          "todo": "Compute this declared reference."
+        },
+        {
+          "index": 173,
+          "time": 64,
+          "order": 16,
+          "status": "missing",
+          "ready": false,
+          "todo": "Compute this declared reference."
+        },
+        {
+          "index": 173,
+          "time": 64,
+          "order": 32,
+          "status": "missing",
+          "ready": false,
+          "todo": "Compute this declared reference."
+        },
+        {
+          "index": 174,
+          "time": 64,
+          "order": 16,
+          "status": "missing",
+          "ready": false,
+          "todo": "Compute this declared reference."
+        },
+        {
+          "index": 174,
+          "time": 64,
+          "order": 32,
+          "status": "missing",
+          "ready": false,
+          "todo": "Compute this declared reference."
+        },
+        {
+          "index": 175,
+          "time": 64,
+          "order": 16,
+          "status": "missing",
+          "ready": false,
+          "todo": "Compute this declared reference."
+        },
+        {
+          "index": 175,
+          "time": 64,
+          "order": 32,
+          "status": "missing",
+          "ready": false,
+          "todo": "Compute this declared reference."
+        },
+        {
+          "index": 176,
+          "time": 64,
+          "order": 16,
+          "status": "missing",
+          "ready": false,
+          "todo": "Compute this declared reference."
+        },
+        {
+          "index": 176,
+          "time": 64,
+          "order": 32,
+          "status": "missing",
+          "ready": false,
+          "todo": "Compute this declared reference."
+        },
+        {
+          "index": 177,
+          "time": 64,
+          "order": 16,
+          "status": "missing",
+          "ready": false,
+          "todo": "Compute this declared reference."
+        },
+        {
+          "index": 177,
+          "time": 64,
+          "order": 32,
+          "status": "missing",
+          "ready": false,
+          "todo": "Compute this declared reference."
+        },
+        {
+          "index": 178,
+          "time": 64,
+          "order": 16,
+          "status": "missing",
+          "ready": false,
+          "todo": "Compute this declared reference."
+        },
+        {
+          "index": 178,
+          "time": 64,
+          "order": 32,
+          "status": "missing",
+          "ready": false,
+          "todo": "Compute this declared reference."
+        },
+        {
+          "index": 179,
+          "time": 64,
+          "order": 16,
+          "status": "missing",
+          "ready": false,
+          "todo": "Compute this declared reference."
+        },
+        {
+          "index": 179,
+          "time": 64,
+          "order": 32,
+          "status": "missing",
+          "ready": false,
+          "todo": "Compute this declared reference."
+        },
+        {
+          "index": 180,
+          "time": 64,
+          "order": 16,
+          "status": "missing",
+          "ready": false,
+          "todo": "Compute this declared reference."
+        },
+        {
+          "index": 180,
+          "time": 64,
+          "order": 32,
+          "status": "missing",
+          "ready": false,
+          "todo": "Compute this declared reference."
+        },
+        {
+          "index": 181,
+          "time": 64,
+          "order": 16,
+          "status": "missing",
+          "ready": false,
+          "todo": "Compute this declared reference."
+        },
+        {
+          "index": 181,
+          "time": 64,
+          "order": 32,
+          "status": "missing",
+          "ready": false,
+          "todo": "Compute this declared reference."
+        },
+        {
+          "index": 182,
+          "time": 64,
+          "order": 16,
+          "status": "missing",
+          "ready": false,
+          "todo": "Compute this declared reference."
+        },
+        {
+          "index": 182,
+          "time": 64,
+          "order": 32,
+          "status": "missing",
+          "ready": false,
+          "todo": "Compute this declared reference."
+        },
+        {
+          "index": 183,
+          "time": 64,
+          "order": 16,
+          "status": "missing",
+          "ready": false,
+          "todo": "Compute this declared reference."
+        },
+        {
+          "index": 183,
+          "time": 64,
+          "order": 32,
+          "status": "missing",
+          "ready": false,
+          "todo": "Compute this declared reference."
+        },
+        {
+          "index": 184,
+          "time": 64,
+          "order": 16,
+          "status": "missing",
+          "ready": false,
+          "todo": "Compute this declared reference."
+        },
+        {
+          "index": 184,
+          "time": 64,
+          "order": 32,
+          "status": "missing",
+          "ready": false,
+          "todo": "Compute this declared reference."
+        },
+        {
+          "index": 185,
+          "time": 64,
+          "order": 16,
+          "status": "missing",
+          "ready": false,
+          "todo": "Compute this declared reference."
+        },
+        {
+          "index": 185,
+          "time": 64,
+          "order": 32,
+          "status": "missing",
+          "ready": false,
+          "todo": "Compute this declared reference."
+        },
+        {
+          "index": 186,
+          "time": 64,
+          "order": 16,
+          "status": "missing",
+          "ready": false,
+          "todo": "Compute this declared reference."
+        },
+        {
+          "index": 186,
+          "time": 64,
+          "order": 32,
+          "status": "missing",
+          "ready": false,
+          "todo": "Compute this declared reference."
+        },
+        {
+          "index": 187,
+          "time": 64,
+          "order": 16,
+          "status": "missing",
+          "ready": false,
+          "todo": "Compute this declared reference."
+        },
+        {
+          "index": 187,
+          "time": 64,
+          "order": 32,
+          "status": "missing",
+          "ready": false,
+          "todo": "Compute this declared reference."
+        },
+        {
+          "index": 188,
+          "time": 64,
+          "order": 16,
+          "status": "missing",
+          "ready": false,
+          "todo": "Compute this declared reference."
+        },
+        {
+          "index": 188,
+          "time": 64,
+          "order": 32,
+          "status": "missing",
+          "ready": false,
+          "todo": "Compute this declared reference."
+        },
+        {
+          "index": 189,
+          "time": 64,
+          "order": 16,
+          "status": "missing",
+          "ready": false,
+          "todo": "Compute this declared reference."
+        },
+        {
+          "index": 189,
+          "time": 64,
+          "order": 32,
+          "status": "missing",
+          "ready": false,
+          "todo": "Compute this declared reference."
+        },
+        {
+          "index": 190,
+          "time": 64,
+          "order": 16,
+          "status": "missing",
+          "ready": false,
+          "todo": "Compute this declared reference."
+        },
+        {
+          "index": 190,
+          "time": 64,
+          "order": 32,
+          "status": "missing",
+          "ready": false,
+          "todo": "Compute this declared reference."
+        },
+        {
+          "index": 191,
+          "time": 64,
+          "order": 16,
+          "status": "missing",
+          "ready": false,
+          "todo": "Compute this declared reference."
+        },
+        {
+          "index": 191,
+          "time": 64,
+          "order": 32,
+          "status": "missing",
+          "ready": false,
+          "todo": "Compute this declared reference."
+        },
+        {
+          "index": 192,
+          "time": 64,
+          "order": 16,
+          "status": "missing",
+          "ready": false,
+          "todo": "Compute this declared reference."
+        },
+        {
+          "index": 192,
+          "time": 64,
+          "order": 32,
+          "status": "missing",
+          "ready": false,
+          "todo": "Compute this declared reference."
+        },
+        {
+          "index": 193,
+          "time": 64,
+          "order": 16,
+          "status": "missing",
+          "ready": false,
+          "todo": "Compute this declared reference."
+        },
+        {
+          "index": 193,
+          "time": 64,
+          "order": 32,
+          "status": "missing",
+          "ready": false,
+          "todo": "Compute this declared reference."
+        },
+        {
+          "index": 194,
+          "time": 64,
+          "order": 16,
+          "status": "missing",
+          "ready": false,
+          "todo": "Compute this declared reference."
+        },
+        {
+          "index": 194,
+          "time": 64,
+          "order": 32,
+          "status": "missing",
+          "ready": false,
+          "todo": "Compute this declared reference."
+        },
+        {
+          "index": 195,
+          "time": 64,
+          "order": 16,
+          "status": "missing",
+          "ready": false,
+          "todo": "Compute this declared reference."
+        },
+        {
+          "index": 195,
+          "time": 64,
+          "order": 32,
+          "status": "missing",
+          "ready": false,
+          "todo": "Compute this declared reference."
+        },
+        {
+          "index": 196,
+          "time": 64,
+          "order": 16,
+          "status": "missing",
+          "ready": false,
+          "todo": "Compute this declared reference."
+        },
+        {
+          "index": 196,
+          "time": 64,
+          "order": 32,
+          "status": "missing",
+          "ready": false,
+          "todo": "Compute this declared reference."
+        },
+        {
+          "index": 197,
+          "time": 64,
+          "order": 16,
+          "status": "missing",
+          "ready": false,
+          "todo": "Compute this declared reference."
+        },
+        {
+          "index": 197,
+          "time": 64,
+          "order": 32,
+          "status": "missing",
+          "ready": false,
+          "todo": "Compute this declared reference."
+        },
+        {
+          "index": 198,
+          "time": 64,
+          "order": 16,
+          "status": "missing",
+          "ready": false,
+          "todo": "Compute this declared reference."
+        },
+        {
+          "index": 198,
+          "time": 64,
+          "order": 32,
+          "status": "missing",
+          "ready": false,
+          "todo": "Compute this declared reference."
+        },
+        {
+          "index": 199,
+          "time": 64,
+          "order": 16,
+          "status": "missing",
+          "ready": false,
+          "todo": "Compute this declared reference."
+        },
+        {
+          "index": 199,
+          "time": 64,
+          "order": 32,
+          "status": "missing",
+          "ready": false,
+          "todo": "Compute this declared reference."
+        },
+        {
+          "index": 200,
+          "time": 64,
+          "order": 16,
+          "status": "missing",
+          "ready": false,
+          "todo": "Compute this declared reference."
+        },
+        {
+          "index": 200,
+          "time": 64,
+          "order": 32,
+          "status": "missing",
+          "ready": false,
+          "todo": "Compute this declared reference."
+        },
+        {
+          "index": 201,
+          "time": 64,
+          "order": 16,
+          "status": "missing",
+          "ready": false,
+          "todo": "Compute this declared reference."
+        },
+        {
+          "index": 201,
+          "time": 64,
+          "order": 32,
+          "status": "missing",
+          "ready": false,
+          "todo": "Compute this declared reference."
+        },
+        {
+          "index": 202,
+          "time": 64,
+          "order": 16,
+          "status": "missing",
+          "ready": false,
+          "todo": "Compute this declared reference."
+        },
+        {
+          "index": 202,
+          "time": 64,
+          "order": 32,
+          "status": "missing",
+          "ready": false,
+          "todo": "Compute this declared reference."
+        },
+        {
+          "index": 203,
+          "time": 64,
+          "order": 16,
+          "status": "missing",
+          "ready": false,
+          "todo": "Compute this declared reference."
+        },
+        {
+          "index": 203,
+          "time": 64,
+          "order": 32,
+          "status": "missing",
+          "ready": false,
+          "todo": "Compute this declared reference."
+        },
+        {
+          "index": 204,
+          "time": 64,
+          "order": 16,
+          "status": "missing",
+          "ready": false,
+          "todo": "Compute this declared reference."
+        },
+        {
+          "index": 204,
+          "time": 64,
+          "order": 32,
+          "status": "missing",
+          "ready": false,
+          "todo": "Compute this declared reference."
+        },
+        {
+          "index": 205,
+          "time": 64,
+          "order": 16,
+          "status": "missing",
+          "ready": false,
+          "todo": "Compute this declared reference."
+        },
+        {
+          "index": 205,
+          "time": 64,
+          "order": 32,
+          "status": "missing",
+          "ready": false,
+          "todo": "Compute this declared reference."
+        },
+        {
+          "index": 206,
+          "time": 64,
+          "order": 16,
+          "status": "missing",
+          "ready": false,
+          "todo": "Compute this declared reference."
+        },
+        {
+          "index": 206,
+          "time": 64,
+          "order": 32,
+          "status": "missing",
+          "ready": false,
+          "todo": "Compute this declared reference."
+        },
+        {
+          "index": 207,
+          "time": 64,
+          "order": 16,
+          "status": "missing",
+          "ready": false,
+          "todo": "Compute this declared reference."
+        },
+        {
+          "index": 207,
+          "time": 64,
+          "order": 32,
+          "status": "missing",
+          "ready": false,
+          "todo": "Compute this declared reference."
+        },
+        {
+          "index": 208,
+          "time": 64,
+          "order": 16,
+          "status": "missing",
+          "ready": false,
+          "todo": "Compute this declared reference."
+        },
+        {
+          "index": 208,
+          "time": 64,
+          "order": 32,
+          "status": "missing",
+          "ready": false,
+          "todo": "Compute this declared reference."
+        },
+        {
+          "index": 209,
+          "time": 64,
+          "order": 16,
+          "status": "missing",
+          "ready": false,
+          "todo": "Compute this declared reference."
+        },
+        {
+          "index": 209,
+          "time": 64,
+          "order": 32,
+          "status": "missing",
+          "ready": false,
+          "todo": "Compute this declared reference."
+        },
+        {
+          "index": 210,
+          "time": 64,
+          "order": 16,
+          "status": "missing",
+          "ready": false,
+          "todo": "Compute this declared reference."
+        },
+        {
+          "index": 210,
+          "time": 64,
+          "order": 32,
+          "status": "missing",
+          "ready": false,
+          "todo": "Compute this declared reference."
+        },
+        {
+          "index": 211,
+          "time": 64,
+          "order": 16,
+          "status": "missing",
+          "ready": false,
+          "todo": "Compute this declared reference."
+        },
+        {
+          "index": 211,
+          "time": 64,
+          "order": 32,
+          "status": "missing",
+          "ready": false,
+          "todo": "Compute this declared reference."
+        },
+        {
+          "index": 212,
+          "time": 64,
+          "order": 16,
+          "status": "missing",
+          "ready": false,
+          "todo": "Compute this declared reference."
+        },
+        {
+          "index": 212,
+          "time": 64,
+          "order": 32,
+          "status": "missing",
+          "ready": false,
+          "todo": "Compute this declared reference."
+        },
+        {
+          "index": 213,
+          "time": 64,
+          "order": 16,
+          "status": "missing",
+          "ready": false,
+          "todo": "Compute this declared reference."
+        },
+        {
+          "index": 213,
+          "time": 64,
+          "order": 32,
+          "status": "missing",
+          "ready": false,
+          "todo": "Compute this declared reference."
+        },
+        {
+          "index": 214,
+          "time": 64,
+          "order": 16,
+          "status": "missing",
+          "ready": false,
+          "todo": "Compute this declared reference."
+        },
+        {
+          "index": 214,
+          "time": 64,
+          "order": 32,
+          "status": "missing",
+          "ready": false,
+          "todo": "Compute this declared reference."
+        },
+        {
+          "index": 215,
+          "time": 64,
+          "order": 16,
+          "status": "missing",
+          "ready": false,
+          "todo": "Compute this declared reference."
+        },
+        {
+          "index": 215,
+          "time": 64,
+          "order": 32,
+          "status": "missing",
+          "ready": false,
+          "todo": "Compute this declared reference."
+        },
+        {
+          "index": 216,
+          "time": 64,
+          "order": 16,
+          "status": "missing",
+          "ready": false,
+          "todo": "Compute this declared reference."
+        },
+        {
+          "index": 216,
+          "time": 64,
+          "order": 32,
+          "status": "missing",
+          "ready": false,
+          "todo": "Compute this declared reference."
+        },
+        {
+          "index": 217,
+          "time": 64,
+          "order": 16,
+          "status": "missing",
+          "ready": false,
+          "todo": "Compute this declared reference."
+        },
+        {
+          "index": 217,
+          "time": 64,
+          "order": 32,
+          "status": "missing",
+          "ready": false,
+          "todo": "Compute this declared reference."
+        },
+        {
+          "index": 218,
+          "time": 64,
+          "order": 16,
+          "status": "missing",
+          "ready": false,
+          "todo": "Compute this declared reference."
+        },
+        {
+          "index": 218,
+          "time": 64,
+          "order": 32,
+          "status": "missing",
+          "ready": false,
+          "todo": "Compute this declared reference."
+        },
+        {
+          "index": 219,
+          "time": 64,
+          "order": 16,
+          "status": "missing",
+          "ready": false,
+          "todo": "Compute this declared reference."
+        },
+        {
+          "index": 219,
+          "time": 64,
+          "order": 32,
+          "status": "missing",
+          "ready": false,
+          "todo": "Compute this declared reference."
+        },
+        {
+          "index": 220,
+          "time": 64,
+          "order": 16,
+          "status": "missing",
+          "ready": false,
+          "todo": "Compute this declared reference."
+        },
+        {
+          "index": 220,
+          "time": 64,
+          "order": 32,
+          "status": "missing",
+          "ready": false,
+          "todo": "Compute this declared reference."
+        },
+        {
+          "index": 221,
+          "time": 64,
+          "order": 16,
+          "status": "missing",
+          "ready": false,
+          "todo": "Compute this declared reference."
+        },
+        {
+          "index": 221,
+          "time": 64,
+          "order": 32,
+          "status": "missing",
+          "ready": false,
+          "todo": "Compute this declared reference."
+        },
+        {
+          "index": 222,
+          "time": 64,
+          "order": 16,
+          "status": "missing",
+          "ready": false,
+          "todo": "Compute this declared reference."
+        },
+        {
+          "index": 222,
+          "time": 64,
+          "order": 32,
+          "status": "missing",
+          "ready": false,
+          "todo": "Compute this declared reference."
+        },
+        {
+          "index": 223,
+          "time": 64,
+          "order": 16,
+          "status": "missing",
+          "ready": false,
+          "todo": "Compute this declared reference."
+        },
+        {
+          "index": 223,
+          "time": 64,
+          "order": 32,
+          "status": "missing",
+          "ready": false,
+          "todo": "Compute this declared reference."
+        },
+        {
+          "index": 224,
+          "time": 64,
+          "order": 16,
+          "status": "missing",
+          "ready": false,
+          "todo": "Compute this declared reference."
+        },
+        {
+          "index": 224,
+          "time": 64,
+          "order": 32,
+          "status": "missing",
+          "ready": false,
+          "todo": "Compute this declared reference."
+        },
+        {
+          "index": 225,
+          "time": 64,
+          "order": 16,
+          "status": "missing",
+          "ready": false,
+          "todo": "Compute this declared reference."
+        },
+        {
+          "index": 225,
+          "time": 64,
+          "order": 32,
+          "status": "missing",
+          "ready": false,
+          "todo": "Compute this declared reference."
+        },
+        {
+          "index": 226,
+          "time": 64,
+          "order": 16,
+          "status": "missing",
+          "ready": false,
+          "todo": "Compute this declared reference."
+        },
+        {
+          "index": 226,
+          "time": 64,
+          "order": 32,
+          "status": "missing",
+          "ready": false,
+          "todo": "Compute this declared reference."
+        },
+        {
+          "index": 227,
+          "time": 64,
+          "order": 16,
+          "status": "missing",
+          "ready": false,
+          "todo": "Compute this declared reference."
+        },
+        {
+          "index": 227,
+          "time": 64,
+          "order": 32,
+          "status": "missing",
+          "ready": false,
+          "todo": "Compute this declared reference."
+        },
+        {
+          "index": 228,
+          "time": 64,
+          "order": 16,
+          "status": "missing",
+          "ready": false,
+          "todo": "Compute this declared reference."
+        },
+        {
+          "index": 228,
+          "time": 64,
+          "order": 32,
+          "status": "missing",
+          "ready": false,
+          "todo": "Compute this declared reference."
+        },
+        {
+          "index": 229,
+          "time": 64,
+          "order": 16,
+          "status": "missing",
+          "ready": false,
+          "todo": "Compute this declared reference."
+        },
+        {
+          "index": 229,
+          "time": 64,
+          "order": 32,
+          "status": "missing",
+          "ready": false,
+          "todo": "Compute this declared reference."
+        },
+        {
+          "index": 230,
+          "time": 64,
+          "order": 16,
+          "status": "missing",
+          "ready": false,
+          "todo": "Compute this declared reference."
+        },
+        {
+          "index": 230,
+          "time": 64,
+          "order": 32,
+          "status": "missing",
+          "ready": false,
+          "todo": "Compute this declared reference."
+        },
+        {
+          "index": 231,
+          "time": 64,
+          "order": 16,
+          "status": "missing",
+          "ready": false,
+          "todo": "Compute this declared reference."
+        },
+        {
+          "index": 231,
+          "time": 64,
+          "order": 32,
+          "status": "missing",
+          "ready": false,
+          "todo": "Compute this declared reference."
+        },
+        {
+          "index": 232,
+          "time": 64,
+          "order": 16,
+          "status": "missing",
+          "ready": false,
+          "todo": "Compute this declared reference."
+        },
+        {
+          "index": 232,
+          "time": 64,
+          "order": 32,
+          "status": "missing",
+          "ready": false,
+          "todo": "Compute this declared reference."
+        },
+        {
+          "index": 233,
+          "time": 64,
+          "order": 16,
+          "status": "missing",
+          "ready": false,
+          "todo": "Compute this declared reference."
+        },
+        {
+          "index": 233,
+          "time": 64,
+          "order": 32,
+          "status": "missing",
+          "ready": false,
+          "todo": "Compute this declared reference."
+        },
+        {
+          "index": 234,
+          "time": 64,
+          "order": 16,
+          "status": "missing",
+          "ready": false,
+          "todo": "Compute this declared reference."
+        },
+        {
+          "index": 234,
+          "time": 64,
+          "order": 32,
+          "status": "missing",
+          "ready": false,
+          "todo": "Compute this declared reference."
+        },
+        {
+          "index": 235,
+          "time": 64,
+          "order": 16,
+          "status": "missing",
+          "ready": false,
+          "todo": "Compute this declared reference."
+        },
+        {
+          "index": 235,
+          "time": 64,
+          "order": 32,
+          "status": "missing",
+          "ready": false,
+          "todo": "Compute this declared reference."
+        },
+        {
+          "index": 236,
+          "time": 64,
+          "order": 16,
+          "status": "missing",
+          "ready": false,
+          "todo": "Compute this declared reference."
+        },
+        {
+          "index": 236,
+          "time": 64,
+          "order": 32,
+          "status": "missing",
+          "ready": false,
+          "todo": "Compute this declared reference."
+        },
+        {
+          "index": 237,
+          "time": 64,
+          "order": 16,
+          "status": "missing",
+          "ready": false,
+          "todo": "Compute this declared reference."
+        },
+        {
+          "index": 237,
+          "time": 64,
+          "order": 32,
+          "status": "missing",
+          "ready": false,
+          "todo": "Compute this declared reference."
+        },
+        {
+          "index": 238,
+          "time": 64,
+          "order": 16,
+          "status": "missing",
+          "ready": false,
+          "todo": "Compute this declared reference."
+        },
+        {
+          "index": 238,
+          "time": 64,
+          "order": 32,
+          "status": "missing",
+          "ready": false,
+          "todo": "Compute this declared reference."
+        },
+        {
+          "index": 239,
+          "time": 64,
+          "order": 16,
+          "status": "missing",
+          "ready": false,
+          "todo": "Compute this declared reference."
+        },
+        {
+          "index": 239,
+          "time": 64,
+          "order": 32,
+          "status": "missing",
+          "ready": false,
+          "todo": "Compute this declared reference."
+        },
+        {
+          "index": 240,
+          "time": 64,
+          "order": 16,
+          "status": "missing",
+          "ready": false,
+          "todo": "Compute this declared reference."
+        },
+        {
+          "index": 240,
+          "time": 64,
+          "order": 32,
+          "status": "missing",
+          "ready": false,
+          "todo": "Compute this declared reference."
+        },
+        {
+          "index": 241,
+          "time": 64,
+          "order": 16,
+          "status": "missing",
+          "ready": false,
+          "todo": "Compute this declared reference."
+        },
+        {
+          "index": 241,
+          "time": 64,
+          "order": 32,
+          "status": "missing",
+          "ready": false,
+          "todo": "Compute this declared reference."
+        },
+        {
+          "index": 242,
+          "time": 64,
+          "order": 16,
+          "status": "missing",
+          "ready": false,
+          "todo": "Compute this declared reference."
+        },
+        {
+          "index": 242,
+          "time": 64,
+          "order": 32,
+          "status": "missing",
+          "ready": false,
+          "todo": "Compute this declared reference."
+        },
+        {
+          "index": 243,
+          "time": 64,
+          "order": 16,
+          "status": "missing",
+          "ready": false,
+          "todo": "Compute this declared reference."
+        },
+        {
+          "index": 243,
+          "time": 64,
+          "order": 32,
+          "status": "missing",
+          "ready": false,
+          "todo": "Compute this declared reference."
+        },
+        {
+          "index": 244,
+          "time": 64,
+          "order": 16,
+          "status": "missing",
+          "ready": false,
+          "todo": "Compute this declared reference."
+        },
+        {
+          "index": 244,
+          "time": 64,
+          "order": 32,
+          "status": "missing",
+          "ready": false,
+          "todo": "Compute this declared reference."
+        },
+        {
+          "index": 245,
+          "time": 64,
+          "order": 16,
+          "status": "missing",
+          "ready": false,
+          "todo": "Compute this declared reference."
+        },
+        {
+          "index": 245,
+          "time": 64,
+          "order": 32,
+          "status": "missing",
+          "ready": false,
+          "todo": "Compute this declared reference."
+        },
+        {
+          "index": 246,
+          "time": 64,
+          "order": 16,
+          "status": "missing",
+          "ready": false,
+          "todo": "Compute this declared reference."
+        },
+        {
+          "index": 246,
+          "time": 64,
+          "order": 32,
+          "status": "missing",
+          "ready": false,
+          "todo": "Compute this declared reference."
+        },
+        {
+          "index": 247,
+          "time": 64,
+          "order": 16,
+          "status": "missing",
+          "ready": false,
+          "todo": "Compute this declared reference."
+        },
+        {
+          "index": 247,
+          "time": 64,
+          "order": 32,
+          "status": "missing",
+          "ready": false,
+          "todo": "Compute this declared reference."
+        },
+        {
+          "index": 248,
+          "time": 64,
+          "order": 16,
+          "status": "missing",
+          "ready": false,
+          "todo": "Compute this declared reference."
+        },
+        {
+          "index": 248,
+          "time": 64,
+          "order": 32,
+          "status": "missing",
+          "ready": false,
+          "todo": "Compute this declared reference."
+        },
+        {
+          "index": 249,
+          "time": 64,
+          "order": 16,
+          "status": "missing",
+          "ready": false,
+          "todo": "Compute this declared reference."
+        },
+        {
+          "index": 249,
+          "time": 64,
+          "order": 32,
+          "status": "missing",
+          "ready": false,
+          "todo": "Compute this declared reference."
+        },
+        {
+          "index": 250,
+          "time": 64,
+          "order": 16,
+          "status": "missing",
+          "ready": false,
+          "todo": "Compute this declared reference."
+        },
+        {
+          "index": 250,
+          "time": 64,
+          "order": 32,
+          "status": "missing",
+          "ready": false,
+          "todo": "Compute this declared reference."
+        },
+        {
+          "index": 251,
+          "time": 64,
+          "order": 16,
+          "status": "missing",
+          "ready": false,
+          "todo": "Compute this declared reference."
+        },
+        {
+          "index": 251,
+          "time": 64,
+          "order": 32,
+          "status": "missing",
+          "ready": false,
+          "todo": "Compute this declared reference."
+        },
+        {
+          "index": 252,
+          "time": 64,
+          "order": 16,
+          "status": "missing",
+          "ready": false,
+          "todo": "Compute this declared reference."
+        },
+        {
+          "index": 252,
+          "time": 64,
+          "order": 32,
+          "status": "missing",
+          "ready": false,
+          "todo": "Compute this declared reference."
+        },
+        {
+          "index": 253,
+          "time": 64,
+          "order": 16,
+          "status": "missing",
+          "ready": false,
+          "todo": "Compute this declared reference."
+        },
+        {
+          "index": 253,
+          "time": 64,
+          "order": 32,
+          "status": "missing",
+          "ready": false,
+          "todo": "Compute this declared reference."
+        },
+        {
+          "index": 254,
+          "time": 64,
+          "order": 16,
+          "status": "missing",
+          "ready": false,
+          "todo": "Compute this declared reference."
+        },
+        {
+          "index": 254,
+          "time": 64,
+          "order": 32,
+          "status": "missing",
+          "ready": false,
+          "todo": "Compute this declared reference."
+        },
+        {
+          "index": 255,
+          "time": 64,
+          "order": 16,
+          "status": "missing",
+          "ready": false,
+          "todo": "Compute this declared reference."
+        },
+        {
+          "index": 255,
+          "time": 64,
+          "order": 32,
+          "status": "missing",
+          "ready": false,
+          "todo": "Compute this declared reference."
+        }
+      ],
+      "status_counts": {
+        "missing": 512,
+        "running": 0,
+        "invalid": 0,
+        "needs_more_draws": 0,
+        "ready": 0
+      }
+    }
+  ],
+  "all_requested_times_validated": false,
+  "provenance": {
+    "cohort_file": "/Users/ruediger/Projects/layered_architectures/output/shared_base_conditional_curves_2026-09-15/a1_L4/cohort.json",
+    "cohort_sha256": "d365a6a1974f73030eb033960fe0b59d33277528ed35d02b629648cc3ed0773c",
+    "protocol_sha256": "aca6385afcc3db5e4d9f5019236ef2af77db032066c62063d50a0bb6b164a612",
+    "audit_sha256": "4d1be14d7f164d9b473cde1142304e5fab04d3aae6930bb52205296bb9ef9736"
+  },
+  "interpretation": "Only matched_comparisons with passed complete-cohort validation are scientific transformer--Bayes means. Other records describe outstanding work; there is no available-case mean."
+}

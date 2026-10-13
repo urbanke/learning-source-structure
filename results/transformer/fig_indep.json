@@ -1,0 +1,42 @@
+{
+ "d128_a0_L2": {
+  "transformer trained on independent contexts": {
+   "bits": 6.928365063156755,
+   "regret": 1148.669948243398
+  },
+  "copier, depths 0 to 8 (the family's)": {
+   "bits": 6.951801482715666,
+   "regret": 1172.668841871724
+  },
+  "copier, depths 1 to $L_{\\max}$ (the paper's)": {
+   "bits": 7.10840199738594,
+   "regret": 1333.0277688940841
+  },
+  "unigram predictor": {
+   "bits": 7.113570295056007,
+   "regret": 1338.3201057082333
+  },
+  "n_star": 975,
+  "n_star_fam": 1
+ },
+ "d128_a0_L4": {
+  "transformer trained on independent contexts": {
+   "bits": 6.543043258409158,
+   "regret": 1837.2159899876992
+  },
+  "copier, depths 0 to 8 (the family's)": {
+   "bits": 6.515964785715219,
+   "regret": 1809.4876339491093
+  },
+  "copier, depths 1 to $L_{\\max}$ (the paper's)": {
+   "bits": 6.600827021866365,
+   "regret": 1896.3865637678828
+  },
+  "unigram predictor": {
+   "bits": 7.075388156701138,
+   "regret": 2382.3371658386895
+  },
+  "n_star": 1,
+  "n_star_fam": 1
+ }
+}

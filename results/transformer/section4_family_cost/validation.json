@@ -1,0 +1,14 @@
+{
+  "schema": "section4-family-cost-audit-v1",
+  "passed": true,
+  "summary_sha256": "bb564e8d9c261bea99d3aa347e3a0d7146d53e6c3ba9f835f96b29f8b16d085f",
+  "input_files_verified": 55,
+  "replay_checks": 42,
+  "maximum_replay_error_bits": 7.105427357601002e-15,
+  "outputs_sha256": {
+    "family_cost.png": "86e3796283fa1e9f226cd440e360eb29dc13b71f6e38d740c6d2a33cf3730030",
+    "family_cost.pdf": "74efa9523e9e740b8ad4d187064e0ddc03fb1029cb2a01f1382b795321445fcf"
+  },
+  "no_new_inference": true,
+  "longer_context_claim": false
+}

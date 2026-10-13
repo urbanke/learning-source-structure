@@ -1,0 +1,54 @@
+{
+  "summary.json": {
+    "path": "results/transformer/section4_copying_payoff_2026-09-17/summary.json",
+    "sha256": "5e059f7ffd282aaa09da7b70c3ba86929d790427066c759ba54d360e41c45dba"
+  },
+  "payoff_all_depths_instantaneous.png": {
+    "path": "results/transformer/section4_copying_payoff_2026-09-17/payoff_all_depths_instantaneous.png",
+    "sha256": "cd1cb399af9f12ec3d06bc639f8b4c39e835b3b102d901d658bb08ed3765dd74"
+  },
+  "curves.npz": {
+    "path": "results/transformer/section4_copying_payoff_2026-09-17/curves.npz",
+    "sha256": "63e126e3c52aa4770270a33008e35f265373e847d2598be11d4ae1eab0c85a16"
+  },
+  "payoff_all_depths_instantaneous.pdf": {
+    "path": "results/transformer/section4_copying_payoff_2026-09-17/payoff_all_depths_instantaneous.pdf",
+    "sha256": "39811a840e8abb276919d7c2967bac404e14906b2df8fd454d1b4b0c70216241"
+  },
+  "payoff.png": {
+    "path": "results/transformer/section4_copying_payoff_2026-09-17/payoff.png",
+    "sha256": "38474e09dbabac0343136331d214108231f2824bc49ce301eec21fdd695bb7dc"
+  },
+  "bootstrap_crossings.npz": {
+    "path": "results/transformer/section4_copying_payoff_2026-09-17/bootstrap_crossings.npz",
+    "sha256": "af506cc3641495c630dd92fcd031f594750a49d06608673d2e7fb7de4618f657"
+  },
+  "payoff.pdf": {
+    "path": "results/transformer/section4_copying_payoff_2026-09-17/payoff.pdf",
+    "sha256": "eb80776ba385b5bfa0ea8b5e064a59bfbd0a1f93e96deec8fa50f16a208b2c53"
+  },
+  "README.md": {
+    "path": "results/transformer/section4_copying_payoff_2026-09-17/README.md",
+    "sha256": "b5cb87ae168935bf90fd51f388b3192ee20d5926095afbe2906836c3bfab8fda"
+  },
+  "crossings.tsv": {
+    "path": "results/transformer/section4_copying_payoff_2026-09-17/crossings.tsv",
+    "sha256": "c6da708414374868414f8c96c6296168cb1678cbc0b5c6375b2996886a0f691b"
+  },
+  "payoff_all_depths_cumulative.png": {
+    "path": "results/transformer/section4_copying_payoff_2026-09-17/payoff_all_depths_cumulative.png",
+    "sha256": "b7ad587a35223eaa0121aca409bf315142a786207111fa045fadb64e8d72ab70"
+  },
+  "payoff_all_depths_cumulative.pdf": {
+    "path": "results/transformer/section4_copying_payoff_2026-09-17/payoff_all_depths_cumulative.pdf",
+    "sha256": "7b2b8f4ceb245a857f347fdf94b7ec0cf68a585962ac832549d4e174247e0897"
+  },
+  "all_depths.pdf": {
+    "path": "results/transformer/section4_copying_payoff_2026-09-17/all_depths.pdf",
+    "sha256": "51a0aa53064dba5f925e971f32f4325e8b6127624c2d53abebc62d2975d8352e"
+  },
+  "all_depths.png": {
+    "path": "results/transformer/section4_copying_payoff_2026-09-17/all_depths.png",
+    "sha256": "bf5381d515b618db49e96322b25c686153cbe31b949978aafa87826fed3fc494"
+  }
+}

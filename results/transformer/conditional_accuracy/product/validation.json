@@ -1,0 +1,29 @@
+{
+  "passed": true,
+  "selected_sequences_per_pair": [
+    0,
+    255
+  ],
+  "maximum_errors": {
+    "wider_grid_probability_error": 0.0,
+    "wider_grid_risk_error_bits": 0.0,
+    "dirichlet_probability_error": 2.8332891588433995e-13,
+    "causal_future_change_error": 0.0,
+    "dirichlet_final_log_evidence_error": 5.4569682106375694e-12
+  },
+  "tolerances": {
+    "wider_grid_probability_error": 2e-06,
+    "wider_grid_risk_error_bits": 2e-06,
+    "dirichlet_probability_error": 2e-12,
+    "causal_future_change_error": 2e-12,
+    "dirichlet_final_log_evidence_error": 2e-08
+  },
+  "wider_integration_range": [
+    -45,
+    40
+  ],
+  "main_integration_range": [
+    -30.0,
+    30.0
+  ]
+}

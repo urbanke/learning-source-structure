@@ -1,0 +1,60 @@
+{
+  "schema": "shared-base-forced-continuation-smoke-v1",
+  "created_utc": "2026-09-17T07:32:51.230233+00:00",
+  "original_files_sha256": {
+    "/Users/ruediger/Projects/layered_architectures/output/shared_base_curve_references_2026-09-15/a1_L0/alpha16/seq_000000_t0064.json": "f6d9a11d75e1fa5b0f47aeb4489969b7e87fce447eeb1e29fae929090ecad424",
+    "/Users/ruediger/Projects/layered_architectures/output/shared_base_curve_references_2026-09-15/a1_L0/alpha16/seq_000000_t0064_chains.npz": "d8546e559da2641526848f7f7c28780cf8132389b5fa93287078ec61e4972953",
+    "/Users/ruediger/Projects/layered_architectures/output/shared_base_curve_references_2026-09-15/a1_L0/alpha16/seq_000000_t0064_moments.npz": "7a530302d120ffcd9d2082ba88312d0319c7124dd436c3c5e4b62101544b88e4"
+  },
+  "copies_directory": "/Users/ruediger/Projects/layered_architectures/output/shared_base_refinement_smoke_2026-09-17/references/a1_L0/alpha16",
+  "old_draws_per_chain": 4096,
+  "forced_draws_per_chain": 4112,
+  "chains": 4,
+  "environment": {
+    "OPENBLAS_NUM_THREADS": "1",
+    "OMP_NUM_THREADS": "1",
+    "MKL_NUM_THREADS": "1",
+    "NUMEXPR_NUM_THREADS": "1",
+    "VECLIB_MAXIMUM_THREADS": "1",
+    "LSA_STORE": "/Users/ruediger/Projects/product_model_with_memory/tables/anchors_prod",
+    "PMM_SRC": "/Users/ruediger/Projects/product_model_with_memory/src"
+  },
+  "worker_argv": [
+    "/private/tmp/layered-shared-depth-env/bin/python",
+    "code/scripts/shared_base_curve_reference.py",
+    "--input",
+    "output/shared_base_conditional_curves_2026-09-15/a1_L0",
+    "--out",
+    "output/shared_base_refinement_smoke_2026-09-17/references",
+    "--index",
+    "0",
+    "--prefix",
+    "64",
+    "--alpha-order",
+    "16",
+    "--proposal",
+    "iid",
+    "--steps",
+    "64",
+    "--burn",
+    "16384",
+    "--initial-draws",
+    "4112",
+    "--max-draws",
+    "4112",
+    "--seed",
+    "20261006"
+  ],
+  "worker_sha256": "88f985a7ea154ff8013519b9222e9c4c2f0dd9e4188d9d8df0a049986ecbdb9e",
+  "original_reference_id": "c96c6b3ed374efe480ae2dbe341e0669ef5e58ff9f8bd517638fbb08500a758d",
+  "original_runtime": {
+    "python": [
+      3,
+      14,
+      6
+    ],
+    "numpy": "2.4.6",
+    "scipy": "1.18.1"
+  },
+  "original_ready_for_cohort_check": true
+}

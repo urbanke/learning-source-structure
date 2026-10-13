@@ -1,0 +1,30 @@
+{
+  "schema": "section4-unseen-context-refined-validation-v1",
+  "passed": true,
+  "all_subset_numerical_gates_passed": true,
+  "withheld_bayes_groups": [],
+  "groups": 12,
+  "selected_records": 1699,
+  "independent_csv_replay": {
+    "passed": true,
+    "statistics_recomputed": 432,
+    "records": 1699,
+    "method": "Independent statistics.mean/stdev of complete paired CSV; numerical gates checked separately."
+  },
+  "arithmetic_checks": {
+    "replaced_bayesian_rows": 123,
+    "maximum_refined_loss_replay_error_bits": 0.0,
+    "maximum_original_entropy_difference_bits": 0.0,
+    "neural_and_comparator_scores_unchanged": true
+  },
+  "training": false,
+  "sampling": false,
+  "model_inference": false,
+  "fresh_confirmation": false,
+  "historical_artifacts_modified": false,
+  "script_sha256": "c28d048ac631ccec6c05a41a7aeb45e4fa10de1f713d4ae692ffaf0074672554",
+  "files": {
+    "summary.json": "e289b295ad61012641289ca42a5a32b423a5271184119ae2c0296f754fc5eeab",
+    "records.csv": "483bfa1f48881f70a9a938515b94c51db3a7d36a049303f192aa4f7a756b00f5"
+  }
+}

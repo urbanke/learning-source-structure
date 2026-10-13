@@ -1,0 +1,1434 @@
+{
+  "schema": "two-prior-coin-audit-v1",
+  "passed": true,
+  "rows": [
+    {
+      "test_prior": "twopoint",
+      "trained_prior": "twopoint",
+      "bayes_prior": "twopoint",
+      "matched": true,
+      "paired_cumulative_loss_gap_bits": {
+        "mean": 0.0017069355516274843,
+        "source_se": 0.0013113416691470077,
+        "n_sources": 4096
+      },
+      "cumulative_transformer_loss_bits": {
+        "mean": 185.63224685285374,
+        "source_se": 0.1985387934896421,
+        "n_sources": 4096
+      },
+      "cumulative_bayes_loss_bits": {
+        "mean": 185.63053991730206,
+        "source_se": 0.19951740522590597,
+        "n_sources": 4096
+      },
+      "cumulative_predictive_kl_bits": {
+        "mean": 0.0024253397772525994,
+        "source_se": 5.005753327296256e-05,
+        "n_sources": 4096
+      },
+      "mean_predictive_kl_bits": {
+        "mean": 9.473983504892966e-06,
+        "source_se": 1.9553723934751e-07,
+        "n_sources": 4096
+      },
+      "final_predictive_kl_bits": {
+        "mean": 5.670146468847684e-06,
+        "source_se": 2.0679285733777152e-08,
+        "n_sources": 4096
+      },
+      "mean_total_variation": {
+        "mean": 0.0012359951349693575,
+        "source_se": 2.732484704038434e-06,
+        "n_sources": 4096
+      },
+      "final_total_variation": {
+        "mean": 0.0011160148049706082,
+        "source_se": 1.9632861602778413e-06,
+        "n_sources": 4096
+      },
+      "max_total_variation": 0.11363981452618055,
+      "final_observed_prefix_length": 256,
+      "scored_predictions": 256,
+      "source_se_unit": "one full sequence, including its freshly drawn bias"
+    },
+    {
+      "test_prior": "twopoint",
+      "trained_prior": "twopoint",
+      "bayes_prior": "uniform",
+      "matched": false,
+      "paired_cumulative_loss_gap_bits": {
+        "mean": -2.2878540921321857,
+        "source_se": 0.015327845569667955,
+        "n_sources": 4096
+      },
+      "cumulative_transformer_loss_bits": {
+        "mean": 185.63224685285374,
+        "source_se": 0.1985387934896421,
+        "n_sources": 4096
+      },
+      "cumulative_bayes_loss_bits": {
+        "mean": 187.9201009449859,
+        "source_se": 0.19950340560722363,
+        "n_sources": 4096
+      },
+      "cumulative_predictive_kl_bits": {
+        "mean": 2.262997045087713,
+        "source_se": 0.028442115230329756,
+        "n_sources": 4096
+      },
+      "mean_predictive_kl_bits": {
+        "mean": 0.008839832207373879,
+        "source_se": 0.00011110201261847561,
+        "n_sources": 4096
+      },
+      "final_predictive_kl_bits": {
+        "mean": 0.0027352098249974095,
+        "source_se": 5.877890421212395e-05,
+        "n_sources": 4096
+      },
+      "mean_total_variation": {
+        "mean": 0.03332547497418972,
+        "source_se": 0.0002460317995716615,
+        "n_sources": 4096
+      },
+      "final_total_variation": {
+        "mean": 0.019813452560051046,
+        "source_se": 0.00023013103340113717,
+        "n_sources": 4096
+      },
+      "max_total_variation": 0.2577104495966064,
+      "final_observed_prefix_length": 256,
+      "scored_predictions": 256,
+      "source_se_unit": "one full sequence, including its freshly drawn bias"
+    },
+    {
+      "test_prior": "twopoint",
+      "trained_prior": "uniform",
+      "bayes_prior": "twopoint",
+      "matched": false,
+      "paired_cumulative_loss_gap_bits": {
+        "mean": 2.2945402881007047,
+        "source_se": 0.015415510280702377,
+        "n_sources": 4096
+      },
+      "cumulative_transformer_loss_bits": {
+        "mean": 187.92508020540282,
+        "source_se": 0.19942048630837259,
+        "n_sources": 4096
+      },
+      "cumulative_bayes_loss_bits": {
+        "mean": 185.63053991730206,
+        "source_se": 0.19951740522590597,
+        "n_sources": 4096
+      },
+      "cumulative_predictive_kl_bits": {
+        "mean": 2.2835779949766364,
+        "source_se": 0.029203879049007918,
+        "n_sources": 4096
+      },
+      "mean_predictive_kl_bits": {
+        "mean": 0.008920226542877486,
+        "source_se": 0.00011407765253518718,
+        "n_sources": 4096
+      },
+      "final_predictive_kl_bits": {
+        "mean": 0.0027891063518895023,
+        "source_se": 6.015203928377672e-05,
+        "n_sources": 4096
+      },
+      "mean_total_variation": {
+        "mean": 0.033521895700473286,
+        "source_se": 0.0002512828979058067,
+        "n_sources": 4096
+      },
+      "final_total_variation": {
+        "mean": 0.019996001953684846,
+        "source_se": 0.00023161814399379584,
+        "n_sources": 4096
+      },
+      "max_total_variation": 0.25133422800396554,
+      "final_observed_prefix_length": 256,
+      "scored_predictions": 256,
+      "source_se_unit": "one full sequence, including its freshly drawn bias"
+    },
+    {
+      "test_prior": "twopoint",
+      "trained_prior": "uniform",
+      "bayes_prior": "uniform",
+      "matched": false,
+      "paired_cumulative_loss_gap_bits": {
+        "mean": 0.004979260416891365,
+        "source_se": 0.0011988810132601542,
+        "n_sources": 4096
+      },
+      "cumulative_transformer_loss_bits": {
+        "mean": 187.92508020540282,
+        "source_se": 0.19942048630837259,
+        "n_sources": 4096
+      },
+      "cumulative_bayes_loss_bits": {
+        "mean": 187.9201009449859,
+        "source_se": 0.19950340560722363,
+        "n_sources": 4096
+      },
+      "cumulative_predictive_kl_bits": {
+        "mean": 0.002139661627039803,
+        "source_se": 2.277544556078511e-05,
+        "n_sources": 4096
+      },
+      "mean_predictive_kl_bits": {
+        "mean": 8.35805323062423e-06,
+        "source_se": 8.896658422181684e-08,
+        "n_sources": 4096
+      },
+      "final_predictive_kl_bits": {
+        "mean": 2.403939979657825e-06,
+        "source_se": 1.0006689276601054e-07,
+        "n_sources": 4096
+      },
+      "mean_total_variation": {
+        "mean": 0.0009060022895403872,
+        "source_se": 3.7612233447505386e-06,
+        "n_sources": 4096
+      },
+      "final_total_variation": {
+        "mean": 0.00048007681762057727,
+        "source_se": 8.578393358783895e-06,
+        "n_sources": 4096
+      },
+      "max_total_variation": 0.02404235920048714,
+      "final_observed_prefix_length": 256,
+      "scored_predictions": 256,
+      "source_se_unit": "one full sequence, including its freshly drawn bias"
+    },
+    {
+      "test_prior": "uniform",
+      "trained_prior": "twopoint",
+      "bayes_prior": "twopoint",
+      "matched": false,
+      "paired_cumulative_loss_gap_bits": {
+        "mean": -4.437427249350007,
+        "source_se": 0.17214649529089052,
+        "n_sources": 4096
+      },
+      "cumulative_transformer_loss_bits": {
+        "mean": 207.0311809660163,
+        "source_se": 1.0704037547427676,
+        "n_sources": 4096
+      },
+      "cumulative_bayes_loss_bits": {
+        "mean": 211.46860821536626,
+        "source_se": 1.1658241566575753,
+        "n_sources": 4096
+      },
+      "cumulative_predictive_kl_bits": {
+        "mean": 1.5047758745507667,
+        "source_se": 0.07387625386748148,
+        "n_sources": 4096
+      },
+      "mean_predictive_kl_bits": {
+        "mean": 0.005878030759963932,
+        "source_se": 0.0002885791166698495,
+        "n_sources": 4096
+      },
+      "final_predictive_kl_bits": {
+        "mean": 0.00812253918699442,
+        "source_se": 0.0005044366376116919,
+        "n_sources": 4096
+      },
+      "mean_total_variation": {
+        "mean": 0.013773819115595339,
+        "source_se": 0.0004930665877859189,
+        "n_sources": 4096
+      },
+      "final_total_variation": {
+        "mean": 0.01714522275562072,
+        "source_se": 0.0007226538124486875,
+        "n_sources": 4096
+      },
+      "max_total_variation": 0.39631244286154654,
+      "final_observed_prefix_length": 256,
+      "scored_predictions": 256,
+      "source_se_unit": "one full sequence, including its freshly drawn bias"
+    },
+    {
+      "test_prior": "uniform",
+      "trained_prior": "twopoint",
+      "bayes_prior": "uniform",
+      "matched": false,
+      "paired_cumulative_loss_gap_bits": {
+        "mean": 18.77194254582374,
+        "source_se": 0.29208393141580735,
+        "n_sources": 4096
+      },
+      "cumulative_transformer_loss_bits": {
+        "mean": 207.0311809660163,
+        "source_se": 1.0704037547427676,
+        "n_sources": 4096
+      },
+      "cumulative_bayes_loss_bits": {
+        "mean": 188.25923842019256,
+        "source_se": 1.095351940933402,
+        "n_sources": 4096
+      },
+      "cumulative_predictive_kl_bits": {
+        "mean": 18.850012213947927,
+        "source_se": 0.23366132221111754,
+        "n_sources": 4096
+      },
+      "mean_predictive_kl_bits": {
+        "mean": 0.07363286021073409,
+        "source_se": 0.0009127395398871779,
+        "n_sources": 4096
+      },
+      "final_predictive_kl_bits": {
+        "mean": 0.07505026795484859,
+        "source_se": 0.0010644480890069535,
+        "n_sources": 4096
+      },
+      "mean_total_variation": {
+        "mean": 0.11224418072110973,
+        "source_se": 0.0008710127491688908,
+        "n_sources": 4096
+      },
+      "final_total_variation": {
+        "mean": 0.11309333665657258,
+        "source_se": 0.0009918656004421432,
+        "n_sources": 4096
+      },
+      "max_total_variation": 0.26197267668820046,
+      "final_observed_prefix_length": 256,
+      "scored_predictions": 256,
+      "source_se_unit": "one full sequence, including its freshly drawn bias"
+    },
+    {
+      "test_prior": "uniform",
+      "trained_prior": "uniform",
+      "bayes_prior": "twopoint",
+      "matched": false,
+      "paired_cumulative_loss_gap_bits": {
+        "mean": -23.209523276406422,
+        "source_se": 0.37484701529281317,
+        "n_sources": 4096
+      },
+      "cumulative_transformer_loss_bits": {
+        "mean": 188.2590849389599,
+        "source_se": 1.0952155959295689,
+        "n_sources": 4096
+      },
+      "cumulative_bayes_loss_bits": {
+        "mean": 211.46860821536626,
+        "source_se": 1.1658241566575753,
+        "n_sources": 4096
+      },
+      "cumulative_predictive_kl_bits": {
+        "mean": 26.633320768477198,
+        "source_se": 0.43648978074212624,
+        "n_sources": 4096
+      },
+      "mean_predictive_kl_bits": {
+        "mean": 0.10403640925186405,
+        "source_se": 0.0017050382060239306,
+        "n_sources": 4096
+      },
+      "final_predictive_kl_bits": {
+        "mean": 0.11420586982080058,
+        "source_se": 0.002061367522284078,
+        "n_sources": 4096
+      },
+      "mean_total_variation": {
+        "mean": 0.12436975686031966,
+        "source_se": 0.0010668712426168804,
+        "n_sources": 4096
+      },
+      "final_total_variation": {
+        "mean": 0.12898580420221606,
+        "source_se": 0.0012413501721418242,
+        "n_sources": 4096
+      },
+      "max_total_variation": 0.2912404379974065,
+      "final_observed_prefix_length": 256,
+      "scored_predictions": 256,
+      "source_se_unit": "one full sequence, including its freshly drawn bias"
+    },
+    {
+      "test_prior": "uniform",
+      "trained_prior": "uniform",
+      "bayes_prior": "uniform",
+      "matched": true,
+      "paired_cumulative_loss_gap_bits": {
+        "mean": -0.00015348123267191273,
+        "source_se": 0.001421591984964558,
+        "n_sources": 4096
+      },
+      "cumulative_transformer_loss_bits": {
+        "mean": 188.2590849389599,
+        "source_se": 1.0952155959295689,
+        "n_sources": 4096
+      },
+      "cumulative_bayes_loss_bits": {
+        "mean": 188.25923842019256,
+        "source_se": 1.095351940933402,
+        "n_sources": 4096
+      },
+      "cumulative_predictive_kl_bits": {
+        "mean": 0.0030803445950190033,
+        "source_se": 9.172369454077109e-05,
+        "n_sources": 4096
+      },
+      "mean_predictive_kl_bits": {
+        "mean": 1.2032596074292982e-05,
+        "source_se": 3.5829568179988707e-07,
+        "n_sources": 4096
+      },
+      "final_predictive_kl_bits": {
+        "mean": 1.3434943131127226e-05,
+        "source_se": 1.4622619651388329e-06,
+        "n_sources": 4096
+      },
+      "mean_total_variation": {
+        "mean": 0.00087535314724659,
+        "source_se": 3.7659159554637245e-06,
+        "n_sources": 4096
+      },
+      "final_total_variation": {
+        "mean": 0.000695375856357156,
+        "source_se": 8.362091692290776e-06,
+        "n_sources": 4096
+      },
+      "max_total_variation": 0.023515581561161236,
+      "final_observed_prefix_length": 256,
+      "scored_predictions": 256,
+      "source_se_unit": "one full sequence, including its freshly drawn bias"
+    }
+  ],
+  "conditions": {
+    "binary_twopoint": {
+      "n_sources": 4096,
+      "n_tokens": 257,
+      "scored_predictions": 256,
+      "source_seed": 2972830299,
+      "bayes": {
+        "twopoint": {
+          "legacy_entropy_subtracted_regret": {
+            "mean": 0.8169359093444655,
+            "source_se": 0.19951740053670955,
+            "n_sources": 4096
+          },
+          "realized_oracle_log_ratio": {
+            "mean": 0.7398968448873638,
+            "source_se": 0.012707276563504906,
+            "n_sources": 4096
+          },
+          "conditional_kl_regret": {
+            "mean": 0.7171143379850224,
+            "source_se": 0.022683087095597312,
+            "n_sources": 4096
+          }
+        },
+        "uniform": {
+          "legacy_entropy_subtracted_regret": {
+            "mean": 3.1065023115343138,
+            "source_se": 0.19950340620730714,
+            "n_sources": 4096
+          },
+          "realized_oracle_log_ratio": {
+            "mean": 3.029457872571177,
+            "source_se": 0.020091734396313406,
+            "n_sources": 4096
+          },
+          "conditional_kl_regret": {
+            "mean": 3.000648928080584,
+            "source_se": 0.037142401024425856,
+            "n_sources": 4096
+          }
+        }
+      },
+      "exact_matched_prior_bayes": {
+        "cumulative_regret_bits": [
+          0.18245336283713165,
+          0.3157713465666323,
+          0.4127514517466927,
+          0.48574760461552013,
+          0.5403611519839381,
+          0.5820757349843739,
+          0.6137318998918764,
+          0.6381282607744238,
+          0.6568056302987123,
+          0.6712873103895463,
+          0.6824414964520307,
+          0.6911283045624359,
+          0.6978489344583338,
+          0.703100596319584,
+          0.7071775002273948,
+          0.7103717881208735,
+          0.7128582783363975,
+          0.7148106777576213,
+          0.7163338260587798,
+          0.7175319489727411,
+          0.7184683759311544,
+          0.7192060899139652,
+          0.7197835686927815,
+          0.7202390911965432,
+          0.7205961475471322,
+          0.7208781121780948,
+          0.7210993826570387,
+          0.7212742884917913,
+          0.7214116840309872,
+          0.721520383215046,
+          0.7216058471282245,
+          0.7216735126797381,
+          0.7217267565377865,
+          0.7217689408139534,
+          0.7218021579279947,
+          0.721828491486542,
+          0.7218492406050503,
+          0.7218656990380932,
+          0.7218786747486756,
+          0.7218889724256288,
+          0.721897095338955,
+          0.7219035447518856,
+          0.7219086345774535,
+          0.7219126774949263,
+          0.7219158695507049,
+          0.7219184060306068,
+          0.721920409509089,
+          0.7219220020905999,
+          0.7219232604917658,
+          0.7219242611381472,
+          0.7219250520904001,
+          0.7219256812285834,
+          0.7219261786874346,
+          0.7219265744894402,
+          0.7219268875446762,
+          0.721927136693341,
+          0.7219273338106416,
+          0.7219274907282257,
+          0.721927614908655,
+          0.7219277137873031,
+          0.72192779205676,
+          0.7219278543926267,
+          0.7219279037474499,
+          0.7219279430631461,
+          0.7219279741984748,
+          0.7219279990055393,
+          0.7219280186551228,
+          0.7219280343138371,
+          0.7219280467194894,
+          0.7219280566072707,
+          0.7219280644423488,
+          0.7219280706882489,
+          0.7219280756383755,
+          0.7219280795851002,
+          0.7219280827135632,
+          0.7219280852082552,
+          0.7219280871860461,
+          0.7219280887633973,
+          0.7219280900141113,
+          0.7219280910117324,
+          0.7219280918028802,
+          0.721928092434014,
+          0.7219280929345939,
+          0.721928093333979,
+          0.7219280936507908,
+          0.7219280939035873,
+          0.721928094104143,
+          0.7219280942641924,
+          0.7219280943911828,
+          0.7219280944925357,
+          0.7219280945729631,
+          0.7219280946371605,
+          0.721928094688109,
+          0.72192809472878,
+          0.7219280947610608,
+          0.7219280947868324,
+          0.7219280948072896,
+          0.7219280948236235,
+          0.7219280948365905,
+          0.7219280948469444,
+          0.7219280948551643,
+          0.7219280948617288,
+          0.7219280948669413,
+          0.7219280948711042,
+          0.7219280948744098,
+          0.7219280948770499,
+          0.7219280948791469,
+          0.721928094880822,
+          0.7219280948821523,
+          0.7219280948832149,
+          0.7219280948840584,
+          0.7219280948847324,
+          0.7219280948852685,
+          0.7219280948856969,
+          0.7219280948860368,
+          0.7219280948863084,
+          0.7219280948865241,
+          0.7219280948866972,
+          0.7219280948868342,
+          0.721928094886944,
+          0.7219280948870305,
+          0.7219280948870995,
+          0.7219280948871548,
+          0.7219280948871986,
+          0.7219280948872333,
+          0.7219280948872608,
+          0.7219280948872826,
+          0.7219280948873003,
+          0.7219280948873142,
+          0.7219280948873252,
+          0.7219280948873341,
+          0.7219280948873408,
+          0.7219280948873463,
+          0.721928094887351,
+          0.7219280948873542,
+          0.7219280948873572,
+          0.7219280948873592,
+          0.7219280948873608,
+          0.7219280948873622,
+          0.7219280948873634,
+          0.7219280948873645,
+          0.7219280948873652,
+          0.7219280948873656,
+          0.7219280948873661,
+          0.7219280948873665,
+          0.7219280948873668,
+          0.721928094887367,
+          0.721928094887367,
+          0.721928094887367,
+          0.7219280948873673,
+          0.7219280948873671,
+          0.7219280948873669,
+          0.7219280948873673,
+          0.7219280948873673,
+          0.7219280948873675,
+          0.7219280948873676,
+          0.7219280948873675,
+          0.7219280948873678,
+          0.7219280948873675,
+          0.7219280948873679,
+          0.7219280948873681,
+          0.7219280948873681,
+          0.7219280948873683,
+          0.7219280948873681,
+          0.721928094887368,
+          0.7219280948873682,
+          0.7219280948873684,
+          0.7219280948873686,
+          0.7219280948873686,
+          0.7219280948873685,
+          0.7219280948873683,
+          0.7219280948873681,
+          0.7219280948873679,
+          0.7219280948873679,
+          0.7219280948873678,
+          0.7219280948873675,
+          0.7219280948873676,
+          0.7219280948873674,
+          0.7219280948873674,
+          0.7219280948873676,
+          0.7219280948873678,
+          0.7219280948873678,
+          0.7219280948873678,
+          0.7219280948873678,
+          0.721928094887368,
+          0.7219280948873682,
+          0.7219280948873685,
+          0.7219280948873684,
+          0.7219280948873685,
+          0.7219280948873686,
+          0.7219280948873686,
+          0.7219280948873686,
+          0.7219280948873686,
+          0.7219280948873688,
+          0.721928094887369,
+          0.7219280948873691,
+          0.721928094887369,
+          0.721928094887369,
+          0.7219280948873689,
+          0.7219280948873689,
+          0.7219280948873688,
+          0.7219280948873686,
+          0.7219280948873685,
+          0.7219280948873685,
+          0.7219280948873683,
+          0.7219280948873685,
+          0.7219280948873685,
+          0.7219280948873683,
+          0.7219280948873683,
+          0.7219280948873681,
+          0.721928094887368,
+          0.7219280948873678,
+          0.7219280948873678,
+          0.721928094887368,
+          0.7219280948873678,
+          0.7219280948873678,
+          0.7219280948873675,
+          0.7219280948873675,
+          0.7219280948873678,
+          0.7219280948873678,
+          0.7219280948873678,
+          0.7219280948873676,
+          0.7219280948873676,
+          0.7219280948873679,
+          0.7219280948873676,
+          0.7219280948873676,
+          0.7219280948873676,
+          0.7219280948873676,
+          0.7219280948873676,
+          0.7219280948873674,
+          0.7219280948873672,
+          0.7219280948873669,
+          0.7219280948873669,
+          0.7219280948873668,
+          0.7219280948873663,
+          0.7219280948873661,
+          0.7219280948873656,
+          0.7219280948873654,
+          0.721928094887365,
+          0.7219280948873643,
+          0.7219280948873639,
+          0.7219280948873633,
+          0.7219280948873626,
+          0.7219280948873622,
+          0.7219280948873615,
+          0.7219280948873609,
+          0.72192809488736,
+          0.7219280948873593,
+          0.7219280948873588,
+          0.7219280948873581,
+          0.7219280948873574,
+          0.7219280948873568,
+          0.7219280948873561,
+          0.7219280948873555,
+          0.721928094887355,
+          0.7219280948873544
+        ],
+        "final_regret_bits": 0.7219280948873544,
+        "observed_first_token": true,
+        "scored_predictions": 256,
+        "finite_prior_limit_bits": 0.7219280948873623
+      },
+      "matched_loss_gap_recomputation": {
+        "historical_gap_bits": 0.0017123106967800172,
+        "recomputed_gap_bits": 0.0017069355516274843,
+        "difference_bits": -5.37514515253296e-06,
+        "note": "Exact float64 posterior formulas replace the legacy float32 reference-loss arrays. Saved transformer log probabilities are unchanged; this explains the small change in the paired loss gap."
+      },
+      "paired_training_priors": {
+        "direction": "uniform minus two-point, on exactly the same observed sequences",
+        "transformer_cumulative_loss_difference_bits": {
+          "mean": 2.292833352549077,
+          "source_se": 0.015368336137536773,
+          "n_sources": 4096
+        },
+        "bayes_cumulative_loss_difference_bits": {
+          "mean": 2.2895610276838134,
+          "source_se": 0.015371763475711519,
+          "n_sources": 4096
+        }
+      }
+    },
+    "binary_uniform": {
+      "n_sources": 4096,
+      "n_tokens": 257,
+      "scored_predictions": 256,
+      "source_seed": 637012830,
+      "bayes": {
+        "twopoint": {
+          "legacy_entropy_subtracted_regret": {
+            "mean": 26.810428285825765,
+            "source_se": 0.4020101229037314,
+            "n_sources": 4096
+          },
+          "realized_oracle_log_ratio": {
+            "mean": 26.354472294578386,
+            "source_se": 0.37742159479700665,
+            "n_sources": 4096
+          },
+          "conditional_kl_regret": {
+            "mean": 26.458201082980203,
+            "source_se": 0.367500237946154,
+            "n_sources": 4096
+          }
+        },
+        "uniform": {
+          "legacy_entropy_subtracted_regret": {
+            "mean": 3.6010634532008226,
+            "source_se": 0.16559046780498266,
+            "n_sources": 4096
+          },
+          "realized_oracle_log_ratio": {
+            "mean": 3.145102499404635,
+            "source_se": 0.019018383233525008,
+            "n_sources": 4096
+          },
+          "conditional_kl_regret": {
+            "mean": 3.0940033107056593,
+            "source_se": 0.03562064367763522,
+            "n_sources": 4096
+          }
+        }
+      },
+      "exact_matched_prior_bayes": {
+        "cumulative_regret_bits": [
+          0.19694831361000775,
+          0.34978620947161465,
+          0.4748780336981485,
+          0.5808578155348042,
+          0.6728507894847259,
+          0.7541537177784425,
+          0.8270148811282052,
+          0.893037401164169,
+          0.953405255771805,
+          1.00901809662128,
+          1.0605757916146978,
+          1.108633659747785,
+          1.1536398162881107,
+          1.195961167596817,
+          1.235901963479017,
+          1.2737173288502253,
+          1.3096233235052657,
+          1.3438045480941305,
+          1.376419981999789,
+          1.407607525004881,
+          1.4374875738253776,
+          1.4661658698712694,
+          1.4937357896514998,
+          1.5202802039346581,
+          1.5458729996677754,
+          1.5705803355680565,
+          1.5944616854800464,
+          1.6175707111825512,
+          1.6399559970732844,
+          1.6616616721811917,
+          1.6827279396443773,
+          1.7031915297107625,
+          1.723086089156868,
+          1.7424425175508425,
+          1.761289258842889,
+          1.7796525552265963,
+          1.797556668986495,
+          1.8150240770612887,
+          1.8320756422561075,
+          1.8487307643906838,
+          1.865007514142595,
+          1.8809227519116876,
+          1.8964922336747767,
+          1.9117307055040051,
+          1.9266519881762534,
+          1.94126905309549,
+          1.9555940905776064,
+          1.9696385714021756,
+          1.9834133024129645,
+          1.9969284768450704,
+          2.0101937199680915,
+          2.0232181305592523,
+          2.0360103186557623,
+          2.048578439980181,
+          2.060930227384759,
+          2.073073019619441,
+          2.0850137876924886,
+          2.096759159061629,
+          2.1083154398666575,
+          2.119688635390852,
+          2.130884468917971,
+          2.1419083991335612,
+          2.15276563620345,
+          2.163461156648357,
+          2.1739997171212577,
+          2.184385867183273,
+          2.1946239611642335,
+          2.2047181691855506,
+          2.214672487415434,
+          2.224490747619771,
+          2.2341766260659544,
+          2.243733651831593,
+          2.253165214565226,
+          2.262474571741877,
+          2.2716648554524115,
+          2.280739078762216,
+          2.2897001416715765,
+          2.29855083670735,
+          2.307293854172973,
+          2.315931787081564,
+          2.3244671357948254,
+          2.3329023123885477,
+          2.341239644763842,
+          2.349481380521677,
+          2.3576296906168945,
+          2.3656866728065964,
+          2.373654354906653,
+          2.381534697868997,
+          2.3893295986914214,
+          2.3970408931707077,
+          2.4046703585091036,
+          2.4122197157834275,
+          2.419690632285403,
+          2.427084723741202,
+          2.434403556417606,
+          2.441648649121664,
+          2.448821475100254,
+          2.4559234638454974,
+          2.4629560028115787,
+          2.4699204390481344,
+          2.4768180807550335,
+          2.4836501987630486,
+          2.490418027944618,
+          2.497122768558622,
+          2.503765587532845,
+          2.5103476196875616,
+          2.5168699689034573,
+          2.5233337092368977,
+          2.5297398859853715,
+          2.5360895167057547,
+          2.542383592187883,
+          2.548623077385765,
+          2.554808912308631,
+          2.5609420128738773,
+          2.56702327172385,
+          2.5730535590082853,
+          2.579033723134135,
+          2.584964591484388,
+          2.5908469711074154,
+          2.596681649378284,
+          2.602469394633386,
+          2.608210956779679,
+          2.6139070678797314,
+          2.6195584427137315,
+          2.6251657793195324,
+          2.630729759511757,
+          2.63625104938093,
+          2.6417302997735552,
+          2.647168146753999,
+          2.6525652120490073,
+          2.6579221034756317,
+          2.6632394153533,
+          2.668517728900736,
+          2.6737576126183873,
+          2.678959622656998,
+          2.684124303172916,
+          2.6892521866707133,
+          2.6943437943336517,
+          2.6993996363425103,
+          2.704420212183267,
+          2.709406010944091,
+          2.7143575116020977,
+          2.719275183300278,
+          2.724159485615012,
+          2.729010868814539,
+          2.7338297741087594,
+          2.7386166338907056,
+          2.7433718719700186,
+          2.7480959037987445,
+          2.7527891366897506,
+          2.7574519700280518,
+          2.7620847954753196,
+          2.7666879971678364,
+          2.771261951908146,
+          2.7758070293506396,
+          2.780323592181306,
+          2.784811996291864,
+          2.7892725909484914,
+          2.7937057189553407,
+          2.798111716813046,
+          2.8024909148723913,
+          2.8068436374833308,
+          2.811170203139512,
+          2.8154709246184813,
+          2.8197461091177103,
+          2.8239960583866033,
+          2.82822106885462,
+          2.832421431755654,
+          2.836597433248796,
+          2.8407493545356077,
+          2.8448774719740255,
+          2.848982057189011,
+          2.8530633771800606,
+          2.857121694425675,
+          2.8611572669848977,
+          2.8651703485960187,
+          2.8691611887725337,
+          2.873130032896456,
+          2.8770771223090645,
+          2.881002694399174,
+          2.8849069826890057,
+          2.888790216917739,
+          2.8926526231228182,
+          2.8964944237190835,
+          2.9003158375758016,
+          2.9041170800916567,
+          2.907898363267769,
+          2.911659895778803,
+          2.9154018830422235,
+          2.9191245272857613,
+          2.922828027613135,
+          2.9265125800680933,
+          2.930178377696823,
+          2.93382561060877,
+          2.9374544660359314,
+          2.9410651283906533,
+          2.944657779321985,
+          2.9482325977706347,
+          2.9517897600225615,
+          2.9553294397612513,
+          2.95885180811871,
+          2.962357033725214,
+          2.9658452827578543,
+          2.969316718987906,
+          2.972771503827065,
+          2.9762097963725704,
+          2.9796317534512644,
+          2.9830375296625964,
+          2.9864272774206233,
+          2.989801146995018,
+          2.9931592865511227,
+          2.996501842189073,
+          2.9998289579820114,
+          3.0031407760134265,
+          3.0064374364136324,
+          3.0097190773954163,
+          3.012985835288879,
+          3.0162378445754827,
+          3.0194752379213377,
+          3.0226981462097378,
+          3.0259066985729746,
+          3.0291010224234416,
+          3.0322812434840527,
+          3.0354474858179907,
+          3.0385998718578024,
+          3.0417385224338593,
+          3.044863556802201,
+          3.0479750926717752,
+          3.051073246231092,
+          3.0541581321743045,
+          3.057229863726734,
+          3.060288552669853,
+          3.0633343093657364,
+          3.0663672427810007,
+          3.069387460510238,
+          3.0723950687989596,
+          3.075390172566067,
+          3.0783728754258473,
+          3.0813432797095253,
+          3.0843014864863636,
+          3.087247595584336,
+          3.0901817056103775,
+          3.0931039139702214,
+          3.096014316887838,
+          3.0989130094244786,
+          3.1018000854973398,
+          3.1046756378978535,
+          3.1075397583096134,
+          3.1103925373259447,
+          3.1132340644671284,
+          3.1160644281972854,
+          3.118883715940931,
+          3.121692014099205,
+          3.124489408065787,
+          3.1272759822425034,
+          3.130051820054633
+        ],
+        "final_regret_bits": 3.130051820054633,
+        "observed_first_token": true,
+        "scored_predictions": 256,
+        "finite_prior_limit_bits": null
+      },
+      "matched_loss_gap_recomputation": {
+        "historical_gap_bits": -0.00015341392414924826,
+        "recomputed_gap_bits": -0.00015348123267191273,
+        "difference_bits": -6.730852266447233e-08,
+        "note": "Exact float64 posterior formulas replace the legacy float32 reference-loss arrays. Saved transformer log probabilities are unchanged; this explains the small change in the paired loss gap."
+      },
+      "paired_training_priors": {
+        "direction": "uniform minus two-point, on exactly the same observed sequences",
+        "transformer_cumulative_loss_difference_bits": {
+          "mean": -18.772096027056413,
+          "source_se": 0.2921642510637517,
+          "n_sources": 4096
+        },
+        "bayes_cumulative_loss_difference_bits": {
+          "mean": -23.20936979517375,
+          "source_se": 0.3747664376527119,
+          "n_sources": 4096
+        }
+      }
+    }
+  },
+  "checks": [
+    {
+      "name": "binary_twopoint:source_shape",
+      "passed": true
+    },
+    {
+      "name": "binary_twopoint:token_checksum",
+      "passed": true
+    },
+    {
+      "name": "binary_twopoint:source_regeneration",
+      "passed": true
+    },
+    {
+      "name": "binary_twopoint:reference_formula:twopoint",
+      "passed": true,
+      "max_loss_error_bits": 1.1333083627107499e-07
+    },
+    {
+      "name": "binary_twopoint:old_bayes_summary:twopoint",
+      "passed": true
+    },
+    {
+      "name": "binary_twopoint:reference_formula:uniform",
+      "passed": true,
+      "max_loss_error_bits": 2.171347217583275e-07
+    },
+    {
+      "name": "binary_twopoint:old_bayes_summary:uniform",
+      "passed": true
+    },
+    {
+      "name": "bin_twopoint:binary_twopoint:tokens",
+      "passed": true
+    },
+    {
+      "name": "bin_twopoint:binary_twopoint:full_vector_shape",
+      "passed": true
+    },
+    {
+      "name": "bin_twopoint:binary_twopoint:full_target_alignment",
+      "passed": true
+    },
+    {
+      "name": "bin_twopoint:binary_twopoint:full_vector_precision",
+      "passed": true,
+      "max_log_error": 0.00048816204071067126,
+      "max_error_to_tolerance": 0.9956775640730116
+    },
+    {
+      "name": "bin_twopoint:configuration",
+      "passed": true
+    },
+    {
+      "name": "bin_twopoint:checkpoint_config",
+      "passed": true
+    },
+    {
+      "name": "bin_twopoint:checkpoint_replay",
+      "passed": true,
+      "max_log_probability_error": 3.5762786865234375e-07
+    },
+    {
+      "name": "bin_twopoint:binary_twopoint:old_transformer_summary",
+      "passed": true
+    },
+    {
+      "name": "bin_uniform:binary_twopoint:tokens",
+      "passed": true
+    },
+    {
+      "name": "bin_uniform:binary_twopoint:full_vector_shape",
+      "passed": true
+    },
+    {
+      "name": "bin_uniform:binary_twopoint:full_target_alignment",
+      "passed": true
+    },
+    {
+      "name": "bin_uniform:binary_twopoint:full_vector_precision",
+      "passed": true,
+      "max_log_error": 0.0009670309735017035,
+      "max_error_to_tolerance": 0.9934892617339377
+    },
+    {
+      "name": "bin_uniform:configuration",
+      "passed": true
+    },
+    {
+      "name": "bin_uniform:checkpoint_config",
+      "passed": true
+    },
+    {
+      "name": "bin_uniform:checkpoint_replay",
+      "passed": true,
+      "max_log_probability_error": 5.960464477539062e-07
+    },
+    {
+      "name": "bin_uniform:binary_twopoint:old_transformer_summary",
+      "passed": true
+    },
+    {
+      "name": "binary_uniform:source_shape",
+      "passed": true
+    },
+    {
+      "name": "binary_uniform:token_checksum",
+      "passed": true
+    },
+    {
+      "name": "binary_uniform:source_regeneration",
+      "passed": true
+    },
+    {
+      "name": "binary_uniform:reference_formula:twopoint",
+      "passed": true,
+      "max_loss_error_bits": 1.1333083627107499e-07
+    },
+    {
+      "name": "binary_uniform:old_bayes_summary:twopoint",
+      "passed": true
+    },
+    {
+      "name": "binary_uniform:reference_formula:uniform",
+      "passed": true,
+      "max_loss_error_bits": 2.3685616223900752e-07
+    },
+    {
+      "name": "binary_uniform:old_bayes_summary:uniform",
+      "passed": true
+    },
+    {
+      "name": "bin_twopoint:binary_uniform:tokens",
+      "passed": true
+    },
+    {
+      "name": "bin_twopoint:binary_uniform:full_vector_shape",
+      "passed": true
+    },
+    {
+      "name": "bin_twopoint:binary_uniform:full_target_alignment",
+      "passed": true
+    },
+    {
+      "name": "bin_twopoint:binary_uniform:full_vector_precision",
+      "passed": true,
+      "max_log_error": 0.0004864977192655662,
+      "max_error_to_tolerance": 0.9922829381412529
+    },
+    {
+      "name": "bin_twopoint:configuration",
+      "passed": true
+    },
+    {
+      "name": "bin_twopoint:checkpoint_config",
+      "passed": true
+    },
+    {
+      "name": "bin_twopoint:checkpoint_replay",
+      "passed": true,
+      "max_log_probability_error": 4.76837158203125e-07
+    },
+    {
+      "name": "bin_twopoint:binary_uniform:old_transformer_summary",
+      "passed": true
+    },
+    {
+      "name": "bin_uniform:binary_uniform:tokens",
+      "passed": true
+    },
+    {
+      "name": "bin_uniform:binary_uniform:full_vector_shape",
+      "passed": true
+    },
+    {
+      "name": "bin_uniform:binary_uniform:full_target_alignment",
+      "passed": true
+    },
+    {
+      "name": "bin_uniform:binary_uniform:full_vector_precision",
+      "passed": true,
+      "max_log_error": 0.0009739382512159445,
+      "max_error_to_tolerance": 0.995274447177308
+    },
+    {
+      "name": "bin_uniform:configuration",
+      "passed": true
+    },
+    {
+      "name": "bin_uniform:checkpoint_config",
+      "passed": true
+    },
+    {
+      "name": "bin_uniform:checkpoint_replay",
+      "passed": true,
+      "max_log_probability_error": 3.5762786865234375e-07
+    },
+    {
+      "name": "bin_uniform:binary_uniform:old_transformer_summary",
+      "passed": true
+    }
+  ],
+  "checkpoint_replay": {
+    "bin_twopoint:binary_twopoint": {
+      "passed": true,
+      "binding": {
+        "evaluation_sha256": "84d9229a5e91f7bcaf700c3ebff0530146bb3217fe070f17841d77467a0bf867",
+        "checkpoint_sha256": "3ae8f6a431e84d32acaf24440cdcbceb6de7fd9c6e0268b8c1972632669555a2",
+        "config_sha256": "f936894f3fd67e869d6f07390e9e1072f075f1f56c27b4ea955733c07d35016e",
+        "model_code_sha256": "742fe0e5c8ffaecee8072a3b270b23beaa2e0bd2a94d1a27a9af67c31eff9c28"
+      },
+      "sequence_indices": [
+        0,
+        7,
+        127,
+        4095
+      ],
+      "prediction_positions": "all 256 positions",
+      "device": "cpu",
+      "max_log_probability_error": 3.5762786865234375e-07,
+      "max_probability_error": 1.0796717359040642e-07,
+      "log_probability_tolerance": 2e-05
+    },
+    "bin_uniform:binary_twopoint": {
+      "passed": true,
+      "binding": {
+        "evaluation_sha256": "7b6da13138ca50998158f2700bef2de2b3259a1cf9840e485e33add0f7417434",
+        "checkpoint_sha256": "0f1a71b66ce138230f07e7759dd501ba489de7efe53c306f880b4e34c68d654b",
+        "config_sha256": "3994cab6f4c1cd6a1178f3577b0ec9ea674ad5760b2a30df0134b11aad100626",
+        "model_code_sha256": "742fe0e5c8ffaecee8072a3b270b23beaa2e0bd2a94d1a27a9af67c31eff9c28"
+      },
+      "sequence_indices": [
+        0,
+        7,
+        127,
+        4095
+      ],
+      "prediction_positions": "all 256 positions",
+      "device": "cpu",
+      "max_log_probability_error": 5.960464477539062e-07,
+      "max_probability_error": 1.2089225159828132e-07,
+      "log_probability_tolerance": 2e-05
+    },
+    "bin_twopoint:binary_uniform": {
+      "passed": true,
+      "binding": {
+        "evaluation_sha256": "dca8aeb91111eb37303269bfd42bdba69824a0dfc6b9baa3de629ff53b2ca5a5",
+        "checkpoint_sha256": "3ae8f6a431e84d32acaf24440cdcbceb6de7fd9c6e0268b8c1972632669555a2",
+        "config_sha256": "f936894f3fd67e869d6f07390e9e1072f075f1f56c27b4ea955733c07d35016e",
+        "model_code_sha256": "742fe0e5c8ffaecee8072a3b270b23beaa2e0bd2a94d1a27a9af67c31eff9c28"
+      },
+      "sequence_indices": [
+        0,
+        7,
+        127,
+        4095
+      ],
+      "prediction_positions": "all 256 positions",
+      "device": "cpu",
+      "max_log_probability_error": 4.76837158203125e-07,
+      "max_probability_error": 1.5476746240139505e-07,
+      "log_probability_tolerance": 2e-05
+    },
+    "bin_uniform:binary_uniform": {
+      "passed": true,
+      "binding": {
+        "evaluation_sha256": "ca20f1ae1e0f1ff72e9137121c473bf018652a2983bbbf598a949fa11db34bcd",
+        "checkpoint_sha256": "0f1a71b66ce138230f07e7759dd501ba489de7efe53c306f880b4e34c68d654b",
+        "config_sha256": "3994cab6f4c1cd6a1178f3577b0ec9ea674ad5760b2a30df0134b11aad100626",
+        "model_code_sha256": "742fe0e5c8ffaecee8072a3b270b23beaa2e0bd2a94d1a27a9af67c31eff9c28"
+      },
+      "sequence_indices": [
+        0,
+        7,
+        127,
+        4095
+      ],
+      "prediction_positions": "all 256 positions",
+      "device": "cpu",
+      "max_log_probability_error": 3.5762786865234375e-07,
+      "max_probability_error": 1.6163685112591253e-07,
+      "log_probability_tolerance": 2e-05
+    }
+  },
+  "provenance": {
+    "script_sha256": "259fdb079706a9fdc9d2b5f6891265191dfd9c90c19cdacf757cedf32cde4ec8",
+    "inputs": {
+      "current_code:source.py": {
+        "path": "/Users/ruediger/Projects/layered_architectures/code/transformer/source.py",
+        "sha256": "d1bb83004e3654cb3f84f6083437cae2b6d71fa19a33b06d26d2455ac440dab4"
+      },
+      "current_code:families.py": {
+        "path": "/Users/ruediger/Projects/layered_architectures/code/transformer/families.py",
+        "sha256": "24d7ab304d9de7133e38ec8ffe2422d2de38b9e3374670117807eab61d606e00"
+      },
+      "current_code:refs_family.py": {
+        "path": "/Users/ruediger/Projects/layered_architectures/code/transformer/refs_family.py",
+        "sha256": "35796a93937cc81c2802a27d54d357ff6d1556b752ed77ead5abcf2e9bad631e"
+      },
+      "current_code:eval_model.py": {
+        "path": "/Users/ruediger/Projects/layered_architectures/code/transformer/eval_model.py",
+        "sha256": "83bc9dd7b703acbe2f93ba87227d878444e44cb3e15bdc40a66433d9aae7a19c"
+      },
+      "current_code:model.py": {
+        "path": "/Users/ruediger/Projects/layered_architectures/code/transformer/model.py",
+        "sha256": "742fe0e5c8ffaecee8072a3b270b23beaa2e0bd2a94d1a27a9af67c31eff9c28"
+      },
+      "current_code:figures_fam.py": {
+        "path": "/Users/ruediger/Projects/layered_architectures/code/transformer/figures_fam.py",
+        "sha256": "451b3ad4bf8e6524e11a3e7ec497127089affdc6fa6108d0f61f467e6477247a"
+      },
+      "current_code:analyze_fam.py": {
+        "path": "/Users/ruediger/Projects/layered_architectures/code/transformer/analyze_fam.py",
+        "sha256": "945e194c723400650a3fc88a17aadef7ec126b6430a3a55ca1c165fb848019b3"
+      },
+      "old_figure_summary": {
+        "path": "/Users/ruediger/Projects/layered_architectures/results/transformer/fig_coins.json",
+        "sha256": "6ae64a659009bdd1acd37f76aae16384a588801ee7b748b782b159505f72f838"
+      },
+      "reference:binary_twopoint": {
+        "path": "/Users/ruediger/Projects/layered_architectures/results/transformer/refs_fam/binary_twopoint.npz",
+        "sha256": "2a9f0f2b5d15c582739d3f02519b205f4ba0e809312436194dd0bf80ddaba8fb"
+      },
+      "evaluation:bin_twopoint:binary_twopoint": {
+        "path": "/Users/ruediger/Projects/layered_architectures/results/transformer/eval/bin_twopoint/binary_twopoint_step20000.npz",
+        "sha256": "84d9229a5e91f7bcaf700c3ebff0530146bb3217fe070f17841d77467a0bf867"
+      },
+      "checkpoint:bin_twopoint": {
+        "path": "/Users/ruediger/Projects/layered_architectures/results/transformer/runs/bin_twopoint/model_20000.pt",
+        "sha256": "3ae8f6a431e84d32acaf24440cdcbceb6de7fd9c6e0268b8c1972632669555a2"
+      },
+      "config:bin_twopoint": {
+        "path": "/Users/ruediger/Projects/layered_architectures/results/transformer/runs/bin_twopoint/config.json",
+        "sha256": "f936894f3fd67e869d6f07390e9e1072f075f1f56c27b4ea955733c07d35016e"
+      },
+      "evaluation:bin_uniform:binary_twopoint": {
+        "path": "/Users/ruediger/Projects/layered_architectures/results/transformer/eval/bin_uniform/binary_twopoint_step20000.npz",
+        "sha256": "7b6da13138ca50998158f2700bef2de2b3259a1cf9840e485e33add0f7417434"
+      },
+      "checkpoint:bin_uniform": {
+        "path": "/Users/ruediger/Projects/layered_architectures/results/transformer/runs/bin_uniform/model_20000.pt",
+        "sha256": "0f1a71b66ce138230f07e7759dd501ba489de7efe53c306f880b4e34c68d654b"
+      },
+      "config:bin_uniform": {
+        "path": "/Users/ruediger/Projects/layered_architectures/results/transformer/runs/bin_uniform/config.json",
+        "sha256": "3994cab6f4c1cd6a1178f3577b0ec9ea674ad5760b2a30df0134b11aad100626"
+      },
+      "reference:binary_uniform": {
+        "path": "/Users/ruediger/Projects/layered_architectures/results/transformer/refs_fam/binary_uniform.npz",
+        "sha256": "32e3dcc7cc45b4a777971b24bfe897465f946b242cb2a18063e80c113cb4e5b4"
+      },
+      "evaluation:bin_twopoint:binary_uniform": {
+        "path": "/Users/ruediger/Projects/layered_architectures/results/transformer/eval/bin_twopoint/binary_uniform_step20000.npz",
+        "sha256": "dca8aeb91111eb37303269bfd42bdba69824a0dfc6b9baa3de629ff53b2ca5a5"
+      },
+      "evaluation:bin_uniform:binary_uniform": {
+        "path": "/Users/ruediger/Projects/layered_architectures/results/transformer/eval/bin_uniform/binary_uniform_step20000.npz",
+        "sha256": "ca20f1ae1e0f1ff72e9137121c473bf018652a2983bbbf598a949fa11db34bcd"
+      }
+    },
+    "smoke": false,
+    "runtime": {
+      "numpy": "2.4.6",
+      "scipy": "1.18.1",
+      "torch": "2.14.0"
+    }
+  },
+  "limitations": [
+    "One trained checkpoint per prior, both training seed zero; source SE excludes training variation.",
+    "Historical files lack checkpoint hashes. Fixed-sample replay checks consistency with current checkpoints but does not authenticate every historical output.",
+    "Binary probabilities are reconstructed from float32 selected-token log probabilities; full-vector float16 checks and checkpoint replay validate the reconstruction.",
+    "Predictive KL is KL(Bayes predictive || transformer predictive), averaged over the saved prefixes; it is not KL of averaged probability vectors.",
+    "Paired cumulative loss gaps use the same observed tokens. Entropy-subtracted regret is retained only to audit the old figure, not to establish equality.",
+    "Each evaluation condition contains 4096 fresh independent bias draws and 257 tokens per draw, with 256 scored predictions after the free first token.",
+    "Neither small loss gaps nor this single-checkpoint audit establishes exact Bayesian prediction at every prefix."
+  ]
+}

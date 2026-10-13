@@ -1,0 +1,21 @@
+{
+  "schema": "hidden-factor-figures-v1",
+  "summary_sha256": "11eeaee756eb3c090942102d9eede15df930a14aebdfb4ecc836af2873fb51b3",
+  "script_sha256": "a8951dee7c57efbed04893d4d9488dc39903fbe77d53db3b02055bb3a5c50361",
+  "production_size": true,
+  "two_repeat_comparison_complete": false,
+  "partial_evaluation": true,
+  "evaluated_n_sequences": 256,
+  "planned_n_sequences": 4096,
+  "evaluation_complete": false,
+  "bayes_only": false,
+  "new_computation": false,
+  "conditional_rule": "Median split of each coordinate mean row entropy divided by log2(coordinate dimension); equal-to-median is high. Membership is fixed from source matrices before scoring models.",
+  "uncertainty": "One standard error across independent complete sequences; differences use paired per-sequence values. Seeds remain separate.",
+  "outputs": {
+    "uncertainty_cost.pdf": "bfa375a8700fd3f77ec4a8b8293fbfeeec7aae1b7161abfb907924b3f75b9352",
+    "uncertainty_cost.png": "eb59f2e0d75f08fadd1bde83b5f06807d0ea9fcf8ed637c874e886f5af23a61d",
+    "conditional_curves.pdf": "802cea0489c8baa44c7a935fa9f05dff6722b9a0929fb6adb91904cc6eb5d900",
+    "conditional_curves.png": "472b9c679b9f75dee09f59850cd931de20f7ccd02731570f6bc623be56d7c5ba"
+  }
+}

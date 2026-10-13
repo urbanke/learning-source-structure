@@ -1,0 +1,190 @@
+{
+  "schema": "multifamily-independent-validation-v1",
+  "date": "2026-09-16",
+  "status": "passed",
+  "summary_path": "results/transformer/multifamily_2026-09-16/comparison.json",
+  "summary_sha256": "1dead1487234229d2808bf990b40722a55a24faf655d5944d4c5aa3c2c4db16b",
+  "raw_root": "output/multifamily_results_2026-09-16",
+  "source_plan_id": "64a6796ebe5598ac29cedf214e5259649d97e49a06fe36c3f1d0cea28f9eff51",
+  "source_manifest_sha256": "4069cfc5ae0be1d7851eb73b4b912eedf280ecc069c59635f9bf7b84da975dc0",
+  "cluster_job": {
+    "id": 4234451,
+    "state": "COMPLETED",
+    "elapsed": "00:02:34",
+    "exit_code": "0:0"
+  },
+  "counts": {
+    "source_files": 46,
+    "evaluation_files": 164,
+    "models": 6,
+    "evaluated_model_cohorts": 82,
+    "independent_sequences": 8192,
+    "conditions": 23,
+    "prior_sequences_per_family": 1024,
+    "conditional_sequences_per_condition": 256,
+    "sequence_length": 1025,
+    "source_replayed_sequences": 46
+  },
+  "times": [
+    1,
+    4,
+    16,
+    64,
+    256,
+    1024
+  ],
+  "checks": [
+    "All source and evaluation data/record hashes match their manifests.",
+    "Source plan, model run IDs and current source/evaluation implementation hashes match.",
+    "All 8192 sequence seeds are unique and match the frozen independent namespace.",
+    "All oracle rows, normalization, entropy, next losses and cumulative losses independently recomputed from saved transition matrices.",
+    "First and last source sequence per condition replay exactly in token identity and parameters; probabilities agree within 1e-10.",
+    "All 82 model-cohort records contain complete scores and valid saved causal-alignment checks.",
+    "All summary means and standard errors, including paired differences computed before averaging, independently recomputed from per-sequence records.",
+    "All six weight-file hashes and loaded final checkpoint metadata match the evaluation records.",
+    "Both pooled checkpoints and status files verify 300000 updates and 6400000 examples from each family; each specialist used 100000 updates and 6400000 examples.",
+    "All six model architectures are identical."
+  ],
+  "maximum_summary_statistic_absolute_difference": 8.185452315956354e-12,
+  "maximum_transition_normalization_error": 7.771561172376096e-16,
+  "maximum_recorded_causal_logit_difference": 3.2782554626464844e-06,
+  "models": {
+    "pooled_seed0": {
+      "run_id": "0d5b1fe3894b7eaca0e2ea8f5b4c5bf74f0f7724421ac33a6eec6e35bcec757a",
+      "checkpoint_sha256": "1c9407dae3aca153b60ce49b3c0b790ffc9dd3b684aaf4f9c6ee3fd49ff6691f",
+      "model_config": {
+        "vocab": 64,
+        "n_ctx": 1024,
+        "n_layer": 2,
+        "n_head": 4,
+        "d_model": 128,
+        "mlp": true,
+        "dropout": 0.0
+      },
+      "training": {
+        "step": 300000,
+        "production_steps": 300000,
+        "complete": true,
+        "reason": "completed",
+        "completed_counts": {
+          "product": 6400000,
+          "shared_base": 6400000,
+          "uniform_base": 6400000
+        },
+        "config_hash": "514a4a49d51de8b158dd9e832fcd53bb59dc07bead836c1db0b6e6b6b5e20d2e",
+        "training_elapsed_seconds": 5015.622186715002
+      },
+      "evaluation_manifest_sha256": "bc73b777e458c2238a9e0791f37e7e0110c068f9f44bceee191bc7e749e14b7f"
+    },
+    "pooled_seed1": {
+      "run_id": "314184249f76fec763e5f3f864d15b1567ff9783942c184a4201d1daf27f2104",
+      "checkpoint_sha256": "2e22fd6f4b5c8faec6568b8088908a808f1ac9e381e2ce0e63e8db5e2ba8dd7f",
+      "model_config": {
+        "vocab": 64,
+        "n_ctx": 1024,
+        "n_layer": 2,
+        "n_head": 4,
+        "d_model": 128,
+        "mlp": true,
+        "dropout": 0.0
+      },
+      "training": {
+        "step": 300000,
+        "production_steps": 300000,
+        "complete": true,
+        "reason": "completed",
+        "completed_counts": {
+          "product": 6400000,
+          "shared_base": 6400000,
+          "uniform_base": 6400000
+        },
+        "config_hash": "8ae63b5b20a3dc8bc136381a7402937116bf742dcc01d6a528311f75a58a7d52",
+        "training_elapsed_seconds": 5018.368709952003
+      },
+      "evaluation_manifest_sha256": "f47840fcbb3f964c94f25f2d8502ff1c3e9fcb52ff0859245a42034d18330873"
+    },
+    "product_specialist": {
+      "run_id": "be2c80978311105f3e23ba9f098ac3d4de6a1dfc65b6af198c97e0426be65d71",
+      "checkpoint_sha256": "29cac698253475a539a0b1bb76a47436a6eee0b0ab3d8c651a61bfe239b9b271",
+      "model_config": {
+        "vocab": 64,
+        "n_ctx": 1024,
+        "n_layer": 2,
+        "n_head": 4,
+        "d_model": 128,
+        "mlp": true,
+        "dropout": 0.0
+      },
+      "training": {
+        "step": 100000,
+        "sequences": 6400000,
+        "seed": 0
+      },
+      "evaluation_manifest_sha256": "f8285c9e0c76c9868a6035ccc5c092de8bb5a201ce3d41f7ddcb27596da39687"
+    },
+    "shared_specialist_seed0": {
+      "run_id": "ad22671df788ea4df96b214b2e285bac6bc32d520a0737e56ac263621f4b5a8d",
+      "checkpoint_sha256": "2f7d5d39ffcd02dd200d4e535835b32a58e6b14f3e19598b696fd0045e76dd27",
+      "model_config": {
+        "vocab": 64,
+        "n_ctx": 1024,
+        "n_layer": 2,
+        "n_head": 4,
+        "d_model": 128,
+        "mlp": true,
+        "dropout": 0.0
+      },
+      "training": {
+        "step": 100000,
+        "sequences": 6400000,
+        "seed": 0
+      },
+      "evaluation_manifest_sha256": "9598f3410d65f4c7b34ece017474b8aeceb2adc9cf8143383ff969d658166d71"
+    },
+    "shared_specialist_seed1": {
+      "run_id": "4f8978ff188ef10998a3868de2eff92c7514d31783c6d01ba0e1e94d12d4b9ed",
+      "checkpoint_sha256": "cfdafbfbb231f40af8dea67dc3c629ee105fa332d19b45c2dee2c6d498ed8253",
+      "model_config": {
+        "vocab": 64,
+        "n_ctx": 1024,
+        "n_layer": 2,
+        "n_head": 4,
+        "d_model": 128,
+        "mlp": true,
+        "dropout": 0.0
+      },
+      "training": {
+        "step": 100000,
+        "sequences": 6400000,
+        "seed": 1
+      },
+      "evaluation_manifest_sha256": "37026f32f2e8f263bcd71f4dee2888e898509fa5fd9769d9bff27aa034374525"
+    },
+    "uniform_specialist": {
+      "run_id": "ee1e4c7875834f387575c878ed9ee56980a1a4a558584d292da292044ec3609f",
+      "checkpoint_sha256": "6b8752b882d1be1eb51278ca0f5b58eccc8048b3fcf552467f9da6438153d53c",
+      "model_config": {
+        "vocab": 64,
+        "n_ctx": 1024,
+        "n_layer": 2,
+        "n_head": 4,
+        "d_model": 128,
+        "mlp": true,
+        "dropout": 0.0
+      },
+      "training": {
+        "step": 100000,
+        "sequences": 6400000,
+        "seed": 0
+      },
+      "evaluation_manifest_sha256": "876104cac912295b29a24f8dc55f42c8edc884202a04f9136904fac72c72ecdd"
+    }
+  },
+  "limitations": [
+    "The audit verifies saved prediction scores and metadata; it does not rerun all transformer inference.",
+    "Training-seed variability is not included in sequence standard errors; the two seeds are kept separate.",
+    "Product and uniform-base specialists each have one training seed; both pooled seeds use that same specialist.",
+    "Family-aware Bayesian and Bayesian-mixture references remain pending; pooled-minus-specialist loss is not the Bayesian family-uncertainty cost.",
+    "Equal examples per family means pooled training used three times the total examples and optimizer steps, so gains do not isolate transfer from extra training."
+  ]
+}

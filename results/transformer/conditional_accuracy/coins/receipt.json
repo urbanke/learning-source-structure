@@ -1,0 +1,12 @@
+{
+  "passed": true,
+  "script_sha256": "255e27dfe4f1bb77492161f00863ec46a7fb25236963856197a40523789c150a",
+  "outputs": {
+    "summary.json": "a7bdd81e19e99828163e9ed19cae08b8e083cf75ebf9694f55c474e64ee330b3",
+    "summary.tsv": "9def7c346cbcd072adc5594171f1cfffee143a1ea42df87b4f0f6f53a4d3ab99",
+    "conditional_coins.pdf": "2f4bf96179410e14567ec3a228586a7298ec5c212434f1f34cb594cb77dec271",
+    "conditional_coins.png": "58a42a325f4bf798934971bd0a733dfc807df41f09409c7a0d545bf7e07874a9",
+    "conditional_coins_all_settings.pdf": "dde7c67667598b10b9d4d4f0ff51ba818f50fd95e0c4796f0a3d65c11321cedf",
+    "conditional_coins_all_settings.png": "a32f26b37419c03ca6dc450ee88d62fa7cfa843b8baad5f95652280f38de7b2f"
+  }
+}

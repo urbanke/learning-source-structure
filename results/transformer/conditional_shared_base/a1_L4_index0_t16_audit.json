@@ -1,0 +1,1343 @@
+{
+  "schema": "conditional-shared-base-audit-v1",
+  "setting": {
+    "alpha": 1.0,
+    "depth": 4
+  },
+  "sequence_index": 0,
+  "time": 16,
+  "passed": true,
+  "checks": [
+    {
+      "name": "cohort:object",
+      "passed": true
+    },
+    {
+      "name": "source:object",
+      "passed": true
+    },
+    {
+      "name": "source_replay",
+      "passed": true
+    },
+    {
+      "name": "model0:d64:object",
+      "passed": true
+    },
+    {
+      "name": "model0:d64:checkpoint",
+      "passed": true
+    },
+    {
+      "name": "model0:d64:training_prior",
+      "passed": true
+    },
+    {
+      "name": "model0:d64:producer",
+      "passed": true
+    },
+    {
+      "name": "model0:d64:array_name",
+      "passed": true
+    },
+    {
+      "name": "model0:d64:array_hash",
+      "passed": true
+    },
+    {
+      "name": "model0:d64:logits",
+      "passed": true
+    },
+    {
+      "name": "model0:d64:alignment",
+      "passed": true
+    },
+    {
+      "name": "model0:d64:causal_alignment_checks",
+      "passed": true
+    },
+    {
+      "name": "model0:d64_seed1:object",
+      "passed": true
+    },
+    {
+      "name": "model0:d64_seed1:checkpoint",
+      "passed": true
+    },
+    {
+      "name": "model0:d64_seed1:training_prior",
+      "passed": true
+    },
+    {
+      "name": "model0:d64_seed1:producer",
+      "passed": true
+    },
+    {
+      "name": "model0:d64_seed1:array_name",
+      "passed": true
+    },
+    {
+      "name": "model0:d64_seed1:array_hash",
+      "passed": true
+    },
+    {
+      "name": "model0:d64_seed1:logits",
+      "passed": true
+    },
+    {
+      "name": "model0:d64_seed1:alignment",
+      "passed": true
+    },
+    {
+      "name": "model0:d64_seed1:causal_alignment_checks",
+      "passed": true
+    },
+    {
+      "name": "alpha16:object",
+      "passed": true
+    },
+    {
+      "name": "alpha16:identity",
+      "passed": true
+    },
+    {
+      "name": "alpha16:complete_code",
+      "passed": true
+    },
+    {
+      "name": "alpha16:code:eval_shared_base_surrogate.py",
+      "passed": true
+    },
+    {
+      "name": "alpha16:code:surrogate_chain_runner.py",
+      "passed": true
+    },
+    {
+      "name": "alpha16:code:shared_base_surrogate.py",
+      "passed": true
+    },
+    {
+      "name": "alpha16:code:eval_shared_base_reference.py",
+      "passed": true
+    },
+    {
+      "name": "alpha16:code:full_context_statistics.py",
+      "passed": true
+    },
+    {
+      "name": "alpha16:code:eval_shared_base_models.py",
+      "passed": true
+    },
+    {
+      "name": "alpha16:code:validate_shared_base_mcmc.py",
+      "passed": true
+    },
+    {
+      "name": "alpha16:code:stable_chain_statistics.py",
+      "passed": true
+    },
+    {
+      "name": "alpha16:code:conditional_shared_base_benchmark.py",
+      "passed": true
+    },
+    {
+      "name": "alpha16:observations",
+      "passed": true
+    },
+    {
+      "name": "alpha16:numerical_files",
+      "passed": true
+    },
+    {
+      "name": "alpha16:numerical_hash:shared_base_chain_runner.py",
+      "passed": true
+    },
+    {
+      "name": "alpha16:numerical_hash:shared_base_mcmc.py",
+      "passed": true
+    },
+    {
+      "name": "alpha16:numerical_hash:ranked_lsa.py",
+      "passed": true
+    },
+    {
+      "name": "alpha16:numerical_hash:weighted_lsa.py",
+      "passed": true
+    },
+    {
+      "name": "alpha16:numerical_hash:shared_depth.py",
+      "passed": true
+    },
+    {
+      "name": "alpha16:numerical_hash:lsa_seq.py",
+      "passed": true
+    },
+    {
+      "name": "alpha16:numerical_hash:phi_source.py",
+      "passed": true
+    },
+    {
+      "name": "alpha16:numerical_hash:source.py",
+      "passed": true
+    },
+    {
+      "name": "alpha16:numerical_hash:store/manifest.json",
+      "passed": true
+    },
+    {
+      "name": "alpha16:numerical_hash:store/anchors.json",
+      "passed": true
+    },
+    {
+      "name": "alpha16:numerical_hash:pmm/universal_tables.py",
+      "passed": true
+    },
+    {
+      "name": "alpha16:numerical_hash:pmm/production_coding.py",
+      "passed": true
+    },
+    {
+      "name": "alpha16:numerical_hash:pmm/mellin.py",
+      "passed": true
+    },
+    {
+      "name": "alpha16:numerical_hash:pmm/kernel.py",
+      "passed": true
+    },
+    {
+      "name": "alpha16:full_prior",
+      "passed": true
+    },
+    {
+      "name": "alpha16:row_grid",
+      "passed": true
+    },
+    {
+      "name": "alpha16:metadata_checksum",
+      "passed": true
+    },
+    {
+      "name": "alpha16:checkpoint_identity",
+      "passed": true
+    },
+    {
+      "name": "alpha16:complete_raw_arrays",
+      "passed": true
+    },
+    {
+      "name": "alpha16:array_checksum:depths_1",
+      "passed": true
+    },
+    {
+      "name": "alpha16:array_checksum:depths_3",
+      "passed": true
+    },
+    {
+      "name": "alpha16:array_checksum:predictions_1",
+      "passed": true
+    },
+    {
+      "name": "alpha16:array_checksum:alpha_indices_2",
+      "passed": true
+    },
+    {
+      "name": "alpha16:array_checksum:max_errors",
+      "passed": true
+    },
+    {
+      "name": "alpha16:array_checksum:burn_done",
+      "passed": true
+    },
+    {
+      "name": "alpha16:array_checksum:scalars_2",
+      "passed": true
+    },
+    {
+      "name": "alpha16:array_checksum:attempts",
+      "passed": true
+    },
+    {
+      "name": "alpha16:array_checksum:depths_0",
+      "passed": true
+    },
+    {
+      "name": "alpha16:array_checksum:predictions_2",
+      "passed": true
+    },
+    {
+      "name": "alpha16:array_checksum:scalars_0",
+      "passed": true
+    },
+    {
+      "name": "alpha16:array_checksum:depths_2",
+      "passed": true
+    },
+    {
+      "name": "alpha16:array_checksum:predictions_3",
+      "passed": true
+    },
+    {
+      "name": "alpha16:array_checksum:alpha_indices_1",
+      "passed": true
+    },
+    {
+      "name": "alpha16:array_checksum:alpha_indices_0",
+      "passed": true
+    },
+    {
+      "name": "alpha16:array_checksum:predictions_0",
+      "passed": true
+    },
+    {
+      "name": "alpha16:array_checksum:alpha_indices_3",
+      "passed": true
+    },
+    {
+      "name": "alpha16:array_checksum:scalars_3",
+      "passed": true
+    },
+    {
+      "name": "alpha16:array_checksum:scalars_1",
+      "passed": true
+    },
+    {
+      "name": "alpha16:array_checksum:accepts",
+      "passed": true
+    },
+    {
+      "name": "alpha16:raw_config",
+      "passed": true
+    },
+    {
+      "name": "alpha16:sample_shapes:0",
+      "passed": true
+    },
+    {
+      "name": "alpha16:alpha_trace:0",
+      "passed": true
+    },
+    {
+      "name": "alpha16:last_state:0",
+      "passed": true
+    },
+    {
+      "name": "alpha16:sample_shapes:1",
+      "passed": true
+    },
+    {
+      "name": "alpha16:alpha_trace:1",
+      "passed": true
+    },
+    {
+      "name": "alpha16:last_state:1",
+      "passed": true
+    },
+    {
+      "name": "alpha16:sample_shapes:2",
+      "passed": true
+    },
+    {
+      "name": "alpha16:alpha_trace:2",
+      "passed": true
+    },
+    {
+      "name": "alpha16:last_state:2",
+      "passed": true
+    },
+    {
+      "name": "alpha16:sample_shapes:3",
+      "passed": true
+    },
+    {
+      "name": "alpha16:alpha_trace:3",
+      "passed": true
+    },
+    {
+      "name": "alpha16:last_state:3",
+      "passed": true
+    },
+    {
+      "name": "alpha16:transition_counters",
+      "passed": true
+    },
+    {
+      "name": "alpha16:depth_samples",
+      "passed": true
+    },
+    {
+      "name": "alpha16:raw_summary:predictive_probs",
+      "passed": true
+    },
+    {
+      "name": "alpha16:raw_summary:mcse_probs",
+      "passed": true
+    },
+    {
+      "name": "alpha16:raw_summary:posterior_depth",
+      "passed": true
+    },
+    {
+      "name": "alpha16:raw_summary:mcse_depth",
+      "passed": true
+    },
+    {
+      "name": "alpha16:raw_summary:posterior_alpha",
+      "passed": true
+    },
+    {
+      "name": "alpha16:raw_summary:mcse_alpha",
+      "passed": true
+    },
+    {
+      "name": "alpha16:chain_mean_readback",
+      "passed": true
+    },
+    {
+      "name": "alpha16:raw_diagnostic:rhat_probs",
+      "passed": true
+    },
+    {
+      "name": "alpha16:raw_diagnostic:rhat_depth",
+      "passed": true
+    },
+    {
+      "name": "alpha16:raw_diagnostic:rhat_alpha_and_loglik",
+      "passed": true
+    },
+    {
+      "name": "alpha16:raw_diagnostic:ess_probs",
+      "passed": true
+    },
+    {
+      "name": "alpha16:normalization_record",
+      "passed": true
+    },
+    {
+      "name": "alpha16:moments_hash",
+      "passed": true
+    },
+    {
+      "name": "alpha16:moments_keys",
+      "passed": true
+    },
+    {
+      "name": "alpha16:moments:mean",
+      "passed": true
+    },
+    {
+      "name": "alpha16:moments:mcse_probs",
+      "passed": true
+    },
+    {
+      "name": "alpha16:moments:cov_batch",
+      "passed": true
+    },
+    {
+      "name": "alpha16:moments:cov_chain",
+      "passed": true
+    },
+    {
+      "name": "alpha16:moments:chain_means",
+      "passed": true
+    },
+    {
+      "name": "alpha16:moments:batch_length",
+      "passed": true
+    },
+    {
+      "name": "alpha16:moments:batches_per_chain",
+      "passed": true
+    },
+    {
+      "name": "alpha16:moments:chains",
+      "passed": true
+    },
+    {
+      "name": "alpha16:moments:draws",
+      "passed": true
+    },
+    {
+      "name": "alpha16:gates_readback",
+      "passed": true
+    },
+    {
+      "name": "alpha16:split_rhat_below_1_05",
+      "passed": true
+    },
+    {
+      "name": "alpha16:probability_ess_at_least_200",
+      "passed": true
+    },
+    {
+      "name": "alpha16:maximum_probability_mcse_at_most_0_005",
+      "passed": true
+    },
+    {
+      "name": "alpha16:raw_normalization",
+      "passed": true
+    },
+    {
+      "name": "alpha16:four_fine_grid_checks",
+      "passed": true
+    },
+    {
+      "name": "alpha16:fine_grid_gate0",
+      "passed": true
+    },
+    {
+      "name": "alpha16:fine_grid0",
+      "passed": true
+    },
+    {
+      "name": "alpha16:fine_grid_gate1",
+      "passed": true
+    },
+    {
+      "name": "alpha16:fine_grid1",
+      "passed": true
+    },
+    {
+      "name": "alpha16:fine_grid_gate2",
+      "passed": true
+    },
+    {
+      "name": "alpha16:fine_grid2",
+      "passed": true
+    },
+    {
+      "name": "alpha16:fine_grid_gate3",
+      "passed": true
+    },
+    {
+      "name": "alpha16:fine_grid3",
+      "passed": true
+    },
+    {
+      "name": "alpha16:metric_readback:d64:kl_bits",
+      "passed": true
+    },
+    {
+      "name": "alpha16:metric_readback:d64:true_loss_gap_bits",
+      "passed": true
+    },
+    {
+      "name": "alpha16:metric_readback:d64:kl_mcse_bits",
+      "passed": true
+    },
+    {
+      "name": "alpha16:metric_readback:d64:gap_mcse_bits",
+      "passed": true
+    },
+    {
+      "name": "alpha16:scalar_precision:d64",
+      "passed": true
+    },
+    {
+      "name": "alpha16:metric_readback:d64_seed1:kl_bits",
+      "passed": true
+    },
+    {
+      "name": "alpha16:metric_readback:d64_seed1:true_loss_gap_bits",
+      "passed": true
+    },
+    {
+      "name": "alpha16:metric_readback:d64_seed1:kl_mcse_bits",
+      "passed": true
+    },
+    {
+      "name": "alpha16:metric_readback:d64_seed1:gap_mcse_bits",
+      "passed": true
+    },
+    {
+      "name": "alpha16:scalar_precision:d64_seed1",
+      "passed": true
+    },
+    {
+      "name": "alpha32:object",
+      "passed": true
+    },
+    {
+      "name": "alpha32:identity",
+      "passed": true
+    },
+    {
+      "name": "alpha32:complete_code",
+      "passed": true
+    },
+    {
+      "name": "alpha32:code:eval_shared_base_surrogate.py",
+      "passed": true
+    },
+    {
+      "name": "alpha32:code:surrogate_chain_runner.py",
+      "passed": true
+    },
+    {
+      "name": "alpha32:code:shared_base_surrogate.py",
+      "passed": true
+    },
+    {
+      "name": "alpha32:code:eval_shared_base_reference.py",
+      "passed": true
+    },
+    {
+      "name": "alpha32:code:full_context_statistics.py",
+      "passed": true
+    },
+    {
+      "name": "alpha32:code:eval_shared_base_models.py",
+      "passed": true
+    },
+    {
+      "name": "alpha32:code:validate_shared_base_mcmc.py",
+      "passed": true
+    },
+    {
+      "name": "alpha32:code:stable_chain_statistics.py",
+      "passed": true
+    },
+    {
+      "name": "alpha32:code:conditional_shared_base_benchmark.py",
+      "passed": true
+    },
+    {
+      "name": "alpha32:observations",
+      "passed": true
+    },
+    {
+      "name": "alpha32:numerical_files",
+      "passed": true
+    },
+    {
+      "name": "alpha32:numerical_hash:shared_base_chain_runner.py",
+      "passed": true
+    },
+    {
+      "name": "alpha32:numerical_hash:shared_base_mcmc.py",
+      "passed": true
+    },
+    {
+      "name": "alpha32:numerical_hash:ranked_lsa.py",
+      "passed": true
+    },
+    {
+      "name": "alpha32:numerical_hash:weighted_lsa.py",
+      "passed": true
+    },
+    {
+      "name": "alpha32:numerical_hash:shared_depth.py",
+      "passed": true
+    },
+    {
+      "name": "alpha32:numerical_hash:lsa_seq.py",
+      "passed": true
+    },
+    {
+      "name": "alpha32:numerical_hash:phi_source.py",
+      "passed": true
+    },
+    {
+      "name": "alpha32:numerical_hash:source.py",
+      "passed": true
+    },
+    {
+      "name": "alpha32:numerical_hash:store/manifest.json",
+      "passed": true
+    },
+    {
+      "name": "alpha32:numerical_hash:store/anchors.json",
+      "passed": true
+    },
+    {
+      "name": "alpha32:numerical_hash:pmm/universal_tables.py",
+      "passed": true
+    },
+    {
+      "name": "alpha32:numerical_hash:pmm/production_coding.py",
+      "passed": true
+    },
+    {
+      "name": "alpha32:numerical_hash:pmm/mellin.py",
+      "passed": true
+    },
+    {
+      "name": "alpha32:numerical_hash:pmm/kernel.py",
+      "passed": true
+    },
+    {
+      "name": "alpha32:full_prior",
+      "passed": true
+    },
+    {
+      "name": "alpha32:row_grid",
+      "passed": true
+    },
+    {
+      "name": "alpha32:metadata_checksum",
+      "passed": true
+    },
+    {
+      "name": "alpha32:checkpoint_identity",
+      "passed": true
+    },
+    {
+      "name": "alpha32:complete_raw_arrays",
+      "passed": true
+    },
+    {
+      "name": "alpha32:array_checksum:depths_1",
+      "passed": true
+    },
+    {
+      "name": "alpha32:array_checksum:depths_3",
+      "passed": true
+    },
+    {
+      "name": "alpha32:array_checksum:predictions_1",
+      "passed": true
+    },
+    {
+      "name": "alpha32:array_checksum:alpha_indices_2",
+      "passed": true
+    },
+    {
+      "name": "alpha32:array_checksum:max_errors",
+      "passed": true
+    },
+    {
+      "name": "alpha32:array_checksum:burn_done",
+      "passed": true
+    },
+    {
+      "name": "alpha32:array_checksum:scalars_2",
+      "passed": true
+    },
+    {
+      "name": "alpha32:array_checksum:attempts",
+      "passed": true
+    },
+    {
+      "name": "alpha32:array_checksum:depths_0",
+      "passed": true
+    },
+    {
+      "name": "alpha32:array_checksum:predictions_2",
+      "passed": true
+    },
+    {
+      "name": "alpha32:array_checksum:scalars_0",
+      "passed": true
+    },
+    {
+      "name": "alpha32:array_checksum:depths_2",
+      "passed": true
+    },
+    {
+      "name": "alpha32:array_checksum:predictions_3",
+      "passed": true
+    },
+    {
+      "name": "alpha32:array_checksum:alpha_indices_1",
+      "passed": true
+    },
+    {
+      "name": "alpha32:array_checksum:alpha_indices_0",
+      "passed": true
+    },
+    {
+      "name": "alpha32:array_checksum:predictions_0",
+      "passed": true
+    },
+    {
+      "name": "alpha32:array_checksum:alpha_indices_3",
+      "passed": true
+    },
+    {
+      "name": "alpha32:array_checksum:scalars_3",
+      "passed": true
+    },
+    {
+      "name": "alpha32:array_checksum:scalars_1",
+      "passed": true
+    },
+    {
+      "name": "alpha32:array_checksum:accepts",
+      "passed": true
+    },
+    {
+      "name": "alpha32:raw_config",
+      "passed": true
+    },
+    {
+      "name": "alpha32:sample_shapes:0",
+      "passed": true
+    },
+    {
+      "name": "alpha32:alpha_trace:0",
+      "passed": true
+    },
+    {
+      "name": "alpha32:last_state:0",
+      "passed": true
+    },
+    {
+      "name": "alpha32:sample_shapes:1",
+      "passed": true
+    },
+    {
+      "name": "alpha32:alpha_trace:1",
+      "passed": true
+    },
+    {
+      "name": "alpha32:last_state:1",
+      "passed": true
+    },
+    {
+      "name": "alpha32:sample_shapes:2",
+      "passed": true
+    },
+    {
+      "name": "alpha32:alpha_trace:2",
+      "passed": true
+    },
+    {
+      "name": "alpha32:last_state:2",
+      "passed": true
+    },
+    {
+      "name": "alpha32:sample_shapes:3",
+      "passed": true
+    },
+    {
+      "name": "alpha32:alpha_trace:3",
+      "passed": true
+    },
+    {
+      "name": "alpha32:last_state:3",
+      "passed": true
+    },
+    {
+      "name": "alpha32:transition_counters",
+      "passed": true
+    },
+    {
+      "name": "alpha32:depth_samples",
+      "passed": true
+    },
+    {
+      "name": "alpha32:raw_summary:predictive_probs",
+      "passed": true
+    },
+    {
+      "name": "alpha32:raw_summary:mcse_probs",
+      "passed": true
+    },
+    {
+      "name": "alpha32:raw_summary:posterior_depth",
+      "passed": true
+    },
+    {
+      "name": "alpha32:raw_summary:mcse_depth",
+      "passed": true
+    },
+    {
+      "name": "alpha32:raw_summary:posterior_alpha",
+      "passed": true
+    },
+    {
+      "name": "alpha32:raw_summary:mcse_alpha",
+      "passed": true
+    },
+    {
+      "name": "alpha32:chain_mean_readback",
+      "passed": true
+    },
+    {
+      "name": "alpha32:raw_diagnostic:rhat_probs",
+      "passed": true
+    },
+    {
+      "name": "alpha32:raw_diagnostic:rhat_depth",
+      "passed": true
+    },
+    {
+      "name": "alpha32:raw_diagnostic:rhat_alpha_and_loglik",
+      "passed": true
+    },
+    {
+      "name": "alpha32:raw_diagnostic:ess_probs",
+      "passed": true
+    },
+    {
+      "name": "alpha32:normalization_record",
+      "passed": true
+    },
+    {
+      "name": "alpha32:moments_hash",
+      "passed": true
+    },
+    {
+      "name": "alpha32:moments_keys",
+      "passed": true
+    },
+    {
+      "name": "alpha32:moments:mean",
+      "passed": true
+    },
+    {
+      "name": "alpha32:moments:mcse_probs",
+      "passed": true
+    },
+    {
+      "name": "alpha32:moments:cov_batch",
+      "passed": true
+    },
+    {
+      "name": "alpha32:moments:cov_chain",
+      "passed": true
+    },
+    {
+      "name": "alpha32:moments:chain_means",
+      "passed": true
+    },
+    {
+      "name": "alpha32:moments:batch_length",
+      "passed": true
+    },
+    {
+      "name": "alpha32:moments:batches_per_chain",
+      "passed": true
+    },
+    {
+      "name": "alpha32:moments:chains",
+      "passed": true
+    },
+    {
+      "name": "alpha32:moments:draws",
+      "passed": true
+    },
+    {
+      "name": "alpha32:gates_readback",
+      "passed": true
+    },
+    {
+      "name": "alpha32:split_rhat_below_1_05",
+      "passed": true
+    },
+    {
+      "name": "alpha32:probability_ess_at_least_200",
+      "passed": true
+    },
+    {
+      "name": "alpha32:maximum_probability_mcse_at_most_0_005",
+      "passed": true
+    },
+    {
+      "name": "alpha32:raw_normalization",
+      "passed": true
+    },
+    {
+      "name": "alpha32:four_fine_grid_checks",
+      "passed": true
+    },
+    {
+      "name": "alpha32:fine_grid_gate0",
+      "passed": true
+    },
+    {
+      "name": "alpha32:fine_grid0",
+      "passed": true
+    },
+    {
+      "name": "alpha32:fine_grid_gate1",
+      "passed": true
+    },
+    {
+      "name": "alpha32:fine_grid1",
+      "passed": true
+    },
+    {
+      "name": "alpha32:fine_grid_gate2",
+      "passed": true
+    },
+    {
+      "name": "alpha32:fine_grid2",
+      "passed": true
+    },
+    {
+      "name": "alpha32:fine_grid_gate3",
+      "passed": true
+    },
+    {
+      "name": "alpha32:fine_grid3",
+      "passed": true
+    },
+    {
+      "name": "alpha32:metric_readback:d64:kl_bits",
+      "passed": true
+    },
+    {
+      "name": "alpha32:metric_readback:d64:true_loss_gap_bits",
+      "passed": true
+    },
+    {
+      "name": "alpha32:metric_readback:d64:kl_mcse_bits",
+      "passed": true
+    },
+    {
+      "name": "alpha32:metric_readback:d64:gap_mcse_bits",
+      "passed": true
+    },
+    {
+      "name": "alpha32:scalar_precision:d64",
+      "passed": true
+    },
+    {
+      "name": "alpha32:metric_readback:d64_seed1:kl_bits",
+      "passed": true
+    },
+    {
+      "name": "alpha32:metric_readback:d64_seed1:true_loss_gap_bits",
+      "passed": true
+    },
+    {
+      "name": "alpha32:metric_readback:d64_seed1:kl_mcse_bits",
+      "passed": true
+    },
+    {
+      "name": "alpha32:metric_readback:d64_seed1:gap_mcse_bits",
+      "passed": true
+    },
+    {
+      "name": "alpha32:scalar_precision:d64_seed1",
+      "passed": true
+    },
+    {
+      "name": "independent_seeds",
+      "passed": true
+    },
+    {
+      "name": "probability_refinement",
+      "passed": true
+    },
+    {
+      "name": "metric_refinement:d64",
+      "passed": true
+    },
+    {
+      "name": "metric_refinement:d64_seed1",
+      "passed": true
+    }
+  ],
+  "inputs": {
+    "cohort": {
+      "path": "/Users/ruediger/Projects/layered_architectures/output/conditional_shared_base_benchmark_2026-09-15/a1_L4/cohort.json",
+      "sha256": "18545be220231b965caeb7e803e60988580a592ca462b01d3a6094546d9b789a"
+    },
+    "source": {
+      "path": "/Users/ruediger/Projects/layered_architectures/output/conditional_shared_base_benchmark_2026-09-15/a1_L4/data/seq_000000.json",
+      "sha256": "024f7302b29df08612d7f7473db1e29e6ae37413be101370daabc34558f551d8"
+    },
+    "model0:d64": {
+      "path": "/Users/ruediger/Projects/layered_architectures/output/conditional_shared_base_benchmark_2026-09-15/a1_L4/models/d64/seq_000000.json",
+      "sha256": "3f7731d07564222e55ef6e4b5e06c8a294c700952a602f85fd82a0a687f5b1f4"
+    },
+    "model0:d64:arrays": {
+      "path": "/Users/ruediger/Projects/layered_architectures/output/conditional_shared_base_benchmark_2026-09-15/a1_L4/models/d64/seq_000000.npz",
+      "sha256": "8867017a87c71829c9355a2a0b32dc2fcd1d4e745153023aa5d750a6c2f5748f"
+    },
+    "model0:d64_seed1": {
+      "path": "/Users/ruediger/Projects/layered_architectures/output/conditional_shared_base_benchmark_2026-09-15/a1_L4/models/d64_seed1/seq_000000.json",
+      "sha256": "3e156f7dc27fa614250ea07b52c24c37fafaa93d4d285d901be524773eaa7178"
+    },
+    "model0:d64_seed1:arrays": {
+      "path": "/Users/ruediger/Projects/layered_architectures/output/conditional_shared_base_benchmark_2026-09-15/a1_L4/models/d64_seed1/seq_000000.npz",
+      "sha256": "faba8e5aac4578a8e94184d04a10c78bd101d3ee8a51a9c28511ac0159a6b888"
+    },
+    "alpha16": {
+      "path": "/Users/ruediger/Projects/layered_architectures/output/conditional_shared_base_benchmark_2026-09-15/a1_L4/refs/alpha16/seq_000000_t0016.json",
+      "sha256": "f32e876fda328f11f9ccab3b78153f532c0bd04e72becef015a33238307a7868"
+    },
+    "alpha16:checkpoint": {
+      "path": "/Users/ruediger/Projects/layered_architectures/output/conditional_shared_base_benchmark_2026-09-15/a1_L4/chains/alpha16/seq_000000_t0016.npz",
+      "sha256": "731018d3957867f0f6399b9a29365581b168df98fa529eb6b372743798de81fb"
+    },
+    "alpha32": {
+      "path": "/Users/ruediger/Projects/layered_architectures/output/conditional_shared_base_benchmark_2026-09-15/a1_L4/refs/alpha32/seq_000000_t0016.json",
+      "sha256": "ae8213315e11147e73719232de2a53ed6d370dad3ae18278adf1018c73b79a5e"
+    },
+    "alpha32:checkpoint": {
+      "path": "/Users/ruediger/Projects/layered_architectures/output/conditional_shared_base_benchmark_2026-09-15/a1_L4/chains/alpha32/seq_000000_t0016.npz",
+      "sha256": "514690699af0b1bf7eb3c9804d01b75acf0525259f6dd41578d60d9f92de1a24"
+    }
+  },
+  "references": [
+    {
+      "order": 16,
+      "draws_per_chain": 16384,
+      "seconds": 64.887859582901,
+      "maximum_probability_mcse": 0.000719582894283328,
+      "minimum_probability_ess": 1828.912587771209,
+      "local_validation_passed": true,
+      "model_metrics": {
+        "d64": {
+          "tv": 0.05875698497383422,
+          "kl_bits": 0.018176686213498307,
+          "true_loss_gap_bits": 0.04213055222494725,
+          "kl_mcse_bits": 0.00044470283785906197,
+          "gap_mcse_bits": 0.0030116083047914345,
+          "kl_noise_scale_bits": 6.203399202698071e-05,
+          "bayes_true_cross_entropy_bits": 6.129271787497006,
+          "transformer_true_cross_entropy_bits": 6.171402339721954,
+          "oracle_entropy_bits": 4.496078247996641,
+          "numerical_tolerance_bits": 0.0033333333333333335,
+          "metric_precision_passed": true
+        },
+        "d64_seed1": {
+          "tv": 0.05560136516799179,
+          "kl_bits": 0.013578441135074507,
+          "true_loss_gap_bits": 0.08512009691218139,
+          "kl_mcse_bits": 0.0003356286397411451,
+          "gap_mcse_bits": 0.0030116083047914345,
+          "kl_noise_scale_bits": 6.203399202698071e-05,
+          "bayes_true_cross_entropy_bits": 6.129271787497006,
+          "transformer_true_cross_entropy_bits": 6.2143918844091885,
+          "oracle_entropy_bits": 4.496078247996641,
+          "numerical_tolerance_bits": 0.0033333333333333335,
+          "metric_precision_passed": true
+        }
+      }
+    },
+    {
+      "order": 32,
+      "draws_per_chain": 16384,
+      "seconds": 68.87362045899499,
+      "maximum_probability_mcse": 0.0006977653675967329,
+      "minimum_probability_ess": 1697.656677250485,
+      "local_validation_passed": true,
+      "model_metrics": {
+        "d64": {
+          "tv": 0.05805238242548817,
+          "kl_bits": 0.01812985817454605,
+          "true_loss_gap_bits": 0.04008241325960959,
+          "kl_mcse_bits": 0.0005299920520004031,
+          "gap_mcse_bits": 0.0024436916496366487,
+          "kl_noise_scale_bits": 6.342340441246343e-05,
+          "bayes_true_cross_entropy_bits": 6.131319926462345,
+          "transformer_true_cross_entropy_bits": 6.171402339721954,
+          "oracle_entropy_bits": 4.496078247996641,
+          "numerical_tolerance_bits": 0.0033333333333333335,
+          "metric_precision_passed": true
+        },
+        "d64_seed1": {
+          "tv": 0.0552092026356425,
+          "kl_bits": 0.01343125254882427,
+          "true_loss_gap_bits": 0.08307195794684373,
+          "kl_mcse_bits": 0.00033884842044407733,
+          "gap_mcse_bits": 0.0024436916496366487,
+          "kl_noise_scale_bits": 6.342340441246343e-05,
+          "bayes_true_cross_entropy_bits": 6.131319926462345,
+          "transformer_true_cross_entropy_bits": 6.2143918844091885,
+          "oracle_entropy_bits": 4.496078247996641,
+          "numerical_tolerance_bits": 0.0033333333333333335,
+          "metric_precision_passed": true
+        }
+      }
+    }
+  ],
+  "probability_refinement": {
+    "passed": true,
+    "checks": {
+      "max_absolute_difference_below_0_01": true,
+      "every_coordinate_within_five_mcse_plus_0_0002": true
+    },
+    "max_absolute_difference": 0.0014050069158347278,
+    "total_variation": 0.0021882176078602544,
+    "max_combined_mcse": 0.0010023352981725104,
+    "absolute_difference": [
+      7.319136846074825e-08,
+      7.319136846074825e-08,
+      7.319136846074825e-08,
+      7.319136846074825e-08,
+      0.00013844792672305928,
+      7.319136846074825e-08,
+      7.319136846074825e-08,
+      7.319136846074825e-08,
+      7.319136846074825e-08,
+      0.0014050069158347278,
+      7.319136846074825e-08,
+      7.319136846074825e-08,
+      7.319136846074825e-08,
+      7.319136846074825e-08,
+      0.0008723700361065942,
+      6.023759664698647e-05,
+      7.319136846074825e-08,
+      7.319136846074825e-08,
+      7.319136846074825e-08,
+      7.319136846074825e-08,
+      7.319136846074825e-08,
+      7.319136846074825e-08,
+      0.00011662274356773542,
+      0.0001736301858516892,
+      7.319136846074825e-08,
+      7.319136846074825e-08,
+      7.319136846074825e-08,
+      7.319136846074825e-08,
+      7.319136846074825e-08,
+      7.319136846074825e-08,
+      5.0636659921204225e-05,
+      7.319136846074825e-08,
+      7.319136846074825e-08,
+      7.319136846074825e-08,
+      7.319136846074825e-08,
+      0.0005379661592194163,
+      7.319136846074825e-08,
+      7.319136846074825e-08,
+      0.0002891755812702186,
+      7.319136846074825e-08,
+      7.319136846074825e-08,
+      7.319136846074825e-08,
+      7.319136846074825e-08,
+      7.319136846074825e-08,
+      7.319136846074825e-08,
+      0.0002452360752220571,
+      7.319136846074825e-08,
+      7.319136846074825e-08,
+      7.319136846074825e-08,
+      7.319136846074825e-08,
+      7.319136846074825e-08,
+      7.319136846074825e-08,
+      7.319136846074825e-08,
+      3.6198084876239156e-05,
+      7.319136846074825e-08,
+      7.319136846074825e-08,
+      7.319136846074825e-08,
+      7.319136846074825e-08,
+      9.963450762277837e-05,
+      7.319136846074825e-08,
+      0.00019446765303278088,
+      7.319136846074825e-08,
+      7.319136846074825e-08,
+      0.00015314552140198445
+    ],
+    "tolerance": [
+      0.00038703267585569806,
+      0.00038703267585569806,
+      0.00038703267585569806,
+      0.00038703267585569806,
+      0.0024328805502553123,
+      0.00038703267585569806,
+      0.00038703267585569806,
+      0.00038703267585569806,
+      0.00038703267585569806,
+      0.0038533978042569277,
+      0.00038703267585569806,
+      0.00038703267585569806,
+      0.00038703267585569806,
+      0.00038703267585569806,
+      0.0025463938233852247,
+      0.002597003422779162,
+      0.00038703267585569806,
+      0.00038703267585569806,
+      0.00038703267585569806,
+      0.00038703267585569806,
+      0.00038703267585569806,
+      0.00038703267585569806,
+      0.002570540847549399,
+      0.0024888411926124467,
+      0.00038703267585569806,
+      0.00038703267585569806,
+      0.00038703267585569806,
+      0.00038703267585569806,
+      0.00038703267585569806,
+      0.00038703267585569806,
+      0.002453573429917347,
+      0.00038703267585569806,
+      0.00038703267585569806,
+      0.00038703267585569806,
+      0.00038703267585569806,
+      0.00265788690007178,
+      0.00038703267585569806,
+      0.00038703267585569806,
+      0.0025695184030876074,
+      0.00038703267585569806,
+      0.00038703267585569806,
+      0.00038703267585569806,
+      0.00038703267585569806,
+      0.00038703267585569806,
+      0.00038703267585569806,
+      0.003972380034911169,
+      0.00038703267585569806,
+      0.00038703267585569806,
+      0.00038703267585569806,
+      0.00038703267585569806,
+      0.00038703267585569806,
+      0.00038703267585569806,
+      0.00038703267585569806,
+      0.0025781226397483177,
+      0.00038703267585569806,
+      0.00038703267585569806,
+      0.00038703267585569806,
+      0.00038703267585569806,
+      0.005211676490862551,
+      0.00038703267585569806,
+      0.0027712636809664394,
+      0.00038703267585569806,
+      0.00038703267585569806,
+      0.0022058163510814575
+    ]
+  },
+  "metric_refinement": {
+    "d64": {
+      "passed": true,
+      "checks": {
+        "kl_numerical_precision": true,
+        "kl_refinement_resolution": true,
+        "kl_refinement_mcse": true,
+        "gap_numerical_precision": true,
+        "gap_refinement_resolution": true,
+        "gap_refinement_mcse": true
+      },
+      "differences": {
+        "kl": {
+          "absolute_difference_bits": 4.6828038952256845e-05,
+          "combined_mcse_bits": 0.0006918469405753711,
+          "five_mcse_allowance_bits": 0.0035592347028768558,
+          "resolution_limit_bits": 0.0033333333333333335
+        },
+        "gap": {
+          "absolute_difference_bits": 0.002048138965337662,
+          "combined_mcse_bits": 0.003878326115735063,
+          "five_mcse_allowance_bits": 0.019491630578675315,
+          "resolution_limit_bits": 0.0033333333333333335
+        }
+      }
+    },
+    "d64_seed1": {
+      "passed": true,
+      "checks": {
+        "kl_numerical_precision": true,
+        "kl_refinement_resolution": true,
+        "kl_refinement_mcse": true,
+        "gap_numerical_precision": true,
+        "gap_refinement_resolution": true,
+        "gap_refinement_mcse": true
+      },
+      "differences": {
+        "kl": {
+          "absolute_difference_bits": 0.00014718858625023708,
+          "combined_mcse_bits": 0.00047693273724073245,
+          "five_mcse_allowance_bits": 0.002484663686203662,
+          "resolution_limit_bits": 0.0033333333333333335
+        },
+        "gap": {
+          "absolute_difference_bits": 0.002048138965337662,
+          "combined_mcse_bits": 0.003878326115735063,
+          "five_mcse_allowance_bits": 0.019491630578675315,
+          "resolution_limit_bits": 0.0033333333333333335
+        }
+      }
+    }
+  },
+  "interpretation": "Single declared computational benchmark. No population average; no selected-subset mean."
+}

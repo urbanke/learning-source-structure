@@ -1,0 +1,105 @@
+{
+  "schema": "natural-copier-depth-figures-v1",
+  "passed": true,
+  "inputs": {
+    "passed": true,
+    "summary": {
+      "path": "results/transformer/copier_time/summary.json",
+      "sha256": "b409276fd06183868f8e80d09cc3c133dc084e1b571e64afa04859a56ab96d1c"
+    },
+    "table": {
+      "path": "results/transformer/copier_time/summary.tsv",
+      "sha256": "5a069f8b08fa355b1872f8ee813a72b1887aad9700ce7bff4dfdb66d7242b476"
+    },
+    "table_check": {
+      "rows": 3575,
+      "maximum_absolute_error": 0.0
+    },
+    "audited_producer": {
+      "path": "code/scripts/copier_time_figure.py",
+      "sha256": "ac81fe1029c1dd7d2955d9e39485c61b4967791ed3ab8fb9da690c057ca0b1f8"
+    },
+    "spec_id": "74b73007cac6a28764cbdc0348e4692c1c250bf5040fa624a13b061a6dda1d24",
+    "n_sequences": 1024,
+    "source_depth_counts": {
+      "0": 112,
+      "1": 101,
+      "2": 127,
+      "3": 111,
+      "4": 115,
+      "5": 96,
+      "6": 118,
+      "7": 125,
+      "8": 119
+    },
+    "prefix_count": 1024,
+    "numerical_validation": {
+      "path": "results/transformer/copier_time/numerical_validation.json",
+      "sha256": "e318c59421331ccd44daeeec90db18ea00ed7676528f5c66287a13d33d44f633",
+      "passed": true,
+      "matched_production_indices": [
+        0,
+        7
+      ],
+      "limitations": [
+        "Two source-selected finite paths, not all possible count profiles.",
+        "Wider bounds and a half-cell phase shift test the quadrature; all grids share the same sealed table approximation.",
+        "This validates the Bayes/source numerics, not transformer behavior or a causal timing conclusion."
+      ]
+    }
+  },
+  "script": {
+    "path": "code/scripts/copier_depth_figure.py",
+    "sha256": "eaf58e34c8194ee5dc895a0960d971d8e0077f97d6abff822ef5fbb30a5de32a"
+  },
+  "artifacts": {
+    "by_depth.pdf": {
+      "path": "results/transformer/copier_time/by_depth.pdf",
+      "sha256": "9b8c52d70ee628204d938633282a5b3e22afb3d5cfab24c900240563210eaf7f"
+    },
+    "by_depth.png": {
+      "path": "results/transformer/copier_time/by_depth.png",
+      "sha256": "c074fc80adfd824c4453ad562a4c411486c73849634a24556f583c734db4634f"
+    },
+    "all_depths.pdf": {
+      "path": "results/transformer/copier_time/all_depths.pdf",
+      "sha256": "eada15a0445eacc4a145c085a599905d9dcf911fd240d62a7b715c523b24e028"
+    },
+    "all_depths.png": {
+      "path": "results/transformer/copier_time/all_depths.png",
+      "sha256": "be02675613b9a96f288b1bf4ce6d1ff3a9e4e17956cd86d916ea6e2393c04b48"
+    }
+  },
+  "main_depths": [
+    0,
+    1,
+    4,
+    8
+  ],
+  "main_predictors": [
+    "intact",
+    "bayes"
+  ],
+  "appendix_depths": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8
+  ],
+  "appendix_predictors": [
+    "intact",
+    "bayes",
+    "copier_deleted"
+  ],
+  "observable": "Probability of previously observed successors of the current token minus the uniform probability of that same set; values are multiplied by 100 to give percentage points.",
+  "uncertainty": "Pointwise 95% Student-t confidence intervals, using source-level standard errors from the independently audited complete cohort.",
+  "conditioning": "Realized source depth only selects reported sequences; Bayes retains its uniform shared-depth prior 0..8 in every panel.",
+  "averaging": "All histories in each depth group, including empty successor sets. No probability repair, smoothing, selected threshold, or new prediction.",
+  "main_encoding": "Color gives source depth; solid gives transformer and dashed gives informed Bayes. Exactly eight mean curves on one axis.",
+  "appendix_encoding": "All nine depth groups; blue transformer, dashed orange Bayes, green copier-deleted. Vertical scales vary by panel."
+}

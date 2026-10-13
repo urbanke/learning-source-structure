@@ -1,0 +1,30 @@
+{
+  "schema": "larger-transformer-release-v1",
+  "passed": true,
+  "files": {
+    "curves.npz": "a5345d3a0e59c7a0a9921077b786d87113d5c990e32b19f829fa792c3b3397a1",
+    "provenance.json.gz": "a26b3e8c27bd0bad9181c56cea969765a7314d5ae442e16df8d691abe6730e69"
+  },
+  "seeds": [
+    0,
+    1
+  ],
+  "architecture": {
+    "layers": 4,
+    "width": 256,
+    "heads": 8,
+    "parameters": 3454464
+  },
+  "training": {
+    "pooled_updates": 300000,
+    "pooled_sequences": 19200000,
+    "specialist_updates": 100000,
+    "specialist_sequences": 6400000
+  },
+  "cohorts": {
+    "product": 1024,
+    "uniform_base": 1024,
+    "pooled": 3072
+  },
+  "uncertainty": "Independent complete test sequences; paired differences, stratified across three families for pooled; training runs never pooled."
+}

@@ -1,0 +1,323 @@
+{
+  "schema": "shared-base-scaling-independent-audit-v1",
+  "passed": true,
+  "summary_sha256": "1e4e35cb01c44c92b3efa23bdf6f16e5164343aaf2659cb7b46abab9bb57fe32",
+  "plan_sha256": "28d3af403a7972ed30877ce2afb2201509c052cac4202c0b4485dea677d37202",
+  "n_sequences_per_depth": 256,
+  "depths": [
+    0,
+    1,
+    4,
+    8
+  ],
+  "times": [
+    1,
+    4,
+    16,
+    64,
+    256,
+    1024
+  ],
+  "seed_order": [
+    0,
+    1
+  ],
+  "model_records_recomputed": 2048,
+  "summary_rows": 48,
+  "max_summary_difference_bits": 4.440892098500626e-16,
+  "max_raw_kl_difference_bits": 2.6645352591003757e-15,
+  "max_logits_probability_difference": 7.771561172376096e-16,
+  "paired_scores": [
+    {
+      "depth": 0,
+      "source_path": "/Users/ruediger/Projects/layered_architectures/output/shared_base_scaling_evaluation_2026-09-17/a1_L0/paired_scores.npz",
+      "filename": "paired_scores_L0.npz",
+      "sha256": "2d629d9bf5488e1d626545d13255cc39cf02e3019c7b7ed3bce754a11411d791"
+    },
+    {
+      "depth": 1,
+      "source_path": "/Users/ruediger/Projects/layered_architectures/output/shared_base_scaling_evaluation_2026-09-17/a1_L1/paired_scores.npz",
+      "filename": "paired_scores_L1.npz",
+      "sha256": "f270ae14fa2bfd6b0e35642f033d51906a4a7bea52ea30a1b26571575063e148"
+    },
+    {
+      "depth": 4,
+      "source_path": "/Users/ruediger/Projects/layered_architectures/output/shared_base_scaling_evaluation_2026-09-17/a1_L4/paired_scores.npz",
+      "filename": "paired_scores_L4.npz",
+      "sha256": "85689230475cffd2d39617244c3f96c793ff30c6e875add4247aef597b035539"
+    },
+    {
+      "depth": 8,
+      "source_path": "/Users/ruediger/Projects/layered_architectures/output/shared_base_scaling_evaluation_2026-09-17/a1_L8/paired_scores.npz",
+      "filename": "paired_scores_L8.npz",
+      "sha256": "5846e5ad7ac2c16b7795a447fbdec02376be20d0ef2df31a936b7d4297786546"
+    }
+  ],
+  "training_metadata": [
+    {
+      "seed": 0,
+      "source_path": "/Users/ruediger/Projects/layered_architectures/output/shared_base_scaling_download_2026-09-17/seed0/config.json",
+      "filename": "training_seed0/config.json",
+      "sha256": "47584db02896871f731f99a9a93b4ba7041ba97f4cb942d8b385056af6cbe572"
+    },
+    {
+      "seed": 0,
+      "source_path": "/Users/ruediger/Projects/layered_architectures/output/shared_base_scaling_download_2026-09-17/seed0/status.json",
+      "filename": "training_seed0/status.json",
+      "sha256": "3e15184f12bc1477f7d9b86cd546529d6823c45c5c8c5cff8923605d47ae2d93"
+    },
+    {
+      "seed": 0,
+      "source_path": "/Users/ruediger/Projects/layered_architectures/output/shared_base_scaling_download_2026-09-17/seed0/scaling_runtime.json",
+      "filename": "training_seed0/scaling_runtime.json",
+      "sha256": "4d5e4e91a408a2f076a9d49d6500d59fd8ab21ce8b69e38405c400c8b6a06aba"
+    },
+    {
+      "seed": 1,
+      "source_path": "/Users/ruediger/Projects/layered_architectures/output/shared_base_scaling_download_2026-09-17/seed1/config.json",
+      "filename": "training_seed1/config.json",
+      "sha256": "c447d0485412d797f3660f2bb9e55e623d8d18a14229fcfa209e8e7ef1489305"
+    },
+    {
+      "seed": 1,
+      "source_path": "/Users/ruediger/Projects/layered_architectures/output/shared_base_scaling_download_2026-09-17/seed1/status.json",
+      "filename": "training_seed1/status.json",
+      "sha256": "63802b6f41d227f19700e316de71bc8df21e2f9fa0fd625f19489d29ceb2a130"
+    },
+    {
+      "seed": 1,
+      "source_path": "/Users/ruediger/Projects/layered_architectures/output/shared_base_scaling_download_2026-09-17/seed1/scaling_runtime.json",
+      "filename": "training_seed1/scaling_runtime.json",
+      "sha256": "efd4bb8e2158abf2611b7c1333268de84497942742c71bd9e9edc3b46d16102b"
+    }
+  ],
+  "inputs_sha256": {
+    "/Users/ruediger/Projects/layered_architectures/output/shared_base_scaling_evaluation_2026-09-17/comparison.json": "1e4e35cb01c44c92b3efa23bdf6f16e5164343aaf2659cb7b46abab9bb57fe32",
+    "/Users/ruediger/Projects/layered_architectures/code/transformer/configs/shared_base_scaling_plan_2026-09-17.json": "28d3af403a7972ed30877ce2afb2201509c052cac4202c0b4485dea677d37202",
+    "/Users/ruediger/Projects/layered_architectures/results/transformer/shared_base_conditional_curves/summary.json": "0d920d9a58eff888ff99a39136cb4ac22171fc71b1a6a04acb736ea920246e0d",
+    "/Users/ruediger/Projects/layered_architectures/results/transformer/shared_base_conditional_curves/time4_summary.json": "e4997691be5bf98016e9e3b67f03e37f08556068b4777af229a2a6f164259482",
+    "/Users/ruediger/Projects/layered_architectures/results/transformer/shared_base_conditional_curves/time16_summary.json": "d0341e04ec2d2daf7075d63c5e8ba4e78e70b62cbba55e9855debc18ae8fb88f",
+    "/Users/ruediger/Projects/layered_architectures/results/transformer/shared_base_morning_audit_2026-09-17/summary.json": "8c40801e7fc8d2cfb6dbeb25ceeb12c1b070aed26761e4992ee7346127d57d96",
+    "/Users/ruediger/Projects/layered_architectures/output/shared_base_conditional_curves_2026-09-15/a1_L0/cohort.json": "4c56f3ec0b382b14f74d8ce62c31fcb8766ffbb4b299ddc89e13c704a36108a7",
+    "/Users/ruediger/Projects/layered_architectures/output/shared_base_conditional_curves_2026-09-15/a1_L0/protocol.json": "4375f7e708d8e04c9660b2289109ecea5197f05a6d0931740e42fe02852cd63a",
+    "/Users/ruediger/Projects/layered_architectures/output/shared_base_conditional_curves_2026-09-15/a1_L1/cohort.json": "eec1bcea52c953eaca1b904af0c09f9d61c864069c1cae1bb931f08628bd83a9",
+    "/Users/ruediger/Projects/layered_architectures/output/shared_base_conditional_curves_2026-09-15/a1_L1/protocol.json": "55f1c12d5ac6792b6f29fa68b69bac16766d0e88ece53b953186429db3e788a6",
+    "/Users/ruediger/Projects/layered_architectures/output/shared_base_conditional_curves_2026-09-15/a1_L4/cohort.json": "d365a6a1974f73030eb033960fe0b59d33277528ed35d02b629648cc3ed0773c",
+    "/Users/ruediger/Projects/layered_architectures/output/shared_base_conditional_curves_2026-09-15/a1_L4/protocol.json": "aca6385afcc3db5e4d9f5019236ef2af77db032066c62063d50a0bb6b164a612",
+    "/Users/ruediger/Projects/layered_architectures/output/shared_base_conditional_curves_2026-09-15/a1_L8/cohort.json": "fa9d29b90cae302c3c263d74305e4b79b737cb8cd3e053edcb5cb3bd161e71f4",
+    "/Users/ruediger/Projects/layered_architectures/output/shared_base_conditional_curves_2026-09-15/a1_L8/protocol.json": "0dd0c1e92cf4f2de6f890bced3706b75d7126e946173af0e8001c27e78604622",
+    "/Users/ruediger/Projects/layered_architectures/results/transformer/shared_base_time64_complete_2026-09-17/summary.json": "9ad6010de6006b4c102513b7743244a473c7f9e350bb4559d4b69ef3a6753dab",
+    "/Users/ruediger/Projects/layered_architectures/results/transformer/shared_base_time64_complete_2026-09-17/validation.json": "3ffa4853037840de26b55db02a1a4a9ba009df13b56f8ab839dd0004c5f84cac",
+    "/Users/ruediger/Projects/layered_architectures/output/shared_base_local_finish_2026-09-17/summary.json": "5f141b7f3abca36e6d112a038d5b6fe2fdf9f6864d26a7ff57ae3503e76ae406",
+    "/Users/ruediger/Projects/layered_architectures/code/scripts/export_shared_base_time64.py": "9b738930906c57d53c3d568f528296218a3c35a4d0bd19f3620a2c22290f3981",
+    "/Users/ruediger/Projects/layered_architectures/output/shared_base_scaling_download_2026-09-17/seed0/model_100000.pt": "9a1954947e4a650c4811122a7752d6c808f7920bbebce5442f52e832210b196e",
+    "/Users/ruediger/Projects/layered_architectures/output/shared_base_scaling_download_2026-09-17/seed0/config.json": "47584db02896871f731f99a9a93b4ba7041ba97f4cb942d8b385056af6cbe572",
+    "/Users/ruediger/Projects/layered_architectures/output/shared_base_scaling_download_2026-09-17/seed0/status.json": "3e15184f12bc1477f7d9b86cd546529d6823c45c5c8c5cff8923605d47ae2d93",
+    "/Users/ruediger/Projects/layered_architectures/output/shared_base_scaling_download_2026-09-17/seed0/log.jsonl": "3617b1e8cd722370ad17658bc8b8416366a1e604a6d6af6802ffbcec9e6a1cd2",
+    "/Users/ruediger/Projects/layered_architectures/output/shared_base_scaling_download_2026-09-17/seed0/scaling_runtime.json": "4d5e4e91a408a2f076a9d49d6500d59fd8ab21ce8b69e38405c400c8b6a06aba",
+    "/Users/ruediger/Projects/layered_architectures/output/shared_base_scaling_download_2026-09-17/seed1/model_100000.pt": "0a1c467844b5e06583a966b81565c12cddb84638cc67a6b07e64030a94077040",
+    "/Users/ruediger/Projects/layered_architectures/output/shared_base_scaling_download_2026-09-17/seed1/config.json": "c447d0485412d797f3660f2bb9e55e623d8d18a14229fcfa209e8e7ef1489305",
+    "/Users/ruediger/Projects/layered_architectures/output/shared_base_scaling_download_2026-09-17/seed1/status.json": "63802b6f41d227f19700e316de71bc8df21e2f9fa0fd625f19489d29ceb2a130",
+    "/Users/ruediger/Projects/layered_architectures/output/shared_base_scaling_download_2026-09-17/seed1/log.jsonl": "11320cdd459c1ed5958c7f3a0a64253507e48faedf5d27732136da4036c8e4b5",
+    "/Users/ruediger/Projects/layered_architectures/output/shared_base_scaling_download_2026-09-17/seed1/scaling_runtime.json": "efd4bb8e2158abf2611b7c1333268de84497942742c71bd9e9edc3b46d16102b"
+  },
+  "raw_records_manifest_sha256": "68173a125decf2fa5feaddf8c61ea1a809d79dc4cf208eb59a2edeb3cb8ca645",
+  "validator_sha256": "954b4124a4f3e32c5af2490a98db05d230fc57ccf08915a5df20d5c134b5e1da",
+  "time64": [
+    {
+      "depth": 0,
+      "seed": 0,
+      "bayes": {
+        "n": 256,
+        "mean": 0.24692748573929008,
+        "standard_error": 0.004370823139017926
+      },
+      "old_gap": {
+        "n": 256,
+        "mean": 0.2167204300506958,
+        "standard_error": 0.008823640890889384
+      },
+      "new_gap": {
+        "n": 256,
+        "mean": 0.039543051867350056,
+        "standard_error": 0.0038439902742322795
+      },
+      "improvement": {
+        "n": 256,
+        "mean": 0.17717737818334578,
+        "standard_error": 0.007354780719718331
+      }
+    },
+    {
+      "depth": 0,
+      "seed": 1,
+      "bayes": {
+        "n": 256,
+        "mean": 0.24692748573929008,
+        "standard_error": 0.004370823139017926
+      },
+      "old_gap": {
+        "n": 256,
+        "mean": 0.21989157091146927,
+        "standard_error": 0.009033184779128513
+      },
+      "new_gap": {
+        "n": 256,
+        "mean": 0.028744130473715372,
+        "standard_error": 0.003185327052119768
+      },
+      "improvement": {
+        "n": 256,
+        "mean": 0.1911474404377539,
+        "standard_error": 0.008065281520440502
+      }
+    },
+    {
+      "depth": 1,
+      "seed": 0,
+      "bayes": {
+        "n": 256,
+        "mean": 0.7437069849248976,
+        "standard_error": 0.015853819563431286
+      },
+      "old_gap": {
+        "n": 256,
+        "mean": 0.1149082244655986,
+        "standard_error": 0.009879474457890237
+      },
+      "new_gap": {
+        "n": 256,
+        "mean": 0.016855080090468245,
+        "standard_error": 0.00426729688159497
+      },
+      "improvement": {
+        "n": 256,
+        "mean": 0.09805314437513035,
+        "standard_error": 0.008934804231545817
+      }
+    },
+    {
+      "depth": 1,
+      "seed": 1,
+      "bayes": {
+        "n": 256,
+        "mean": 0.7437069849248976,
+        "standard_error": 0.015853819563431286
+      },
+      "old_gap": {
+        "n": 256,
+        "mean": 0.12129446852019357,
+        "standard_error": 0.009322755312937775
+      },
+      "new_gap": {
+        "n": 256,
+        "mean": 0.010275679039675103,
+        "standard_error": 0.003943212986000536
+      },
+      "improvement": {
+        "n": 256,
+        "mean": 0.11101878948051846,
+        "standard_error": 0.00917044704305927
+      }
+    },
+    {
+      "depth": 4,
+      "seed": 0,
+      "bayes": {
+        "n": 256,
+        "mean": 1.647319764320778,
+        "standard_error": 0.04414734112820067
+      },
+      "old_gap": {
+        "n": 256,
+        "mean": 0.012239849486545142,
+        "standard_error": 0.011581401066983533
+      },
+      "new_gap": {
+        "n": 256,
+        "mean": 0.014624017427941888,
+        "standard_error": 0.005730746069235366
+      },
+      "improvement": {
+        "n": 256,
+        "mean": -0.002384167941396748,
+        "standard_error": 0.011646348259650642
+      }
+    },
+    {
+      "depth": 4,
+      "seed": 1,
+      "bayes": {
+        "n": 256,
+        "mean": 1.647319764320778,
+        "standard_error": 0.04414734112820067
+      },
+      "old_gap": {
+        "n": 256,
+        "mean": 0.0227109151534755,
+        "standard_error": 0.011773077521920812
+      },
+      "new_gap": {
+        "n": 256,
+        "mean": 0.014135168512264304,
+        "standard_error": 0.005486888230184124
+      },
+      "improvement": {
+        "n": 256,
+        "mean": 0.008575746641211197,
+        "standard_error": 0.012734960725042996
+      }
+    },
+    {
+      "depth": 8,
+      "seed": 0,
+      "bayes": {
+        "n": 256,
+        "mean": 2.0709098397443655,
+        "standard_error": 0.071724324898303
+      },
+      "old_gap": {
+        "n": 256,
+        "mean": 0.08924903728747485,
+        "standard_error": 0.012801413945106596
+      },
+      "new_gap": {
+        "n": 256,
+        "mean": 0.004864422698336623,
+        "standard_error": 0.004797591816507742
+      },
+      "improvement": {
+        "n": 256,
+        "mean": 0.08438461458913823,
+        "standard_error": 0.011862963900876553
+      }
+    },
+    {
+      "depth": 8,
+      "seed": 1,
+      "bayes": {
+        "n": 256,
+        "mean": 2.0709098397443655,
+        "standard_error": 0.071724324898303
+      },
+      "old_gap": {
+        "n": 256,
+        "mean": 0.08223806933844569,
+        "standard_error": 0.013037901314403343
+      },
+      "new_gap": {
+        "n": 256,
+        "mean": 0.010251436580158405,
+        "standard_error": 0.00428636093090093
+      },
+      "improvement": {
+        "n": 256,
+        "mean": 0.07198663275828726,
+        "standard_error": 0.01249963189170178
+      }
+    }
+  ],
+  "limits": "Development cohorts; two training runs reported separately. Fixed exposure and joint capacity change. Bayes available only at 1,4,16,64; its numerical diagnostics do not establish global convergence.",
+  "inference_performed": false,
+  "bayesian_sampling_performed": false
+}

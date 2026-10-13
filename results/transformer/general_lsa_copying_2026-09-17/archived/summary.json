@@ -1,0 +1,148 @@
+{
+  "schema": "general-lsa-archived-payoff-v1",
+  "script_sha256": "0b5bf58867a6067f29b8e348401f1bfd096c07b1d97ccce68f2e428432a2fbae",
+  "reproduction": "OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1 python code/scripts/general_lsa_archived_payoff.py",
+  "source": {
+    "d": 64,
+    "alpha": 1.0,
+    "source_depths": [
+      2,
+      3
+    ],
+    "shared_base": "q_b proportional to b^(-alpha), with unknown random token relabeling",
+    "n_tokens_per_sequence": 1025,
+    "n_sequences_per_condition": 2048
+  },
+  "predictors": {
+    "unigram": "One pooled LSA count table, with uniform coding-depth mixture on 1..20",
+    "copier": "Independent LSA count tables per preceding token, each mixing coding depths 1..20",
+    "interpretation": "Archived adaptive LSA statistical comparators. Neither is the informed shared-base Bayes predictor; no transformer or ablation is measured."
+  },
+  "metric": "Sample mean of sum_{t=1}^n [loss_unigram(X_{t+1}|X^t) - loss_copier(X_{t+1}|X^t)], in bits",
+  "scoring": "X1 is observed and updates the unigram; scored tokens are X2 through X1025",
+  "sign": "Positive means the independent copier has smaller cumulative loss",
+  "crossing": "First integer n of the final strictly positive run through the observed horizon 1024; not a claim about all later n",
+  "zero_tolerance_bits": 1e-12,
+  "uncertainty": {
+    "curves": "Pointwise Student-t 95% intervals across independent sequences; not simultaneous bands",
+    "crossings": "Exploratory whole-sequence paired bootstrap percentile intervals; no smoothing",
+    "bootstrap_replicates": 2000,
+    "seed": 2026091764,
+    "sampling": "Multinomial resampling of 2048 paired whole-sequence cumulative loss curves",
+    "censoring": "Infinite crossing retained when a bootstrap mean is not positive at the horizon; JSON null denotes beyond the observed horizon"
+  },
+  "numerical_scope": "Reanalysis of retained historical loss arrays; no new numerical-integration certification",
+  "precision": "Original per-token losses stored as float32; converted to float64 before subtraction, accumulation and summary statistics",
+  "groups": [
+    {
+      "source_depth": 2,
+      "n_sequences": 2048,
+      "horizon": 1024,
+      "input": {
+        "path": "results/transformer/refs2048/d64/d64_a1_L2.npz",
+        "sha256": "cea2086a72b85d9f04b84ce96436c1ae6b68ff7693d6e947822759ae791da1c1",
+        "tokens_md5": "b06fd95ebb38470f1589524b3f3f6a2f",
+        "tokens_sha256": "15361c33152d9eacb3d3a724b134b1ee643c44fef4d843a353a147218bb559ea"
+      },
+      "cumulative_crossing": {
+        "time": 467,
+        "bootstrap_percentiles": {
+          "lower": 458,
+          "median": 467,
+          "upper": 477
+        },
+        "censored_bootstrap_count": 0,
+        "positive_from_start_bootstrap_count": 0
+      },
+      "minimum_mean_gain": {
+        "time": 230,
+        "bits": -30.00344829824826,
+        "standard_error_bits": 0.6183621698377355
+      },
+      "selected_times": [
+        {
+          "time": 64,
+          "mean_bits": -13.913196331257495,
+          "standard_error_bits": 0.2730199840516468
+        },
+        {
+          "time": 128,
+          "mean_bits": -25.193450751357886,
+          "standard_error_bits": 0.4191857979032256
+        },
+        {
+          "time": 256,
+          "mean_bits": -29.06886359625787,
+          "standard_error_bits": 0.6699348632254161
+        },
+        {
+          "time": 512,
+          "mean_bits": 10.087126286580315,
+          "standard_error_bits": 1.1022257789080694
+        },
+        {
+          "time": 1024,
+          "mean_bits": 190.3906764493131,
+          "standard_error_bits": 1.8791659060518489
+        }
+      ]
+    },
+    {
+      "source_depth": 3,
+      "n_sequences": 2048,
+      "horizon": 1024,
+      "input": {
+        "path": "results/transformer/refs2048/d64/d64_a1_L3.npz",
+        "sha256": "0d4a0e78470591f1a5caaa39656231ba073d32bd8787a6b0d4b6da7d227fe49c",
+        "tokens_md5": "da0bd627f7f4fe73af38e22a85a0a963",
+        "tokens_sha256": "6e5056173f108f507d37f8a635cb61af92274a1b3ae97a35f54e6d3c0dcc9d8d"
+      },
+      "cumulative_crossing": {
+        "time": 109,
+        "bootstrap_percentiles": {
+          "lower": 103,
+          "median": 109,
+          "upper": 115
+        },
+        "censored_bootstrap_count": 0,
+        "positive_from_start_bootstrap_count": 0
+      },
+      "minimum_mean_gain": {
+        "time": 63,
+        "bits": -2.966112216545298,
+        "standard_error_bits": 0.2853830886494306
+      },
+      "selected_times": [
+        {
+          "time": 64,
+          "mean_bits": -2.914213142943481,
+          "standard_error_bits": 0.28873576731074957
+        },
+        {
+          "time": 128,
+          "mean_bits": 3.0999520147997828,
+          "standard_error_bits": 0.48568357015245617
+        },
+        {
+          "time": 256,
+          "mean_bits": 38.86035671631544,
+          "standard_error_bits": 0.8182352802241829
+        },
+        {
+          "time": 512,
+          "mean_bits": 169.8797979833398,
+          "standard_error_bits": 1.3793494304310425
+        },
+        {
+          "time": 1024,
+          "mean_bits": 546.0258038593702,
+          "standard_error_bits": 2.3895411321079205
+        }
+      ]
+    }
+  ],
+  "output_sha256": {
+    "curves.npz": "3337bc7077a881d1c572efa592fed18468c777d8c3de4947a82dc562eca5f6df",
+    "cumulative_payoff.png": "bcab8d0eb4d013a6fa66266e7d556802f0f47bca7c9af67b6861796b2b7e0db1"
+  }
+}

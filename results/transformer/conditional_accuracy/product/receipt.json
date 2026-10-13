@@ -1,0 +1,65 @@
+{
+  "passed": true,
+  "schema": "conditional-product-accuracy-receipt-v1",
+  "files_sha256": {
+    "code/scripts/conditional_product_accuracy.py": "db8c04ffb7f739a8ef02ed7c43c78ab26b5d095fd6c2650ba9726748cf066cdc",
+    "code/scripts/conditional_product_accuracy_figures.py": "22d796c7157f224586d21185b32cf6e65e1d5095482f96aba42c6fa948f90533",
+    "code/scripts/conditional_product_accuracy_receipt.py": "ea1e8ace89e9aa56f171f869cae02dba86fd9ea095055edea3b819445514b262",
+    "code/transformer/source.py": "d1bb83004e3654cb3f84f6083437cae2b6d71fa19a33b06d26d2455ac440dab4",
+    "code/transformer/families.py": "24d7ab304d9de7133e38ec8ffe2422d2de38b9e3374670117807eab61d606e00",
+    "results/transformer/runs/prod_8x8/model_100000.pt": "29cac698253475a539a0b1bb76a47436a6eee0b0ab3d8c651a61bfe239b9b271",
+    "results/transformer/conditional_accuracy/product/summary.json": "bdf147619cbb70e390e46f6547e34661fc324326094863ee8140fbffdeae5c03",
+    "results/transformer/conditional_accuracy/product/summary.tsv": "6d48101faf160c248084d2cb08222052c65a325618529867cd3220a5b9e7ec4f",
+    "results/transformer/conditional_accuracy/product/validation.json": "0b370e58613076a6204c0ea967bded295b339613baf00b302c13c7884430143b",
+    "results/transformer/conditional_accuracy/product/curves.pdf": "1fa1c2ce67b2a1c428f7de9bf7a9029eeb6229dbd738a71a5fcc3382140a827f",
+    "results/transformer/conditional_accuracy/product/curves.png": "63a1e0d36ff1a4cf89379326f873bbf2982dcdc41623e1a990035fe7144c431d",
+    "results/transformer/conditional_accuracy/product/gaps.pdf": "6bd33d516f26d2de97c62baf3860b30e261af605b3894e662dc490d02f313454",
+    "results/transformer/conditional_accuracy/product/gaps.png": "49365318a68c953b9ab2ba724fe9a7550f8c7b7675d8d388a649510151f6cf42",
+    "results/transformer/conditional_accuracy/product/README.md": "52a6e937deec5a118eb4bf789a12be774059758a0e22fe759f187c1aeb3a4dd5"
+  },
+  "raw_cohort_digests": {
+    "[1, 1]": "10d5ab9f6c81f2b3d0dabc9e780016248224a14964212fbe36198f3184a42c59",
+    "[1, 8]": "0f45956e5796c0dafd6e386f8ef2e930abf12797a1161a982d56ec36d55a4f55",
+    "[4, 4]": "aae0531ee6c4a1c4288b4219f1e9ff9faa8ae1d2c5a9271fb015951380f7a79f",
+    "[8, 8]": "4fb84496e709c0189007dc2874351c28178b4e8524f9df0bfe378cdfa498b220"
+  },
+  "raw_digest_rule": "SHA256 of data/name:SHA256, references/name:SHA256, model/name:SHA256 in sequence-index order",
+  "command": "python code/scripts/conditional_product_accuracy.py --stage all --device cpu --batch 8",
+  "figure_command": "python code/scripts/conditional_product_accuracy_figures.py",
+  "receipt_command": "python code/scripts/conditional_product_accuracy_receipt.py",
+  "required_environment": {
+    "LSA_STORE": "/Users/ruediger/Projects/product_model_with_memory/tables/anchors_prod",
+    "PMM_SRC": "/Users/ruediger/Projects/product_model_with_memory/src",
+    "OPENBLAS_NUM_THREADS": "1",
+    "OMP_NUM_THREADS": "1"
+  },
+  "validation": {
+    "passed": true,
+    "selected_sequences_per_pair": [
+      0,
+      255
+    ],
+    "maximum_errors": {
+      "wider_grid_probability_error": 0.0,
+      "wider_grid_risk_error_bits": 0.0,
+      "dirichlet_probability_error": 2.8332891588433995e-13,
+      "causal_future_change_error": 0.0,
+      "dirichlet_final_log_evidence_error": 5.4569682106375694e-12
+    },
+    "tolerances": {
+      "wider_grid_probability_error": 2e-06,
+      "wider_grid_risk_error_bits": 2e-06,
+      "dirichlet_probability_error": 2e-12,
+      "causal_future_change_error": 2e-12,
+      "dirichlet_final_log_evidence_error": 2e-08
+    },
+    "wider_integration_range": [
+      -45,
+      40
+    ],
+    "main_integration_range": [
+      -30.0,
+      30.0
+    ]
+  }
+}

@@ -1,0 +1,133 @@
+{
+  "schema": "hidden-factor-campaign-independent-audit-v1",
+  "passed": true,
+  "full_reference_checked": true,
+  "model_checks_passed": true,
+  "evaluated_sequences": 3840,
+  "groups_checked": 5,
+  "remote_metric_summaries_checked": 450,
+  "consumer_sha256": "b824abe3f7471e95b380512d75ed2cc80a214e2faaaaf9f3f42892fc28aa1b47",
+  "original_consumer_sha256": "05b422a12f5aa84a8cbc98af3a72580020d9843fc87a31abeabdec22324f1f2f",
+  "plan_sha256": "d40caa852163942650366d699705127e96827bee6c3c54d0a3c197d4abe1f77b",
+  "input_sha256": {
+    "code/transformer/configs/hidden_factor_campaign_plan_2026-09-18.json": "d40caa852163942650366d699705127e96827bee6c3c54d0a3c197d4abe1f77b",
+    "code/transformer/configs/hidden_factor_scaling_plan_2026-09-16.json": "0d63d4554dc62c9d96b0ee5ce8febf548ddc3d6713a52e96f04775d545dae91f",
+    "code/scripts/hidden_factor_confirmation_results.py": "05b422a12f5aa84a8cbc98af3a72580020d9843fc87a31abeabdec22324f1f2f",
+    "code/transformer/hidden_factor.py": "f35bd787af99d19d2bcf4c2a69f9a7e85a089e7ad7676031c07de400544bef65",
+    "code/transformer/model.py": "742fe0e5c8ffaecee8072a3b270b23beaa2e0bd2a94d1a27a9af67c31eff9c28",
+    "code/transformer/train_hidden_factor.py": "55f067abb92bc8859b5945bc987fcdce501bdd17437664f3ec06b2f5d7438f07",
+    "code/transformer/train_mixture.py": "c364416f472813bd2e5bbfe988af710a278cbac1e73ff14b58611916fe123d2d",
+    "code/transformer/train_hidden_factor_scaling.py": "53e6425e1e08c21c1c369f2a0023f34ee70bdc3d8d078f5f487eedc867d2fbe1",
+    "code/transformer/hidden_factor_scaling_eval.py": "80bafca73f289ce81b222a21983f58507e663d045a3f251b296a32f0b6a60fd3",
+    "code/transformer/eval_hidden_factor.py": "8957cee51f6b939fcb2acaefe4145c6a5269ac2523f8ea56e4c990d9fbfebe3b",
+    "output/hidden_factor_confirmation_2026-09-18/summary.json": "87a380209cde7a756a837dbc11004559c624ebc9628e9f75f87e2e68a6653ea1",
+    "output/hidden_factor_confirmation_2026-09-18/status.json": "878765d434e454c55ae06c2243992cdcf4d812fea8de49d690476c0db1c882d3",
+    "output/hidden_factor_cluster_pilot_2026-09-16/cohort.json": "b96afda3b8b6e3bb501b5d19f3ca8dbac44e1e7dcbede0b409dacfe688537bcf",
+    "output/hidden_factor_cluster_pilot_2026-09-16/cohort.npz": "3702b05ec9eef063ba30c4f85ee7cbf6919072da19748bb3a7e7e5b5b3348353",
+    "output/hidden_factor_full_references_2026-09-18/manifest.json": "d042d3ad7b4dc6160c8819a31841988a3b1038cc471b546faf301b2c75deac63",
+    "output/hidden_factor_confirmation_2026-09-18/models/baseline_seed0.npz": "6905b9e715d95c7e1ccd8be51f8ae7a72cae132087548bbd93e95e3252069f7b",
+    "output/hidden_factor_confirmation_2026-09-18/models/baseline_seed0.json": "b8c32a5baf2832d9604e61baeb07dbab1bdf977bbd4c535c27c37e3cca01c7de",
+    "output/hidden_factor_confirmation_2026-09-18/models/baseline_seed1.npz": "ead57cc7e6acf2d9c495853873aa52b2fd979f850e0236b3931944767bbf944a",
+    "output/hidden_factor_confirmation_2026-09-18/models/baseline_seed1.json": "b355e6770107aee43ce806c45853d5ddbb3503d461e5a123d34e7ef80645b817",
+    "output/hidden_factor_confirmation_2026-09-18/models/longsmall_seed0.npz": "10a480d5e52baee5595d26fcdd1e266fc54548f96959b4e72c6cb75e3d210324",
+    "output/hidden_factor_confirmation_2026-09-18/models/longsmall_seed0.json": "97999752bea3df2ebb3c44f305f931526bd27b3aca34bfe3d51965c7dd39da18",
+    "output/hidden_factor_confirmation_2026-09-18/models/longsmall_seed1.npz": "1eded81bd2c1ba65fc5e48f11c6c2c99d558813d20e117547f45bb6cb9cc82fe",
+    "output/hidden_factor_confirmation_2026-09-18/models/longsmall_seed1.json": "2c3a211d4974ed25cb9f7402cebf0b9c6f3bd320ec6f00668f8f36ccc1ad029b",
+    "output/hidden_factor_confirmation_2026-09-18/models/large_seed0.npz": "1f74ffc0a24d897dd38ef29552b477f81054dc2c7fd301a13b7c47e9e4a49461",
+    "output/hidden_factor_confirmation_2026-09-18/models/large_seed0.json": "d823ba4fcc5fad649a417a32527cbecd2b490f226adcf62875d51d767d093f5e",
+    "output/hidden_factor_confirmation_2026-09-18/models/large_seed1.npz": "9639133cfb4e3c916d0c846bdb4a274048c11562dae50384b41a4f619548b37e",
+    "output/hidden_factor_confirmation_2026-09-18/models/large_seed1.json": "9ec411134d658d4a64a9ce58fa84a2a46416db4ec363332a3d3cc5cf3e3d56c5",
+    "output/kuma_results_2026-09-20/hidden_factor_campaign_comparison_2026-09-19/continue_large/step400000/summary.json": "d6d0f60c8032f9ea1de515cdd35d532235ba93a67f9fd570c57df7df9b0e28db",
+    "output/kuma_results_2026-09-20/hidden_factor_campaign_comparison_2026-09-19/continue_large/step400000/status.json": "ea4db3ea3db4d1b0623a42485a73de3d95b6394805bbfa7e2c4efbeef12db076",
+    "output/kuma_results_2026-09-20/hidden_factor_campaign_comparison_2026-09-19/continue_large/step400000/selection.json": "0e67caba63eb849a08d7f7cb73ea91a6af6ccc649f03e7b6532a306eea6cae42",
+    "code/transformer/hidden_factor_campaign_comparison_eval.py": "89d4997ccd6c15f34e789da8d3e9fcf11f82d5796be0a0db75a5ebd877a45f0d",
+    "code/transformer/hidden_factor_campaign_eval.py": "fec1007d73206c59202649a13f1574ceed2e605773f32dce7f0d013e9cd070e3",
+    "code/transformer/hidden_factor_confirmation_eval.py": "d0b0d740d602131ff68fb139ee0474a3e9c9bac62e817a67a4ac7598568eab3c",
+    "code/transformer/eval_mixture.py": "a93d308a8af6fe0528ed619ef89f130419efe02c7f11061b2e8356bd32c5e3d9",
+    "code/scripts/campaign_job_guard.py": "3245f403885e956b99376a538680829c36e0addb03d52f987d949827fb909741",
+    "output/kuma_results_2026-09-20/hidden_factor_campaign_comparison_2026-09-19/continue_large/step400000/models/continue_large_seed0.json": "b7e6dad4e0a65d6a03707cc6cf2ccdbc7316a4e4650634dd5276037924db49bd",
+    "output/kuma_results_2026-09-20/hidden_factor_campaign_comparison_2026-09-19/continue_large/step400000/models/continue_large_seed0.npz": "094485f8ea30fbf342d7c7e4d3170fe8edcc33fafd93fc92c1fc6f1a64ebbaf2",
+    "output/kuma_results_2026-09-20/hidden_factor_campaign_2026-09-18/train/continue_large/seed0/config.json": "eddefb50768008f905fb37a444d698e6b64cd4690b6378bc39871d87ff88d25b",
+    "output/kuma_results_2026-09-20/hidden_factor_campaign_2026-09-18/eval/continue_large/seed0/step400000/summary.json": "f1bfc4380860652a4e615b98afd3660fbd55e13ff30bae45964caa87f545d6fc",
+    "output/kuma_results_2026-09-20/hidden_factor_campaign_2026-09-18/eval/continue_large/seed0/step400000/scores.npz": "a6318608d6a41d015bbe93bc04fd8a9a0370e0847621acb7aa31dd01a945ce1a",
+    "output/kuma_results_2026-09-20/hidden_factor_campaign_comparison_2026-09-19/continue_large/step400000/models/continue_large_seed1.json": "315a81e70ef3c332a4aa117fedf5930ca914eec43d1e3d0674d1ad54e20873c8",
+    "output/kuma_results_2026-09-20/hidden_factor_campaign_comparison_2026-09-19/continue_large/step400000/models/continue_large_seed1.npz": "e38a2dedc3fdb2af892777521dab03662f184fb8415be59b8914a693a250ebfd",
+    "output/kuma_results_2026-09-20/hidden_factor_campaign_2026-09-18/train/continue_large/seed1/config.json": "85f5da8291ad7cf9a9eb9f6d27703cd8178c7485a505c863bc3f8ae6edb8b886",
+    "output/kuma_results_2026-09-20/hidden_factor_campaign_2026-09-18/eval/continue_large/seed1/step400000/summary.json": "2975b35fcb6771b4b8ad4d20ffcca8891cb3989110656c20b499e27dd3bf78e8",
+    "output/kuma_results_2026-09-20/hidden_factor_campaign_2026-09-18/eval/continue_large/seed1/step400000/scores.npz": "c917546c798bca15fec95ce90c9ab4086dbd6785cf74de9fac4928742168cc3f",
+    "output/kuma_results_2026-09-20/hidden_factor_campaign_comparison_2026-09-19/xlarge/step400000/summary.json": "9a6d489c1cb6327c15803060e6be50a6dff5a23e820214fe0931332aab8cf13a",
+    "output/kuma_results_2026-09-20/hidden_factor_campaign_comparison_2026-09-19/xlarge/step400000/status.json": "17813a1131aa279024489e58230b91a30dbc957e69c4d57d5bd50116ba65879b",
+    "output/kuma_results_2026-09-20/hidden_factor_campaign_comparison_2026-09-19/xlarge/step400000/selection.json": "fd0cbf9752eaf631f0a641db768b10ae4e3571ac2752600e850516dae33eabfa",
+    "output/kuma_results_2026-09-20/hidden_factor_campaign_comparison_2026-09-19/xlarge/step400000/models/xlarge_seed0.json": "ac46a180e2d8145f46c0412458d80b8ba8e89ea308a525cd0fa615d51d58ff49",
+    "output/kuma_results_2026-09-20/hidden_factor_campaign_comparison_2026-09-19/xlarge/step400000/models/xlarge_seed0.npz": "55fa056103dc56aa9c7fdfeac389a9d1a39f7f3d108d6a1ca8cafdbba1c511fd",
+    "output/kuma_results_2026-09-20/hidden_factor_campaign_2026-09-18/train/xlarge/seed0/config.json": "59c046b44f80dad980583039c53b3cbde21750cc63e4c343d1f1da9bbe62f9ba",
+    "output/kuma_results_2026-09-20/hidden_factor_campaign_2026-09-18/eval/xlarge/seed0/step400000/summary.json": "814ffb90f82b756988c593e4a6038e50e3ac4fc97011de11427768471ec2821f",
+    "output/kuma_results_2026-09-20/hidden_factor_campaign_2026-09-18/eval/xlarge/seed0/step400000/scores.npz": "654647b9f9544d26b1c4db18bd608adc35894d0f693300004ec0551ff6076543",
+    "output/kuma_results_2026-09-20/hidden_factor_campaign_comparison_2026-09-19/xlarge/step400000/models/xlarge_seed1.json": "0e5878c6bf384d856bac72bc0223d59f485058130107b9467c5933766234d9c7",
+    "output/kuma_results_2026-09-20/hidden_factor_campaign_comparison_2026-09-19/xlarge/step400000/models/xlarge_seed1.npz": "1274111fc001beb3cdca814a65acfeed5904b9367c3e18503075ec8e92aef6f4",
+    "output/kuma_results_2026-09-20/hidden_factor_campaign_2026-09-18/train/xlarge/seed1/config.json": "48ab4a838201fe7e5857cfc8c5e0cc84ac299c2ce2666aad7e8b9cfda7acddc1",
+    "output/kuma_results_2026-09-20/hidden_factor_campaign_2026-09-18/eval/xlarge/seed1/step400000/summary.json": "d19841ca52a16e83145a2b1b1f7d4745ecf003c405d84951a75e64c71ce875e9",
+    "output/kuma_results_2026-09-20/hidden_factor_campaign_2026-09-18/eval/xlarge/seed1/step400000/scores.npz": "1564b0ed2e81b091ff286239eb92916ef2c63a756e570c93671ecaab44f6d08c"
+  },
+  "original_comparison_audit": {
+    "schema": "hidden-factor-confirmation-independent-audit-v1",
+    "passed": true,
+    "model_checks_passed": true,
+    "full_reference_checked": true,
+    "summary_sha256": "87a380209cde7a756a837dbc11004559c624ebc9628e9f75f87e2e68a6653ea1",
+    "plan_sha256": "0d63d4554dc62c9d96b0ee5ce8febf548ddc3d6713a52e96f04775d545dae91f",
+    "consumer_sha256": "05b422a12f5aa84a8cbc98af3a72580020d9843fc87a31abeabdec22324f1f2f",
+    "cohort_data_sha256": "3702b05ec9eef063ba30c4f85ee7cbf6919072da19748bb3a7e7e5b5b3348353",
+    "reference_records_sha256": "42a34f1f0d23ca4478c83624a8a45d7ba9a728f0c374aad6856d0aa7546da8be",
+    "reference_manifest_sha256": "d042d3ad7b4dc6160c8819a31841988a3b1038cc471b546faf301b2c75deac63",
+    "models": {
+      "baseline_seed0": {
+        "data_sha256": "6905b9e715d95c7e1ccd8be51f8ae7a72cae132087548bbd93e95e3252069f7b",
+        "receipt_sha256": "b8c32a5baf2832d9604e61baeb07dbab1bdf977bbd4c535c27c37e3cca01c7de"
+      },
+      "baseline_seed1": {
+        "data_sha256": "ead57cc7e6acf2d9c495853873aa52b2fd979f850e0236b3931944767bbf944a",
+        "receipt_sha256": "b355e6770107aee43ce806c45853d5ddbb3503d461e5a123d34e7ef80645b817"
+      },
+      "large_seed0": {
+        "data_sha256": "1f74ffc0a24d897dd38ef29552b477f81054dc2c7fd301a13b7c47e9e4a49461",
+        "receipt_sha256": "d823ba4fcc5fad649a417a32527cbecd2b490f226adcf62875d51d767d093f5e"
+      },
+      "large_seed1": {
+        "data_sha256": "9639133cfb4e3c916d0c846bdb4a274048c11562dae50384b41a4f619548b37e",
+        "receipt_sha256": "9ec411134d658d4a64a9ce58fa84a2a46416db4ec363332a3d3cc5cf3e3d56c5"
+      },
+      "longsmall_seed0": {
+        "data_sha256": "10a480d5e52baee5595d26fcdd1e266fc54548f96959b4e72c6cb75e3d210324",
+        "receipt_sha256": "97999752bea3df2ebb3c44f305f931526bd27b3aca34bfe3d51965c7dd39da18"
+      },
+      "longsmall_seed1": {
+        "data_sha256": "1eded81bd2c1ba65fc5e48f11c6c2c99d558813d20e117547f45bb6cb9cc82fe",
+        "receipt_sha256": "2c3a211d4974ed25cb9f7402cebf0b9c6f3bd320ec6f00668f8f36ccc1ad029b"
+      }
+    },
+    "evaluated_sequences": 3840,
+    "excluded_development_sequences": 256,
+    "groups_checked": 5,
+    "metric_summaries_checked": 330,
+    "scientific_scope": "Final preselected models on the untouched suffix; each training run separate.",
+    "limitations": [
+      "Saved cumulative model losses are aggregated, not recomputed by tokenwise model inference.",
+      "Weight binaries are not transferred; recorded identities match the independently audited pilot.",
+      "Bayesian probability arrays and record hashes are checked; exact encoding enumeration is not rerun.",
+      "Sequence standard errors do not estimate variability over training runs."
+    ]
+  },
+  "limitations": [
+    "Weight binaries are not transferred; checkpoint hashes match their validated development receipts.",
+    "Saved cumulative model losses are aggregated, not rerun by tokenwise model inference.",
+    "Exact Bayesian enumeration is not repeated; all saved reference records are independently checked.",
+    "The cohort was previously examined, and two seeds do not establish a model scaling law."
+  ],
+  "summary_sha256": "282c47d1ef17212936d39e7884588c840524446e20b8a9c7a51a91f3b9f8f20c",
+  "figures": {
+    "figures/next_token_regret.pdf": "ff6332b71684d862c56daf10f4f39a8772daf10e4259104c2433d3c5b0337d33",
+    "figures/next_token_regret.png": "3379c70f13c0186d2aa037403bdc4f55401d654256aa4e00b5fad6d389659f9f"
+  },
+  "table_sha256": "0be97429cf3aa36bd95c8290185782e42a77b7f7a4d7c69c01b88aa17f230ae4"
+}
